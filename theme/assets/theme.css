@@ -9,12 +9,12 @@
 }
 
 .content > .placeholder {
-  margin: 16px;
+  margin: 5px;
   color: #888;
-  font-size: 18px;
+  font-size: 15px;
   outline: 1px dotted;
-  padding: 16px;
-  text-align: center;
+  padding: 8px;
+  text-align:right;
 }
 
 /* Put things on a 4px grid (none of this 7px nonsense) */
@@ -81,10 +81,10 @@ a>.anvil-component-icon.right_edge-icon,
   margin-right: 8px;
 }
 
-.flow-panel.flow-spacing-large > .flow-panel-gutter { margin: 0 -12px; }
+.flow-panel.flow-spacing-large > .flow-panel-gutter { margin: 0 -10px; }
 .flow-panel.flow-spacing-large > .flow-panel-gutter > .flow-panel-item { 
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .flow-panel.flow-spacing-huge > .flow-panel-gutter { margin: 0 -20px; }
@@ -142,7 +142,7 @@ a:hover, a:active {
 }
 
 .anvil-role-text {
-  font-size: 14px;
+  font-size: 12px;
 }
 .anvil-role-text > .label-text, .anvil-role-text .link-text {
   padding-top: 0;
@@ -293,7 +293,7 @@ a:hover, a:active {
   padding: 24px 0;
 }
 .left-nav > .column-panel > .anvil-panel-section > .anvil-panel-section-container:not(.full-width-row) {
-  margin: 0 16px;
+  margin: 0 10px;
   width: initial;
   max-width: initial;
   overflow-x: visible;
@@ -308,12 +308,12 @@ a:hover, a:active {
 /* Make all the sidebar icons look nice */
 
 .left-nav .anvil-component-icon {
-  font-size: 160%;
+  font-size: 100%;
 }
 
 .left-nav .anvil-component-icon.left-icon {
   width: 0;
-  margin-right: 56px;
+  margin-right: 25px;
   position: relative;
   top: 0.15em;  
 }
@@ -326,7 +326,7 @@ a:hover, a:active {
 
 .left-nav .anvil-component-icon.right_edge-icon {
   left: initial;
-  right: 16px;
+  right: 10px;
   top: 0;
   padding-top: 2px;
 }
@@ -342,7 +342,7 @@ a:hover, a:active {
 }
 
 .left-nav .anvil-component.left_edge-icon {
-  padding-left: 72px;
+  padding-left: 36px;
 }
 
 .left-nav a:hover, .left-nav .anvil-role-selected {
