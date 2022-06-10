@@ -14,6 +14,8 @@ class start(startTemplate):
     self.con_drop1()
     self.con_drop2()
     self.con_drop4()
+    self.con_drop5()
+    
   def con_drop1(self):
     self.drop_down_1.items = []
     for art in [' ', 'S.R.L.', 'S.A', 'PFA', 'II', 'SRL-D']:
@@ -32,7 +34,13 @@ class start(startTemplate):
       self.drop_down_4.items.append(art)
     self.drop_down_4.items = self.drop_down_4.items
     pass
-
+  def con_drop5(self):
+    self.drop_down_5.items = []
+    for art in ['Agricultura', 'Comert', 'Constructii', 'Industrie',
+                'Servicii', 'Transporturi', 'Turism','Alte ramuri']:
+      self.drop_down_5.items.append(art)
+    self.drop_down_5.items = self.drop_down_5.items
+    pass
   def drop_down_2_change(self, **event_args):
     if self.drop_down_2.selected_value == 'garantat cu echipamente/imobile/etc' or self.drop_down_2.selected_value == 'garantat cu mix (fond si alte garantii)':
        self.drop_down_3.items = []
@@ -78,4 +86,12 @@ class start(startTemplate):
   def button_1_click(self, **event_args):
     open_form('init')
     pass
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    
+    btn = Button(text="Click me!")
+    self.xy_panel_2.add_component(btn, x=0, y=1, width=50)
+    pass
+
 
