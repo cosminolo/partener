@@ -24,11 +24,11 @@ class start(startTemplate):
     self.drop_down_1.items = []
     for art in ['S.R.L.', 'S.A', 'PFA', 'II', 'SRL-D']:
       self.drop_down_1.items.append(art)
-    self.drop_down_1.items = self.drop_down_1.items
+      self.drop_down_1.items = self.drop_down_1.items
     pass
   def con_drop2(self):
-    self.drop_down_1.items = []
-    for art in ['negarantat', 'garantat cu fond de garantare', 'garantat cu echipamente/imobile/etc', 'II', 'SRL-D']:
+    self.drop_down_2.items = []
+    for art in ['negarantat', 'garantat cu fond de garantare', 'garantat cu echipamente/imobile/etc']:
       self.drop_down_2.items.append(art)
     self.drop_down_2.items = self.drop_down_2.items
     pass
