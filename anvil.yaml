@@ -3,13 +3,14 @@ services:
   client_config: {}
   server_config: {auto_create_missing_columns: false}
 - source: /runtime/services/anvil/users.yml
-  client_config: {allow_signup: true, enable_automatically: true, use_email: true,
-    confirm_email: true, use_google: true}
+  client_config: {allow_signup: true, enable_automatically: false, use_email: true,
+    confirm_email: false, use_google: true, require_secure_passwords: true, allow_remember_me: true,
+    remember_me_days: 30}
   server_config: {user_table: users}
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: init}
+startup: {type: form, module: init.start}
 package_name: Partener
 allow_embedding: false
 name: Partener
@@ -27,4 +28,19 @@ db_schema:
     - name: enabled
       admin_ui: {width: 100}
       type: bool
+    - name: signed_up
+      admin_ui: {width: 200}
+      type: datetime
+    - name: password_hash
+      admin_ui: {width: 200}
+      type: string
+    - name: confirmed_email
+      admin_ui: {width: 200}
+      type: bool
+    - name: email_confirmation_key
+      admin_ui: {width: 200}
+      type: string
+    - name: last_login
+      admin_ui: {width: 200}
+      type: datetime
 renamed: true

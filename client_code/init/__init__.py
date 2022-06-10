@@ -11,8 +11,8 @@ class init(initTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    anvil.users.login_with_form()
-    self.ups()
+    #anvil.users.login_with_form()
+    #self.ups()
     
   def ups(self):
       # Get the currently logged in user (if any)
@@ -24,7 +24,7 @@ class init(initTemplate):
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("init.prez")
+    open_form("init.start")
     pass
 
   def link_3_click(self, **event_args):

@@ -25,7 +25,7 @@ components:
   components:
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: 'theme:Gray
-        900', visible: true, text: Prezentare, font_size: 18, wrap_on: mobile, font: '',
+        900', visible: true, text: Start, font_size: 18, wrap_on: mobile, font: '',
       col_spacing: tiny, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
       italic: false, background: 'theme:Primary 500', bold: true, underline: false,
       icon: ''}
