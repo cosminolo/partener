@@ -103,12 +103,28 @@ class start(startTemplate):
     pass
 
   def text_box_2_lost_focus(self, **event_args):
-    """This method is called when the TextBox loses focus"""
-    ret_js = json.loads(anvil.server.call("is_1", self.text_box_2.text))
-    
-    self.text_box_3.text = ret_js['nume']
+    try:
+      ret_js = json.loads(anvil.server.call("is_1", self.text_box_2.text))      
+      self.text_box_3.text = self.clr_str(ret_js["nume"])
+      self.text_box_4.text = self.clr_str(ret_js["adresa"])
+      self.text_box_7.text = self.clr_str(ret_js["orc"])
+      self.text_box_5.text = self.clr_str(ret_js["caen"]) + "-" + self.clr_str(ret_js["caen_d"])
+      self.text_area_1.text = "A incheiat anul" + self.clr_str(ret_js["an_incheiat"]) +
+                              " cu o cifra de afaceri de " + self.clr_str(ret_js["cifra_afaceri"])
+    except:
+      self.text_box_3.text = ""
+      self.text_box_4.text = ""
+      self.text_box_7.text = ""
+      self.text_box_5.text = ""     
+      
+  pass
+
+  def clr_str(self, str_1):
+    #remove []
+    rz = str(str_1)
+    rz = rz[0:len(rz)-2]
+    rz = rz[2:len(rz)]
+    return rz
     pass
-
-
 
 

@@ -194,7 +194,7 @@ components:
     properties: {}
     name: text_box_2
     layout_properties: {row: GGMRJW, width_xs: 2, col_xs: 1}
-    event_bindings: {lost_focus: text_box_2_lost_focus}
+    event_bindings: {lost_focus: text_box_2_lost_focus, pressed_enter: text_box_2_pressed_enter}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Denumire, font_size: null, font: '', spacing_above: small,
