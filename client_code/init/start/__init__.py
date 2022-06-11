@@ -8,6 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import json
+from datetime import date
 class start(startTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -108,19 +109,33 @@ class start(startTemplate):
       self.text_box_3.text = self.clr_str(ret_js["nume"])
       self.text_box_4.text = self.clr_str(ret_js["adresa"])
       self.text_box_7.text = self.clr_str(ret_js["orc"])
-      self.text_box_5.text = self.clr_str(ret_js["caen"]) + "-" + self.clr_str(ret_js["caen_d"])
-      s1 = "A incheiat anul " + self.clr_str(ret_js["an_incheiat"])
-      s2 = " cu o cifra de afaceri de " + self.clr_str(ret_js["cifra_afaceri"]) + " lei "
-      s3 = " si un rezultat de " + self.clr_str(ret_js["profit"]) + " lei."
-      self.text_area_1.text =  s1 + s2+ s3
-   
+      self.text_box_6.text = self.clr_str(ret_js["tel"])        
     except:
       self.text_box_3.text = ""
       self.text_box_4.text = ""
       self.text_box_7.text = ""
-      self.text_box_5.text = ""     
-      self.text_area_1.text = ""
-      
+      self.text_box_6.text = "" 
+     
+    try:
+      an = int(date.today().year)      
+      ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
+      self.text_box_5.text = self.clr_str(ret_js2["caen_d"])      
+    except:
+      self.text_box_5.text = ""
+      try:    
+       an = str(int(date.today().year) - 1) 
+       print(an)
+       ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
+       self.text_box_5.text = self.clr_str(ret_js2["caen_d"]) 
+      except:
+           self.text_box_5.text = ""
+           try:    
+              an = str(int(date.today().year) - 2)
+              ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
+              self.text_box_5.text = self.clr_str(ret_js2["caen_d"]) 
+           except:
+              self.text_box_5.text = ""
+              pass
   pass
 
   def clr_str(self, str_1):
