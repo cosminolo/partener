@@ -7,7 +7,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-
+import json
 class start(startTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -93,8 +93,22 @@ class start(startTemplate):
     
     # btn = Button(text="Click me!")
     #self.xy_panel_2.add_component(btn, x=0, y=1, width=50)
-    ret_js = anvil.server.call("is_1", "14446543")
-    print(ret_js)
+    ret_js = json.loads(anvil.server.call("is_1", "14446543"))
+    
+    print(ret_js['nume'])
     pass
+
+  def text_box_2_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
+  def text_box_2_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    ret_js = json.loads(anvil.server.call("is_1", self.text_box_2.text))
+    
+    self.text_box_3.text = ret_js['nume']
+    pass
+
+
 
 
