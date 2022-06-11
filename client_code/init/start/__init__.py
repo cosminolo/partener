@@ -37,7 +37,7 @@ class start(startTemplate):
     pass
   def con_drop5(self):
     self.drop_down_5.items = []
-    for art in ['Agricultura', 'Comert', 'Constructii', 'Industrie',
+    for art in [' ', 'Agricultura', 'Comert', 'Constructii', 'Industrie',
                 'Servicii', 'Transporturi', 'Turism','Alte ramuri']:
       self.drop_down_5.items.append(art)
     self.drop_down_5.items = self.drop_down_5.items
@@ -109,13 +109,17 @@ class start(startTemplate):
       self.text_box_4.text = self.clr_str(ret_js["adresa"])
       self.text_box_7.text = self.clr_str(ret_js["orc"])
       self.text_box_5.text = self.clr_str(ret_js["caen"]) + "-" + self.clr_str(ret_js["caen_d"])
-      self.text_area_1.text = "A incheiat anul" + self.clr_str(ret_js["an_incheiat"]) + ' &_
-                              " cu o cifra de afaceri de " + self.clr_str(ret_js["cifra_afaceri"])
+      s1 = "A incheiat anul " + self.clr_str(ret_js["an_incheiat"])
+      s2 = " cu o cifra de afaceri de " + self.clr_str(ret_js["cifra_afaceri"]) + " lei "
+      s3 = " si un rezultat de " + self.clr_str(ret_js["profit"]) + " lei."
+      self.text_area_1.text =  s1 + s2+ s3
+   
     except:
       self.text_box_3.text = ""
       self.text_box_4.text = ""
       self.text_box_7.text = ""
       self.text_box_5.text = ""     
+      self.text_area_1.text = ""
       
   pass
 
