@@ -109,7 +109,7 @@ class start(startTemplate):
       self.text_box_4.text = self.clr_str(ret_js["adresa"])
       self.text_box_7.text = self.clr_str(ret_js["orc"])
       self.text_box_5.text = self.clr_str(ret_js["caen"]) + "-" + self.clr_str(ret_js["caen_d"])
-      self.text_area_1.text = "A incheiat anul" + self.clr_str(ret_js["an_incheiat"]) +
+      self.text_area_1.text = "A incheiat anul" + self.clr_str(ret_js["an_incheiat"]) + ' &_
                               " cu o cifra de afaceri de " + self.clr_str(ret_js["cifra_afaceri"])
     except:
       self.text_box_3.text = ""
