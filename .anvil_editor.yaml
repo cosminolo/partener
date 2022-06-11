@@ -4,7 +4,8 @@ unique_ids:
     init.fin: KIZ2DP5TELNC53GN65SETKFJ54X5XDAT
     init.start: 27GJKF6OHOFDOWXMU63QRNXGJX2ZUOOZ
   modules: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: MPLUV3QGPINJGQI4QW3SR4HMV3GP4KA5
   assets:
     standard-page.html: AXGMYXHKH7N2QSPELQUJ7WP2E2VQYDS2
     theme.css: SOCFCOEF6I4VUZBWL67I3MNLACKHBHKH

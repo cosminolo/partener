@@ -1,5 +1,6 @@
 from ._anvil_designer import startTemplate
 from anvil import *
+import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
 import anvil.users
@@ -90,8 +91,10 @@ class start(startTemplate):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     
-    btn = Button(text="Click me!")
-    self.xy_panel_2.add_component(btn, x=0, y=1, width=50)
+    # btn = Button(text="Click me!")
+    #self.xy_panel_2.add_component(btn, x=0, y=1, width=50)
+    ret_js = anvil.server.call("is_1", "14446543")
+    print(ret_js)
     pass
 
 
