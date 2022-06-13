@@ -43,4 +43,18 @@ db_schema:
     - name: last_login
       admin_ui: {width: 200}
       type: datetime
+  lucru:
+    title: lucru
+    client: none
+    server: full
+    columns:
+    - name: js_tva
+      admin_ui: {width: 200}
+      type: simpleObject
+    - name: js_bil
+      admin_ui: {width: 200}
+      type: simpleObject
+    - name: user
+      admin_ui: {width: 200}
+      type: string
 renamed: true
