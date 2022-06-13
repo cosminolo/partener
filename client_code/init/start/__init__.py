@@ -14,15 +14,61 @@ class start(startTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.con_drop1()
-    self.con_drop2()
-    self.con_drop4()
-    self.con_drop5()
+    self.con_drop2()    
+    
     
   def con_drop1(self):
     self.drop_down_1.items = []
     for art in [' ', 'S.R.L.', 'S.A', 'PFA', 'II', 'SRL-D']:
       self.drop_down_1.items.append(art)
       self.drop_down_1.items = self.drop_down_1.items
+    self.drop_down_4.items = []
+    for art in [' ','Lei', 'Eur', 'Usd']:
+      self.drop_down_4.items.append(art)
+    self.drop_down_4.items = self.drop_down_4.items
+    self.drop_down_5.items = []
+    for art in [' ', 'Agricultura', 'Comert', 'Constructii', 'Industrie',
+                'Servicii', 'Transporturi', 'Turism','Alte ramuri']:
+      self.drop_down_5.items.append(art)
+    self.drop_down_5.items = self.drop_down_5.items  
+    self.drop_down_6.items = []
+    for art in [' ','DA', 'NU']:
+      self.drop_down_6.items.append(art)
+    self.drop_down_6.items = self.drop_down_6.items  
+    self.drop_down_7.items = []
+    for art in [' ', '0', 'Intre 1 si sub 10 salariati',
+                'Intre 10 si sub 50 salariati', 'Peste 50 de salariati']:
+      self.drop_down_7.items.append(art)
+    self.drop_down_7.items = self.drop_down_7.items 
+    self.drop_down_8.items = []
+    for art in [' ','Clientul este  vizibil intr-o piata cu acoperire nationala/internationala',
+                'Clientul este  vizibil intr-o piata regionala',
+                'Clientul este  vizibil intr-o piata limitata la 2 judete',
+                'Clientul are o vizibilitate redusa in piata de profil']:
+      self.drop_down_8.items.append(art)
+    self.drop_down_8.items = self.drop_down_8.items   
+    self.drop_down_9.items = []
+    for art in [' ','Competitie ridicata cu intrare grea pe piata',
+                'Competitie redusa cu intrare grea pe piata',
+                'Competitie redusa cu intrare usoara pe piata',
+                'Competitie inexistenta (nisa de piata)']:
+      self.drop_down_9.items.append(art)
+    self.drop_down_9.items = self.drop_down_9.items    
+    self.drop_down_10.items = []
+    for art in [' ','Neagresiva, merge cu produse de inalta calitate',
+                'Neagresiva, mizeaza pe volumul produselor comercializate',
+                'Agresiva, merge cu produse exclusiviste',
+                'Nu are strategie, se acomodeaza pietei']:
+      self.drop_down_10.items.append(art)
+    self.drop_down_10.items = self.drop_down_10.items    
+    self.drop_down_11.items = []
+    for art in [' ','Management experimentat cu functiile executive separate',
+                'Management experimentat fara functii executive separate',
+                'Management fara experienta si fara functii executive separate',
+                'Activitatea depinde de o persoana cheie']:
+      self.drop_down_11.items.append(art)
+    self.drop_down_11.items = self.drop_down_11.items    
+    
     pass
   def con_drop2(self):
     self.drop_down_2.items = []
@@ -30,19 +76,8 @@ class start(startTemplate):
       self.drop_down_2.items.append(art)
     self.drop_down_2.items = self.drop_down_2.items
     pass
-  def con_drop4(self):
-    self.drop_down_4.items = []
-    for art in [' ','Lei', 'Eur', 'Usd']:
-      self.drop_down_4.items.append(art)
-    self.drop_down_4.items = self.drop_down_4.items
-    pass
-  def con_drop5(self):
-    self.drop_down_5.items = []
-    for art in [' ', 'Agricultura', 'Comert', 'Constructii', 'Industrie',
-                'Servicii', 'Transporturi', 'Turism','Alte ramuri']:
-      self.drop_down_5.items.append(art)
-    self.drop_down_5.items = self.drop_down_5.items
-    pass
+ 
+  
   def drop_down_2_change(self, **event_args):
     if self.drop_down_2.selected_value == 'garantat cu echipamente/imobile/etc' or self.drop_down_2.selected_value == 'garantat cu mix (fond si alte garantii)':
        self.drop_down_3.items = []
