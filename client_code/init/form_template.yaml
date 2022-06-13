@@ -49,6 +49,14 @@ components:
       icon: ''}
     name: link_2
     layout_properties: {slot: title, grid_position: 'YTGGZB,MUEBTJ'}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: LOg out, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_1
+    layout_properties: {grid_position: 'PGUVYA,CQBJID'}
+    event_bindings: {click: button_1_click}
 - type: Image
   properties: {role: null, vertical_align: center, height: 528.2727241516113, tooltip: '',
     border: '', foreground: '', visible: true, display_mode: zoom_to_fill, spacing_above: small,

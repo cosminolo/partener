@@ -10,7 +10,7 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: init.start}
+startup: {type: form, module: init}
 package_name: Partener
 allow_embedding: false
 name: Partener
@@ -19,7 +19,7 @@ metadata: {}
 db_schema:
   users:
     title: Users
-    client: none
+    client: full
     server: full
     columns:
     - name: email
@@ -43,18 +43,21 @@ db_schema:
     - name: last_login
       admin_ui: {width: 200}
       type: datetime
+    - name: remembered_logins
+      admin_ui: {width: 200}
+      type: simpleObject
   lucru:
     title: lucru
-    client: none
+    client: full
     server: full
     columns:
+    - name: user
+      admin_ui: {width: 200}
+      type: string
     - name: js_tva
       admin_ui: {width: 200}
       type: simpleObject
     - name: js_bil
       admin_ui: {width: 200}
       type: simpleObject
-    - name: user
-      admin_ui: {width: 200}
-      type: string
 renamed: true
