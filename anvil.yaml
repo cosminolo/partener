@@ -12,7 +12,7 @@ services:
   server_config: {}
 startup: {type: form, module: init}
 package_name: Partener
-allow_embedding: false
+allow_embedding: true
 name: Partener
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
 metadata: {}
