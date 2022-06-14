@@ -42,6 +42,12 @@ class init(initTemplate):
     self.ups()
     pass
 
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    anvil.users.login_with_form()
+    pass
+
+
 
 
 
