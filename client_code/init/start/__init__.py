@@ -15,7 +15,7 @@ class start(startTemplate):
     self.init_components(**properties)
     self.con_drop1()
     self.con_drop2()    
-    
+    self.text_box_1.tag.name = 1
     
   def con_drop1(self):
     self.drop_down_1.items = []
@@ -200,12 +200,13 @@ class start(startTemplate):
 
   def button_4_click(self, **event_args):
     #print(self.grid_panel_1.txb24.text)
-    x = self.grid_panel_1.get_components()
-    for t in range (1, len(x)):    
+    #x = self.grid_panel_1.get_components()
+    #for t in range (1, len(x)):    
      # if type(t) is Label:
-     print (x[t])
+     #print (x[t])
     #print(self.place24.text)
-    #print(self.txb[24].text)
+    tbx = "self.text_box" + "1" + ".text"
+    print(tbx)
     pass
 
 
