@@ -28,8 +28,11 @@ class verific(verificTemplate):
      pass
 
   def check_box_1_change(self, **event_args):
-    tva = anvil.server.call("get_tva", self.ups())
-    self.text_area_1.text = tva['info_t']
+    try:
+      tva = anvil.server.call("get_tva", self.ups())
+      self.text_area_1.text = tva['info_t']
+    except:
+      pass
     pass
   def ups(self):
       user = anvil.users.get_user()
