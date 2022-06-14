@@ -14,6 +14,12 @@ class init(initTemplate):
     self.init_components(**properties)
     anvil.users.login_with_form()
     self.ups()
+    self.link_1.width= 120
+    self.link_2.width= 120
+    
+    self.button_1.width=50
+    self.button_2.width=50
+    self.column_panel_1.width=100
     
   def ups(self):
       # Get the currently logged in user (if any)
@@ -45,6 +51,7 @@ class init(initTemplate):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     anvil.users.login_with_form()
+    self.ups()
     pass
 
 
