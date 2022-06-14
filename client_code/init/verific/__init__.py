@@ -51,8 +51,14 @@ class verific(verificTemplate):
 
   def button_5_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.text_box_1.text = self.item['denumire']
+    self.text_box_1.text = self.item[ 'denumire' ]
     pass
+
+  def text_box_1_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.text_box_1.text = self.item[ 'denumire' ]
+    pass
+
 
 
 
