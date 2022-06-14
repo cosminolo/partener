@@ -128,4 +128,13 @@ components:
     properties: {height: 111.1597}
     name: text_area_2
     layout_properties: {x: 79.9826431274414, y: 85, width: 999}
+- type: Button
+  properties: {text: button_5}
+  name: button_5
+  layout_properties: {x: -9.25, y: 176, width: 100, grid_position: 'HMDWLU,ZNUBWJ'}
+  event_bindings: {click: button_5_click}
+- type: TextBox
+  properties: {}
+  name: text_box_1
+  layout_properties: {grid_position: 'HMDWLU,BCMTXJ'}
 is_package: true

@@ -49,6 +49,12 @@ class verific(verificTemplate):
     self.text_area_2.text = bil
     pass
 
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.text_box_1.text = self.item['denumire']
+    pass
+
+
 
 
 
