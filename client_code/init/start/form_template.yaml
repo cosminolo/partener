@@ -179,6 +179,11 @@ components:
       include_placeholder: false
     name: drop_down_4
     layout_properties: {x: 230.25, y: 55.97917175292969, width: 67}
+  - type: Button
+    properties: {text: button_4}
+    name: button_4
+    layout_properties: {x: 298.75, y: 35.09375, width: 100}
+    event_bindings: {click: button_4_click}
 - type: GridPanel
   properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
     border: '', visible: true, role: null, tooltip: ''}

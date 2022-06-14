@@ -198,5 +198,16 @@ class start(startTemplate):
     open_form('init.verific')
     pass
 
+  def button_4_click(self, **event_args):
+    #print(self.grid_panel_1.txb24.text)
+    x = self.grid_panel_1.get_components()
+    for t in range (1, len(x)):    
+     # if type(t) is Label:
+     print (x[t])
+    #print(self.place24.text)
+    #print(self.txb[24].text)
+    pass
+
+
 
 
