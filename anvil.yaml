@@ -46,6 +46,9 @@ db_schema:
     - name: remembered_logins
       admin_ui: {width: 200}
       type: simpleObject
+    - name: n_password_failures
+      admin_ui: {width: 200}
+      type: number
   lucru:
     title: lucru
     client: full
@@ -58,6 +61,12 @@ db_schema:
       admin_ui: {width: 200}
       type: simpleObject
     - name: js_bil
+      admin_ui: {width: 200}
+      type: simpleObject
+    - name: js_gen_gol
+      admin_ui: {width: 200}
+      type: simpleObject
+    - name: js_gen
       admin_ui: {width: 200}
       type: simpleObject
 renamed: true

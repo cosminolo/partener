@@ -25,6 +25,9 @@ def add_user(id):
   break
  else:
   app_tables.lucru.add_row(user=id)
+  js = anvil.server.call("j_g_gol")
+  us_row = app_tables.lucru.get(user=id)
+  us_row.update(js_gen_gol=js, js_gen=js ) 
 pass
 
 @anvil.server.callable
@@ -57,4 +60,7 @@ def get_bil(id):
       return js
   except:
     pass
+
+pass
+ 
 
