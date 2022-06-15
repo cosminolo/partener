@@ -140,8 +140,8 @@ class start(startTemplate):
           self.drop_down_3.items.append(art)
       self.drop_down_3.items = self.drop_down_3.items     
       
-    #if self.drop_down_2.selected_value.strip():
-    #    self.up_json()  
+    if self.drop_down_2.selected_value:
+        self.up_json()  
     pass
 
     # Any code you write here will run when the form opens.
@@ -233,7 +233,7 @@ class start(startTemplate):
 
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_1.selected_value.strip():
+    if self.drop_down_1.selected_value:
         self.up_json() 
     pass
 
@@ -245,55 +245,55 @@ class start(startTemplate):
 
   def drop_down_3_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_3.selected_value.strip():
+    if self.drop_down_3.selected_value:
        self.up_json() 
     pass
 
   def drop_down_4_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_4.selected_value.strip():
+    if self.drop_down_4.selected_value:
         self.up_json() 
     pass
 
   def drop_down_5_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_5.selected_value.strip():
+    if self.drop_down_5.selected_value:
         self.up_json() 
     pass
 
   def drop_down_6_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_6.selected_value.strip():
+    if self.drop_down_6.selected_value:
         self.up_json() 
     pass
 
   def drop_down_7_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_7.selected_value.strip():
+    if self.drop_down_7.selected_value:
         self.up_json() 
     pass
 
   def drop_down_8_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_8.selected_value.strip():
+    if self.drop_down_8.selected_value:
         self.up_json() 
     pass
 
   def drop_down_9_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_9.selected_value.strip():
+    if self.drop_down_9.selected_value:
         self.up_json() 
     pass
 
   def drop_down_10_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_10.selected_value.strip():
+    if self.drop_down_10.selected_value:
         self.up_json() 
     pass
 
   def drop_down_11_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_11.selected_value.strip():
+    if self.drop_down_11.selected_value:
         self.up_json() 
     pass
 
