@@ -30,6 +30,15 @@ components:
     properties: {}
     name: text_box_8
     layout_properties: {row: YHNDOO, width_xs: 4, col_xs: 5}
+    event_bindings: {pressed_enter: text_box_8_pressed_enter}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 25, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:fast-forward'}
+    name: button_3
+    layout_properties: {row: YHNDOO, width_xs: 2, col_xs: 10, width: 24.5781}
+    event_bindings: {click: button_3_click}
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: 'theme:Secondary 500', visible: true, text: save, font_size: 25,
@@ -39,46 +48,12 @@ components:
     layout_properties: {x: 963.046875, y: 71, width: 79.1562, row: YHNDOO, width_xs: 2,
       col_xs: 8}
     event_bindings: {click: button_2_click}
-  - type: Button
-    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 25, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: 'fa:fast-forward'}
-    name: button_3
-    layout_properties: {row: YHNDOO, width_xs: 2, col_xs: 10, width: 24.5781}
-    event_bindings: {click: button_3_click}
 - type: XYPanel
   properties: {role: null, width: 1600, align: left, height: 109, tooltip: '', border: '',
     foreground: '', visible: true, spacing_above: none, spacing_below: none, background: ''}
   name: xy_panel_1
   layout_properties: {grid_position: 'NVVDXF,OKQWYE', full_width_row: true}
   components:
-  - type: DropDown
-    properties:
-      role: null
-      align: left
-      tooltip: ''
-      placeholder: ''
-      border: ''
-      enabled: true
-      foreground: ''
-      items: []
-      visible: true
-      font_size: 14
-      font: ''
-      spacing_above: small
-      spacing_below: small
-      italic: false
-      background: ''
-      bold: false
-      underline: false
-      include_placeholder: false
-    name: drop_down_3
-    layout_properties: {row: IAOFOS, width_xs: 4, col_xs: 8, x: 863.1458740234375,
-      y: 3, width: 399.938}
-    event_bindings: {change: drop_down_3_change}
-    data_bindings:
-    - {property: selected_value, code: 'self.item[''facilit'']', writeback: true}
   - type: DropDown
     properties:
       role: null
@@ -105,14 +80,6 @@ components:
     data_bindings:
     - {property: selected_value, code: 'self.item[''tip'']', writeback: true}
     event_bindings: {change: drop_down_1_change}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: de tipul, font_size: 16, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_4
-    layout_properties: {grid_position: 'DRDSDH,LKXHNF', full_width_row: false, row: IAOFOS,
-      width_xs: 1, col_xs: 7, x: 784.1255, y: 0, width: 61.9792}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Sunt o afacere de forma, font_size: 16, font: '', spacing_above: none,
@@ -199,11 +166,40 @@ components:
     data_bindings:
     - {property: selected_value, code: 'self.item[''valut'']', writeback: true}
     event_bindings: {change: drop_down_4_change}
-  - type: Button
-    properties: {text: button_4}
-    name: button_4
-    layout_properties: {x: 298.75, y: 35.09375, width: 100}
-    event_bindings: {click: button_4_click}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: de tipul, font_size: 16, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {grid_position: 'DRDSDH,LKXHNF', full_width_row: false, row: IAOFOS,
+      width_xs: 1, col_xs: 7, x: 350.125, y: 58.12495000000001, width: 61.9688}
+  - type: DropDown
+    properties:
+      role: null
+      align: left
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 14
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_3
+    layout_properties: {row: IAOFOS, width_xs: 4, col_xs: 8, x: 434.671875, y: 58.96875,
+      width: 448.938}
+    event_bindings: {change: drop_down_3_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''facilit'']', writeback: true}
 - type: GridPanel
   properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
     border: '', visible: true, role: null, tooltip: ''}

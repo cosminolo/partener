@@ -15,8 +15,8 @@ class start(startTemplate):
     self.init_components(**properties)
     self.con_drop1()
     self.con_drop2() 
-    js_lucru = anvil.server.call("prel_js_gol", self.ups(), 2)
-    
+    self.con_drop3()
+    js_lucru = anvil.server.call("prel_js_gol", self.ups(), 2)    
     self.item = js_lucru
     
   def con_drop1(self):
@@ -78,8 +78,30 @@ class start(startTemplate):
       self.drop_down_2.items.append(art)
     self.drop_down_2.items = self.drop_down_2.items
     pass
- 
+  def con_drop3(self):
+    self.drop_down_3.items = []
+    for art in [' ', 'Linie de Credit - acordare/suplimentare', 
+                'Linie de Credit - acordare/suplimentare',
+                'Linie de Credit - prelungire',
+                'Linie de Credit - suplimentare 10%',
+                'Credit pentru finantarea activitatii curente',
+                'Credit pentru achitarea datoriilor la buget',
+                'Credit ipotecar pentru investitii acordat PJ',
+                'Credit de investitii',
+                'Credit de investitii pentru achizia de teren pentru productia agricola',
+                'Descoperit de Cont pe Card Business - Client Nou, cu expunere sub 6 luni', 
+                'Descoperit de Cont pe Card Business - Client Existent, cu expunere de peste 6 luni',
+                'Visa Business',
+                'Activitate curenta agricultura 500 mii-FGCR', 
+                'Investitii in agricultura 500 mii-FGCR',
+                'Activitate curenta si investitii in agricultura 500 mii-FGCR' ,
+                'Credit pentru finantarea activitatii curente OUG 43/2013', 
+                'Credit pentru finantarea investitiilor in domeniul agricol OUG 43/2013',
+                'Credit pentru achizitia terenurilor cu destinatie agricola OUG 43/2013']:
   
+          self.drop_down_3.items.append(art)
+    self.drop_down_3.items = self.drop_down_3.items
+    pass
   def drop_down_2_change(self, **event_args):
     if self.drop_down_2.selected_value == 'garantat cu echipamente/imobile/etc' or self.drop_down_2.selected_value == 'garantat cu mix (fond si alte garantii)':
        self.drop_down_3.items = []
@@ -92,14 +114,15 @@ class start(startTemplate):
                 'Credit ipotecar pentru investitii acordat PJ',
                 'Credit de investitii',
                 'Credit de investitii pentru achizia de teren pentru productia agricola']:
-                self.drop_down_3.items.append(art)
+          self.drop_down_3.items.append(art)
        self.drop_down_3.items = self.drop_down_3.items
+      
     if self.drop_down_2.selected_value == 'negarantat':
       self.drop_down_3.items = []
       for art in [' ', 'Descoperit de Cont pe Card Business - Client Nou, cu expunere sub 6 luni', 
                 'Descoperit de Cont pe Card Business - Client Existent, cu expunere de peste 6 luni',
                 'Visa Business'] :
-                self.drop_down_3.items.append(art)
+         self.drop_down_3.items.append(art)
       self.drop_down_3.items = self.drop_down_3.items
       
     if self.drop_down_2.selected_value == 'valoare mica cu FGCR':
@@ -107,18 +130,18 @@ class start(startTemplate):
       for art in [' ', 'Activitate curenta agricultura 500 mii-FGCR', 
                 'Investitii in agricultura 500 mii-FGCR',
                 'Activitate curenta si investitii in agricultura 500 mii-FGCR'] :
-                self.drop_down_3.items.append(art)
+          self.drop_down_3.items.append(art)
       self.drop_down_3.items = self.drop_down_3.items  
     if self.drop_down_2.selected_value == 'OUG 43':
       self.drop_down_3.items = []
       for art in [' ', 'Credit pentru finantarea activitatii curente OUG 43/2013', 
                 'Credit pentru finantarea investitiilor in domeniul agricol OUG 43/2013',
                 'Credit pentru achizitia terenurilor cu destinatie agricola OUG 43/2013'] :
-                self.drop_down_3.items.append(art)
+          self.drop_down_3.items.append(art)
       self.drop_down_3.items = self.drop_down_3.items     
       
-    if self.drop_down_2.selected_value.strip():
-        self.up_json()  
+    #if self.drop_down_2.selected_value.strip():
+    #    self.up_json()  
     pass
 
     # Any code you write here will run when the form opens.
@@ -201,16 +224,7 @@ class start(startTemplate):
     open_form('init.verific')
     pass
 
-  def button_4_click(self, **event_args):
-    #print(self.grid_panel_1.txb24.text)
-    #x = self.grid_panel_1.get_components()
-    #for t in range (1, len(x)):    
-     # if type(t) is Label:
-     #print (x[t])
-    #print(self.place24.text)
-    tbx = "self.text_box" + "1" + ".text"
-    print(tbx)
-    pass
+  
   
   def up_json(self):
       x = json.dumps(self.item, indent=4)
@@ -231,7 +245,7 @@ class start(startTemplate):
 
   def drop_down_3_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_3.selected_value:
+    if self.drop_down_3.selected_value.strip():
        self.up_json() 
     pass
 
@@ -351,6 +365,11 @@ class start(startTemplate):
     if self.text_box_3.text.strip():
        self.up_json() 
     pass
+
+  def text_box_8_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
 
  
 
