@@ -117,8 +117,8 @@ class start(startTemplate):
                 self.drop_down_3.items.append(art)
       self.drop_down_3.items = self.drop_down_3.items     
       
-    if self.drop_down_2.selected_value.strip():
-        self.up_json()  
+    #if self.drop_down_2.selected_value.strip():
+     #   self.up_json()  
     pass
 
     # Any code you write here will run when the form opens.
@@ -180,6 +180,8 @@ class start(startTemplate):
            except:
               self.text_box_5.text = ""
               pass
+    if self.text_box_2.text.strip():
+      self.up_json()           
   pass
 
   def clr_str(self, str_1):
@@ -286,6 +288,76 @@ class start(startTemplate):
   def text_box_1_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
+
+  def text_box_3_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    if self.text_box_3.text.strip():
+      self.up_json()  
+    pass
+
+  def text_box_4_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    if self.text_box_4.text.strip():
+      self.up_json()  
+    pass
+
+  def text_box_7_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    if self.text_box_7.text.strip():
+      self.up_json()  
+    pass
+
+  def text_box_5_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    if self.text_box_5.text.strip():
+      self.up_json()  
+    pass
+
+  def text_box_7_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    if self.text_box_7.text.strip():
+      self.up_json()  
+    pass
+
+  def text_area_1_lost_focus(self, **event_args):
+    """This method is called when the text area loses focus"""
+    if self.text_area_1.text.strip():
+      self.up_json()  
+    pass
+
+  def text_area_2_lost_focus(self, **event_args):
+    """This method is called when the text area loses focus"""
+    if self.text_area_2.text.strip():
+      self.up_json()  
+    pass
+
+  def text_area_4_lost_focus(self, **event_args):
+    """This method is called when the text area loses focus"""
+    if self.text_area_4.text.strip():
+      self.up_json()  
+    pass
+
+  def text_box_6_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    if self.text_box_6.text.strip():
+      self.up_json()  
+    pass
+
+  def text_area_3_lost_focus(self, **event_args):
+    """This method is called when the text area loses focus"""
+    if self.text_area_3.text.strip():
+      self.up_json()  
+    pass
+
+
+
+
+
+
+
+
+
+
 
 
 

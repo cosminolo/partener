@@ -207,7 +207,7 @@ components:
   name: grid_panel_1
   layout_properties:
     col_widths: {}
-    grid_position: OOJHYY,KOMLJW
+    grid_position: CGIWLE,XTYJZP
     full_width_row: true
   components:
   - type: Label
@@ -233,6 +233,7 @@ components:
     properties: {}
     name: text_box_3
     layout_properties: {row: GGMRJW, width_xs: 6, col_xs: 6}
+    event_bindings: {lost_focus: text_box_3_lost_focus}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Sediu social, font_size: null, font: '', spacing_above: small,
@@ -244,6 +245,7 @@ components:
     properties: {}
     name: text_box_4
     layout_properties: {row: MMGKZW, width_xs: 7, col_xs: 1}
+    event_bindings: {lost_focus: text_box_4_lost_focus}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Nr ORC, font_size: null, font: '', spacing_above: small,
@@ -255,6 +257,7 @@ components:
     properties: {}
     name: text_box_7
     layout_properties: {row: MMGKZW, width_xs: 3, col_xs: 9}
+    event_bindings: {lost_focus: text_box_7_lost_focus, pressed_enter: text_box_7_pressed_enter}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: CAEN, font_size: null, font: '', spacing_above: small,
@@ -266,6 +269,7 @@ components:
     properties: {}
     name: text_box_5
     layout_properties: {row: TETFYO, width_xs: 3, col_xs: 1}
+    event_bindings: {lost_focus: text_box_5_lost_focus}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: "Ramura de\n activitate", font_size: null, font: '', spacing_above: small,
@@ -301,6 +305,7 @@ components:
     properties: {height: 76}
     name: text_area_1
     layout_properties: {row: LRSVGK, width_xs: 9, col_xs: 3}
+    event_bindings: {lost_focus: text_area_1_lost_focus}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Asociati/actionari
@@ -314,6 +319,7 @@ components:
     properties: {}
     name: text_area_2
     layout_properties: {row: PWISKB, width_xs: 9, col_xs: 3}
+    event_bindings: {lost_focus: text_area_2_lost_focus}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Administrator (i), font_size: null, font: '', spacing_above: small,
@@ -325,6 +331,7 @@ components:
     properties: {}
     name: text_area_4
     layout_properties: {row: MBOIDG, width_xs: 9, col_xs: 3}
+    event_bindings: {lost_focus: text_area_4_lost_focus}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Nr. salariati, font_size: null, font: '', spacing_above: small,
@@ -348,6 +355,7 @@ components:
     properties: {}
     name: text_box_6
     layout_properties: {row: NQOLUW, width_xs: 3, col_xs: 6}
+    event_bindings: {lost_focus: text_box_6_lost_focus}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Societati din cadrul grupului
@@ -361,6 +369,7 @@ components:
     properties: {height: 91}
     name: text_area_3
     layout_properties: {row: SBNSTJ, width_xs: 9, col_xs: 3}
+    event_bindings: {lost_focus: text_area_3_lost_focus}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Piata de desfacere, font_size: null, font: '', spacing_above: small,
