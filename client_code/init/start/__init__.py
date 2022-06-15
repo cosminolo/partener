@@ -15,7 +15,8 @@ class start(startTemplate):
     self.init_components(**properties)
     self.con_drop1()
     self.con_drop2() 
-    js_lucru = anvil.server.call("prel_js_gol", self.ups())
+    js_lucru = anvil.server.call("prel_js_gol", self.ups(), 2)
+    
     self.item = js_lucru
     
   def con_drop1(self):
@@ -116,7 +117,8 @@ class start(startTemplate):
                 self.drop_down_3.items.append(art)
       self.drop_down_3.items = self.drop_down_3.items     
       
-      
+    if self.drop_down_2.selected_value.strip():
+        self.up_json()  
     pass
 
     # Any code you write here will run when the form opens.
@@ -209,6 +211,93 @@ class start(startTemplate):
     tbx = "self.text_box" + "1" + ".text"
     print(tbx)
     pass
+  
+  def up_json(self):
+      x = json.loads(json.dumps(self.item))
+      anvil.server.call("upp_js", self.ups(), x) 
+      pass
+
+  def drop_down_1_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_1.selected_value.strip():
+        self.up_json() 
+    pass
+
+  def text_box_1_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    if self.text_box_1.text.strip():
+      self.up_json()  
+    pass
+
+  def drop_down_3_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_3.selected_value.strip():
+        self.up_json() 
+    pass
+
+  def drop_down_4_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_4.selected_value.strip():
+        self.up_json() 
+    pass
+
+  def drop_down_5_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_5.selected_value.strip():
+        self.up_json() 
+    pass
+
+  def drop_down_6_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_6.selected_value.strip():
+        self.up_json() 
+    pass
+
+  def drop_down_7_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_7.selected_value.strip():
+        self.up_json() 
+    pass
+
+  def drop_down_8_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_8.selected_value.strip():
+        self.up_json() 
+    pass
+
+  def drop_down_9_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_9.selected_value.strip():
+        self.up_json() 
+    pass
+
+  def drop_down_10_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_10.selected_value.strip():
+        self.up_json() 
+    pass
+
+  def drop_down_11_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_11.selected_value.strip():
+        self.up_json() 
+    pass
+
+  def text_box_1_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

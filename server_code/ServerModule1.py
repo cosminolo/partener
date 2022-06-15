@@ -62,12 +62,25 @@ def get_bil(id):
     pass
 pass
 @anvil.server.callable
-def prel_js_gol(id):
+
+def prel_js_gol(id, tip):
   try:
-      js=app_tables.lucru.get(user=id)["js_gen"]
-      return js
+      if tip == 1:
+        js=app_tables.lucru.get(user=id)["js_gen_gol"]
+        return js
+      if tip == 2 :
+        js=app_tables.lucru.get(user=id)["js_gen"]
+        return js
   except:
     pass
 pass
+@anvil.server.callable
+
+def upp_js(id,js):
+  try:
+    id_row = app_tables.lucru.get(user=id)
+    id_row.update(js_gen=js)
+  except:
+    pass
  
 
