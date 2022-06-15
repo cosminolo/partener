@@ -25,10 +25,10 @@ components:
   components:
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: 'theme:White',
-      visible: true, text: Deschide nou, font_size: 14, wrap_on: mobile, font: '',
-      col_spacing: tiny, spacing_above: small, icon_align: left, col_widths: '{}',
-      spacing_below: medium, italic: false, background: 'theme:Primary 500', bold: true,
-      underline: false, icon: ''}
+      visible: true, text: Start, font_size: 14, wrap_on: mobile, font: '', col_spacing: tiny,
+      spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: medium,
+      italic: false, background: 'theme:Primary 500', bold: true, underline: false,
+      icon: ''}
     name: link_1
     layout_properties: {grid_position: 'MUDFGM,GAWLVO'}
     event_bindings: {click: link_1_click}
