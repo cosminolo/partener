@@ -117,8 +117,8 @@ class start(startTemplate):
                 self.drop_down_3.items.append(art)
       self.drop_down_3.items = self.drop_down_3.items     
       
-    #if self.drop_down_2.selected_value.strip():
-     #   self.up_json()  
+    if self.drop_down_2.selected_value.strip():
+        self.up_json()  
     pass
 
     # Any code you write here will run when the form opens.
@@ -138,9 +138,7 @@ class start(startTemplate):
     print(ret_js['nume'])
     pass
 
-  def text_box_2_pressed_enter(self, **event_args):
-    """This method is called when the user presses Enter in this text box"""
-    pass
+  
 
   def text_box_2_lost_focus(self, **event_args):
     try:
@@ -180,8 +178,8 @@ class start(startTemplate):
            except:
               self.text_box_5.text = ""
               pass
-    if self.text_box_2.text.strip():
-      self.up_json()           
+      if self.text_box_2.text.strip():
+       self.up_json()         
   pass
 
   def clr_str(self, str_1):
@@ -215,8 +213,8 @@ class start(startTemplate):
     pass
   
   def up_json(self):
-      x = json.loads(json.dumps(self.item))
-      anvil.server.call("upp_js", self.ups(), x) 
+      x = json.dumps(self.item, indent=4)
+      anvil.server.call("upp_js", self.ups(), json.loads(x))
       pass
 
   def drop_down_1_change(self, **event_args):
@@ -233,8 +231,8 @@ class start(startTemplate):
 
   def drop_down_3_change(self, **event_args):
     """This method is called when an item is selected"""
-    if self.drop_down_3.selected_value.strip():
-        self.up_json() 
+    if self.drop_down_3.selected_value:
+       self.up_json() 
     pass
 
   def drop_down_4_change(self, **event_args):
@@ -289,11 +287,7 @@ class start(startTemplate):
     """This method is called when the user presses Enter in this text box"""
     pass
 
-  def text_box_3_lost_focus(self, **event_args):
-    """This method is called when the TextBox loses focus"""
-    if self.text_box_3.text.strip():
-      self.up_json()  
-    pass
+ 
 
   def text_box_4_lost_focus(self, **event_args):
     """This method is called when the TextBox loses focus"""
@@ -348,6 +342,20 @@ class start(startTemplate):
     if self.text_area_3.text.strip():
       self.up_json()  
     pass
+
+  
+ 
+
+  def text_box_3_change(self, **event_args):
+    """This method is called when the text in this text box is edited"""
+    if self.text_box_3.text.strip():
+       self.up_json() 
+    pass
+
+ 
+
+
+
 
 
 

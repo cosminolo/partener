@@ -77,6 +77,8 @@ components:
     layout_properties: {row: IAOFOS, width_xs: 4, col_xs: 8, x: 863.1458740234375,
       y: 3, width: 399.938}
     event_bindings: {change: drop_down_3_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''facilit'']', writeback: true}
   - type: DropDown
     properties:
       role: null
@@ -154,6 +156,7 @@ components:
     name: label_3
     layout_properties: {grid_position: 'DRDSDH,EJEKSW', full_width_row: false, row: IAOFOS,
       width_xs: 2, col_xs: 3, x: 281.72868701171876, y: 2.1458000000000084, width: 142.938}
+    data_bindings: []
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: in suma de, font_size: 16, font: '', spacing_above: small,
@@ -221,7 +224,9 @@ components:
     properties: {}
     name: text_box_2
     layout_properties: {row: GGMRJW, width_xs: 2, col_xs: 1}
-    event_bindings: {lost_focus: text_box_2_lost_focus, pressed_enter: text_box_2_pressed_enter}
+    event_bindings: {lost_focus: text_box_2_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''cui'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Denumire, font_size: null, font: '', spacing_above: small,
@@ -233,7 +238,9 @@ components:
     properties: {}
     name: text_box_3
     layout_properties: {row: GGMRJW, width_xs: 6, col_xs: 6}
-    event_bindings: {lost_focus: text_box_3_lost_focus}
+    event_bindings: {change: text_box_3_change}
+    data_bindings:
+    - {property: text, code: 'self.item[''den'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Sediu social, font_size: null, font: '', spacing_above: small,
@@ -246,6 +253,8 @@ components:
     name: text_box_4
     layout_properties: {row: MMGKZW, width_xs: 7, col_xs: 1}
     event_bindings: {lost_focus: text_box_4_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''sediu'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Nr ORC, font_size: null, font: '', spacing_above: small,
@@ -258,6 +267,8 @@ components:
     name: text_box_7
     layout_properties: {row: MMGKZW, width_xs: 3, col_xs: 9}
     event_bindings: {lost_focus: text_box_7_lost_focus, pressed_enter: text_box_7_pressed_enter}
+    data_bindings:
+    - {property: text, code: 'self.item[''onrc'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: CAEN, font_size: null, font: '', spacing_above: small,
@@ -270,6 +281,8 @@ components:
     name: text_box_5
     layout_properties: {row: TETFYO, width_xs: 3, col_xs: 1}
     event_bindings: {lost_focus: text_box_5_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''caen'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: "Ramura de\n activitate", font_size: null, font: '', spacing_above: small,
@@ -282,6 +295,8 @@ components:
     name: drop_down_5
     layout_properties: {row: TETFYO, width_xs: 2, col_xs: 6}
     event_bindings: {change: drop_down_5_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''ramura'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: "Cultiv \ncereale", font_size: null, font: '', spacing_above: small,
@@ -294,6 +309,8 @@ components:
     name: drop_down_6
     layout_properties: {row: TETFYO, width_xs: 1, col_xs: 10}
     event_bindings: {change: drop_down_6_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''cereale'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Descriere generala a socieatii si activitatii, font_size: null,
@@ -306,6 +323,8 @@ components:
     name: text_area_1
     layout_properties: {row: LRSVGK, width_xs: 9, col_xs: 3}
     event_bindings: {lost_focus: text_area_1_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''descriere'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Asociati/actionari
@@ -320,6 +339,8 @@ components:
     name: text_area_2
     layout_properties: {row: PWISKB, width_xs: 9, col_xs: 3}
     event_bindings: {lost_focus: text_area_2_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''asociati'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Administrator (i), font_size: null, font: '', spacing_above: small,
@@ -332,6 +353,8 @@ components:
     name: text_area_4
     layout_properties: {row: MBOIDG, width_xs: 9, col_xs: 3}
     event_bindings: {lost_focus: text_area_4_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''admin'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Nr. salariati, font_size: null, font: '', spacing_above: small,
@@ -344,6 +367,8 @@ components:
     name: drop_down_7
     layout_properties: {row: NQOLUW, width_xs: 2, col_xs: 2}
     event_bindings: {change: drop_down_7_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''nrsal'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Telefon, font_size: null, font: '', spacing_above: small,
@@ -356,6 +381,8 @@ components:
     name: text_box_6
     layout_properties: {row: NQOLUW, width_xs: 3, col_xs: 6}
     event_bindings: {lost_focus: text_box_6_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''telef'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Societati din cadrul grupului
@@ -370,6 +397,8 @@ components:
     name: text_area_3
     layout_properties: {row: SBNSTJ, width_xs: 9, col_xs: 3}
     event_bindings: {lost_focus: text_area_3_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''soc_grup'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Piata de desfacere, font_size: null, font: '', spacing_above: small,
@@ -382,6 +411,8 @@ components:
     name: drop_down_8
     layout_properties: {row: IOVAMB, width_xs: 5, col_xs: 2}
     event_bindings: {change: drop_down_8_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''piata'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Concurenta, font_size: null, font: '', spacing_above: small,
@@ -394,6 +425,8 @@ components:
     name: drop_down_9
     layout_properties: {row: IOVAMB, width_xs: 4, col_xs: 8}
     event_bindings: {change: drop_down_9_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''concurenta'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Strategia
@@ -408,6 +441,8 @@ components:
     name: drop_down_10
     layout_properties: {row: EJSOCU, width_xs: 5, col_xs: 2}
     event_bindings: {change: drop_down_10_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''strategia'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: "Conducerea\n afacerii", font_size: null, font: '', spacing_above: small,
@@ -420,4 +455,6 @@ components:
     name: drop_down_11
     layout_properties: {row: EJSOCU, width_xs: 4, col_xs: 8}
     event_bindings: {change: drop_down_11_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''conducere'']', writeback: true}
 is_package: true

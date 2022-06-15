@@ -77,10 +77,10 @@ pass
 @anvil.server.callable
 
 def upp_js(id,js):
-  try:
+  
     id_row = app_tables.lucru.get(user=id)
     id_row.update(js_gen=js)
-  except:
+
     pass
  
 
