@@ -11,7 +11,7 @@ components:
   components:
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 30, font: '',
+      foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 20, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: 'fa:home'}
     name: button_1
@@ -20,7 +20,7 @@ components:
     event_bindings: {click: button_1_click}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 25, font: '',
+      foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 20, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: 'fa:fast-forward'}
     name: button_3
