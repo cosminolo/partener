@@ -7,7 +7,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-
+from ..init.start import start
 class init(initTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -34,9 +34,11 @@ class init(initTemplate):
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    if self.login_status.text != "":
-        
-        open_form("init.start")
+    if self.login_status.text != "":        
+        #open_form("init.start")
+        new_form = start()
+        self.column_panel_2.clear()
+        self.column_panel_2.add_component(new_form)
     else:
         anvil.users.login_with_form()
         self.ups()
