@@ -14,8 +14,9 @@ class start(startTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.con_drop1()
-    self.con_drop2()    
-    self.text_box_1.tag.name = 1
+    self.con_drop2() 
+    js_lucru = anvil.server.call("prel_js_gol", self.ups())
+    self.item = js_lucru
     
   def con_drop1(self):
     self.drop_down_1.items = []

@@ -26,6 +26,10 @@ components:
     name: label_1
     layout_properties: {grid_position: 'XJFENB,QZALOR', row: YHNDOO, width_xs: 2,
       col_xs: 3, width: 565.104}
+  - type: TextBox
+    properties: {}
+    name: text_box_8
+    layout_properties: {row: YHNDOO, width_xs: 4, col_xs: 5}
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: 'theme:Secondary 500', visible: true, text: save, font_size: 25,
@@ -95,6 +99,8 @@ components:
     name: drop_down_1
     layout_properties: {grid_position: 'DRDSDH,GCUICJ', full_width_row: false, row: IAOFOS,
       width_xs: 1, col_xs: 2, x: 198.25, y: 3, width: 73.9792}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''tip'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: de tipul, font_size: 16, font: '', spacing_above: small,
@@ -110,7 +116,8 @@ components:
       underline: false, icon: ''}
     name: label_2_copy
     layout_properties: {grid_position: 'DRDSDH,ZENTNH', full_width_row: false, row: IAOFOS,
-      width_xs: 2, col_xs: 0, x: 10, y: 6.9791717529296875, width: 187}
+      width_xs: 2, col_xs: 0, x: 10, y: 6.9791717529296875, width: 157}
+    data_bindings: []
   - type: DropDown
     properties:
       role: null
@@ -135,6 +142,8 @@ components:
     layout_properties: {grid_position: 'DRDSDH,AOVAHY', full_width_row: false, row: IAOFOS,
       width_xs: 2, col_xs: 5, x: 434.687, y: 4.833371752929679, width: 339.438}
     event_bindings: {change: drop_down_2_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''credit'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: si doresc un credit, font_size: 16, font: '', spacing_above: none,
@@ -157,6 +166,8 @@ components:
       background: '', bold: false, underline: false}
     name: text_box_1
     layout_properties: {x: 111.25, y: 55.97917175292969, width: 117}
+    data_bindings:
+    - {property: text, code: 'self.item[''suma'']', writeback: true}
   - type: DropDown
     properties:
       role: null
@@ -179,6 +190,8 @@ components:
       include_placeholder: false
     name: drop_down_4
     layout_properties: {x: 230.25, y: 55.97917175292969, width: 67}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''valut'']', writeback: true}
   - type: Button
     properties: {text: button_4}
     name: button_4
