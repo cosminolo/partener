@@ -76,7 +76,12 @@ class init(initTemplate):
     self.text_box_4.text = "{:%d.%m.%Y}".format(datetime.now())
     js = anvil.server.call("prel_js_gol", us, 2)    
     self.item = js
-    
+    c = confirm("Do you wish to continue?")    
+    if c == False :
+       self.visib(2)
+    if c== True:
+       anvil.server.call("arh", us, self.text_box_4.text, self.text_box_1.text, self.text_box_2.text, js )
+       self.visib(2)
     #self.text_box_1.text = js['den']
     #self.text_box_2.text = js['facilit']
     pass
@@ -90,7 +95,7 @@ class init(initTemplate):
       self.text_box_2.visible = True
       self.text_box_3.visible = True
       self.text_box_4.visible = True
-      self.button_3.visible = True
+    
       
     else:
       self.label_2.visible = False
@@ -101,13 +106,10 @@ class init(initTemplate):
       self.text_box_2.visible = False
       self.text_box_3.visible = False
       self.text_box_4.visible = False
-      self.button_3.visible = False
+    
     pass
 
-  def button_3_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    self.visib(2)
-    pass
+ 
 
 
 

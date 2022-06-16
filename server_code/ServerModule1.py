@@ -82,12 +82,16 @@ def prel_js_gol(id, tip):
     pass
 pass
 @anvil.server.callable
-
-def upp_js(id,js):
-  
+def upp_js(id,js):  
     id_row = app_tables.lucru.get(user=id)
     id_row.update(js_gen=js)
 
     pass
- 
-
+@anvil.server.callable
+def arh (us, dat, entit, facilit, j):
+  app_tables.arh.add_row(user=us,
+                          soc=entit,
+                          facilit=facilit,
+                          dat=dat,
+                          js_gen=j)
+pass
