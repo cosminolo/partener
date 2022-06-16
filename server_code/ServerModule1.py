@@ -95,3 +95,36 @@ def arh (us, dat, entit, facilit, j):
                           dat=dat,
                           js_gen=j)
 pass
+
+@anvil.server.callable
+def nr_rows(us):
+  nr = len(app_tables.arh.search(user=us))
+  return nr
+pass
+@anvil.server.callable
+def sele_us(us):
+  result = [
+        {
+            "soc": row['soc'],
+            "facilit": row['facilit'],
+            "dat":row['dat'],
+        }
+        for row in app_tables.arh.search(user=us)
+    ]
+  return result
+pass
+@anvil.server.callable
+def preia_inlucru(us, soc, facilit, dat):
+  js = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)["js_gen"]
+  id_row = app_tables.lucru.get(user=us)
+  id_row.update(js_gen=js)
+pass
+@anvil.server.callable
+def sterge_arh(us, soc, facilit, dat):
+ id_row = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
+ if id_row is not None:
+  id_row.delete()
+pass
+
+
+

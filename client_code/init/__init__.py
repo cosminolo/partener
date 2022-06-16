@@ -16,7 +16,8 @@ class init(initTemplate):
     self.init_components(**properties)
     anvil.users.login_with_form()
     self.ups()
-    #self.column_panel_2.visible=False
+    self.grid_panel_1.clear()
+    self.visib(2)
     global txb
     txb = self.txb = {}
   def ups(self):
@@ -35,56 +36,68 @@ class init(initTemplate):
   def link_3_click(self, **event_args):
     """This method is called when the link is clicked"""
     if self.login_status.text != "": 
-        anvil.server.call("app_new", self.login_status.text)      
-        open_form("init.start")
-        #new_form = start()
-        #self.column_panel_2.clear()
-        #self.column_panel_2.add_component(new_form)
+       us = self.login_status.text
+       js = anvil.server.call("prel_js_gol",us, 2)
+       if js["cui"] ==" ":
+          anvil.server.call("app_new", self.login_status.text)
+          open_form("init.start")      
+       else:
+            c = confirm("Exista date nesalvate care vor fi sterse. Continuam ?")
+            if c == True:
+              anvil.server.call("app_new", self.login_status.text)
+              open_form("init.start")               
+        
     else:
         anvil.users.login_with_form()
         self.ups()
     pass
 
   def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
+    self.grid_panel_1.clear()
+    self.visib(2)
     anvil.users.logout()
     self.ups()
     pass
 
   def button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
+    self.grid_panel_1.clear()
+    self.visib(2)
     anvil.users.login_with_form()
     self.ups()
     pass
 
   def link_4_click(self, **event_args):
-    """This method is called when the link is clicked"""
+    self.visib(2)
     if self.login_status.text != "":             
-        open_form("init.start")
-        #new_form = start()
-        #self.column_panel_2.clear()
-        #self.column_panel_2.add_component(new_form)
+        open_form("init.start")        
     else:
         anvil.users.login_with_form()
         self.ups()
     pass
 
   def link_1_click(self, **event_args):
-    """This method is called when the link is clicked"""
+    anvil.users.login_with_form()
+    self.ups()
+    self.grid_panel_1.clear()
     self.visib(1)
     us = self.login_status.text
     self.text_box_3.text = us
     self.text_box_4.text = "{:%d.%m.%Y}".format(datetime.now())
     js = anvil.server.call("prel_js_gol", us, 2)    
     self.item = js
-    c = confirm("Do you wish to continue?")    
+    c = confirm("Salvez in arhiva ?")    
     if c == False :
-       self.visib(2)
+       cs = confirm("Sterg datele introduse ?")
+       if cs == True:
+        #preiau json_gol
+        anvil.server.call("app_new", us)
+        self.visib(2)
+        if cs == False:
+          self.visib(2)
     if c== True:
        anvil.server.call("arh", us, self.text_box_4.text, self.text_box_1.text, self.text_box_2.text, js )
-       self.visib(2)
-    #self.text_box_1.text = js['den']
-    #self.text_box_2.text = js['facilit']
+    self.grid_panel_1.clear()
+    self.visib(2)
     pass
   def visib(self, param):
     if param == 1:
@@ -111,7 +124,9 @@ class init(initTemplate):
     pass
 
   def link_5_click(self, **event_args):
-    """This method is called when the link is clicked"""
+    anvil.users.login_with_form()
+    self.ups()
+    self.visib(2)
     self.grid_panel_1.clear()
     global txb
     txb = self.txb = {}
@@ -119,67 +134,93 @@ class init(initTemplate):
     global j
     i = 1
     j = 0    
-    for i in range(1, 5): # col 
-      k=10+i  
-      if i == 1:
-       self.txb[k] = Label(font="Arial", font_size="12",
-                              spacing_above = "small",
-                              spacing_below = "none",
-                              width=80,
-                              foreground="#000",background="#fff"")
-       self.txb[k].tag.name = k
-       self.txb[k].text = "Entitatea"
-       self.grid_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=2)
-      if i == 2:
-       self.txb[k] = Label(font="Arial", font_size="12",
-                              spacing_above = "small",
-                              spacing_below = "none",
-                              width=80,
-                              foreground="#000",background="#fff"")
-       self.txb[k].tag.name = k
-       self.txb[k].text = "Facilitate"
-       self.grid_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=2)
-      if i == 3:
-       self.txb[k] = Label(font="Arial", font_size="12",
-                              spacing_above = "small",
-                              spacing_below = "none",
-                              width=80,
-                              foreground="#000",background="#fff"")
-       self.txb[k].tag.name = k
-       self.txb[k].text = "Data"
-       self.grid_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=2) 
-      if i == 4:
-       self.txb[k] = Label(font="Arial", font_size="12",
-                              spacing_above = "small",
-                              spacing_below = "none",
-                              width=80,
-                              foreground="#000",background="#fff"")
-       self.txb[k].tag.name = k
-       self.txb[k].text = "Alege"
-       self.grid_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=2) 
-    for j in range (2,4): # rows 
-       for i in range(1, 6): # col 
+    k=10
+    us = self.login_status.text
+    rows = anvil.server.call("nr_rows", us)                           
+    for j in range (2,rows+2): # rows 
+       for i in range(1, 5): # col 
           k=j*10+i        
-          if i <4 :   
-            self.txb[k] = TextBox(type="text", font="Arial", font_size="10",
+          if i ==1 :   
+            self.txb[k] = Label(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=80,
-                              foreground="#000",background="#fff",placeholder=f"pl{k}")
-            self.txb[k].role = "input" #"form-control"
-            self.txb[k].tag.name = k
-            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=2)
-          if i ==5 :   
-            self.txb[k] = RadioButton(background="#fff", width=80)                           
-            self.txb[k].tag.name = k
+                              width=350,
+                              foreground="#000",background="#fff"")
+            self.txb[k].role = "form-control"
+            self.txb[k].tag.name = k                           
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=3)
+          if i ==2 :   
+            self.txb[k] = Label(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=400,
+                              foreground="#000",background="#fff")
+            self.txb[k].role = "form-control"
+            self.txb[k].tag.name = k                           
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=4)
+          if i ==3 :   
+            self.txb[k] = Label(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=90,
+                              foreground="#000",background="#fff")
+            self.txb[k].role = "form-control"
+            self.txb[k].tag.name = k                           
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=2, width_xs=2)
+          
+          if i ==4 :   
+            self.txb[k] = RadioButton(background="#fff", width=25) 
+            #self.txb[k] = RadioButton()               
+            self.txb[k].tag.name = k                          
             self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=1)
-    for txb in self.grid_panel_1.get_components():    
-      if type(txb) is RadioButton:
-           if txb.value == True:
-               print("c")  
-           else:
-              print(txb.tag.name)
+            self.txb[k].set_event_handler('clicked', self.clicked)              
+       list_apl = anvil.server.call("sele_us", us)
+       i=1
+       k=21                    
+       for i in range(0,rows):
+         try:                   
+          self.txb[k].text = list_apl[i]["soc"]
+          self.txb[k+1].text = list_apl[i]["facilit"]
+          self.txb[k+2].text = list_apl[i]["dat"]            
+          k=k+10
+         except:
+          pass
+       pass 
+                           
+  def clicked (self, sender,**event_args):
+      S = sender.value
+      pl = str(sender.tag.name)                   
+      linie = int(pl[:len(pl)-1]) *10+1
+      us = self.login_status.text
+      soc = self.txb[linie].text
+      facilit = self.txb[linie+1].text
+      dat = self.txb[linie+2].text                         
+      c = confirm("Preiau in lucru pentru modificari ?")
+      if c == False:                          
+          cs = confirm("Sterg din arhiva iremediabil ?")
+          if cs == True:
+            anvil.server.call("sterge_arh",us, soc, facilit, dat)
+            self.link_5_click()
+          else:
+            self.grid_panel_1.clear()                    
+      if c == True:
+          #preia in lucru                            
+          anvil.server.call("preia_inlucru",us, soc, facilit, dat)
+          self.link_4_click()                      
+  pass                       
+    #for txb in self.grid_panel_1.get_components():    
+     # if type(txb) is RadioButton:
+     #      if txb.value == True:
+    #           print("c")  
+    #       else:
+    #          print(txb.tag.name)
     
+
+  def link_2_click(self, **event_args):
+    self.visib(2)
+    self.grid_panel_1.clear()                              
+    pass
+
 
 
 
