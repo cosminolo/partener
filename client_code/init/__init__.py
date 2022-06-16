@@ -74,10 +74,11 @@ class init(initTemplate):
     us = self.login_status.text
     self.text_box_3.text = us
     self.text_box_4.text = "{:%d.%m.%Y}".format(datetime.now())
-    js = anvil.server.call("prel_js_gol", self.ups(), 2)    
-    #self.item = json.dumps(js)
-    self.text_box_1.text = js["den"]
-    self.text_box_2.text = js["facilit"]
+    js = anvil.server.call("prel_js_gol", us, 2)    
+    self.item = js
+    
+    #self.text_box_1.text = js['den']
+    #self.text_box_2.text = js['facilit']
     pass
   def visib(self, param):
     if param == 1:
