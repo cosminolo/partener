@@ -10,7 +10,7 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: init.Form2}
+startup: {type: form, module: init}
 package_name: Partener
 allow_embedding: true
 name: Partener

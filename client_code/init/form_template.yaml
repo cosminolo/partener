@@ -24,6 +24,23 @@ components:
   layout_properties: {slot: left-nav}
   components:
   - type: Link
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: New, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      italic: false, background: 'theme:Gray 300', bold: false, underline: false,
+      icon: ''}
+    name: link_3
+    layout_properties: {grid_position: 'IMUZDV,BUUUFQ'}
+    event_bindings: {click: link_3_click}
+  - type: Link
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Open, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      italic: false, background: 'theme:Gray 600', bold: false, underline: false,
+      icon: ''}
+    name: link_4
+    layout_properties: {grid_position: 'LCULWV,FXEMGE'}
+  - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: 'theme:White',
       visible: true, text: '', font_size: 14, wrap_on: mobile, font: '', col_spacing: tiny,
       spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: medium,
