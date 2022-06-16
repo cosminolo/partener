@@ -8,13 +8,15 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..init.start import start
+from datetime import datetime, date
+import json
 class init(initTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     anvil.users.login_with_form()
     self.ups()
-    self.column_panel_2.visible=False
+    #self.column_panel_2.visible=False
     
   def ups(self):
       # Get the currently logged in user (if any)
@@ -68,9 +70,44 @@ class init(initTemplate):
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    #self.column_panel_2.clear()
-    self.column_panel_2.visible=True
+    self.visib(1)
+    us = self.login_status.text
+    self.text_box_3.text = us
+    self.text_box_4.text = "{:%d.%m.%Y}".format(datetime.now())
+    js = anvil.server.call("prel_js_gol", self.ups(), 2)    
+    #self.item = json.dumps(js)
+    self.text_box_1.text = js["den"]
+    self.text_box_2.text = js["facilit"]
     pass
+  def visib(self, param):
+    if param == 1:
+      self.label_2.visible = True
+      self.label_3.visible = True
+      self.label_4.visible = True
+      self.label_5.visible = True
+      self.text_box_1.visible = True
+      self.text_box_2.visible = True
+      self.text_box_3.visible = True
+      self.text_box_4.visible = True
+      self.button_3.visible = True
+      
+    else:
+      self.label_2.visible = False
+      self.label_3.visible = False
+      self.label_4.visible = False
+      self.label_5.visible = False
+      self.text_box_1.visible = False
+      self.text_box_2.visible = False
+      self.text_box_3.visible = False
+      self.text_box_4.visible = False
+      self.button_3.visible = False
+    pass
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.visib(2)
+    pass
+
 
 
 
