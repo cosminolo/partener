@@ -58,6 +58,7 @@ components:
     name: link_1
     layout_properties: {grid_position: 'HEMDAE,GPSPIA'}
     components: []
+    event_bindings: {click: link_1_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Account, font_size: 12, wrap_on: mobile, font: '', col_spacing: medium,
@@ -93,4 +94,55 @@ components:
   properties: {col_widths: '{}'}
   name: column_panel_2
   layout_properties: {slot: default}
-  components: []
+  components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Entitatea: ', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'PYTDNS,NDKECS'}
+  - type: TextBox
+    properties: {}
+    name: text_box_1
+    layout_properties: {grid_position: 'PYTDNS,JJIGCY'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Solicitare, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'ADLXSI,GJVFSH'}
+  - type: TextBox
+    properties: {}
+    name: text_box_2
+    layout_properties: {grid_position: 'ADLXSI,TCJKMK'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: User, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {slot: default, grid_position: 'PIOKYT,IFTNCX'}
+  - type: TextBox
+    properties: {}
+    name: text_box_3
+    layout_properties: {grid_position: 'PIOKYT,YFKGOQ'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Data, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_5
+    layout_properties: {grid_position: 'DMYAKW,LIWIKM'}
+  - type: TextBox
+    properties: {}
+    name: text_box_4
+    layout_properties: {grid_position: 'DMYAKW,VXAGWJ'}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Save, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_3
+    layout_properties: {grid_position: 'SNXFMT,PFGOSV'}

@@ -14,7 +14,7 @@ class init(initTemplate):
     self.init_components(**properties)
     anvil.users.login_with_form()
     self.ups()
-    
+    self.column_panel_2.visible=False
     
   def ups(self):
       # Get the currently logged in user (if any)
@@ -65,6 +65,13 @@ class init(initTemplate):
         anvil.users.login_with_form()
         self.ups()
     pass
+
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    #self.column_panel_2.clear()
+    self.column_panel_2.visible=True
+    pass
+
 
 
 
