@@ -17,7 +17,8 @@ class init(initTemplate):
     anvil.users.login_with_form()
     self.ups()
     #self.column_panel_2.visible=False
-    
+    global txb
+    txb = self.txb = {}
   def ups(self):
       # Get the currently logged in user (if any)
       self.login_status.text = ""
@@ -111,7 +112,7 @@ class init(initTemplate):
 
   def link_5_click(self, **event_args):
     """This method is called when the link is clicked"""
-    #self.grid_panel_1.visible 
+    self.grid_panel_1.clear()
     global txb
     txb = self.txb = {}
     global i
@@ -146,10 +147,39 @@ class init(initTemplate):
                               foreground="#000",background="#fff"")
        self.txb[k].tag.name = k
        self.txb[k].text = "Data"
-       self.grid_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=1) 
-      
-
-
+       self.grid_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=2) 
+      if i == 4:
+       self.txb[k] = Label(font="Arial", font_size="12",
+                              spacing_above = "small",
+                              spacing_below = "none",
+                              width=80,
+                              foreground="#000",background="#fff"")
+       self.txb[k].tag.name = k
+       self.txb[k].text = "Alege"
+       self.grid_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=2) 
+    for j in range (2,4): # rows 
+       for i in range(1, 6): # col 
+          k=j*10+i        
+          if i <4 :   
+            self.txb[k] = TextBox(type="text", font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=80,
+                              foreground="#000",background="#fff",placeholder=f"pl{k}")
+            self.txb[k].role = "input" #"form-control"
+            self.txb[k].tag.name = k
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=2)
+          if i ==5 :   
+            self.txb[k] = RadioButton(background="#fff", width=80)                           
+            self.txb[k].tag.name = k
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=1)
+    for txb in self.grid_panel_1.get_components():    
+      if type(txb) is RadioButton:
+           if txb.value == True:
+               print("c")  
+           else:
+              print(txb.tag.name)
+    
 
 
 
