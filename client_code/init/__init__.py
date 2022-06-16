@@ -109,8 +109,45 @@ class init(initTemplate):
     
     pass
 
- 
-
+  def link_5_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    #self.grid_panel_1.visible 
+    global txb
+    txb = self.txb = {}
+    global i
+    global j
+    i = 1
+    j = 0    
+    for i in range(1, 5): # col 
+      k=10+i  
+      if i == 1:
+       self.txb[k] = Label(font="Arial", font_size="12",
+                              spacing_above = "small",
+                              spacing_below = "none",
+                              width=80,
+                              foreground="#000",background="#fff"")
+       self.txb[k].tag.name = k
+       self.txb[k].text = "Entitatea"
+       self.grid_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=2)
+      if i == 2:
+       self.txb[k] = Label(font="Arial", font_size="12",
+                              spacing_above = "small",
+                              spacing_below = "none",
+                              width=80,
+                              foreground="#000",background="#fff"")
+       self.txb[k].tag.name = k
+       self.txb[k].text = "Facilitate"
+       self.grid_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=2)
+      if i == 3:
+       self.txb[k] = Label(font="Arial", font_size="12",
+                              spacing_above = "small",
+                              spacing_below = "none",
+                              width=80,
+                              foreground="#000",background="#fff"")
+       self.txb[k].tag.name = k
+       self.txb[k].text = "Data"
+       self.grid_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=1) 
+      
 
 
 
