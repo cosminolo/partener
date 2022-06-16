@@ -27,21 +27,12 @@ class init(initTemplate):
           self.login_status.text = us
           anvil.server.call("add_user", us)
 
-  def link_1_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    if self.login_status.text != "":        
-        open_form("init.start")
-        #new_form = start()
-        #self.column_panel_2.clear()
-        #self.column_panel_2.add_component(new_form)
-    else:
-        anvil.users.login_with_form()
-        self.ups()
-    pass
+  
 
   def link_3_click(self, **event_args):
     """This method is called when the link is clicked"""
-    if self.login_status.text != "":        
+    if self.login_status.text != "": 
+        anvil.server.call("app_new", self.login_status.text)      
         open_form("init.start")
         #new_form = start()
         #self.column_panel_2.clear()
@@ -62,6 +53,19 @@ class init(initTemplate):
     anvil.users.login_with_form()
     self.ups()
     pass
+
+  def link_4_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    if self.login_status.text != "":             
+        open_form("init.start")
+        #new_form = start()
+        #self.column_panel_2.clear()
+        #self.column_panel_2.add_component(new_form)
+    else:
+        anvil.users.login_with_form()
+        self.ups()
+    pass
+
 
 
 

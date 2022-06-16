@@ -27,34 +27,42 @@ components:
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: New, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
       spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
-      italic: false, background: 'theme:Gray 300', bold: false, underline: false,
-      icon: ''}
+      italic: false, background: 'theme:Gray 100', bold: false, underline: false,
+      icon: 'fa:battery-empty'}
     name: link_3
     layout_properties: {grid_position: 'IMUZDV,BUUUFQ'}
     event_bindings: {click: link_3_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Open, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
-      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
-      italic: false, background: 'theme:Gray 600', bold: false, underline: false,
-      icon: ''}
+      visible: true, text: Open last, font_size: null, wrap_on: mobile, font: '',
+      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+      spacing_below: small, italic: false, background: 'theme:Gray 300', bold: false,
+      underline: false, icon: 'fa:file-text-o'}
     name: link_4
     layout_properties: {grid_position: 'LCULWV,FXEMGE'}
+    event_bindings: {click: link_4_click}
   - type: Link
-    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: 'theme:White',
-      visible: true, text: '', font_size: 14, wrap_on: mobile, font: '', col_spacing: tiny,
-      spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: medium,
-      italic: false, background: 'theme:Primary 500', bold: true, underline: false,
-      icon: 'fa:fast-forward'}
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Open archive, font_size: null, wrap_on: mobile, font: '',
+      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+      spacing_below: small, italic: false, background: 'theme:Gray 200', bold: false,
+      underline: false, icon: 'fa:folder-open-o'}
+    name: link_5
+    layout_properties: {grid_position: 'NXETBQ,ERTFJE'}
+  - type: Link
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Save to archive, font_size: null, wrap_on: mobile, font: '',
+      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: 'fa:archive'}
     name: link_1
-    layout_properties: {grid_position: 'MUDFGM,GAWLVO'}
-    event_bindings: {click: link_1_click}
+    layout_properties: {grid_position: 'HEMDAE,GPSPIA'}
     components: []
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: '', font_size: 12, wrap_on: mobile, font: '', col_spacing: medium,
+      visible: true, text: Account, font_size: 12, wrap_on: mobile, font: '', col_spacing: medium,
       spacing_above: medium, icon_align: left, col_widths: '', spacing_below: medium,
-      italic: false, background: 'theme:Secondary 500', bold: true, underline: false,
+      italic: false, background: 'theme:Gray 300', bold: false, underline: false,
       icon: 'fa:user'}
     name: link_2
     layout_properties: {slot: title, grid_position: 'PGUVYA,GJJVEN'}
@@ -85,11 +93,4 @@ components:
   properties: {col_widths: '{}'}
   name: column_panel_2
   layout_properties: {slot: default}
-  components:
-  - type: Image
-    properties: {role: null, vertical_align: center, height: 453, tooltip: '', border: '',
-      foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
-      source: 'data:image/jpeg;base64,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',
-      spacing_below: small, background: '', horizontal_align: center}
-    name: image_1
-    layout_properties: {grid_position: 'JHYEVC,ZVGQIB'}
+  components: []

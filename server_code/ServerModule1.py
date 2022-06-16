@@ -31,6 +31,13 @@ def add_user(id):
 pass
 
 @anvil.server.callable
+def app_new(id):
+  js=app_tables.lucru.get(user=id)["js_gen_gol"]
+  id_row = app_tables.lucru.get(user=id)
+  id_row.update(js_gen=js)
+pass
+
+@anvil.server.callable
 def tva_js(id,js):
   try:
     us_row = app_tables.lucru.get(user=id)

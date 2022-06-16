@@ -16,6 +16,7 @@ allow_embedding: true
 name: Partener
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
 metadata: {}
+startup_form: Form1
 db_schema:
   users:
     title: Users
@@ -66,6 +67,26 @@ db_schema:
     - name: js_gen_gol
       admin_ui: {width: 200}
       type: simpleObject
+    - name: js_gen
+      admin_ui: {width: 200}
+      type: simpleObject
+  arh:
+    title: arh
+    client: none
+    server: full
+    columns:
+    - name: user
+      admin_ui: {width: 200}
+      type: string
+    - name: soc
+      admin_ui: {width: 200}
+      type: string
+    - name: facilit
+      admin_ui: {width: 200}
+      type: string
+    - name: dat
+      admin_ui: {width: 200}
+      type: string
     - name: js_gen
       admin_ui: {width: 200}
       type: simpleObject
