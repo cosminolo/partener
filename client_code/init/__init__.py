@@ -37,16 +37,9 @@ class init(initTemplate):
     """This method is called when the link is clicked"""
     if self.login_status.text != "": 
        us = self.login_status.text
-       js = anvil.server.call("prel_js_gol",us, 2)
-       if js["cui"] ==" ":
-          anvil.server.call("app_new", self.login_status.text)
-          open_form("init.start")      
-       else:
-            c = confirm("Exista date nesalvate care vor fi sterse. Continuam ?")
-            if c == True:
-              anvil.server.call("app_new", self.login_status.text)
-              open_form("init.start")               
-        
+       anvil.server.call("add_user", us)
+       anvil.server.call("app_new", self.login_status.text)
+       open_form("init.start")  
     else:
         anvil.users.login_with_form()
         self.ups()
