@@ -134,6 +134,11 @@ components:
   layout_properties: {grid_position: 'HMDWLU,BCMTXJ'}
   event_bindings: {lost_focus: text_box_1_lost_focus, pressed_enter: text_box_1_pressed_enter}
 - type: Button
+  properties: {text: button_6}
+  name: button_6
+  layout_properties: {grid_position: 'YWHBXK,BRGOSO'}
+  event_bindings: {click: button_6_click}
+- type: Button
   properties: {text: button_5}
   name: button_5
   layout_properties: {x: -9.25, y: 176, width: 100, grid_position: 'YWHBXK,ADEGTM'}

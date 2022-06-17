@@ -9,6 +9,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import json
+import stripe.checkout
 class verific(verificTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -63,6 +64,18 @@ class verific(verificTemplate):
   def text_box_1_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
+
+  def button_6_click(self, **event_args):
+    """This method is called when the button is clicked"""
+   
+
+    # Take a payment of £9.99
+    stripe.checkout.charge(amount=10,
+                           currency="RON",
+                           title="verificare",
+                           description="info tva")
+    pass
+
 
 
 
