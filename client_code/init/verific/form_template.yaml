@@ -137,5 +137,5 @@ components:
   properties: {}
   name: text_box_1
   layout_properties: {grid_position: 'HMDWLU,BCMTXJ'}
-  event_bindings: {lost_focus: text_box_1_lost_focus}
+  event_bindings: {lost_focus: text_box_1_lost_focus, pressed_enter: text_box_1_pressed_enter}
 is_package: true

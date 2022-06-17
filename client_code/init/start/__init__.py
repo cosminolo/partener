@@ -221,8 +221,10 @@ class start(startTemplate):
           return us
       pass
   def button_3_click(self, **event_args):
-    open_form('init.verific')
-    pass
+    
+   if self.drop_down_1.selected_value.strip() in ("S.R.L.", "S.A", "SRL-D"):
+      open_form('init.verific')
+   pass
 
   
   
