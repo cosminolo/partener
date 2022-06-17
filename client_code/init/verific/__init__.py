@@ -30,6 +30,7 @@ class verific(verificTemplate):
      pass
 
   def check_box_1_change(self, **event_args):
+    
     try:
       tva = anvil.server.call("get_tva", self.ups())
       self.text_area_1.text = tva['info_t']
@@ -70,10 +71,11 @@ class verific(verificTemplate):
    
 
     # Take a payment of £9.99
-    stripe.checkout.charge(amount=10,
+    c= stripe.checkout.charge(amount=1000,
                            currency="RON",
                            title="verificare",
                            description="info tva")
+    print (c["result"])
     pass
 
 
