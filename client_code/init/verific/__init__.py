@@ -30,7 +30,7 @@ class verific(verificTemplate):
   def check_box_1_change(self, **event_args):
     try:
       tva = anvil.server.call("get_tva", self.ups())
-      self.text_area_1.text = tva['info_t']
+      #self.text_area_1.text = tva['info_t']
     except:
       pass
     pass
