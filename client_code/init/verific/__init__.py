@@ -30,13 +30,35 @@ class verific(verificTemplate):
      pass
 
   def check_box_1_change(self, **event_args):
-    
+   if self.check_box_1.checked == True:
     try:
-      tva = anvil.server.call("get_tva", self.ups())
-      self.item = tva
+      get_tva = anvil.server.call("get_tva", self.ups())
+      self.label_12.text = get_tva['cui']
+      self.label_13.text = get_tva['scpTVA']
+      self.label_14.text = get_tva['data_inceput_ScpTVA']
+      self.label_15.text = get_tva['statusRO_e_Factura']
+      self.label_16.text = get_tva['statusInactivi']
+      self.label_17.text = get_tva['statusTvaIncasare']
+      self.label_18.text = get_tva['dataInceputTvaInc']
+      self.label_19.text = get_tva['statusSplitTVA']
+      self.label_20.text = get_tva['dataInceputSplitTVA']
+      self.label_21.text = get_tva['mesaj_ScpTVA']
+      self.label_23.text = get_tva['data']
     except:
       pass
-    pass
+   if self.check_box_1.checked == False:      
+      self.label_12.text = ""
+      self.label_13.text = ""
+      self.label_14.text = ""
+      self.label_15.text = ""
+      self.label_16.text = ""
+      self.label_17.text = ""
+      self.label_18.text = ""
+      self.label_19.text = ""
+      self.label_20.text = ""
+      self.label_21.text = ""
+      self.label_23.text = ""
+  pass
   def ups(self):
       user = anvil.users.get_user()
       if user is None:
@@ -47,9 +69,48 @@ class verific(verificTemplate):
       pass
 
   def check_box_2_change(self, **event_args):
-    bil = anvil.server.call("get_bil", self.ups())
-    #self.text_area_2.text = bil['DATORII']
-    self.text_area_2.text = bil
+    if self.check_box_2.checked == True:
+      #try:
+        bil = anvil.server.call("get_bil", self.ups())
+        self.label_41.text = bil['an']
+        self.label_42.text = "{:,}".format(bil['ACTIVEIMOBILIZATE-TOTAL'])
+        self.label_43.text = "{:,}".format(bil['ACTIVECIRCULANTE-TOTAL,dincare:'])
+        self.label_44.text = "{:,}".format(bil['Stocuri'])
+        self.label_45.text = "{:,}".format(bil['Creante'])
+        self.label_46.text = "{:,}".format(bil['Casaşiconturilabănci'])
+        self.label_47.text = "{:,}".format(bil['CHELTUIELIINAVANS'])
+        self.label_48.text = "{:,}".format(bil['DATORII'])
+        self.label_49.text = "{:,}".format(bil['VENITURIINAVANS'])
+        self.label_50.text = "{:,}".format(bil['PROVIZIOANE'])
+        self.label_51.text = "{:,}".format(bil['CAPITALURI-TOTAL,dincare:'])
+        self.label_52.text = "{:,}".format(bil['Capitalsubscrisvarsat'])
+        self.label_53.text = "{:,}".format(bil['Patrimoniulregiei'])
+        self.label_54.text = "{:,}".format(bil['Cifradeafacerineta'])
+        self.label_55.text = "{:,}".format(bil['VENITURITOTALE'])
+        self.label_56.text = "{:,}".format(bil['CHELTUIELITOTALE'])
+        self.label_57.text = "{:,}".format(int(bil['Profitnet']) - int(bil['Pierdereneta']))
+        self.label_59.text = "{:,}".format(bil['Numarmediudesalariati'])
+      #except:
+       # pass
+    if self.check_box_2.checked == False:  
+        self.label_41.text = ""
+        self.label_42.text = ""
+        self.label_43.text = ""
+        self.label_44.text = ""
+        self.label_45.text = ""
+        self.label_46.text = ""
+        self.label_47.text = ""
+        self.label_48.text = ""
+        self.label_48.text = ""
+        self.label_50.text = ""
+        self.label_51.text = ""
+        self.label_52.text = ""
+        self.label_53.text = ""
+        self.label_54.text = ""
+        self.label_55.text = ""
+        self.label_56.text = ""
+        self.label_57.text = ""
+        self.label_59.text = ""
     pass
 
   def button_5_click(self, **event_args):
