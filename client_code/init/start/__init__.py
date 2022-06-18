@@ -19,7 +19,7 @@ class start(startTemplate):
     self.con_drop2() 
     self.con_drop3()
     js_lucru = anvil.server.call("prel_js_gol", self.ups(), 2)    
-    self.item = js_lucru
+    self.item = json.loads(json.dumps(js_lucru))
     
   def con_drop1(self):
     self.drop_down_1.items = []
@@ -165,63 +165,7 @@ class start(startTemplate):
 
   
 
-  def text_box_2_lost_focus(self, **event_args):
-    try:
-      js_tva = anvil.server.call("is_1", self.text_box_2.text)
-      anvil.server.call("tva_js", self.ups(), js_tva )
-      ret_js = json.loads(js_tva)
-      self.text_box_3.text = ret_js["denumire"]
-      self.text_box_4.text = ret_js["adresa"]
-      self.text_box_7.text = ret_js["nrRegCom"]
-      self.text_box_6.text = ret_js["telefon"]        
-    except:
-      self.text_box_3.text = ""
-      self.text_box_4.text = ""
-      self.text_box_7.text = ""
-      self.text_box_6.text = "" 
-     
-    try:
-      an = int(date.today().year)      
-      ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
-      self.text_box_5.text = ret_js2["caen_d"]
-      anvil.server.call("bil_js", self.ups(), ret_js2, 1 )
-      
-    except:
-      self.text_box_5.text = ""
-      
-      try:    
-       an = str(int(date.today().year) - 1)       
-       js_bil= anvil.server.call("is_2", an, self.text_box_2.text)
-       ret_js2 = json.loads(js_bil)
-       self.text_box_5.text = ret_js2["caen"] 
-       anvil.server.call("bil_js", self.ups(), js_bil, 1)
-       
-      except:
-           self.text_box_5.text = ""
-           try:    
-              an = str(int(date.today().year) - 2)             
-              ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
-              self.text_box_5.text = ret_js2["caen"] 
-              anvil.server.call("bil_js", self.ups(), ret_js2, 1)
-              
-           except:
-              self.text_box_5.text = ""
-              pass
-      if self.text_box_2.text.strip():
-       self.up_json()
-       ann = str(int(date.today().year) - 2) 
-       time.sleep(2.5)
-       b = anvil.server.call("is_2", ann, self.text_box_2.text)
-       anvil.server.call("bil_js", self.ups(), b, 2)
-  pass
-
-  def clr_str(self, str_1):
-    #remove []
-    rz = str(str_1)
-    rz = rz[0:len(rz)-2]
-    rz = rz[2:len(rz)]
-    return rz
-    pass
+  
   def ups(self):
       user = anvil.users.get_user()
       if user is None:
@@ -238,9 +182,9 @@ class start(startTemplate):
 
   
   
-  def up_json(self):
+  def up_json(self):      
       x = json.dumps(self.item, indent=4)
-      anvil.server.call("upp_js", self.ups(), json.loads(x))
+      anvil.server.call("upp_js", self.ups(), json.loads(x))      
       pass
 
   def drop_down_1_change(self, **event_args):
@@ -309,35 +253,8 @@ class start(startTemplate):
         self.up_json() 
     pass
 
-  def text_box_1_pressed_enter(self, **event_args):
-    """This method is called when the user presses Enter in this text box"""
-    pass
-
  
 
-  def text_box_4_lost_focus(self, **event_args):
-    """This method is called when the TextBox loses focus"""
-    if self.text_box_4.text.strip():
-      self.up_json()  
-    pass
-
-  def text_box_7_lost_focus(self, **event_args):
-    """This method is called when the TextBox loses focus"""
-    if self.text_box_7.text.strip():
-      self.up_json()  
-    pass
-
-  def text_box_5_lost_focus(self, **event_args):
-    """This method is called when the TextBox loses focus"""
-    if self.text_box_5.text.strip():
-      self.up_json()  
-    pass
-
-  def text_box_7_pressed_enter(self, **event_args):
-    """This method is called when the user presses Enter in this text box"""
-    if self.text_box_7.text.strip():
-      self.up_json()  
-    pass
 
   def text_area_1_lost_focus(self, **event_args):
     """This method is called when the text area loses focus"""
@@ -372,11 +289,6 @@ class start(startTemplate):
   
  
 
-  def text_box_3_change(self, **event_args):
-    """This method is called when the text in this text box is edited"""
-    if self.text_box_3.text.strip():
-       self.up_json() 
-    pass
 
   def text_box_8_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
@@ -384,7 +296,98 @@ class start(startTemplate):
 
   def text_box_2_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
+    try:
+      js_tva = anvil.server.call("is_1", self.text_box_2.text)
+      anvil.server.call("tva_js", self.ups(), js_tva )
+      ret_js = json.loads(js_tva)
+      self.text_box_3.text = ret_js["denumire"]
+      
+      self.text_box_4.text = ret_js["adresa"]
+      self.text_box_7.text = ret_js["nrRegCom"]
+      self.text_box_6.text = ret_js["telefon"]        
+    except:
+      self.text_box_3.text = ""
+      self.text_box_4.text = ""
+      self.text_box_7.text = ""
+      self.text_box_6.text = "" 
+     
+    try:
+      an = int(date.today().year)      
+      ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
+      self.text_box_5.text = ret_js2["caen_d"]
+      anvil.server.call("bil_js", self.ups(), ret_js2, 1 )
+      
+    except:
+      self.text_box_5.text = ""
+      
+      try:    
+       an = str(int(date.today().year) - 1)       
+       js_bil= anvil.server.call("is_2", an, self.text_box_2.text)
+       ret_js2 = json.loads(js_bil)
+       self.text_box_5.text = ret_js2["caen"] 
+       anvil.server.call("bil_js", self.ups(), js_bil, 1)
+       
+      except:
+           self.text_box_5.text = ""
+           try:    
+              an = str(int(date.today().year) - 2)             
+              ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
+              self.text_box_5.text = ret_js2["caen"] 
+              anvil.server.call("bil_js", self.ups(), ret_js2, 1)
+              
+           except:
+              self.text_box_5.text = ""
+              pass
+      
+      self.up_json()
+      ann = str(int(date.today().year) - 2) 
+      #time.sleep(2.5)
+      b = anvil.server.call("is_2", ann, self.text_box_2.text)
+      anvil.server.call("bil_js", self.ups(), b, 2)
     pass
+
+
+  def text_box_4_change(self, **event_args):
+    """This method is called when the text in this text box is edited"""
+    if self.text_box_4.text.strip():
+       self.up_json() 
+    pass
+
+  def text_box_7_change(self, **event_args):
+      #self.item['onrc'] = self.text_box_7.text
+      self.up_json()  
+      pass
+
+  def text_box_5_change(self, **event_args):
+    #if self.text_box_5.text.strip():
+    self.up_json() 
+    pass
+
+  def text_box_7_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
+  def text_box_3_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.up_json() 
+    pass
+
+  def text_box_3_change(self, **event_args):
+    self.up_json() 
+    pass
+
+  def text_box_3_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.up_json() 
+    pass
+
+
+
+
+
+
+
+
 
 
 

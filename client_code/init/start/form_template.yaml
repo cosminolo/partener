@@ -118,7 +118,7 @@ components:
     layout_properties: {x: 111.25, y: 55.97917175292969, width: 117}
     data_bindings:
     - {property: text, code: 'self.item[''suma'']', writeback: true}
-    event_bindings: {lost_focus: text_box_1_lost_focus, pressed_enter: text_box_1_pressed_enter}
+    event_bindings: {lost_focus: text_box_1_lost_focus}
   - type: DropDown
     properties:
       role: null
@@ -198,7 +198,7 @@ components:
     properties: {}
     name: text_box_2
     layout_properties: {row: GGMRJW, width_xs: 2, col_xs: 1}
-    event_bindings: {lost_focus: text_box_2_lost_focus, pressed_enter: text_box_2_pressed_enter}
+    event_bindings: {pressed_enter: text_box_2_pressed_enter}
     data_bindings:
     - {property: text, code: 'self.item[''cui'']', writeback: true}
   - type: Label
@@ -212,9 +212,10 @@ components:
     properties: {}
     name: text_box_3
     layout_properties: {row: GGMRJW, width_xs: 6, col_xs: 6}
-    event_bindings: {change: text_box_3_change}
+    event_bindings: {change: text_box_3_change, lost_focus: text_box_3_lost_focus,
+      focus: text_box_3_focus}
     data_bindings:
-    - {property: text, code: 'self.item[''den'']', writeback: true}
+    - {property: text, code: 'self.item["den"]', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Sediu social, font_size: null, font: '', spacing_above: small,
@@ -226,7 +227,7 @@ components:
     properties: {}
     name: text_box_4
     layout_properties: {row: MMGKZW, width_xs: 7, col_xs: 1}
-    event_bindings: {lost_focus: text_box_4_lost_focus}
+    event_bindings: {change: text_box_4_change}
     data_bindings:
     - {property: text, code: 'self.item[''sediu'']', writeback: true}
   - type: Label
@@ -240,7 +241,7 @@ components:
     properties: {}
     name: text_box_7
     layout_properties: {row: MMGKZW, width_xs: 3, col_xs: 9}
-    event_bindings: {lost_focus: text_box_7_lost_focus, pressed_enter: text_box_7_pressed_enter}
+    event_bindings: {change: text_box_7_change, pressed_enter: text_box_7_pressed_enter}
     data_bindings:
     - {property: text, code: 'self.item[''onrc'']', writeback: true}
   - type: Label
@@ -254,7 +255,7 @@ components:
     properties: {}
     name: text_box_5
     layout_properties: {row: TETFYO, width_xs: 3, col_xs: 1}
-    event_bindings: {lost_focus: text_box_5_lost_focus}
+    event_bindings: {change: text_box_5_change}
     data_bindings:
     - {property: text, code: 'self.item[''caen'']', writeback: true}
   - type: Label
