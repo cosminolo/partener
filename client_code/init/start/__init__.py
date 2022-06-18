@@ -9,6 +9,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import json
+import time
 from datetime import date
 class start(startTemplate):
   def __init__(self, **properties):
@@ -183,27 +184,30 @@ class start(startTemplate):
       an = int(date.today().year)      
       ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
       self.text_box_5.text = ret_js2["caen_d"]
-      anvil.server.call("bil_js", self.ups(), ret_js2 )
+      anvil.server.call("bil_js", self.ups(), ret_js2, 1 )
+      
     except:
       self.text_box_5.text = ""
       try:    
-       an = str(int(date.today().year) - 1) 
-       js_bil= anvil.server.call("is_2", an, self.text_box_2.text)
+       an = str(int(date.today().year) - 1)       
+       js_bil= anvil.server.call("is_2", an, self.text_box_2.text,)
        ret_js2 = json.loads(js_bil)
        self.text_box_5.text = ret_js2["caen"] 
-       anvil.server.call("bil_js", self.ups(), js_bil )
+       anvil.server.call("bil_js", self.ups(), js_bil, 1)
+       time.sleep(1)
       except:
            self.text_box_5.text = ""
            try:    
-              an = str(int(date.today().year) - 2)
+              an = str(int(date.today().year) - 2)             
               ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
               self.text_box_5.text = ret_js2["caen"] 
-              anvil.server.call("bil_js", self.ups(), ret_js2 )
+              anvil.server.call("bil_js", self.ups(), ret_js2, 1)
+              
            except:
               self.text_box_5.text = ""
               pass
       if self.text_box_2.text.strip():
-       self.up_json()         
+       self.up_json()    
   pass
 
   def clr_str(self, str_1):
@@ -372,6 +376,11 @@ class start(startTemplate):
   def text_box_8_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
+
+  def text_box_2_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
 
 
  

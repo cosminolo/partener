@@ -7,6 +7,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 import json
+import time
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.
 #
@@ -62,20 +63,31 @@ def get_tva(id):
   except:
     pass
 @anvil.server.callable
-def bil_js(id,js):
-  try:
-    us_row = app_tables.lucru.get(user=id)
-    us_row.update(js_bil=js)
-  except:
-    pass
+def bil_js(id,js,a):
+  #try:
+    if a == 1:
+      us_row = app_tables.lucru.get(user=id)
+      us_row.update(js_bil=js)
+    if a == 2:
+      us_row = app_tables.lucru.get(user=id)
+      us_row.update(j_bil=js)
+      time.sleep(1)
+  #except:
+   # pass
 pass
+
+
 @anvil.server.callable
-def get_bil(id):
-  try:
-      js=json.loads(app_tables.lucru.get(user=id)["js_bil"])
-      return js
-  except:
-    pass
+def get_bil(id,a):
+  #try:
+      if a == 1:
+        js=json.loads(app_tables.lucru.get(user=id)["js_bil"])
+        return js
+      if a == 2:
+        jst=json.loads(app_tables.lucru.get(user=id)["j_bil"]) 
+        return jst
+  #except:
+   # pass
 pass
 @anvil.server.callable
 
@@ -95,7 +107,7 @@ def upp_js(id,js):
     id_row = app_tables.lucru.get(user=id)
     id_row.update(js_gen=js)
 
-    pass
+pass
 @anvil.server.callable
 def arh (us, dat, entit, facilit, j):
   app_tables.arh.add_row(user=us,

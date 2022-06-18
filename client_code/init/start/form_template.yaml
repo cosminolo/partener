@@ -198,7 +198,7 @@ components:
     properties: {}
     name: text_box_2
     layout_properties: {row: GGMRJW, width_xs: 2, col_xs: 1}
-    event_bindings: {lost_focus: text_box_2_lost_focus}
+    event_bindings: {lost_focus: text_box_2_lost_focus, pressed_enter: text_box_2_pressed_enter}
     data_bindings:
     - {property: text, code: 'self.item[''cui'']', writeback: true}
   - type: Label

@@ -77,6 +77,9 @@ db_schema:
     - name: js_gen
       admin_ui: {width: 200}
       type: simpleObject
+    - name: j_bil
+      admin_ui: {width: 200}
+      type: simpleObject
   arh:
     title: arh
     client: none
