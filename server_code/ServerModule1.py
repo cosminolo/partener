@@ -61,7 +61,8 @@ def get_tva(id):
       js=json.loads(app_tables.lucru.get(user=id)["js_tva"])
       return js
   except:
-    pass
+      pass
+pass
 @anvil.server.callable
 def bil_js(id,js,a):
   #try:

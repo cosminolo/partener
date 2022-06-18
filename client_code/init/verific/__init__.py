@@ -71,15 +71,10 @@ class verific(verificTemplate):
 
   def check_box_2_change(self, **event_args):
     if self.check_box_2.checked == True:
-      k = anvil.server.call("get_bil", self.ups(), 1)
-      ann = str(int(k['an'])-1)
-      us = self.ups()
-      cui = anvil.server.call("get_tva", self.ups())['cui']
-      bil = json.loads(anvil.server.call("is_2", ann, cui))
-      anvil.server.call("bil_js", us, bil, 2)
-      time.sleep(1)
+      bil = anvil.server.call("get_bil", self.ups(), 2)
+      #time.sleep(1)
       try:
-        #bil = anvil.server.call("get_bil", self.ups(), "2")        
+        #bil = anvil.server.call("get_bil", self.ups(), "2")       
         self.label_41.text = bil['an']
         self.label_42.text = "{:,}".format(bil['ACTIVEIMOBILIZATE-TOTAL'])
         self.label_43.text = "{:,}".format(bil['ACTIVECIRCULANTE-TOTAL,dincare:'])
@@ -99,7 +94,7 @@ class verific(verificTemplate):
         self.label_57.text = "{:,}".format(int(bil['Profitnet']) - int(bil['Pierdereneta']))
         self.label_59.text = "{:,}".format(bil['Numarmediudesalariati'])
         
-        bil = k
+        bil = anvil.server.call("get_bil", self.ups(), 1)
         self.label_61.text = bil['an']
         self.label_62.text = "{:,}".format(bil['ACTIVEIMOBILIZATE-TOTAL'])
         self.label_63.text = "{:,}".format(bil['ACTIVECIRCULANTE-TOTAL,dincare:'])
@@ -151,17 +146,8 @@ class verific(verificTemplate):
     self.text_box_1.text = self.item[ 'denumire' ]
     pass
 
-  def text_box_1_pressed_enter(self, **event_args):
-    """This method is called when the user presses Enter in this text box"""
-    pass
-  def ups(self):
-      user = anvil.users.get_user()
-      if user is None:
-        x=0
-      else:
-          us =  str(user['email'])
-          return us
-      pass
+  
+  
   def button_6_click(self, **event_args):
     """This method is called when the button is clicked"""
    

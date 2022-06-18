@@ -188,13 +188,14 @@ class start(startTemplate):
       
     except:
       self.text_box_5.text = ""
+      
       try:    
        an = str(int(date.today().year) - 1)       
-       js_bil= anvil.server.call("is_2", an, self.text_box_2.text,)
+       js_bil= anvil.server.call("is_2", an, self.text_box_2.text)
        ret_js2 = json.loads(js_bil)
        self.text_box_5.text = ret_js2["caen"] 
        anvil.server.call("bil_js", self.ups(), js_bil, 1)
-       time.sleep(1)
+       
       except:
            self.text_box_5.text = ""
            try:    
@@ -207,7 +208,11 @@ class start(startTemplate):
               self.text_box_5.text = ""
               pass
       if self.text_box_2.text.strip():
-       self.up_json()    
+       self.up_json()
+       ann = str(int(date.today().year) - 2) 
+       time.sleep(2.5)
+       b = anvil.server.call("is_2", ann, self.text_box_2.text)
+       anvil.server.call("bil_js", self.ups(), b, 2)
   pass
 
   def clr_str(self, str_1):
