@@ -169,10 +169,10 @@ class start(startTemplate):
       js_tva = anvil.server.call("is_1", self.text_box_2.text)
       anvil.server.call("tva_js", self.ups(), js_tva )
       ret_js = json.loads(js_tva)
-      self.text_box_3.text = self.clr_str(ret_js["nume"])
-      self.text_box_4.text = self.clr_str(ret_js["adresa"])
-      self.text_box_7.text = self.clr_str(ret_js["orc"])
-      self.text_box_6.text = self.clr_str(ret_js["tel"])        
+      self.text_box_3.text = ret_js["denumire"]
+      self.text_box_4.text = ret_js["adresa"]
+      self.text_box_7.text = ret_js["nrRegCom"]
+      self.text_box_6.text = ret_js["telefon"]        
     except:
       self.text_box_3.text = ""
       self.text_box_4.text = ""
@@ -182,7 +182,7 @@ class start(startTemplate):
     try:
       an = int(date.today().year)      
       ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
-      self.text_box_5.text = self.clr_str(ret_js2["caen_d"])
+      self.text_box_5.text = ret_js2["caen_d"]
       anvil.server.call("bil_js", self.ups(), ret_js2 )
     except:
       self.text_box_5.text = ""
@@ -190,14 +190,14 @@ class start(startTemplate):
        an = str(int(date.today().year) - 1) 
        js_bil= anvil.server.call("is_2", an, self.text_box_2.text)
        ret_js2 = json.loads(js_bil)
-       self.text_box_5.text = self.clr_str(ret_js2["caen_d"]) 
+       self.text_box_5.text = ret_js2["caen"] 
        anvil.server.call("bil_js", self.ups(), js_bil )
       except:
            self.text_box_5.text = ""
            try:    
               an = str(int(date.today().year) - 2)
               ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
-              self.text_box_5.text = self.clr_str(ret_js2["caen_d"]) 
+              self.text_box_5.text = ret_js2["caen"] 
               anvil.server.call("bil_js", self.ups(), ret_js2 )
            except:
               self.text_box_5.text = ""
