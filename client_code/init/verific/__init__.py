@@ -24,12 +24,19 @@ class verific(verificTemplate):
     cui = get_tva['cui']
     self.clear_tva()
     self.tva()
+    
     global bill
-    bill = anvil.server.call("get_bil", self.ups(), 2)
     global bil1
-    bil1 = anvil.server.call("get_bil", self.ups(), 1)
+    try:
+     bill = anvil.server.call("get_bil", self.ups(), 2)
+    except:
+      pass
+    try:
+      bil1 = anvil.server.call("get_bil", self.ups(), 1)
+    except:
+      pass
     self.clear_bilant()
-    self.bilant()
+    self.bilant(bill, bil1)
     
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -81,11 +88,11 @@ class verific(verificTemplate):
           return us
       pass
 
-  def bilant(self):    
-      bil = bill
+  def bilant(self, a, b):    
+      
       #time.sleep(1)
       try:
-               
+        bil = a      
         self.label_41.text = bil['an']
         self.label_42.text = "{:,}".format(bil['ACTIVEIMOBILIZATE-TOTAL'])
         self.label_43.text = "{:,}".format(bil['ACTIVECIRCULANTE-TOTAL,dincare:'])
@@ -104,8 +111,10 @@ class verific(verificTemplate):
         self.label_56.text = "{:,}".format(bil['CHELTUIELITOTALE'])
         self.label_57.text = "{:,}".format(int(bil['Profitnet']) - int(bil['Pierdereneta']))
         self.label_59.text = "{:,}".format(bil['Numarmediudesalariati'])
-        
-        bil = bil1
+      except:
+        pass
+      try:
+        bil = b
         self.label_61.text = bil['an']
         self.label_62.text = "{:,}".format(bil['ACTIVEIMOBILIZATE-TOTAL'])
         self.label_63.text = "{:,}".format(bil['ACTIVECIRCULANTE-TOTAL,dincare:'])
@@ -197,17 +206,16 @@ class verific(verificTemplate):
 
   def button_7_click(self, **event_args):
     self.clear_bilant()
-    an = str(int(date.today().year)-1)      
-    
+    an = str(int(date.today().year))   
     bil1 = json.loads(anvil.server.call("is_2", an, cui))
     anvil.server.call("bil_js", self.ups(), bil1, 1 )   
     
-    ann = str(int(an)-1)      
     
+    ann = ann = str(int(bil1["an"])-1)      
     bill = json.loads(anvil.server.call("is_2", ann, cui))
-    anvil.server.call("bil_js", self.ups(), bill, 2 )   
-   
-    self.bilant()
+    anvil.server.call("bil_js", self.ups(), bill, 2 )
+        
+    self.bilant(bill, bil1)
     pass
 
 

@@ -308,7 +308,7 @@ class start(startTemplate):
     self.text_box_7.text = ""
     self.text_box_6.text = "" 
     js_lucru['caen'] = ""    
-    if 1==1:
+    try:
       js_tva = anvil.server.call("is_1", self.text_box_2.text)
       anvil.server.call("tva_js", self.ups(), js_tva )
       ret_js = json.loads(js_tva)
@@ -320,28 +320,26 @@ class start(startTemplate):
       js_lucru['onrc'] = ret_js["nrRegCom"] 
       self.text_box_6.text = ret_js["telefon"]    
       js_lucru['telef'] = ret_js["telefon"] 
-      self.up_json()
-   # except:
-     # pass
-    #try:
+      
+    except:
+      pass
+    try:
       an = str(int(date.today().year))
       cui = self.text_box_2.text
       ret_bil = anvil.server.call("is_2", an, cui)
       us = self.ups()
       anvil.server.call("bil_js", us, ret_bil, 1)
-      bil = anvil.server.call("get_bil", self.ups(), 1)
-      print(bil)
-      #self.text_box_5.text = bil["caen"]
-      #js_lucru['caen'] = bil["caen"] 
-       
-    #except:
-      #pass
+      bil = anvil.server.call("get_bil", self.ups(), 1)      
+      self.text_box_5.text = bil["caen"]
+      js_lucru['caen'] = bil["caen"]        
+    except:
+      pass
     #try:
-     # ann = str(int(an)-1)      
+     # ann = str(int(bil["an"])-1)    
      # b = anvil.server.call("is_2", ann, self.text_box_2.text)
      # anvil.server.call("bil_js", self.ups(), b, 2)
-   # except:
-     # pass
+    #except:
+    #  pass
     self.up_json()
     pass 
 
