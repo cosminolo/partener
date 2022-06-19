@@ -23,18 +23,13 @@ class verific(verificTemplate):
     global cui
     cui = get_tva['cui']
     self.clear_tva()
-    self.tva()
-    
+    self.tva()    
     global bill
     global bil1
-    try:
-     bill = anvil.server.call("get_bil", self.ups(), 2)
-    except:
-      pass
-    try:
-      bil1 = anvil.server.call("get_bil", self.ups(), 1)
-    except:
-      pass
+    bill={}
+    bil1={}
+    bill = anvil.server.call("get_bil", self.ups(), 2)
+    bil1 = anvil.server.call("get_bil", self.ups(), 1)
     self.clear_bilant()
     self.bilant(bill, bil1)
     
@@ -207,15 +202,13 @@ class verific(verificTemplate):
   def button_7_click(self, **event_args):
     self.clear_bilant()
     an = str(int(date.today().year))   
-    bil1 = json.loads(anvil.server.call("is_2", an, cui))
-    anvil.server.call("bil_js", self.ups(), bil1, 1 )   
-    
+    c = anvil.server.call("is_2", an, cui)
+    anvil.server.call("bil_js", self.ups(), c, 1 ) 
     
     ann = ann = str(int(bil1["an"])-1)      
-    bill = json.loads(anvil.server.call("is_2", ann, cui))
-    anvil.server.call("bil_js", self.ups(), bill, 2 )
-        
-    self.bilant(bill, bil1)
+    d = anvil.server.call("is_2", ann, cui)
+    anvil.server.call("bil_js", self.ups(), d, 2 )        
+    self.bilant(json.loads(d), json.loads(c))
     pass
 
 
