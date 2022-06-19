@@ -11,6 +11,7 @@ from anvil.tables import app_tables
 from ..init.start import start
 from datetime import datetime, date
 import json
+import time
 class init(initTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -51,6 +52,10 @@ class init(initTemplate):
     self.visib(2)
     anvil.users.logout()
     self.ups()
+    n = Notification("",
+             title="Succes sign out!").show()
+    time.sleep(1)
+    n.hide()
     pass
 
   def button_2_click(self, **event_args):
