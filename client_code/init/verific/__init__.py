@@ -10,14 +10,27 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import json
 import time
+from datetime import date
 import stripe.checkout
 class verific(verificTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
-    # Any code you write here will run when the form opens.
-
+   
+      
+    global get_tva
+    get_tva = anvil.server.call("get_tva", self.ups())
+    global cui
+    cui = get_tva['cui']
+    self.clear_tva()
+    self.tva()
+    global bill
+    bill = anvil.server.call("get_bil", self.ups(), 2)
+    global bil1
+    bil1 = anvil.server.call("get_bil", self.ups(), 1)
+    self.clear_bilant()
+    self.bilant()
+    
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     pass
@@ -30,11 +43,9 @@ class verific(verificTemplate):
      open_form('init.start')
      pass
 
-  def check_box_1_change(self, **event_args):
-   if self.check_box_1.checked == True:
-    try:
-      get_tva = anvil.server.call("get_tva", self.ups())
-      self.label_12.text = get_tva['cui']
+  def tva(self):   
+    try:      
+      self.label_12.text = get_tva['cui']      
       self.label_13.text = get_tva['scpTVA']
       self.label_14.text = get_tva['data_inceput_ScpTVA']
       self.label_15.text = get_tva['statusRO_e_Factura']
@@ -47,7 +58,8 @@ class verific(verificTemplate):
       self.label_23.text = get_tva['data']
     except:
       pass
-   if self.check_box_1.checked == False:      
+    pass
+  def clear_tva(self):      
       self.label_12.text = ""
       self.label_13.text = ""
       self.label_14.text = ""
@@ -59,7 +71,7 @@ class verific(verificTemplate):
       self.label_20.text = ""
       self.label_21.text = ""
       self.label_23.text = ""
-  pass
+      pass
   def ups(self):
       user = anvil.users.get_user()
       if user is None:
@@ -69,12 +81,11 @@ class verific(verificTemplate):
           return us
       pass
 
-  def check_box_2_change(self, **event_args):
-    if self.check_box_2.checked == True:
-      bil = anvil.server.call("get_bil", self.ups(), 2)
+  def bilant(self):    
+      bil = bill
       #time.sleep(1)
       try:
-        #bil = anvil.server.call("get_bil", self.ups(), "2")       
+               
         self.label_41.text = bil['an']
         self.label_42.text = "{:,}".format(bil['ACTIVEIMOBILIZATE-TOTAL'])
         self.label_43.text = "{:,}".format(bil['ACTIVECIRCULANTE-TOTAL,dincare:'])
@@ -94,7 +105,7 @@ class verific(verificTemplate):
         self.label_57.text = "{:,}".format(int(bil['Profitnet']) - int(bil['Pierdereneta']))
         self.label_59.text = "{:,}".format(bil['Numarmediudesalariati'])
         
-        bil = anvil.server.call("get_bil", self.ups(), 1)
+        bil = bil1
         self.label_61.text = bil['an']
         self.label_62.text = "{:,}".format(bil['ACTIVEIMOBILIZATE-TOTAL'])
         self.label_63.text = "{:,}".format(bil['ACTIVECIRCULANTE-TOTAL,dincare:'])
@@ -115,7 +126,9 @@ class verific(verificTemplate):
         self.label_78.text = "{:,}".format(bil['Numarmediudesalariati'])
       except:
         pass
-    if self.check_box_2.checked == False:  
+      pass
+   
+  def clear_bilant(self):    
         self.label_41.text = ""
         self.label_42.text = ""
         self.label_43.text = ""
@@ -124,7 +137,7 @@ class verific(verificTemplate):
         self.label_46.text = ""
         self.label_47.text = ""
         self.label_48.text = ""
-        self.label_48.text = ""
+        self.label_49.text = ""
         self.label_50.text = ""
         self.label_51.text = ""
         self.label_52.text = ""
@@ -133,8 +146,26 @@ class verific(verificTemplate):
         self.label_55.text = ""
         self.label_56.text = ""
         self.label_57.text = ""
-        self.label_59.text = ""
-    pass
+        self.label_59.text = ""        
+        self.label_61.text = ""
+        self.label_62.text = ""
+        self.label_63.text = ""
+        self.label_64.text = ""
+        self.label_65.text = ""
+        self.label_66.text = ""
+        self.label_67.text = ""
+        self.label_68.text = ""
+        self.label_69.text = ""
+        self.label_70.text = ""
+        self.label_71.text = ""
+        self.label_72.text = ""
+        self.label_73.text = ""
+        self.label_74.text = ""
+        self.label_75.text = ""
+        self.label_76.text = ""
+        self.label_77.text = ""
+        self.label_78.text = ""
+        pass
 
   def button_5_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -145,9 +176,6 @@ class verific(verificTemplate):
     """This method is called when the TextBox loses focus"""
     self.text_box_1.text = self.item[ 'denumire' ]
     pass
-
-  
-  
   def button_6_click(self, **event_args):
     """This method is called when the button is clicked"""
    
@@ -159,6 +187,30 @@ class verific(verificTemplate):
                            description="info tva")
     print (c["result"])
     pass
+
+  def button_4_click(self, **event_args):      
+      get_tva = anvil.server.call("is_1", cui)
+      anvil.server.call("tva_js", self.ups(), get_tva)
+      self.clear_tva()      
+      self.tva()
+      pass
+
+  def button_7_click(self, **event_args):
+    self.clear_bilant()
+    an = str(int(date.today().year)-1)      
+    
+    bil1 = json.loads(anvil.server.call("is_2", an, cui))
+    anvil.server.call("bil_js", self.ups(), bil1, 1 )   
+    
+    ann = str(int(an)-1)      
+    
+    bill = json.loads(anvil.server.call("is_2", ann, cui))
+    anvil.server.call("bil_js", self.ups(), bill, 2 )   
+   
+    self.bilant()
+    pass
+
+
 
 
 

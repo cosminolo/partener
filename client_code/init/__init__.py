@@ -89,7 +89,7 @@ class init(initTemplate):
         if cs == False:
           self.visib(2)
     if c== True:
-       anvil.server.call("arh", us, self.text_box_4.text, self.text_box_1.text, self.text_box_2.text, js )
+       anvil.server.call("arh2", us, self.text_box_4.text, self.text_box_1.text, self.text_box_2.text)
     self.grid_panel_1.clear()
     self.visib(2)
     pass

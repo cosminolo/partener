@@ -300,7 +300,20 @@ class start(startTemplate):
 
   def text_box_2_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
-    if 1 == 1:
+    js_tva=""
+    js_bil=""
+    j_bil=""
+    anvil.server.call("tva_js", self.ups(), js_tva )
+    anvil.server.call("bil_js", self.ups(), js_bil, 1)
+    anvil.server.call("bil_js", self.ups(), j_bil, 2)
+    self.text_box_3.text = ""
+    self.text_box_4.text = ""
+    self.text_box_5.text = ""
+    self.text_box_7.text = ""
+    self.text_box_6.text = "" 
+    js_lucru['caen'] = ""
+    self.up_json()
+    try:
       js_tva = anvil.server.call("is_1", self.text_box_2.text)
       anvil.server.call("tva_js", self.ups(), js_tva )
       ret_js = json.loads(js_tva)
@@ -312,42 +325,45 @@ class start(startTemplate):
       js_lucru['onrc'] = ret_js["nrRegCom"] 
       self.text_box_6.text = ret_js["telefon"]    
       js_lucru['telef'] = ret_js["telefon"] 
-    #except:
+    except:
       self.text_box_3.text = ""
       self.text_box_4.text = ""
+      self.text_box_5.text = ""
       self.text_box_7.text = ""
       self.text_box_6.text = "" 
      
     try:
-      an = int(date.today().year)      
+      self.text_box_5.text = ""
+      an = str(int(date.today().year))      
       ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
       self.text_box_5.text = ret_js2["caen"]
-      js_lucru['caen'] = ret_js["caen"] 
-      anvil.server.call("bil_js", self.ups(), ret_js2, 1 )
-      
+      js_lucru['caen'] = ret_js2["caen"] 
+      anvil.server.call("bil_js", self.ups(), ret_js2, 1 )      
     except:
       self.text_box_5.text = ""
       
       try:    
+       self.text_box_5.text = "" 
        an = str(int(date.today().year) - 1)       
        js_bil= anvil.server.call("is_2", an, self.text_box_2.text)
        ret_js2 = json.loads(js_bil)
        self.text_box_5.text = ret_js2["caen"] 
-       js_lucru['caen'] = ret_js["caen"]  
+       js_lucru['caen'] = ret_js2["caen"]  
        anvil.server.call("bil_js", self.ups(), js_bil, 1)
        
       except:
            self.text_box_5.text = ""
            try:    
+              self.text_box_5.text = ""
               an = str(int(date.today().year) - 2)             
               ret_js2 = json.loads(anvil.server.call("is_2", an, self.text_box_2.text))
               self.text_box_5.text = ret_js2["caen"] 
-              js_lucru['caen'] = ret_js["caen"] 
+              js_lucru['caen'] = ret_js2["caen"] 
               anvil.server.call("bil_js", self.ups(), ret_js2, 1)
               
            except:
               self.text_box_5.text = ""
-              pass
+              
       
       self.up_json()      
       ann = str(int(date.today().year) - 2) 
