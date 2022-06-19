@@ -38,12 +38,17 @@ def app_new(id):
     js=app_tables.lucru.get(user=id)["js_gen_gol"]
     id_row = app_tables.lucru.get(user=id)
     id_row.update(js_gen=js)
+    id_row.update(js_bil="")
+    id_row.update(j_bil="")
+    id_row.update(js_tva="")
   except:
     app_tables.lucru.add_row(user=id)
     js = anvil.server.call("j_g_gol")
     us_row = app_tables.lucru.get(user=id)
     us_row.update(js_gen_gol=js, js_gen=js ) 
-    
+    us_row.update(js_bil="")
+    us_row.update(j_bil="")
+    us_row.update(js_tva="")
     pass
 pass
 
