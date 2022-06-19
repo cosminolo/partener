@@ -325,6 +325,8 @@ class start(startTemplate):
       js_lucru['onrc'] = ret_js["nrRegCom"] 
       self.text_box_6.text = ret_js["telefon"]    
       js_lucru['telef'] = ret_js["telefon"] 
+    
+    
     except:
       self.text_box_3.text = ""
       self.text_box_4.text = ""
