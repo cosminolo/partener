@@ -38,7 +38,7 @@ class Form1(Form1Template):
        self.txb[k].role = "input" #"form-control"
        self.txb[k].tag.name = k
        #self.txb[k].text = self.item["cont"]  
-       self.item = self.item["cont"] 
+       self.item = fin["cont"] 
        self.column_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=1)
        self.txb[k].set_event_handler('lost_focus', self.l_focus) 
     
