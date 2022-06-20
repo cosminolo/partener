@@ -7,7 +7,7 @@ components:
   properties: {text: button_1}
   name: button_1
   layout_properties: {slot: default}
-  event_bindings: {click: button_1_click}
+  event_bindings: {}
 - type: ColumnPanel
   properties: {}
   name: column_panel_1
