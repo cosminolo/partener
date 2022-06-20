@@ -81,7 +81,7 @@ class init(initTemplate):
     self.visib(1)
     us = self.login_status.text
     self.text_box_3.text = us
-    self.text_box_4.text = "{:%d.%m.%Y}".format(datetime.now())
+    self.text_box_4.text =datetime.now()
     js = anvil.server.call("prel_js_gol", us, 2)    
     self.item = js
     c = confirm("Salvez in arhiva ?")    
@@ -156,19 +156,20 @@ class init(initTemplate):
                               foreground="#000",background="#fff")
             self.txb[k].role = "form-control"
             self.txb[k].tag.name = k                           
-            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=4)
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=5)
           if i ==3 :   
             self.txb[k] = Label(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=150,
+                              align="right",
                               foreground="#000",background="#fff")
             self.txb[k].role = "form-control"
             self.txb[k].tag.name = k                           
-            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=2, width_xs=2)
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=3)
           
           if i ==4 :   
-            self.txb[k] = RadioButton(background="#fff", width=25) 
+            self.txb[k] = RadioButton(background="#fff", width=15) 
             #self.txb[k] = RadioButton()               
             self.txb[k].tag.name = k                          
             self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=1)
