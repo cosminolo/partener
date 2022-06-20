@@ -8,8 +8,8 @@ components:
   name: button_1
   layout_properties: {slot: default}
   event_bindings: {}
-- type: ColumnPanel
-  properties: {}
-  name: column_panel_1
+- type: XYPanel
+  properties: {height: 100}
+  name: xy_panel_1
   layout_properties: {slot: default}
 is_package: true

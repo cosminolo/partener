@@ -148,7 +148,10 @@ a:hover, a:active {
   padding-top: 0;
   padding-bottom: 0;
 }
-
+.anvil-role-thin_row {
+ margin-top: -10px;
+ margin-bottom: -10px;
+}
 /* Page structure: App bar with optional left nav */
 .structure {
   display: flex;
@@ -656,8 +659,8 @@ body>div[data-notify="container"].alert-warning>span[data-notify="title"]{
 /* Component: TextBox + TextArea */
 
 input.anvil-component, textarea.anvil-component, .anvil-component select, .anvil-datepicker input {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 0.8;
   border-radius: 0;
   background-color: transparent;
   color: rgba(0,0,0,0.87);
@@ -666,14 +669,14 @@ input.anvil-component, textarea.anvil-component, .anvil-component select, .anvil
 }
 
 .anvil-dropdown {
-  font-size: 16px;
+  font-size: 12px;
 }
 .anvil-component select {
   font-size: inherit;
 }
 
 input.anvil-component, .anvil-component select, .anvil-datepicker input {
-  padding: 8px 0 4px;
+  padding: 4px 0 4px;
   border: 0;
   border-bottom: 1px solid rgba(0,0,0,0.42);
 
@@ -682,7 +685,7 @@ input.anvil-component, .anvil-component select, .anvil-datepicker input {
 }
 
 textarea.anvil-component {
-  padding: 4px 8px;
+  padding: 4px 4px;
   border: 1px solid rgba(0,0,0,0.42);
   border-radius: 2px;
   transition: border 0.2s, padding 0.2s;
@@ -716,8 +719,8 @@ textarea.anvil-component {
 }
 
 .anvil-component select, .anvil-datepicker input { margin-bottom: 4px; }
-input.anvil-component.anvil-spacing-below-none { margin-bottom: 4px; }
-input.anvil-component.anvil-spacing-below-small { margin-bottom: 8px; }
+input.anvil-component.anvil-spacing-below-none { margin-bottom: -12px; }
+input.anvil-component.anvil-spacing-below-small { margin-bottom: -12px; }
 input.anvil-component.anvil-spacing-below-medium { margin-bottom: 12px; }
 input.anvil-component.anvil-spacing-below-large { margin-bottom: 20px; }
 

@@ -97,7 +97,7 @@ class fin(finTemplate):
         self.grid_panel_1.add_component(self.txb[k], row=2, col_xs=0, width_xs=1) 
                             
                             
-    for j in range (3,500): # rows 
+    for j in range (3,700): # rows 
        for i in range(1, 11): # col 
           k=j*10+i        
           if i == 1 :   
@@ -105,24 +105,27 @@ class fin(finTemplate):
                               spacing_above = "small",
                               spacing_below = "small",
                               width=50,
+                              border="solid black 1px",
                               foreground="#000",background="#fff",placeholder=f"pl{k}")
             self.txb[k].role = "input" #"form-control"
             self.txb[k].tag.name = k
-            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=1)
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=-4, width_xs=1)
           if i == 2:
             self.txb[k] = TextBox(type="text", font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
                               width=150,
+                              border="solid black 1px",
                               foreground="#000",background="#fff",placeholder=f"pl{k}")
             self.txb[k].role = "input" #"form-control"
             self.txb[k].tag.name = k
-            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=2)
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=-4, width_xs=2)
           if i >2 :
             self.txb[k] = TextBox(type="text", font="Arial", font_size="10",
                               spacing_above = "none",
                               spacing_below = "small",
                               width=100,
+                              border="solid blue 1px",
                               align="right",    
                               foreground="#000",background="#fff",placeholder=f"pl{k}")
             self.txb[k].role = "input" #"form-control"

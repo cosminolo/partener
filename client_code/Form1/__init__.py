@@ -16,7 +16,7 @@ class Form1(Form1Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     
-    self.column_panel_1.clear()
+    self.xy_panel_1.clear()
    
     global txb
     txb = self.txb = {}
@@ -30,19 +30,20 @@ class Form1(Form1Template):
     d={}
     for i in range(1, 9): # col 
       #k=10+i  
-      if i == 1:
+      if i >0:
        k=1
        self.txb[k] = TextBox(type="text", font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "none",
                               width=80,
+                              border="solid black 2px",
                               foreground="#000",background="#fff",placeholder=f"place{k}")
        self.txb[k].role = "input" #"form-control"
        self.txb[k].tag.name =  k
        self.txb[k].text = fin[k]  
        #self.txb[k] = self.item["cont"]   
        
-       self.column_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=1)
+       self.xy_panel_1.add_component(self.txb[k], x=1, y=1)
        self.txb[k].set_event_handler('lost_focus', self.l_focus) 
        k = k+1
        self.txb[k] = TextBox(type="text", font="Arial", font_size="10",
@@ -54,7 +55,7 @@ class Form1(Form1Template):
        self.txb[k].tag.name = k
        self.txb[k].text = fin[k]  
        #self.item = fin["suma"] 
-       self.column_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=1)
+       self.xy_panel_1.add_component(self.txb[k], x=10, y=10)
        #self.txb[k].set_event_handler('lost_focus', self.l_focus)  
         
     
