@@ -37,7 +37,8 @@ class Form1(Form1Template):
                               foreground="#000",background="#fff",placeholder=f"place{k}")
        self.txb[k].role = "input" #"form-control"
        self.txb[k].tag.name = k
-       self.txb[k].text = self.item["cont"]   
+       #self.txb[k].text = self.item["cont"]  
+       self.item = self.item["cont"] 
        self.column_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=1)
        self.txb[k].set_event_handler('lost_focus', self.l_focus) 
     
@@ -45,15 +46,15 @@ class Form1(Form1Template):
   def l_focus (self, sender,**event_args):
     print(self.item)
     print(sender.tag.name)   
-    fin = json.loads(json.dumps(self.item))
-    print (fin)
+    
     if not sender.text:
       pass
     else:
       S = sender.text
       if S.isdigit() or (S.startswith("-") and S[1:].isdigit()):
-        fin = json.loads(json.dumps(self.item))
-        print (fin)
+        self.item = sender.text
+        fin = json.dumps(self.item)
+        print (json.loads(fin))
         pass
       else:         
         sender.text = 0     
