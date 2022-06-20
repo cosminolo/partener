@@ -26,7 +26,7 @@ class Form1(Form1Template):
     i = 1
     j = 0   
     fin = {"cont": 231, "suma": 300}
-    self.item = fin
+    #self.item = fin
     for i in range(1, 9): # col 
       k=10+i  
       if i == 1:
@@ -37,8 +37,8 @@ class Form1(Form1Template):
                               foreground="#000",background="#fff",placeholder=f"place{k}")
        self.txb[k].role = "input" #"form-control"
        self.txb[k].tag.name = k
-       self.txb[k].text = self.item["cont"]  
-       #self.item = fin["cont"] 
+       self.txb[k].text = fin["cont"]  
+       #self.txb[k].item = fin["cont"] 
        self.column_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=1)
        self.txb[k].set_event_handler('lost_focus', self.l_focus) 
        k = k+1
@@ -49,18 +49,14 @@ class Form1(Form1Template):
                               foreground="#000",background="#fff",placeholder=f"place{k}")
        self.txb[k].role = "input" #"form-control"
        self.txb[k].tag.name = k
-       self.txb[k].text = self.item["suma"]  
+       self.txb[k].text = fin["suma"]  
        #self.item = fin["suma"] 
        self.column_panel_1.add_component(self.txb[k], row=1, col_xs=0, width_xs=1)
        self.txb[k].set_event_handler('lost_focus', self.l_focus)  
         
-        
-        
-        
-        
     
   def l_focus (self, sender,**event_args):
-    #print(self.item)
+    
     #print(sender.tag.name)   
     
     if not sender.text:
@@ -68,9 +64,11 @@ class Form1(Form1Template):
     else:
       S = sender.text
       if S.isdigit() or (S.startswith("-") and S[1:].isdigit()):
-               
+        if sender.tag.name == 11:
+          fin["cont"] = sender.text
+          print(fin)
         
-        pass
+        
       else:         
         sender.text = 0     
         alert("Just numbers without decimal")        
