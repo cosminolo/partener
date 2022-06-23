@@ -15,18 +15,30 @@ class RowTemplate2(RowTemplate2Template):
     self.init_components(**properties)
     if self.label_6.text == "P":
        self.text_box_1.enabled = False
+       self.text_box_1.background="#E0E0E0"
        self.text_box_3.enabled = False 
+       self.text_box_3.background="#E0E0E0" 
        self.text_box_5.enabled = False 
+       self.text_box_5.background="#E0E0E0" 
        self.text_box_2.enabled = True
+       self.text_box_2.background="#CAECF8" 
        self.text_box_4.enabled = True
+       self.text_box_4.background="#CAECF8"  
        self.text_box_6.enabled = True
+       self.text_box_6.background="#CAECF8"  
     if self.label_6.text == "A":
        self.text_box_1.enabled = True
+       self.text_box_1.background="#CAECF8"  
        self.text_box_3.enabled = True 
+       self.text_box_3.background="#CAECF8"  
        self.text_box_5.enabled = True 
+       self.text_box_5.background="#CAECF8" 
        self.text_box_2.enabled = False 
+       self.text_box_2.background="#E0E0E0" 
        self.text_box_4.enabled = False 
+       self.text_box_4.background="#E0E0E0" 
        self.text_box_6.enabled = False 
+       self.text_box_6.background="#E0E0E0" 
       
     # Any code you write here will run when the form opens.
 
@@ -40,9 +52,9 @@ class RowTemplate2(RowTemplate2Template):
 
   def text_box_1_lost_focus(self, **event_args):
     """This method is called when the TextBox loses focus"""
-    if self.text_box_1.text.isdigit() or (text_box_1.text.startswith("-") and S[1:].isdigit()):
+    if self.text_box_1.text.isdigit() or (self.text_box_1.text.startswith("-") and S[1:].isdigit()):
         pass
-      else:         
+    else:         
         text_box_1.text = 0     
         alert("Just numbers without decimal")    
     pass

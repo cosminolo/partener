@@ -15,13 +15,12 @@ components:
   properties:
     role: null
     columns:
-    - {id: LXERSH, title: Cont, data_key: Cont}
-    - {id: FUNZYB, title: Denumire, data_key: Denumire}
-    - {id: PUWRMO, title: Column 3, data_key: column_3}
-    - {id: YGIKCV, title: Cod_A, data_key: Cod_A}
-    - {id: KQMFEM, title: Cod_P, data_key: Cod_P}
-    - {id: SXQJJN, title: Tip, data_key: Tip}
-    - {id: ZCIGRM, title: Debit, data_key: D1}
+    - {id: LXERSH, title: Cont, data_key: Cont, width: '80'}
+    - {id: FUNZYB, title: Denumire, data_key: Denumire, width: '200'}
+    - {id: YGIKCV, title: Cod_A, data_key: Cod_A, width: '50'}
+    - {id: KQMFEM, title: Cod_P, data_key: Cod_P, width: '50'}
+    - {id: SXQJJN, title: Tip, data_key: Tip, width: '30'}
+    - {id: ZCIGRM, title: Debit, data_key: D1, width: ''}
     - {id: IGQAXG, title: Credit, data_key: C1}
     - {id: IWZHOK, title: Debit, data_key: C2}
     - {id: UYPOWZ, title: Credit, data_key: C2}
