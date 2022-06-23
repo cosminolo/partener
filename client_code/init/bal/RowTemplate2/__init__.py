@@ -10,6 +10,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 from ... import My_globals
 import json
+
 class RowTemplate2(RowTemplate2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -72,8 +73,9 @@ class RowTemplate2(RowTemplate2Template):
     else:         
         self.text_box_1.text = 0     
         alert("Just numbers without decimal")
-    cl = str(self.label_1.text)[1:]           
+    cl = str(self.label_1.text)[:1]           
     self.recalcul_clasa(cl, "D1")
+    
     pass
 
   def text_box_2_lost_focus(self, **event_args):
@@ -82,7 +84,7 @@ class RowTemplate2(RowTemplate2Template):
     else:         
         self.text_box_2.text = 0     
         alert("Just numbers without decimal")   
-    cl = str(self.label_1.text)[1:]           
+    cl = str(self.label_1.text)[:1]           
     self.recalcul_clasa(cl, "C1")      
       
     pass
@@ -98,16 +100,17 @@ class RowTemplate2(RowTemplate2Template):
     return s
   
   def recalcul_clasa(self, cl, col):
-    b = My_globals.bal
-    nr = len(b)
+    
+    nr = len(My_globals.bal)
     s = int(0)
     for i in range (0,nr):
-      if str(b[i]['Cont'])[:1] == cl:
-        if b[i][col]:
-          s = s + int(b[i][col])
-      if str(b[i]['Cont'])[:1] == "T":
+      if str(My_globals.bal[i]['Cont'])[:1] == cl:
+        if My_globals.bal[i][col]:
+          s = s + int(My_globals.bal[i][col])
+      if str(My_globals.bal[i]['Cont'])[:1] == "T":
         My_globals.bal[i][col] = s
         print(My_globals.bal[i][col])
+       
     pass
 
 

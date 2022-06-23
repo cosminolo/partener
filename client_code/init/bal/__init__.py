@@ -9,6 +9,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ... import My_globals
+from . import refre
 
 class bal(balTemplate):
   def __init__(self, **properties):
@@ -16,8 +17,10 @@ class bal(balTemplate):
     self.init_components(**properties)
     My_globals.bal = anvil.server.call("get_bal", self.ups())
     # Any code you write here will run when the form opens.
-    self.repeating_panel_1.items = My_globals.bal
     
+    self.repeating_panel_1.items = My_globals.bal
+   
+  
   def ups(self):
       user = anvil.users.get_user()
       if user is None:

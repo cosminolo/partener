@@ -22,36 +22,44 @@ components:
       name: button_1
       layout_properties: {grid_position: 'WAVJUW,NTZZMK'}
       event_bindings: {click: button_1_click}
-- type: DataGrid
-  properties:
-    role: null
-    columns:
-    - {id: LXERSH, title: Cont, data_key: Cont, width: '80'}
-    - {id: FUNZYB, title: Denumire, data_key: Denumire, width: '200'}
-    - {id: YGIKCV, title: Cod_A, data_key: Cod_A, width: '50'}
-    - {id: KQMFEM, title: Cod_P, data_key: Cod_P, width: '50'}
-    - {id: SXQJJN, title: Tip, data_key: Tip, width: '30'}
-    - {id: ZCIGRM, title: Debit, data_key: D1, width: ''}
-    - {id: IGQAXG, title: Credit, data_key: C1}
-    - {id: IWZHOK, title: Debit, data_key: C2}
-    - {id: UYPOWZ, title: Credit, data_key: C2}
-    - {id: WLRQPZ, title: Debit, data_key: D3}
-    - {id: ZXIAJA, title: Credit, data_key: C3}
-    auto_header: true
-    tooltip: ''
-    border: ''
-    foreground: ''
-    rows_per_page: 20
-    visible: true
-    wrap_on: never
-    show_page_controls: true
-    spacing_above: small
-    spacing_below: small
-    background: ''
-  name: data_grid_1
+- type: ColumnPanel
+  properties: {}
+  name: column_panel_3
   layout_properties: {slot: default}
   components:
-  - type: RepeatingPanel
-    properties: {spacing_above: none, spacing_below: none, item_template: init.bal.RowTemplate2}
-    name: repeating_panel_1
-    layout_properties: {}
+  - type: DataGrid
+    properties:
+      role: null
+      columns:
+      - {id: LXERSH, title: Cont, data_key: Cont, width: '80'}
+      - {id: FUNZYB, title: Denumire, data_key: Denumire, width: '200'}
+      - {id: YGIKCV, title: Cod_A, data_key: Cod_A, width: '50'}
+      - {id: KQMFEM, title: Cod_P, data_key: Cod_P, width: '50'}
+      - {id: SXQJJN, title: Tip, data_key: Tip, width: '30'}
+      - {id: ZCIGRM, title: Debit, data_key: D1, width: ''}
+      - {id: IGQAXG, title: Credit, data_key: C1}
+      - {id: IWZHOK, title: Debit, data_key: C2}
+      - {id: UYPOWZ, title: Credit, data_key: C2}
+      - {id: WLRQPZ, title: Debit, data_key: D3}
+      - {id: ZXIAJA, title: Credit, data_key: C3}
+      auto_header: true
+      tooltip: ''
+      border: ''
+      foreground: ''
+      rows_per_page: 20
+      visible: true
+      wrap_on: never
+      show_page_controls: true
+      spacing_above: small
+      spacing_below: small
+      background: ''
+    name: data_grid_1
+    layout_properties:
+      col_widths: {}
+      grid_position: HQPYLC,MNCQIZ
+      full_width_row: true
+    components:
+    - type: RepeatingPanel
+      properties: {spacing_above: none, spacing_below: none, item_template: init.bal.RowTemplate2}
+      name: repeating_panel_1
+      layout_properties: {}
