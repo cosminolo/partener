@@ -3,11 +3,24 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
 components:
-- type: ColumnPanel
-  properties: {}
-  name: content_panel
-  layout_properties: {slot: default}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- type: ColumnPanel
+  properties: {}
+  name: column_panel_1
+  layout_properties: {slot: left-nav}
+- type: DataGrid
+  properties:
+    columns:
+    - {id: YFFBXN, title: Column 1, data_key: column_1}
+    - {id: LNQHAB, title: Column 2, data_key: column_2}
+    - {id: RBSMWT, title: Column 3, data_key: column_3}
+  name: data_grid_1
+  layout_properties: {slot: default}
+  components:
+  - type: RepeatingPanel
+    properties: {spacing_above: none, spacing_below: none, item_template: init.bal.RowTemplate1}
+    name: repeating_panel_1
+    layout_properties: {}

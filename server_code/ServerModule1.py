@@ -28,8 +28,10 @@ def add_user(id):
  else:
   app_tables.lucru.add_row(user=id)
   js = anvil.server.call("j_g_gol")
+  jbal = anvil.server.call("bal_gol")
   us_row = app_tables.lucru.get(user=id)
-  us_row.update(js_gen_gol=js, js_gen=js ) 
+  us_row.update(js_gen_gol=js, js_gen=js, bal=jbal ) 
+  
 pass
 
 @anvil.server.callable
@@ -41,14 +43,20 @@ def app_new(id):
     id_row.update(js_bil="")
     id_row.update(j_bil="")
     id_row.update(js_tva="")
+    ud_row.update(js_gen_gol=js, js_gen=js ) 
+    jbal = anvil.server.call("bal_gol")
+    id_row.update(bal=jbal)
   except:
     app_tables.lucru.add_row(user=id)
     js = anvil.server.call("j_g_gol")
     us_row = app_tables.lucru.get(user=id)
     us_row.update(js_gen_gol=js, js_gen=js ) 
+    jbal = anvil.server.call("bal_gol")
+    us_row.update(bal=jbal)
     us_row.update(js_bil="")
     us_row.update(j_bil="")
     us_row.update(js_tva="")
+    
     pass
 pass
 
