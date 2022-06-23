@@ -14,12 +14,6 @@ components:
   - {property: text, code: 'self.item[''DENUMIRE'']'}
 - type: Label
   properties: {}
-  name: label_3
-  layout_properties: {column: PUWRMO}
-  data_bindings:
-  - {property: text, code: 'self.item[''COD_a'']'}
-- type: Label
-  properties: {}
   name: label_4
   layout_properties: {column: YGIKCV}
   data_bindings:
@@ -45,13 +39,14 @@ components:
   layout_properties: {column: ZCIGRM}
   data_bindings:
   - {property: text, code: 'self.item[''D1'']', writeback: true}
-  event_bindings: {pressed_enter: text_box_1_pressed_enter, lost_focus: text_box_1_lost_focus}
+  event_bindings: {lost_focus: text_box_1_lost_focus}
 - type: TextBox
   properties: {}
   name: text_box_2
   layout_properties: {column: IGQAXG}
   data_bindings:
   - {property: text, code: 'self.item[''C1'']', writeback: true}
+  event_bindings: {lost_focus: text_box_2_lost_focus}
 - type: TextBox
   properties: {}
   name: text_box_3

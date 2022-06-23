@@ -8,7 +8,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-
+from ... import My_globals
 class RowTemplate2(RowTemplate2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -42,21 +42,26 @@ class RowTemplate2(RowTemplate2Template):
       
     # Any code you write here will run when the form opens.
 
-  def text_box_1_pressed_enter(self, **event_args):
-    """This method is called when the user presses Enter in this text box"""
-    if self.label_6.text == "P":
-      self.text_box_1.text =""
-    
+      
     
   pass
 
-  def text_box_1_lost_focus(self, **event_args):
-    """This method is called when the TextBox loses focus"""
+  def text_box_1_lost_focus(self, **event_args):   
     if self.text_box_1.text.isdigit() or (self.text_box_1.text.startswith("-") and S[1:].isdigit()):
         pass
     else:         
         text_box_1.text = 0     
         alert("Just numbers without decimal")    
     pass
+
+  def text_box_2_lost_focus(self, **event_args):
+    if self.text_box_1.text.isdigit() or (self.text_box_1.text.startswith("-") and S[1:].isdigit()):
+        pass
+    else:         
+        text_box_1.text = 0     
+        alert("Just numbers without decimal")   
+    
+    pass
+
 
 
