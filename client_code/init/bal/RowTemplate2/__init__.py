@@ -50,7 +50,7 @@ class RowTemplate2(RowTemplate2Template):
     if self.text_box_1.text.isdigit() or (self.text_box_1.text.startswith("-") and S[1:].isdigit()):
         pass
     else:         
-        text_box_1.text = 0     
+        self.text_box_1.text = 0     
         alert("Just numbers without decimal")    
     pass
 
@@ -58,10 +58,12 @@ class RowTemplate2(RowTemplate2Template):
     if self.text_box_1.text.isdigit() or (self.text_box_1.text.startswith("-") and S[1:].isdigit()):
         pass
     else:         
-        text_box_1.text = 0     
+        self.text_box_2.text = 0     
         alert("Just numbers without decimal")   
-    
-    pass
+    if self.label_1.text == "T1":
+      
+      
+   pass
 
 
 
