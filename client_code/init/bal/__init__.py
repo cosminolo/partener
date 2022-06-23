@@ -19,7 +19,9 @@ class bal(balTemplate):
     # Any code you write here will run when the form opens.
     
     self.repeating_panel_1.items = My_globals.bal
-   
+    My_globals.cl1=0
+    self.text_box_1.text = My_globals.cl1
+
   
   def ups(self):
       user = anvil.users.get_user()

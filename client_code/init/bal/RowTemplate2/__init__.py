@@ -14,6 +14,7 @@ import json
 class RowTemplate2(RowTemplate2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
+    
     self.init_components(**properties)
     if self.label_6.text == "P":
        self.text_box_1.enabled = False
@@ -109,9 +110,22 @@ class RowTemplate2(RowTemplate2Template):
           s = s + int(My_globals.bal[i][col])
       if str(My_globals.bal[i]['Cont'])[:1] == "T":
         My_globals.bal[i][col] = s
+        
         print(My_globals.bal[i][col])
-       
+      My_globals.cl1 = s
     pass
+
+  def form_show(self, **event_args):
+    """This method is called when the data row panel is shown on the screen"""
+   
+    pass
+
+  def form_refreshing_data_bindings(self, **event_args):
+    """This method is called when refreshing_data_bindings is called"""
+    
+    pass
+
+
 
 
 

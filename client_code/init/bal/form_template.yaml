@@ -23,7 +23,7 @@ components:
       layout_properties: {grid_position: 'WAVJUW,NTZZMK'}
       event_bindings: {click: button_1_click}
 - type: ColumnPanel
-  properties: {}
+  properties: {col_widths: '{"SMAOYV":5,"XWDTBO":9,"YXOBBA":11,"AHGGWQ":10,"INTAXB":10,"OWLRDN":10,"ZJEEGL":5}'}
   name: column_panel_3
   layout_properties: {slot: default}
   components:
@@ -63,3 +63,62 @@ components:
       properties: {spacing_above: none, spacing_below: none, item_template: init.bal.RowTemplate2}
       name: repeating_panel_1
       layout_properties: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 1, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'JEOXBC,SMAOYV'}
+  - type: TextBox
+    properties: {}
+    name: text_box_1
+    layout_properties: {grid_position: 'JEOXBC,XWDTBO'}
+  - type: TextBox
+    properties: {}
+    name: text_box_2
+    layout_properties: {grid_position: 'JEOXBC,YXOBBA'}
+  - type: TextBox
+    properties: {}
+    name: text_box_3
+    layout_properties: {grid_position: 'JEOXBC,AHGGWQ'}
+  - type: TextBox
+    properties: {}
+    name: text_box_4
+    layout_properties: {grid_position: 'JEOXBC,INTAXB'}
+  - type: TextBox
+    properties: {}
+    name: text_box_6
+    layout_properties: {grid_position: 'JEOXBC,OWLRDN'}
+  - type: TextBox
+    properties: {}
+    name: text_box_5
+    layout_properties: {grid_position: 'JEOXBC,ZJEEGL'}
+  - type: Label
+    properties: {}
+    name: label_2
+    layout_properties: {grid_position: 'HWDKHR,GWTWOF'}
+  - type: TextBox
+    properties: {}
+    name: text_box_7
+    layout_properties: {grid_position: 'HWDKHR,AGWMME'}
+  - type: TextBox
+    properties: {}
+    name: text_box_8
+    layout_properties: {grid_position: 'HWDKHR,AGJTLN'}
+  - type: TextBox
+    properties: {}
+    name: text_box_9
+    layout_properties: {grid_position: 'HWDKHR,XFYZTI'}
+  - type: TextBox
+    properties: {}
+    name: text_box_10
+    layout_properties: {grid_position: 'HWDKHR,KNULVH'}
+  - type: TextBox
+    properties: {}
+    name: text_box_11
+    layout_properties: {grid_position: 'HWDKHR,TJLUJE'}
+  - type: TextBox
+    properties: {}
+    name: text_box_12
+    layout_properties: {grid_position: 'HWDKHR,BBVXZK'}
