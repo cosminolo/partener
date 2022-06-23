@@ -42,6 +42,7 @@ components:
   layout_properties: {column: ZCIGRM}
   data_bindings:
   - {property: text, code: 'self.item[''D1'']', writeback: true}
+  event_bindings: {pressed_enter: text_box_1_pressed_enter, lost_focus: text_box_1_lost_focus}
 - type: TextBox
   properties: {}
   name: text_box_2
