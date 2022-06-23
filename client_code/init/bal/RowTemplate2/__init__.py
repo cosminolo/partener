@@ -9,6 +9,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ... import My_globals
+import json
 class RowTemplate2(RowTemplate2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -41,8 +42,27 @@ class RowTemplate2(RowTemplate2Template):
        self.text_box_6.background="#E0E0E0" 
       
     # Any code you write here will run when the form opens.
-
-      
+    if str(self.label_1.text)[:1] == "T":
+      self.label_2.bold = True
+      cl = str(self.label_1.text)[1:]
+      self.text_box_1.text = self.sum_clasa(cl, "D1")
+      self.text_box_1.bold = True
+      self.text_box_1.background= "#E0F8CA"
+      self.text_box_2.text = self.sum_clasa(cl, "C1")
+      self.text_box_2.bold = True
+      self.text_box_2.background= "#E0F8CA"
+      self.text_box_3.text = self.sum_clasa(cl, "D2")
+      self.text_box_3.bold = True
+      self.text_box_3.background= "#E0F8CA"
+      self.text_box_4.text = self.sum_clasa(cl, "C2")
+      self.text_box_4.bold = True
+      self.text_box_4.background= "#E0F8CA"
+      self.text_box_5.text = self.sum_clasa(cl, "D3")
+      self.text_box_5.bold = True
+      self.text_box_5.background= "#E0F8CA"
+      self.text_box_6.text = self.sum_clasa(cl, "C3")
+      self.text_box_6.bold = True
+      self.text_box_6.background= "#E0F8CA"
     
   pass
 
@@ -51,19 +71,44 @@ class RowTemplate2(RowTemplate2Template):
         pass
     else:         
         self.text_box_1.text = 0     
-        alert("Just numbers without decimal")    
+        alert("Just numbers without decimal")
+    cl = str(self.label_1.text)[1:]           
+    self.recalcul_clasa(cl, "D1")
     pass
 
   def text_box_2_lost_focus(self, **event_args):
-    if self.text_box_1.text.isdigit() or (self.text_box_1.text.startswith("-") and S[1:].isdigit()):
+    if self.text_box_2.text.isdigit() or (self.text_box_2.text.startswith("-") and S[1:].isdigit()):
         pass
     else:         
         self.text_box_2.text = 0     
         alert("Just numbers without decimal")   
-    if self.label_1.text == "T1":
+    cl = str(self.label_1.text)[1:]           
+    self.recalcul_clasa(cl, "C1")      
       
-      
-   pass
+    pass
+  
+  def sum_clasa (self, cl, col):
+    b = My_globals.bal
+    nr = len(b)
+    s = int(0)
+    for i in range (0,nr):
+      if str(b[i]['Cont'])[:1] == cl:
+        if b[i][col]:
+          s = s + int(b[i][col])
+    return s
+  
+  def recalcul_clasa(self, cl, col):
+    b = My_globals.bal
+    nr = len(b)
+    s = int(0)
+    for i in range (0,nr):
+      if str(b[i]['Cont'])[:1] == cl:
+        if b[i][col]:
+          s = s + int(b[i][col])
+      if str(b[i]['Cont'])[:1] == "T":
+        My_globals.bal[i][col] = s
+        print(My_globals.bal[i][col])
+    pass
 
 
 

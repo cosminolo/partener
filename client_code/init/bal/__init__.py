@@ -17,7 +17,7 @@ class bal(balTemplate):
     My_globals.bal = anvil.server.call("get_bal", self.ups())
     # Any code you write here will run when the form opens.
     self.repeating_panel_1.items = My_globals.bal
-   
+    
   def ups(self):
       user = anvil.users.get_user()
       if user is None:
@@ -26,3 +26,8 @@ class bal(balTemplate):
           us =  str(user['email'])
           return us
       pass
+
+  def button_1_click(self, **event_args):
+    self.repeating_panel_1.items = My_globals.bal
+    pass
+

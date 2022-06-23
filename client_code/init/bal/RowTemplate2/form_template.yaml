@@ -1,13 +1,17 @@
 container: {type: DataRowPanel}
 components:
 - type: Label
-  properties: {}
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: '', font_size: 11, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: ''}
   name: label_1
   layout_properties: {column: LXERSH}
   data_bindings:
   - {property: text, code: 'self.item[''Cont'']'}
 - type: Label
-  properties: {}
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: '', font_size: 11, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: ''}
   name: label_2
   layout_properties: {column: FUNZYB}
   data_bindings:
@@ -32,41 +36,56 @@ components:
   - {property: text, code: 'self.item[''TIP'']'}
 - type: TextBox
   properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-    background: '', bold: false, underline: false}
+    border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+    font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false}
   name: text_box_1
   layout_properties: {column: ZCIGRM}
   data_bindings:
   - {property: text, code: 'self.item[''D1'']', writeback: true}
   event_bindings: {lost_focus: text_box_1_lost_focus}
 - type: TextBox
-  properties: {}
+  properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+    border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+    font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false}
   name: text_box_2
   layout_properties: {column: IGQAXG}
   data_bindings:
   - {property: text, code: 'self.item[''C1'']', writeback: true}
   event_bindings: {lost_focus: text_box_2_lost_focus}
 - type: TextBox
-  properties: {}
+  properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+    border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+    font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false}
   name: text_box_3
   layout_properties: {column: IWZHOK}
   data_bindings:
   - {property: text, code: 'self.item[''D2'']', writeback: true}
 - type: TextBox
-  properties: {}
+  properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+    border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+    font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false}
   name: text_box_4
   layout_properties: {column: UYPOWZ}
   data_bindings:
   - {property: text, code: 'self.item[''C2'']', writeback: true}
 - type: TextBox
-  properties: {}
+  properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+    border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+    font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false}
   name: text_box_5
   layout_properties: {column: WLRQPZ}
   data_bindings:
   - {property: text, code: 'self.item[''D3'']', writeback: true}
 - type: TextBox
-  properties: {}
+  properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+    border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+    font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false}
   name: text_box_6
   layout_properties: {column: ZXIAJA}
   data_bindings:

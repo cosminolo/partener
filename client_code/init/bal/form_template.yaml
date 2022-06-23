@@ -8,9 +8,20 @@ components:
   name: navbar_links
   layout_properties: {slot: nav-right}
 - type: ColumnPanel
-  properties: {}
+  properties: {col_widths: '{}'}
   name: column_panel_1
   layout_properties: {slot: left-nav}
+  components:
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: column_panel_2
+    layout_properties: {grid_position: 'VBEJGP,WACSSG'}
+    components:
+    - type: Button
+      properties: {text: button_1}
+      name: button_1
+      layout_properties: {grid_position: 'WAVJUW,NTZZMK'}
+      event_bindings: {click: button_1_click}
 - type: DataGrid
   properties:
     role: null
