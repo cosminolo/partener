@@ -12,6 +12,7 @@ from ..init.start import start
 from datetime import datetime, date
 import json
 import time
+from .. import My_globals
 class init(initTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -25,12 +26,14 @@ class init(initTemplate):
   def ups(self):
       # Get the currently logged in user (if any)
       self.login_status.text = ""
+      My_globals.us = ""
       user = anvil.users.get_user()
       if user is None:
         x=0
       else:
           us =  str(user['email'])
           self.login_status.text = us
+          My_globals.us =us
           anvil.server.call("add_user", us)
 
   

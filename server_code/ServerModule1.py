@@ -104,6 +104,15 @@ def get_bil(id,a):
    pass
 pass
 @anvil.server.callable
+def get_bal(id):
+  try:    
+    js=app_tables.lucru.get(user=id)["bal"]
+    return js
+  except:
+    pass
+pass
+
+@anvil.server.callable
 
 def prel_js_gol(id, tip):
   try:

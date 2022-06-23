@@ -1,0 +1,75 @@
+container: {type: DataRowPanel}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: LXERSH}
+  data_bindings:
+  - {property: text, code: 'self.item[''Cont'']'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {column: FUNZYB}
+  data_bindings:
+  - {property: text, code: 'self.item[''DENUMIRE'']'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {column: PUWRMO}
+  data_bindings:
+  - {property: text, code: 'self.item[''COD_a'']'}
+- type: Label
+  properties: {}
+  name: label_4
+  layout_properties: {column: YGIKCV}
+  data_bindings:
+  - {property: text, code: 'self.item[''COD_a'']'}
+- type: Label
+  properties: {}
+  name: label_5
+  layout_properties: {column: KQMFEM}
+  data_bindings:
+  - {property: text, code: 'self.item[''COD_p'']'}
+- type: Label
+  properties: {}
+  name: label_6
+  layout_properties: {column: SXQJJN}
+  data_bindings:
+  - {property: text, code: 'self.item[''TIP'']'}
+- type: TextBox
+  properties: {}
+  name: text_box_1
+  layout_properties: {column: ZCIGRM}
+  data_bindings:
+  - {property: text, code: 'self.item[''D1'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_2
+  layout_properties: {column: IGQAXG}
+  data_bindings:
+  - {property: text, code: 'self.item[''C1'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_3
+  layout_properties: {column: IWZHOK}
+  data_bindings:
+  - {property: text, code: 'self.item[''D2'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_4
+  layout_properties: {column: UYPOWZ}
+  data_bindings:
+  - {property: text, code: 'self.item[''C2'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_5
+  layout_properties: {column: WLRQPZ}
+  data_bindings:
+  - {property: text, code: 'self.item[''D3'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_6
+  layout_properties: {column: ZXIAJA}
+  data_bindings:
+  - {property: text, code: 'self.item[''C3'']', writeback: true}
+is_package: true

@@ -13,14 +13,35 @@ components:
   layout_properties: {slot: left-nav}
 - type: DataGrid
   properties:
+    role: null
     columns:
-    - {id: YFFBXN, title: Column 1, data_key: column_1}
-    - {id: LNQHAB, title: Column 2, data_key: column_2}
-    - {id: RBSMWT, title: Column 3, data_key: column_3}
+    - {id: LXERSH, title: Cont, data_key: Cont}
+    - {id: FUNZYB, title: Denumire, data_key: Denumire}
+    - {id: PUWRMO, title: Column 3, data_key: column_3}
+    - {id: YGIKCV, title: Cod_A, data_key: Cod_A}
+    - {id: KQMFEM, title: Cod_P, data_key: Cod_P}
+    - {id: SXQJJN, title: Tip, data_key: Tip}
+    - {id: ZCIGRM, title: Debit, data_key: D1}
+    - {id: IGQAXG, title: Credit, data_key: C1}
+    - {id: IWZHOK, title: Debit, data_key: C2}
+    - {id: UYPOWZ, title: Credit, data_key: C2}
+    - {id: WLRQPZ, title: Debit, data_key: D3}
+    - {id: ZXIAJA, title: Credit, data_key: C3}
+    auto_header: true
+    tooltip: ''
+    border: ''
+    foreground: ''
+    rows_per_page: 20
+    visible: true
+    wrap_on: never
+    show_page_controls: true
+    spacing_above: small
+    spacing_below: small
+    background: ''
   name: data_grid_1
   layout_properties: {slot: default}
   components:
   - type: RepeatingPanel
-    properties: {spacing_above: none, spacing_below: none, item_template: init.bal.RowTemplate1}
+    properties: {spacing_above: none, spacing_below: none, item_template: init.bal.RowTemplate2}
     name: repeating_panel_1
     layout_properties: {}
