@@ -21,7 +21,9 @@ class bal(balTemplate):
     self.repeating_panel_1.items = My_globals.bal
     My_globals.cl1=0
     self.text_box_1.text = My_globals.cl1
-
+    self.data_grid_1.show_page_controls = True
+    self.data_grid_1.rows_per_page = 50
+    self.data_grid_1.role = "wide"  
   
   def ups(self):
       user = anvil.users.get_user()
@@ -34,5 +36,7 @@ class bal(balTemplate):
 
   def button_1_click(self, **event_args):
     self.repeating_panel_1.items = My_globals.bal
+    #rows = self.repeating_panel_1.get_components()
+    #rows[10].visible = True
     pass
 
