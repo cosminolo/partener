@@ -69,24 +69,22 @@ class RowTemplate2(RowTemplate2Template):
   pass
 
   def text_box_1_lost_focus(self, **event_args):   
-    if self.text_box_1.text.isdigit() or (self.text_box_1.text.startswith("-") and S[1:].isdigit()):
+    if self.text_box_1.text.isdigit() or (self.text_box_1.text.startswith("-") and self.text_box_1.text[1:].isdigit()):
         pass
     else:         
         self.text_box_1.text = 0     
         alert("Just numbers without decimal")
-    cl = str(self.label_1.text)[:1]           
-    self.recalcul_clasa(cl, "D1")
+    
     
     pass
 
   def text_box_2_lost_focus(self, **event_args):
-    if self.text_box_2.text.isdigit() or (self.text_box_2.text.startswith("-") and S[1:].isdigit()):
+    if self.text_box_2.text.isdigit() or (self.text_box_2.text.startswith("-") and self.text_box_2.text[1:].isdigit()):
         pass
     else:         
         self.text_box_2.text = 0     
         alert("Just numbers without decimal")   
-    cl = str(self.label_1.text)[:1]           
-    self.recalcul_clasa(cl, "C1")      
+     
       
     pass
   
