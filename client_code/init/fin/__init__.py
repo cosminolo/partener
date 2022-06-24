@@ -23,11 +23,10 @@ class fin(finTemplate):
     txb = self.txb = {}
     global i
     global j
-    My_globals.z = 47
+    My_globals.z = 0
     i = 1
     j = 0
    
-  
     for i in range(1, 9): # col 
       k=10+i  
       if i == 1:
@@ -181,23 +180,21 @@ class fin(finTemplate):
                             
   def button_1_click(self, **event_args):
       My_globals.z = My_globals.z+47
-      print (My_globals.z)                      
-      self.inc_pag(My_globals.z)                      
+      print (My_globals.z)
+      if My_globals.z <= 470:                       
+        self.inc_pag(My_globals.z)                      
       pass
-  def inc_pag(self, r):  
-                         
+  def inc_pag(self, r): 
+   self.clear_panel()                         
    try:                         
      j = int(31)
      r = int(r)                       
-     for n in range (1,r+1):
-                          
-       self.txb[j].text = My_globals.bal[r]["Cont"]
-                    
+     for n in range (1,48):                           
+       self.txb[j].text = My_globals.bal[r]["Cont"]                    
        self.txb[j+1].text = My_globals.bal[r]["DENUMIRE"]
        self.txb[j+2].text = My_globals.bal[r]["COD_a"]   
        self.txb[j+3].text = My_globals.bal[r]["COD_p"]  
-       self.txb[j+4].text = My_globals.bal[r]["TIP"]
-       
+       self.txb[j+4].text = My_globals.bal[r]["TIP"]       
        if My_globals.bal[r]["D1"] is not None:                   
         self.txb[j+5].text = My_globals.bal[r]["D1"]
        if My_globals.bal[r]["C1"] is not None:                    
@@ -210,11 +207,31 @@ class fin(finTemplate):
         self.txb[j+9].text = My_globals.bal[r]["D3"]
        if My_globals.bal[r]["C3"] is not None:                    
         self.txb[j+10].text = My_globals.bal[r]["C3"]                       
+                         
        j = j + 16
-       r = r + 1                     
+       r = r + 1
+                            
    except:
-        pass
-   pass     
+           pass                 
+   pass 
+                            
+  def clear_panel (self):
+     j = int(31)                        
+     for n in range (1,48):
+       self.txb[j].text = ""                
+       self.txb[j+1].text = ""
+       self.txb[j+2].text = ""  
+       self.txb[j+3].text = "" 
+       self.txb[j+4].text = ""    
+       self.txb[j+5].text = ""               
+       self.txb[j+6].text = ""            
+       self.txb[j+7].text = ""                      
+       self.txb[j+8].text = ""              
+       self.txb[j+9].text = ""                     
+       self.txb[j+10].text = ""
+       j = j+16                     
+     pass
+                            
 
   def l_focus (self, sender,**event_args):
     print(sender)
