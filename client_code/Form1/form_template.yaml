@@ -8,8 +8,23 @@ components:
   name: button_1
   layout_properties: {slot: default}
   event_bindings: {}
-- type: XYPanel
-  properties: {height: 100}
-  name: xy_panel_1
+- type: GridPanel
+  properties: {}
+  name: grid_panel_1
   layout_properties: {slot: default}
+  components:
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: none, type: text, spacing_below: none, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_1
+    layout_properties: {row: OQDWSJ, width_xs: 2, col_xs: 0, width: 73}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: none, type: text, spacing_below: none, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_2
+    layout_properties: {row: OQDWSJ, width_xs: 4, col_xs: 2, width: 177}
 is_package: true
