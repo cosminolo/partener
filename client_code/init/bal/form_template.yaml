@@ -9,41 +9,6 @@ components:
   layout_properties: {slot: nav-right}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
-  name: column_panel_1
-  layout_properties: {slot: left-nav}
-  components:
-  - type: ColumnPanel
-    properties: {col_widths: '{}'}
-    name: column_panel_2
-    layout_properties: {grid_position: 'VBEJGP,WACSSG'}
-    components:
-    - type: Button
-      properties: {text: button_1}
-      name: button_1
-      layout_properties: {grid_position: 'WAVJUW,NTZZMK'}
-      event_bindings: {click: button_1_click}
-  - type: TextBox
-    properties: {}
-    name: text_box_13
-    layout_properties: {grid_position: 'WIQMSD,BMBWYC'}
-  - type: TextBox
-    properties: {}
-    name: text_box_14
-    layout_properties: {grid_position: 'WIQMSD,HMHSNC'}
-  - type: Label
-    properties: {}
-    name: label_3
-    layout_properties: {grid_position: 'WIQMSD,LLJIHG'}
-  - type: Label
-    properties: {}
-    name: label_4
-    layout_properties: {grid_position: 'WIQMSD,RQSGWL'}
-  - type: TextBox
-    properties: {}
-    name: text_box_15
-    layout_properties: {grid_position: 'WIQMSD,FTMWVU'}
-- type: ColumnPanel
-  properties: {col_widths: '{"SMAOYV":5,"XWDTBO":9,"YXOBBA":11,"AHGGWQ":10,"INTAXB":10,"OWLRDN":10,"ZJEEGL":5}'}
   name: column_panel_3
   layout_properties: {slot: default}
   components:
@@ -83,62 +48,172 @@ components:
       properties: {spacing_above: none, spacing_below: none, item_template: init.bal.RowTemplate2}
       name: repeating_panel_1
       layout_properties: {}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Clasa 1, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_1
-    layout_properties: {grid_position: 'JEOXBC,SMAOYV'}
+- type: XYPanel
+  properties: {height: 668, width: 540}
+  name: xy_panel_1
+  layout_properties: {slot: left-nav}
+  components:
   - type: TextBox
     properties: {}
     name: text_box_1
-    layout_properties: {grid_position: 'JEOXBC,XWDTBO'}
+    layout_properties: {x: 91.75, y: 17, width: 100}
   - type: TextBox
     properties: {}
     name: text_box_2
-    layout_properties: {grid_position: 'JEOXBC,YXOBBA'}
+    layout_properties: {x: 201.75, y: 17, width: 87}
   - type: TextBox
     properties: {}
     name: text_box_3
-    layout_properties: {grid_position: 'JEOXBC,AHGGWQ'}
+    layout_properties: {x: 298.75, y: 17, width: 91}
   - type: TextBox
     properties: {}
     name: text_box_4
-    layout_properties: {grid_position: 'JEOXBC,INTAXB'}
-  - type: TextBox
-    properties: {}
-    name: text_box_6
-    layout_properties: {grid_position: 'JEOXBC,OWLRDN'}
+    layout_properties: {x: 91.75, y: 50, width: 100}
   - type: TextBox
     properties: {}
     name: text_box_5
-    layout_properties: {grid_position: 'JEOXBC,ZJEEGL'}
+    layout_properties: {x: 201.75, y: 50, width: 87}
+  - type: TextBox
+    properties: {}
+    name: text_box_6
+    layout_properties: {x: 292.75, y: 50, width: 97}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 1 C, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_2
-    layout_properties: {grid_position: 'HWDKHR,GWTWOF'}
-  - type: TextBox
-    properties: {}
-    name: text_box_7
-    layout_properties: {grid_position: 'HWDKHR,AGWMME'}
-  - type: TextBox
-    properties: {}
-    name: text_box_8
-    layout_properties: {grid_position: 'HWDKHR,AGJTLN'}
-  - type: TextBox
-    properties: {}
-    name: text_box_9
-    layout_properties: {grid_position: 'HWDKHR,XFYZTI'}
-  - type: TextBox
-    properties: {}
-    name: text_box_10
-    layout_properties: {grid_position: 'HWDKHR,KNULVH'}
-  - type: TextBox
-    properties: {}
-    name: text_box_11
-    layout_properties: {grid_position: 'HWDKHR,TJLUJE'}
-  - type: TextBox
-    properties: {}
-    name: text_box_12
-    layout_properties: {grid_position: 'HWDKHR,BBVXZK'}
+    layout_properties: {x: 8, y: 37, width: 64}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 1 D, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_1
+    layout_properties: {x: 10, y: 10, width: 64}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 2 D, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {x: 8, y: 73, width: 62}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 2 C, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_5
+    layout_properties: {x: 7.75, y: 95, width: 74}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 3 D, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {x: 7.75, y: 126, width: 62}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 3 C, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_6
+    layout_properties: {x: 5.75, y: 151, width: 66.25}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 4 D, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_7
+    layout_properties: {x: 5.75, y: 180, width: 62}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 4 C, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_8
+    layout_properties: {x: 7.75, y: 203, width: 66.25}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 5 D, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_9
+    layout_properties: {x: 5.75, y: 235, width: 61.75}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 5 C, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_10
+    layout_properties: {x: 7.75, y: 260, width: 66.25}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 6 D, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_11
+    layout_properties: {x: 5.75, y: 300, width: 66.25}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 6 C, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_12
+    layout_properties: {x: 5.75, y: 327, width: 60}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 7 D, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_13
+    layout_properties: {x: 4.25, y: 364, width: 65.75}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa 7 C, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_14
+    layout_properties: {x: 5.75, y: 392, width: 60}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Total D, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_15
+    layout_properties: {x: 4.25, y: 430, width: 52}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Total C, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_16
+    layout_properties: {x: 5.75, y: 457, width: 46}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Activ, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_17
+    layout_properties: {x: 5.75, y: 497, width: 51.75}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Pasiv, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_18
+    layout_properties: {x: 5.75, y: 515, width: 39}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Dif, font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_19
+    layout_properties: {x: 5.75, y: 530, width: 53.25}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 121- (Ven - Chelt), font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_20
+    layout_properties: {x: 4.25, y: 561, width: 123}

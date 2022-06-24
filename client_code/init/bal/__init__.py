@@ -20,7 +20,7 @@ class bal(balTemplate):
     
     self.repeating_panel_1.items = My_globals.bal
     My_globals.cl1=0
-    self.text_box_1.text = My_globals.cl1
+    
     self.data_grid_1.show_page_controls = True
     self.data_grid_1.rows_per_page = 50
     self.data_grid_1.role = "wide"  
