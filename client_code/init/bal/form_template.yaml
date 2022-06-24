@@ -509,34 +509,6 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_47
     layout_properties: {x: 178.75, y: 509, width: 92}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Pasiv, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_18
-    layout_properties: {x: 3.25, y: 564, width: 39}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Activ, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_17
-    layout_properties: {x: 0, y: 536, width: 51.75}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Dif, font_size: null, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: label_19
-    layout_properties: {x: 4.25, y: 589, width: 53.25}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 121- (Ven - Chelt), font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_20
-    layout_properties: {x: 0, y: 622, width: 63.25}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -600,25 +572,25 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_55
     layout_properties: {x: 73.25, y: 599, width: 101}
-  - type: TextBox
-    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_58
-    layout_properties: {x: 73.25, y: 635, width: 101}
-  - type: TextBox
-    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_59
-    layout_properties: {x: 178.75, y: 635, width: 94}
-  - type: TextBox
-    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_60
-    layout_properties: {x: 278.75, y: 635, width: 95}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 121- (Ven - Chelt), font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_20
+    layout_properties: {x: -1.5, y: 590, width: 63}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Dif D-C, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_19
+    layout_properties: {x: 8.5, y: 533, width: 53}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '121', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_17
+    layout_properties: {x: 13.5, y: 561, width: 56}
   event_bindings: {}
