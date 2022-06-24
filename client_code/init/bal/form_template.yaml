@@ -118,68 +118,68 @@ components:
     layout_properties: {x: 315.5, y: 17, width: 40.25}
     event_bindings: {click: button_1_click}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_5
-    layout_properties: {x: 178.75, y: 99, width: 96}
+    layout_properties: {x: 178.75, y: 99, width: 92}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_2
-    layout_properties: {x: 178.75, y: 73, width: 96}
+    layout_properties: {x: 178.75, y: 73, width: 92}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_1
-    layout_properties: {x: 73.25, y: 73, width: 100}
+    layout_properties: {x: 73.25, y: 73, width: 96}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_6
-    layout_properties: {x: 278.75, y: 99, width: 97}
+    layout_properties: {x: 278.75, y: 99, width: 93}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_3
-    layout_properties: {x: 278.75, y: 73, width: 97}
+    layout_properties: {x: 278.75, y: 73, width: 93}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_8
-    layout_properties: {x: 178.75, y: 129, width: 96}
+    layout_properties: {x: 178.75, y: 129, width: 92}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_11
-    layout_properties: {x: 178.75, y: 153, width: 96}
+    layout_properties: {x: 178.75, y: 153, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_9
-    layout_properties: {x: 278.75, y: 129, width: 97}
+    layout_properties: {x: 278.75, y: 129, width: 93}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_12
-    layout_properties: {x: 278.75, y: 153, width: 97}
+    layout_properties: {x: 278.75, y: 153, width: 95}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Clasa 2 D, font_size: null, font: '', spacing_above: small,
@@ -195,40 +195,40 @@ components:
     name: label_5
     layout_properties: {x: 6.5, y: 141, width: 74}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_14
-    layout_properties: {x: 178.75, y: 184, width: 96}
+    layout_properties: {x: 178.75, y: 184, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_10
-    layout_properties: {x: 73.25, y: 153, width: 100}
+    layout_properties: {x: 73.25, y: 153, width: 98}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_16
-    layout_properties: {x: 74.25, y: 207, width: 99}
+    layout_properties: {x: 74.25, y: 207, width: 97}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_17
-    layout_properties: {x: 178.75, y: 207, width: 96}
+    layout_properties: {x: 178.75, y: 207, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_18
-    layout_properties: {x: 278.75, y: 207, width: 97}
+    layout_properties: {x: 278.75, y: 207, width: 95}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Clasa 3 C, font_size: null, font: '', spacing_above: small,
@@ -244,68 +244,68 @@ components:
     name: label_4
     layout_properties: {x: 5.75, y: 174, width: 62}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_4
-    layout_properties: {x: 73.25, y: 99, width: 100}
+    layout_properties: {x: 73.25, y: 99, width: 96}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_7
-    layout_properties: {x: 73.25, y: 129, width: 100}
+    layout_properties: {x: 73.25, y: 129, width: 96}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_13
-    layout_properties: {x: 74.25, y: 184, width: 99}
+    layout_properties: {x: 74.25, y: 184, width: 97}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_15
-    layout_properties: {x: 278.75, y: 184, width: 97}
+    layout_properties: {x: 278.75, y: 184, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_20
-    layout_properties: {x: 178.75, y: 236, width: 96}
+    layout_properties: {x: 178.75, y: 236, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_21
-    layout_properties: {x: 278.75, y: 236, width: 97}
+    layout_properties: {x: 278.75, y: 236, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_22
-    layout_properties: {x: 73.25, y: 259, width: 100}
+    layout_properties: {x: 73.25, y: 259, width: 98}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_23
-    layout_properties: {x: 178.75, y: 261, width: 96}
+    layout_properties: {x: 178.75, y: 261, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_24
-    layout_properties: {x: 278.75, y: 260, width: 97}
+    layout_properties: {x: 278.75, y: 260, width: 95}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Clasa 4 C, font_size: null, font: '', spacing_above: small,
@@ -321,54 +321,54 @@ components:
     name: label_9
     layout_properties: {x: 4, y: 288, width: 61.75}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_27
-    layout_properties: {x: 278.75, y: 296, width: 97}
+    layout_properties: {x: 278.75, y: 296, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_30
-    layout_properties: {x: 278.75, y: 322, width: 97}
+    layout_properties: {x: 278.75, y: 322, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_28
-    layout_properties: {x: 73.25, y: 322, width: 101}
+    layout_properties: {x: 73.25, y: 322, width: 99}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_29
-    layout_properties: {x: 178.75, y: 322, width: 96}
+    layout_properties: {x: 178.75, y: 322, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_26
-    layout_properties: {x: 178.75, y: 296, width: 96}
+    layout_properties: {x: 178.75, y: 296, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_31
-    layout_properties: {x: 73.25, y: 357, width: 101}
+    layout_properties: {x: 73.25, y: 357, width: 99}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_34
-    layout_properties: {x: 73.25, y: 380, width: 101}
+    layout_properties: {x: 73.25, y: 380, width: 99}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Clasa 7 C, font_size: null, font: '', spacing_above: small,
@@ -377,89 +377,89 @@ components:
     name: label_14
     layout_properties: {x: 3.25, y: 430, width: 60}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_19
-    layout_properties: {x: 73.25, y: 236, width: 100}
+    layout_properties: {x: 73.25, y: 236, width: 98}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_25
-    layout_properties: {x: 73.25, y: 296, width: 101}
+    layout_properties: {x: 73.25, y: 296, width: 99}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_32
-    layout_properties: {x: 178.75, y: 357, width: 96}
+    layout_properties: {x: 178.75, y: 357, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_35
-    layout_properties: {x: 178.75, y: 380, width: 96}
+    layout_properties: {x: 178.75, y: 380, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_33
-    layout_properties: {x: 278.75, y: 357, width: 97}
+    layout_properties: {x: 278.75, y: 357, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_36
-    layout_properties: {x: 278.75, y: 380, width: 97}
+    layout_properties: {x: 278.75, y: 380, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_38
-    layout_properties: {x: 178.75, y: 415, width: 96}
+    layout_properties: {x: 178.75, y: 415, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_37
-    layout_properties: {x: 74.25, y: 414, width: 100}
+    layout_properties: {x: 74.25, y: 414, width: 98}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_40
-    layout_properties: {x: 74.25, y: 441, width: 100}
+    layout_properties: {x: 74.25, y: 441, width: 98}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_41
-    layout_properties: {x: 178.75, y: 441, width: 96}
+    layout_properties: {x: 178.75, y: 441, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_42
-    layout_properties: {x: 278.75, y: 441, width: 97}
+    layout_properties: {x: 278.75, y: 441, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_39
-    layout_properties: {x: 278.75, y: 415, width: 97}
+    layout_properties: {x: 278.75, y: 415, width: 95}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Total C, font_size: null, font: '', spacing_above: small,
@@ -468,47 +468,47 @@ components:
     name: label_16
     layout_properties: {x: 5.75, y: 503, width: 46}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_43
-    layout_properties: {x: 73.25, y: 482, width: 102}
+    layout_properties: {x: 73.25, y: 482, width: 100}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_45
-    layout_properties: {x: 278.75, y: 482, width: 97}
+    layout_properties: {x: 278.75, y: 482, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_48
-    layout_properties: {x: 278.75, y: 509, width: 97}
+    layout_properties: {x: 278.75, y: 509, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_46
-    layout_properties: {x: 74.25, y: 509, width: 101}
+    layout_properties: {x: 74.25, y: 509, width: 99}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_44
-    layout_properties: {x: 178.75, y: 482, width: 96}
+    layout_properties: {x: 178.75, y: 482, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_47
-    layout_properties: {x: 178.75, y: 509, width: 96}
+    layout_properties: {x: 178.75, y: 509, width: 94}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Pasiv, font_size: null, font: '', spacing_above: small,
@@ -538,87 +538,87 @@ components:
     name: label_20
     layout_properties: {x: 0, y: 622, width: 63.25}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_49
-    layout_properties: {x: 74.25, y: 544, width: 101}
+    layout_properties: {x: 74.25, y: 544, width: 99}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_50
-    layout_properties: {x: 178.75, y: 544, width: 96}
+    layout_properties: {x: 178.75, y: 544, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_53
-    layout_properties: {x: 178.75, y: 572, width: 96}
+    layout_properties: {x: 178.75, y: 572, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_52
-    layout_properties: {x: 74.25, y: 572, width: 102}
+    layout_properties: {x: 74.25, y: 572, width: 100}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_51
-    layout_properties: {x: 278.75, y: 544, width: 97}
+    layout_properties: {x: 278.75, y: 544, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_54
-    layout_properties: {x: 278.75, y: 572, width: 97}
+    layout_properties: {x: 278.75, y: 572, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_56
-    layout_properties: {x: 178.75, y: 599, width: 96}
+    layout_properties: {x: 178.75, y: 599, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_57
-    layout_properties: {x: 278.75, y: 599, width: 97}
+    layout_properties: {x: 278.75, y: 599, width: 95}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_55
-    layout_properties: {x: 73.25, y: 599, width: 103}
+    layout_properties: {x: 73.25, y: 599, width: 101}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_58
-    layout_properties: {x: 73.25, y: 635, width: 103}
+    layout_properties: {x: 73.25, y: 635, width: 101}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_59
-    layout_properties: {x: 178.75, y: 635, width: 96}
+    layout_properties: {x: 178.75, y: 635, width: 94}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_60
-    layout_properties: {x: 278.75, y: 635, width: 97}
+    layout_properties: {x: 278.75, y: 635, width: 95}
   event_bindings: {}

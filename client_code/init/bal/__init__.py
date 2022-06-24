@@ -41,6 +41,49 @@ class bal(balTemplate):
     self.text_box_4.text = self.sum_clasa("1", "C1")
     self.text_box_5.text = self.sum_clasa("1", "C2")
     self.text_box_6.text = self.sum_clasa("1", "C3")
+    self.text_box_7.text = self.sum_clasa("2", "D1")
+    self.text_box_8.text = self.sum_clasa("2", "D2")
+    self.text_box_9.text = self.sum_clasa("2", "D3")
+    self.text_box_10.text = self.sum_clasa("2", "C1")
+    self.text_box_11.text = self.sum_clasa("2", "C2")
+    self.text_box_12.text = self.sum_clasa("2", "C3")
+    self.text_box_13.text = self.sum_clasa("3", "D1")
+    self.text_box_14.text = self.sum_clasa("3", "D2")
+    self.text_box_15.text = self.sum_clasa("3", "D3")
+    self.text_box_16.text = self.sum_clasa("3", "C1")
+    self.text_box_17.text = self.sum_clasa("3", "C2")
+    self.text_box_18.text = self.sum_clasa("3", "C3")
+    self.text_box_19.text = self.sum_clasa("4", "D1")
+    self.text_box_20.text = self.sum_clasa("4", "D2")
+    self.text_box_21.text = self.sum_clasa("4", "D3")
+    self.text_box_22.text = self.sum_clasa("4", "C1")
+    self.text_box_23.text = self.sum_clasa("4", "C2")
+    self.text_box_24.text = self.sum_clasa("4", "C3")
+    self.text_box_25.text = self.sum_clasa("5", "D1")
+    self.text_box_26.text = self.sum_clasa("5", "D2")
+    self.text_box_27.text = self.sum_clasa("5", "D3")
+    self.text_box_28.text = self.sum_clasa("5", "C1")
+    self.text_box_29.text = self.sum_clasa("5", "C2")
+    self.text_box_30.text = self.sum_clasa("5", "C3")
+    self.text_box_31.text = self.sum_clasa("6", "D1")
+    self.text_box_32.text = self.sum_clasa("6", "D2")
+    self.text_box_33.text = self.sum_clasa("6", "D3")
+    self.text_box_34.text = self.sum_clasa("6", "C1")
+    self.text_box_35.text = self.sum_clasa("6", "C2")
+    self.text_box_36.text = self.sum_clasa("6", "C3")
+    self.text_box_37.text = self.sum_clasa("7", "D1")
+    self.text_box_38.text = self.sum_clasa("7", "D2")
+    self.text_box_39.text = self.sum_clasa("7", "D3")
+    self.text_box_40.text = self.sum_clasa("7", "C1")
+    self.text_box_41.text = self.sum_clasa("7", "C2")
+    self.text_box_42.text = self.sum_clasa("7", "C3")
+    
+    self.text_box_43.text = int(self.text_box_1.text + self.text_box_7.text
+                            + self.text_box_13.text + self.text_box_19.text
+                            + self.text_box_25.text + self.text_box_31.text
+                            + self.text_box_37.text)
+    
+    
     pass
   
   def sum_clasa (self, cl, col):
