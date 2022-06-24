@@ -35,8 +35,21 @@ class bal(balTemplate):
       pass
 
   def button_1_click(self, **event_args):
-    self.repeating_panel_1.items = My_globals.bal
-    #rows = self.repeating_panel_1.get_components()
-    #rows[10].visible = True
+    self.text_box_1.text = self.sum_clasa("1", "D1")
+    self.text_box_2.text = self.sum_clasa("1", "D2")
+    self.text_box_3.text = self.sum_clasa("1", "D3")
+    self.text_box_4.text = self.sum_clasa("1", "C1")
+    self.text_box_5.text = self.sum_clasa("1", "C2")
+    self.text_box_6.text = self.sum_clasa("1", "C3")
     pass
+  
+  def sum_clasa (self, cl, col):
+    
+    nr = len(My_globals.bal)
+    s = int(0)
+    for i in range (0,nr):
+      if str(My_globals.bal[i]['Cont'])[:1] == cl:
+        if My_globals.bal[i][col]:
+          s = s + int(My_globals.bal[i][col])
+    return s
 
