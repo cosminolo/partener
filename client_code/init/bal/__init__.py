@@ -77,11 +77,30 @@ class bal(balTemplate):
     self.text_box_40.text = self.sum_clasa("7", "C1")
     self.text_box_41.text = self.sum_clasa("7", "C2")
     self.text_box_42.text = self.sum_clasa("7", "C3")
-    
-    self.text_box_43.text = int(self.text_box_1.text + self.text_box_7.text
+    self.text_box_43.text = "{:,}".format(int(self.text_box_1.text + self.text_box_7.text
                             + self.text_box_13.text + self.text_box_19.text
                             + self.text_box_25.text + self.text_box_31.text
-                            + self.text_box_37.text)
+                            + self.text_box_37.text))
+    self.text_box_44.text = "{:,}".format(self.text_box_2.text + self.text_box_8.text
+                            + self.text_box_14.text + self.text_box_20.text
+                            + self.text_box_26.text + self.text_box_32.text
+                            + self.text_box_38.text)
+    self.text_box_45.text = "{:,}".format(self.text_box_3.text + self.text_box_9.text
+                            + self.text_box_15.text + self.text_box_21.text
+                            + self.text_box_27.text + self.text_box_33.text
+                            + self.text_box_39.text)
+    self.text_box_46.text = "{:,}".format(self.text_box_4.text + self.text_box_10.text
+                            + self.text_box_16.text + self.text_box_22.text
+                            + self.text_box_28.text + self.text_box_34.text
+                            + self.text_box_40.text)
+    self.text_box_47.text = "{:,}".format(self.text_box_5.text + self.text_box_11.text
+                            + self.text_box_17.text + self.text_box_23.text
+                            + self.text_box_29.text + self.text_box_35.text
+                            + self.text_box_41.text)
+    self.text_box_48.text = "{:,}".format(self.text_box_6.text + self.text_box_12.text
+                            + self.text_box_18.text + self.text_box_24.text
+                            + self.text_box_30.text + self.text_box_36.text
+                            + self.text_box_42.text)
     
     
     pass
