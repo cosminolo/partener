@@ -11,7 +11,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..init.start import start
 import json
-
+import xlrd
 class Form1(Form1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -25,8 +25,9 @@ class Form1(Form1Template):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    anvil.server.call("apl", "cosmin.ologeanu2017@gmail.com")
-    
+    fi= anvil.server.call("apl", "cosmin.ologeanu2017@gmail.com")
+    df = pd.read_excel(fi)
+    print (df)
     
     pass
 
