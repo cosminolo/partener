@@ -46,6 +46,8 @@ def app_new(id):
     ud_row.update(js_gen_gol=js, js_gen=js ) 
     jbal = anvil.server.call("bal_gol")
     id_row.update(bal=jbal)
+    apl = anvil.server.call("apl_gol")
+    id_row.update(apl_x=apl)
   except:
     app_tables.lucru.add_row(user=id)
     js = anvil.server.call("j_g_gol")
@@ -56,7 +58,8 @@ def app_new(id):
     us_row.update(js_bil="")
     us_row.update(j_bil="")
     us_row.update(js_tva="")
-    
+    apl = anvil.server.call("apl_gol")
+    id_row.update(apl_x=apl)
     pass
 pass
 
