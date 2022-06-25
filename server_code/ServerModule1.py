@@ -58,7 +58,8 @@ def app_new(id):
     us_row.update(js_bil="")
     us_row.update(j_bil="")
     us_row.update(js_tva="")
-    apl = anvil.server.call("apl_gol")
+    apl = anvil.BlobMedia(content_type="excel", content=binary_content, name="apl_gol")
+   
     id_row.update(apl_x=apl)
     pass
 pass
