@@ -192,10 +192,10 @@ pass
 def apl(id):
 
   fl = anvil.server.call("apl_gol")
-  file = fl.get_bytes().decode('utf-8')
+  #file = fl.get_bytes().decode('utf-8')
   us_row = app_tables.lucru.get(user=id)
-  us_row.update(apl_x=file) 
-  return file
+  us_row.update(apl_x=fl) 
+  #return file
  
 pass
 
