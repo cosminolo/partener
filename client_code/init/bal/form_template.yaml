@@ -7,47 +7,6 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: column_panel_3
-  layout_properties: {slot: default}
-  components:
-  - type: DataGrid
-    properties:
-      role: null
-      columns:
-      - {id: LXERSH, title: Cont, data_key: Cont, width: '80'}
-      - {id: FUNZYB, title: Denumire, data_key: Denumire, width: '200'}
-      - {id: YGIKCV, title: Cod_A, data_key: Cod_A, width: '50'}
-      - {id: KQMFEM, title: Cod_P, data_key: Cod_P, width: '50'}
-      - {id: SXQJJN, title: Tip, data_key: Tip, width: '30'}
-      - {id: ZCIGRM, title: Debit, data_key: D1, width: ''}
-      - {id: IGQAXG, title: Credit, data_key: C1}
-      - {id: IWZHOK, title: Debit, data_key: C2}
-      - {id: UYPOWZ, title: Credit, data_key: C2}
-      - {id: WLRQPZ, title: Debit, data_key: D3}
-      - {id: ZXIAJA, title: Credit, data_key: C3}
-      auto_header: true
-      tooltip: ''
-      border: ''
-      foreground: ''
-      rows_per_page: 20
-      visible: true
-      wrap_on: never
-      show_page_controls: true
-      spacing_above: small
-      spacing_below: small
-      background: ''
-    name: data_grid_1
-    layout_properties:
-      col_widths: {}
-      grid_position: TDJNWW,ZZOMJU
-      full_width_row: true
-    components:
-    - type: RepeatingPanel
-      properties: {spacing_above: none, spacing_below: none, item_template: init.bal.RowTemplate2}
-      name: repeating_panel_1
-      layout_properties: {}
 - type: XYPanel
   properties: {height: 668, width: 540}
   name: xy_panel_1
@@ -109,14 +68,6 @@ components:
       underline: false, icon: ''}
     name: label_1
     layout_properties: {x: 6.5, y: 76, width: 64}
-  - type: Button
-    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: 'fa:refresh'}
-    name: button_1
-    layout_properties: {x: 315.5, y: 17, width: 40.25}
-    event_bindings: {click: button_1_click}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -600,4 +551,81 @@ components:
     name: text_box_4
     layout_properties: {x: 74.25, y: 99, width: 92}
     event_bindings: {show: text_box_4_show}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:refresh'}
+    name: button_1
+    layout_properties: {x: 345.5, y: 17, width: 42.25}
+    event_bindings: {click: button_1_click}
   event_bindings: {}
+- type: GridPanel
+  properties: {}
+  name: grid_panel_1
+  layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Data, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_18
+    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 0, width: 162.5}
+  - type: TextBox
+    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
+      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: jhfhf,
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '#CAECF8', bold: false, underline: false}
+    name: text_box_59
+    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 4, width: 44.9844}
+  - type: TextBox
+    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
+      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '#CAECF8', bold: false, underline: false}
+    name: text_box_58
+    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 7, width: 44.9844}
+  - type: TextBox
+    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
+      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '#CAECF8', bold: false, underline: false}
+    name: text_box_60
+    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 10, width: 44.9844}
+  - type: DataGrid
+    properties:
+      role: null
+      columns:
+      - {id: LXERSH, title: Cont, data_key: Cont, width: '80'}
+      - {id: FUNZYB, title: Denumire, data_key: Denumire, width: '200'}
+      - {id: YGIKCV, title: Cod_A, data_key: Cod_A, width: '50'}
+      - {id: KQMFEM, title: Cod_P, data_key: Cod_P, width: '50'}
+      - {id: SXQJJN, title: Tip, data_key: Tip, width: '30'}
+      - {id: ZCIGRM, title: Debit, data_key: D1, width: ''}
+      - {id: IGQAXG, title: Credit, data_key: C1}
+      - {id: IWZHOK, title: Debit, data_key: C2}
+      - {id: UYPOWZ, title: Credit, data_key: C2}
+      - {id: WLRQPZ, title: Debit, data_key: D3}
+      - {id: ZXIAJA, title: Credit, data_key: C3}
+      auto_header: true
+      tooltip: ''
+      border: ''
+      foreground: ''
+      rows_per_page: 20
+      visible: true
+      wrap_on: never
+      show_page_controls: true
+      spacing_above: small
+      spacing_below: small
+      background: ''
+    name: data_grid_1
+    layout_properties:
+      col_widths: {}
+      grid_position: TDJNWW,ZZOMJU
+      full_width_row: true
+    components:
+    - type: RepeatingPanel
+      properties: {spacing_above: none, spacing_below: none, item_template: init.bal.RowTemplate2}
+      name: repeating_panel_1
+      layout_properties: {}
