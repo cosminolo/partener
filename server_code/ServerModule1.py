@@ -61,6 +61,9 @@ def app_new(id):
     pass
 pass
 
+
+
+
 @anvil.server.callable
 def tva_js(id,js):
   try:
@@ -112,14 +115,8 @@ def get_bal(id):
   except:
     pass
 pass
-@anvil.server.callable
-def apl(id):
-  file = app_tables.lucru.get(user=id)["apl_x"]
-  return file
- 
-pass
-@anvil.server.callable
 
+@anvil.server.callable
 def prel_js_gol(id, tip):
   try:
       if tip == 1:
@@ -191,6 +188,15 @@ def sterge_arh(us, soc, facilit, dat):
  if id_row is not None:
   id_row.delete()
 pass
+@anvil.server.callable
+def apl(id):
 
+  fl = anvil.server.call("apl_gol")
+  file = fl.get_bytes().decode('utf-8')
+  us_row = app_tables.lucru.get(user=id)
+  us_row.update(apl_x=file) 
+  return file
+ 
+pass
 
 
