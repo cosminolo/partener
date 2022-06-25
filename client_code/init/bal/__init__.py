@@ -77,26 +77,43 @@ class bal(balTemplate):
     self.text_box_40.text = self.sum_clasa("7", "C1")
     self.text_box_41.text = self.sum_clasa("7", "C2")
     self.text_box_42.text = self.sum_clasa("7", "C3")
-    self.text_box_43.text = "{:,}".format(self.text_box_1.text + self.text_box_7.text
-                            + self.text_box_13.text + self.text_box_19.text
-                            + self.text_box_25.text )
-    self.text_box_44.text = "{:,}".format(self.text_box_2.text + self.text_box_8.text
-                            + self.text_box_14.text + self.text_box_20.text
-                            + self.text_box_26.text )
-    self.text_box_45.text = "{:,}".format(self.text_box_3.text + self.text_box_9.text
-                            + self.text_box_15.text + self.text_box_21.text
-                            + self.text_box_27.text )
-    self.text_box_46.text = "{:,}".format(self.text_box_4.text + self.text_box_10.text
-                            + self.text_box_16.text + self.text_box_22.text
-                            + self.text_box_28.text )
-    self.text_box_47.text = "{:,}".format(self.text_box_5.text + self.text_box_11.text
-                            + self.text_box_17.text + self.text_box_23.text
-                            + self.text_box_29.text )
-    self.text_box_48.text = "{:,}".format(self.text_box_6.text + self.text_box_12.text
-                            + self.text_box_18.text + self.text_box_24.text
-                            + self.text_box_30.text )
     
-    
+    d_1 = (self.text_box_1.text + self.text_box_7.text
+          + self.text_box_13.text + self.text_box_19.text
+          + self.text_box_25.text )
+    d_2 = (self.text_box_2.text + self.text_box_8.text  
+          + self.text_box_14.text + self.text_box_20.text
+          + self.text_box_26.text )
+    d_3 = (self.text_box_3.text + self.text_box_9.text
+          + self.text_box_15.text + self.text_box_21.text
+          + self.text_box_27.text )
+    c_1 =  (self.text_box_4.text + self.text_box_10.text
+          + self.text_box_16.text + self.text_box_22.text
+          + self.text_box_28.text )
+    c_2 = (self.text_box_5.text + self.text_box_11.text
+          + self.text_box_17.text + self.text_box_23.text
+          + self.text_box_29.text )
+    c_3 = (self.text_box_6.text + self.text_box_12.text
+          + self.text_box_18.text + self.text_box_24.text
+          + self.text_box_30.text )    
+    self.text_box_43.text = "{:,}".format(d_1)
+    self.text_box_44.text = "{:,}".format(d_2)
+    self.text_box_45.text = "{:,}".format(d_3)
+    self.text_box_46.text = "{:,}".format(c_1)
+    self.text_box_47.text = "{:,}".format(c_2)
+    self.text_box_48.text = "{:,}".format(c_3)
+    self.text_box_49.text = "{:,}".format(d_1-c_1)
+    self.text_box_50.text = "{:,}".format(d_2-c_2)
+    self.text_box_51.text = "{:,}".format(d_3-c_3)
+    ct_121_1 = int(My_globals.bal[29]['C1']) - int(My_globals.bal[29]['D1'])
+    self.text_box_52.text = "{:,}".format(ct_121_1)
+    ct_121_2 = int(My_globals.bal[29]['C2']) - int(My_globals.bal[29]['D2'])
+    self.text_box_53.text = "{:,}".format(ct_121_2)
+    ct_121_3 = int(My_globals.bal[29]['C3']) - int(My_globals.bal[29]['D3'])
+    self.text_box_54.text = "{:,}".format(ct_121_3)
+    self.text_box_55.text = ct_121_1 - (int(self.text_box_40.text) - int(self.text_box_31.text))
+    self.text_box_56.text = ct_121_2 - (int(self.text_box_41.text) - int(self.text_box_32.text))
+    self.text_box_57.text = ct_121_3 - (int(self.text_box_42.text) - int(self.text_box_33.text))
     pass
   
   def sum_clasa (self, cl, col):
@@ -108,4 +125,10 @@ class bal(balTemplate):
         if My_globals.bal[i][col]:
           s = s + int(My_globals.bal[i][col])
     return s
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    print(My_globals.bal[29]['Cont'])
+    pass
+
 
