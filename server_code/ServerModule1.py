@@ -46,8 +46,7 @@ def app_new(id):
     ud_row.update(js_gen_gol=js, js_gen=js ) 
     jbal = anvil.server.call("bal_gol")
     id_row.update(bal=jbal)
-    apl = anvil.server.call("apl_gol")
-    id_row.update(apl_x=apl)
+    
   except:
     app_tables.lucru.add_row(user=id)
     js = anvil.server.call("j_g_gol")
@@ -58,9 +57,7 @@ def app_new(id):
     us_row.update(js_bil="")
     us_row.update(j_bil="")
     us_row.update(js_tva="")
-    apl = anvil.BlobMedia(content_type="excel", content=binary_content, name="apl_gol")
-   
-    id_row.update(apl_x=apl)
+    
     pass
 pass
 
@@ -115,7 +112,12 @@ def get_bal(id):
   except:
     pass
 pass
-
+@anvil.server.callable
+def apl(id):
+  file = app_tables.lucru.get(user=id)["apl_x"]
+  return file
+ 
+pass
 @anvil.server.callable
 
 def prel_js_gol(id, tip):
