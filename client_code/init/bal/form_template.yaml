@@ -41,7 +41,7 @@ components:
     name: data_grid_1
     layout_properties:
       col_widths: {}
-      grid_position: HQPYLC,MNCQIZ
+      grid_position: TDJNWW,ZZOMJU
       full_width_row: true
     components:
     - type: RepeatingPanel
@@ -138,6 +138,7 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_1
     layout_properties: {x: 73.25, y: 73, width: 96}
+    event_bindings: {}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -243,13 +244,6 @@ components:
       underline: false, icon: ''}
     name: label_4
     layout_properties: {x: 5.75, y: 174, width: 62}
-  - type: TextBox
-    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_4
-    layout_properties: {x: 73.25, y: 99, width: 96}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -598,4 +592,12 @@ components:
     name: button_2
     layout_properties: {x: 90.5, y: 23, width: 100}
     event_bindings: {click: button_2_click}
+  - type: TextBox
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_4
+    layout_properties: {x: 74.25, y: 99, width: 92}
+    event_bindings: {show: text_box_4_show}
   event_bindings: {}

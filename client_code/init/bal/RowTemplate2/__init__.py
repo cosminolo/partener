@@ -10,6 +10,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 from ... import My_globals
 import json
+import string
 
 class RowTemplate2(RowTemplate2Template):
   def __init__(self, **properties):
@@ -28,7 +29,21 @@ class RowTemplate2(RowTemplate2Template):
        self.text_box_4.enabled = True
        self.text_box_4.background="#CAECF8"  
        self.text_box_6.enabled = True
-       self.text_box_6.background="#CAECF8"  
+       self.text_box_6.background="#CAECF8"
+    else:
+       self.text_box_1.enabled = True
+       self.text_box_1.background="#CAECF8" 
+       self.text_box_3.enabled = True
+       self.text_box_3.background="#CAECF8"  
+       self.text_box_5.enabled = True 
+       self.text_box_5.background="#CAECF8"  
+       self.text_box_2.enabled = True
+       self.text_box_2.background="#CAECF8" 
+       self.text_box_4.enabled = True
+       self.text_box_4.background="#CAECF8"  
+       self.text_box_6.enabled = True
+       self.text_box_6.background="#CAECF8"
+      
     if self.label_6.text == "A":
        self.text_box_1.enabled = True
        self.text_box_1.background="#CAECF8"  
@@ -68,25 +83,26 @@ class RowTemplate2(RowTemplate2Template):
     
   pass
 
-  def text_box_1_lost_focus(self, **event_args):   
-    if self.text_box_1.text.isdigit() or (self.text_box_1.text.startswith("-") and self.text_box_1.text[1:].isdigit()):
+  def text_box_1_lost_focus(self, **event_args):
+   if self.text_box_1.enabled == True:
+    s = self.text_box_1.text
+    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
         pass
     else:         
         self.text_box_1.text = 0     
-        alert("Just numbers without decimal")
-    
-    
-    pass
+        alert("Doar numar fara zecimale sau separatori!")   
+   pass
 
   def text_box_2_lost_focus(self, **event_args):
-    if self.text_box_2.text.isdigit() or (self.text_box_2.text.startswith("-") and self.text_box_2.text[1:].isdigit()):
+   if self.text_box_2.enabled == True:
+    s = self.text_box_2.text
+    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
         pass
     else:         
         self.text_box_2.text = 0     
-        alert("Just numbers without decimal")   
-     
-      
-    pass
+        alert("Doar numar fara zecimale sau separatori!") 
+   pass
+  
   
   def sum_clasa (self, cl, col):
     b = My_globals.bal
@@ -122,6 +138,53 @@ class RowTemplate2(RowTemplate2Template):
     """This method is called when refreshing_data_bindings is called"""
     
     pass
+
+  def text_box_3_lost_focus(self, **event_args):
+   if self.text_box_3.enabled == True:
+    s = self.text_box_3.text
+    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        pass
+    else:         
+        self.text_box_3.text = 0     
+        alert("Doar numar fara zecimale sau separatori!") 
+   pass
+
+  def text_box_4_lost_focus(self, **event_args):
+   if self.text_box_4.enabled == True:
+    s = self.text_box_4.text
+    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        pass
+    else:         
+        self.text_box_4.text = 0     
+        alert("Doar numar fara zecimale sau separatori!") 
+   pass
+
+  def text_box_5_lost_focus(self, **event_args):
+   if self.text_box_5.enabled == True:
+    s = self.text_box_5.text
+    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        pass
+    else:         
+        self.text_box_5.text = 0     
+        alert("Doar numar fara zecimale sau separatori!") 
+   pass
+
+  def text_box_6_lost_focus(self, **event_args):
+   if self.text_box_6.enabled == True: 
+    s = self.text_box_6.text
+    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        pass
+    else:         
+        self.text_box_6.text = 0     
+        alert("Doar numar fara zecimale sau separatori!") 
+   pass
+
+
+  
+
+
+
+
 
 
 

@@ -96,6 +96,7 @@ class bal(balTemplate):
     c_3 = (self.text_box_6.text + self.text_box_12.text
           + self.text_box_18.text + self.text_box_24.text
           + self.text_box_30.text )    
+    
     self.text_box_43.text = "{:,}".format(d_1)
     self.text_box_44.text = "{:,}".format(d_2)
     self.text_box_45.text = "{:,}".format(d_3)
@@ -111,11 +112,47 @@ class bal(balTemplate):
     self.text_box_53.text = "{:,}".format(ct_121_2)
     ct_121_3 = int(My_globals.bal[29]['C3']) - int(My_globals.bal[29]['D3'])
     self.text_box_54.text = "{:,}".format(ct_121_3)
-    self.text_box_55.text = ct_121_1 - (int(self.text_box_40.text) - int(self.text_box_31.text))
-    self.text_box_56.text = ct_121_2 - (int(self.text_box_41.text) - int(self.text_box_32.text))
-    self.text_box_57.text = ct_121_3 - (int(self.text_box_42.text) - int(self.text_box_33.text))
+    c609d1 = self.dif ("609", "A", "D1")
+    c609d2 = self.dif ("609", "A", "D2")
+    c609d3 = self.dif ("609", "A", "D3")
+    c709c1 = self.dif ("709", "P", "C1")
+    c709c2 = self.dif ("709", "P", "C2")
+    c709c3 = self.dif ("709", "P", "C3")
+    self.text_box_55.text = int(ct_121_1 - (int(self.text_box_40.text) + c609d1 - c709c1  
+                            -(int(self.text_box_31.text) - c609d1 + c709c1)))
+    self.text_box_56.text = int(ct_121_2 - (int(self.text_box_41.text) + c609d2 - c709c2  
+                            -(int(self.text_box_32.text) - c609d2 + c709c2)))
+    self.text_box_57.text = int(ct_121_3 - (int(self.text_box_42.text) + c609d3 - c709c3  
+                            -(int(self.text_box_33.text) - c609d3 + c709c3)))
     pass
   
+  def dif(self, ct, tip, col):
+    nr = len(My_globals.bal)
+    vall = int(0)
+    for i in range (0,nr):
+      if str(My_globals.bal[i]['Cont']) == ct:
+        if tip  == "A":
+          if col == "D1":
+            if My_globals.bal[i]['D1']:
+               vall = int(My_globals.bal[i]['D1'])
+          if col == "D2":
+            if My_globals.bal[i]['D2']:
+               vall = int(My_globals.bal[i]['D2']) 
+          if col == "D3":
+            if My_globals.bal[i]['D3']:
+               vall = int(My_globals.bal[i]['D3'])  
+        if tip  == "P":
+          if col == "C1":
+             if My_globals.bal[i]['C1']:
+                vall = int(My_globals.bal[i]['C1'])
+          if col == "C2":
+             if My_globals.bal[i]['C2']:
+                vall = int(My_globals.bal[i]['C2']) 
+          if col == "C3":
+             if My_globals.bal[i]['C3']:
+               vall = int(My_globals.bal[i]['C3'])    
+    return vall        
+    pass
   def sum_clasa (self, cl, col):
     
     nr = len(My_globals.bal)
@@ -130,5 +167,10 @@ class bal(balTemplate):
     """This method is called when the button is clicked"""
     print(My_globals.bal[29]['Cont'])
     pass
+
+  def text_box_4_show(self, **event_args):
+    
+    pass
+
 
 

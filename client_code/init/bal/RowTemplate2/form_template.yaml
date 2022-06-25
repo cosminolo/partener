@@ -68,6 +68,7 @@ components:
   layout_properties: {column: IWZHOK}
   data_bindings:
   - {property: text, code: 'self.item[''D2'']', writeback: true}
+  event_bindings: {lost_focus: text_box_3_lost_focus}
 - type: TextBox
   properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
     border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -77,6 +78,7 @@ components:
   layout_properties: {column: UYPOWZ}
   data_bindings:
   - {property: text, code: 'self.item[''C2'']', writeback: true}
+  event_bindings: {lost_focus: text_box_4_lost_focus}
 - type: TextBox
   properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
     border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -86,6 +88,7 @@ components:
   layout_properties: {column: WLRQPZ}
   data_bindings:
   - {property: text, code: 'self.item[''D3'']', writeback: true}
+  event_bindings: {lost_focus: text_box_5_lost_focus}
 - type: TextBox
   properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
     border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -95,4 +98,5 @@ components:
   layout_properties: {column: ZXIAJA}
   data_bindings:
   - {property: text, code: 'self.item[''C3'']', writeback: true}
+  event_bindings: {lost_focus: text_box_6_lost_focus}
 is_package: true
