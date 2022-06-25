@@ -17,7 +17,7 @@ services:
       live: pk_live_51LBjMhI63DSlRQi5gQWXfWNvq5cVC7sQgHsyjpByKgA8jNgoGtdAUCPK6gKXDjcRUPf4YeG6Wsf14Y5NtEEetCxT00zLeSjVqP}
   server_config: {refresh_token: rt_LtWhX1OJnkiQrUVGJjAhd6rKRaTGoO2Y0RKqMcAiiUPUA5FG,
     stripe_user_id: acct_1LBjMhI63DSlRQi5}
-startup: {type: form, module: init.bal}
+startup: {type: form, module: Form1}
 package_name: Partener
 allow_embedding: true
 name: Partener
@@ -82,6 +82,9 @@ db_schema:
     - name: bal
       admin_ui: {width: 200}
       type: simpleObject
+    - name: apl_x
+      admin_ui: {width: 200}
+      type: media
   arh:
     title: arh
     client: none
