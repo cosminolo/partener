@@ -88,7 +88,7 @@ components:
       font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_1
-    layout_properties: {x: 73.25, y: 73, width: 96}
+    layout_properties: {x: 73.25, y: 73, width: 98}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
@@ -96,14 +96,14 @@ components:
       font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_6
-    layout_properties: {x: 278.75, y: 99, width: 93}
+    layout_properties: {x: 278.75, y: 99, width: 95}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
       font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_3
-    layout_properties: {x: 278.75, y: 73, width: 93}
+    layout_properties: {x: 278.75, y: 73, width: 95}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -124,7 +124,7 @@ components:
       font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_9
-    layout_properties: {x: 278.75, y: 129, width: 93}
+    layout_properties: {x: 278.75, y: 129, width: 95}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -201,7 +201,7 @@ components:
       font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_7
-    layout_properties: {x: 73.25, y: 129, width: 96}
+    layout_properties: {x: 73.25, y: 129, width: 98}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -502,21 +502,21 @@ components:
       font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_56
-    layout_properties: {x: 178.75, y: 599, width: 94}
+    layout_properties: {x: 178.75, y: 599, width: 92}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
       font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_57
-    layout_properties: {x: 278.75, y: 599, width: 95}
+    layout_properties: {x: 278.75, y: 599, width: 93}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
       font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_55
-    layout_properties: {x: 73.25, y: 599, width: 101}
+    layout_properties: {x: 73.25, y: 599, width: 99}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 121- (Ven - Chelt), font_size: null, font: '', spacing_above: small,
@@ -549,7 +549,7 @@ components:
       font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_4
-    layout_properties: {x: 74.25, y: 99, width: 92}
+    layout_properties: {x: 74.25, y: 99, width: 98}
     event_bindings: {show: text_box_4_show}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
