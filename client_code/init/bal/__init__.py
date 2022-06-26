@@ -14,8 +14,10 @@ from . import refre
 class bal(balTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
+    global use
+    use = self.ups()
     self.init_components(**properties)
-    bal = My_globals.global_us(self.ups())   
+    bal = My_globals.global_us(use)   
     # Any code you write here will run when the form opens.
     My_globals.bal = anvil.server.call("get_bal", self.ups())
     self.repeating_panel_1.items = My_globals.bal
