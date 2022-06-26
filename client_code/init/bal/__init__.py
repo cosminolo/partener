@@ -15,11 +15,11 @@ class bal(balTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    My_globals.bal = anvil.server.call("get_bal", self.ups())
+    bal = My_globals.global_us(self.ups())   
     # Any code you write here will run when the form opens.
-    
+    My_globals.bal = anvil.server.call("get_bal", self.ups())
     self.repeating_panel_1.items = My_globals.bal
-    My_globals.cl1=0
+    #My_globals.cl1=0
     
     self.data_grid_1.show_page_controls = True
     self.data_grid_1.rows_per_page = 50
@@ -171,6 +171,16 @@ class bal(balTemplate):
   def text_box_4_show(self, **event_args):
     
     pass
+
+  def button_4_click(self, **event_args):
+    open_form('init')
+    pass
+
+  def button_5_click(self, **event_args):
+    open_form('init.verific')
+    pass
+  
+
 
 
 

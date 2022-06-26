@@ -15,7 +15,8 @@ import string
 class RowTemplate2(RowTemplate2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
-    
+    global us
+    us = self.ups()
     self.init_components(**properties)
     if self.label_6.text == "P":
        self.text_box_1.enabled = False
@@ -87,6 +88,7 @@ class RowTemplate2(RowTemplate2Template):
    if self.text_box_1.enabled == True:
     s = self.text_box_1.text
     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        anvil.server.call('upp_bal', us, My_globals.bal)
         pass
     else:         
         self.text_box_1.text = 0     
@@ -97,38 +99,13 @@ class RowTemplate2(RowTemplate2Template):
    if self.text_box_2.enabled == True:
     s = self.text_box_2.text
     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        anvil.server.call('upp_bal', us, My_globals.bal)
         pass
     else:         
         self.text_box_2.text = 0     
         alert("Doar numar fara zecimale sau separatori!") 
    pass
   
-  
-  def sum_clasa (self, cl, col):
-    b = My_globals.bal
-    nr = len(b)
-    s = int(0)
-    for i in range (0,nr):
-      if str(b[i]['Cont'])[:1] == cl:
-        if b[i][col]:
-          s = s + int(b[i][col])
-    return s
-  
-  def recalcul_clasa(self, cl, col):
-    
-    nr = len(My_globals.bal)
-    s = int(0)
-    for i in range (0,nr):
-      if str(My_globals.bal[i]['Cont'])[:1] == cl:
-        if My_globals.bal[i][col]:
-          s = s + int(My_globals.bal[i][col])
-      if str(My_globals.bal[i]['Cont'])[:1] == "T":
-        My_globals.bal[i][col] = s
-        
-        print(My_globals.bal[i][col])
-      My_globals.cl1 = s
-    pass
-
   def form_show(self, **event_args):
     """This method is called when the data row panel is shown on the screen"""
    
@@ -143,6 +120,7 @@ class RowTemplate2(RowTemplate2Template):
    if self.text_box_3.enabled == True:
     s = self.text_box_3.text
     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        anvil.server.call('upp_bal', us, My_globals.bal)
         pass
     else:         
         self.text_box_3.text = 0     
@@ -153,6 +131,7 @@ class RowTemplate2(RowTemplate2Template):
    if self.text_box_4.enabled == True:
     s = self.text_box_4.text
     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        anvil.server.call('upp_bal', us, My_globals.bal)
         pass
     else:         
         self.text_box_4.text = 0     
@@ -163,6 +142,7 @@ class RowTemplate2(RowTemplate2Template):
    if self.text_box_5.enabled == True:
     s = self.text_box_5.text
     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        anvil.server.call('upp_bal', us, My_globals.bal)
         pass
     else:         
         self.text_box_5.text = 0     
@@ -173,12 +153,21 @@ class RowTemplate2(RowTemplate2Template):
    if self.text_box_6.enabled == True: 
     s = self.text_box_6.text
     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        anvil.server.call('upp_bal', us, My_globals.bal)
         pass
     else:         
         self.text_box_6.text = 0     
         alert("Doar numar fara zecimale sau separatori!") 
    pass
 
+  def ups(self):
+      user = anvil.users.get_user()
+      if user is None:
+        x=0
+      else:
+          us =  str(user['email'])
+          return us
+      pass
 
   
 

@@ -22,47 +22,37 @@ import time
 #
 @anvil.server.callable
 def add_user(id):
- 
- for user in app_tables.lucru.search(tables.order_by("user")):
-  break
+ id_row = app_tables.lucru.get(user=id)
+ if id_row:
+  pass
+ #for user in app_tables.lucru.search(tables.order_by("user")):
+  #break
  else:
   app_tables.lucru.add_row(user=id)
-  js = anvil.server.call("j_g_gol")
-  jbal = anvil.server.call("bal_gol")
-  us_row = app_tables.lucru.get(user=id)
-  us_row.update(js_gen_gol=js, js_gen=js, bal=jbal ) 
+  anvil.server.call("new_us", id)
+  #js = anvil.server.call("j_g_gol")
+  #jbal = anvil.server.call("bal_gol")
+  #us_row = app_tables.lucru.get(user=id)
+  #us_row.update(js_gen_gol=js, js_gen=js, bal=jbal ) 
   
 pass
 
 @anvil.server.callable
 def app_new(id):
   try:
-    js=app_tables.lucru.get(user=id)["js_gen_gol"]
     id_row = app_tables.lucru.get(user=id)
-    id_row.update(js_gen=js)
+    jsg = anvil.server.call("j_g_gol") 
+    id_row.update(js_gen=jsg)    
     id_row.update(js_bil="")
     id_row.update(j_bil="")
     id_row.update(js_tva="")
-    ud_row.update(js_gen_gol=js, js_gen=js ) 
+    id_row.update(js_gen_gol=jsg) 
     jbal = anvil.server.call("bal_gol")
     id_row.update(bal=jbal)
     
   except:
-    app_tables.lucru.add_row(user=id)
-    js = anvil.server.call("j_g_gol")
-    us_row = app_tables.lucru.get(user=id)
-    us_row.update(js_gen_gol=js, js_gen=js ) 
-    jbal = anvil.server.call("bal_gol")
-    us_row.update(bal=jbal)
-    us_row.update(js_bil="")
-    us_row.update(j_bil="")
-    us_row.update(js_tva="")
-    
     pass
 pass
-
-
-
 
 @anvil.server.callable
 def tva_js(id,js):
@@ -132,15 +122,20 @@ pass
 def upp_js(id,js):  
     id_row = app_tables.lucru.get(user=id)
     id_row.update(js_gen=js)
-
 pass
 @anvil.server.callable
-def arh (us, dat, entit, facilit, j):
+def upp_bal(id,bal):  
+    id_row = app_tables.lucru.get(user=id)
+    id_row.update(bal=bal)
+pass
+@anvil.server.callable
+def arh (us, dat, entit, facilit, j, bala):
   app_tables.arh.add_row(user=us,
                           soc=entit,
                           facilit=facilit,
                           dat=dat,
-                          js_gen=j)
+                          js_gen=j,
+                          bal=bala)
 pass
 @anvil.server.callable
 def arh2 (us, dat, entit, facilit):
@@ -152,8 +147,8 @@ def arh2 (us, dat, entit, facilit):
                           js_gen=id_row["js_gen"],
                           j_bil=id_row["j_bil"],
                           js_bil=id_row['js_bil'],
-                          js_tva=id_row['js_tva']) 
-  
+                          js_tva=id_row['js_tva'], 
+                          bal=id_row['bal'])
 pass
 
 
