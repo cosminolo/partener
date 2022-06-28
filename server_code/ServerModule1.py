@@ -197,4 +197,15 @@ def get_jsgen(id):
   except:
     pass
 pass
+@anvil.server.callable
+def s_rb(id,rb):  
+    id_row = app_tables.lucru.get(user=id)
+    id_row.update(rb=rb)
+@anvil.server.callable
+def get_rb(id):
+  try:
+    js=app_tables.lucru.get(user=id)["rb"]
+    return js
+  except:
+    pass
 

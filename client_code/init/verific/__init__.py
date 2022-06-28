@@ -11,7 +11,7 @@ from anvil.tables import app_tables
 import json
 import time
 import string
-import re
+
 from datetime import date
 import stripe.checkout
 class verific(verificTemplate):
@@ -34,7 +34,20 @@ class verific(verificTemplate):
     bil1 = anvil.server.call("get_bil", self.ups(), 1)
     self.clear_bilant()
     self.bilant(bill, bil1)
-    
+    try:
+      rb=json.loads(anvil.server.call("get_rb",self.ups()))
+      if len(rb) > 0 :
+        self.label_79.text = self.ps(rb['bs'])
+        self.label_80.text = self.ps(rb['bss'])
+        self.label_81.text = self.ps(rb['bas'])
+        self.label_83.text = self.ps(rb['bass'])
+        self.label_87.text = self.ps(rb['cui'])
+        self.label_89.text = self.ps(rb['total'])
+        self.label_90.text = self.ps(rb['obs'])
+      else:
+        self.label_90.text = "Nu are restante la finele ultimului trimestru"
+    except:
+      pass
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('init.bal')
@@ -226,8 +239,10 @@ class verific(verificTemplate):
     re = json.dumps(anvil.server.call("get_jsgen", us), indent=2)
     den =  (json.loads(re)['den'])
     cui = (json.loads(re)['cui'])
-    rb = json.loads(anvil.server.call("rest_buget", us, den, cui))
-    print(rb)   
+    rbb = anvil.server.call("rest_buget", us, den, cui)
+    anvil.server.call("s_rb", us, rbb)
+    rb = json.loads(rbb)   
+   
     if len(rb) > 0 :
       self.label_79.text = self.ps(rb['bs'])
       self.label_80.text = self.ps(rb['bss'])
@@ -240,9 +255,13 @@ class verific(verificTemplate):
       self.label_90.text = "Nu are restante la finele ultimului trimestru"
     pass
 
-  def ps(self, st):
-    
-    return st
+  def ps(self, sst):
+    s=""
+    st=str(sst)
+    for i in st:
+       if i.isnumeric() or i=="," or i.isalpha():
+        s = s + i
+    return s
 
 
 

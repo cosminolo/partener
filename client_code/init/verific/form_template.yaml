@@ -668,7 +668,7 @@ components:
   - type: Label
     properties: {}
     name: label_90
-    layout_properties: {x: 798, y: 303, width: 225}
+    layout_properties: {x: 795, y: 310, width: 225}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
     foreground: '', visible: false, text: button_5, font_size: null, font: '', spacing_above: small,
