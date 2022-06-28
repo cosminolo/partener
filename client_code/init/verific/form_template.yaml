@@ -564,6 +564,7 @@ components:
       underline: false, icon: 'fa:refresh'}
     name: button_8
     layout_properties: {x: 564, y: 227, width: 59}
+    event_bindings: {click: button_8_click}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: BS, font_size: null, font: '', spacing_above: small, icon_align: left,

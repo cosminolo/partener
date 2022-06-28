@@ -320,9 +320,11 @@ class start(startTemplate):
       js_lucru['onrc'] = ret_js["nrRegCom"] 
       self.text_box_6.text = ret_js["telefon"]    
       js_lucru['telef'] = ret_js["telefon"] 
-      
+          
     except:
       pass
+    rb = anvil.server.call("rest_buget", self.ups(), self.text_box_3.text, self.text_box_3.text )
+    print(rb)  
     try:
       an = str(int(date.today().year))
       cui = self.text_box_2.text
@@ -368,6 +370,11 @@ class start(startTemplate):
     if self.text_box_5.text.strip():
        self.up_json() 
     pass
+
+  def text_box_5_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
 
 
 

@@ -212,6 +212,12 @@ class verific(verificTemplate):
     self.bilant(json.loads(d), json.loads(c))
     pass
 
+  def button_8_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    
+    pass
+
+
 
 
 

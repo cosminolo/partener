@@ -270,7 +270,7 @@ components:
       background: '', bold: false, underline: false}
     name: text_box_5
     layout_properties: {row: TETFYO, width_xs: 3, col_xs: 1, width: 133.75}
-    event_bindings: {lost_focus: text_box_5_lost_focus}
+    event_bindings: {lost_focus: text_box_5_lost_focus, pressed_enter: text_box_5_pressed_enter}
     data_bindings:
     - {property: text, code: 'self.item[''caen'']', writeback: true}
   - type: Label
