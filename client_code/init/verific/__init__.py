@@ -11,6 +11,7 @@ from anvil.tables import app_tables
 import json
 import time
 import string
+import re
 from datetime import date
 import stripe.checkout
 class verific(verificTemplate):
