@@ -151,8 +151,6 @@ def arh2 (us, dat, entit, facilit):
                           bal=id_row['bal'])
 pass
 
-
-
 @anvil.server.callable
 def nr_rows(us):
   nr = len(app_tables.arh.search(user=us))
@@ -185,13 +183,18 @@ def sterge_arh(us, soc, facilit, dat):
 pass
 @anvil.server.callable
 def apl(id):
-
-  fl = anvil.server.call("apl_gol")
-  
+  fl = anvil.server.call("apl_gol")  
   us_row = app_tables.lucru.get(user=id)
   us_row.update(apl_x=fl) 
-  return fl
- 
+  return fl 
 pass
-
+@anvil.server.callable
+def get_jsgen(id):
+  try:    
+    js=app_tables.lucru.get(user=id)["js_gen"]
+    re = {"den": js["den"], "cui": js["cui"]}
+    return re
+  except:
+    pass
+pass
 

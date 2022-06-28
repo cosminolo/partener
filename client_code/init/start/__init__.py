@@ -319,12 +319,9 @@ class start(startTemplate):
       self.text_box_7.text = ret_js["nrRegCom"]
       js_lucru['onrc'] = ret_js["nrRegCom"] 
       self.text_box_6.text = ret_js["telefon"]    
-      js_lucru['telef'] = ret_js["telefon"] 
-          
+      js_lucru['telef'] = ret_js["telefon"]           
     except:
-      pass
-    rb = anvil.server.call("rest_buget", self.ups(), self.text_box_3.text, self.text_box_3.text )
-    print(rb)  
+      pass    
     try:
       an = str(int(date.today().year))
       cui = self.text_box_2.text

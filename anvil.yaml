@@ -83,6 +83,9 @@ db_schema:
     - name: bal
       admin_ui: {width: 200}
       type: simpleObject
+    - name: rb
+      admin_ui: {width: 200}
+      type: simpleObject
   arh:
     title: arh
     client: none
@@ -113,6 +116,9 @@ db_schema:
       admin_ui: {width: 200}
       type: simpleObject
     - name: bal
+      admin_ui: {width: 200}
+      type: simpleObject
+    - name: rb
       admin_ui: {width: 200}
       type: simpleObject
 renamed: true

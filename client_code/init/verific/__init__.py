@@ -213,8 +213,30 @@ class verific(verificTemplate):
     pass
 
   def button_8_click(self, **event_args):
-    """This method is called when the button is clicked"""
+    self.label_79.text = ""
+    self.label_80.text = ""
+    self.label_81.text = ""
+    self.label_83.text = ""
+    self.label_87.text = ""
+    self.label_89.text = ""
+    self.label_90.text = ""    
+    us = self.ups()
+    re = json.dumps(anvil.server.call("get_jsgen", us), indent=2)
+    den =  (json.loads(re)['den'])
+    cui = (json.loads(re)['cui'])
+    rb = json.loads(anvil.server.call("rest_buget", us, den, cui))
     
+    print(rb)
+    if len(rb) > 0 :
+      self.label_79.text = rb['bs']
+      self.label_80.text = rb['bss']
+      self.label_81.text = rb['bas']
+      self.label_83.text = rb['bass']
+      self.label_87.text = rb['cui']
+      self.label_89.text = rb['total']
+      self.label_90.text = rb['obs']
+    else:
+      self.label_90.text = "Nu are restante la finele ultimului trimestru"
     pass
 
 
