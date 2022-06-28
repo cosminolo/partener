@@ -78,125 +78,11 @@ components:
     name: check_box_6
     layout_properties: {grid_position: 'GIUYQK,SIOZVJ'}
 - type: XYPanel
-  properties: {role: null, width: 3000, align: center, height: '157', tooltip: '',
-    border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
-    background: ''}
+  properties: {role: null, width: 3000, align: left, height: '157', tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
   name: xy_panel_1
-  layout_properties: {grid_position: 'GCWTZI,ABTNGO', full_width_row: false}
+  layout_properties: {grid_position: 'KAENMF,KXWSLY', full_width_row: true, row_background: ''}
   components:
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: TVA, font_size: null, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: label_5
-    layout_properties: {x: 60, y: 48, width: 59}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Inactiv Anaf, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_3
-    layout_properties: {x: 60, y: 140, width: 160}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Data TVA, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_6
-    layout_properties: {x: 60, y: 76, width: 127}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Status E_factura, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_2
-    layout_properties: {x: 60, y: 104, width: 120}
-  - type: Label
-    properties: {}
-    name: label_17
-    layout_properties: {x: 628, y: 19, width: 160}
-    data_bindings: []
-  - type: Label
-    properties: {}
-    name: label_18
-    layout_properties: {x: 628, y: 46, width: 160}
-    data_bindings: []
-  - type: Label
-    properties: {}
-    name: label_19
-    layout_properties: {x: 628, y: 76, width: 160}
-    data_bindings: []
-  - type: Label
-    properties: {}
-    name: label_20
-    layout_properties: {x: 628, y: 104, width: 160}
-    data_bindings: []
-  - type: Label
-    properties: {}
-    name: label_16
-    layout_properties: {x: 215, y: 140, width: 160}
-    data_bindings: []
-  - type: Label
-    properties: {}
-    name: label_15
-    layout_properties: {x: 215, y: 104, width: 160}
-    data_bindings: []
-  - type: Label
-    properties: {}
-    name: label_14
-    layout_properties: {x: 215, y: 76, width: 160}
-    data_bindings:
-    - {property: text, code: 'self.item[''data_inceput_ScpTVA'']'}
-  - type: Label
-    properties: {}
-    name: label_13
-    layout_properties: {x: 215, y: 48, width: 160}
-    data_bindings: []
-  - type: Label
-    properties: {}
-    name: label_12
-    layout_properties: {x: 215, y: 19, width: 160}
-    data_bindings: []
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: TVA la incasare, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_8
-    layout_properties: {x: 458, y: 19, width: 160}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Data TVA la incasare, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_9
-    layout_properties: {x: 458, y: 46, width: 160}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Split TVA, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_10
-    layout_properties: {x: 458, y: 76, width: 160}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Data split TVA, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_11
-    layout_properties: {x: 458, y: 104, width: 160}
-  - type: Label
-    properties: {}
-    name: label_23
-    layout_properties: {x: 238, y: -13, width: 80}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Data verificarii, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_22
-    layout_properties: {x: 129, y: -13, width: 120}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
@@ -207,28 +93,141 @@ components:
     event_bindings: {click: button_4_click}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Status, font_size: null, font: '', spacing_above: small,
+      visible: true, text: 'Status:', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_7
-    layout_properties: {x: 318, y: -6, width: 51}
+    layout_properties: {x: 48, y: -6, width: 51}
   - type: Label
     properties: {}
     name: label_21
-    layout_properties: {x: 373, y: -6, width: 388}
+    layout_properties: {x: 99, y: -6, width: 327}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Data TVA, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_6
+    layout_properties: {x: 0, y: 100, width: 73}
+  - type: Label
+    properties: {}
+    name: label_14
+    layout_properties: {x: 99, y: 100, width: 78}
+    data_bindings:
+    - {property: text, code: 'self.item[''data_inceput_ScpTVA'']'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: TVA, font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_5
+    layout_properties: {x: 0, y: 78, width: 59}
+  - type: Label
+    properties: {}
+    name: label_13
+    layout_properties: {x: 99, y: 76, width: 78}
+    data_bindings: []
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: CUI, font_size: null, font: '', spacing_above: small, icon_align: left,
       spacing_below: small, italic: false, background: '', bold: false, underline: false,
       icon: ''}
     name: label_4
-    layout_properties: {x: 93, y: 19, width: 52}
+    layout_properties: {x: 3, y: 54, width: 35}
+  - type: Label
+    properties: {}
+    name: label_12
+    layout_properties: {x: 99, y: 56, width: 78}
+    data_bindings: []
+  - type: Label
+    properties: {text: 'Data '}
+    name: label_22
+    layout_properties: {x: 3, y: 32, width: 35}
+  - type: Label
+    properties: {}
+    name: label_23
+    layout_properties: {x: 99, y: 30, width: 80}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: TVA la incasare, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_8
+    layout_properties: {x: 198, y: 54, width: 107}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Inactiv Anaf, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {x: 197, y: 32, width: 73}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: E_factura, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {x: 0, y: 126, width: 73}
+  - type: Label
+    properties: {}
+    name: label_15
+    layout_properties: {x: 99, y: 126, width: 78}
+    data_bindings: []
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Data split TVA, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_11
+    layout_properties: {x: 197, y: 132, width: 97}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Split TVA, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_10
+    layout_properties: {x: 198, y: 108, width: 72}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Data TVA la incasare, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_9
+    layout_properties: {x: 197, y: 78, width: 138}
+  - type: Label
+    properties: {}
+    name: label_18
+    layout_properties: {x: 335, y: 76, width: 85}
+    data_bindings: []
+  - type: Label
+    properties: {}
+    name: label_19
+    layout_properties: {x: 337, y: 100, width: 83}
+    data_bindings: []
+  - type: Label
+    properties: {}
+    name: label_20
+    layout_properties: {x: 337, y: 132, width: 83}
+    data_bindings: []
+  - type: Label
+    properties: {}
+    name: label_17
+    layout_properties: {x: 337, y: 56, width: 83}
+    data_bindings: []
+  - type: Label
+    properties: {}
+    name: label_16
+    layout_properties: {x: 336, y: 32, width: 84}
+    data_bindings: []
+- type: Spacer
+  properties: {height: 94}
+  name: spacer_1
+  layout_properties: {grid_position: 'EGMVCA,YQJOQQ', full_width_row: true}
 - type: XYPanel
-  properties: {role: null, width: null, align: center, height: '380', tooltip: '',
-    border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
-    background: ''}
+  properties: {role: null, width: 1216, align: left, height: '380', tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
   name: xy_panel_2
-  layout_properties: {grid_position: 'XLVDOX,STGWCM'}
+  layout_properties: {grid_position: 'XLVDOX,OBMPNQ', full_width_row: true}
   components:
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
@@ -606,7 +605,7 @@ components:
     icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
     underline: false, icon: ''}
   name: button_5
-  layout_properties: {x: -9.25, y: 176, width: 100, grid_position: 'WLYDHA,CHJFAX'}
+  layout_properties: {x: -9.25, y: 176, width: 100, grid_position: 'SRHJBK,YIFUCL'}
   event_bindings: {click: button_5_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
@@ -614,6 +613,6 @@ components:
     icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
     underline: false, icon: ''}
   name: button_6
-  layout_properties: {grid_position: 'NJLIDI,NBCHAH'}
+  layout_properties: {grid_position: 'ZCULFN,KIOSUY'}
   event_bindings: {click: button_6_click}
 is_package: true
