@@ -10,6 +10,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import json
 import time
+import string
 from datetime import date
 import stripe.checkout
 class verific(verificTemplate):
@@ -225,21 +226,22 @@ class verific(verificTemplate):
     den =  (json.loads(re)['den'])
     cui = (json.loads(re)['cui'])
     rb = json.loads(anvil.server.call("rest_buget", us, den, cui))
-    
-    print(rb)
+    print(rb)   
     if len(rb) > 0 :
-      self.label_79.text = rb['bs']
-      self.label_80.text = rb['bss']
-      self.label_81.text = rb['bas']
-      self.label_83.text = rb['bass']
-      self.label_87.text = rb['cui']
-      self.label_89.text = rb['total']
-      self.label_90.text = rb['obs']
+      self.label_79.text = self.ps(rb['bs'])
+      self.label_80.text = self.ps(rb['bss'])
+      self.label_81.text = self.ps(rb['bas'])
+      self.label_83.text = self.ps(rb['bass'])
+      self.label_87.text = self.ps(rb['cui'])
+      self.label_89.text = self.ps(rb['total'])
+      self.label_90.text = self.ps(rb['obs'])
     else:
       self.label_90.text = "Nu are restante la finele ultimului trimestru"
     pass
 
-
+  def ps(self, st):
+    
+    return st
 
 
 
