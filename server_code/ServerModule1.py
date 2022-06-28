@@ -148,7 +148,8 @@ def arh2 (us, dat, entit, facilit):
                           j_bil=id_row["j_bil"],
                           js_bil=id_row['js_bil'],
                           js_tva=id_row['js_tva'], 
-                          bal=id_row['bal'])
+                          bal=id_row['bal'],
+                          rb=id_row['rb'])
 pass
 
 @anvil.server.callable
@@ -172,7 +173,7 @@ pass
 def preia_inlucru(us, soc, facilit, dat):
   arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
   id_row = app_tables.lucru.get(user=us)
-  id_row.update(js_gen=arh["js_gen"], js_tva=arh["js_tva"], js_bil=arh['js_bil'], j_bil=arh['j_bil'])
+  id_row.update(js_gen=arh["js_gen"], js_tva=arh["js_tva"], js_bil=arh['js_bil'], j_bil=arh['j_bil'], rb=arh['rb'])
   
 pass
 @anvil.server.callable
