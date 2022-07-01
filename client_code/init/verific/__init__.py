@@ -18,8 +18,10 @@ class verific(verificTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    
-      
+    global num_den
+    re = json.dumps(anvil.server.call("get_jsgen", self.ups()), indent=2)
+    num_den =  (json.loads(re)['den'])
+    self.text_box_1.text = num_den  
     global get_tva
     get_tva = anvil.server.call("get_tva", self.ups())
     global cui
@@ -265,11 +267,12 @@ class verific(verificTemplate):
 
   def button_9_click(self, **event_args):
     """This method is called when the button is clicked"""
-    den = self.text_box_1.text
+    den = self.text_box_1.text.strip()
     lit = anvil.server.call("litigii", den)
-    try:
-      self.repeating_panel_1.items = json.loads(lit)
-    except:
+    if len(json.loads(lit)) > 1:
+        self.repeating_panel_1.items = json.loads(lit)
+    else:
+        self.repeating_panel_1.items =[]
         if json.loads(lit)["rez"] == "nu inregistreaza":
           n = Notification("",
              title=json.loads(lit)["rez"]).show()
