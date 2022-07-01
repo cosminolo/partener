@@ -669,6 +669,20 @@ components:
     properties: {}
     name: label_90
     layout_properties: {x: 795, y: 310, width: 225}
+  - type: RepeatingPanel
+    properties: {item_template: init.verific.ItemTemplate1}
+    name: repeating_panel_1
+    layout_properties: {x: 67.75, y: 427.5, width: 457}
+    data_bindings: []
+  - type: TextBox
+    properties: {}
+    name: text_box_1
+    layout_properties: {x: 10, y: 397.5, width: 239}
+  - type: Button
+    properties: {text: button_9}
+    name: button_9
+    layout_properties: {x: 284, y: 397.5, width: 100}
+    event_bindings: {click: button_9_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
     foreground: '', visible: false, text: button_5, font_size: null, font: '', spacing_above: small,
