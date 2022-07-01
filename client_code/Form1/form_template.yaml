@@ -1,35 +1,3 @@
-container:
-  type: HtmlTemplate
-  properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
-    role: null, html: ''}
-components:
-- type: Button
-  properties: {text: button_1}
-  name: button_1
-  layout_properties: {slot: default}
-  event_bindings: {click: button_1_click}
-- type: GridPanel
-  properties: {}
-  name: grid_panel_1
-  layout_properties: {slot: default}
-  components:
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-      font: '', spacing_above: none, type: text, spacing_below: none, italic: false,
-      background: '', bold: false, underline: false}
-    name: text_box_1
-    layout_properties: {row: OQDWSJ, width_xs: 2, col_xs: 0, width: 73}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-      font: '', spacing_above: none, type: text, spacing_below: none, italic: false,
-      background: '', bold: false, underline: false}
-    name: text_box_2
-    layout_properties: {row: OQDWSJ, width_xs: 4, col_xs: 2, width: 177}
-  - type: FileLoader
-    properties: {}
-    name: file_loader_1
-    layout_properties: {row: HUZTRW, width_xs: 2, col_xs: 7}
-    event_bindings: {change: file_loader_1_change}
+container: {type: ColumnPanel}
+components: []
 is_package: true

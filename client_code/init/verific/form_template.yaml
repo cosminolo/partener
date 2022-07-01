@@ -78,7 +78,7 @@ components:
     name: check_box_6
     layout_properties: {grid_position: 'GIUYQK,SIOZVJ'}
 - type: XYPanel
-  properties: {role: null, width: 1216, align: left, height: '380', tooltip: '', border: '',
+  properties: {role: null, width: 1216, align: left, height: 829, tooltip: '', border: '',
     foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
   name: xy_panel_2
   layout_properties: {grid_position: 'XLVDOX,OBMPNQ', full_width_row: true}
