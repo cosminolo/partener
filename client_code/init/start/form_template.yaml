@@ -185,7 +185,7 @@ components:
   name: grid_panel_1
   layout_properties:
     col_widths: {}
-    grid_position: CGIWLE,XTYJZP
+    grid_position: CGIWLE,XUHNNW
     full_width_row: true
   components:
   - type: Label
@@ -588,4 +588,67 @@ components:
     event_bindings: {change: drop_down_11_change}
     data_bindings:
     - {property: selected_value, code: 'self.item[''conducere'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Evaluarea echipei manageriala, font_size: 12, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_1
+    layout_properties: {row: QBBUWV, width_xs: 2, col_xs: 0, width: 80.5}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: none
+      spacing_below: none
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_12
+    layout_properties: {row: QBBUWV, width_xs: 5, col_xs: 2, width: 191}
+    event_bindings: {change: drop_down_12_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Calitatea actionariatului, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_19
+    layout_properties: {row: QBBUWV, width_xs: 2, col_xs: 7, width: 80.5}
+  - type: DropDown
+    properties: {}
+    name: drop_down_13
+    layout_properties: {row: QBBUWV, width_xs: 3, col_xs: 9}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Concentrarea clientilor ', font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_20
+    layout_properties: {row: OXBSLY, width_xs: 2, col_xs: 0, width: 135.75}
+  - type: DropDown
+    properties: {}
+    name: drop_down_14
+    layout_properties: {row: OXBSLY, width_xs: 5, col_xs: 2}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Experienta in administrarea fondurilor imprumutate, font_size: 12,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_21
+    layout_properties: {row: OXBSLY, width_xs: 2, col_xs: 7, width: 135.75}
+  - type: DropDown
+    properties: {}
+    name: drop_down_15
+    layout_properties: {row: OXBSLY, width_xs: 3, col_xs: 9}
 is_package: true

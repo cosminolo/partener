@@ -179,7 +179,7 @@ class bal(balTemplate):
     pass
 
   def button_5_click(self, **event_args):
-    open_form('init.verific')
+    open_form('init.crit')
     pass
   
 

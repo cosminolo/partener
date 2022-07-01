@@ -52,7 +52,8 @@ class verific(verificTemplate):
       pass
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('init.bal')
+    open_form('init.crit')
+    
     pass
 
   def button_1_click(self, **event_args):

@@ -372,6 +372,11 @@ class start(startTemplate):
     """This method is called when the user presses Enter in this text box"""
     pass
 
+  def drop_down_12_change(self, **event_args):
+    """This method is called when an item is selected"""
+    pass
+
+
 
 
 
