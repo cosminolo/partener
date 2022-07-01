@@ -42,43 +42,8 @@ components:
     name: button_2
     layout_properties: {grid_position: 'XAPZOZ,HVLDRW', full_width_row: true}
     event_bindings: {click: button_2_click}
-- type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: 'theme:Secondary 500',
-    visible: true, wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{"DCLDZC":22,"LXBTKS":35,"UTRXCJ":20,"ZXPIDP":40,"SIOZVJ":14}',
-    spacing_below: small, background: 'theme:Primary 700'}
-  name: column_panel_2
-  layout_properties: {grid_position: 'PVVQRZ,TIDZPE'}
-  components:
-  - type: CheckBox
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: Datorii buget,
-      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-      background: '', bold: true, checked: false, underline: false}
-    name: check_box_3
-    layout_properties: {grid_position: 'GIUYQK,DCLDZC'}
-  - type: CheckBox
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: BPI, font_size: null,
-      font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-      bold: true, checked: false, underline: false}
-    name: check_box_4
-    layout_properties: {grid_position: 'GIUYQK,LXBTKS ZZNEAR,UTRXCJ'}
-  - type: CheckBox
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: Portal Just,
-      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-      background: '', bold: true, checked: false, underline: false}
-    name: check_box_5
-    layout_properties: {grid_position: 'GIUYQK,LXBTKS ZZNEAR,ZXPIDP'}
-  - type: CheckBox
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: AEGRM, font_size: null,
-      font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-      bold: true, checked: false, underline: false}
-    name: check_box_6
-    layout_properties: {grid_position: 'GIUYQK,SIOZVJ'}
 - type: XYPanel
-  properties: {role: null, width: 1216, align: left, height: 829, tooltip: '', border: '',
+  properties: {role: null, width: 1216, align: left, height: 424, tooltip: '', border: '',
     foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
   name: xy_panel_2
   layout_properties: {grid_position: 'XLVDOX,OBMPNQ', full_width_row: true}
@@ -610,7 +575,10 @@ components:
     name: label_79
     layout_properties: {x: 636, y: 264, width: 69}
   - type: Label
-    properties: {text: Restante buget}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Restante buget, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
     name: label_88
     layout_properties: {x: 633, y: 234, width: 108}
   - type: Label
@@ -618,7 +586,10 @@ components:
     name: label_21
     layout_properties: {x: 721, y: 10, width: 327}
   - type: Label
-    properties: {text: 'Status TVA:'}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Status TVA:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
     name: label_7
     layout_properties: {x: 633, y: 7, width: 51}
   - type: Label
@@ -669,34 +640,42 @@ components:
     properties: {}
     name: label_90
     layout_properties: {x: 795, y: 310, width: 225}
-  - type: RepeatingPanel
-    properties: {item_template: init.verific.ItemTemplate1}
-    name: repeating_panel_1
-    layout_properties: {x: 67.75, y: 427.5, width: 457}
-    data_bindings: []
-  - type: TextBox
-    properties: {}
-    name: text_box_1
-    layout_properties: {x: 10, y: 397.5, width: 239}
   - type: Button
-    properties: {text: button_9}
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:refresh'}
     name: button_9
-    layout_properties: {x: 284, y: 397.5, width: 100}
+    layout_properties: {x: 522, y: 389.1562, width: 52}
     event_bindings: {click: button_9_click}
-- type: Button
-  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '', visible: false, text: button_5, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-    underline: false, icon: ''}
-  name: button_5
-  layout_properties: {x: -9.25, y: 176, width: 100, grid_position: 'SRHJBK,YIFUCL'}
-  event_bindings: {click: button_5_click}
-- type: Button
-  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '', visible: false, text: button_6, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-    underline: false, icon: ''}
-  name: button_6
-  layout_properties: {grid_position: 'ZCULFN,KIOSUY'}
-  event_bindings: {click: button_6_click}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: LITIGII, font_size: 16, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_92
+    layout_properties: {x: 7, y: 389.140625, width: 71}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Denumire, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_91
+    layout_properties: {x: 123, y: 384, width: 87}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: 14, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_1
+    layout_properties: {x: 230, y: 395, width: 237}
+- type: RepeatingPanel
+  properties: {role: scrol, tooltip: '', border: '', foreground: '', items: null,
+    visible: true, spacing_above: small, spacing_below: small, item_template: init.verific.ItemTemplate1,
+    background: ''}
+  name: repeating_panel_1
+  layout_properties:
+    col_widths: {}
+    grid_position: JSPDEL,PKPVPS
+    full_width_row: true
 is_package: true

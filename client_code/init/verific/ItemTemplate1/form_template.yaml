@@ -1,151 +1,80 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"NOLYSF":10,"SMCDMD":50,"DTVEQC":10,"ISQMJH":50,"YTOXHA":10,"BTHNTJ":50,"WISQRR":10,"SZLARW":50,"WZZBRS":10,"BELVIK":50,"EDESXC":10,"DPUFZN":50,"QOBJDN":10,"VQXUXX":50,"CCGMZZ":10,"IKKXBX":50,"MZALGR":10,"YMIGLH":50,"XHLNOO":10,"VQTQIO":50,"QEKOZI":10,"YMUQIY":50}'}
-  data_bindings:
-  - {property: item, code: 'self.item[''categ_caz'']'}
+  properties: {col_widths: '{}'}
 components:
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Parte, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_1
-  layout_properties: {grid_position: 'QZVNNG,NOLYSF'}
-- type: TextBox
+- type: LinearPanel
   properties: {}
-  name: text_box_1
-  layout_properties: {grid_position: 'QZVNNG,SMCDMD'}
-  data_bindings:
-  - {property: text, code: 'self.item[''denumire'']', writeback: true}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Calitate, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_2
-  layout_properties: {grid_position: 'TDSFPL,DTVEQC'}
-- type: TextBox
-  properties: {}
-  name: text_box_2
-  layout_properties: {grid_position: 'TDSFPL,ISQMJH'}
-  data_bindings:
-  - {property: text, code: 'self.item[''calitate'']', writeback: true}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Obiect, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_3
-  layout_properties: {grid_position: 'JYOBLC,YTOXHA'}
-- type: TextArea
-  properties: {height: 56}
-  name: text_area_1
-  layout_properties: {grid_position: 'JYOBLC,BTHNTJ'}
-  data_bindings:
-  - {property: text, code: 'self.item[''obiect'']', writeback: true}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Categorie, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_4
-  layout_properties: {grid_position: 'XUNDIQ,WISQRR'}
-- type: TextBox
-  properties: {}
-  name: text_box_3
-  layout_properties: {grid_position: 'XUNDIQ,SZLARW'}
-  data_bindings:
-  - {property: text, code: 'self.item[''anvil.server.call("litigii", "sonimpex")'']',
-    writeback: true}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Parti, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_5
-  layout_properties: {grid_position: 'YRVRGZ,WZZBRS'}
-- type: TextArea
-  properties: {height: 140}
-  name: text_area_2
-  layout_properties: {grid_position: 'YRVRGZ,BELVIK'}
-  data_bindings:
-  - {property: text, code: 'self.item[''parti'']', writeback: true}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Nr. Dosar, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_6
-  layout_properties: {grid_position: 'VLLVZP,EDESXC'}
-- type: TextBox
-  properties: {}
-  name: text_box_4
-  layout_properties: {grid_position: 'VLLVZP,DPUFZN'}
-  data_bindings:
-  - {property: text, code: 'self.item[''nr_dosar'']', writeback: true}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Instanta, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_7
-  layout_properties: {grid_position: 'EGGUJP,QOBJDN'}
-- type: TextBox
-  properties: {}
-  name: text_box_5
-  layout_properties: {grid_position: 'EGGUJP,VQXUXX'}
-  data_bindings:
-  - {property: text, code: 'self.item[''instanta'']', writeback: true}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Data deschidere, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_8
-  layout_properties: {grid_position: 'DJPQTO,CCGMZZ'}
-- type: TextBox
-  properties: {}
-  name: text_box_6
-  layout_properties: {grid_position: 'DJPQTO,IKKXBX'}
-  data_bindings:
-  - {property: text, code: 'self.item[''data_d'']', writeback: true}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Modificare, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_9
-  layout_properties: {grid_position: 'QWODIM,MZALGR'}
-- type: TextBox
-  properties: {}
-  name: text_box_7
-  layout_properties: {grid_position: 'QWODIM,YMIGLH'}
-  data_bindings:
-  - {property: text, code: 'self.item[''data_mod'']', writeback: true}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Stadiu, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_10
-  layout_properties: {grid_position: 'ALASRB,XHLNOO'}
-- type: TextBox
-  properties: {}
-  name: text_box_8
-  layout_properties: {grid_position: 'ALASRB,VQTQIO'}
-  data_bindings:
-  - {property: text, code: 'self.item[''stadiu'']', writeback: true}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Solutie, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_11
-  layout_properties: {grid_position: 'UXBMSA,QEKOZI'}
-- type: TextArea
-  properties: {height: 189}
-  name: text_area_3
-  layout_properties: {grid_position: 'UXBMSA,YMUQIY'}
-  data_bindings:
-  - {property: text, code: 'self.item[''solutie'']', writeback: true}
+  name: linear_panel_1
+  layout_properties: {grid_position: 'UFYKHW,KZQKFE'}
+  components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_2
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''denumire'']'}
+  - type: Label
+    properties: {}
+    name: label_3
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''calitate'']'}
+  - type: Label
+    properties: {}
+    name: label_4
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''obiect'']'}
+  - type: Label
+    properties: {}
+    name: label_5
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''categ_caz'']'}
+  - type: Label
+    properties: {}
+    name: label_1
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''parti'']'}
+  - type: Label
+    properties: {}
+    name: label_6
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''nr_dosar'']'}
+  - type: Label
+    properties: {}
+    name: label_7
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''instanta'']'}
+  - type: Label
+    properties: {}
+    name: label_8
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''data_d'']'}
+  - type: Label
+    properties: {}
+    name: label_9
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''data_mod'']'}
+  - type: Label
+    properties: {}
+    name: label_10
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''stadiu'']'}
+  - type: Label
+    properties: {}
+    name: label_11
+    layout_properties: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''solutie'']'}
 is_package: true
+item_type: {table_id: null}
