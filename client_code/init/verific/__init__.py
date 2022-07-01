@@ -266,8 +266,8 @@ class verific(verificTemplate):
   def button_9_click(self, **event_args):
     """This method is called when the button is clicked"""
     lit = anvil.server.call("litigii", "sonimpex")
-    print(lit)
-    self.repeating_panel_1.items = lit
+    print(json.dumps(lit))
+    self.repeating_panel_1.items = json.dumps(lit)
     
     pass
 
