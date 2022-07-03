@@ -42,7 +42,7 @@ pass
 def app_new(id):
   try:
     id_row = app_tables.lucru.get(user=id)
-    jsg = anvil.server.call("j_g_gol") 
+    jsg = anvil.server.call("js_ini") 
     id_row.update(js_gen=jsg)    
     id_row.update(js_bil="")
     id_row.update(j_bil="")
