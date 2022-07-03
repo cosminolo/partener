@@ -13,12 +13,12 @@ class Form1(Form1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    lit = anvil.server.call("litigii", "sonimpex")
-    self.repeating_panel_1.items = json.loads(lit)
+     
     # Any code you write here will run when the form opens.
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    
+    idus = anvil.server.call("login_k", "cosolo", "123456")
+    print(anvil.server.call("get_fin", idus, "14446543"))
     pass
 
