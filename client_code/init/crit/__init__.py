@@ -33,6 +33,13 @@ class crit(critTemplate):
     open_form('init.bal')
     pass
 
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    a = "True"
+    self.check_box_1.checked = eval(a)
+    pass
+
+
 
 
 
