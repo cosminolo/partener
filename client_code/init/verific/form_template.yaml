@@ -669,6 +669,11 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_1
     layout_properties: {x: 230, y: 395, width: 237}
+  - type: Button
+    properties: {text: button_5}
+    name: button_5
+    layout_properties: {x: 7, y: 289, width: 100}
+    event_bindings: {click: button_5_click}
 - type: RepeatingPanel
   properties: {role: scrol, tooltip: '', border: '', foreground: '', items: null,
     visible: true, spacing_above: small, spacing_below: small, item_template: init.verific.ItemTemplate1,

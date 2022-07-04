@@ -37,7 +37,11 @@ class verific(verificTemplate):
     self.clear_bilant()
     self.bilant(bill, bil1)
     try:
-      rb=json.loads(anvil.server.call("get_rb",self.ups()))
+      #rb=json.loads(anvil.server.call("get_rb",self.ups()))
+      re = anvil.server.call("prel_js_gol", self.ups(), 2)
+   
+      rb = json.dumps(re["buget"])
+     
       if len(rb) > 0 :
         self.label_79.text = self.ps(rb['bs'])
         self.label_80.text = self.ps(rb['bss'])
@@ -192,7 +196,8 @@ class verific(verificTemplate):
 
   def button_5_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.text_box_1.text = self.item[ 'denumire' ]
+    re = anvil.server.call("prel_js_gol", self.ups(),2)
+    print(re['buget'])
     pass
 
   def text_box_1_lost_focus(self, **event_args):
@@ -239,10 +244,18 @@ class verific(verificTemplate):
     self.label_89.text = ""
     self.label_90.text = ""    
     us = self.ups()
-    re = json.dumps(anvil.server.call("get_jsgen", us), indent=2)
-    den =  (json.loads(re)['den'])
-    cui = (json.loads(re)['cui'])
+    k = anvil.server.call("prel_js_gol", self.ups(),2)
+    den =  k['den']
+    cui = k['cui']
     rbb = anvil.server.call("rest_buget", us, den, cui)
+    
+    if len(rbb)>2:
+      re['buget'].update(rbb)
+    else:      
+      k['buget']['nume'] = den
+      k['buget']['cui'] = cui
+      k['buget']['obs'] = "Nu are restante la finele ultimului trimestru"
+    print(k)
     anvil.server.call("s_rb", us, rbb)
     rb = json.loads(rbb)   
    
