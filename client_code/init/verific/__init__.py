@@ -37,21 +37,14 @@ class verific(verificTemplate):
     self.clear_bilant()
     self.bilant(bill, bil1)
     try:
-      #rb=json.loads(anvil.server.call("get_rb",self.ups()))
-      re = anvil.server.call("prel_js_gol", self.ups(), 2)
-   
-      rb = json.dumps(re["buget"])
-     
-      if len(rb) > 0 :
-        self.label_79.text = self.ps(rb['bs'])
-        self.label_80.text = self.ps(rb['bss'])
-        self.label_81.text = self.ps(rb['bas'])
-        self.label_83.text = self.ps(rb['bass'])
-        self.label_87.text = self.ps(rb['cui'])
-        self.label_89.text = self.ps(rb['total'])
-        self.label_90.text = self.ps(rb['obs'])
-      else:
-        self.label_90.text = "Nu are restante la finele ultimului trimestru"
+      k = anvil.server.call("prel_js_gol", self.ups(),2)
+      self.label_79.text = k['buget']['bs']
+      self.label_80.text = k['buget']['bss']
+      self.label_81.text = k['buget']['bas']
+      self.label_83.text = k['buget']['bass']
+      self.label_87.text = k['buget']['cui']
+      self.label_89.text = k['buget']['total']
+      self.label_90.text = k['buget']['obs']
     except:
       pass
   def button_2_click(self, **event_args):
@@ -263,8 +256,9 @@ class verific(verificTemplate):
     self.label_87.text = k['buget']['cui']
     self.label_89.text = k['buget']['total']
     self.label_90.text = k['buget']['obs']
+    anvil.server.call("upp_js", self.ups(), k) 
     pass
-
+  
   def ps(self, sst):
     s=""
     st=str(sst)
