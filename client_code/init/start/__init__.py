@@ -77,16 +77,36 @@ class start(startTemplate):
     self.drop_down_11.items = self.drop_down_11.items    
     
     self.drop_down_12.items = []
-    for art in [' ','Management experimentat cu functiile executive separate',
-                'Management experimentat fara functii executive separate',
-                'Management fara experienta si fara functii executive separate',
-                'Activitatea depinde de o persoana cheie']:
+    for art in [' ','Studii superioare si continuitate in cadrul firmei> = 3 ani',
+                'Studii superioare si continuitate in cadrul firmei<  3 ani',
+                'Alte studii si continuitate in cadrul firmei>= 3 ani',
+                'Alte studii si continuitate in cadrul firmei<3 ani']:
       self.drop_down_12.items.append(art)
     self.drop_down_12.items = self.drop_down_12.items 
     
+    self.drop_down_13.items = []
+    for art in [' ','Foarte buna',
+                'Buna',
+                'Satisfacatoare',
+                'Necorespunzatoare']:
+      self.drop_down_13.items.append(art)
+    self.drop_down_13.items = self.drop_down_13.items 
     
+    self.drop_down_14.items = []
+    for art in [' ','Nu exista nici un client pentru care Cc>15%',
+                'Exista cel putin un client pentru care 15% <= Cc<25%',
+                'Exista cel putin un client pentru care 25%<=  Cc<50%',
+                'Exista cel putin un client pentru care Cc >= 50%']:
+      self.drop_down_14.items.append(art)
+    self.drop_down_14.items = self.drop_down_14.items 
     
-    
+    self.drop_down_15.items = []
+    for art in [' ','Debitorul a beneficiat de cel putin doua credite (de la CEC BANK S.A. sau de la alte institutii de credit) care au fost lichidate integral',
+                'Debitorul a beneficiat de un credit (de la CEC BANK S.A. sau de la alte institutii de credit) care a fost lichidat integral',
+                'Debitorul a beneficiat de unul sau mai multe credite (de la CEC BANK S.A. sau de la alte institutii de credit) care se afla in derulare fara restante/Debitorul nu a beneficiat de credite',
+                'Debitorul are restante la creditele in derulare']:
+      self.drop_down_15.items.append(art)
+    self.drop_down_15.items = self.drop_down_15.items 
     
     pass
   def con_drop2(self):
@@ -385,8 +405,30 @@ class start(startTemplate):
     pass
 
   def drop_down_12_change(self, **event_args):
-    """This method is called when an item is selected"""
+    if self.drop_down_12.selected_value:
+        self.up_json() 
     pass
+
+  def drop_down_13_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_13.selected_value:
+        self.up_json() 
+    pass
+
+  def drop_down_14_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_14.selected_value:
+        self.up_json() 
+    pass
+
+  def drop_down_15_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_15.selected_value:
+        self.up_json() 
+    pass
+
+
+
 
 
 

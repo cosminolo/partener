@@ -618,6 +618,8 @@ components:
     name: drop_down_12
     layout_properties: {row: QBBUWV, width_xs: 5, col_xs: 2, width: 191}
     event_bindings: {change: drop_down_12_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''ev_manag'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Calitatea actionariatului, font_size: 12, font: '', spacing_above: small,
@@ -629,6 +631,9 @@ components:
     properties: {}
     name: drop_down_13
     layout_properties: {row: QBBUWV, width_xs: 3, col_xs: 9}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''cal_act'']', writeback: true}
+    event_bindings: {change: drop_down_13_change}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Concentrarea clientilor ', font_size: 12, font: '', spacing_above: small,
@@ -637,9 +642,30 @@ components:
     name: label_20
     layout_properties: {row: OXBSLY, width_xs: 2, col_xs: 0, width: 135.75}
   - type: DropDown
-    properties: {}
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
     name: drop_down_14
-    layout_properties: {row: OXBSLY, width_xs: 5, col_xs: 2}
+    layout_properties: {row: OXBSLY, width_xs: 5, col_xs: 2, width: 358}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''con_cli'']', writeback: true}
+    event_bindings: {change: drop_down_14_change}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Experienta in administrarea fondurilor imprumutate, font_size: 12,
@@ -651,4 +677,7 @@ components:
     properties: {}
     name: drop_down_15
     layout_properties: {row: OXBSLY, width_xs: 3, col_xs: 9}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''exp_imp'']', writeback: true}
+    event_bindings: {change: drop_down_15_change}
 is_package: true
