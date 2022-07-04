@@ -76,6 +76,18 @@ class start(startTemplate):
       self.drop_down_11.items.append(art)
     self.drop_down_11.items = self.drop_down_11.items    
     
+    self.drop_down_12.items = []
+    for art in [' ','Management experimentat cu functiile executive separate',
+                'Management experimentat fara functii executive separate',
+                'Management fara experienta si fara functii executive separate',
+                'Activitatea depinde de o persoana cheie']:
+      self.drop_down_12.items.append(art)
+    self.drop_down_12.items = self.drop_down_12.items 
+    
+    
+    
+    
+    
     pass
   def con_drop2(self):
     self.drop_down_2.items = []
