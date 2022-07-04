@@ -18,7 +18,7 @@ class Form1(Form1Template):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    idus = anvil.server.call("login_k", "cosolo", "123456")
-    print(anvil.server.call("get_fin", idus, "14446543"))
+    anvil.server.call("test")
+    
     pass
 
