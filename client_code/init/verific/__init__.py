@@ -247,28 +247,22 @@ class verific(verificTemplate):
     k = anvil.server.call("prel_js_gol", self.ups(),2)
     den =  k['den']
     cui = k['cui']
-    rbb = anvil.server.call("rest_buget", us, den, cui)
+    rbb = json.loads(anvil.server.call("rest_buget", us, den, cui))
     
-    if len(rbb)>2:
-      re['buget'].update(rbb)
+    if len(rbb)>0:
+      k['buget'].update(rbb)
     else:      
       k['buget']['nume'] = den
       k['buget']['cui'] = cui
       k['buget']['obs'] = "Nu are restante la finele ultimului trimestru"
-    print(k)
-    anvil.server.call("s_rb", us, rbb)
-    rb = json.loads(rbb)   
    
-    if len(rb) > 0 :
-      self.label_79.text = self.ps(rb['bs'])
-      self.label_80.text = self.ps(rb['bss'])
-      self.label_81.text = self.ps(rb['bas'])
-      self.label_83.text = self.ps(rb['bass'])
-      self.label_87.text = self.ps(rb['cui'])
-      self.label_89.text = self.ps(rb['total'])
-      self.label_90.text = self.ps(rb['obs'])
-    else:
-      self.label_90.text = "Nu are restante la finele ultimului trimestru"
+    self.label_79.text = k['buget']['bs']
+    self.label_80.text = k['buget']['bss']
+    self.label_81.text = k['buget']['bas']
+    self.label_83.text = k['buget']['bass']
+    self.label_87.text = k['buget']['cui']
+    self.label_89.text = k['buget']['total']
+    self.label_90.text = k['buget']['obs']
     pass
 
   def ps(self, sst):
