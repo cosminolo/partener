@@ -271,9 +271,17 @@ class verific(verificTemplate):
     den = self.text_box_1.text.strip()
     li = anvil.server.call("litigii", den)
     lit = json.loads(li)
-    
-    
-    
+    cal = []
+    calitate =[""]
+    ob = []
+    obiect=[""]
+    for i in range(0, len(lit)):
+      cal.append(lit[i]['calitate'])
+      [calitate.append(x) for x in cal if x not in calitate]
+      ob.append(lit[i]['obiect'])
+      [obiect.append(x) for x in ob if x not in obiect]
+    self.drop_down_1.items = calitate
+    self.drop_down_2.items = obiect
     
     if len(lit) > 1:
         self.repeating_panel_1.items = lit
