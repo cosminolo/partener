@@ -685,6 +685,7 @@ components:
     properties: {}
     name: drop_down_1
     layout_properties: {x: 457.99713134765625, y: 399, width: 100}
+    event_bindings: {change: drop_down_1_change}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Obiect, font_size: null, font: '', spacing_above: small,
