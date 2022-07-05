@@ -289,15 +289,15 @@ class verific(verificTemplate):
      self.drop_down_2.items = obiect    
      self.repeating_panel_1.items = lit
     else:
-        #self.repeating_panel_1.items = []
-        if lit["rez"] == "nu inregistreaza":
+        self.repeating_panel_1.items = []
+        if lit[0]["denumire"] == "nu inregistreaza":
           n = Notification("",
-             title=lit["rez"]).show()
+             title=lit[0]["denumire"]).show()
           time.sleep(1)
           n.hide()
         else:
           n = Notification("",
-             title=lit["rez"]).show()
+             title=lit[0]["denumire"]).show()
           time.sleep(1)
           n.hide()
     pass
@@ -327,9 +327,10 @@ class verific(verificTemplate):
     pass
   def ch_pan(self):
     li= anvil.server.call('get_lit', self.ups())
-    lit = json.loads(li)
+    
     try:
-      if len(lit)>0 or lit["rez"] != "":
+      lit = json.loads(li)
+      if len(lit)>0:
          self.repeating_panel_1.items = lit
     except:
         pass
