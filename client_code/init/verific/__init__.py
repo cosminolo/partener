@@ -311,6 +311,19 @@ class verific(verificTemplate):
       self.repeating_panel_1.items = filt    
     pass
 
+  def drop_down_2_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_2.selected_value != "":
+      filt = []
+      s1 = self.repeating_panel_1.items
+      for i in range(0, len(s1)):
+        if s1[i]['obiect'] == self.drop_down_2.selected_value.strip():
+          f = s1[i]
+          filt.append(f)
+      self.repeating_panel_1.items = filt   
+    pass
+
+
 
 
 

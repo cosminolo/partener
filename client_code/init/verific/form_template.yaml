@@ -697,6 +697,7 @@ components:
     properties: {}
     name: drop_down_2
     layout_properties: {x: 641.9885864257812, y: 393.13067626953125, width: 119}
+    event_bindings: {change: drop_down_2_change}
 - type: RepeatingPanel
   properties: {role: scrol, tooltip: '', border: '', foreground: '', items: null,
     visible: true, spacing_above: small, spacing_below: small, item_template: init.verific.ItemTemplate1,
