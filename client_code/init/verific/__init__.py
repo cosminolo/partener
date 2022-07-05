@@ -267,22 +267,26 @@ class verific(verificTemplate):
         s = s + i
     return s
 
-  def button_9_click(self, **event_args):
-    """This method is called when the button is clicked"""
+  def button_9_click(self, **event_args):    
     den = self.text_box_1.text.strip()
-    lit = anvil.server.call("litigii", den)
-    if len(json.loads(lit)) > 1:
-        self.repeating_panel_1.items = json.loads(lit)
+    li = anvil.server.call("litigii", den)
+    lit = json.loads(li)
+    
+    
+    
+    
+    if len(lit) > 1:
+        self.repeating_panel_1.items = lit
     else:
         self.repeating_panel_1.items =[]
-        if json.loads(lit)["rez"] == "nu inregistreaza":
+        if lit["rez"] == "nu inregistreaza":
           n = Notification("",
-             title=json.loads(lit)["rez"]).show()
+             title=lit["rez"]).show()
           time.sleep(1)
           n.hide()
         else:
           n = Notification("",
-             title=json.loads(lit)["rez"]).show()
+             title=lit["rez"]).show()
           time.sleep(1)
           n.hide()
     pass

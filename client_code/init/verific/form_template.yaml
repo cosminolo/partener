@@ -640,14 +640,6 @@ components:
     properties: {}
     name: label_90
     layout_properties: {x: 795, y: 310, width: 225}
-  - type: Button
-    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: 'fa:refresh'}
-    name: button_9
-    layout_properties: {x: 522, y: 389.1562, width: 52}
-    event_bindings: {click: button_9_click}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: LITIGII, font_size: 16, font: '', spacing_above: small,
@@ -662,18 +654,48 @@ components:
       underline: false, icon: ''}
     name: label_91
     layout_properties: {x: 123, y: 384, width: 87}
+  - type: Button
+    properties: {text: button_5}
+    name: button_5
+    layout_properties: {x: 7, y: 289, width: 100}
+    event_bindings: {click: button_5_click}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:refresh'}
+    name: button_9
+    layout_properties: {x: 64, y: 389.147705078125, width: 52}
+    event_bindings: {click: button_9_click}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 14, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_1
-    layout_properties: {x: 230, y: 395, width: 237}
-  - type: Button
-    properties: {text: button_5}
-    name: button_5
-    layout_properties: {x: 7, y: 289, width: 100}
-    event_bindings: {click: button_5_click}
+    layout_properties: {x: 200.99998474121094, y: 395, width: 183}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: calitate, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_93
+    layout_properties: {x: 397.9829406738281, y: 389.1335144042969, width: 48.0113525390625}
+  - type: DropDown
+    properties: {}
+    name: drop_down_1
+    layout_properties: {x: 457.99713134765625, y: 399, width: 100}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Obiect, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_94
+    layout_properties: {x: 572.9971313476562, y: 392.13067626953125, width: 58.991455078125}
+  - type: DropDown
+    properties: {}
+    name: drop_down_2
+    layout_properties: {x: 641.9885864257812, y: 393.13067626953125, width: 119}
 - type: RepeatingPanel
   properties: {role: scrol, tooltip: '', border: '', foreground: '', items: null,
     visible: true, spacing_above: small, spacing_below: small, item_template: init.verific.ItemTemplate1,
