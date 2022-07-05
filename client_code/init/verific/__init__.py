@@ -47,6 +47,12 @@ class verific(verificTemplate):
       self.label_90.text = k['buget']['obs']
     except:
       pass
+    li = anvil.server.call("get_lit", self.ups())
+    if len(li)>0:
+      try:
+        self.repeating_panel_1.items = json.loads(li)
+      except:
+        pass
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('init.crit')
@@ -272,6 +278,7 @@ class verific(verificTemplate):
     self.drop_down_2.selected_value = ""
     den = self.text_box_1.text.strip()
     li = anvil.server.call("litigii", den)
+    anvil.server.call("s_lit", self.ups(), li)    
     lit = json.loads(li)
     cal = []
     calitate =[""]

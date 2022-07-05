@@ -50,7 +50,7 @@ def app_new(id):
     id_row.update(js_gen_gol=jsg) 
     jbal = anvil.server.call("bal_gol")
     id_row.update(bal=jbal)
-    
+    id_row.update(lit={})
   except:
     pass
 pass
@@ -150,7 +150,7 @@ def arh2 (us, dat, entit, facilit):
                           js_bil=id_row['js_bil'],
                           js_tva=id_row['js_tva'], 
                           bal=id_row['bal'],
-                          rb=id_row['rb'])
+                          lit=id_row['lit'])
 pass
 
 @anvil.server.callable
@@ -174,7 +174,7 @@ pass
 def preia_inlucru(us, soc, facilit, dat):
   arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
   id_row = app_tables.lucru.get(user=us)
-  id_row.update(js_gen=arh["js_gen"], js_tva=arh["js_tva"], js_bil=arh['js_bil'], j_bil=arh['j_bil'], rb=arh['rb'])
+  id_row.update(js_gen=arh["js_gen"], js_tva=arh["js_tva"], js_bil=arh['js_bil'], j_bil=arh['j_bil'], lit=arh['lit'])
   
 pass
 @anvil.server.callable
@@ -200,13 +200,13 @@ def get_jsgen(id):
     pass
 pass
 @anvil.server.callable
-def s_rb(id,rb):  
+def s_lit(id,lit):  
     id_row = app_tables.lucru.get(user=id)
-    id_row.update(rb=rb)
+    id_row.update(lit=lit)
 @anvil.server.callable
-def get_rb(id):
+def get_lit(id):
   try:
-    js=app_tables.lucru.get(user=id)["rb"]
+    js=app_tables.lucru.get(user=id)["lit"]
     return js
   except:
     pass
