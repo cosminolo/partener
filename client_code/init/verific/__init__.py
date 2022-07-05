@@ -47,12 +47,7 @@ class verific(verificTemplate):
       self.label_90.text = k['buget']['obs']
     except:
       pass
-    li = anvil.server.call("get_lit", self.ups())
-    if len(li)>0:
-      try:
-        self.repeating_panel_1.items = json.loads(li)
-      except:
-        pass
+    self.ch_pan()
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('init.crit')
@@ -294,7 +289,7 @@ class verific(verificTemplate):
      self.drop_down_2.items = obiect    
      self.repeating_panel_1.items = lit
     else:
-        self.repeating_panel_1.items =[]
+        #self.repeating_panel_1.items = []
         if lit["rez"] == "nu inregistreaza":
           n = Notification("",
              title=lit["rez"]).show()
@@ -329,6 +324,15 @@ class verific(verificTemplate):
           f = s1[i]
           filt.append(f)
       self.repeating_panel_1.items = filt   
+    pass
+  def ch_pan(self):
+    li= anvil.server.call('get_lit', self.ups())
+    lit = json.loads(li)
+    try:
+      if len(lit)>0 or lit["rez"] != "":
+         self.repeating_panel_1.items = lit
+    except:
+        pass
     pass
 
 
