@@ -1,0 +1,682 @@
+components:
+- type: GridPanel
+  properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
+    border: '', visible: true, role: null, tooltip: ''}
+  name: grid_panel_2
+  layout_properties: {grid_position: 'PODWSZ,OBNIHH', full_width_row: true, row_background: 'theme:Primary
+      500'}
+  components:
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 20, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:home'}
+    name: button_1
+    layout_properties: {grid_position: 'XJFENB,GGKKZM', row: YHNDOO, width_xs: 2,
+      col_xs: 0, width: 79.1562}
+    event_bindings: {click: button_1_click}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 20, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:fast-forward'}
+    name: button_3
+    layout_properties: {row: YHNDOO, width_xs: 2, col_xs: 10, width: 79.1562}
+    event_bindings: {click: button_3_click}
+- type: XYPanel
+  properties: {role: null, width: 1600, align: left, height: 109, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: none, spacing_below: none, background: ''}
+  name: xy_panel_1
+  layout_properties: {grid_position: 'NVVDXF,OKQWYE', full_width_row: true}
+  components:
+  - type: DropDown
+    properties:
+      role: null
+      align: left
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: none
+      spacing_below: none
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_1
+    layout_properties: {grid_position: 'DRDSDH,GCUICJ', full_width_row: false, row: IAOFOS,
+      width_xs: 1, col_xs: 2, x: 198.25, y: 3, width: 73.9688}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''tip'']', writeback: true}
+    event_bindings: {change: drop_down_1_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Sunt o afacere de forma, font_size: 12, font: '', spacing_above: none,
+      icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2_copy
+    layout_properties: {grid_position: 'DRDSDH,ZENTNH', full_width_row: false, row: IAOFOS,
+      width_xs: 2, col_xs: 0, x: 10, y: 6.96875, width: 157}
+    data_bindings: []
+  - type: DropDown
+    properties:
+      role: null
+      align: left
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: none
+      spacing_below: none
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_2
+    layout_properties: {grid_position: 'DRDSDH,AOVAHY', full_width_row: false, row: IAOFOS,
+      width_xs: 2, col_xs: 5, x: 434.671875, y: 4.828125, width: 339.438}
+    event_bindings: {change: drop_down_2_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''credit'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: si doresc un credit, font_size: 12, font: '', spacing_above: none,
+      icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'DRDSDH,EJEKSW', full_width_row: false, row: IAOFOS,
+      width_xs: 2, col_xs: 3, x: 281.71875, y: 2.140625, width: 142.938}
+    data_bindings: []
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: in suma de, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {x: 10, y: 65.09375, width: 100}
+  - type: TextBox
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_1
+    layout_properties: {x: 111.25, y: 55.97917175292969, width: 117}
+    data_bindings:
+    - {property: text, code: 'self.item[''suma'']', writeback: true}
+    event_bindings: {lost_focus: text_box_1_lost_focus}
+  - type: DropDown
+    properties:
+      role: null
+      align: right
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_4
+    layout_properties: {x: 230.25, y: 55.96875, width: 67}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''valut'']', writeback: true}
+    event_bindings: {change: drop_down_4_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: de tipul, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {grid_position: 'DRDSDH,LKXHNF', full_width_row: false, row: IAOFOS,
+      width_xs: 1, col_xs: 7, x: 350.125, y: 58.109375, width: 61.9688}
+  - type: DropDown
+    properties:
+      role: null
+      align: left
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_3
+    layout_properties: {row: IAOFOS, width_xs: 4, col_xs: 8, x: 434.671875, y: 58.96875,
+      width: 448.938}
+    event_bindings: {change: drop_down_3_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''facilit'']', writeback: true}
+- type: GridPanel
+  properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
+    border: '', visible: true, role: null, tooltip: ''}
+  name: grid_panel_1
+  layout_properties:
+    col_widths: {}
+    grid_position: CGIWLE,XUHNNW
+    full_width_row: true
+  components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: CUI, font_size: 12, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_1_copy
+    layout_properties: {row: GGMRJW, width_xs: 1, col_xs: 0, width: 24.5781}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 12,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_2
+    layout_properties: {row: GGMRJW, width_xs: 2, col_xs: 1, width: 79.1562}
+    event_bindings: {pressed_enter: text_box_2_pressed_enter}
+    data_bindings:
+    - {property: text, code: 'self.item[''cui'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Denumire, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2_copy_2
+    layout_properties: {row: GGMRJW, width_xs: 2, col_xs: 4, width: 79.1562}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 12,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_3
+    layout_properties: {row: GGMRJW, width_xs: 6, col_xs: 6, width: 297.5}
+    event_bindings: {lost_focus: text_box_3_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item["den"]', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Sediu social, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_4_copy
+    layout_properties: {row: MMGKZW, width_xs: 1, col_xs: 0, width: 24.5781}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 12,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_4
+    layout_properties: {row: MMGKZW, width_xs: 7, col_xs: 1, width: 352.078}
+    event_bindings: {lost_focus: text_box_4_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''sediu'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Nr ORC, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_18
+    layout_properties: {row: MMGKZW, width_xs: 1, col_xs: 8, width: 24.5781}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 12,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_7
+    layout_properties: {row: MMGKZW, width_xs: 3, col_xs: 9, width: 133.75}
+    event_bindings: {lost_focus: text_box_7_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''onrc'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: CAEN, font_size: 12, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_5
+    layout_properties: {row: TETFYO, width_xs: 1, col_xs: 0, width: 24.5781}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 12,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_5
+    layout_properties: {row: TETFYO, width_xs: 3, col_xs: 1, width: 133.75}
+    event_bindings: {lost_focus: text_box_5_lost_focus, pressed_enter: text_box_5_pressed_enter}
+    data_bindings:
+    - {property: text, code: 'self.item[''caen'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: "Ramura de\n activitate", font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_6
+    layout_properties: {row: TETFYO, width_xs: 2, col_xs: 4, width: 79.1562}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_5
+    layout_properties: {row: TETFYO, width_xs: 2, col_xs: 6, width: 79.1562}
+    event_bindings: {change: drop_down_5_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''ramura'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: "Cultiv \ncereale", font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_17
+    layout_properties: {row: TETFYO, width_xs: 2, col_xs: 8, width: 79.1562}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_6
+    layout_properties: {row: TETFYO, width_xs: 1, col_xs: 10, width: 24.5781}
+    event_bindings: {change: drop_down_6_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''cereale'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Descriere generala a socieatii si activitatii, font_size: 12,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_7
+    layout_properties: {row: LRSVGK, width_xs: 3, col_xs: 0, width: 133.75}
+  - type: TextArea
+    properties: {role: null, align: left, height: 76, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 12,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_area_1
+    layout_properties: {row: LRSVGK, width_xs: 9, col_xs: 3, width: 443.25}
+    event_bindings: {lost_focus: text_area_1_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''descriere'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Asociati/actionari
+
+        (nume si cota de detinere)', font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_8
+    layout_properties: {row: PWISKB, width_xs: 3, col_xs: 0, width: 133.75}
+  - type: TextArea
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 12,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_area_2
+    layout_properties: {row: PWISKB, width_xs: 9, col_xs: 3, width: 443.25}
+    event_bindings: {lost_focus: text_area_2_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''asociati'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Administrator (i), font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_10
+    layout_properties: {row: MBOIDG, width_xs: 3, col_xs: 0, width: 133.75}
+  - type: TextArea
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 12,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_area_4
+    layout_properties: {row: MBOIDG, width_xs: 9, col_xs: 3, width: 443.25}
+    event_bindings: {lost_focus: text_area_4_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''admin'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Nr. salariati, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_16
+    layout_properties: {row: NQOLUW, width_xs: 2, col_xs: 0, width: 79.1562}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_7
+    layout_properties: {row: NQOLUW, width_xs: 2, col_xs: 2, width: 79.1562}
+    event_bindings: {change: drop_down_7_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''nrsal'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Telefon, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_11
+    layout_properties: {row: NQOLUW, width_xs: 2, col_xs: 4, width: 79.1562}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 12,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_6
+    layout_properties: {row: NQOLUW, width_xs: 3, col_xs: 6, width: 133.75}
+    event_bindings: {lost_focus: text_box_6_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''telef'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Societati din cadrul grupului
+
+        (nume, cui, relatie de grup)', font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_9
+    layout_properties: {row: SBNSTJ, width_xs: 3, col_xs: 0, width: 133.75}
+  - type: TextArea
+    properties: {role: null, align: left, height: 91, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 12,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_area_3
+    layout_properties: {row: SBNSTJ, width_xs: 9, col_xs: 3, width: 443.25}
+    event_bindings: {lost_focus: text_area_3_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''soc_grup'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Piata de desfacere, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_12
+    layout_properties: {row: IOVAMB, width_xs: 2, col_xs: 0, width: 79.1562}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_8
+    layout_properties: {row: IOVAMB, width_xs: 5, col_xs: 2, width: 242.906}
+    event_bindings: {change: drop_down_8_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''piata'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Concurenta, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_13
+    layout_properties: {row: IOVAMB, width_xs: 1, col_xs: 7, width: 24.5781}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: null
+      font: '12'
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_9
+    layout_properties: {row: IOVAMB, width_xs: 4, col_xs: 8, width: 188.328}
+    event_bindings: {change: drop_down_9_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''concurenta'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Strategia
+
+        in vanzare', font_size: 12, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_14
+    layout_properties: {row: EJSOCU, width_xs: 2, col_xs: 0, width: 79.1562}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_10
+    layout_properties: {row: EJSOCU, width_xs: 5, col_xs: 2, width: 242.906}
+    event_bindings: {change: drop_down_10_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''strategia'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: "Conducerea\n afacerii", font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_15
+    layout_properties: {row: EJSOCU, width_xs: 1, col_xs: 7, width: 24.5781}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_11
+    layout_properties: {row: EJSOCU, width_xs: 4, col_xs: 8, width: 188.328}
+    event_bindings: {change: drop_down_11_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''conducere'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Evaluarea echipei manageriala, font_size: 12, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_1
+    layout_properties: {row: QBBUWV, width_xs: 2, col_xs: 0, width: 80.5}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: none
+      spacing_below: none
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_12
+    layout_properties: {row: QBBUWV, width_xs: 5, col_xs: 2, width: 191}
+    event_bindings: {change: drop_down_12_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''ev_manag'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Calitatea actionariatului, font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_19
+    layout_properties: {row: QBBUWV, width_xs: 2, col_xs: 7, width: 80.5}
+  - type: DropDown
+    properties: {}
+    name: drop_down_13
+    layout_properties: {row: QBBUWV, width_xs: 3, col_xs: 9}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''cal_act'']', writeback: true}
+    event_bindings: {change: drop_down_13_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Concentrarea clientilor ', font_size: 12, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_20
+    layout_properties: {row: OXBSLY, width_xs: 2, col_xs: 0, width: 135.75}
+  - type: DropDown
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: 12
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_14
+    layout_properties: {row: OXBSLY, width_xs: 5, col_xs: 2, width: 358}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''con_cli'']', writeback: true}
+    event_bindings: {change: drop_down_14_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Experienta in administrarea fondurilor imprumutate, font_size: 12,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_21
+    layout_properties: {row: OXBSLY, width_xs: 2, col_xs: 7, width: 135.75}
+  - type: DropDown
+    properties: {}
+    name: drop_down_15
+    layout_properties: {row: OXBSLY, width_xs: 3, col_xs: 9}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''exp_imp'']', writeback: true}
+    event_bindings: {change: drop_down_15_change}
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+  event_bindings: {refreshing_data_bindings: form_refreshing_data_bindings}
