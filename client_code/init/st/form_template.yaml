@@ -30,6 +30,7 @@ components:
       properties: {}
       name: text_box_2
       layout_properties: {row: JNGRGR, width_xs: 3, col_xs: 3, x: 181, y: 9.125, width: 271}
+      event_bindings: {pressed_enter: text_box_2_pressed_enter}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: ONRC, font_size: null, font: '', spacing_above: small,
@@ -136,11 +137,6 @@ components:
       name: label_8
       layout_properties: {row: KVWGFC, width_xs: 1, col_xs: 0, width: 33.875, x: 918.84375,
         y: 37}
-    - type: Button
-      properties: {text: button_1}
-      name: button_1
-      layout_properties: {x: 343, y: 212, width: 100}
-      event_bindings: {click: button_1_click}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Asociati/actionari, font_size: null, font: '', spacing_above: small,
@@ -148,6 +144,15 @@ components:
         underline: false, icon: ''}
       name: label_9
       layout_properties: {x: 21, y: 83, width: 116.34375}
+    - type: Button
+      properties: {text: button_1}
+      name: button_1
+      layout_properties: {x: 351, y: 287, width: 100}
+      event_bindings: {click: button_1_click}
+    - type: TextArea
+      properties: {height: 93}
+      name: text_area_1
+      layout_properties: {x: 147.34375, y: 83, width: 387}
 - type: FlowPanel
   properties: {}
   name: navbar_links
