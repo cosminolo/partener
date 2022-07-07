@@ -4,10 +4,58 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":11,"DFTLZG":4,"MGITHW":4,"MDNEZY":30,"EZHHQB":4,"MSJWSY":5,"MZRVPO":28,"GXJXPB":11,"ESIMBH":46,"PZZHTM":8}'}
+  properties: {col_widths: '{"IYAJPM":12,"GXJXPB":3,"VRGMHK":15,"VRLRHL":28,"IRGPQE":3,"CGOQGV":15,"FFPPSB":15,"HRMCBP":20,"FRKBHL":2,"TWFTAC":5,"FZACYL":5}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
+  - type: ColumnPanel
+    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"GRHLJY":10,"CVGLFN":4,"QSBLAH":11,"MGBFVR":5,"RAIZQJ":10,"MUYYMS":25,"MHBLLS":3}',
+      spacing_below: small, background: ''}
+    name: column_panel_1
+    layout_properties: {grid_position: 'MIGXUM,HNMXTS', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Sunt o entitate de tip ', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_11
+      layout_properties: {grid_position: 'HGQUGC,GRHLJY', full_width_row: true}
+    - type: DropDown
+      properties: {}
+      name: drop_down_1
+      layout_properties: {row: KVWGFC, width_xs: 1, col_xs: 1, x: 942.46875, y: 33,
+        width: 40.875, grid_position: 'HGQUGC,CVGLFN', full_width_row: true}
+      event_bindings: {change: drop_down_1_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''gen''][''tip'']', writeback: true}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: si solicit un credit, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_8
+      layout_properties: {grid_position: 'HGQUGC,QSBLAH', full_width_row: true}
+    - type: DropDown
+      properties: {}
+      name: drop_down_2
+      layout_properties: {grid_position: 'HGQUGC,RAIZQJ', full_width_row: true}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: denumit, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_14
+      layout_properties: {grid_position: 'HGQUGC,MGBFVR', full_width_row: true}
+    - type: DropDown
+      properties: {}
+      name: drop_down_3
+      layout_properties: {grid_position: 'HGQUGC,MUYYMS', full_width_row: true}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_2
+      layout_properties: {grid_position: 'HGQUGC,MHBLLS', full_width_row: true}
   - type: XYPanel
     properties: {role: null, width: null, align: center, height: 120, tooltip: '',
       border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
@@ -77,25 +125,9 @@ components:
         background: '', bold: false, underline: false}
       name: text_box_6
       layout_properties: {row: TCYHRR, width_xs: 2, col_xs: 3, x: 190.99430084228516,
-        y: 43.991477966308594, width: 142}
+        y: 43.991477966308594, width: 196.015625}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''email'']', writeback: true}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: caen, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_6
-      layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 5, width: 49.2656, x: 351,
-        y: 37}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Activitate, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_7
-      layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 7, width: 69.5, x: 457.125,
-        y: 43.125}
     - type: TextBox
       properties: {}
       name: text_box_4
@@ -129,34 +161,11 @@ components:
         y: 10}
     - type: TextBox
       properties: {}
-      name: text_box_7
-      layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 6, x: 388.875, y: 43.125,
-        width: 63.125}
-      data_bindings:
-      - {property: text, code: 'self.item[''gen''][''caen'']', writeback: true}
-    - type: TextBox
-      properties: {}
       name: text_box_8
       layout_properties: {row: TCYHRR, width_xs: 3, col_xs: 8, x: 520.4688, y: 43.125,
         width: 379.469}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''d_caen'']', writeback: true}
-    - type: DropDown
-      properties: {}
-      name: drop_down_1
-      layout_properties: {row: KVWGFC, width_xs: 1, col_xs: 1, x: 942.46875, y: 33,
-        width: 40.875}
-      event_bindings: {change: drop_down_1_change}
-      data_bindings:
-      - {property: selected_value, code: 'self.item[''gen''][''tip'']', writeback: true}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Tip, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_8
-      layout_properties: {row: KVWGFC, width_xs: 1, col_xs: 0, width: 33.875, x: 918.84375,
-        y: 37}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: button_1, font_size: null, font: '',
@@ -165,61 +174,94 @@ components:
       name: button_1
       layout_properties: {x: 180.99431610107422, y: 79.46069999999997, width: 100}
       event_bindings: {click: button_1_click}
+    - type: TextBox
+      properties: {}
+      name: text_box_7
+      layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 6, x: 447.34375, y: 43.125,
+        width: 63.125}
+      data_bindings:
+      - {property: text, code: 'self.item[''gen''][''caen'']', writeback: true}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: caen, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_6
+      layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 5, width: 49.25, x: 397,
+        y: 37}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Administratori, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_12
-    layout_properties: {grid_position: 'OXEUGG,IYAJPM'}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_1
-    layout_properties: {grid_position: 'OXEUGG,DFTLZG'}
+    layout_properties: {grid_position: 'OXEUGG,IYAJPM', full_width_row: true}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_2
-    layout_properties: {grid_position: 'OXEUGG,GXJXPB'}
+    layout_properties: {grid_position: 'OXEUGG,GXJXPB', full_width_row: true}
     event_bindings: {click: button_2_click}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_2
-    layout_properties: {grid_position: 'OXEUGG,MGITHW'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Asociati, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_10
-    layout_properties: {grid_position: 'OXEUGG,MSJWSY'}
+    layout_properties: {grid_position: 'OXEUGG,FFPPSB', full_width_row: true}
+  - type: Button
+    properties: {role: raised, align: left, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_3
+    layout_properties: {grid_position: 'OXEUGG,IRGPQE', full_width_row: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Grup, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_13
+    layout_properties: {grid_position: 'OXEUGG,FRKBHL', full_width_row: true}
   - type: Spacer
     properties: {height: 32}
-    name: spacer_4
-    layout_properties: {grid_position: 'OXEUGG,MZRVPO'}
+    name: spacer_8
+    layout_properties: {grid_position: 'OXEUGG,CGOQGV', full_width_row: true}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
-    name: button_3
-    layout_properties: {grid_position: 'OXEUGG,PZZHTM'}
+    name: button_4
+    layout_properties: {grid_position: 'OXEUGG,FZACYL', full_width_row: true}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1
+    layout_properties: {grid_position: 'OXEUGG,TWFTAC', full_width_row: true}
+  - type: GridPanel
+    properties: {spacing_above: none, spacing_below: none, background: '', foreground: '',
+      border: solid blue 2px, visible: true, role: null, tooltip: ''}
+    name: grid_panel_1
+    layout_properties: {grid_position: 'AFFSJP,VRGMHK', full_width_row: true}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
-    name: grid_panel_1
-    layout_properties: {grid_position: 'AFFSJP,MDNEZY'}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_3
-    layout_properties: {grid_position: 'AFFSJP,EZHHQB'}
+    name: grid_panel_3
+    layout_properties: {grid_position: 'AFFSJP,HRMCBP', full_width_row: true}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_2
-    layout_properties: {grid_position: 'AFFSJP,ESIMBH'}
+    layout_properties: {grid_position: 'AFFSJP,VRLRHL', full_width_row: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: tessst, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_9
+    layout_properties: {grid_position: 'DNHXBP,MIIABH'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
