@@ -210,4 +210,20 @@ def get_lit(id):
     return js
   except:
     pass
-
+pass
+@anvil.server.callable
+def sp1(id,p1):
+  try:
+    us_row = app_tables.lucru.get(user=id)
+    us_row.update(p1=p1)
+  except:
+    pass
+pass
+@anvil.server.callable
+def get_p1(id):
+  try:    
+    p1=app_tables.lucru.get(user=id)["p1"]
+    return p1
+  except:
+    pass
+pass

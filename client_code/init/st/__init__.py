@@ -14,22 +14,11 @@ class st(stTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     global p1
-    p1 = anvil.server.call("pri_ini")
+    #p1 = anvil.server.call("pri_ini")
+    p1 = anvil.server.call("get_p1", self.ups())
     self.item = p1
-    #self.text_box_1.text=p1['gen']['cui']    
-    #self.text_box_2.text=p1['gen']['name'] 
-    
-    #self.text_box_3.text=p1['gen']['codj']   
-    #self.text_box_4.text=p1['gen']['adress']  
-    #self.text_box_5.text=p1['gen']['tel']   
-    #self.text_box_6.text=p1['gen']['email']
-    #self.text_box_7.text=p1['gen']['caen'] 
-    #self.text_box_8.text=p1['gen']['d_caen']    
-    #self.con_drop1()
-    #self.drop_down_1.selected_value = p1['gen']['tip']
-       
-    #self.text_area_1.text= p1['asoc_pf']
-    #p1['asoc_pf'] = self.text_area_1.text
+    row = len(p1['admin'])
+    self.gru(row, p1['admin'])
     
   def con_drop1(self):
     self.drop_down_1.items = []
@@ -54,16 +43,16 @@ class st(stTemplate):
     p1['gen']['caen'] = grup["soc"][0]["caen"]
     self.text_box_8.text=grup["soc"][0]["d_caen"]
     p1['gen']['d_caen'] = grup["soc"][0]["d_caen"]
-    for i in range (0, len(grup['asoc_pf'])):
-      l = {"nume": grup['admin'][i]['nume']}
-      p1['admin'].append(l)    
-      
-    ob.append(grup['admin'][i]['nume'])
-      [obiect.append(x) for x in ob if x not in obiect]
+    p1["admin"]=[]
+    for i in range (0, len(grup['admin'])): 
+      ob=[]
+      ob.append({"nume": grup['admin'][i]['nume']})
+      [p1["admin"].append(x) for x in ob if x not in p1["admin"]]
       
     row = len(p1['admin'])
     self.gru(row, p1['admin'])    
-    print(p1['admin'])
+
+    anvil.server.call("sp1", self.ups(), p1)
     pass
   def gru(self, rows, ex):
     self.grid_panel_1.clear()
@@ -74,46 +63,47 @@ class st(stTemplate):
     i = 1
     j = 0    
     k=10                          
-    for j in range (2,rows+2): # rows 
-       for i in range(1, 3): # col 
-          k=j*10+i        
-          if i ==1 :   
-            self.txb[k] = TextArea(font="Arial", font_size="10",
+    for j in range (2,rows+2): # rows       
+      k=j*10+i        
+      self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              #width=100,
+                              width=300,
                               foreground="#000",background="#fff"")
-            self.txb[k].role = "scroll"
-            self.txb[k].tag.name = k                           
-            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=6)
-        
-          if i ==2 :   
-            self.txb[k] = Button(background="#fff", width=10) 
-            #self.txb[k] = RadioButton()               
-            self.txb[k].tag.name = k   
-            self.txb[k].text = "X"                                
-            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=6, width_xs=1)
-            #self.txb[k].set_event_handler('clicked', self.clicked)            
+      self.txb[k].role = "scroll"
+      self.txb[k].tag.name = k                           
+      self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=6)
+      self.txb[k].set_event_handler('lost_focus', self.l_focus)
     i=1
     k=21                    
     for i in range(0,rows):
-         try:                   
-          self.txb[k].text = ex[i]["nume"]
-          #self.txb[k+1].text = ex[i]["cota"]                
+      try:                   
+          self.txb[k].text = ex[i]["nume"]                         
           k=k+10
-         except:
-          pass  
-       
-    pass 
+      except:
+          pass       
+    pass
+  def l_focus (self, sender,**event_args):
+    li = []
+    for it in self.grid_panel_1.get_components():
+       if type(it) == TextArea:
+         if it.text != "":                          
+          ta = {"nume": it.text}
+          li.append(ta)
+    p1['admin'] = li
+    anvil.server.call("sp1", self.ups(), p1)   
+    row = len(p1['admin'])
+    self.gru(row, p1['admin'])
+  pass                                 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     li = []
     for it in self.grid_panel_1.get_components():
-       if type(it) == TextArea:   
-                                
-        ta = {"nt": it.tag.name, "cont": it.text}
+       if type(it) == TextArea:                                
+        ta = {"nume": it.text}
         li.append(ta)
-    print(li)                               
+    p1['admin'] = li
+    anvil.server.call("sp1", self.ups(), p1)                     
     pass
 
   def drop_down_1_change(self, **event_args):
@@ -129,12 +119,20 @@ class st(stTemplate):
     #print(p1['asoc'])                               
     g =  {"nume": ""}
     p1['admin'].append(g)                               
-    
     row = len( p1['admin'])
     print(row)                               
     self.gru(row,  p1['admin'])                               
     pass
-
+  def ups(self):
+      user = anvil.users.get_user()
+      if user is None:
+        x=0
+      else:
+          us =  str(user['email'])
+          return us
+      pass     
+                               
+    
 
 
 
