@@ -55,12 +55,15 @@ class st(stTemplate):
     self.text_box_8.text=grup["soc"][0]["d_caen"]
     p1['gen']['d_caen'] = grup["soc"][0]["d_caen"]
     for i in range (0, len(grup['asoc_pf'])):
-      p1['asoc'].append(grup['asoc_pf'][i])    
-    
-    
-    row = len(p1["asoc"])
-    self.gru(row, p1["asoc"])    
-    print(p1['asoc'])
+      l = {"nume": grup['admin'][i]['nume']}
+      p1['admin'].append(l)    
+      
+    ob.append(grup['admin'][i]['nume'])
+      [obiect.append(x) for x in ob if x not in obiect]
+      
+    row = len(p1['admin'])
+    self.gru(row, p1['admin'])    
+    print(p1['admin'])
     pass
   def gru(self, rows, ex):
     self.grid_panel_1.clear()
@@ -72,7 +75,7 @@ class st(stTemplate):
     j = 0    
     k=10                          
     for j in range (2,rows+2): # rows 
-       for i in range(1, 4): # col 
+       for i in range(1, 3): # col 
           k=j*10+i        
           if i ==1 :   
             self.txb[k] = TextArea(font="Arial", font_size="10",
@@ -82,29 +85,21 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
             self.txb[k].role = "scroll"
             self.txb[k].tag.name = k                           
-            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=4)
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=6)
+        
           if i ==2 :   
-            self.txb[k] = TextArea(font="Arial", font_size="10",
-                              spacing_above = "small",
-                              spacing_below = "small",
-                              #width=100,
-                              foreground="#000",background="#fff")
-            self.txb[k].role = "form-control"
-            self.txb[k].tag.name = k                           
-            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=4, width_xs=7)
-          if i ==3 :   
             self.txb[k] = Button(background="#fff", width=10) 
             #self.txb[k] = RadioButton()               
             self.txb[k].tag.name = k   
             self.txb[k].text = "X"                                
-            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=8, width_xs=1)
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=6, width_xs=1)
             #self.txb[k].set_event_handler('clicked', self.clicked)            
     i=1
     k=21                    
     for i in range(0,rows):
          try:                   
           self.txb[k].text = ex[i]["nume"]
-          self.txb[k+1].text = ex[i]["detalii"]                
+          #self.txb[k+1].text = ex[i]["cota"]                
           k=k+10
          except:
           pass  
@@ -112,7 +107,13 @@ class st(stTemplate):
     pass 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.gru(3,10)
+    li = []
+    for it in self.grid_panel_1.get_components():
+       if type(it) == TextArea:   
+                                
+        ta = {"nt": it.tag.name, "cont": it.text}
+        li.append(ta)
+    print(li)                               
     pass
 
   def drop_down_1_change(self, **event_args):
@@ -126,12 +127,12 @@ class st(stTemplate):
 
   def button_2_click(self, **event_args):
     #print(p1['asoc'])                               
-    g =  {"nume": "", "cota":"", "detalii": ""}
-    p1['asoc'].append(g)                               
+    g =  {"nume": ""}
+    p1['admin'].append(g)                               
     
-    row = len( p1['asoc'])
+    row = len( p1['admin'])
     print(row)                               
-    self.gru(row,  p1['asoc'])                               
+    self.gru(row,  p1['admin'])                               
     pass
 
 

@@ -4,12 +4,12 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":5,"DFTLZG":5,"HAHHYD":15,"MGITHW":50}'}
+  properties: {col_widths: '{"IYAJPM":10,"DFTLZG":5,"HAHHYD":15,"MGITHW":45}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
   - type: XYPanel
-    properties: {role: null, width: null, align: center, height: 284, tooltip: '',
+    properties: {role: null, width: null, align: center, height: 120, tooltip: '',
       border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
       background: ''}
     name: xy_panel_1
@@ -157,46 +157,17 @@ components:
       name: label_8
       layout_properties: {row: KVWGFC, width_xs: 1, col_xs: 0, width: 33.875, x: 918.84375,
         y: 37}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Asociati/actionari, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_9
-      layout_properties: {x: 57, y: 75.98011779785156, width: 116}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Grup, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_11
-      layout_properties: {x: 388.8636245727539, y: 75.98011779785156, width: 48}
-    - type: TextArea
-      properties: {role: scrol, align: left, height: 104, tooltip: '', placeholder: '',
-        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-        auto_expand: true, font: '', spacing_above: small, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false}
-      name: text_area_2
-      layout_properties: {x: 446.8636245727539, y: 177.97442626953125, width: 264}
-      data_bindings: []
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Administratori, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_10
-      layout_properties: {x: 316.10794830322266, y: 177.97442626953125, width: 93}
     - type: Button
       properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: button_1, font_size: null, font: '',
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: button_1
-      layout_properties: {x: 107.32953643798828, y: 245.95169067382812, width: 100}
+      layout_properties: {x: 180.99431610107422, y: 79.46069999999997, width: 100}
       event_bindings: {click: button_1_click}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Grup, font_size: null, font: '', spacing_above: small,
+      visible: true, text: Administratori, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_12
@@ -222,6 +193,10 @@ components:
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_1
     layout_properties: {grid_position: 'AFFSJP,MDNEZY'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_3
+    layout_properties: {grid_position: 'AFFSJP,EZHHQB'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
