@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":10,"DFTLZG":5,"HAHHYD":10,"MGITHW":50,"MDNEZY":20,"EZHHQB":40}'}
+  properties: {col_widths: '{"IYAJPM":11,"DFTLZG":4,"MGITHW":4,"MDNEZY":30,"EZHHQB":4,"MSJWSY":5,"MZRVPO":28,"GXJXPB":11,"ESIMBH":46,"PZZHTM":8}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -182,12 +182,30 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_2
-    layout_properties: {grid_position: 'OXEUGG,HAHHYD'}
+    layout_properties: {grid_position: 'OXEUGG,GXJXPB'}
     event_bindings: {click: button_2_click}
   - type: Spacer
     properties: {height: 32}
     name: spacer_2
     layout_properties: {grid_position: 'OXEUGG,MGITHW'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Asociati, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_10
+    layout_properties: {grid_position: 'OXEUGG,MSJWSY'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_4
+    layout_properties: {grid_position: 'OXEUGG,MZRVPO'}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_3
+    layout_properties: {grid_position: 'OXEUGG,PZZHTM'}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
@@ -197,6 +215,11 @@ components:
     properties: {height: 32}
     name: spacer_3
     layout_properties: {grid_position: 'AFFSJP,EZHHQB'}
+  - type: GridPanel
+    properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
+      border: solid blue 2px, visible: true, role: null, tooltip: ''}
+    name: grid_panel_2
+    layout_properties: {grid_position: 'AFFSJP,ESIMBH'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
