@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":12,"GXJXPB":3,"VRGMHK":15,"IRGPQE":3,"CGOQGV":15,"FFPPSB":15,"HRMCBP":20,"TWFTAC":5,"VFDYZJ":5,"ZPOTWN":5,"MIRGQB":50}'}
+  properties: {col_widths: '{"IYAJPM":13,"GXJXPB":7,"VRGMHK":15,"IRGPQE":4,"FFPPSB":13,"HRMCBP":20,"TWFTAC":6,"VFDYZJ":5,"ZPOTWN":5,"MIRGQB":50}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -218,10 +218,7 @@ components:
       underline: false, icon: ''}
     name: button_3
     layout_properties: {grid_position: 'OXEUGG,IRGPQE', full_width_row: true}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_8
-    layout_properties: {grid_position: 'OXEUGG,CGOQGV', full_width_row: true}
+    event_bindings: {click: button_3_click}
   - type: Spacer
     properties: {height: 32}
     name: spacer_1

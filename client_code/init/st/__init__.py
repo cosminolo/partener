@@ -17,10 +17,17 @@ class st(stTemplate):
     #p1 = anvil.server.call("pri_ini")
     p1 = anvil.server.call("get_p1", self.ups())
     self.item = p1
-    row = len(p1['admin'])
-    self.gru(row, p1['admin'])
-    #self.asoc(2)
-    
+    try:
+      row = len(p1['admin'])
+      self.gru(row, p1['admin'])
+    except:
+      pass
+    try:
+      row = len(p1['asoc'])
+      self.asoc(row, p1['asoc'])
+      #self.asoc(2)
+    except:
+      pass
   def con_drop1(self):
     self.drop_down_1.items = []
     for art in [' ', 'S.R.L.', 'S.A', 'PFA', 'II', 'SRL-D']:
@@ -56,7 +63,7 @@ class st(stTemplate):
       p1["asoc"].append(n)      
     row = len(p1['asoc'])
     self.asoc(row, p1['asoc']) 
-    #anvil.server.call("sp1", self.ups(), p1)
+    anvil.server.call("sp1", self.ups(), p1)
     
     pass
   def gru(self, rows, ex):
@@ -142,35 +149,23 @@ class st(stTemplate):
     j = 0    
     k=100                          
     for j in range (2,rows+2): # rows
-      for i in range (1,4):
+      for i in range (1,5):
         if i == 1:                      
-          k=j*10+i
+          k=100+j*10+i
           print(k)                   
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=260,
+                              width=280,
                               align = "left",    
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
                                  
           self.txb[k].tag.name = k                           
-          self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=0, width_xs=8)
-          #self.txb[k].set_event_handler('lost_focus', self.l_focus)
+          self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=0, width_xs=6)
+          #self.txb[k].set_event_handler('lost_focus', self.ll_focus)
         if i == 2:
-          k=j*10+i        
-          self.txb[k] = TextArea(font="Arial", font_size="10",
-                              spacing_above = "small",
-                              spacing_below = "small",
-                              width=45,
-                              align = "left",   
-                              foreground="#000",background="#fff"")
-          self.txb[k].role = "scroll"
-          self.txb[k].tag.name = k                           
-          self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=9, width_xs=1)
-          #self.txb[k].set_event_handler('lost_focus', self.l_focus)                        
-        if i == 3:
-          k=j*10+i        
+          k=100+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
@@ -179,22 +174,73 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=11, width_xs=2)
-                           
+          self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=6, width_xs=2)
+          #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                        
+        if i == 3:
+          k=100+j*10+i        
+          self.txb[k] = TextArea(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=90,
+                              align = "left",   
+                              foreground="#000",background="#fff"")
+          self.txb[k].role = "scroll"
+          self.txb[k].tag.name = k                           
+          self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=8, width_xs=2)
+          #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
+        if i == 4:
+          k=100+j*10+i        
+          self.txb[k] = Button(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=10,                              
+                              align = "centre",  
+                              foreground="#000",background="#fff"")
+          self.txb[k].tag.name = k
+          self.txb[k].text = "X"
+          self.txb[k].role = "raised"                     
+          self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=10, width_xs=1)
+          self.txb[k].set_event_handler('click', self.ll_focus)                        
+                                 
     i=1
-    k=21
+    k=100+21
     print(ex)
     for i in range(0,rows):
-      #try:
-      if 1 ==1:                           
+      try:                              
           self.txb[k].text = ex[i]["nume"]         
           self.txb[k+1].text = ex[i]["tara"]
           self.txb[k+2].text = ex[i]["info"]                       
           k=k+10
-      #except:
-          #pass       
+      except:
+          pass       
     pass                            
-    
+  def ll_focus(self, sender,**event_args):
+    li = []
+    tg = int(sender.tag.name)
+    self.txb[tg-1].text = ""
+    self.txb[tg-2].text = ""
+    self.txb[tg-3].text = ""                           
+    print(tg-3, tg-2, tg-1)                              
+    #for it in self.grid_panel_3.get_components():
+       #if type(it) == TextArea:
+         #print(it.tag.name)                        
+         #if it.text != "":                          
+          #ta = {"nume": it.text}
+          #li.append(ta)
+    #p1['asoc'] = li
+    #anvil.server.call("sp1", self.ups(), p1)   
+    #row = len(p1['asoc'])
+    #self.asoc(row, p1['asoc'])  
+    pass
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    g =  {"nume": "", "tara": "", "info": ""}
+    p1['asoc'].append(g)                               
+    row = len( p1['asoc'])
+    print(row)                               
+    self.asoc(row,  p1['asoc'])                                  
+    pass
+
 
 
 
