@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":12,"GXJXPB":3,"VRGMHK":15,"VRLRHL":28,"IRGPQE":3,"CGOQGV":15,"FFPPSB":15,"HRMCBP":20,"FRKBHL":2,"TWFTAC":5,"FZACYL":5}'}
+  properties: {col_widths: '{"IYAJPM":12,"GXJXPB":3,"VRGMHK":15,"IRGPQE":3,"CGOQGV":15,"FFPPSB":15,"HRMCBP":20,"TWFTAC":5,"VFDYZJ":5,"ZPOTWN":5,"MIRGQB":50}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -218,24 +218,10 @@ components:
       underline: false, icon: ''}
     name: button_3
     layout_properties: {grid_position: 'OXEUGG,IRGPQE', full_width_row: true}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Grup, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_13
-    layout_properties: {grid_position: 'OXEUGG,FRKBHL', full_width_row: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_8
     layout_properties: {grid_position: 'OXEUGG,CGOQGV', full_width_row: true}
-  - type: Button
-    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: button_4
-    layout_properties: {grid_position: 'OXEUGG,FZACYL', full_width_row: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_1
@@ -250,18 +236,25 @@ components:
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_3
     layout_properties: {grid_position: 'AFFSJP,HRMCBP', full_width_row: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Grup, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_13
+    layout_properties: {grid_position: 'LZGWMR,VFDYZJ', full_width_row: true}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_4
+    layout_properties: {grid_position: 'LZGWMR,ZPOTWN', full_width_row: true}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_2
-    layout_properties: {grid_position: 'AFFSJP,VRLRHL', full_width_row: true}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: tessst, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_9
-    layout_properties: {grid_position: 'DNHXBP,MIIABH'}
+    layout_properties: {grid_position: 'LZGWMR,MIRGQB', full_width_row: true}
 - type: FlowPanel
   properties: {}
   name: navbar_links

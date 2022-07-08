@@ -18,7 +18,7 @@ def pri_ini():
  j = {}
  j = {
     "gen":{"cui": "", "name": "", "codj": "", "adress": "", "tel": "", "email": "", "caen": "", "d_caen": "", "tip": "S.R.L.", 
-    "ramura":" ", "cereale":"NU"}, "admin":[], "asoci":[{}], "grup":[],
+    "ramura":" ", "cereale":"NU"}, "admin":[], "asoc":[], "grup":[],
     "sintez":{"piata":" ", "concurenta":" ", "strategia":" ", "conducere":" ", "ev_manag":" ", "cal_act":" ", "con_cli":" ", "exp_imp":" "},
     "buget":{"nume":"", "cui":"", "bs":"", "bss":"", "bas":"", "bass":"", "total":"", "obs":""}}
  return j

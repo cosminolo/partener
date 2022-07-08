@@ -44,21 +44,19 @@ class st(stTemplate):
     p1['gen']['caen'] = grup["soc"][0]["caen"]
     self.text_box_8.text=grup["soc"][0]["d_caen"]
     p1['gen']['d_caen'] = grup["soc"][0]["d_caen"]
-    p1["admin"]=[]
-    for i in range (0, len(grup['admin'])): 
-      ob=[]
-      ob.append({"nume": grup['admin'][i]['nume']})
-      [p1["admin"].append(x) for x in ob if x not in p1["admin"]]
+    p1["admin"] = []
+    
+    for i in range (0, len(grup['admin'])):      
+      p1["admin"].append({"nume": grup['admin'][i]['nume']})
     row = len(p1['admin'])
     self.gru(row, p1['admin']) 
-    
-    for i in range (0, len(grup['asoc_pf'])): 
-      a = {"nume": grup['asoc_pf'][i]['nume'], "cota": grup['asoc_pf'][i]['cota']}
-      print(a)
-      p1["asoci"].append(a)
-    row = len(p1['asoci'])
-    self.asoc(row, p1['asoci']) 
-    anvil.server.call("sp1", self.ups(), p1)
+    p1["asoc"] = []
+    for i in range (0, len(grup['asoct'])): 
+      n = {"nume": grup['asoct'][i]['nume'], "tara": grup['asoct'][i]['tara'], "info": grup['asoct'][i]['info']}
+      p1["asoc"].append(n)      
+    row = len(p1['asoc'])
+    self.asoc(row, p1['asoc']) 
+    #anvil.server.call("sp1", self.ups(), p1)
     
     pass
   def gru(self, rows, ex):
@@ -144,9 +142,10 @@ class st(stTemplate):
     j = 0    
     k=100                          
     for j in range (2,rows+2): # rows
-      for i in range (1,3):
+      for i in range (1,4):
         if i == 1:                      
-          k=j*10+i        
+          k=j*10+i
+          print(k)                   
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
@@ -170,15 +169,30 @@ class st(stTemplate):
           self.txb[k].tag.name = k                           
           self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=9, width_xs=1)
           #self.txb[k].set_event_handler('lost_focus', self.l_focus)                        
+        if i == 3:
+          k=j*10+i        
+          self.txb[k] = TextArea(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=80,
+                              align = "left",   
+                              foreground="#000",background="#fff"")
+          self.txb[k].role = "scroll"
+          self.txb[k].tag.name = k                           
+          self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=11, width_xs=2)
+                           
     i=1
-    k=21                    
+    k=21
+    print(ex)
     for i in range(0,rows):
-      try:                   
-          self.txb[k].text = ex[i]["nume"]  
-          self.txb[k+1].text = ex[i]["cota"]                       
+      #try:
+      if 1 ==1:                           
+          self.txb[k].text = ex[i]["nume"]         
+          self.txb[k+1].text = ex[i]["tara"]
+          self.txb[k+2].text = ex[i]["info"]                       
           k=k+10
-      except:
-          pass       
+      #except:
+          #pass       
     pass                            
     
 
