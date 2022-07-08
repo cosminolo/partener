@@ -19,6 +19,7 @@ class st(stTemplate):
     self.item = p1
     row = len(p1['admin'])
     self.gru(row, p1['admin'])
+    #self.asoc(2)
     
   def con_drop1(self):
     self.drop_down_1.items = []
@@ -48,18 +49,23 @@ class st(stTemplate):
       ob=[]
       ob.append({"nume": grup['admin'][i]['nume']})
       [p1["admin"].append(x) for x in ob if x not in p1["admin"]]
-      
     row = len(p1['admin'])
-    self.gru(row, p1['admin'])    
-
+    self.gru(row, p1['admin']) 
+    
+    for i in range (0, len(grup['asoc_pf'])): 
+      a = {"nume": grup['asoc_pf'][i]['nume'], "cota": grup['asoc_pf'][i]['cota']}
+      print(a)
+      p1["asoci"].append(a)
+    row = len(p1['asoci'])
+    self.asoc(row, p1['asoci']) 
     anvil.server.call("sp1", self.ups(), p1)
+    
     pass
   def gru(self, rows, ex):
     self.grid_panel_1.clear()
     global txb
     txb = self.txb = {}
-    global i
-    global j
+    
     i = 1
     j = 0    
     k=10                          
@@ -68,11 +74,11 @@ class st(stTemplate):
       self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=300,
+                              width=250,
                               foreground="#000",background="#fff"")
       self.txb[k].role = "scroll"
       self.txb[k].tag.name = k                           
-      self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=6)
+      self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=5)
       self.txb[k].set_event_handler('lost_focus', self.l_focus)
     i=1
     k=21                    
@@ -131,7 +137,49 @@ class st(stTemplate):
           us =  str(user['email'])
           return us
       pass     
-                               
+  def asoc(self, rows, ex):
+    self.grid_panel_3.clear()    
+    #tb = self.tb = {}   
+    i = 1
+    j = 0    
+    k=100                          
+    for j in range (2,rows+2): # rows
+      for i in range (1,3):
+        if i == 1:                      
+          k=j*10+i        
+          self.txb[k] = TextArea(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=260,
+                              align = "left",    
+                              foreground="#000",background="#fff"")
+          self.txb[k].role = "scroll"
+                                 
+          self.txb[k].tag.name = k                           
+          self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=0, width_xs=8)
+          #self.txb[k].set_event_handler('lost_focus', self.l_focus)
+        if i == 2:
+          k=j*10+i        
+          self.txb[k] = TextArea(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=45,
+                              align = "left",   
+                              foreground="#000",background="#fff"")
+          self.txb[k].role = "scroll"
+          self.txb[k].tag.name = k                           
+          self.grid_panel_3.add_component(self.txb[k], row=j, col_xs=9, width_xs=1)
+          #self.txb[k].set_event_handler('lost_focus', self.l_focus)                        
+    i=1
+    k=21                    
+    for i in range(0,rows):
+      try:                   
+          self.txb[k].text = ex[i]["nume"]  
+          self.txb[k+1].text = ex[i]["cota"]                       
+          k=k+10
+      except:
+          pass       
+    pass                            
     
 
 
