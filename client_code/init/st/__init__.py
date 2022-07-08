@@ -69,8 +69,7 @@ class st(stTemplate):
     self.asoc(row, p1['asoc']) 
     anvil.server.call("sp1", self.ups(), p1)
     
-    p1["grp"] = []
-    print(grup['gr'])
+    p1["grp"] = []    
     for i in range (0, len(grup['gr'])):
       nu = grup['gr'][i]['nume']
       det = grup['gr'][i]['detalii']
@@ -131,16 +130,7 @@ class st(stTemplate):
     tg = int(sender.tag.name)
     self.txb[tg-1].text = ""
     pass                                 
-  def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    li = []
-    for it in self.grid_panel_1.get_components():
-       if type(it) == TextArea:                                
-        ta = {"nume": it.text}
-        li.append(ta)
-    p1['admin'] = li
-    anvil.server.call("sp1", self.ups(), p1)                     
-    pass
+  
 
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
@@ -152,7 +142,7 @@ class st(stTemplate):
     pass
 
   def button_2_click(self, **event_args):                                  
-    g =  {"nume": ""}
+    g =  {"nume": " "}
     p1['admin'].append(g)                               
     row = len( p1['admin'])                                 
     self.admin(row,  p1['admin'])                               
@@ -243,7 +233,7 @@ class st(stTemplate):
     
     pass
   def button_3_click(self, **event_args):
-    g =  {"nume": "", "tara": "", "info": ""}
+    g =  {"nume": " ", "tara": " ", "info": " "}
     p1['asoc'].append(g)                               
     row = len( p1['asoc'])                                 
     self.asoc(row,  p1['asoc'])                                  
@@ -353,6 +343,43 @@ class st(stTemplate):
       except:
           pass       
     pass                                                         
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    g =  {"nume": " ", "detalii": " ", "obs": " "}
+    p1['grp'].append(g)                               
+    row = len( p1['grp'])                                 
+    self.grup(row,  p1['grp'])                             
+    pass
+
+  def button_7_click(self, **event_args):
+    c =0
+    li =[]
+    nume = ""
+    detalii = "" 
+    obs = ""                           
+    for it in self.grid_panel_2.get_components():       
+       if type(it) == TextArea:
+          c = c+1                     
+          if it.text !="":
+              if c ==1:                 
+                nume = it.text
+              if c ==2:
+                 detalii = it.text
+              if c == 3:
+                 obs = it.text                               
+                 li.append({"nume": nume, "detalii": detalii, "obs": obs})
+                 nume = ""
+                 detalii = "" 
+                 obs = ""
+                 c = 0             
+    p1['grp'] = li                             
+    anvil.server.call("sp1", self.ups(), p1)   
+    row = len(p1['grp'])
+    self.grup(row, p1['grp'])  
+    pass
+
+
 
 
 
