@@ -19,13 +19,17 @@ class st(stTemplate):
     self.item = p1
     try:
       row = len(p1['admin'])
-      self.gru(row, p1['admin'])
+      self.admin(row, p1['admin'])
     except:
       pass
     try:
       row = len(p1['asoc'])
-      self.asoc(row, p1['asoc'])
-      #self.asoc(2)
+      self.asoc(row, p1['asoc'])      
+    except:
+      pass
+    try:
+      row = len(p1['grp'])
+      self.grup(row, p1['grp'])      
     except:
       pass
   def con_drop1(self):
@@ -51,12 +55,12 @@ class st(stTemplate):
     p1['gen']['caen'] = grup["soc"][0]["caen"]
     self.text_box_8.text=grup["soc"][0]["d_caen"]
     p1['gen']['d_caen'] = grup["soc"][0]["d_caen"]
-    p1["admin"] = []
-    
+    p1["admin"] = []    
     for i in range (0, len(grup['admin'])):      
       p1["admin"].append({"nume": grup['admin'][i]['nume']})
     row = len(p1['admin'])
-    self.gru(row, p1['admin']) 
+    self.admin(row, p1['admin'])
+    
     p1["asoc"] = []
     for i in range (0, len(grup['asoct'])): 
       n = {"nume": grup['asoct'][i]['nume'], "tara": grup['asoct'][i]['tara'], "info": grup['asoct'][i]['info']}
@@ -65,26 +69,55 @@ class st(stTemplate):
     self.asoc(row, p1['asoc']) 
     anvil.server.call("sp1", self.ups(), p1)
     
+    p1["grp"] = []
+    print(grup['gr'])
+    for i in range (0, len(grup['gr'])):
+      nu = grup['gr'][i]['nume']
+      det = grup['gr'][i]['detalii']
+      obs = "x"
+      try:
+        obs = grup['gr'][i]['obbs']
+      except:
+        pass
+      n = {"nume": nu, "detalii": det, "obs": obs}
+      p1["grp"].append(n)      
+    row = len(p1['grp'])
+    self.grup(row, p1['grp']) 
+    anvil.server.call("sp1", self.ups(), p1)
+    
     pass
-  def gru(self, rows, ex):
+  def admin(self, rows, ex):
     self.grid_panel_1.clear()
     global txb
-    txb = self.txb = {}
-    
+    txb = self.txb = {}    
     i = 1
     j = 0    
     k=10                          
     for j in range (2,rows+2): # rows       
-      k=j*10+i        
-      self.txb[k] = TextArea(font="Arial", font_size="10",
+      for i in range(1,3):
+        if i ==1:
+          k=j*10+i        
+          self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=250,
+                              width=300,
                               foreground="#000",background="#fff"")
-      self.txb[k].role = "scroll"
-      self.txb[k].tag.name = k                           
-      self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=5)
-      self.txb[k].set_event_handler('lost_focus', self.l_focus)
+          self.txb[k].role = "scroll"
+          self.txb[k].tag.name = k                           
+          self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=7)
+        if i == 2:  
+          k=j*10+i                       
+          self.txb[k] = Button(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=10,                              
+                              align = "centre",  
+                              foreground="#000",background="#fff"")
+          self.txb[k].tag.name = k
+          self.txb[k].text = "X"
+          self.txb[k].role = "raised"                     
+          self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=8, width_xs=1)
+          self.txb[k].set_event_handler('click', self.l_focus)                                               
     i=1
     k=21                    
     for i in range(0,rows):
@@ -95,17 +128,9 @@ class st(stTemplate):
           pass       
     pass
   def l_focus (self, sender,**event_args):
-    li = []
-    for it in self.grid_panel_1.get_components():
-       if type(it) == TextArea:
-         if it.text != "":                          
-          ta = {"nume": it.text}
-          li.append(ta)
-    p1['admin'] = li
-    anvil.server.call("sp1", self.ups(), p1)   
-    row = len(p1['admin'])
-    self.gru(row, p1['admin'])
-  pass                                 
+    tg = int(sender.tag.name)
+    self.txb[tg-1].text = ""
+    pass                                 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     li = []
@@ -126,13 +151,11 @@ class st(stTemplate):
     p1['gen']['name'] = self.text_box_2.text
     pass
 
-  def button_2_click(self, **event_args):
-    #print(p1['asoc'])                               
+  def button_2_click(self, **event_args):                                  
     g =  {"nume": ""}
     p1['admin'].append(g)                               
-    row = len( p1['admin'])
-    print(row)                               
-    self.gru(row,  p1['admin'])                               
+    row = len( p1['admin'])                                 
+    self.admin(row,  p1['admin'])                               
     pass
   def ups(self):
       user = anvil.users.get_user()
@@ -151,8 +174,7 @@ class st(stTemplate):
     for j in range (2,rows+2): # rows
       for i in range (1,5):
         if i == 1:                      
-          k=100+j*10+i
-          print(k)                   
+          k=100+j*10+i          
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
@@ -203,8 +225,7 @@ class st(stTemplate):
           self.txb[k].set_event_handler('click', self.ll_focus)                        
                                  
     i=1
-    k=100+21
-    print(ex)
+    k=100+21    
     for i in range(0,rows):
       try:                              
           self.txb[k].text = ex[i]["nume"]         
@@ -215,31 +236,125 @@ class st(stTemplate):
           pass       
     pass                            
   def ll_focus(self, sender,**event_args):
-    li = []
     tg = int(sender.tag.name)
     self.txb[tg-1].text = ""
     self.txb[tg-2].text = ""
-    self.txb[tg-3].text = ""                           
-    print(tg-3, tg-2, tg-1)                              
-    #for it in self.grid_panel_3.get_components():
-       #if type(it) == TextArea:
-         #print(it.tag.name)                        
-         #if it.text != "":                          
-          #ta = {"nume": it.text}
-          #li.append(ta)
-    #p1['asoc'] = li
-    #anvil.server.call("sp1", self.ups(), p1)   
-    #row = len(p1['asoc'])
-    #self.asoc(row, p1['asoc'])  
+    self.txb[tg-3].text = ""                     
+    
     pass
   def button_3_click(self, **event_args):
-    """This method is called when the button is clicked"""
     g =  {"nume": "", "tara": "", "info": ""}
     p1['asoc'].append(g)                               
-    row = len( p1['asoc'])
-    print(row)                               
+    row = len( p1['asoc'])                                 
     self.asoc(row,  p1['asoc'])                                  
     pass
+
+  def button_5_click(self, **event_args):
+    c =0
+    li =[]                           
+    for it in self.grid_panel_3.get_components():       
+       if type(it) == TextArea:
+          c = c+1                     
+          if it.text !="":
+              if c ==1:                 
+                nume = it.text
+              if c ==2:
+                 tara = it.text
+              if c == 3:
+                 info = it.text                               
+                 li.append({"nume": nume, "tara": tara, "info": info})
+                 nume = ""
+                 tara = "" 
+                 info = ""
+                 c = 0              
+    p1['asoc'] = li                             
+    anvil.server.call("sp1", self.ups(), p1)   
+    row = len(p1['asoc'])
+    self.asoc(row, p1['asoc'])  
+    pass
+
+  def button_6_click(self, **event_args):
+    li = []
+    for it in self.grid_panel_1.get_components():
+       if type(it) == TextArea:
+         if it.text != "":                          
+          ta = {"nume": it.text}
+          li.append(ta)
+    p1['admin'] = li
+    anvil.server.call("sp1", self.ups(), p1)   
+    row = len(p1['admin'])
+    self.admin(row, p1['admin'])                           
+    pass
+  def grup(self, rows, ex):
+    self.grid_panel_2.clear()    
+    #tb = self.tb = {}   
+    i = 1
+    j = 0    
+    k=200                          
+    for j in range (2,rows+2): # rows
+      for i in range (1,5):
+        if i == 1:                      
+          k=200+j*10+i          
+          self.txb[k] = TextArea(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=280,
+                              align = "left",    
+                              foreground="#000",background="#fff"")
+          self.txb[k].role = "scroll"
+          self.txb[k].tag.name = k                           
+          self.grid_panel_2.add_component(self.txb[k], row=j, col_xs=0, width_xs=4)
+          #self.txb[k].set_event_handler('lost_focus', self.ll_focus)
+        if i == 2:
+          k=200+j*10+i        
+          self.txb[k] = TextArea(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=400,
+                              align = "left",   
+                              foreground="#000",background="#fff"")
+          self.txb[k].role = "scroll"
+          self.txb[k].tag.name = k                           
+          self.grid_panel_2.add_component(self.txb[k], row=j, col_xs=0, width_xs=4)
+          #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                        
+        if i == 3:
+          k=200+j*10+i        
+          self.txb[k] = TextArea(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=100,
+                              align = "left",   
+                              foreground="#000",background="#fff"")
+          self.txb[k].role = "scroll"
+          self.txb[k].tag.name = k                           
+          self.grid_panel_2.add_component(self.txb[k], row=j, col_xs=0, width_xs=3)
+          #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
+        if i == 4:
+          k=200+j*10+i        
+          self.txb[k] = Button(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=10,                              
+                              align = "centre",  
+                              foreground="#000",background="#fff"")
+          self.txb[k].tag.name = k
+          self.txb[k].text = "X"
+          self.txb[k].role = "raised"                     
+          self.grid_panel_2.add_component(self.txb[k], row=j, col_xs=0, width_xs=1)
+          self.txb[k].set_event_handler('click', self.ll_focus)                       
+    i=1
+    k=200+21    
+    for i in range(0,rows):
+      try:                              
+          self.txb[k].text = ex[i]["nume"]         
+          self.txb[k+1].text = ex[i]["detalii"]
+          self.txb[k+2].text = ex[i]["obs"]                       
+          k=k+10
+      except:
+          pass       
+    pass                                                         
+
+
 
 
 
