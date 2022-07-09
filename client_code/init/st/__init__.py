@@ -579,12 +579,12 @@ class st(stTemplate):
     pass
 
   def button_1_click(self, **event_args):
-   
+    
     # Take a payment of £9.99
-    c= stripe.checkout.charge(amount=1000,
+    c= stripe.checkout.charge(amount=100,
                            currency="EUR",
-                           title="verificare",
-                           description="info tva")
+                           title="Raport",
+                           description="verificari")
     print (c["result"])
     pass
 

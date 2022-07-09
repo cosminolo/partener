@@ -15,8 +15,8 @@ services:
     live_mode: false
     publishable_key: {test: pk_test_51LJiZeE0TENWA34M2khdw8vIXChUdUq50lWakehK7xs6lmJGRWhEWWcvZKi02Wmjiuka4K8TjEStUDDUSOCWjerW00nUUzcQLc,
       live: pk_live_51LJiZeE0TENWA34MjXojNmIa9hVrb7QvTjRJSKjddVIuRaNHXCUWCkOr0eB3WJDCd6ev2v7frOsEtaYrgO25xfKn00ZkjVUCao}
-  server_config: {refresh_token: rt_LtWhX1OJnkiQrUVGJjAhd6rKRaTGoO2Y0RKqMcAiiUPUA5FG,
-    stripe_user_id: acct_1LBjMhI63DSlRQi5}
+  server_config: {refresh_token: rt_M1mnpjO4MTwAaX9B1yf08JJVzH4iAqbhcWsZtvo05Vto11fR,
+    stripe_user_id: acct_1LJiZeE0TENWA34M}
 startup: {type: form, module: init}
 package_name: Partener
 allow_embedding: true
