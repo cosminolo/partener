@@ -655,11 +655,6 @@ components:
     name: label_91
     layout_properties: {x: 123, y: 384, width: 87}
   - type: Button
-    properties: {text: button_5}
-    name: button_5
-    layout_properties: {x: 7, y: 289, width: 100}
-    event_bindings: {click: button_5_click}
-  - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
