@@ -413,14 +413,6 @@ components:
     name: button_7
     layout_properties: {x: 7, y: 56, width: 43}
     event_bindings: {click: button_7_click}
-  - type: Button
-    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: 'fa:refresh'}
-    name: button_4
-    layout_properties: {x: 570, y: 10, width: 38}
-    event_bindings: {click: button_4_click}
   - type: Label
     properties: {text: 'Data '}
     name: label_22
@@ -704,6 +696,14 @@ components:
     properties: {}
     name: label_96
     layout_properties: {x: 856, y: 353, width: 157}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:refresh'}
+    name: button_4
+    layout_properties: {x: 570, y: 10, width: 38}
+    event_bindings: {click: button_4_click}
 - type: RepeatingPanel
   properties: {role: scrol, tooltip: '', border: '', foreground: '', items: null,
     visible: true, spacing_above: small, spacing_below: small, item_template: init.verific.ItemTemplate1,

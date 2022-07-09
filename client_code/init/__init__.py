@@ -8,7 +8,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-from ..init.start import start
+#from ..init.st import st
 from datetime import datetime, date
 import json
 import time

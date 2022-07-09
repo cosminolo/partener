@@ -38,8 +38,7 @@ def app_new(id):
     id_row = app_tables.lucru.get(user=id)
     jsg = anvil.server.call("pri_ini") 
     id_row.update(p1=jsg)    
-    id_row.update(bal=jbal)
-    id_row.update(lit={})
+    id_row.update(bal=jbal)    
   except:
     pass
 pass
@@ -66,8 +65,7 @@ def arh2 (us, dat, entit, facilit):
                           facilit=facilit,
                           dat=dat,
                           p1=id_row["p1"],                          
-                          bal=id_row['bal'],
-                          lit=id_row['lit'])
+                          bal=id_row['bal'])                          
 pass
 @anvil.server.callable
 def nr_rows(us):
@@ -90,7 +88,7 @@ pass
 def preia_inlucru(us, soc, facilit, dat):
   arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
   id_row = app_tables.lucru.get(user=us)
-  id_row.update(p1=arh["p1"],bal=arh['bal'], lit=arh['lit'])  
+  id_row.update(p1=arh["p1"],bal=arh['bal'])  
 pass
 @anvil.server.callable
 def sterge_arh(us, soc, facilit, dat):

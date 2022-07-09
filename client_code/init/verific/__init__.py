@@ -272,9 +272,11 @@ class verific(verificTemplate):
     self.drop_down_1.selected_value = ""
     self.drop_down_2.selected_value = ""
     den = self.text_box_1.text.strip()
-    li = anvil.server.call("litigii", den)
-    anvil.server.call("s_lit", self.ups(), li)    
-    lit = json.loads(li)
+    li = json.loads(anvil.server.call("litigii", den))
+    #anvil.server.call("s_lit", self.ups(), li)    
+    p1["litigii"].update(li)
+    #lit = json.loads(li)
+    lit = p1["litigii"]
     cal = []
     calitate =[""]
     ob = []

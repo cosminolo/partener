@@ -18,10 +18,7 @@ import stripe.checkout
 class ver(verTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
-    self.init_components(**properties)    
-    self.clear_tva()    
-    self.clear_bilant()
-    self.ch_pan()
+    self.init_components(**properties) 
     global p1    
     p1 = anvil.server.call("get_p1", self.ups())
     global cui
@@ -29,9 +26,12 @@ class ver(verTemplate):
     global den 
     den = p1['gen']['name']
     self.text_box_1.text = den
-    self.ref_buget("a")
-    
-    
+    self.ref_buget("a") 
+    self.tva("a")
+    try:
+        self.ref_lit("a")
+    except:
+      pass
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('init.crit')    
@@ -42,22 +42,33 @@ class ver(verTemplate):
   def button_3_click(self, **event_args):
      open_form('init.st')
      pass
-
-  def tva(self, tva):   
-    try:      
-      self.label_12.text = tva['cui']      
-      self.label_13.text = tva['scpTVA']
-      self.label_14.text = tva['data_inceput_ScpTVA']
-      self.label_15.text = tva['statusRO_e_Factura']
-      self.label_16.text = tva['statusInactivi']
-      self.label_17.text = tva['statusTvaIncasare']
-      self.label_18.text = tva['dataInceputTvaInc']
-      self.label_19.text = tva['statusSplitTVA']
-      self.label_20.text = tva['dataInceputSplitTVA']
-      self.label_21.text = tva['mesaj_ScpTVA']
-      self.label_23.text = tva['data']
-    except:
-      pass
+  def tva(self, tip):
+    if tip == "b":
+      gt = json.loads(anvil.server.call("is_1", cui))
+      p1['tva']['cui'] = gt['cui']      
+      p1['tva']['scpTVA'] = gt['scpTVA']
+      p1['tva']['data_inceput_ScpTVA'] = gt['data_inceput_ScpTVA']
+      p1['tva']['statusRO_e_Factura'] = gt['statusRO_e_Factura']
+      p1['tva']['statusInactivi'] = gt['statusInactivi']
+      p1['tva']['statusTvaIncasare'] = gt['statusTvaIncasare']
+      p1['tva']['dataInceputTvaInc'] = gt['dataInceputTvaInc']
+      p1['tva']['statusSplitTVA'] = gt['statusSplitTVA']
+      p1['tva']['dataInceputSplitTVA'] = gt['dataInceputSplitTVA']
+      p1['tva']['mesaj_ScpTVA'] = gt['mesaj_ScpTVA']
+      p1['tva']['data'] = gt['data']        
+      anvil.server.call("sp1", self.ups(), p1)
+    self.clear_tva()        
+    self.label_12.text = p1['tva']['cui']      
+    self.label_13.text = p1['tva']['scpTVA']
+    self.label_14.text = p1['tva']['data_inceput_ScpTVA']
+    self.label_15.text = p1['tva']['statusRO_e_Factura']
+    self.label_16.text = p1['tva']['statusInactivi']
+    self.label_17.text = p1['tva']['statusTvaIncasare']
+    self.label_18.text = p1['tva']['dataInceputTvaInc']
+    self.label_19.text = p1['tva']['statusSplitTVA']
+    self.label_20.text = p1['tva']['dataInceputSplitTVA']
+    self.label_21.text = p1['tva']['mesaj_ScpTVA']
+    self.label_23.text = p1['tva']['data']  
     pass
   def clear_tva(self):      
       self.label_12.text = ""
@@ -128,7 +139,6 @@ class ver(verTemplate):
       except:
         pass
       pass
-   
   def clear_bilant(self):    
         self.label_41.text = ""
         self.label_42.text = ""
@@ -190,20 +200,16 @@ class ver(verTemplate):
     print (c["result"])
     pass
 
-  def button_4_click(self, **event_args):      
-      get_tva = json.loads(anvil.server.call("is_1", cui))
-     
-      #anvil.server.call("tva_js", self.ups(), get_tva)
-      self.clear_tva()      
-      self.tva(get_tva)
-      pass
+  def button_4_click(self, **event_args):
+    self.tva("b")      
+    pass
 
   def button_7_click(self, **event_args):
     self.clear_bilant()
     an = str(int(date.today().year))   
     c = json.loads(anvil.server.call("is_2", an, cui))
     #anvil.server.call("bil_js", self.ups(), c, 1 ) 
-    print (c)
+    
     ann = str(int(c['an'])-1)      
     d = json.loads(anvil.server.call("is_2", ann, cui))
     #anvil.server.call("bil_js", self.ups(), d, 2 )        
@@ -234,25 +240,14 @@ class ver(verTemplate):
         p1['buget']['obs'] = "Nu are restante la finele ultimului trimestru"
         p1['buget']['datav'] = str(date.today().isoformat())
       anvil.server.call("sp1", self.ups(), p1)
-      self.label_79.text = p1['buget']['bs']
-      self.label_80.text = p1['buget']['bss']
-      self.label_81.text = p1['buget']['bas']
-      self.label_83.text = p1['buget']['bass']
-      self.label_87.text = p1['buget']['cui']
-      self.label_89.text = p1['buget']['total']
-      self.label_90.text = p1['buget']['obs']
-      self.label_96.text = p1['buget']['datav']
-    if tip == "a":
-      self.label_79.text = p1['buget']['bs']
-      self.label_80.text = p1['buget']['bss']
-      self.label_81.text = p1['buget']['bas']
-      self.label_83.text = p1['buget']['bass']
-      self.label_87.text = p1['buget']['cui']
-      self.label_89.text = p1['buget']['total']
-      self.label_90.text = p1['buget']['obs']
-      self.label_96.text = p1['buget']['datav']
-    pass
-  
+    self.label_79.text = p1['buget']['bs']
+    self.label_80.text = p1['buget']['bss']
+    self.label_81.text = p1['buget']['bas']
+    self.label_83.text = p1['buget']['bass']
+    self.label_87.text = p1['buget']['cui']
+    self.label_89.text = p1['buget']['total']
+    self.label_90.text = p1['buget']['obs']
+    self.label_96.text = p1['buget']['datav']
   def ps(self, sst):
     s=""
     st=str(sst)
@@ -260,41 +255,46 @@ class ver(verTemplate):
        if i.isnumeric() or i=="," or i.isalpha():
         s = s + i
     return s
-
   def button_9_click(self, **event_args): 
-    self.drop_down_1.selected_value = ""
-    self.drop_down_2.selected_value = ""
-    den = self.text_box_1.text.strip()
-    li = anvil.server.call("litigii", den)
-    anvil.server.call("s_lit", self.ups(), li)    
-    lit = json.loads(li)
-    cal = []
-    calitate =[""]
-    ob = []
-    obiect=[""]
-    if len(lit) > 1:
-     for i in range(0, len(lit)):
-      cal.append(lit[i]['calitate'])
-      [calitate.append(x) for x in cal if x not in calitate]
-      ob.append(lit[i]['obiect'])
-      [obiect.append(x) for x in ob if x not in obiect]
-     self.drop_down_1.items = calitate
-     self.drop_down_2.items = obiect    
-     self.repeating_panel_1.items = lit
-    else:
-        self.repeating_panel_1.items = []
-        if lit[0]["denumire"] == "nu inregistreaza":
-          n = Notification("",
-             title=lit[0]["denumire"]).show()
-          time.sleep(1)
-          n.hide()
-        else:
-          n = Notification("",
-             title=lit[0]["denumire"]).show()
-          time.sleep(1)
-          n.hide()
+    self.ref_lit("b")
     pass
-
+  def ref_lit(self, tip):    
+      self.drop_down_1.selected_value = ""
+      self.drop_down_2.selected_value = ""
+      den = self.text_box_1.text
+      if tip == "b":
+        li = anvil.server.call("litigii", den)
+        p1['litigii'] = li
+        anvil.server.call("sp1", self.ups(), p1)
+      lit = json.loads(p1['litigii'])
+      self.repeating_panel_1.items = lit
+      cal = []
+      calitate =[""]
+      ob = []
+      obiect=[""]
+      if len(lit) > 0:
+        for i in range(0, len(lit)):
+          cal.append(lit[i]['calitate'])
+          [calitate.append(x) for x in cal if x not in calitate]
+          ob.append(lit[i]['obiect'])
+          [obiect.append(x) for x in ob if x not in obiect]
+        self.drop_down_1.items = calitate
+        self.drop_down_2.items = obiect    
+        self.repeating_panel_1.items = lit
+      else:
+        if tip == "b": 
+         self.repeating_panel_1.items = []
+         if lit[0]["denumire"] == "nu inregistreaza":
+          n = Notification("",
+             title=lit[0]["denumire"]).show()
+          time.sleep(1)
+          n.hide()
+         else:
+          n = Notification("",
+             title=lit[0]["denumire"]).show()
+          time.sleep(1)
+          n.hide() 
+      pass
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
     if self.drop_down_1.selected_value != "":
@@ -306,7 +306,6 @@ class ver(verTemplate):
           filt.append(f)
       self.repeating_panel_1.items = filt    
     pass
-
   def drop_down_2_change(self, **event_args):
     """This method is called when an item is selected"""
     if self.drop_down_2.selected_value != "":
@@ -318,15 +317,8 @@ class ver(verTemplate):
           filt.append(f)
       self.repeating_panel_1.items = filt   
     pass
-  def ch_pan(self):
-    li= anvil.server.call('get_lit', self.ups())    
-    try:
-      lit = json.loads(li)
-      if len(lit)>0:
-         self.repeating_panel_1.items = lit
-    except:
-        pass
-    pass
+  
+   
 
 
 
