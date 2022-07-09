@@ -8,19 +8,6 @@ from anvil.tables import app_tables
 import anvil.server
 import json
 import time
-
-# This is a server module. It runs on the Anvil server,
-# rather than in the user's browser.
-#
-# To allow anvil.server.call() to call functions here, we mark
-# them with @anvil.server.callable.
-# Here is an example - you can replace it with your own:
-#
-# @anvil.server.callable
-# def say_hello(name):
-#   print("Hello, " + name + "!")
-#   return 42
-#
 @anvil.server.callable
 def add_user(id):
  id_row = app_tables.lucru.get(user=id)
@@ -42,7 +29,6 @@ def app_new(id):
   except:
     pass
 pass
-
 @anvil.server.callable
 def get_bal(id):
   try:    
@@ -102,27 +88,6 @@ def apl(id):
   us_row = app_tables.lucru.get(user=id)
   us_row.update(apl_x=fl) 
   return fl 
-pass
-@anvil.server.callable
-def get_jsgen(id):
-  try:    
-    js=app_tables.lucru.get(user=id)["js_gen"]
-    re = {"den": js["den"], "cui": js["cui"]}
-    return re
-  except:
-    pass
-pass
-@anvil.server.callable
-def s_lit(id,lit):  
-    id_row = app_tables.lucru.get(user=id)
-    id_row.update(lit=lit)
-@anvil.server.callable
-def get_lit(id):
-  try:
-    js=app_tables.lucru.get(user=id)["lit"]
-    return js
-  except:
-    pass
 pass
 @anvil.server.callable
 def sp1(id,p1):

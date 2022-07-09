@@ -34,9 +34,8 @@ class st(stTemplate):
       self.grup(row, p1['grp'])      
     except:
       pass
-  
-
   def text_box_1_pressed_enter(self, **event_args):
+   try: 
     grup = anvil.server.call("gr", self.text_box_1.text)    
     p1['gen']['cui'] = self.text_box_1.text
     self.text_box_2.text = grup["soc"][0]["name"]    
@@ -81,8 +80,9 @@ class st(stTemplate):
     row = len(p1['grp'])
     self.grup(row, p1['grp']) 
     anvil.server.call("sp1", self.ups(), p1)
-    
+   except:
     pass
+   pass
   def admin(self, rows, ex):
     self.grid_panel_1.clear()
     global txb
@@ -575,7 +575,7 @@ class st(stTemplate):
     pass
 
   def button_9_click(self, **event_args):
-    open_form('init.ver')
+    open_form('init.verific')
     pass
 
 
