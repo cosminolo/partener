@@ -578,6 +578,17 @@ class st(stTemplate):
     open_form('init.verific')
     pass
 
+  def button_1_click(self, **event_args):
+   
+    # Take a payment of £9.99
+    c= stripe.checkout.charge(amount=1000,
+                           currency="EUR",
+                           title="verificare",
+                           description="info tva")
+    print (c["result"])
+    pass
+
+
 
 
 

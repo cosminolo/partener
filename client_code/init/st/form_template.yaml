@@ -194,10 +194,15 @@ components:
   - type: TextArea
     properties: {}
     name: text_area_1
-    layout_properties: {grid_position: 'UMQQXA,SAONZU', full_width_row: true}
+    layout_properties: {grid_position: 'UMQQXA,SAONZU OWJQSV,DKSJSS', full_width_row: true}
     data_bindings:
     - {property: text, code: 'self.item[''facilitate''][''garantii'']', writeback: true}
     event_bindings: {lost_focus: text_area_1_lost_focus}
+  - type: Button
+    properties: {text: button_1}
+    name: button_1
+    layout_properties: {grid_position: 'UMQQXA,SAONZU ATYLYL,GHSVMO'}
+    event_bindings: {click: button_1_click}
   - type: LinearPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: '', visible: true, role: null, tooltip: ''}
