@@ -43,7 +43,7 @@ components:
     layout_properties: {grid_position: 'XAPZOZ,HVLDRW', full_width_row: true}
     event_bindings: {click: button_2_click}
 - type: XYPanel
-  properties: {role: null, width: 1216, align: left, height: 424, tooltip: '', border: '',
+  properties: {role: null, width: 1222, align: left, height: 424, tooltip: '', border: '',
     foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
   name: xy_panel_2
   layout_properties: {grid_position: 'XLVDOX,OBMPNQ', full_width_row: true}
@@ -698,6 +698,17 @@ components:
     name: drop_down_2
     layout_properties: {x: 641.9885864257812, y: 393.13067626953125, width: 195.02557373046875}
     event_bindings: {change: drop_down_2_change}
+  - type: Label
+    properties: {}
+    name: label_96
+    layout_properties: {x: 822, y: 356, width: 160}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Data verif., font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_95
+    layout_properties: {x: 732, y: 353, width: 80}
 - type: RepeatingPanel
   properties: {role: scrol, tooltip: '', border: '', foreground: '', items: null,
     visible: true, spacing_above: small, spacing_below: small, item_template: init.verific.ItemTemplate1,
