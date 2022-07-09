@@ -379,6 +379,16 @@ class st(stTemplate):
     self.grup(row, p1['grp'])  
     pass
 
+  def text_box_8_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
+  def drop_down_8_change(self, **event_args):
+    """This method is called when an item is selected"""
+    pass
+
+
+
 
 
 

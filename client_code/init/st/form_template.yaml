@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"IRGPQE":5,"FFPPSB":14,"HRMCBP":30,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"LGVFTD":8,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31}'}
+  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"IRGPQE":5,"HRMCBP":30,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"LGVFTD":8,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":15,"GRTMUF":10,"SAONZU":32,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -56,12 +56,79 @@ components:
       properties: {height: 32}
       name: spacer_2
       layout_properties: {grid_position: 'HGQUGC,MHBLLS', full_width_row: true}
+  - type: LinearPanel
+    properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
+      border: '', visible: true, role: null, tooltip: ''}
+    name: linear_panel_2
+    layout_properties: {grid_position: 'UMQQXA,RVLATY', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: in suma de, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_9
+      layout_properties: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_9
+    layout_properties: {grid_position: 'UMQQXA,KAZBLY', full_width_row: true}
+  - type: DropDown
+    properties: {}
+    name: drop_down_5
+    layout_properties: {grid_position: 'UMQQXA,THHCRH', full_width_row: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: pe o perioada de, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_15
+    layout_properties: {grid_position: 'UMQQXA,HIIAYG', full_width_row: true}
+  - type: TextBox
+    properties: {}
+    name: text_box_10
+    layout_properties: {grid_position: 'UMQQXA,YIKKCW', full_width_row: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: luni., font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_17
+    layout_properties: {grid_position: 'UMQQXA,RMLODV', full_width_row: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Garantii, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_16
+    layout_properties: {grid_position: 'UMQQXA,GRTMUF', full_width_row: true}
+  - type: TextArea
+    properties: {}
+    name: text_area_1
+    layout_properties: {grid_position: 'UMQQXA,SAONZU', full_width_row: true}
+  - type: LinearPanel
+    properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
+      border: '', visible: true, role: null, tooltip: ''}
+    name: linear_panel_1
+    layout_properties: {grid_position: 'WRNBTB,IXGMNR', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Din credit se vor face plati pentru, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_20
+      layout_properties: {}
+  - type: TextArea
+    properties: {height: 40.1875}
+    name: text_area_2
+    layout_properties: {grid_position: 'WRNBTB,GISWYS', full_width_row: true}
   - type: XYPanel
-    properties: {role: null, width: null, align: center, height: 78, tooltip: '',
+    properties: {role: null, width: 1221, align: center, height: 121, tooltip: '',
       border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
       background: ''}
     name: xy_panel_1
-    layout_properties: {grid_position: 'QAZFBK,YCPFEI', full_width_row: true}
+    layout_properties: {grid_position: 'GSMRBE,IGYIHO', full_width_row: true}
     components:
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -125,14 +192,14 @@ components:
         background: '', bold: false, underline: false}
       name: text_box_6
       layout_properties: {row: TCYHRR, width_xs: 2, col_xs: 3, x: 190.99430084228516,
-        y: 43.991477966308594, width: 196.015625}
+        y: 43.991477966308594, width: 158.015625}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''email'']', writeback: true}
     - type: TextBox
       properties: {}
       name: text_box_4
       layout_properties: {row: JNGRGR, width_xs: 3, col_xs: 9, x: 665.875, y: 9.125,
-        width: 544}
+        width: 521}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''adress'']', writeback: true}
     - type: Label
@@ -159,28 +226,62 @@ components:
       name: label_1
       layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 0, width: 46.7344, x: 0,
         y: 10}
-    - type: TextBox
-      properties: {}
-      name: text_box_8
-      layout_properties: {row: TCYHRR, width_xs: 3, col_xs: 8, x: 520.4688, y: 43.125,
-        width: 379.469}
-      data_bindings:
-      - {property: text, code: 'self.item[''gen''][''d_caen'']', writeback: true}
-    - type: TextBox
-      properties: {}
-      name: text_box_7
-      layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 6, x: 447.34375, y: 43.125,
-        width: 63.125}
-      data_bindings:
-      - {property: text, code: 'self.item[''gen''][''caen'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: caen, font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_6
-      layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 5, width: 49.25, x: 397,
+      layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 5, width: 49, x: 358.984375,
         y: 37}
+    - type: TextBox
+      properties: {}
+      name: text_box_7
+      layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 6, x: 408.34375, y: 44,
+        width: 63}
+      data_bindings:
+      - {property: text, code: 'self.item[''gen''][''caen'']', writeback: true}
+    - type: TextBox
+      properties: {}
+      name: text_box_8
+      layout_properties: {row: TCYHRR, width_xs: 3, col_xs: 8, x: 481.34375, y: 43.125,
+        width: 291}
+      data_bindings:
+      - {property: text, code: 'self.item[''gen''][''d_caen'']', writeback: true}
+      event_bindings: {pressed_enter: text_box_8_pressed_enter}
+    - type: TextBox
+      properties: {}
+      name: text_box_11
+      layout_properties: {x: 342, y: 89, width: 160}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Cultiv cereale, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_19
+      layout_properties: {x: 0, y: 83, width: 139}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Reprezentant, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_18
+      layout_properties: {x: 235, y: 82, width: 88}
+    - type: DropDown
+      properties: {}
+      name: drop_down_7
+      layout_properties: {x: 100.25, y: 89, width: 100}
+    - type: DropDown
+      properties: {}
+      name: drop_down_6
+      layout_properties: {x: 879.25, y: 37, width: 144}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Ramura, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_7
+      layout_properties: {x: 798.25, y: 37, width: 57}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Administratori, font_size: null, font: '', spacing_above: small,
@@ -204,13 +305,6 @@ components:
     name: button_6
     layout_properties: {grid_position: 'OXEUGG,LEVDYG', full_width_row: true}
     event_bindings: {click: button_6_click}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Asociati, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_10
-    layout_properties: {grid_position: 'OXEUGG,FFPPSB', full_width_row: true}
   - type: Button
     properties: {role: raised, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
@@ -245,6 +339,15 @@ components:
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_3
     layout_properties: {grid_position: 'AFFSJP,HRMCBP', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Asociati, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_10
+      layout_properties: {grid_position: 'OXEUGG,FFPPSB', full_width_row: true, row: BNAAYC,
+        width_xs: 5, col_xs: 0}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Grup, font_size: null, font: '', spacing_above: small,
@@ -277,6 +380,121 @@ components:
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_2
     layout_properties: {grid_position: 'PVOGNV,JMZFVB', full_width_row: true}
+  - type: XYPanel
+    properties: {role: null, width: null, align: center, height: 313, tooltip: '',
+      border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
+      background: ''}
+    name: xy_panel_2
+    layout_properties: {grid_position: 'HUKXPW,XLFTOF', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Evaluarea echipei manageriala, font_size: 12, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_1_copy
+      layout_properties: {row: QBBUWV, width_xs: 2, col_xs: 0, width: 179.5, x: 27.5,
+        y: 100.85940000000005}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Conducerea afacerii, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_15_copy
+      layout_properties: {row: EJSOCU, width_xs: 1, col_xs: 7, width: 144.125, x: 960,
+        y: 26.859375}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Strategia de vanzare, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_14_copy
+      layout_properties: {row: EJSOCU, width_xs: 2, col_xs: 0, width: 128.125, x: 662.25,
+        y: 26.859375}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Concurenta, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_13_copy
+      layout_properties: {row: IOVAMB, width_xs: 1, col_xs: 7, width: 24.5625, x: 386,
+        y: 26.859375}
+    - type: DropDown
+      properties: {}
+      name: drop_down_8
+      layout_properties: {x: 27.5, y: 55.859375, width: 277}
+      event_bindings: {change: drop_down_8_change}
+    - type: DropDown
+      properties: {}
+      name: drop_down_9
+      layout_properties: {x: 354.5, y: 55.859375, width: 263.75}
+    - type: DropDown
+      properties: {}
+      name: drop_down_10
+      layout_properties: {x: 628.25, y: 55.859375, width: 269}
+    - type: DropDown
+      properties: {}
+      name: drop_down_11
+      layout_properties: {x: 926, y: 55.859375, width: 249}
+    - type: DropDown
+      properties: {}
+      name: drop_down_12
+      layout_properties: {x: 19.0625, y: 125, width: 285.4375}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Calitatea actionariatului, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_19_copy
+      layout_properties: {row: QBBUWV, width_xs: 2, col_xs: 7, width: 154.5, x: 354.5,
+        y: 100.85940000000005}
+    - type: DropDown
+      properties: {}
+      name: drop_down_13
+      layout_properties: {x: 354.5, y: 125, width: 263.75}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Concentrarea clientilor ', font_size: 12, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_20_copy
+      layout_properties: {row: OXBSLY, width_xs: 2, col_xs: 0, width: 135.75, x: 649,
+        y: 100.859375}
+    - type: DropDown
+      properties: {}
+      name: drop_down_14
+      layout_properties: {x: 649, y: 125, width: 248.25}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Experienta in administrarea fondurilor imprumutate, font_size: 12,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_21
+      layout_properties: {row: OXBSLY, width_xs: 2, col_xs: 7, width: 283.75, x: 903.25,
+        y: 92.71875}
+    - type: DropDown
+      properties: {}
+      name: drop_down_15
+      layout_properties: {x: 914.75, y: 119, width: 260.25}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Piata de desfacere, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_12_copy
+      layout_properties: {row: IOVAMB, width_xs: 2, col_xs: 0, width: 161.125, x: 19.0625,
+        y: 26.859375}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Alte informatii despre afacere, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_22
+      layout_properties: {x: 19.0625, y: 189, width: 203}
+    - type: TextArea
+      properties: {height: 60.1875}
+      name: text_area_3
+      layout_properties: {x: 250.5625, y: 185, width: 917}
 - type: FlowPanel
   properties: {}
   name: navbar_links
