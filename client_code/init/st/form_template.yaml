@@ -4,26 +4,44 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"IRGPQE":5,"HRMCBP":30,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"LGVFTD":8,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":15,"GRTMUF":10,"SAONZU":32,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45}'}
+  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"IRGPQE":5,"HRMCBP":30,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"LGVFTD":8,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":37,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
   - type: ColumnPanel
     properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"GRHLJY":10,"CVGLFN":4,"QSBLAH":11,"MGBFVR":5,"RAIZQJ":10,"MUYYMS":25,"MHBLLS":3}',
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"GRHLJY":5,"CVGLFN":9,"QSBLAH":6,"MGBFVR":7,"RAIZQJ":18,"MUYYMS":20,"MHBLLS":3}',
       spacing_below: small, background: ''}
     name: column_panel_1
     layout_properties: {grid_position: 'MIGXUM,HNMXTS', full_width_row: true}
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Sunt o entitate de tip ', font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
+        visible: true, text: 'Sunt o entitate de tip ', font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
       name: label_11
       layout_properties: {grid_position: 'HGQUGC,GRHLJY', full_width_row: true}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [S.R.L., S.A., P.F.A., I.I., S.R.L.-D.]
+        visible: true
+        font_size: 11
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_1
       layout_properties: {row: KVWGFC, width_xs: 1, col_xs: 1, x: 942.46875, y: 33,
         width: 40.875, grid_position: 'HGQUGC,CVGLFN', full_width_row: true}
@@ -32,26 +50,70 @@ components:
       - {property: selected_value, code: 'self.item[''gen''][''tip'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: si solicit un credit, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        visible: true, text: si solicit un credit, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_8
       layout_properties: {grid_position: 'HGQUGC,QSBLAH', full_width_row: true}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [negarantat, valoare mica cu FGCR, OUG 43, garantat cu echipamente/imobile/etc,
+          garantat cu mix (fond si alte garantii)]
+        visible: true
+        font_size: 11
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_2
       layout_properties: {grid_position: 'HGQUGC,RAIZQJ', full_width_row: true}
+      event_bindings: {change: drop_down_2_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''facilitate''][''fel'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: denumit, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        visible: true, text: denumit, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_14
       layout_properties: {grid_position: 'HGQUGC,MGBFVR', full_width_row: true}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: []
+        visible: true
+        font_size: 11
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_3
       layout_properties: {grid_position: 'HGQUGC,MUYYMS', full_width_row: true}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''facilitate''][''denumit'']',
+        writeback: true}
+      event_bindings: {change: drop_down_3_change}
     - type: Spacer
       properties: {height: 32}
       name: spacer_2
@@ -73,10 +135,34 @@ components:
     properties: {}
     name: text_box_9
     layout_properties: {grid_position: 'UMQQXA,KAZBLY', full_width_row: true}
+    data_bindings:
+    - {property: text, code: 'self.item[''facilitate''][''suma'']', writeback: true}
+    event_bindings: {lost_focus: text_box_9_lost_focus}
   - type: DropDown
-    properties: {}
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: [Lei, Eur, Usd, '']
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
     name: drop_down_5
     layout_properties: {grid_position: 'UMQQXA,THHCRH', full_width_row: true}
+    event_bindings: {change: drop_down_5_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''facilitate''][''valuta'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: pe o perioada de, font_size: null, font: '', spacing_above: small,
@@ -88,6 +174,9 @@ components:
     properties: {}
     name: text_box_10
     layout_properties: {grid_position: 'UMQQXA,YIKKCW', full_width_row: true}
+    data_bindings:
+    - {property: text, code: 'self.item[''facilitate''][''per'']', writeback: true}
+    event_bindings: {lost_focus: text_box_10_lost_focus}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: luni., font_size: null, font: '', spacing_above: small,
@@ -106,6 +195,9 @@ components:
     properties: {}
     name: text_area_1
     layout_properties: {grid_position: 'UMQQXA,SAONZU', full_width_row: true}
+    data_bindings:
+    - {property: text, code: 'self.item[''facilitate''][''garantii'']', writeback: true}
+    event_bindings: {lost_focus: text_area_1_lost_focus}
   - type: LinearPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: '', visible: true, role: null, tooltip: ''}
@@ -123,6 +215,9 @@ components:
     properties: {height: 40.1875}
     name: text_area_2
     layout_properties: {grid_position: 'WRNBTB,GISWYS', full_width_row: true}
+    data_bindings:
+    - {property: text, code: 'self.item[''facilitate''][''dest'']', writeback: true}
+    event_bindings: {lost_focus: text_area_2_lost_focus}
   - type: XYPanel
     properties: {role: null, width: 1221, align: center, height: 121, tooltip: '',
       border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
@@ -145,7 +240,7 @@ components:
       properties: {}
       name: text_box_2
       layout_properties: {row: JNGRGR, width_xs: 3, col_xs: 3, x: 181, y: 9.125, width: 271}
-      event_bindings: {pressed_enter: text_box_2_pressed_enter}
+      event_bindings: {lost_focus: text_box_2_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''name'']', writeback: true}
     - type: Label
@@ -162,6 +257,7 @@ components:
       layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 7, x: 504, y: 10, width: 108.12500000000001}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''codj'']', writeback: true}
+      event_bindings: {lost_focus: text_box_3_lost_focus}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Tel, font_size: null, font: '', spacing_above: small,
@@ -177,6 +273,7 @@ components:
         width: 107.469}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''tel'']', writeback: true}
+      event_bindings: {lost_focus: text_box_5_lost_focus}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: email, font_size: null, font: '', spacing_above: small,
@@ -195,6 +292,7 @@ components:
         y: 43.991477966308594, width: 158.015625}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''email'']', writeback: true}
+      event_bindings: {lost_focus: text_box_6_lost_focus}
     - type: TextBox
       properties: {}
       name: text_box_4
@@ -202,6 +300,7 @@ components:
         width: 521}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''adress'']', writeback: true}
+      event_bindings: {lost_focus: text_box_4_lost_focus}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Sediu, font_size: null, font: '', spacing_above: small,
@@ -241,6 +340,7 @@ components:
         width: 63}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''caen'']', writeback: true}
+      event_bindings: {lost_focus: text_box_7_lost_focus}
     - type: TextBox
       properties: {}
       name: text_box_8
@@ -248,11 +348,14 @@ components:
         width: 291}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''d_caen'']', writeback: true}
-      event_bindings: {pressed_enter: text_box_8_pressed_enter}
+      event_bindings: {lost_focus: text_box_8_lost_focus, pressed_enter: text_box_8_pressed_enter}
     - type: TextBox
       properties: {}
       name: text_box_11
       layout_properties: {x: 342, y: 89, width: 160}
+      data_bindings:
+      - {property: text, code: 'self.item[''gen''][''reprez'']', writeback: true}
+      event_bindings: {lost_focus: text_box_11_lost_focus}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Cultiv cereale, font_size: null, font: '', spacing_above: small,
@@ -268,13 +371,56 @@ components:
       name: label_18
       layout_properties: {x: 235, y: 82, width: 88}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Nu, Da]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_7
       layout_properties: {x: 100.25, y: 89, width: 100}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''gen''][''cereale'']', writeback: true}
+      event_bindings: {change: drop_down_7_change}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Agricultura, Comert, Constructii, Industrie, Servicii, Transporturi,
+          Turism, Alte ramuri]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_6
       layout_properties: {x: 879.25, y: 37, width: 144}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''gen''][''ramura'']', writeback: true}
+      event_bindings: {change: drop_down_6_change}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Ramura, font_size: null, font: '', spacing_above: small,
@@ -389,12 +535,12 @@ components:
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Evaluarea echipei manageriala, font_size: 12, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
+        visible: true, text: Pregatire management, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
       name: label_1_copy
       layout_properties: {row: QBBUWV, width_xs: 2, col_xs: 0, width: 179.5, x: 27.5,
-        y: 100.85940000000005}
+        y: 100.859375}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Conducerea afacerii, font_size: 12, font: '', spacing_above: small,
@@ -420,50 +566,205 @@ components:
       layout_properties: {row: IOVAMB, width_xs: 1, col_xs: 7, width: 24.5625, x: 386,
         y: 26.859375}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Clientul este  vizibil intr-o piata cu acoperire nationala/internationala,
+          Clientul este  vizibil intr-o piata regionala, Clientul este  vizibil intr-o piata limitata la 2 judete,
+          Clientul are o vizibilitate redusa in piata de profil]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_8
       layout_properties: {x: 27.5, y: 55.859375, width: 277}
       event_bindings: {change: drop_down_8_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''sintez''][''piata'']', writeback: true}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Competitie ridicata cu intrare grea pe piata, Competitie redusa cu intrare grea pe piata,
+          Competitie redusa cu intrare usoara pe piata, Competitie inexistenta (nisa de piata)]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_9
       layout_properties: {x: 354.5, y: 55.859375, width: 263.75}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''sintez''][''concurenta'']',
+        writeback: true}
+      event_bindings: {change: drop_down_9_change}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: ['Neagresiva, merge cu produse de inalta calitate                Neagresiva,
+            mizeaza pe volumul produselor comercializate', 'Agresiva, merge cu produse
+            exclusiviste', 'Nu are strategie, se acomodeaza pietei']
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_10
       layout_properties: {x: 628.25, y: 55.859375, width: 269}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''sintez''][''strategia'']', writeback: true}
+      event_bindings: {change: drop_down_10_change}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Management experimentat cu functiile executive separate, Management experimentat fara functii executive separate,
+          Management fara experienta si fara functii executive separate, Activitatea depinde de o persoana cheie]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_11
-      layout_properties: {x: 926, y: 55.859375, width: 249}
+      layout_properties: {x: 926, y: 55.859375, width: 261}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''sintez''][''conducere'']', writeback: true}
+      event_bindings: {change: drop_down_11_change}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Studii superioare si continuitate in cadrul firmei> = 3 ani, Studii superioare si continuitate in cadrul firmei<  3 ani,
+          Alte studii si continuitate in cadrul firmei>= 3 ani, Alte studii si continuitate in cadrul firmei<3 ani]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_12
-      layout_properties: {x: 19.0625, y: 125, width: 285.4375}
+      layout_properties: {x: 19.0625, y: 125, width: 285.438}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''sintez''][''ev_manag'']', writeback: true}
+      event_bindings: {change: drop_down_12_change}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Calitatea actionariatului, font_size: 12, font: '', spacing_above: small,
+        visible: true, text: Calitatea actionarilor, font_size: 12, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_19_copy
       layout_properties: {row: QBBUWV, width_xs: 2, col_xs: 7, width: 154.5, x: 354.5,
-        y: 100.85940000000005}
+        y: 100.859375}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Foarte buna, Buna, Satisfacatoare, Necorespunzatoare]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_13
       layout_properties: {x: 354.5, y: 125, width: 263.75}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''sintez''][''cal_act'']', writeback: true}
+      event_bindings: {change: drop_down_13_change}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Concentrarea clientilor ', font_size: 12, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
+        visible: true, text: Concentrarea clientilor, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
       name: label_20_copy
       layout_properties: {row: OXBSLY, width_xs: 2, col_xs: 0, width: 135.75, x: 649,
         y: 100.859375}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Nu exista nici un client pentru care Cc>15%, Exista cel putin un client pentru care 15% <= Cc<25%,
+          Exista cel putin un client pentru care 25%<=  Cc<50%, Exista cel putin un client pentru care Cc >= 50%]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_14
       layout_properties: {x: 649, y: 125, width: 248.25}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''sintez''][''con_cli'']', writeback: true}
+      event_bindings: {change: drop_down_14_change}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Experienta in administrarea fondurilor imprumutate, font_size: 12,
@@ -473,9 +774,33 @@ components:
       layout_properties: {row: OXBSLY, width_xs: 2, col_xs: 7, width: 283.75, x: 903.25,
         y: 92.71875}
     - type: DropDown
-      properties: {}
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Debitorul a beneficiat de cel putin doua credite (de la CEC BANK S.A. sau de la alte institutii de credit) care au fost lichidate integral,
+          Debitorul a beneficiat de un credit (de la CEC BANK S.A. sau de la alte institutii de credit) care a fost lichidat integral,
+          Debitorul a beneficiat de unul sau mai multe credite (de la CEC BANK S.A. sau de la alte institutii de credit) care se afla in derulare fara restante/Debitorul nu a beneficiat de credite,
+          Debitorul are restante la creditele in derulare]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
       name: drop_down_15
-      layout_properties: {x: 914.75, y: 119, width: 260.25}
+      layout_properties: {x: 914.75, y: 119, width: 272.25}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''sintez''][''exp_imp'']', writeback: true}
+      event_bindings: {change: drop_down_15_change}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Piata de desfacere, font_size: 12, font: '', spacing_above: small,
@@ -490,11 +815,46 @@ components:
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: label_22
-      layout_properties: {x: 19.0625, y: 189, width: 203}
+      layout_properties: {x: 224.0625, y: 201, width: 203}
     - type: TextArea
       properties: {height: 60.1875}
       name: text_area_3
-      layout_properties: {x: 250.5625, y: 185, width: 917}
+      layout_properties: {x: 437.0625, y: 189, width: 628}
+      data_bindings:
+      - {property: text, code: 'self.item[''sintez''][''altele'']', writeback: true}
+      event_bindings: {lost_focus: text_area_3_lost_focus}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Nr. de salariati, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_23
+      layout_properties: {x: 10, y: 201, width: 105}
+    - type: DropDown
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: ['0', Intre 1 si sub 10 salariati, Intre 10 si sub 50 salariat, Peste 50 de salariati]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
+      name: drop_down_4
+      layout_properties: {x: 107, y: 206.578125, width: 100}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''sintez''][''nr_sal'']', writeback: true}
+      event_bindings: {change: drop_down_4_change}
 - type: FlowPanel
   properties: {}
   name: navbar_links
@@ -507,6 +867,7 @@ components:
       background: '', bold: false, underline: false, icon: 'fa:fast-forward'}
     name: button_9
     layout_properties: {}
+    event_bindings: {click: button_9_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
     foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 20, font: '',
@@ -514,3 +875,4 @@ components:
     bold: false, underline: false, icon: 'fa:home'}
   name: button_8
   layout_properties: {slot: title}
+  event_bindings: {click: button_8_click}

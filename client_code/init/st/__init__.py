@@ -13,6 +13,8 @@ class st(stTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.con_drop3()
+    
     global p1
     #p1 = anvil.server.call("pri_ini")
     p1 = anvil.server.call("get_p1", self.ups())
@@ -32,11 +34,7 @@ class st(stTemplate):
       self.grup(row, p1['grp'])      
     except:
       pass
-  def con_drop1(self):
-    self.drop_down_1.items = []
-    for art in [' ', 'S.R.L.', 'S.A', 'PFA', 'II', 'SRL-D']:
-      self.drop_down_1.items.append(art)
-      self.drop_down_1.items = self.drop_down_1.items
+  
 
   def text_box_1_pressed_enter(self, **event_args):
     grup = anvil.server.call("gr", self.text_box_1.text)    
@@ -134,12 +132,12 @@ class st(stTemplate):
 
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
-    p1['gen']['tip'] = self.drop_down_1.selected_value
+    if self.drop_down_1.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)                           
+                             
     pass
 
-  def text_box_2_pressed_enter(self, **event_args):
-    p1['gen']['name'] = self.text_box_2.text
-    pass
+  
 
   def button_2_click(self, **event_args):                                  
     g =  {"nume": " "}
@@ -379,13 +377,235 @@ class st(stTemplate):
     self.grup(row, p1['grp'])  
     pass
 
+  
+  def drop_down_8_change(self, **event_args):
+    if self.drop_down_8.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+  
+  def drop_down_2_change(self, **event_args):
+    if self.drop_down_2.selected_value == 'garantat cu echipamente/imobile/etc' or self.drop_down_2.selected_value == 'garantat cu mix (fond si alte garantii)':
+       self.drop_down_3.items = []
+       for art in ['Linie de Credit - acordare/suplimentare', 
+                'Linie de Credit - acordare/suplimentare',
+                'Linie de Credit - prelungire',
+                'Linie de Credit - suplimentare 10%',
+                'Credit pentru finantarea activitatii curente',
+                'Credit pentru achitarea datoriilor la buget',
+                'Credit ipotecar pentru investitii acordat PJ',
+                'Credit de investitii',
+                'Credit de investitii pentru achizia de teren pentru productia agricola']:
+          self.drop_down_3.items.append(art)
+       self.drop_down_3.items = self.drop_down_3.items
+    if self.drop_down_2.selected_value == 'negarantat':
+      self.drop_down_3.items = []
+      for art in ['Descoperit de Cont pe Card Business - Client Nou, cu expunere sub 6 luni', 
+                'Descoperit de Cont pe Card Business - Client Existent, cu expunere de peste 6 luni',
+                'Visa Business'] :
+         self.drop_down_3.items.append(art)
+      self.drop_down_3.items = self.drop_down_3.items
+      
+    if self.drop_down_2.selected_value == 'valoare mica cu FGCR':
+      self.drop_down_3.items = []
+      for art in ['Activitate curenta agricultura 500 mii-FGCR', 
+                'Investitii in agricultura 500 mii-FGCR',
+                'Activitate curenta si investitii in agricultura 500 mii-FGCR'] :
+          self.drop_down_3.items.append(art)
+      self.drop_down_3.items = self.drop_down_3.items  
+    if self.drop_down_2.selected_value == 'OUG 43':
+      self.drop_down_3.items = []
+      for art in ['Credit pentru finantarea activitatii curente OUG 43/2013', 
+                'Credit pentru finantarea investitiilor in domeniul agricol OUG 43/2013',
+                'Credit pentru achizitia terenurilor cu destinatie agricola OUG 43/2013'] :
+          self.drop_down_3.items.append(art)
+      self.drop_down_3.items = self.drop_down_3.items     
+      
+    if self.drop_down_2.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)                         
+    pass
+
+  def drop_down_3_change(self, **event_args):
+    if self.drop_down_3.selected_value:
+        anvil.server.call("sp1", self.ups(), p1) 
+    pass
+
+  def drop_down_5_change(self, **event_args):
+    if self.drop_down_5.selected_value:
+        anvil.server.call("sp1", self.ups(), p1) 
+    pass
+
+  def text_box_9_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1) 
+    pass
+
+  def text_box_10_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
+  def text_box_10_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_area_1_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_area_2_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+  def con_drop3(self):
+    self.drop_down_3.items = []
+    for art in [' ', 'Linie de Credit - acordare/suplimentare', 
+                'Linie de Credit - acordare/suplimentare',
+                'Linie de Credit - prelungire',
+                'Linie de Credit - suplimentare 10%',
+                'Credit pentru finantarea activitatii curente',
+                'Credit pentru achitarea datoriilor la buget',
+                'Credit ipotecar pentru investitii acordat PJ',
+                'Credit de investitii',
+                'Credit de investitii pentru achizia de teren pentru productia agricola',
+                'Descoperit de Cont pe Card Business - Client Nou, cu expunere sub 6 luni', 
+                'Descoperit de Cont pe Card Business - Client Existent, cu expunere de peste 6 luni',
+                'Visa Business',
+                'Activitate curenta agricultura 500 mii-FGCR', 
+                'Investitii in agricultura 500 mii-FGCR',
+                'Activitate curenta si investitii in agricultura 500 mii-FGCR' ,
+                'Credit pentru finantarea activitatii curente OUG 43/2013', 
+                'Credit pentru finantarea investitiilor in domeniul agricol OUG 43/2013',
+                'Credit pentru achizitia terenurilor cu destinatie agricola OUG 43/2013']:
+  
+          self.drop_down_3.items.append(art)
+    self.drop_down_3.items = self.drop_down_3.items
+
+  def text_box_2_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_box_3_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_box_5_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_box_6_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_box_7_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_box_8_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_box_11_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_7_change(self, **event_args):
+    if self.drop_down_7.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_box_4_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_6_change(self, **event_args):
+    if self.drop_down_6.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_9_change(self, **event_args):
+    if self.drop_down_9.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_10_change(self, **event_args):
+    if self.drop_down_10.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_11_change(self, **event_args):
+    if self.drop_down_11.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_12_change(self, **event_args):
+    if self.drop_down_12.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_13_change(self, **event_args):
+    if self.drop_down_13.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_14_change(self, **event_args):
+    if self.drop_down_14.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_15_change(self, **event_args):
+    if self.drop_down_15.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_4_change(self, **event_args):
+    if self.drop_down_4.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  
   def text_box_8_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
 
-  def drop_down_8_change(self, **event_args):
-    """This method is called when an item is selected"""
+  
+
+  def text_area_3_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
     pass
+
+  def button_8_click(self, **event_args):
+    open_form('init')
+    pass
+
+  def button_9_click(self, **event_args):
+    open_form('init.ver')
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,720 @@
+components:
+- type: ColumnPanel
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"TGDZPV":10,"PSVEKC":40,"CXVFFV":15,"HVLDRW":27}',
+    spacing_below: none, background: 'theme:Primary 500'}
+  name: column_panel_1
+  layout_properties: {grid_position: 'ODMYHI,PBECRY', full_width_row: true}
+  components:
+  - type: Button
+    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 25, font: '',
+      spacing_above: none, icon_align: left, spacing_below: none, italic: false, background: '',
+      bold: false, underline: false, icon: 'fa:home'}
+    name: button_1
+    layout_properties: {grid_position: 'XAPZOZ,TGDZPV', full_width_row: true}
+    event_bindings: {click: button_1_click}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 25, font: '',
+      spacing_above: none, icon_align: left, spacing_below: none, italic: false, background: '',
+      bold: false, underline: false, icon: 'fa:fast-backward'}
+    name: button_3
+    layout_properties: {grid_position: 'XAPZOZ,CXVFFV', full_width_row: true}
+    event_bindings: {click: button_3_click}
+  - type: Label
+    properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Verificari, font_size: 24, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
+        500', bold: false, underline: false, icon: ''}
+    name: headline_1
+    layout_properties: {grid_position: 'XAPZOZ,PSVEKC', full_width_row: true}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 25, font: '',
+      spacing_above: none, icon_align: left, spacing_below: none, italic: false, background: '',
+      bold: false, underline: false, icon: 'fa:fast-forward'}
+    name: button_2
+    layout_properties: {grid_position: 'XAPZOZ,HVLDRW', full_width_row: true}
+    event_bindings: {click: button_2_click}
+- type: XYPanel
+  properties: {role: null, width: 1216, align: left, height: 424, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: xy_panel_2
+  layout_properties: {grid_position: 'TLICDL,XZEGEN', full_width_row: true}
+  components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: ACTIVE IMOBILIZATE - TOTAL, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
+    name: label_24
+    layout_properties: {x: 10, y: 10, width: 210}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'ACTIVE CIRCULANTE - TOTAL, din care:', font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
+    name: label_25
+    layout_properties: {x: 10, y: 27, width: 272}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Casa şi conturi la bănci, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_28
+    layout_properties: {x: 123, y: 73, width: 152}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Creante, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_27
+    layout_properties: {x: 123, y: 56, width: 59}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Stocuri, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_26
+    layout_properties: {x: 123, y: 41, width: 53}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: CHELTUIELI IN AVANS, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_29
+    layout_properties: {x: 10, y: 87, width: 160}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_42
+    layout_properties: {x: 304, y: 10, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_43
+    layout_properties: {x: 304, y: 27, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_44
+    layout_properties: {x: 304, y: 43, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_45
+    layout_properties: {x: 304, y: 56, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_46
+    layout_properties: {x: 304, y: 73, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_47
+    layout_properties: {x: 304, y: 87, width: 106}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Profit/Pierdere net, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_39
+    layout_properties: {x: 138, y: 319, width: 144}
+  - type: Label
+    properties: {text: CHELTUIELI TOTALE}
+    name: label_38
+    layout_properties: {x: 137, y: 291, width: 145}
+  - type: Label
+    properties: {text: VENITURI TOTALE}
+    name: label_37
+    layout_properties: {x: 137, y: 273, width: 124}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Cifra de afaceri neta, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_36
+    layout_properties: {x: 137, y: 245, width: 151}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Patrimoniul regiei, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_35
+    layout_properties: {x: 60, y: 218, width: 160}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Capital subscris varsat, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_34
+    layout_properties: {x: 60, y: 202, width: 160}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'CAPITALURI - TOTAL, din care:', font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
+    name: label_33
+    layout_properties: {x: 10, y: 181, width: 230}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: PROVIZIOANE, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_32
+    layout_properties: {x: 10, y: 156, width: 106}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: VENITURI IN AVANS, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_31
+    layout_properties: {x: 10, y: 133, width: 160}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_50
+    layout_properties: {x: 304, y: 153, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_51
+    layout_properties: {x: 304, y: 181, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_52
+    layout_properties: {x: 304, y: 199, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_53
+    layout_properties: {x: 304, y: 218, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_54
+    layout_properties: {x: 304, y: 245, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_55
+    layout_properties: {x: 304, y: 273, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_56
+    layout_properties: {x: 304, y: 291, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_57
+    layout_properties: {x: 304, y: 319, width: 106}
+  - type: Label
+    properties: {text: Numar mediu de salariati}
+    name: label_58
+    layout_properties: {x: 115, y: 349, width: 160}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_59
+    layout_properties: {x: 304, y: 349, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_49
+    layout_properties: {x: 284, y: 125, width: 124}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_48
+    layout_properties: {x: 292, y: 110, width: 116}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: DATORII, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_30
+    layout_properties: {x: 10, y: 110, width: 160}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_63
+    layout_properties: {x: 443, y: 27, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_64
+    layout_properties: {x: 443, y: 43, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_71
+    layout_properties: {x: 443, y: 181, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_65
+    layout_properties: {x: 443, y: 56, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_66
+    layout_properties: {x: 443, y: 73, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_67
+    layout_properties: {x: 443, y: 87, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_68
+    layout_properties: {x: 443, y: 110, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_69
+    layout_properties: {x: 443, y: 125, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_70
+    layout_properties: {x: 443, y: 153, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_72
+    layout_properties: {x: 443, y: 202, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_73
+    layout_properties: {x: 443, y: 218, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_75
+    layout_properties: {x: 443, y: 245, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_74
+    layout_properties: {x: 443, y: 273, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_76
+    layout_properties: {x: 443, y: 291, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_77
+    layout_properties: {x: 443, y: 319, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_78
+    layout_properties: {x: 456, y: 349, width: 80}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_62
+    layout_properties: {x: 443, y: 10, width: 93}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: true,
+      icon: ''}
+    name: label_41
+    layout_properties: {x: 304, y: -5, width: 106}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: true,
+      icon: ''}
+    name: label_61
+    layout_properties: {x: 466, y: -5, width: 70}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:refresh'}
+    name: button_7
+    layout_properties: {x: 7, y: 56, width: 43}
+    event_bindings: {click: button_7_click}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:refresh'}
+    name: button_4
+    layout_properties: {x: 570, y: 10, width: 38}
+    event_bindings: {click: button_4_click}
+  - type: Label
+    properties: {text: 'Data '}
+    name: label_22
+    layout_properties: {x: 573, y: 56, width: 35}
+  - type: Label
+    properties: {}
+    name: label_23
+    layout_properties: {x: 633, y: 56, width: 80}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: CUI, font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_4
+    layout_properties: {x: 573, y: 89, width: 35}
+  - type: Label
+    properties: {}
+    name: label_12
+    layout_properties: {x: 633, y: 87, width: 78}
+    data_bindings: []
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: TVA, font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_5
+    layout_properties: {x: 573, y: 119, width: 59}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Data TVA, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_6
+    layout_properties: {x: 573, y: 153, width: 73}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: E_factura, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {x: 570, y: 191, width: 73}
+  - type: Label
+    properties: {}
+    name: label_15
+    layout_properties: {x: 653, y: 191, width: 78}
+    data_bindings: []
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Inactiv Anaf, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {x: 730, y: 56, width: 73}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: TVA la incasare, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_8
+    layout_properties: {x: 730, y: 89, width: 107}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Data TVA la incasare, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_9
+    layout_properties: {x: 730, y: 133, width: 138}
+  - type: Label
+    properties: {}
+    name: label_17
+    layout_properties: {x: 878, y: 89, width: 83}
+    data_bindings: []
+  - type: Label
+    properties: {}
+    name: label_16
+    layout_properties: {x: 877, y: 56, width: 84}
+    data_bindings: []
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Split TVA, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_10
+    layout_properties: {x: 730, y: 165, width: 72}
+  - type: Label
+    properties: {}
+    name: label_19
+    layout_properties: {x: 876, y: 165, width: 83}
+    data_bindings: []
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Data split TVA, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_11
+    layout_properties: {x: 730, y: 191, width: 97}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:refresh'}
+    name: button_8
+    layout_properties: {x: 564, y: 227, width: 59}
+    event_bindings: {click: button_8_click}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: BS, font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_1
+    layout_properties: {x: 573, y: 264, width: 59}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: BSS, font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_40
+    layout_properties: {x: 571, y: 291, width: 160}
+  - type: Label
+    properties: {}
+    name: label_81
+    layout_properties: {x: 635, y: 319, width: 67}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: BASS, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_82
+    layout_properties: {x: 568, y: 349, width: 55}
+  - type: Label
+    properties: {}
+    name: label_83
+    layout_properties: {x: 635, y: 349, width: 67}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: BAS, font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_60
+    layout_properties: {x: 571, y: 319, width: 52}
+  - type: Label
+    properties: {}
+    name: label_80
+    layout_properties: {x: 635, y: 291, width: 70}
+  - type: Label
+    properties: {}
+    name: label_79
+    layout_properties: {x: 636, y: 264, width: 69}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Restante buget, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_88
+    layout_properties: {x: 633, y: 234, width: 108}
+  - type: Label
+    properties: {}
+    name: label_21
+    layout_properties: {x: 721, y: 10, width: 327}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Status TVA:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_7
+    layout_properties: {x: 633, y: 7, width: 51}
+  - type: Label
+    properties: {text: CUI}
+    name: label_86
+    layout_properties: {x: 751, y: 237, width: 34}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: TOTAL, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_84
+    layout_properties: {x: 732, y: 273, width: 53}
+  - type: Label
+    properties: {text: OBS.}
+    name: label_85
+    layout_properties: {x: 732, y: 310, width: 56}
+  - type: Label
+    properties: {}
+    name: label_87
+    layout_properties: {x: 798, y: 237, width: 118}
+  - type: Label
+    properties: {}
+    name: label_13
+    layout_properties: {x: 633, y: 119, width: 78}
+    data_bindings: []
+  - type: Label
+    properties: {}
+    name: label_14
+    layout_properties: {x: 642, y: 153, width: 78}
+    data_bindings:
+    - {property: text, code: 'self.item[''data_inceput_ScpTVA'']'}
+  - type: Label
+    properties: {}
+    name: label_18
+    layout_properties: {x: 876, y: 135, width: 85}
+    data_bindings: []
+  - type: Label
+    properties: {}
+    name: label_20
+    layout_properties: {x: 876, y: 191, width: 83}
+    data_bindings: []
+  - type: Label
+    properties: {}
+    name: label_89
+    layout_properties: {x: 798, y: 273, width: 102}
+  - type: Label
+    properties: {}
+    name: label_90
+    layout_properties: {x: 795, y: 310, width: 225}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: LITIGII, font_size: 16, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_92
+    layout_properties: {x: 7, y: 389.140625, width: 71}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Denumire, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_91
+    layout_properties: {x: 123, y: 384, width: 87}
+  - type: Button
+    properties: {text: button_5}
+    name: button_5
+    layout_properties: {x: 7, y: 289, width: 100}
+    event_bindings: {click: button_5_click}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:refresh'}
+    name: button_9
+    layout_properties: {x: 64, y: 389.147705078125, width: 52}
+    event_bindings: {click: button_9_click}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: 14, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_1
+    layout_properties: {x: 200.99998474121094, y: 395, width: 183}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: calitate, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_93
+    layout_properties: {x: 397.9829406738281, y: 389.1335144042969, width: 48.0113525390625}
+  - type: DropDown
+    properties: {}
+    name: drop_down_1
+    layout_properties: {x: 457.99713134765625, y: 399, width: 100}
+    event_bindings: {change: drop_down_1_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Obiect, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_94
+    layout_properties: {x: 572.9971313476562, y: 392.13067626953125, width: 58.991455078125}
+  - type: DropDown
+    properties: {}
+    name: drop_down_2
+    layout_properties: {x: 641.9885864257812, y: 393.13067626953125, width: 195.02557373046875}
+    event_bindings: {change: drop_down_2_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Data verific., font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_95
+    layout_properties: {x: 740, y: 356, width: 114}
+  - type: Label
+    properties: {}
+    name: label_96
+    layout_properties: {x: 856, y: 353, width: 157}
+- type: RepeatingPanel
+  properties: {role: scrol, tooltip: '', border: '', foreground: '', items: null,
+    visible: true, spacing_above: small, spacing_below: small, item_template: init.verific.ItemTemplate1,
+    background: ''}
+  name: repeating_panel_1
+  layout_properties:
+    col_widths: {}
+    grid_position: JSPDEL,PKPVPS
+    full_width_row: true
+container:
+  type: ColumnPanel
+  properties: {role: null, tooltip: '', border: '', foreground: 'theme:Black', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"PBECRY":70}',
+    spacing_below: small, background: ''}

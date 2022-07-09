@@ -113,7 +113,7 @@ components:
     name: text_box_1
     layout_properties: {grid_position: 'PYTDNS,JJIGCY'}
     data_bindings:
-    - {property: text, code: 'self.item[''den'']', writeback: true}
+    - {property: text, code: 'self.item[''gen''][''name'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: false, text: Solicitare, font_size: null, font: '', spacing_above: small,
@@ -129,7 +129,7 @@ components:
     name: text_box_2
     layout_properties: {grid_position: 'ADLXSI,TCJKMK'}
     data_bindings:
-    - {property: text, code: 'self.item[''facilit'']', writeback: true}
+    - {property: text, code: 'self.item[''facilitate''][''denumit'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: false, text: User, font_size: null, font: '', spacing_above: small,

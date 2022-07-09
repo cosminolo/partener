@@ -35,16 +35,13 @@ class init(initTemplate):
           self.login_status.text = us
           My_globals.us =us
           anvil.server.call("add_user", us)
-
-  
-
   def link_3_click(self, **event_args):
     """This method is called when the link is clicked"""
     if self.login_status.text != "": 
        us = self.login_status.text
        anvil.server.call("add_user", us)
        anvil.server.call("app_new", self.login_status.text)
-       open_form("init.start")  
+       open_form("init.st")  
     else:
         anvil.users.login_with_form()
         self.ups()
@@ -71,7 +68,7 @@ class init(initTemplate):
   def link_4_click(self, **event_args):
     self.visib(2)
     if self.login_status.text != "":             
-        open_form("init.start")        
+        open_form("init.st")        
     else:
         anvil.users.login_with_form()
         self.ups()
@@ -85,8 +82,8 @@ class init(initTemplate):
     us = self.login_status.text
     self.text_box_3.text = us
     self.text_box_4.text =datetime.now()
-    js = anvil.server.call("prel_js_gol", us, 2)    
-    self.item = js
+    p1 = anvil.server.call("get_p1", us)    
+    self.item = p1
     c = confirm("Salvez in arhiva ?")    
     if c == False :
        cs = confirm("Sterg datele introduse ?")
@@ -111,8 +108,6 @@ class init(initTemplate):
       self.text_box_2.visible = True
       self.text_box_3.visible = True
       self.text_box_4.visible = True
-    
-      
     else:
       self.label_2.visible = False
       self.label_3.visible = False
@@ -121,10 +116,8 @@ class init(initTemplate):
       self.text_box_1.visible = False
       self.text_box_2.visible = False
       self.text_box_3.visible = False
-      self.text_box_4.visible = False
-    
+      self.text_box_4.visible = False    
     pass
-
   def link_5_click(self, **event_args):
     anvil.users.login_with_form()
     self.ups()
@@ -170,10 +163,8 @@ class init(initTemplate):
             self.txb[k].role = "form-control"
             self.txb[k].tag.name = k                           
             self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=3)
-          
           if i ==4 :   
             self.txb[k] = RadioButton(background="#fff", width=15) 
-            #self.txb[k] = RadioButton()               
             self.txb[k].tag.name = k                          
             self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=1)
             self.txb[k].set_event_handler('clicked', self.clicked)              
@@ -189,7 +180,6 @@ class init(initTemplate):
          except:
           pass
        pass 
-                           
   def clicked (self, sender,**event_args):
       S = sender.value
       pl = str(sender.tag.name)                   
@@ -211,14 +201,6 @@ class init(initTemplate):
           anvil.server.call("preia_inlucru",us, soc, facilit, dat)
           self.link_4_click()                      
   pass                       
-    #for txb in self.grid_panel_1.get_components():    
-     # if type(txb) is RadioButton:
-     #      if txb.value == True:
-    #           print("c")  
-    #       else:
-    #          print(txb.tag.name)
-    
-
   def link_2_click(self, **event_args):
     self.visib(2)
     self.grid_panel_1.clear()                              
