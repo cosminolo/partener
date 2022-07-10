@@ -18,6 +18,7 @@ class verific(verificTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties) 
+    
     global p1    
     p1 = anvil.server.call("get_p1", self.ups())
     global cui
@@ -32,6 +33,7 @@ class verific(verificTemplate):
     except:
       pass
     self.get_bil("a")
+    
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('init.crit')    
@@ -184,15 +186,13 @@ class verific(verificTemplate):
     self.text_box_1.text = self.item[ 'denumire' ]
     pass
   def button_6_click(self, **event_args):
-    """This method is called when the button is clicked"""
-   
-
-    # Take a payment of £9.99
-    c= stripe.checkout.charge(amount=1000,
-                           currency="RON",
-                           title="verificare",
-                           description="info tva")
-    print (c["result"])
+    nr = int(self.label_97.text)
+    li = []
+    if nr > 0:
+      nr = int(self.label_97.text)-1
+      li.append(p1['litigii'][nr])
+      self.repeating_panel_1.items = li
+    self.label_97.text = str(nr)
     pass
 
   def button_4_click(self, **event_args):
@@ -258,50 +258,72 @@ class verific(verificTemplate):
   def button_9_click(self, **event_args): 
     self.ref_lit("b")
     pass
+  def ch_pan(self, js, mx):
+    self.repeating_panel_1.items = js
+    self.label_97.text = "0"
+    self.label_99.text = mx
+    
   def ref_lit(self, tip):    
       self.drop_down_1.selected_value = ""
       self.drop_down_2.selected_value = ""
       den = self.text_box_1.text
+      lit=[]
       if tip == "b":
         li = json.loads(anvil.server.call("litigii", den))
         p1['litigii'] = li
         anvil.server.call("sp1", self.ups(), p1)
-      lit = p1['litigii']
-      self.repeating_panel_1.items = lit
+      lit.append(p1['litigii'][0])
+      mx  = str(len(p1['litigii'])-1)
+      self.ch_pan(lit, mx)      
       cal = []
       calitate =[""]
       ob = []
       obiect=[""]
-      if len(lit) > 0:
-        for i in range(0, len(lit)):
-          cal.append(lit[i]['calitate'])
+      if len(p1['litigii']) > 0:
+        for i in range(0, len(p1['litigii'])):
+          cal.append(p1['litigii'][i]['calitate'])
           [calitate.append(x) for x in cal if x not in calitate]
-          ob.append(lit[i]['obiect'])
+          ob.append(p1['litigii'][i]['obiect'])
           [obiect.append(x) for x in ob if x not in obiect]
         self.drop_down_1.items = calitate
         self.drop_down_2.items = obiect    
-        self.repeating_panel_1.items = lit     
+        #self.repeating_panel_1.items = lit     
       pass
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
     if self.drop_down_1.selected_value != "":
       filt = []
-      s1 = self.repeating_panel_1.items
-      for i in range(0, len(s1)):
+      s1 = p1['litigii']
+      for i in range(0, len(p1['litigii'])):
         if s1[i]['calitate'] == self.drop_down_1.selected_value.strip():
           f = s1[i]
           filt.append(f)
-      self.repeating_panel_1.items = filt    
+      mx  = str(len(filt)-1)    
+      self.ch_pan(filt, mx)   
     pass
   def drop_down_2_change(self, **event_args):
     """This method is called when an item is selected"""
     if self.drop_down_2.selected_value != "":
       filt = []
-      s1 = self.repeating_panel_1.items
-      for i in range(0, len(s1)):
+      s1 = p1['litigii']
+      for i in range(0, len(p1['litigii'])):
         if s1[i]['obiect'] == self.drop_down_2.selected_value.strip():
           f = s1[i]
           filt.append(f)
-      self.repeating_panel_1.items = filt   
+      mx  = str(len(filt)-1)    
+      self.ch_pan(filt, mx)  
     pass
+
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    mx = int(self.label_99.text)
+    li = []
+    nr = int(self.label_97.text)
+    nr = nr +1 
+    if nr < mx or nr == mx:
+      li.append(p1['litigii'][nr])
+      self.repeating_panel_1.items = li
+      self.label_97.text = str(nr)
+    pass
+
   
