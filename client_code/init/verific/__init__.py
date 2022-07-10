@@ -263,10 +263,10 @@ class verific(verificTemplate):
       self.drop_down_2.selected_value = ""
       den = self.text_box_1.text
       if tip == "b":
-        li = anvil.server.call("litigii", den)
+        li = json.loads(anvil.server.call("litigii", den))
         p1['litigii'] = li
         anvil.server.call("sp1", self.ups(), p1)
-      lit = json.loads(p1['litigii'])
+      lit = p1['litigii']
       self.repeating_panel_1.items = lit
       cal = []
       calitate =[""]
@@ -280,20 +280,7 @@ class verific(verificTemplate):
           [obiect.append(x) for x in ob if x not in obiect]
         self.drop_down_1.items = calitate
         self.drop_down_2.items = obiect    
-        self.repeating_panel_1.items = lit
-      else:
-        if tip == "b": 
-         self.repeating_panel_1.items = []
-         if lit[0]["denumire"] == "nu inregistreaza":
-          n = Notification("",
-             title=lit[0]["denumire"]).show()
-          time.sleep(1)
-          n.hide()
-         else:
-          n = Notification("",
-             title=lit[0]["denumire"]).show()
-          time.sleep(1)
-          n.hide() 
+        self.repeating_panel_1.items = lit     
       pass
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
