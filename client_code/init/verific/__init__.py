@@ -31,6 +31,7 @@ class verific(verificTemplate):
         self.ref_lit("a")
     except:
       pass
+    self.get_bil("a")
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('init.crit')    
@@ -199,15 +200,20 @@ class verific(verificTemplate):
     pass
 
   def button_7_click(self, **event_args):
-    self.clear_bilant()
-    an = str(int(date.today().year))   
-    c = json.loads(anvil.server.call("is_2", an, cui))
-    #anvil.server.call("bil_js", self.ups(), c, 1 ) 
-    
-    ann = str(int(c['an'])-1)      
-    d = json.loads(anvil.server.call("is_2", ann, cui))
-    #anvil.server.call("bil_js", self.ups(), d, 2 )        
-    self.bilant(d, c)
+    self.get_bil("b")
+    pass
+  def get_bil(self, tip):
+    if tip == "b":
+      self.clear_bilant()
+      an = str(int(date.today().year))  
+      p1['bil'][str(0)] = json.loads(anvil.server.call("is_2", an, cui))
+      ann = str(int(p1['bil']['0']['an'])-1)      
+      p1['bil'][str(1)] = json.loads(anvil.server.call("is_2", ann, cui))
+      anvil.server.call("sp1", self.ups(), p1)
+    try:  
+      self.bilant(p1['bil'][str(1)], p1['bil'][str(0)])
+    except:
+      pass
     pass
 
   def button_8_click(self, **event_args):
