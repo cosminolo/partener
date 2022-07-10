@@ -290,28 +290,70 @@ class verific(verificTemplate):
         #self.repeating_panel_1.items = lit     
       pass
   def drop_down_1_change(self, **event_args):
-    """This method is called when an item is selected"""
-    if self.drop_down_1.selected_value != "":
-      filt = []
+    filt = []
+    if self.drop_down_1.selected_value != "" and self.drop_down_2.selected_value == "":
       s1 = p1['litigii']
       for i in range(0, len(p1['litigii'])):
         if s1[i]['calitate'] == self.drop_down_1.selected_value.strip():
           f = s1[i]
           filt.append(f)
-      mx  = str(len(filt)-1)    
-      self.ch_pan(filt, mx)   
-    pass
-  def drop_down_2_change(self, **event_args):
-    """This method is called when an item is selected"""
-    if self.drop_down_2.selected_value != "":
-      filt = []
+      mx = "0"
+      self.ch_pan(filt, mx)    
+    if self.drop_down_1.selected_value.strip() == "" and self.drop_down_2.selected_value.strip() == "":  
+      filt.append(p1['litigii'][0])
+      mx = str(len(p1['litigii'])-1) 
+      self.ch_pan(filt, mx) 
+    if self.drop_down_1.selected_value != "" and self.drop_down_2.selected_value != "":  
+      s1 = p1['litigii']
+      for i in range(0, len(p1['litigii'])):
+        if s1[i]['calitate'] == self.drop_down_1.selected_value.strip() and s1[i]['obiect'] == self.drop_down_2.selected_value.strip():
+          f = s1[i]
+          filt.append(f)
+      mx = "0"
+      self.ch_pan(filt, mx)
+    if self.drop_down_2.selected_value != "" and self.drop_down_1.selected_value == "":
       s1 = p1['litigii']
       for i in range(0, len(p1['litigii'])):
         if s1[i]['obiect'] == self.drop_down_2.selected_value.strip():
           f = s1[i]
           filt.append(f)
-      mx  = str(len(filt)-1)    
+      #mx  = str(len(filt)-1)   
+      mx = "0"
+      self.ch_pan(filt, mx) 
+      
+      
+    pass
+  def drop_down_2_change(self, **event_args):
+    filt = []    
+    if self.drop_down_2.selected_value != "" and self.drop_down_1.selected_value == "":
+      s1 = p1['litigii']
+      for i in range(0, len(p1['litigii'])):
+        if s1[i]['obiect'] == self.drop_down_2.selected_value.strip():
+          f = s1[i]
+          filt.append(f)
+      #mx  = str(len(filt)-1)   
+      mx = "0"
+      self.ch_pan(filt, mx)
+    if self.drop_down_2.selected_value.strip() == "" and self.drop_down_1.selected_value.strip() == "":  
+      filt.append(p1['litigii'][0])
+      mx = str(len(p1['litigii'])-1) 
+      self.ch_pan(filt, mx)
+    if self.drop_down_1.selected_value != "" and self.drop_down_2.selected_value != "":  
+      s1 = p1['litigii']
+      for i in range(0, len(p1['litigii'])):
+        if s1[i]['calitate'] == self.drop_down_1.selected_value.strip() and s1[i]['obiect'] == self.drop_down_2.selected_value.strip():
+          f = s1[i]
+          filt.append(f)
+      mx = "0"
       self.ch_pan(filt, mx)  
+    if self.drop_down_1.selected_value != "" and self.drop_down_2.selected_value == "":
+      s1 = p1['litigii']
+      for i in range(0, len(p1['litigii'])):
+        if s1[i]['calitate'] == self.drop_down_1.selected_value.strip():
+          f = s1[i]
+          filt.append(f)
+      mx = "0"
+      self.ch_pan(filt, mx)   
     pass
 
   def button_5_click(self, **event_args):

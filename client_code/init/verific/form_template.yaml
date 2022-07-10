@@ -689,7 +689,7 @@ components:
     layout_properties: {x: 363, y: 431, width: 59}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: calitate, font_size: null, font: '', spacing_above: small,
+      visible: true, text: Calitate, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_93
