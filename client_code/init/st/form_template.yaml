@@ -357,7 +357,7 @@ components:
     - type: TextBox
       properties: {}
       name: text_box_11
-      layout_properties: {x: 342, y: 89, width: 160}
+      layout_properties: {x: 342, y: 89, width: 129.34658813476562}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''reprez'']', writeback: true}
       event_bindings: {lost_focus: text_box_11_lost_focus}
@@ -433,6 +433,17 @@ components:
         underline: false, icon: ''}
       name: label_7
       layout_properties: {x: 798.25, y: 37, width: 57}
+    - type: TextBox
+      properties: {}
+      name: text_box_12
+      layout_properties: {x: 567.8522720336914, y: 88.991455078125, width: 160}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'in calitate de ', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_24
+      layout_properties: {x: 481.3356245727539, y: 76.64769999999999, width: 66.9602}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Administratori, font_size: null, font: '', spacing_above: small,
