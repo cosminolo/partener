@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":37,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45}'}
+  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -186,23 +186,59 @@ components:
     layout_properties: {grid_position: 'UMQQXA,RMLODV', full_width_row: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Garantii, font_size: null, font: '', spacing_above: small,
+      visible: true, text: Gratie, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_16
     layout_properties: {grid_position: 'UMQQXA,GRTMUF', full_width_row: true}
-  - type: TextArea
+  - type: TextBox
     properties: {}
-    name: text_area_1
-    layout_properties: {grid_position: 'UMQQXA,SAONZU OWJQSV,DKSJSS', full_width_row: true}
-    data_bindings:
-    - {property: text, code: 'self.item[''facilitate''][''garantii'']', writeback: true}
-    event_bindings: {lost_focus: text_area_1_lost_focus}
+    name: text_box_13
+    layout_properties: {grid_position: 'UMQQXA,SAONZU', full_width_row: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: luni, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_26
+    layout_properties: {grid_position: 'UMQQXA,FXQRSK', full_width_row: true}
   - type: Button
     properties: {text: button_1}
     name: button_1
-    layout_properties: {grid_position: 'UMQQXA,SAONZU ATYLYL,GHSVMO'}
+    layout_properties: {grid_position: 'WBLEAH,MOWKHB'}
     event_bindings: {click: button_1_click}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Mod rambursare, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_25
+    layout_properties: {grid_position: 'VGXVAW,YSVVPM'}
+  - type: TextArea
+    properties: {}
+    name: text_area_1
+    layout_properties: {grid_position: 'VGXVAW,TWMTHL', full_width_row: true}
+    data_bindings:
+    - {property: text, code: 'self.item[''facilitate''][''garantii'']', writeback: true}
+    event_bindings: {lost_focus: text_area_1_lost_focus}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Perioada de tragere, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_27
+    layout_properties: {grid_position: 'VGXVAW,BIHXNV'}
+  - type: TextBox
+    properties: {}
+    name: text_box_14
+    layout_properties: {grid_position: 'VGXVAW,ZFMFSU'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: luni, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_28
+    layout_properties: {grid_position: 'VGXVAW,LIGPYW'}
   - type: LinearPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: '', visible: true, role: null, tooltip: ''}
@@ -223,6 +259,18 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''facilitate''][''dest'']', writeback: true}
     event_bindings: {lost_focus: text_area_2_lost_focus}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Garantii, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_29
+    layout_properties: {grid_position: 'SAEEKP,EZXVOC'}
+  - type: GridPanel
+    properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
+      border: solid blue 2px, visible: true, role: null, tooltip: ''}
+    name: grid_panel_4
+    layout_properties: {grid_position: 'VRDXFP,PFBHNR'}
   - type: XYPanel
     properties: {role: null, width: 1221, align: center, height: 121, tooltip: '',
       border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
