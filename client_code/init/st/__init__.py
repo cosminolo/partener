@@ -588,6 +588,16 @@ class st(stTemplate):
     print (c["result"])
     pass
 
+  def text_area_2_change(self, **event_args):
+    """This method is called when the text in this text area is edited"""
+    pass
+
+  def text_area_1_change(self, **event_args):
+    """This method is called when the text in this text area is edited"""
+    pass
+
+
+
 
 
 
