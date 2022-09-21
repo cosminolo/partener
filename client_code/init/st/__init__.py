@@ -34,6 +34,13 @@ class st(stTemplate):
       self.grup(row, p1['grp'])      
     except:
       pass
+    try:
+      row = len(p1['garantii'])
+      self.gar(row, p1['garantii'])      
+    except:
+      pass
+    
+    
   def text_box_1_pressed_enter(self, **event_args):
    try: 
     grup = anvil.server.call("gr", self.text_box_1.text)    
@@ -595,6 +602,119 @@ class st(stTemplate):
   def text_area_1_change(self, **event_args):
     """This method is called when the text in this text area is edited"""
     pass
+                               
+  def gar(self, rows, ex):
+    self.grid_panel_4.clear()    
+    #tb = self.tb = {}   
+    i = 1
+    j = 0    
+    k=300                          
+    for j in range (2,rows+2): # rows
+      for i in range (1,5):
+        if i == 1:                      
+          k=300+j*10+i          
+          self.txb[k] = TextArea(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=280,
+                              align = "left",    
+                              foreground="#000",background="#fff"")
+          self.txb[k].role = "scroll"
+                                 
+          self.txb[k].tag.name = k                           
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=0, width_xs=6)
+          #self.txb[k].set_event_handler('lost_focus', self.ll_focus)
+        if i == 2:
+          k=300+j*10+i        
+          self.txb[k] = TextArea(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=80,
+                              align = "left",   
+                              foreground="#000",background="#fff"")
+          self.txb[k].role = "scroll"
+          self.txb[k].tag.name = k                           
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=6, width_xs=2)
+          #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                        
+        if i == 3:
+          k=300+j*10+i        
+          self.txb[k] = TextArea(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=90,
+                              align = "left",   
+                              foreground="#000",background="#fff"")
+          self.txb[k].role = "scroll"
+          self.txb[k].tag.name = k                           
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=8, width_xs=2)
+          #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
+        if i == 4:
+          k=300+j*10+i        
+          self.txb[k] = Button(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=10,                              
+                              align = "centre",  
+                              foreground="#000",background="#fff"")
+          self.txb[k].tag.name = k
+          self.txb[k].text = "X"
+          self.txb[k].role = "raised"                     
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=10, width_xs=1)
+          self.txb[k].set_event_handler('click', self.lll_focus)                        
+                                 
+    i=1
+    k=300+21    
+    for i in range(0,rows):
+      try:                              
+          self.txb[k].text = ex[i]["tip"]         
+          self.txb[k+1].text = ex[i]["prop"]
+          self.txb[k+2].text = ex[i]["data_a"]                       
+          k=k+10
+      except:
+          pass       
+    pass                            
+  def lll_focus(self, sender,**event_args):
+    tg = int(sender.tag.name)
+    self.txb[tg-1].text = ""
+    self.txb[tg-2].text = ""
+    self.txb[tg-3].text = ""                     
+    
+    pass                             
+
+  def button_10_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    g =  {"tip": " ", "prop": " ", "data_a": " "}
+    p1['garantii'].append(g)                               
+    row = len( p1['garantii'])                                 
+    self.gar(row,  p1['garantii'])                           
+    pass
+
+  def button_11_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    c =0
+    li =[]                           
+    for it in self.grid_panel_4.get_components():       
+       if type(it) == TextArea:
+          c = c+1                     
+          if it.text !="":
+              if c ==1:                 
+                tip = it.text
+              if c ==2:
+                 prop = it.text
+              if c == 3:
+                 data_a = it.text                               
+                 li.append({"tip": tip, "tara": prop, "data_a": data_a})
+                 tip = ""
+                 prop = "" 
+                 data_a = ""
+                 c = 0              
+    p1['garantii'] = li                             
+    anvil.server.call("sp1", self.ups(), p1)   
+    row = len(p1['garantii'])
+    self.gar(row, p1['garantii'])                             
+    pass
+
+
 
 
 
