@@ -656,9 +656,9 @@ components:
     name: grid_panel_2
     layout_properties: {grid_position: 'PVOGNV,JMZFVB', full_width_row: true}
   - type: XYPanel
-    properties: {role: null, width: null, align: center, height: 313, tooltip: '',
-      border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
-      background: ''}
+    properties: {role: null, width: null, align: center, height: 416.3636474609375,
+      tooltip: '', border: '', foreground: '', visible: true, spacing_above: small,
+      spacing_below: small, background: ''}
     name: xy_panel_2
     layout_properties: {grid_position: 'HUKXPW,XLFTOF', full_width_row: true}
     components:
@@ -940,11 +940,11 @@ components:
         y: 26.859375}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Alte informatii despre afacere, font_size: null, font: '',
+        visible: true, text: Scurta descriere a afacerii, font_size: null, font: '',
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: label_22
-      layout_properties: {x: 224.0625, y: 201, width: 203}
+      layout_properties: {x: 224.0624771118164, y: 200.9942626953125, width: 202.997}
     - type: TextArea
       properties: {height: 60.1875}
       name: text_area_3
@@ -984,6 +984,61 @@ components:
       data_bindings:
       - {property: selected_value, code: 'self.item[''sintez''][''nr_sal'']', writeback: true}
       event_bindings: {change: drop_down_4_change}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Date despre management si actionariat (inclusiv asociatii/actionarii
+          cu pondere semnificativa >10%, administratori, manageri)', font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_33
+      layout_properties: {x: 10, y: 259.1761474609375, width: 918}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Nume, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_34
+      layout_properties: {x: 19.0625, y: 282.6419677734375, width: 95.9375}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Stare civila, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_39
+      layout_properties: {x: 737.2755279541016, y: 288.6221923828125, width: 108.949}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Studii, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_37
+      layout_properties: {x: 420.5540084716797, y: 288.6221923828125, width: 83.9915}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Varsta, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_36
+      layout_properties: {x: 291.9943084716797, y: 282.6136474609375, width: 102.983}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Pozitie, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_35
+      layout_properties: {x: 172, y: 282.6278076171875, width: 72.9972}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Experienta relevanta, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_38
+      layout_properties: {x: 542.2187042236328, y: 282.6136474609375, width: 158.989}
+    - type: GridPanel
+      properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
+        border: solid blue 2px, visible: true, role: null, tooltip: ''}
+      name: grid_panel_5
+      layout_properties: {x: 14.034088134765625, y: 321.1363525390625, width: 805}
 - type: FlowPanel
   properties: {}
   name: navbar_links
