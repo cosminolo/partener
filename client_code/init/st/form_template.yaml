@@ -656,7 +656,7 @@ components:
     name: grid_panel_2
     layout_properties: {grid_position: 'PVOGNV,JMZFVB', full_width_row: true}
   - type: XYPanel
-    properties: {role: null, width: null, align: center, height: 416.3636474609375,
+    properties: {role: null, width: null, align: center, height: 266.3636474609375,
       tooltip: '', border: '', foreground: '', visible: true, spacing_above: small,
       spacing_below: small, background: ''}
     name: xy_panel_2
@@ -984,75 +984,129 @@ components:
       data_bindings:
       - {property: selected_value, code: 'self.item[''sintez''][''nr_sal'']', writeback: true}
       event_bindings: {change: drop_down_4_change}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Date despre management si actionariat (inclusiv asociatii/actionarii
-          cu pondere semnificativa >10%, administratori, manageri)', font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_33
-      layout_properties: {x: 10, y: 259.1761474609375, width: 797}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Nume, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_34
-      layout_properties: {x: 19.0625, y: 282.6419677734375, width: 95.9375}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Stare civila, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_39
-      layout_properties: {x: 737.2755279541016, y: 288.6221923828125, width: 108.949}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Studii, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_37
-      layout_properties: {x: 420.5540084716797, y: 288.6221923828125, width: 83.9915}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Varsta, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_36
-      layout_properties: {x: 291.9943084716797, y: 282.6136474609375, width: 102.983}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Pozitie, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_35
-      layout_properties: {x: 172, y: 282.6278076171875, width: 72.9972}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Experienta relevanta, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_38
-      layout_properties: {x: 542.2187042236328, y: 282.6136474609375, width: 158.989}
-    - type: GridPanel
-      properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
-        border: solid blue 2px, visible: true, role: null, tooltip: ''}
-      name: grid_panel_5
-      layout_properties: {x: 14.034088134765625, y: 321.1363525390625, width: 918.7243881225587}
-    - type: Button
-      properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-        foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: button_12
-      layout_properties: {x: 823.0113067626953, y: 266.633544921875, width: 53.227294921875}
-    - type: Button
-      properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-        foreground: '', visible: true, text: Save, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: button_13
-      layout_properties: {x: 884.9289703369141, y: 266.633544921875, width: 74.9915}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Date despre management si actionariat (inclusiv asociatii/actionarii
+        cu pondere semnificativa >10%, administratori, manageri)', font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_33
+    layout_properties: {x: 10, y: 259.1761474609375, width: 797, grid_position: 'IUDIBQ,FJJJDU'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Nume, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_34
+    layout_properties: {x: 19.0625, y: 282.6419677734375, width: 95.9375, grid_position: 'MUUGYU,TESNHL'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Pozitie, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_35
+    layout_properties: {x: 172, y: 282.6278076171875, width: 72.9972, grid_position: 'MUUGYU,YPZEKJ'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Varsta, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_36
+    layout_properties: {x: 291.9943084716797, y: 282.6136474609375, width: 102.983,
+      grid_position: 'MUUGYU,XAXKJE'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Studii, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_37
+    layout_properties: {x: 420.5540084716797, y: 288.6221923828125, width: 83.9915,
+      grid_position: 'MUUGYU,TMTAPK'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Experienta relevanta, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_38
+    layout_properties: {x: 542.2187042236328, y: 282.6136474609375, width: 158.989,
+      grid_position: 'MUUGYU,WDXQCC'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Stare civila, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_39
+    layout_properties: {x: 737.2755279541016, y: 288.6221923828125, width: 108.949,
+      grid_position: 'MUUGYU,LFBLFF'}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_12
+    layout_properties: {x: 823.0113067626953, y: 266.633544921875, width: 53.227294921875,
+      grid_position: 'MUUGYU,XUVQLS'}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Save, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_13
+    layout_properties: {x: 884.9289703369141, y: 266.633544921875, width: 74.9915,
+      grid_position: 'MUUGYU,BIENJL'}
+  - type: GridPanel
+    properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
+      border: solid blue 2px, visible: true, role: null, tooltip: ''}
+    name: grid_panel_5
+    layout_properties: {x: 14.034088134765625, y: 321.1363525390625, width: 918.7243881225587,
+      grid_position: 'TVSWPJ,CYDRZO'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Expunere fata de banci, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_40
+    layout_properties: {grid_position: 'YHMHSN,JBWAGA'}
+  - type: Label
+    properties: {text: Nr.}
+    name: label_41
+    layout_properties: {grid_position: 'SRCDVI,FTMCMP'}
+  - type: Label
+    properties: {}
+    name: label_42
+    layout_properties: {grid_position: 'SRCDVI,DMOTNN'}
+  - type: Label
+    properties: {}
+    name: label_43
+    layout_properties: {grid_position: 'SRCDVI,EWTWSY'}
+  - type: Label
+    properties: {}
+    name: label_44
+    layout_properties: {grid_position: 'SRCDVI,OPYJIY'}
+  - type: Label
+    properties: {}
+    name: label_45
+    layout_properties: {grid_position: 'SRCDVI,QQGWHR'}
+  - type: Label
+    properties: {}
+    name: label_46
+    layout_properties: {grid_position: 'SRCDVI,ODEWTG'}
+  - type: Label
+    properties: {}
+    name: label_47
+    layout_properties: {grid_position: 'SRCDVI,NAJHVN'}
+  - type: Label
+    properties: {}
+    name: label_48
+    layout_properties: {grid_position: 'SRCDVI,VEXTJJ'}
+  - type: Label
+    properties: {}
+    name: label_49
+    layout_properties: {grid_position: 'SRCDVI,RIKSJR'}
+  - type: Label
+    properties: {}
+    name: label_50
+    layout_properties: {grid_position: 'SRCDVI,GPPPHW'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
