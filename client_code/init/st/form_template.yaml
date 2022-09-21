@@ -939,12 +939,9 @@ components:
       layout_properties: {row: IOVAMB, width_xs: 2, col_xs: 0, width: 161.125, x: 19.0625,
         y: 26.859375}
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Scurta descriere a afacerii, font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
+      properties: {text: Scurta descriere a afacerii (inclusiv relatia cu grupul)}
       name: label_22
-      layout_properties: {x: 224.0624771118164, y: 200.9942626953125, width: 202.997}
+      layout_properties: {x: 224.0624771118164, y: 200.9942626953125, width: 192.997}
     - type: TextArea
       properties: {height: 60.1875}
       name: text_area_3
