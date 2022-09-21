@@ -991,7 +991,7 @@ components:
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: label_33
-      layout_properties: {x: 10, y: 259.1761474609375, width: 918}
+      layout_properties: {x: 10, y: 259.1761474609375, width: 797}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Nume, font_size: null, font: '', spacing_above: small,
@@ -1038,7 +1038,21 @@ components:
       properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
         border: solid blue 2px, visible: true, role: null, tooltip: ''}
       name: grid_panel_5
-      layout_properties: {x: 14.034088134765625, y: 321.1363525390625, width: 805}
+      layout_properties: {x: 14.034088134765625, y: 321.1363525390625, width: 918.7243881225587}
+    - type: Button
+      properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: button_12
+      layout_properties: {x: 823.0113067626953, y: 266.633544921875, width: 53.227294921875}
+    - type: Button
+      properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: Save, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: button_13
+      layout_properties: {x: 884.9289703369141, y: 266.633544921875, width: 74.9915}
 - type: FlowPanel
   properties: {}
   name: navbar_links
