@@ -1,0 +1,434 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: XYPanel
+    properties: {role: null, width: null, align: center, height: 1180, tooltip: '',
+      border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
+      background: ''}
+    name: xy_panel_1
+    layout_properties: {grid_position: 'DPUOAU,RAPVQW', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Obligatii de plata in valuta (echiv lei) - inclusiv leasing in valuta sau obligatiuni in valuta,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_5
+      layout_properties: {x: 23.011367797851562, y: 123.02555847167969, width: 442.969}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_3
+      layout_properties: {x: 816.0056304931641, y: 95.49715, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_2
+      layout_properties: {x: 645.9942779541016, y: 95.48295593261719, width: 160}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 'Venituri in valuta (echiv lei), inclusiv cele rezultate
+          din contractele incheiate in valuta cu plata in lei', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_4
+      layout_properties: {x: 23.011367797851562, y: 62.01705593261718, width: 442.969}
+    - type: Label
+      properties: {text: Bilant an N-2}
+      name: label_1
+      layout_properties: {x: 475.99427795410156, y: 10, width: 160}
+    - type: Label
+      properties: {text: Bilant an N-1}
+      name: label_2
+      layout_properties: {x: 645.9942779541016, y: 10, width: 115}
+    - type: Label
+      properties: {text: Balanta An N}
+      name: label_3
+      layout_properties: {x: 815.9942779541016, y: 10, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_1
+      layout_properties: {x: 475.99427795410156, y: 95.48294406738282, width: 160}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: IMPACT VALUTA, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_13
+      layout_properties: {x: 149.00567626953125, y: 25.965911865234375, width: 127.983}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Media lunara a ponderii veniturilor in valuta in total venituri (%),
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_6
+      layout_properties: {x: 23.011367797851562, y: 180.24147373046873, width: 442.969}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Sume de incasat de la entitati din grup > 1an, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_17
+      layout_properties: {x: 23.011367797851562, y: 317.8409118652344, width: 442.98299999999995}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Alte ce se incaseaza peste 1 an, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_18
+      layout_properties: {x: 23.011367797851562, y: 368.84942626953125, width: 442.99699999999996}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Furnizori platibili peste 1 an, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_19
+      layout_properties: {x: 23.011367797851562, y: 406.86077880859375, width: 442.9685881347656}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Clienti creditori ce se vor regla/plati peste 1 an, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_20
+      layout_properties: {x: 23.011367797851562, y: 444.8579406738281, width: 442.98299999999995}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Sume datorate entitatilor din grup (cu exceptia 455) ce se vor plati peste 1 an,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_21
+      layout_properties: {x: 23.011367797851562, y: 490.8522644042969, width: 442.98299999999995}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Datorii catre buget (esalonari) platibile peste 1 an,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_22
+      layout_properties: {x: 23.011367797851562, y: 548.8493957519531, width: 442.9685881347656}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Alte datorii (exceptie 162 si 167) platibile peste 1 an,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_23
+      layout_properties: {x: 23.011367797851562, y: 602.8409118652344, width: 442.98299999999995}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Clienti de incasat peste 1 an, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_16
+      layout_properties: {x: 23.011367797851562, y: 271.86077880859375, width: 442.98300000000006}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Credite termen scurt (ct519) platibile>1an, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_24
+      layout_properties: {x: 23.011367797851562, y: 648.8210144042969, width: 442.955}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: SARCINA FINANCIARA, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_14
+      layout_properties: {x: 124.90055847167969, y: 698.7925720214844, width: 166.875}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Media lunara a ponderii obligatiilor de plata in valuta (rezultand din credite si alte contracte de natura creditului) in total obligatii de plata (%),
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_7
+      layout_properties: {x: 23.011367797851562, y: 728.9488220214844, width: 447.9832203369141}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 'Dobanzi platite in perioada, rambursari de credite pe
+          ts in perioada si totalitatea ratelor platite in perioada aferente portiunii
+          curente a creditelor pe termen mediu si lung, inclusiv leasing, inclusiv
+          creditul solicitat', font_size: null, font: '', spacing_above: small, icon_align: left,
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: ''}
+      name: label_8
+      layout_properties: {x: 23.011367797851562, y: 810.4118957519531, width: 447.99699999999996}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Aport propriu din afacere la investitii/imobilizari in curs,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_9
+      layout_properties: {x: 23.011367797851562, y: 912.9261169433594, width: 447.95461016845707}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Plati de dividende/retrageri sume asociati, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_10
+      layout_properties: {grid_position: 'OLUIQO,CRTLDX', x: 23.011367797851562, y: 955.4261169433594,
+        width: 447.98299999999995}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 'Clienti dificili (incerti, in litigiu, greu de incasat,
+          cei care au depasit perioada de incasare)', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_12
+      layout_properties: {x: 23.011367797851562, y: 997.9971618652344, width: 447.9829999999999}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Plata datorii restante la buget din an precedent, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_11
+      layout_properties: {x: 23.011367797851562, y: 1059.4601745605469, width: 447.98299999999995,
+        grid_position: 'ASIMOS,FDFTKL'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: solid blue 2px,
+        visible: true, text: Creante si Datorii > 1 an, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      name: label_15
+      layout_properties: {x: 104.00567626953125, y: 236.86077880859375, width: 202.756}
+    - type: TextBox
+      properties: {}
+      name: text_box_4
+      layout_properties: {x: 475.9663677978515, y: 162.98295253906252, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_5
+      layout_properties: {x: 645.9942779541016, y: 162.98295253906252, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_6
+      layout_properties: {x: 815.9942779541016, y: 166.50565593261717, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_7
+      layout_properties: {x: 475.9943677978515, y: 200.21308559570315, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_8
+      layout_properties: {x: 645.9942779541016, y: 203.73577373046874, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_9
+      layout_properties: {x: 824.9290000000001, y: 206.86077880859375, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_10
+      layout_properties: {x: 475.9658966064453, y: 287.8409118652344, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_11
+      layout_properties: {x: 645.9942779541016, y: 287.8409118652344, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_12
+      layout_properties: {x: 815.9942779541016, y: 287.8409118652344, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_13
+      layout_properties: {x: 475.9943677978515, y: 334.2898118652344, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_14
+      layout_properties: {x: 645.9658966064453, y: 334.2897644042969, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_15
+      layout_properties: {x: 815.9942779541016, y: 335.32672626953126, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_16
+      layout_properties: {x: 475.9658966064453, y: 388.8210262695313, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_17
+      layout_properties: {x: 645.9942779541016, y: 392.34371440429686, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_18
+      layout_properties: {x: 815.9942779541016, y: 392.32952880859375, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_19
+      layout_properties: {x: 470.01417541503906, y: 422.34371440429686, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_20
+      layout_properties: {x: 645.9658966064453, y: 426.8323788085937, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_21
+      layout_properties: {x: 815.9658966064453, y: 430.35506694335936, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_22
+      layout_properties: {x: 475.9658966064453, y: 460.8522644042969, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_23
+      layout_properties: {x: 645.9942779541016, y: 461.3068406738281, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_24
+      layout_properties: {x: 815.9942779541016, y: 461.3068406738281, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_25
+      layout_properties: {x: 470.01417541503906, y: 527.3011644042969, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_26
+      layout_properties: {x: 645.9658966064453, y: 527.3011169433594, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_27
+      layout_properties: {x: 810.0141754150391, y: 527.3011644042969, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_29
+      layout_properties: {x: 645.9942779541016, y: 569.3182118652344, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_28
+      layout_properties: {x: 470.01417541503906, y: 565.2982957519531, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_30
+      layout_properties: {x: 815.9942779541016, y: 569.3181457519531, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_31
+      layout_properties: {x: 470.01417541503906, y: 618.8210144042969, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_32
+      layout_properties: {x: 645.9942779541016, y: 619.2898118652344, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_33
+      layout_properties: {x: 815.9942779541016, y: 618.8210144042969, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_34
+      layout_properties: {x: 470.01417541503906, y: 665.2698720214844, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_35
+      layout_properties: {x: 645.9942779541016, y: 665.2698669433594, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_36
+      layout_properties: {x: 815.9942779541016, y: 668.7925669433594, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_37
+      layout_properties: {x: 480.9943677978515, y: 788.9204220214843, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_38
+      layout_properties: {x: 650.9942779541016, y: 792.4431406738281, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_39
+      layout_properties: {x: 824.9289703369141, y: 795.9658457519531, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_40
+      layout_properties: {x: 475.9658966064453, y: 882.9261169433595, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_41
+      layout_properties: {x: 645.9942779541016, y: 886.4488169433594, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_42
+      layout_properties: {x: 815.9942779541016, y: 890.3834957519531, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_43
+      layout_properties: {x: 475.9943677978515, y: 923.9062144042969, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_45
+      layout_properties: {x: 820.9942779541016, y: 929.3750169433595, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_44
+      layout_properties: {x: 645.9942779541016, y: 923.9062194824219, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_46
+      layout_properties: {x: 475.9943677978515, y: 967.9971618652344, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_47
+      layout_properties: {x: 645.9942779541016, y: 967.9971618652344, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_48
+      layout_properties: {x: 824.9289703369141, y: 967.9971618652344, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_49
+      layout_properties: {x: 475.9658966064453, y: 1037.9687618652345, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_50
+      layout_properties: {x: 650.9942779541016, y: 1041.4914194824219, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_51
+      layout_properties: {x: 824.9290000000001, y: 1045.0141245605469, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_52
+      layout_properties: {x: 475.9658966064453, y: 1078.5226694824219, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_53
+      layout_properties: {x: 650.9942779541016, y: 1082.0453745605469, width: 160}
+    - type: TextBox
+      properties: {}
+      name: text_box_54
+      layout_properties: {x: 820.9942779541016, y: 1085.5539194824219, width: 160}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 20, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:fast-forward'}
+    name: button_3
+    layout_properties: {}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 20, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: 'fa:home'}
+  name: button_1
+  layout_properties: {slot: top-left-btn}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: 'theme:Secondary 500', visible: true, text: '', font_size: null, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: 'fa:fast-backward'}
+  name: button_2
+  layout_properties: {slot: title}
