@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YEWDUA":20,"KYTNWA":5,"YKBHZG":5,"GYRFRT":10,"SNICGF":10}'}
+  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YEWDUA":20,"KYTNWA":5,"YKBHZG":5,"GYRFRT":10,"SNICGF":10,"JBWAGA":20,"OYNRNO":5,"JSPMSD":15,"TNITBS":35}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -1061,52 +1061,76 @@ components:
     layout_properties: {x: 14.034088134765625, y: 321.1363525390625, width: 918.7243881225587,
       grid_position: 'TVSWPJ,CYDRZO'}
   - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Expunere fata de banci, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
+    properties: {text: Expunere fata de banci (LEI)}
     name: label_40
     layout_properties: {grid_position: 'YHMHSN,JBWAGA'}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_14
+    layout_properties: {grid_position: 'YHMHSN,OYNRNO'}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_15
+    layout_properties: {grid_position: 'YHMHSN,JSPMSD'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_12
+    layout_properties: {grid_position: 'YHMHSN,TNITBS'}
   - type: Label
     properties: {text: Nr.}
     name: label_41
     layout_properties: {grid_position: 'SRCDVI,FTMCMP'}
   - type: Label
-    properties: {}
+    properties: {text: Tip si obiect credit}
     name: label_42
     layout_properties: {grid_position: 'SRCDVI,DMOTNN'}
   - type: Label
-    properties: {}
+    properties: {text: Banca}
     name: label_43
     layout_properties: {grid_position: 'SRCDVI,EWTWSY'}
   - type: Label
-    properties: {}
+    properties: {text: Valoarea aprobata}
     name: label_44
     layout_properties: {grid_position: 'SRCDVI,OPYJIY'}
   - type: Label
-    properties: {}
+    properties: {text: Data acordare}
     name: label_45
     layout_properties: {grid_position: 'SRCDVI,QQGWHR'}
   - type: Label
-    properties: {}
+    properties: {text: Sold}
     name: label_46
     layout_properties: {grid_position: 'SRCDVI,ODEWTG'}
   - type: Label
-    properties: {}
+    properties: {text: Scadenta}
     name: label_47
     layout_properties: {grid_position: 'SRCDVI,NAJHVN'}
   - type: Label
-    properties: {}
+    properties: {text: Rata lunara}
     name: label_48
     layout_properties: {grid_position: 'SRCDVI,VEXTJJ'}
   - type: Label
-    properties: {}
+    properties: {text: Dobanda}
     name: label_49
     layout_properties: {grid_position: 'SRCDVI,RIKSJR'}
   - type: Label
-    properties: {}
+    properties: {text: Tipul garantiei}
     name: label_50
     layout_properties: {grid_position: 'SRCDVI,GPPPHW'}
+  - type: GridPanel
+    properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
+      border: solid blue 2px, visible: true, role: null, tooltip: ''}
+    name: grid_panel_6
+    layout_properties: {grid_position: 'DFAGXZ,KWSPDI'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_11
+    layout_properties: {grid_position: 'KAYAEM,JZXXCP'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
