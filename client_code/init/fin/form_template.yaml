@@ -13,15 +13,8 @@ components:
       border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
       background: ''}
     name: xy_panel_1
-    layout_properties: {grid_position: 'DPUOAU,RAPVQW', full_width_row: true}
+    layout_properties: {grid_position: 'OTDFAW,CGKGQS', full_width_row: true}
     components:
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Obligatii de plata in valuta (echiv lei) - inclusiv leasing in valuta sau obligatiuni in valuta,
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false, icon: ''}
-      name: label_5
-      layout_properties: {x: 23.011367797851562, y: 123.02555847167969, width: 442.969}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -70,90 +63,93 @@ components:
         underline: false, icon: ''}
       name: label_13
       layout_properties: {x: 149.00567626953125, y: 25.965911865234375, width: 127.983}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_5
+      layout_properties: {x: 645.9942779541016, y: 162.9829559326172, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_6
+      layout_properties: {x: 815.9942779541016, y: 166.49147033691406, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_7
+      layout_properties: {x: 475.99427795410156, y: 200.21307373046875, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_8
+      layout_properties: {x: 645.9942779541016, y: 203.72158813476562, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_10
+      layout_properties: {x: 475.9658966064453, y: 287.8409118652344, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_11
+      layout_properties: {x: 645.9942779541016, y: 287.8409118652344, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_12
+      layout_properties: {x: 815.9942779541016, y: 287.8409118652344, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_9
+      layout_properties: {x: 815.9658966064453, y: 202.99717033691405, width: 160}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Media lunara a ponderii veniturilor in valuta in total venituri (%),
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false, icon: ''}
-      name: label_6
-      layout_properties: {x: 23.011367797851562, y: 180.24147373046873, width: 442.969}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Sume de incasat de la entitati din grup > 1an, font_size: null,
+        visible: true, text: Plata datorii restante la buget din an precedent, font_size: null,
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
-      name: label_17
-      layout_properties: {x: 23.011367797851562, y: 317.8409118652344, width: 442.98299999999995}
+      name: label_11
+      layout_properties: {x: 23.011367797851562, y: 1109.4318169433593, width: 447.983,
+        grid_position: 'ASIMOS,FDFTKL'}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Alte ce se incaseaza peste 1 an, font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_18
-      layout_properties: {x: 23.011367797851562, y: 368.84942626953125, width: 442.99699999999996}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Furnizori platibili peste 1 an, font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_19
-      layout_properties: {x: 23.011367797851562, y: 406.86077880859375, width: 442.9685881347656}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Clienti creditori ce se vor regla/plati peste 1 an, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_20
-      layout_properties: {x: 23.011367797851562, y: 444.8579406738281, width: 442.98299999999995}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Sume datorate entitatilor din grup (cu exceptia 455) ce se vor plati peste 1 an,
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false, icon: ''}
-      name: label_21
-      layout_properties: {x: 23.011367797851562, y: 490.8522644042969, width: 442.98299999999995}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Datorii catre buget (esalonari) platibile peste 1 an,
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false, icon: ''}
-      name: label_22
-      layout_properties: {x: 23.011367797851562, y: 548.8493957519531, width: 442.9685881347656}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Alte datorii (exceptie 162 si 167) platibile peste 1 an,
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false, icon: ''}
-      name: label_23
-      layout_properties: {x: 23.011367797851562, y: 602.8409118652344, width: 442.98299999999995}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Clienti de incasat peste 1 an, font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_16
-      layout_properties: {x: 23.011367797851562, y: 271.86077880859375, width: 442.98300000000006}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Credite termen scurt (ct519) platibile>1an, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_24
-      layout_properties: {x: 23.011367797851562, y: 648.8210144042969, width: 442.955}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: SARCINA FINANCIARA, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        visible: true, text: 'Clienti dificili (incerti, in litigiu, greu de incasat,
+          cei care au depasit perioada de incasare)', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
-      name: label_14
-      layout_properties: {x: 124.90055847167969, y: 698.7925720214844, width: 166.875}
+      name: label_12
+      layout_properties: {x: 23.011367797851562, y: 1047.9971618652344, width: 447.983}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Media lunara a ponderii obligatiilor de plata in valuta (rezultand din credite si alte contracte de natura creditului) in total obligatii de plata (%),
+        visible: true, text: Plati de dividende/retrageri sume asociati, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_10
+      layout_properties: {grid_position: 'OLUIQO,CRTLDX', x: 23.011367797851562, y: 1004.5028618652343,
+        width: 447.983}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Aport propriu din afacere la investitii/imobilizari in curs,
         font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
         italic: false, background: '', bold: false, underline: false, icon: ''}
-      name: label_7
-      layout_properties: {x: 23.011367797851562, y: 728.9488220214844, width: 447.9832203369141}
+      name: label_9
+      layout_properties: {x: 23.039367797851526, y: 959.4601982910156, width: 447.955}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: 'Dobanzi platite in perioada, rambursari de credite pe
@@ -163,249 +159,406 @@ components:
         spacing_below: small, italic: false, background: '', bold: false, underline: false,
         icon: ''}
       name: label_8
-      layout_properties: {x: 23.011367797851562, y: 810.4118957519531, width: 447.99699999999996}
+      layout_properties: {x: 23.02556610107422, y: 858.0255618652344, width: 447.983}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: SARCINA FINANCIARA, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_14
+      layout_properties: {x: 118.88636779785156, y: 812.0312432128908, width: 166.875}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Aport propriu din afacere la investitii/imobilizari in curs,
+        visible: true, text: Credite termen scurt (ct519) platibile>1an, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_24
+      layout_properties: {x: 23.039367797851526, y: 762.0596194824219, width: 442.955}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Alte datorii (exceptie 162 si 167) platibile peste 1 an,
         font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
         italic: false, background: '', bold: false, underline: false, icon: ''}
-      name: label_9
-      layout_properties: {x: 23.011367797851562, y: 912.9261169433594, width: 447.95461016845707}
+      name: label_23
+      layout_properties: {x: 23.02556610107422, y: 719.8579406738281, width: 442.983}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Plati de dividende/retrageri sume asociati, font_size: null,
+        visible: true, text: Datorii catre buget (esalonari) platibile peste 1 an,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_22
+      layout_properties: {x: 23.011367797851562, y: 679.8210144042969, width: 442.955}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Sume datorate entitatilor din grup (cu exceptia 455) ce se vor plati peste 1 an,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_21
+      layout_properties: {x: 23.02556610107422, y: 619.2897644042969, width: 442.983}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Clienti creditori ce se vor regla/plati peste 1 an, font_size: null,
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
-      name: label_10
-      layout_properties: {grid_position: 'OLUIQO,CRTLDX', x: 23.011367797851562, y: 955.4261169433594,
-        width: 447.98299999999995}
+      name: label_20
+      layout_properties: {x: 23.02556610107422, y: 579.3323669433594, width: 442.983}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: 'Clienti dificili (incerti, in litigiu, greu de incasat,
-          cei care au depasit perioada de incasare)', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_12
-      layout_properties: {x: 23.011367797851562, y: 997.9971618652344, width: 447.9829999999999}
+        visible: true, text: Furnizori platibili peste 1 an, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_19
+      layout_properties: {x: 23.039367797851526, y: 536.8323669433594, width: 442.955}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: Plata datorii restante la buget din an precedent, font_size: null,
+        visible: true, text: Alte ce se incaseaza peste 1 an, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_18
+      layout_properties: {x: 23.02556610107422, y: 497.3437432128907, width: 442.983}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Sume de incasat de la entitati din grup > 1an, font_size: null,
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
-      name: label_11
-      layout_properties: {x: 23.011367797851562, y: 1059.4601745605469, width: 447.98299999999995,
-        grid_position: 'ASIMOS,FDFTKL'}
+      name: label_17
+      layout_properties: {x: 23.02556610107422, y: 458.8352288085938, width: 442.983}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Clienti de incasat peste 1 an, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_16
+      layout_properties: {x: 23.02556610107422, y: 422.32952880859375, width: 442.983}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Media lunara a ponderii obligatiilor de plata in valuta (rezultand din credite si alte contracte de natura creditului) in total obligatii de plata (%),
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_7
+      layout_properties: {x: 23.02556610107422, y: 244.3181644042969, width: 442.9545288085938}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Obligatii de plata in valuta (echiv lei) - inclusiv leasing in valuta sau obligatiuni in valuta,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_5
+      layout_properties: {x: 23.011367797851562, y: 131.98865593261718, width: 442.969}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_4
+      layout_properties: {x: 475.9658966064453, y: 162.9829559326172, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_52
+      layout_properties: {x: 475.9658966064453, y: 1117.9687618652345, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_49
+      layout_properties: {x: 475.9943677978515, y: 1081.4630618652345, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_46
+      layout_properties: {x: 475.98011779785156, y: 1017.9686770996095, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_43
+      layout_properties: {x: 475.9658966064453, y: 967.9971618652344, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_40
+      layout_properties: {x: 475.9658966064453, y: 922.9544745605468, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_37
+      layout_properties: {x: 475.9943677978515, y: 769.8295406738281, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_34
+      layout_properties: {x: 475.9658966064453, y: 729.7869381347656, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_31
+      layout_properties: {x: 475.9658966064453, y: 689.2613644042968, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_28
+      layout_properties: {x: 475.99427795410156, y: 655.3267144042969, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_25
+      layout_properties: {x: 475.9658966064453, y: 592.7982669433593, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_22
+      layout_properties: {x: 475.9658966064453, y: 550.2982669433593, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_19
+      layout_properties: {x: 475.9658966064453, y: 508.8068355957031, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_16
+      layout_properties: {x: 475.9658966064453, y: 472.3010932128906, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_13
+      layout_properties: {x: 475.9658966064453, y: 426.8182, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_53
+      layout_properties: {x: 645.9942779541016, y: 1117.9686821777343, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_50
+      layout_properties: {x: 645.9942779541016, y: 1081.4630618652345, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_47
+      layout_properties: {x: 645.9942779541016, y: 1017.9687194824219, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_44
+      layout_properties: {x: 645.9942779541016, y: 967.9971618652344, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_41
+      layout_properties: {x: 645.9658966064453, y: 922.9403381347656, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_48
+      layout_properties: {x: 824.9289703369141, y: 1017.9686770996095, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_45
+      layout_properties: {x: 824.9290000000001, y: 967.9970770996094, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_42
+      layout_properties: {x: 824.9289703369141, y: 922.9403381347656, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_35
+      layout_properties: {x: 650.9942779541016, y: 725.7670220214844, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_36
+      layout_properties: {x: 824.9290000000001, y: 725.7670220214844, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_32
+      layout_properties: {x: 650.9942779541016, y: 689.2613644042968, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_33
+      layout_properties: {x: 824.9290000000001, y: 683.3522406738281, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_30
+      layout_properties: {x: 824.9290000000001, y: 652.7556644042968, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_29
+      layout_properties: {x: 650.9942779541016, y: 652.7556644042968, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_26
+      layout_properties: {x: 645.9658966064453, y: 592.7982669433593, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_23
+      layout_properties: {x: 645.9942779541016, y: 550.2982482910156, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_20
+      layout_properties: {x: 645.9942779541016, y: 508.7925957519532, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_17
+      layout_properties: {x: 645.9942779541016, y: 472.2727118652343, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_18
+      layout_properties: {x: 820.9942779541016, y: 472.30113559570304, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_14
+      layout_properties: {x: 645.9658966064453, y: 426.81817626953125, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_15
+      layout_properties: {x: 820.9942779541016, y: 425.3266669433594, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_21
+      layout_properties: {x: 820.9942779541016, y: 510.8096194824218, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_27
+      layout_properties: {x: 820.9942779541016, y: 592.7840881347656, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_24
+      layout_properties: {x: 820.9942779541016, y: 550.2840881347656, width: 160}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Media lunara a ponderii veniturilor in valuta in total venituri (%),
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_6
+      layout_properties: {x: 23.011367797851562, y: 199.48865593261718, width: 442.969}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_38
+      layout_properties: {x: 650.9942779541016, y: 769.8295406738281, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_39
+      layout_properties: {x: 824.9290000000001, y: 769.8295406738281, width: 160}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: solid blue 2px,
         visible: true, text: Creante si Datorii > 1 an, font_size: null, font: '',
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: true, underline: false, icon: ''}
       name: label_15
-      layout_properties: {x: 104.00567626953125, y: 236.86077880859375, width: 202.756}
+      layout_properties: {x: 109.98579406738281, y: 350.3323669433594, width: 202.756}
     - type: TextBox
-      properties: {}
-      name: text_box_4
-      layout_properties: {x: 475.9663677978515, y: 162.98295253906252, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_5
-      layout_properties: {x: 645.9942779541016, y: 162.98295253906252, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_6
-      layout_properties: {x: 815.9942779541016, y: 166.50565593261717, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_7
-      layout_properties: {x: 475.9943677978515, y: 200.21308559570315, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_8
-      layout_properties: {x: 645.9942779541016, y: 203.73577373046874, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_9
-      layout_properties: {x: 824.9290000000001, y: 206.86077880859375, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_10
-      layout_properties: {x: 475.9658966064453, y: 287.8409118652344, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_11
-      layout_properties: {x: 645.9942779541016, y: 287.8409118652344, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_12
-      layout_properties: {x: 815.9942779541016, y: 287.8409118652344, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_13
-      layout_properties: {x: 475.9943677978515, y: 334.2898118652344, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_14
-      layout_properties: {x: 645.9658966064453, y: 334.2897644042969, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_15
-      layout_properties: {x: 815.9942779541016, y: 335.32672626953126, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_16
-      layout_properties: {x: 475.9658966064453, y: 388.8210262695313, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_17
-      layout_properties: {x: 645.9942779541016, y: 392.34371440429686, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_18
-      layout_properties: {x: 815.9942779541016, y: 392.32952880859375, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_19
-      layout_properties: {x: 470.01417541503906, y: 422.34371440429686, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_20
-      layout_properties: {x: 645.9658966064453, y: 426.8323788085937, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_21
-      layout_properties: {x: 815.9658966064453, y: 430.35506694335936, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_22
-      layout_properties: {x: 475.9658966064453, y: 460.8522644042969, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_23
-      layout_properties: {x: 645.9942779541016, y: 461.3068406738281, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_24
-      layout_properties: {x: 815.9942779541016, y: 461.3068406738281, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_25
-      layout_properties: {x: 470.01417541503906, y: 527.3011644042969, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_26
-      layout_properties: {x: 645.9658966064453, y: 527.3011169433594, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_27
-      layout_properties: {x: 810.0141754150391, y: 527.3011644042969, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_29
-      layout_properties: {x: 645.9942779541016, y: 569.3182118652344, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_28
-      layout_properties: {x: 470.01417541503906, y: 565.2982957519531, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_30
-      layout_properties: {x: 815.9942779541016, y: 569.3181457519531, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_31
-      layout_properties: {x: 470.01417541503906, y: 618.8210144042969, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_32
-      layout_properties: {x: 645.9942779541016, y: 619.2898118652344, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_33
-      layout_properties: {x: 815.9942779541016, y: 618.8210144042969, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_34
-      layout_properties: {x: 470.01417541503906, y: 665.2698720214844, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_35
-      layout_properties: {x: 645.9942779541016, y: 665.2698669433594, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_36
-      layout_properties: {x: 815.9942779541016, y: 668.7925669433594, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_37
-      layout_properties: {x: 480.9943677978515, y: 788.9204220214843, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_38
-      layout_properties: {x: 650.9942779541016, y: 792.4431406738281, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_39
-      layout_properties: {x: 824.9289703369141, y: 795.9658457519531, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_40
-      layout_properties: {x: 475.9658966064453, y: 882.9261169433595, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_41
-      layout_properties: {x: 645.9942779541016, y: 886.4488169433594, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_42
-      layout_properties: {x: 815.9942779541016, y: 890.3834957519531, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_43
-      layout_properties: {x: 475.9943677978515, y: 923.9062144042969, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_45
-      layout_properties: {x: 820.9942779541016, y: 929.3750169433595, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_44
-      layout_properties: {x: 645.9942779541016, y: 923.9062194824219, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_46
-      layout_properties: {x: 475.9943677978515, y: 967.9971618652344, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_47
-      layout_properties: {x: 645.9942779541016, y: 967.9971618652344, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_48
-      layout_properties: {x: 824.9289703369141, y: 967.9971618652344, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_49
-      layout_properties: {x: 475.9658966064453, y: 1037.9687618652345, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_50
-      layout_properties: {x: 650.9942779541016, y: 1041.4914194824219, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_51
-      layout_properties: {x: 824.9290000000001, y: 1045.0141245605469, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_52
-      layout_properties: {x: 475.9658966064453, y: 1078.5226694824219, width: 160}
-    - type: TextBox
-      properties: {}
-      name: text_box_53
-      layout_properties: {x: 650.9942779541016, y: 1082.0453745605469, width: 160}
-    - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
       name: text_box_54
-      layout_properties: {x: 820.9942779541016, y: 1085.5539194824219, width: 160}
+      layout_properties: {x: 824.9290000000001, y: 1117.9687194824219, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_51
+      layout_properties: {x: 824.9290000000001, y: 1081.4630618652345, width: 160}
 - type: FlowPanel
   properties: {}
   name: navbar_links
