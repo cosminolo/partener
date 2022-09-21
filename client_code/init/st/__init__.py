@@ -703,12 +703,13 @@ class st(stTemplate):
                  prop = it.text
               if c == 3:
                  data_a = it.text                               
-                 li.append({"tip": tip, "tara": prop, "data_a": data_a})
+                 li.append({"tip": tip, "prop": prop, "data_a": data_a})
                  tip = ""
                  prop = "" 
                  data_a = ""
                  c = 0              
-    p1['garantii'] = li                             
+    p1['garantii'] = li              
+    print(p1)                           
     anvil.server.call("sp1", self.ups(), p1)   
     row = len(p1['garantii'])
     self.gar(row, p1['garantii'])                             
