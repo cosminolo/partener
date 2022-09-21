@@ -1191,6 +1191,45 @@ components:
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_7
     layout_properties: {grid_position: 'SPXCYE,SHCMBU'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_14
+    layout_properties: {grid_position: 'QEAYQU,PBJSMN'}
+  - type: Label
+    properties: {text: 'Aspecte privind impactul firmei asupra mediului inconjurator
+        (daca este cazul): Firma respecta legislatia privind protectia mediului? Exista
+        litigii in curs privind poluarea mediului de catre firma sau de catre produsele
+        firmei? Au existat in trecut astfel de litigii? daca au existat, in ce au
+        constat acestea?'}
+    name: label_61
+    layout_properties: {grid_position: 'HCODFZ,YZQYNQ'}
+  - type: TextArea
+    properties: {}
+    name: text_area_4
+    layout_properties: {grid_position: 'PDOHBM,XQOVZG'}
+  - type: Label
+    properties: {text: 'Concurenta:
+
+        Cate firme ofera produse/servicii identice sau similare? Enumerati principalele
+        firme concurente, interne sau externe - daca este cazul
+
+        '}
+    name: label_62
+    layout_properties: {grid_position: 'OAFOIF,AIYAMN'}
+  - type: TextArea
+    properties: {}
+    name: text_area_5
+    layout_properties: {grid_position: 'CMLGDH,SQQWWC'}
+  - type: Label
+    properties: {text: 'Exista imprumuturi facute firmei de catre asociati/actionari/terti
+        sau de catre firme din cadrul aceluiasi grup? daca da, care sunt termenii
+        acestora?'}
+    name: label_63
+    layout_properties: {grid_position: 'NRPMIH,ZHVRCA'}
+  - type: TextArea
+    properties: {}
+    name: text_area_6
+    layout_properties: {grid_position: 'EDOLFF,ZCYBOX'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
