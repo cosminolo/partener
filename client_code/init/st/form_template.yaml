@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YEWDUA":20,"KYTNWA":5,"YKBHZG":5,"GYRFRT":10,"SNICGF":10,"JBWAGA":20,"OYNRNO":10,"JSPMSD":10,"TNITBS":35,"OFTPXM":5,"QNKPHX":10,"PYIXUM":6,"VUBKGU":7,"BJEJJM":7,"LKUOVX":7,"PTEQXH":6,"HSOEAG":6,"CYAZIY":6,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12}'}
+  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YEWDUA":20,"KYTNWA":5,"YKBHZG":5,"GYRFRT":10,"SNICGF":10,"OFTPXM":5,"QNKPHX":10,"PYIXUM":6,"VUBKGU":7,"BJEJJM":7,"LKUOVX":7,"PTEQXH":6,"HSOEAG":6,"CYAZIY":6,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -1058,27 +1058,130 @@ components:
     layout_properties: {x: 14.034088134765625, y: 321.1363525390625, width: 918.7243881225587,
       grid_position: 'TVSWPJ,CYDRZO'}
   - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Declaratii reprezentanti, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_64
+    layout_properties: {grid_position: 'OAWYII,GTIEOG'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Suntem afiliati grupului de firme, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_65
+    layout_properties: {grid_position: 'UNYFUB,LTOMYB'}
+  - type: TextArea
+    properties: {}
+    name: text_area_7
+    layout_properties: {grid_position: 'UNYFUB,KKSBDE'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Avem aceiasi conducere cu urmatorul grup de firme, font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_66
+    layout_properties: {grid_position: 'OBDUXF,IDNFET'}
+  - type: TextArea
+    properties: {}
+    name: text_area_8
+    layout_properties: {grid_position: 'OBDUXF,XONDMT'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Avem interdependenta comerciala directa cu firmele, font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_67
+    layout_properties: {grid_position: 'BGXCDM,QTUXTB'}
+  - type: TextArea
+    properties: {}
+    name: text_area_9
+    layout_properties: {grid_position: 'BGXCDM,KTLPGP'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Avem garantii incrucisate cu urmatoarele firme, font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_68
+    layout_properties: {grid_position: 'HRMFXW,FRDWKY'}
+  - type: TextArea
+    properties: {}
+    name: text_area_10
+    layout_properties: {grid_position: 'HRMFXW,VJDACF'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Nici una din mentiunile anterioare, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_69
+    layout_properties: {grid_position: 'CDNTQV,PYHEYY'}
+  - type: TextArea
+    properties: {}
+    name: text_area_11
+    layout_properties: {grid_position: 'CDNTQV,OUQXPM'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Societatea nu este implicata in nici un proces judiciar
+        si/sau litigiu, iar bunurile care fac parte din patrimoniul sau sunt in afara
+        oricarei interdictii sau urmariri silite', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_70
+    layout_properties: {grid_position: 'DBOYMH,DGBFGV'}
+  - type: TextArea
+    properties: {height: 62.1477}
+    name: text_area_12
+    layout_properties: {grid_position: 'DBOYMH,LBBOYL'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Urmatorii actionari semnificativi, membri ai consiliului
+        de administratie sau conducerii societatii sunt in relatii speciale cu banca,
+        conform definirii acestora de catre reglementarile legale in vigoare', font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_71
+    layout_properties: {grid_position: 'YWGHGI,MANXTN'}
+  - type: TextArea
+    properties: {height: 63.1477}
+    name: text_area_13
+    layout_properties: {grid_position: 'YWGHGI,YMVWZK'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Exprim acordul de consultare a Bazei de date a Centralei Riscului de Credit si a CIP,
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
+    name: label_72
+    layout_properties: {grid_position: 'BQTZMT,NUQTGH'}
+  - type: DropDown
+    properties: {}
+    name: drop_down_16
+    layout_properties: {grid_position: 'BQTZMT,YQEWJO'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_15
+    layout_properties: {grid_position: 'BQTZMT,GEUSHK'}
+  - type: Label
     properties: {text: Expunere fata de banci (LEI)}
     name: label_40
-    layout_properties: {grid_position: 'YHMHSN,JBWAGA'}
+    layout_properties: {grid_position: 'JBFAAM,CZHYXK'}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_14
-    layout_properties: {grid_position: 'YHMHSN,OYNRNO'}
+    layout_properties: {grid_position: 'JBFAAM,JEPLUM'}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_15
-    layout_properties: {grid_position: 'YHMHSN,JSPMSD'}
+    layout_properties: {grid_position: 'JBFAAM,KPXBWO'}
   - type: Spacer
     properties: {height: 32}
     name: spacer_12
-    layout_properties: {grid_position: 'YHMHSN,TNITBS'}
+    layout_properties: {grid_position: 'JBFAAM,RCFMNI'}
   - type: Label
     properties: {text: Nr.}
     name: label_41
