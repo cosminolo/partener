@@ -9,7 +9,7 @@ components:
   layout_properties: {slot: default}
   components:
   - type: XYPanel
-    properties: {role: null, width: null, align: center, height: 1180, tooltip: '',
+    properties: {role: null, width: null, align: center, height: 1510, tooltip: '',
       border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
       background: ''}
     name: xy_panel_1
@@ -559,6 +559,13 @@ components:
         italic: false, background: '', bold: false, underline: false}
       name: text_box_51
       layout_properties: {x: 824.9290000000001, y: 1081.4630618652345, width: 160}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'DATORII INTRA-GRUP ', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_25
+      layout_properties: {x: 41.008522033691406, y: 1154.4743347167969, width: 160}
 - type: FlowPanel
   properties: {}
   name: navbar_links
