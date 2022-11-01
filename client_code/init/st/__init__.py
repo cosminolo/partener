@@ -856,41 +856,23 @@ class st(stTemplate):
   def button_13_click(self, **event_args):
     """This method is called when the button is clicked"""
     c =0
-    li =[]
-    num = ""
-    poz = "" 
-    vst = ""
-    std = ""              
-    exp = ""    
-    stciv = ""               
-    for it in self.grid_panel_5.get_components():       
-       if type(it) == TextArea:
-          c = c+1                     
-          if it.text !="":
-              if c ==1:                 
-                num = it.text
-              if c ==2:
-                 poz = it.text
-              if c ==3:
-                 vst = it.text                 
-              if c ==4:
-                 std = it.text                  
-              if c ==5:
-                 exp = it.text               
-              if c == 6:
-                 stciv = it.text                               
-              li.append({"num": num, "poz": poz, "vst": vst, "std": std, "exp": exp, "stciv": stciv})
-              num = ""
-              poz = "" 
-              vst = ""
-              std = ""              
-              exp = ""    
-              stciv = ""              
-              c = 0              
-    p1['d_manag'] = li            
-    anvil.server.call("sp1", self.ups(), p1)                             
-    row = len(p1['d_manag'])
-    self.mg(row, p1['d_manag'])                                
+    for it in self.grid_panel_5.get_components():
+        num = ""
+        poz = "" 
+        vst = ""
+        std = ""              
+        exp = ""    
+        stciv = ""              
+        li =[] 
+        c = 0
+        if type(it) == TextArea:                        
+          print (it.text)  
+    #li.append({"num": num, "poz": poz, "vst": vst, "std": std, "exp": exp, "stciv": stciv})
+               
+    #p1['d_manag'] = li            
+    #anvil.server.call("sp1", self.ups(), p1)                             
+    #row = len(p1['d_manag'])
+    #self.mg(row, p1['d_manag'])                                
     pass
 
 
