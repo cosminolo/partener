@@ -827,7 +827,7 @@ class st(stTemplate):
                                  
     i=1
     k=400+21
-    print (ex)                           
+    #print (ex)                           
     for i in range(0,rows):
       try:                              
           self.txb[k].text = ex[i]["num"]         
@@ -855,18 +855,20 @@ class st(stTemplate):
 
   def button_13_click(self, **event_args):
     """This method is called when the button is clicked"""
-    c =0
-    for it in self.grid_panel_5.get_components():
-        num = ""
-        poz = "" 
-        vst = ""
-        std = ""              
-        exp = ""    
-        stciv = ""              
-        li =[] 
-        c = 0
-        if type(it) == TextArea:                        
-          print (it.text)  
+    k = grid_panel_5.items 
+    print (k)                           
+    #c =0
+    #for it in self.grid_panel_5.get_components():
+     #   num = ""
+      #  poz = "" 
+      #  vst = ""
+       # std = ""              
+       # exp = ""    
+      #  stciv = ""              
+      #  li =[] 
+      #  c = 0
+      #  if type(it) == TextArea:                        
+      #    print (it.text)  
     #li.append({"num": num, "poz": poz, "vst": vst, "std": std, "exp": exp, "stciv": stciv})
                
     #p1['d_manag'] = li            

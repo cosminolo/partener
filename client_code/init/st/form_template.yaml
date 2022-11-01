@@ -1063,6 +1063,7 @@ components:
     layout_properties: {x: 14.034088134765625, y: 321.1363525390625, width: 918.7243881225587,
       grid_position: 'TVSWPJ,CYDRZO'}
     event_bindings: {}
+    data_bindings: []
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Declaratii reprezentanti, font_size: null, font: '', spacing_above: small,
