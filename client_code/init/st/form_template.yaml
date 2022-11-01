@@ -1055,12 +1055,14 @@ components:
     name: button_13
     layout_properties: {x: 884.9289703369141, y: 266.633544921875, width: 74.9915,
       grid_position: 'MUUGYU,BIENJL'}
+    event_bindings: {click: button_13_click}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_5
     layout_properties: {x: 14.034088134765625, y: 321.1363525390625, width: 918.7243881225587,
       grid_position: 'TVSWPJ,CYDRZO'}
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Declaratii reprezentanti, font_size: null, font: '', spacing_above: small,

@@ -3,6 +3,7 @@ container:
   type: HtmlTemplate
   properties: {tooltip: '', background: 'theme:Gray 50', foreground: '', border: '',
     visible: true, role: null, html: '@theme:standard-page.html'}
+  event_bindings: {}
 components:
 - type: FlowPanel
   properties: {}
