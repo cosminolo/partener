@@ -2,6 +2,7 @@ is_package: true
 container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
+  event_bindings: {}
 components:
 - type: ColumnPanel
   properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YEWDUA":20,"KYTNWA":5,"YKBHZG":5,"GYRFRT":10,"SNICGF":10,"OFTPXM":5,"QNKPHX":10,"PYIXUM":6,"VUBKGU":7,"BJEJJM":7,"LKUOVX":7,"PTEQXH":6,"HSOEAG":6,"CYAZIY":6,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20}'}
@@ -197,6 +198,7 @@ components:
     layout_properties: {grid_position: 'UMQQXA,SAONZU', full_width_row: true}
     data_bindings:
     - {property: text, code: 'self.item[''facilitate''][''per_g'']', writeback: true}
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: luni, font_size: null, font: '', spacing_above: small,
@@ -336,6 +338,7 @@ components:
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_4
     layout_properties: {grid_position: 'VRDXFP,PFBHNR'}
+    event_bindings: {}
   - type: XYPanel
     properties: {role: null, width: 1221, align: center, height: 121, tooltip: '',
       border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
@@ -1075,6 +1078,7 @@ components:
     properties: {}
     name: text_area_7
     layout_properties: {grid_position: 'UNYFUB,KKSBDE'}
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Avem aceiasi conducere cu urmatorul grup de firme, font_size: null,
