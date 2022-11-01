@@ -715,6 +715,16 @@ class st(stTemplate):
     self.gar(row, p1['garantii'])                             
     pass
 
+  def button_12_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+
+  def button_14_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+
+
+
 
 
 
