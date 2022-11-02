@@ -250,22 +250,25 @@ class st(stTemplate):
 
   def button_5_click(self, **event_args):
     c =0
-    li =[]                           
+    li =[]
+    nume = ""
+    tara = "" 
+    info = ""                           
     for it in self.grid_panel_3.get_components():       
        if type(it) == TextArea:
-          c = c+1                     
-          if it.text !="":
-              if c ==1:                 
-                nume = it.text
-              if c ==2:
-                 tara = it.text
-              if c == 3:
-                 info = it.text                               
+          c = c+1                   
+          if c ==1:                 
+             nume = it.text
+          if c ==2:
+             tara = it.text
+          if c == 3:
+             info = it.text
+             if nume !="" or tara !="" or info !="":                  
                  li.append({"nume": nume, "tara": tara, "info": info})
                  nume = ""
                  tara = "" 
                  info = ""
-                 c = 0              
+             c = 0              
     p1['asoc'] = li                             
     anvil.server.call("sp1", self.ups(), p1)   
     row = len(p1['asoc'])
@@ -370,18 +373,18 @@ class st(stTemplate):
     for it in self.grid_panel_2.get_components():       
        if type(it) == TextArea:
           c = c+1                     
-          if it.text !="":
-              if c ==1:                 
-                nume = it.text
-              if c ==2:
-                 detalii = it.text
-              if c == 3:
-                 obs = it.text                               
-                 li.append({"nume": nume, "detalii": detalii, "obs": obs})
-                 nume = ""
-                 detalii = "" 
-                 obs = ""
-                 c = 0             
+          if c ==1:                 
+             nume = it.text
+          if c ==2:
+             detalii = it.text
+          if c == 3:
+             obs = it.text
+             if nume !="" or detalii !="" or obs !="":                  
+                li.append({"nume": nume, "detalii": detalii, "obs": obs})
+                nume = ""
+                detalii = "" 
+                obs = ""
+             c = 0             
     p1['grp'] = li                             
     anvil.server.call("sp1", self.ups(), p1)   
     row = len(p1['grp'])
@@ -696,24 +699,26 @@ class st(stTemplate):
   def button_11_click(self, **event_args):
     """This method is called when the button is clicked"""
     c =0
-    li =[]                           
+    li =[]
+    tip = ""
+    prop = "" 
+    data_a = ""                           
     for it in self.grid_panel_4.get_components():       
        if type(it) == TextArea:
-          c = c+1                     
-          if it.text !="":
+              c = c+1                   
               if c ==1:                 
                 tip = it.text
               if c ==2:
                  prop = it.text
               if c == 3:
-                 data_a = it.text                               
-                 li.append({"tip": tip, "prop": prop, "data_a": data_a})
-                 tip = ""
-                 prop = "" 
-                 data_a = ""
+                 data_a = it.text    
+                 if tip !="" or prop !="" or data_a != "":              
+                   li.append({"tip": tip, "prop": prop, "data_a": data_a})
+                   tip = ""
+                   prop = "" 
+                   data_a = ""
                  c = 0              
     p1['garantii'] = li              
-    print(p1)                           
     anvil.server.call("sp1", self.ups(), p1)   
     row = len(p1['garantii'])
     self.gar(row, p1['garantii'])                             
@@ -827,7 +832,6 @@ class st(stTemplate):
                                  
     i=1
     k=400+21
-    #print (ex)                           
     for i in range(0,rows):
       try:                              
           self.txb[k].text = ex[i]["num"]         
@@ -855,26 +859,42 @@ class st(stTemplate):
 
   def button_13_click(self, **event_args):
     """This method is called when the button is clicked"""
-    k = grid_panel_5.items 
-    print (k)                           
-    #c =0
-    #for it in self.grid_panel_5.get_components():
-     #   num = ""
-      #  poz = "" 
-      #  vst = ""
-       # std = ""              
-       # exp = ""    
-      #  stciv = ""              
-      #  li =[] 
-      #  c = 0
-      #  if type(it) == TextArea:                        
-      #    print (it.text)  
-    #li.append({"num": num, "poz": poz, "vst": vst, "std": std, "exp": exp, "stciv": stciv})
-               
-    #p1['d_manag'] = li            
-    #anvil.server.call("sp1", self.ups(), p1)                             
-    #row = len(p1['d_manag'])
-    #self.mg(row, p1['d_manag'])                                
+    c =0
+    num = ""                           
+    poz = "" 
+    vst = ""
+    std = ""              
+    exp = ""    
+    stciv = ""              
+    li =[]                            
+    for it in self.grid_panel_5.get_components():
+     if type(it) == TextArea: 
+            c=c+1                               
+            if c == 1: 
+              num = it.text
+            if c == 2: 
+              poz = it.text
+            if c == 3: 
+              vst = it.text        
+            if c== 4: 
+              std = it.text  
+            if c ==5: 
+              exp = it.text
+            if c == 6: 
+              stciv = it.text
+              if num !="" or poz !="" or vst !="" or std !="" or stciv !="":                  
+               li.append({"num": num, "poz": poz, "vst": vst, "std": std, "exp": exp, "stciv": stciv})
+              c = 0
+              num = ""
+              poz = "" 
+              vst = ""
+              std = ""              
+              exp = ""    
+              stciv = ""  
+    p1['d_manag'] = li            
+    anvil.server.call("sp1", self.ups(), p1)                             
+    row = len(p1['d_manag'])
+    self.mg(row, p1['d_manag'])                                
     pass
 
 
