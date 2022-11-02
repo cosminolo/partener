@@ -1360,6 +1360,62 @@ class st(stTemplate):
     self.exl(row, p1['exp_l'])                                       
     pass
 
+  def text_area_7_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_16_change(self, **event_args):
+   if self.drop_down_16.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+   pass
+
+  def text_area_8_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_area_9_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_area_10_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_area_11_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_area_12_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_area_13_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_area_4_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_area_5_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def text_area_6_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

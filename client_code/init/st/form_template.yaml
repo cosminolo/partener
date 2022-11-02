@@ -673,6 +673,7 @@ components:
       name: label_1_copy
       layout_properties: {row: QBBUWV, width_xs: 2, col_xs: 0, width: 179.5, x: 27.5,
         y: 100.859375}
+      event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Conducerea afacerii, font_size: 12, font: '', spacing_above: small,
@@ -1073,93 +1074,121 @@ components:
     layout_properties: {grid_position: 'OAWYII,GTIEOG'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Suntem afiliati grupului de firme, font_size: null, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      visible: true, text: a. Suntem afiliati grupului de firme, font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_65
     layout_properties: {grid_position: 'UNYFUB,LTOMYB'}
+    event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_7
     layout_properties: {grid_position: 'UNYFUB,KKSBDE'}
-    event_bindings: {}
+    event_bindings: {lost_focus: text_area_7_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''decl''][''a'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Avem aceiasi conducere cu urmatorul grup de firme, font_size: null,
+      visible: true, text: b. Avem aceiasi conducere cu urmatorul grup de firme, font_size: null,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_66
     layout_properties: {grid_position: 'OBDUXF,IDNFET'}
+    event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_8
     layout_properties: {grid_position: 'OBDUXF,XONDMT'}
+    event_bindings: {lost_focus: text_area_8_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''decl''][''b'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Avem interdependenta comerciala directa cu firmele, font_size: null,
-      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
+      visible: true, text: c. Avem interdependenta comerciala directa cu firmele,
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_67
     layout_properties: {grid_position: 'BGXCDM,QTUXTB'}
+    event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_9
     layout_properties: {grid_position: 'BGXCDM,KTLPGP'}
+    event_bindings: {lost_focus: text_area_9_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''decl''][''c'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Avem garantii incrucisate cu urmatoarele firme, font_size: null,
+      visible: true, text: d. Avem garantii incrucisate cu urmatoarele firme, font_size: null,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_68
     layout_properties: {grid_position: 'HRMFXW,FRDWKY'}
+    event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_10
     layout_properties: {grid_position: 'HRMFXW,VJDACF'}
+    event_bindings: {lost_focus: text_area_10_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''decl''][''d'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Nici una din mentiunile anterioare, font_size: null, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      visible: true, text: e. Nici una din mentiunile anterioare, font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_69
     layout_properties: {grid_position: 'CDNTQV,PYHEYY'}
+    event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_11
     layout_properties: {grid_position: 'CDNTQV,OUQXPM'}
+    event_bindings: {lost_focus: text_area_11_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''decl''][''e'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Societatea nu este implicata in nici un proces judiciar
+      visible: true, text: 'f. Societatea nu este implicata in nici un proces judiciar
         si/sau litigiu, iar bunurile care fac parte din patrimoniul sau sunt in afara
         oricarei interdictii sau urmariri silite', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_70
     layout_properties: {grid_position: 'DBOYMH,DGBFGV'}
+    event_bindings: {}
   - type: TextArea
     properties: {height: 62.1477}
     name: text_area_12
     layout_properties: {grid_position: 'DBOYMH,LBBOYL'}
+    event_bindings: {lost_focus: text_area_12_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''decl''][''f'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Urmatorii actionari semnificativi, membri ai consiliului
+      visible: true, text: 'g. Urmatorii actionari semnificativi, membri ai consiliului
         de administratie sau conducerii societatii sunt in relatii speciale cu banca,
         conform definirii acestora de catre reglementarile legale in vigoare', font_size: null,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_71
     layout_properties: {grid_position: 'YWGHGI,MANXTN'}
+    event_bindings: {}
   - type: TextArea
     properties: {height: 63.1477}
     name: text_area_13
     layout_properties: {grid_position: 'YWGHGI,YMVWZK'}
+    event_bindings: {lost_focus: text_area_13_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''decl''][''g'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Exprim acordul de consultare a Bazei de date a Centralei Riscului de Credit si a CIP,
+      visible: true, text: h. Exprim acordul de consultare a Bazei de date a Centralei Riscului de Credit si a CIP,
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_72
     layout_properties: {grid_position: 'BQTZMT,NUQTGH'}
+    event_bindings: {}
   - type: DropDown
     properties:
       role: null
@@ -1182,11 +1211,14 @@ components:
       include_placeholder: false
     name: drop_down_16
     layout_properties: {grid_position: 'BQTZMT,YQEWJO'}
-    event_bindings: {}
+    event_bindings: {change: drop_down_16_change}
+    data_bindings:
+    - {property: selected_value, code: 'self.item[''decl''][''h'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_15
     layout_properties: {grid_position: 'BQTZMT,GEUSHK'}
+    event_bindings: {}
   - type: Label
     properties: {text: Expunere fata de banci (LEI)}
     name: label_40
@@ -1332,11 +1364,14 @@ components:
     name: spacer_14
     layout_properties: {grid_position: 'QEAYQU,PBJSMN'}
   - type: Label
-    properties: {text: 'Aspecte privind impactul firmei asupra mediului inconjurator
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'i. Aspecte privind impactul firmei asupra mediului inconjurator
         (daca este cazul): Firma respecta legislatia privind protectia mediului? Exista
         litigii in curs privind poluarea mediului de catre firma sau de catre produsele
         firmei? Au existat in trecut astfel de litigii? daca au existat, in ce au
-        constat acestea?'}
+        constat acestea?', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_61
     layout_properties: {grid_position: 'HCODFZ,YZQYNQ'}
     event_bindings: {}
@@ -1344,29 +1379,45 @@ components:
     properties: {}
     name: text_area_4
     layout_properties: {grid_position: 'PDOHBM,XQOVZG'}
+    event_bindings: {lost_focus: text_area_4_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''decl''][''i'']', writeback: true}
   - type: Label
-    properties: {text: 'Concurenta:
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'j. Concurenta:
 
         Cate firme ofera produse/servicii identice sau similare? Enumerati principalele
         firme concurente, interne sau externe - daca este cazul
 
-        '}
+        ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_62
     layout_properties: {grid_position: 'OAFOIF,AIYAMN'}
+    event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_5
     layout_properties: {grid_position: 'CMLGDH,SQQWWC'}
+    event_bindings: {lost_focus: text_area_5_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''decl''][''j'']', writeback: true}
   - type: Label
-    properties: {text: 'Exista imprumuturi facute firmei de catre asociati/actionari/terti
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'k. Exista imprumuturi facute firmei de catre asociati/actionari/terti
         sau de catre firme din cadrul aceluiasi grup? daca da, care sunt termenii
-        acestora?'}
+        acestora?', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_63
     layout_properties: {grid_position: 'NRPMIH,ZHVRCA'}
+    event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_6
     layout_properties: {grid_position: 'EDOLFF,ZCYBOX'}
+    event_bindings: {lost_focus: text_area_6_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''decl''][''k'']', writeback: true}
   event_bindings: {}
 - type: FlowPanel
   properties: {}
