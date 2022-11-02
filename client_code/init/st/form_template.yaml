@@ -1272,6 +1272,7 @@ components:
       underline: false, icon: ''}
     name: button_16
     layout_properties: {grid_position: 'KAYAEM,ZADEQJ'}
+    event_bindings: {click: button_16_click}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,
@@ -1279,6 +1280,7 @@ components:
       underline: false, icon: ''}
     name: button_17
     layout_properties: {grid_position: 'KAYAEM,DDNAAK'}
+    event_bindings: {click: button_17_click}
   - type: Spacer
     properties: {height: 32}
     name: spacer_13
@@ -1337,6 +1339,7 @@ components:
         constat acestea?'}
     name: label_61
     layout_properties: {grid_position: 'HCODFZ,YZQYNQ'}
+    event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_4
