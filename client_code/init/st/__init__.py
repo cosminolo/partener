@@ -49,6 +49,13 @@ class st(stTemplate):
       self.exb(row, p1['exp_bc'])      
     except:
       pass
+    try:
+      row = len(p1['exp_l'])
+      self.exl(row, p1['exp_l'])      
+    except:
+      pass
+    
+    
     
   def text_box_1_pressed_enter(self, **event_args):
    try: 
@@ -1150,7 +1157,7 @@ class st(stTemplate):
     j = 0    
     k=500                          
     for j in range (2,rows+2): # rows
-      for i in range (1,10):
+      for i in range (1,11):
         if i == 1:                      
           k=500+j*10+i          
           self.txb[k] = TextArea(font="Arial", font_size="10",
@@ -1268,7 +1275,7 @@ class st(stTemplate):
           self.txb[k].tag.name = k
           self.txb[k].text = "X"
           self.txb[k].role = "raised"                     
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=18, width_xs=1)
+          self.grid_panel_7.add_component(self.txb[k], row=j, col_xs=18, width_xs=1)
           self.txb[k].set_event_handler('click', self.llllll_focus)                        
                                  
     i=1
