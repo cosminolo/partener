@@ -854,7 +854,11 @@ class st(stTemplate):
     self.txb[tg-6].text = ""   
     pass                             
   def button_14_click(self, **event_args):
-    """This method is called when the button is clicked"""
+    eb = {"num": " ", "poz": " ", "vst": " ", "std": " ", "exp": " ", "stciv": " "}
+    #print ( p1['d_manag'])
+    p1['exp_bc'].append(eb)                               
+    row = len( p1['exp_bc'])                                 
+    self.exb(row,  p1['exp_bc'])          
     pass
 
   def button_13_click(self, **event_args):

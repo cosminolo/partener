@@ -1161,9 +1161,28 @@ components:
     name: label_72
     layout_properties: {grid_position: 'BQTZMT,NUQTGH'}
   - type: DropDown
-    properties: {}
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: [Da, Nu]
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
     name: drop_down_16
     layout_properties: {grid_position: 'BQTZMT,YQEWJO'}
+    event_bindings: {}
   - type: Spacer
     properties: {height: 32}
     name: spacer_15
@@ -1236,6 +1255,7 @@ components:
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_6
     layout_properties: {grid_position: 'DFAGXZ,KWSPDI'}
+    event_bindings: {}
   - type: Label
     properties: {text: Expunere fata de leasing/IFN (LEI)}
     name: label_51
@@ -1303,6 +1323,7 @@ components:
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_7
     layout_properties: {grid_position: 'SPXCYE,SHCMBU'}
+    event_bindings: {}
   - type: Spacer
     properties: {height: 32}
     name: spacer_14
@@ -1342,6 +1363,7 @@ components:
     properties: {}
     name: text_area_6
     layout_properties: {grid_position: 'EDOLFF,ZCYBOX'}
+  event_bindings: {}
 - type: FlowPanel
   properties: {}
   name: navbar_links
