@@ -44,6 +44,11 @@ class st(stTemplate):
       self.mg(row, p1['d_manag'])      
     except:
       pass
+    try:
+      row = len(p1['exp_bc'])
+      self.exb(row, p1['exp_bc'])      
+    except:
+      pass
     
   def text_box_1_pressed_enter(self, **event_args):
    try: 
@@ -242,7 +247,7 @@ class st(stTemplate):
     
     pass
   def button_3_click(self, **event_args):
-    g =  {"nume": " ", "tara": " ", "info": " "}
+    g =  {"nume": "", "tara": "", "info": ""}
     p1['asoc'].append(g)                               
     row = len( p1['asoc'])                                 
     self.asoc(row,  p1['asoc'])                                  
@@ -358,7 +363,7 @@ class st(stTemplate):
 
   def button_4_click(self, **event_args):
     """This method is called when the button is clicked"""
-    g =  {"nume": " ", "detalii": " ", "obs": " "}
+    g =  {"nume": "", "detalii": "", "obs": ""}
     p1['grp'].append(g)                               
     row = len( p1['grp'])                                 
     self.grup(row,  p1['grp'])                             
@@ -690,7 +695,7 @@ class st(stTemplate):
 
   def button_10_click(self, **event_args):
     """This method is called when the button is clicked"""
-    g =  {"tip": " ", "prop": " ", "data_a": " "}
+    g =  {"tip": "", "prop": "", "data_a": ""}
     p1['garantii'].append(g)                               
     row = len( p1['garantii'])                                 
     self.gar(row,  p1['garantii'])                           
@@ -726,7 +731,7 @@ class st(stTemplate):
 
   def button_12_click(self, **event_args):
     """This method is called when the button is clicked"""
-    mng = {"num": " ", "poz": " ", "vst": " ", "std": " ", "exp": " ", "stciv": " "}
+    mng = {"num": "", "poz": "", "vst": "", "std": "", "exp": "", "stciv": ""}
     print ( p1['d_manag'])
     p1['d_manag'].append(mng)                               
     row = len( p1['d_manag'])                                 
@@ -854,7 +859,7 @@ class st(stTemplate):
     self.txb[tg-6].text = ""   
     pass                             
   def button_14_click(self, **event_args):
-    eb = {"nr": " ", "tip": " ", "bc": " ", "va": " ", "da": " ", "so": " ", "sc": "", "rl": "", "do": "", "tg": ""}
+    eb = {"nr": "", "tip": "", "bc": "", "va": "", "da": "", "so": "", "sc": "", "rl": "", "do": "", "tg": ""}
     #print ( p1['d_manag'])
     p1['exp_bc'].append(eb)                               
     row = len( p1['exp_bc'])                                 
@@ -900,26 +905,27 @@ class st(stTemplate):
     row = len(p1['d_manag'])
     self.mg(row, p1['d_manag'])                                
     pass
-  def exp(self, rows, ex):
+                               
+  def exb(self, rows, ex):
     self.grid_panel_6.clear()    
     #tb = self.tb = {}   
     i = 1
     j = 0    
     k=500                          
     for j in range (2,rows+2): # rows
-      for i in range (1,11):
+      for i in range (1,12):
         if i == 1:                      
           k=500+j*10+i          
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=280,
+                              width=20,
                               align = "left",    
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
                                  
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=0, width_xs=6)
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=0, width_xs=1)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)
         if i == 2:
           k=500+j*10+i        
@@ -931,7 +937,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=6, width_xs=2)
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=1, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                        
         if i == 3:
           k=500+j*10+i        
@@ -943,7 +949,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=8, width_xs=2)
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=6, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
         if i == 4:
           k=500+j*10+i        
@@ -955,7 +961,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=10, width_xs=2)
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=8, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
         if i == 5:
           k=500+j*10+i        
@@ -967,7 +973,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=12, width_xs=2)
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=10, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                          
         if i == 6:
           k=500+j*10+i        
@@ -979,7 +985,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=14, width_xs=2)                                            
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=12, width_xs=2)                                            
         if i == 7:
           k=500+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
@@ -1001,7 +1007,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=14, width_xs=2)                          
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=16, width_xs=2)                          
         if i == 9:
           k=500+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
@@ -1012,7 +1018,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=14, width_xs=2)                          
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=18, width_xs=2)                          
         if i == 10:
           k=500+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
@@ -1023,7 +1029,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=14, width_xs=2) 
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=20, width_xs=2) 
                                  
         if i == 11:
           k=500+j*10+i        
@@ -1037,23 +1043,27 @@ class st(stTemplate):
           self.txb[k].text = "X"
           self.txb[k].role = "raised"                     
           self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=18, width_xs=1)
-          self.txb[k].set_event_handler('click', self.llll_focus)                        
+          self.txb[k].set_event_handler('click', self.lllll_focus)                        
                                  
     i=1
     k=500+21
     for i in range(0,rows):
-      try:                              
-          self.txb[k].text = ex[i]["num"]         
-          self.txb[k+1].text = ex[i]["poz"]
-          self.txb[k+2].text = ex[i]["vst"]   
-          self.txb[k+3].text = ex[i]["std"]                        
-          self.txb[k+4].text = ex[i]["exp"]   
-          self.txb[k+5].text = ex[i]["stciv"]                      
+      #try:                              
+          self.txb[k].text = ex[i]["nr"]         
+          self.txb[k+1].text = ex[i]["tip"]
+          self.txb[k+2].text = ex[i]["bc"]   
+          self.txb[k+3].text = ex[i]["va"]                        
+          self.txb[k+4].text = ex[i]["da"]   
+          self.txb[k+5].text = ex[i]["so"]  
+          self.txb[k+6].text = ex[i]["sc"]                       
+          self.txb[k+7].text = ex[i]["rl"]    
+          self.txb[k+8].text = ex[i]["do"]  
+          self.txb[k+9].text = ex[i]["tg"]                       
           k=k+10
-      except:
-          pass       
+      #except:
+         # pass       
     pass                            
-  def llll_focus(self, sender,**event_args):
+  def lllll_focus(self, sender,**event_args):
     tg = int(sender.tag.name)
     self.txb[tg-1].text = ""
     self.txb[tg-2].text = ""
@@ -1061,7 +1071,70 @@ class st(stTemplate):
     self.txb[tg-4].text = ""
     self.txb[tg-5].text = ""
     self.txb[tg-6].text = ""   
+    self.txb[tg-7].text = ""    
+    self.txb[tg-8].text = ""  
+    self.txb[tg-9].text = ""   
+    self.txb[tg-10].text = ""                            
+                               
     pass                             
+
+  def button_15_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    c =0
+    nr = ""                           
+    tip = "" 
+    bc = ""
+    va = ""              
+    da = ""    
+    so = ""   
+    sc = ""  
+    rl = ""                           
+    do = ""       
+    tg = ""                           
+    li =[]                            
+    for it in self.grid_panel_6.get_components():
+     if type(it) == TextArea: 
+            c=c+1                               
+            if c == 1: 
+              nr = it.text
+            if c == 2: 
+              tip = it.text
+            if c == 3: 
+              bc = it.text        
+            if c== 4: 
+              va = it.text  
+            if c ==5: 
+              da = it.text
+            if c ==6: 
+              so = it.text     
+            if c ==7: 
+              sc = it.text                   
+            if c ==8: 
+              rl = it.text                     
+            if c ==9: 
+              do = it.text             
+            if c == 10: 
+              tg = it.text
+              if nr !="" or tip !="" or bc !="" or da !="" or so !="" or sc !="" or rl !="" or do !="" or tg != "":                  
+               li.append({"nr": nr, "tip": tip, "bc": bc, "va": va, "da": da, "so": so, "sc": sc, "rl": rl, "do": do, "tg": tg})
+              c = 0
+              nr = ""                           
+              tip = "" 
+              bc = ""
+              va = ""              
+              da = ""    
+              so = ""   
+              sc = ""  
+              rl = ""                           
+              do = ""       
+              tg = ""    
+    p1['exp_bc'] = li
+    print (p1['exp_bc'])                           
+    anvil.server.call("sp1", self.ups(), p1)                             
+    row = len(p1['exp_bc'])
+    self.exb(row, p1['exp_bc'])                                                           
+    pass
+
 
 
 

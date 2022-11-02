@@ -1206,6 +1206,7 @@ components:
       underline: false, icon: ''}
     name: button_15
     layout_properties: {grid_position: 'JBFAAM,KPXBWO'}
+    event_bindings: {click: button_15_click}
   - type: Spacer
     properties: {height: 32}
     name: spacer_12
