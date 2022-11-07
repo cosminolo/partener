@@ -5,7 +5,7 @@ container:
   event_bindings: {}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YKBHZG":3,"SNICGF":10,"OFTPXM":5,"QNKPHX":10,"PYIXUM":6,"VUBKGU":7,"BJEJJM":7,"LKUOVX":7,"PTEQXH":6,"HSOEAG":6,"CYAZIY":6,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20,"TESNHL":38,"XUVQLS":7,"BIENJL":15}'}
+  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YKBHZG":3,"SNICGF":10,"OFTPXM":5,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20,"TESNHL":38,"XUVQLS":7,"BIENJL":15}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -1190,46 +1190,13 @@ components:
     name: spacer_12
     layout_properties: {grid_position: 'JBFAAM,RCFMNI'}
   - type: Label
-    properties: {text: Nr.}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Nr. / Tip si obiect credit / Banca / Valoare aprobata / Data acordare / Sold / Scadenta / Rata lunara / Dobanda / Tipul garantiei,
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_41
     layout_properties: {grid_position: 'SRCDVI,FTMCMP'}
     event_bindings: {}
-  - type: Label
-    properties: {text: Tip si obiect credit}
-    name: label_42
-    layout_properties: {grid_position: 'SRCDVI,DMOTNN'}
-  - type: Label
-    properties: {text: Banca}
-    name: label_43
-    layout_properties: {grid_position: 'SRCDVI,EWTWSY'}
-  - type: Label
-    properties: {text: Valoarea aprobata}
-    name: label_44
-    layout_properties: {grid_position: 'SRCDVI,OPYJIY'}
-  - type: Label
-    properties: {text: Data acordare}
-    name: label_45
-    layout_properties: {grid_position: 'SRCDVI,QQGWHR'}
-  - type: Label
-    properties: {text: Sold}
-    name: label_46
-    layout_properties: {grid_position: 'SRCDVI,ODEWTG'}
-  - type: Label
-    properties: {text: Scadenta}
-    name: label_47
-    layout_properties: {grid_position: 'SRCDVI,NAJHVN'}
-  - type: Label
-    properties: {text: Rata lunara}
-    name: label_48
-    layout_properties: {grid_position: 'SRCDVI,VEXTJJ'}
-  - type: Label
-    properties: {text: Dobanda}
-    name: label_49
-    layout_properties: {grid_position: 'SRCDVI,RIKSJR'}
-  - type: Label
-    properties: {text: Tipul garantiei}
-    name: label_50
-    layout_properties: {grid_position: 'SRCDVI,GPPPHW'}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
@@ -1265,41 +1232,13 @@ components:
     name: spacer_13
     layout_properties: {grid_position: 'KAYAEM,RLPMAH'}
   - type: Label
-    properties: {text: Nr.}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Nr. / Denumire IFN / Valuta si valoarea contractului / Data acordare / Suma ramasa de plata /  Destinatie / rata lunara / Valoarea reziduala / Scadenta,
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_52
     layout_properties: {grid_position: 'YFYZZA,OFTPXM'}
-  - type: Label
-    properties: {text: Denumire IFN}
-    name: label_53
-    layout_properties: {grid_position: 'YFYZZA,QNKPHX'}
-  - type: Label
-    properties: {text: Valuta/valoarea contractului}
-    name: label_54
-    layout_properties: {grid_position: 'YFYZZA,PYIXUM'}
-  - type: Label
-    properties: {text: Data acordare}
-    name: label_55
-    layout_properties: {grid_position: 'YFYZZA,VUBKGU'}
-  - type: Label
-    properties: {text: Suma ramasa de plata}
-    name: label_56
-    layout_properties: {grid_position: 'YFYZZA,BJEJJM'}
-  - type: Label
-    properties: {text: Destinatie}
-    name: label_57
-    layout_properties: {grid_position: 'YFYZZA,LKUOVX'}
-  - type: Label
-    properties: {text: Rata lunara}
-    name: label_58
-    layout_properties: {grid_position: 'YFYZZA,PTEQXH'}
-  - type: Label
-    properties: {text: Rata reziduala}
-    name: label_59
-    layout_properties: {grid_position: 'YFYZZA,HSOEAG'}
-  - type: Label
-    properties: {text: Scadenta}
-    name: label_60
-    layout_properties: {grid_position: 'YFYZZA,CYAZIY'}
+    event_bindings: {}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
