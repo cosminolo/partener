@@ -5,7 +5,7 @@ container:
   event_bindings: {}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YEWDUA":20,"KYTNWA":5,"YKBHZG":5,"GYRFRT":10,"SNICGF":10,"OFTPXM":5,"QNKPHX":10,"PYIXUM":6,"VUBKGU":7,"BJEJJM":7,"LKUOVX":7,"PTEQXH":6,"HSOEAG":6,"CYAZIY":6,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20}'}
+  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YKBHZG":3,"SNICGF":10,"OFTPXM":5,"QNKPHX":10,"PYIXUM":6,"VUBKGU":7,"BJEJJM":7,"LKUOVX":7,"PTEQXH":6,"HSOEAG":6,"CYAZIY":6,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20,"TESNHL":38,"XUVQLS":7,"BIENJL":15}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -302,33 +302,16 @@ components:
     layout_properties: {grid_position: 'SAEEKP,PMQCLX'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Tip, font_size: null, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
+      visible: true, text: Tip / Proprietar / Data achizitiei, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
     name: label_30
     layout_properties: {grid_position: 'QUBBCT,PKMXUF'}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_5
-    layout_properties: {grid_position: 'QUBBCT,YEWDUA'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Proprietar, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_31
-    layout_properties: {grid_position: 'QUBBCT,KYTNWA'}
+    event_bindings: {}
   - type: Spacer
     properties: {height: 32}
     name: spacer_6
     layout_properties: {grid_position: 'QUBBCT,YKBHZG'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Data achizitiei, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_32
-    layout_properties: {grid_position: 'QUBBCT,GYRFRT'}
   - type: Spacer
     properties: {height: 32}
     name: spacer_7
@@ -995,50 +978,12 @@ components:
     layout_properties: {x: 10, y: 259.1761474609375, width: 797, grid_position: 'IUDIBQ,FJJJDU'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Nume, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
+      visible: true, text: Nume / Pozitie/ Varsta / Studii / Experienta / Starea Civila,
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_34
     layout_properties: {x: 19.0625, y: 282.6419677734375, width: 95.9375, grid_position: 'MUUGYU,TESNHL'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Pozitie, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_35
-    layout_properties: {x: 172, y: 282.6278076171875, width: 72.9972, grid_position: 'MUUGYU,YPZEKJ'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Varsta, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_36
-    layout_properties: {x: 291.9943084716797, y: 282.6136474609375, width: 102.983,
-      grid_position: 'MUUGYU,XAXKJE'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Studii, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_37
-    layout_properties: {x: 420.5540084716797, y: 288.6221923828125, width: 83.9915,
-      grid_position: 'MUUGYU,TMTAPK'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Experienta relevanta, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_38
-    layout_properties: {x: 542.2187042236328, y: 282.6136474609375, width: 158.989,
-      grid_position: 'MUUGYU,WDXQCC'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Stare civila, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_39
-    layout_properties: {x: 737.2755279541016, y: 288.6221923828125, width: 108.949,
-      grid_position: 'MUUGYU,LFBLFF'}
+    event_bindings: {}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
@@ -1072,6 +1017,7 @@ components:
       underline: false, icon: ''}
     name: label_64
     layout_properties: {grid_position: 'OAWYII,GTIEOG'}
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: a. Suntem afiliati grupului de firme, font_size: null,

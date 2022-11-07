@@ -635,25 +635,25 @@ class st(stTemplate):
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=280,
+                              width=200,
                               align = "left",    
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
                                  
           self.txb[k].tag.name = k                           
-          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=0, width_xs=6)
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=0, width_xs=3)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)
         if i == 2:
           k=300+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=80,
+                              width=200,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=6, width_xs=2)
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=3, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                        
         if i == 3:
           k=300+j*10+i        
@@ -665,7 +665,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=8, width_xs=2)
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=6, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
         if i == 4:
           k=300+j*10+i        
@@ -678,7 +678,7 @@ class st(stTemplate):
           self.txb[k].tag.name = k
           self.txb[k].text = "X"
           self.txb[k].role = "raised"                     
-          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=10, width_xs=1)
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=7, width_xs=1)
           self.txb[k].set_event_handler('click', self.lll_focus)                        
                                  
     i=1
@@ -758,73 +758,72 @@ class st(stTemplate):
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=280,
+                              width=150,
                               align = "left",    
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
-                                 
           self.txb[k].tag.name = k                           
-          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=0, width_xs=6)
+          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=0, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)
         if i == 2:
           k=400+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=80,
+                              width=120,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=6, width_xs=2)
+          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=2, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                        
         if i == 3:
           k=400+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=40,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=8, width_xs=2)
+          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=2, width_xs=1)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
         if i == 4:
           k=400+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=150,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=10, width_xs=2)
+          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=3, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
         if i == 5:
           k=400+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=150,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=12, width_xs=2)
+          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=4, width_xs=1)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                          
         if i == 6:
           k=400+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=120,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=14, width_xs=2)
+          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=9, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                                    
                                     
                                  
@@ -839,7 +838,7 @@ class st(stTemplate):
           self.txb[k].tag.name = k
           self.txb[k].text = "X"
           self.txb[k].role = "raised"                     
-          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=18, width_xs=1)
+          self.grid_panel_5.add_component(self.txb[k], row=j, col_xs=10, width_xs=1)
           self.txb[k].set_event_handler('click', self.llll_focus)                        
                                  
     i=1
