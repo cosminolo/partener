@@ -1193,6 +1193,7 @@ components:
     properties: {text: Nr.}
     name: label_41
     layout_properties: {grid_position: 'SRCDVI,FTMCMP'}
+    event_bindings: {}
   - type: Label
     properties: {text: Tip si obiect credit}
     name: label_42
