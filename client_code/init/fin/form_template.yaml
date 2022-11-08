@@ -44,7 +44,7 @@ components:
       layout_properties: {x: 645.9942779541016, y: 203.72158813476562, width: 156.02272}
       event_bindings: {lost_focus: text_box_8_lost_focus}
       data_bindings:
-      - {property: text, code: 'self.item[''iv''][''c''][''c2'']', writeback: true}
+      - {property: text, code: 'self.item[''iv''][''c''][''a2'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -54,7 +54,7 @@ components:
       layout_properties: {x: 815.9658966064453, y: 202.99716186523438, width: 160.04252761718755}
       event_bindings: {lost_focus: text_box_9_lost_focus}
       data_bindings:
-      - {property: text, code: 'self.item[''iv''][''c''][''c3'']', writeback: true}
+      - {property: text, code: 'self.item[''iv''][''c''][''a3'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: i.Credite termen scurt (ct519) platibile>1an, font_size: null,
@@ -175,6 +175,8 @@ components:
       name: text_box_37
       layout_properties: {x: 475.99427795410156, y: 769.8294982910156, width: 163.83486404296872}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''i''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -183,6 +185,8 @@ components:
       name: text_box_34
       layout_properties: {x: 475.9658966064453, y: 729.7868957519531, width: 163.84914626953122}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''h''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -191,14 +195,8 @@ components:
       name: text_box_31
       layout_properties: {x: 475.9658966064453, y: 689.2613220214844, width: 160.02810134765622}
       event_bindings: {}
-    - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false}
-      name: text_box_28
-      layout_properties: {x: 475.98011779785156, y: 655.3266906738281, width: 160.01388015624997}
-      event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''g''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -207,6 +205,8 @@ components:
       name: text_box_25
       layout_properties: {x: 475.9658966064453, y: 592.7982482910156, width: 156.02272}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''e''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -215,6 +215,8 @@ components:
       name: text_box_22
       layout_properties: {x: 475.9658966064453, y: 550.2982482910156, width: 156.0379411914063}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''d''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -223,6 +225,8 @@ components:
       name: text_box_19
       layout_properties: {x: 475.9658966064453, y: 508.8067932128906, width: 156.02272}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''c''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -231,6 +235,8 @@ components:
       name: text_box_16
       layout_properties: {x: 475.9658966064453, y: 472.2868957519531, width: 156.0379411914063}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''b''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -313,6 +319,8 @@ components:
       name: text_box_35
       layout_properties: {x: 650.9942779541016, y: 725.7669982910156, width: 156.02272}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''h''][''a2'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -321,6 +329,8 @@ components:
       name: text_box_36
       layout_properties: {x: 824.9289703369141, y: 725.7669982910156, width: 156.02272}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''h''][''a3'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -329,22 +339,8 @@ components:
       name: text_box_32
       layout_properties: {x: 650.9942779541016, y: 689.2613220214844, width: 156.03672}
       event_bindings: {}
-    - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false}
-      name: text_box_30
-      layout_properties: {x: 824.9289703369141, y: 652.7556457519531, width: 156.02272}
-      event_bindings: {}
-    - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false}
-      name: text_box_29
-      layout_properties: {x: 650.9942779541016, y: 652.7556457519531, width: 156.02272}
-      event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''g''][''a2'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -353,6 +349,8 @@ components:
       name: text_box_26
       layout_properties: {x: 645.9658966064453, y: 592.7982482910156, width: 156.06548269531248}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''e''][''a2'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -361,6 +359,8 @@ components:
       name: text_box_23
       layout_properties: {x: 645.9942779541016, y: 550.2840881347656, width: 156.02272}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''d''][''a2'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -369,6 +369,8 @@ components:
       name: text_box_20
       layout_properties: {x: 645.9942779541016, y: 508.7925720214844, width: 156.00833865234375}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''c''][''a2'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -377,6 +379,8 @@ components:
       name: text_box_17
       layout_properties: {x: 645.9942779541016, y: 472.2727355957031, width: 156.02272}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''b''][''a2'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -385,6 +389,8 @@ components:
       name: text_box_18
       layout_properties: {x: 820.9942779541016, y: 472.3011169433594, width: 156.02272}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''b''][''a3'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -413,6 +419,8 @@ components:
       name: text_box_21
       layout_properties: {x: 820.9942779541016, y: 510.7954406738281, width: 158.8350886523438}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''c''][''a3'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -421,6 +429,8 @@ components:
       name: text_box_27
       layout_properties: {x: 820.9942779541016, y: 592.7840881347656, width: 159.99972000000008}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''e''][''a3'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -429,6 +439,8 @@ components:
       name: text_box_24
       layout_properties: {x: 820.9942779541016, y: 550.2840881347656, width: 159.99972000000008}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''d''][''a3'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -437,6 +449,8 @@ components:
       name: text_box_38
       layout_properties: {x: 650.9942779541016, y: 769.8294982910156, width: 156.03676492187498}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''i''][''a2'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -445,6 +459,8 @@ components:
       name: text_box_39
       layout_properties: {x: 824.9289703369141, y: 769.8294982910156, width: 157.07335134765646}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''i''][''a3'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: solid blue 2px,
         visible: true, text: Creante si Datorii > 1 an (sold), font_size: null, font: '',
@@ -1090,7 +1106,7 @@ components:
       layout_properties: {x: 473.7647059326172, y: 149.9829559326172, width: 156.023}
       event_bindings: {lost_focus: text_box_4_lost_focus}
       data_bindings:
-      - {property: text, code: 'self.item[''iv''][''b''][''b1'']', writeback: true}
+      - {property: text, code: 'self.item[''iv''][''b''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1100,7 +1116,7 @@ components:
       layout_properties: {x: 470.8943677978515, y: 272.8409118652344, width: 156.023}
       event_bindings: {lost_focus: text_box_10_lost_focus}
       data_bindings:
-      - {property: text, code: 'self.item[''iv''][''d''][''d1'']', writeback: true}
+      - {property: text, code: 'self.item[''iv''][''d''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1110,7 +1126,7 @@ components:
       layout_properties: {x: 645.9942779541016, y: 272.8409118652344, width: 156.023}
       event_bindings: {lost_focus: text_box_11_lost_focus}
       data_bindings:
-      - {property: text, code: 'self.item[''iv''][''d''][''d2'']', writeback: true}
+      - {property: text, code: 'self.item[''iv''][''d''][''a2'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1120,7 +1136,7 @@ components:
       layout_properties: {x: 645.9942779541016, y: 149.97158813476562, width: 156.023}
       event_bindings: {lost_focus: text_box_5_lost_focus}
       data_bindings:
-      - {property: text, code: 'self.item[''iv''][''b''][''b2'']', writeback: true}
+      - {property: text, code: 'self.item[''iv''][''b''][''a2'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1130,7 +1146,7 @@ components:
       layout_properties: {x: 815.9658966064453, y: 149.97158813476562, width: 160}
       event_bindings: {lost_focus: text_box_6_lost_focus}
       data_bindings:
-      - {property: text, code: 'self.item[''iv''][''b''][''b3'']', writeback: true}
+      - {property: text, code: 'self.item[''iv''][''b''][''a3'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1150,7 +1166,7 @@ components:
       layout_properties: {x: 469.9151177978515, y: 203.72158813476562, width: 156.023}
       event_bindings: {lost_focus: text_box_7_lost_focus}
       data_bindings:
-      - {property: text, code: 'self.item[''iv''][''c''][''c1'']', writeback: true}
+      - {property: text, code: 'self.item[''iv''][''c''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1170,7 +1186,7 @@ components:
       layout_properties: {x: 815.9942779541016, y: 272.8409118652344, width: 160.00000000000009}
       event_bindings: {lost_focus: text_box_12_lost_focus}
       data_bindings:
-      - {property: text, code: 'self.item[''iv''][''d''][''d3'']', writeback: true}
+      - {property: text, code: 'self.item[''iv''][''d''][''a3'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1179,6 +1195,8 @@ components:
       name: text_box_33
       layout_properties: {x: 824.9289703369141, y: 689.2612982910156, width: 156.0229999999999}
       event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''g''][''a3'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: t.601 “Cheltuieli cu materiile prime “ + 602 “  Cheltuieli cu materialele consumabile” + 603 “Cheltuieli privind materialele de natura obiectelor de inventar” +604 “Cheltuieli privind materialele nestocate” + 605 “Cheltuieli privind energia si apa” +606 “  Cheltuieli privind animalele si pasarile” +  607 Cheltuieli privind marfurile” +  608 “Cheltuieli privind ambalajele”,
@@ -1271,20 +1289,22 @@ components:
       event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: w.Alte venituri si cheltuieli intragrup, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#E3F9A6', bold: false, underline: false, icon: ''}
+        visible: true, text: 'v
+
+          .Alte venituri si cheltuieli intragrup', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '#E3F9A6',
+        bold: false, underline: false, icon: ''}
       name: label_48
-      layout_properties: {x: 7.926139831542969, y: 2271.8833923339844, width: 454.901,
+      layout_properties: {x: 7.9261322021484375, y: 2271.8749389648438, width: 451.02272,
         grid_position: 'DGMGST,RWHHND'}
       event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: v.628 “Alte cheltuieli cu serviciile executate de terti”,
+        visible: true, text: u.628 “Alte cheltuieli cu serviciile executate de terti”,
         font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
       name: label_47
-      layout_properties: {x: 8.934661865234375, y: 2221.9032474121095, width: 453.0117059326171}
+      layout_properties: {x: 8.934661865234375, y: 2221.8890991210938, width: 449.02272}
       event_bindings: {}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -1366,6 +1386,36 @@ components:
       name: text_box_79
       layout_properties: {x: 477.9687042236328, y: 1521.7328796386719, width: 156.023}
       event_bindings: {}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false}
+      name: text_box_28
+      layout_properties: {x: 475.98011779785156, y: 643.3096381347656, width: 160}
+      event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''f''][''a1'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false}
+      name: text_box_29
+      layout_properties: {x: 653.7923228759764, y: 643.3096618652344, width: 156.023}
+      event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''f''][''a2'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false}
+      name: text_box_30
+      layout_properties: {x: 825.9656016845703, y: 643.3096618652344, width: 156.023}
+      event_bindings: {}
+      data_bindings:
+      - {property: text, code: 'self.item[''cd''][''f''][''a3'']', writeback: true}
     event_bindings: {}
   event_bindings: {}
 - type: FlowPanel
