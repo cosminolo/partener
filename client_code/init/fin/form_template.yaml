@@ -2,6 +2,7 @@ is_package: true
 container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
+  event_bindings: {}
 components:
 - type: ColumnPanel
   properties: {col_widths: '{}'}
@@ -9,11 +10,11 @@ components:
   layout_properties: {slot: default}
   components:
   - type: XYPanel
-    properties: {role: null, width: null, align: center, height: 1510, tooltip: '',
+    properties: {role: null, width: 1510.929, align: center, height: 2356, tooltip: '',
       border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
       background: ''}
     name: xy_panel_1
-    layout_properties: {grid_position: 'OTDFAW,CGKGQS', full_width_row: true}
+    layout_properties: {grid_position: 'OTDFAW,EFVBNZ', full_width_row: true}
     components:
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -49,13 +50,6 @@ components:
       properties: {text: Balanta An N}
       name: label_3
       layout_properties: {x: 815.9942779541016, y: 10, width: 160}
-    - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false}
-      name: text_box_1
-      layout_properties: {x: 475.99427795410156, y: 95.48294406738282, width: 160}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: IMPACT VALUTA, font_size: null, font: '', spacing_above: small,
@@ -135,6 +129,7 @@ components:
         underline: false, icon: ''}
       name: label_12
       layout_properties: {x: 23.011367797851562, y: 1047.9971618652344, width: 447.983}
+      event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: Plati de dividende/retrageri sume asociati, font_size: null,
@@ -143,6 +138,7 @@ components:
       name: label_10
       layout_properties: {grid_position: 'OLUIQO,CRTLDX', x: 23.011367797851562, y: 1004.5028618652343,
         width: 447.983}
+      event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: Aport propriu din afacere la investitii/imobilizari in curs,
@@ -566,6 +562,204 @@ components:
         underline: false, icon: ''}
       name: label_25
       layout_properties: {x: 41.008522033691406, y: 1154.4743347167969, width: 160}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_1
+      layout_properties: {x: 475.994360168457, y: 95.48293220214848, width: 160}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 401 ”Furnizori” + 403 ”Efecte de platit” + 408 “Furnizori-facturi nesosite”,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_26
+      layout_properties: {x: 15.056816101074219, y: 1187.9402770996094, width: 455.95174999999995}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 404 “Furnizori de imobilizari”+405 “Efecte de platit pentru imobilizari”,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_27
+      layout_properties: {x: 15.042367797851512, y: 1225.9034118652344, width: 455.952}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 462 “Creditori diversi”, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_28
+      layout_properties: {x: 15.042617797851562, y: 1260.8948669433594, width: 456.946}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 451 “Decontari intre entitati afiliate”, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_29
+      layout_properties: {x: 15.042617797851562, y: 1300.9118347167969, width: 455.93779406738287}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 456 “Decontari cu asociatii/actionarii privind capitalul”,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_30
+      layout_properties: {x: 15.028411865234375, y: 1340.8664245605469, width: 455.95199999999994}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 419 “Clienti creditori”, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_31
+      layout_properties: {x: 15.042617797851562, y: 1381.8096618652344, width: 455.9377940673828}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 166 “Datorii care privesc imobilizarile financiare”,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_32
+      layout_properties: {x: 15.028411865234375, y: 1421.8096618652344, width: 455.952}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 167 “Alte imprumuturi si datorii asimilate”, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_33
+      layout_properties: {x: 15.028411865234375, y: 1461.2953796386719, width: 455.952}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 'Altele ', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_34
+      layout_properties: {x: 15.042617797851562, y: 1498.2784118652344, width: 455.93807287597656}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Creante intra-grup, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_35
+      layout_properties: {x: 74.01136779785156, y: 1548.2385372558595, width: 160}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 411 “Clienti” +413 “Efecte de primit de la clienti”+418 “ Clienti facturi de intocmit”- 491”Clienti creditori”,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_36
+      layout_properties: {x: 10, y: 1576.2784118652344, width: 461.9886177978516}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 461 “Debitori diversi”, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_37
+      layout_properties: {x: 8.934661865234375, y: 1636.2499694824219, width: 462.05975}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 409.2  “Furnizori debitori” (avansuri pentru servicii),
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_39
+      layout_properties: {x: 10, y: 1674.2215270996094, width: 461.9890000000001}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 409.1 “Furnizori debitori”(avansuri pentru stocuri),
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_38
+      layout_properties: {x: 10, y: 1713.2670169433593, width: 461.98900000000003}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 451 “Decontari intre entitati afiliate”, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_40
+      layout_properties: {x: 11.00861779785157, y: 1755.2129821777344, width: 460.98}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 456 “Decontari cu asociatii/actionarii privind capitalul”,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_41
+      layout_properties: {x: 10, y: 1797.2726745605469, width: 461.98900000000003}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 267 “Creante imobilizate”, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_42
+      layout_properties: {x: 10, y: 1836.2442321777344, width: 461.98900000000003}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: '701 “Venituri din vanzarea produselor finite” + 702
+          “Venituri din vanzarea semifabricatelor”+ 703 “Venituri din vanzarea produselor
+          reziduale” + 704 “Venituri din servicii prestate” + 705 “Venituri din studii
+          si cercetari”+706 “Venituri din redevente, locatii de gestiune si chirii”+
+          707 “Venituri din vanzarea marfurilor” + 708” Venituri din activitati diverse”',
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_45
+      layout_properties: {x: 8.934661865234375, y: 1942.8407897949219, width: 463.0543381347657}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Altele, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_43
+      layout_properties: {x: 8.934661865234375, y: 1877.2073669433594, width: 463.05433813476566}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Tranzactii intra-grup* (vanzari si cumparari, lei)',
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: true, underline: false, icon: ''}
+      name: label_44
+      layout_properties: {x: 74.00567626953125, y: 1910.8379821777344, width: 320.895}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 601 “Cheltuieli cu materiile prime “ + 602 “  Cheltuieli cu materialele consumabile” + 603 “Cheltuieli privind materialele de natura obiectelor de inventar” +604 “Cheltuieli privind materialele nestocate” + 605 “Cheltuieli privind energia si apa” +606 “  Cheltuieli privind animalele si pasarile” +  607 Cheltuieli privind marfurile” +  608 “Cheltuieli privind ambalajele”,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_46
+      layout_properties: {x: 8.934661865234375, y: 2059.8011169433594, width: 463.06833813476567}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 628 “Alte cheltuieli cu serviciile executate de terti”,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_47
+      layout_properties: {x: 8.934661865234375, y: 2181.4346618652344, width: 460.9800000000001}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: Alte venituri si cheltuieli intragrup, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_48
+      layout_properties: {x: 11.008522033691406, y: 2221.4373474121094, width: 458.90669152832027,
+        grid_position: 'DGMGST,RWHHND'}
+      event_bindings: {}
+    event_bindings: {}
 - type: FlowPanel
   properties: {}
   name: navbar_links
