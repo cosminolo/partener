@@ -706,7 +706,7 @@ components:
         font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
       name: label_27
-      layout_properties: {x: 8.934661865234375, y: 1236.9460144042969, width: 455.95242593261725}
+      layout_properties: {x: 8.934661865234375, y: 1236.9460144042969, width: 453.93538186523443}
       event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
@@ -722,7 +722,7 @@ components:
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '#CAECF8', bold: false, underline: false, icon: ''}
       name: label_29
-      layout_properties: {x: 8.934661865234375, y: 1314.4317321777344, width: 455.95271999999994}
+      layout_properties: {x: 8.934661865234375, y: 1314.4317321777344, width: 453.95271999999994}
       event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
@@ -738,7 +738,7 @@ components:
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '#CAECF8', bold: false, underline: false, icon: ''}
       name: label_31
-      layout_properties: {x: 7.926139831542969, y: 1392.4715270996094, width: 455.82494796630857}
+      layout_properties: {x: 7.926139831542969, y: 1392.4715270996094, width: 456.78517593261716}
       event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',

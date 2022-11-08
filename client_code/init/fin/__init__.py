@@ -20,4 +20,15 @@ class fin(finTemplate):
   def text_box_108_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
+  
+  def v(self, tt):
+   if self.text_box_4.enabled == True:
+    s = self.text_box_4.text
+    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        anvil.server.call('upp_bal', us, My_globals.bal)
+        pass
+    else:         
+        self.text_box_4.text = 0     
+        alert("Doar numar fara zecimale sau separatori!") 
+   pass
 
