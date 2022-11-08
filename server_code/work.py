@@ -15,6 +15,7 @@ def pri_ini():
     "decl": {"a":"", "b":"", "c":"", "d":"", "e":"", "f":"", "g":"", "h":"", "i":"", "j":"", "k":""},
     "buget":{"nume":"", "cui":"", "bs":"", "bss":"", "bas":"", "bass":"", "total":"", "obs":"", "datav":""}, "tva":{"cui":"", "scpTVA":"", "data_inceput_ScpTVA": "",
     "statusRO_e_Factura":"", "statusInactivi":"", "statusTvaIncasare":"", "dataInceputTvaInc":"", "statusSplitTVA":"", "dataInceputSplitTVA":"", "mesaj_ScpTVA":"", "data":""},
-    "litigii":{}, "bil":{}}
+    "litigii":{}, "bil":{}, "iv":{"a":{"a1":0, "a2":0, "a3":0}, "b":{"b1":0, "b2":0, "b3":0}, "c":{"c1":0, "c2":0, "c3":0},
+     "d":{"d1":0, "d2":0, "d3":0}}, "cd":{"a":{"a1":0, "a2":0, "a3":0}}}
  return j
 
