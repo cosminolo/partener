@@ -36,22 +36,22 @@ components:
       name: label_13
       layout_properties: {x: 149.00567626953125, y: 25.965911865234375, width: 127.983}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_8
-      layout_properties: {x: 645.9942779541016, y: 203.72158813476562, width: 156.02272}
+      layout_properties: {x: 645.9942779541016, y: 203.72158813476562, width: 152.04572}
       event_bindings: {lost_focus: text_box_8_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''c''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_9
-      layout_properties: {x: 815.9658966064453, y: 202.99716186523438, width: 160.04252761718755}
+      layout_properties: {x: 815.9658966064453, y: 202.99716186523438, width: 156.05071999999998}
       event_bindings: {lost_focus: text_box_9_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''c''][''a3'']', writeback: true}
@@ -128,362 +128,362 @@ components:
       layout_properties: {x: 23.011367797851562, y: 422.32952880859375, width: 438.93471999999997}
       event_bindings: {}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_52
-      layout_properties: {x: 475.9658966064453, y: 1117.9687194824219, width: 156.02272}
+      layout_properties: {x: 475.9658966064453, y: 1117.9687194824219, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''e''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_49
-      layout_properties: {x: 475.99427795410156, y: 1081.4629821777344, width: 156.02272}
+      layout_properties: {x: 475.98011779785156, y: 1081.4488220214844, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''d''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_46
-      layout_properties: {x: 475.98011779785156, y: 1017.9687194824219, width: 156.02272}
+      layout_properties: {x: 475.98011779785156, y: 1017.9687194824219, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''c''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_43
-      layout_properties: {x: 475.9658966064453, y: 967.9971618652344, width: 156.02272}
+      layout_properties: {x: 475.9658966064453, y: 967.9971618652344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''b''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_40
-      layout_properties: {x: 475.9658966064453, y: 922.9403381347656, width: 156.02272}
+      layout_properties: {x: 475.9658966064453, y: 922.9403381347656, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''a''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_37
-      layout_properties: {x: 475.99427795410156, y: 769.8294982910156, width: 163.83486404296872}
+      layout_properties: {x: 475.98011779785156, y: 769.8153381347656, width: 159.84372}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''i''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_34
-      layout_properties: {x: 475.9658966064453, y: 729.7868957519531, width: 163.84914626953122}
+      layout_properties: {x: 475.9658966064453, y: 729.7868957519531, width: 159.85772}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''h''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_31
-      layout_properties: {x: 475.9658966064453, y: 689.2613220214844, width: 160.02810134765622}
+      layout_properties: {x: 475.9658966064453, y: 689.2613220214844, width: 156.03672}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''g''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_25
-      layout_properties: {x: 475.9658966064453, y: 592.7982482910156, width: 156.02272}
+      layout_properties: {x: 475.9658966064453, y: 592.7840881347656, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''e''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_22
-      layout_properties: {x: 475.9658966064453, y: 550.2982482910156, width: 156.0379411914063}
+      layout_properties: {x: 475.9658966064453, y: 550.2840881347656, width: 152.05972}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''d''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_19
-      layout_properties: {x: 475.9658966064453, y: 508.8067932128906, width: 156.02272}
+      layout_properties: {x: 475.9658966064453, y: 508.8067932128906, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''c''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_16
-      layout_properties: {x: 475.9658966064453, y: 472.2868957519531, width: 156.0379411914063}
+      layout_properties: {x: 475.9658966064453, y: 472.2868957519531, width: 152.05972}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''b''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_13
-      layout_properties: {x: 475.9658966064453, y: 426.81817626953125, width: 156.02272}
+      layout_properties: {x: 475.9658966064453, y: 426.81817626953125, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''a''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_53
-      layout_properties: {x: 645.9942779541016, y: 1117.9687194824219, width: 161.02272}
+      layout_properties: {x: 645.9942779541016, y: 1117.9687194824219, width: 157.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''e''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_50
-      layout_properties: {x: 645.9942779541016, y: 1081.4629821777344, width: 156.02272}
+      layout_properties: {x: 645.9942779541016, y: 1081.4488220214844, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''d''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_47
-      layout_properties: {x: 645.9942779541016, y: 1017.9687194824219, width: 156.02272}
+      layout_properties: {x: 645.9942779541016, y: 1017.9687194824219, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''c''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_44
-      layout_properties: {x: 645.9942779541016, y: 967.9971618652344, width: 152.04572}
+      layout_properties: {x: 645.9942779541016, y: 967.9971618652344, width: 148.06771999999998}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''b''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_41
-      layout_properties: {x: 645.9658966064453, y: 922.9403381347656, width: 156.02272}
+      layout_properties: {x: 645.9658966064453, y: 922.9403381347656, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''a''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_48
-      layout_properties: {x: 824.9289703369141, y: 1017.9687194824219, width: 159.99972000000008}
+      layout_properties: {x: 824.9289703369141, y: 1017.9687194824219, width: 156.00871999999998}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''c''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_45
-      layout_properties: {x: 824.9289703369141, y: 967.9828796386719, width: 159.98571999999996}
+      layout_properties: {x: 824.9289703369141, y: 967.9828796386719, width: 155.99472}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''b''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_42
-      layout_properties: {x: 824.9289703369141, y: 922.9403381347656, width: 159.97172000000006}
+      layout_properties: {x: 824.9289703369141, y: 922.9403381347656, width: 155.99472}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''a''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_35
-      layout_properties: {x: 650.9942779541016, y: 725.7669982910156, width: 156.02272}
+      layout_properties: {x: 650.9942779541016, y: 725.7528381347656, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''h''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_36
-      layout_properties: {x: 824.9289703369141, y: 725.7669982910156, width: 156.02272}
+      layout_properties: {x: 824.9289703369141, y: 725.7528381347656, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''h''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_32
-      layout_properties: {x: 650.9942779541016, y: 689.2613220214844, width: 156.03672}
+      layout_properties: {x: 650.9942779541016, y: 689.2613220214844, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''g''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_26
-      layout_properties: {x: 645.9658966064453, y: 592.7982482910156, width: 156.06548269531248}
+      layout_properties: {x: 645.9658966064453, y: 592.7840881347656, width: 152.08772}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''e''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_23
-      layout_properties: {x: 645.9942779541016, y: 550.2840881347656, width: 156.02272}
+      layout_properties: {x: 645.9942779541016, y: 550.2840881347656, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''d''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_20
-      layout_properties: {x: 645.9942779541016, y: 508.7925720214844, width: 156.00833865234375}
+      layout_properties: {x: 645.9942779541016, y: 508.7784118652344, width: 152.01672}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''c''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_17
-      layout_properties: {x: 645.9942779541016, y: 472.2727355957031, width: 156.02272}
+      layout_properties: {x: 645.9942779541016, y: 472.2727355957031, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''b''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_18
-      layout_properties: {x: 820.9942779541016, y: 472.3011169433594, width: 156.02272}
+      layout_properties: {x: 820.9942779541016, y: 472.3011169433594, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''b''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_14
-      layout_properties: {x: 645.9658966064453, y: 426.81817626953125, width: 156.02272}
+      layout_properties: {x: 645.9658966064453, y: 426.81817626953125, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''a''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_15
-      layout_properties: {x: 820.9942779541016, y: 425.3124694824219, width: 154.98538357421882}
+      layout_properties: {x: 820.9942779541016, y: 425.29827880859375, width: 150.99472}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''a''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_21
-      layout_properties: {x: 820.9942779541016, y: 510.7954406738281, width: 158.8350886523438}
+      layout_properties: {x: 820.9942779541016, y: 510.7954406738281, width: 154.84372}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''c''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_27
-      layout_properties: {x: 820.9942779541016, y: 592.7840881347656, width: 159.99972000000008}
+      layout_properties: {x: 820.9942779541016, y: 592.7840881347656, width: 156.00871999999998}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''e''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_24
-      layout_properties: {x: 820.9942779541016, y: 550.2840881347656, width: 159.99972000000008}
+      layout_properties: {x: 820.9942779541016, y: 550.2840881347656, width: 156.00871999999998}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''d''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_38
-      layout_properties: {x: 650.9942779541016, y: 769.8294982910156, width: 156.03676492187498}
+      layout_properties: {x: 650.9942779541016, y: 769.8153381347656, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''i''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_39
-      layout_properties: {x: 824.9289703369141, y: 769.8294982910156, width: 157.07335134765646}
+      layout_properties: {x: 824.9289703369141, y: 769.8153381347656, width: 153.08272}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''i''][''a3'']', writeback: true}
@@ -496,22 +496,22 @@ components:
       layout_properties: {x: 109.98578643798828, y: 350.3266906738281, width: 202.756}
       event_bindings: {}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_54
-      layout_properties: {x: 824.9289703369141, y: 1117.9687194824219, width: 159.98571999999996}
+      layout_properties: {x: 824.9289703369141, y: 1117.9687194824219, width: 155.99472}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''e''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_51
-      layout_properties: {x: 824.9289703369141, y: 1081.4629821777344, width: 159.98571999999996}
+      layout_properties: {x: 824.9289703369141, y: 1081.4488220214844, width: 155.99472}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''d''][''a3'']', writeback: true}
@@ -581,192 +581,192 @@ components:
       layout_properties: {x: 52.877830505371094, y: 812.03125, width: 166.875}
       event_bindings: {}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_55
-      layout_properties: {x: 475.9658966064453, y: 1200.4402770996094, width: 156.02272}
+      layout_properties: {x: 475.9658966064453, y: 1200.4402770996094, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''a''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_58
-      layout_properties: {x: 475.9658966064453, y: 1237.8976745605469, width: 157.0593225390624}
+      layout_properties: {x: 475.9658966064453, y: 1237.8976745605469, width: 153.06771999999998}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''b''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_61
-      layout_properties: {x: 475.98011779785156, y: 1279.3891296386719, width: 156.02272}
+      layout_properties: {x: 475.98011779785156, y: 1279.3891296386719, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''c''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_64
-      layout_properties: {x: 475.98011779785156, y: 1320.8664245605469, width: 156.02265896484374}
+      layout_properties: {x: 475.98011779785156, y: 1320.8664245605469, width: 152.03171999999998}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''d''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_67
-      layout_properties: {x: 475.9658966064453, y: 1361.4203796386719, width: 156.02272}
+      layout_properties: {x: 475.9658966064453, y: 1361.4203796386719, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''e''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_68
-      layout_properties: {x: 645.9658966064453, y: 1364.9289245605469, width: 156.02272}
+      layout_properties: {x: 645.9658966064453, y: 1364.9289245605469, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''e''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_70
-      layout_properties: {x: 475.98011779785156, y: 1401.9601745605469, width: 157.04536404296874}
+      layout_properties: {x: 475.98011779785156, y: 1401.9601745605469, width: 153.05372}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''f''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_71
-      layout_properties: {x: 645.9658966064453, y: 1405.4828796386719, width: 156.03742507812507}
+      layout_properties: {x: 645.9658966064453, y: 1405.4828796386719, width: 152.05972}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''f''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_73
-      layout_properties: {x: 475.9658966064453, y: 1441.7754821777344, width: 156.02272}
+      layout_properties: {x: 475.9658966064453, y: 1441.7754821777344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''g''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_74
-      layout_properties: {x: 645.9658966064453, y: 1445.2840270996094, width: 156.02272}
+      layout_properties: {x: 645.9658966064453, y: 1445.2840270996094, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''g''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_76
-      layout_properties: {x: 475.9658966064453, y: 1478.7925720214844, width: 156.03696999999994}
+      layout_properties: {x: 475.9658966064453, y: 1478.7925720214844, width: 152.05972}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''h''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_77
-      layout_properties: {x: 645.9658966064453, y: 1482.3152770996094, width: 156.05110134765624}
+      layout_properties: {x: 645.9658966064453, y: 1482.3152770996094, width: 152.05972}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''h''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_80
-      layout_properties: {x: 645.9942779541016, y: 1521.7328796386719, width: 156.02272}
+      layout_properties: {x: 645.9942779541016, y: 1521.7328796386719, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''i''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_106
-      layout_properties: {x: 481.9886016845703, y: 1995.3833923339844, width: 156.02272}
+      layout_properties: {x: 481.9886016845703, y: 1995.3833923339844, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''s''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_107
-      layout_properties: {x: 651.9886016845703, y: 1995.3833923339844, width: 156.02272}
+      layout_properties: {x: 651.9886016845703, y: 1995.3833923339844, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''s''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_108
-      layout_properties: {x: 821.9886016845703, y: 1995.3833923339844, width: 156.02272}
+      layout_properties: {x: 821.9886016845703, y: 1995.3833923339844, width: 152.04572}
       event_bindings: {pressed_enter: text_box_108_pressed_enter}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''s''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_62
-      layout_properties: {x: 645.9658966064453, y: 1280.8664245605469, width: 156.02272}
+      layout_properties: {x: 645.9658966064453, y: 1280.8664245605469, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''c''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_59
-      layout_properties: {x: 645.9658966064453, y: 1239.3608093261719, width: 156.07854373046877}
+      layout_properties: {x: 645.9658966064453, y: 1239.3608093261719, width: 152.08772}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''b''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_56
-      layout_properties: {x: 645.9942779541016, y: 1201.4062194824219, width: 156.02272}
+      layout_properties: {x: 645.9942779541016, y: 1201.4062194824219, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''a''][''a2'']', writeback: true}
@@ -867,292 +867,292 @@ components:
       layout_properties: {x: 7.8267059326171875, y: 1836.2215270996094, width: 459.1771538989258}
       event_bindings: {}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_82
-      layout_properties: {x: 475.99427795410156, y: 1609.7442321777344, width: 156.02272}
+      layout_properties: {x: 475.98011779785156, y: 1609.7442321777344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''j''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_88
-      layout_properties: {x: 475.9658966064453, y: 1687.6845397949219, width: 156.02272}
+      layout_properties: {x: 475.9658966064453, y: 1687.6703796386719, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''l''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_91
-      layout_properties: {x: 475.99427795410156, y: 1726.7187194824219, width: 156.02272}
+      layout_properties: {x: 475.98011779785156, y: 1726.7187194824219, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''m''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_97
-      layout_properties: {x: 475.99427795410156, y: 1810.7386169433594, width: 156.02272}
+      layout_properties: {x: 475.98011779785156, y: 1810.7386169433594, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''o''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_100
-      layout_properties: {x: 475.98011779785156, y: 1849.6874694824219, width: 156.02272}
+      layout_properties: {x: 475.98011779785156, y: 1849.6874694824219, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''p''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_103
-      layout_properties: {x: 475.98011779785156, y: 1886.1930847167969, width: 156.02272}
+      layout_properties: {x: 475.98011779785156, y: 1886.1930847167969, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''r''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_83
-      layout_properties: {x: 649.8153228759766, y: 1613.1960144042969, width: 156.02272}
+      layout_properties: {x: 649.8153228759766, y: 1613.1960144042969, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''j''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_86
-      layout_properties: {x: 649.8153228759766, y: 1651.1647644042969, width: 156.02272}
+      layout_properties: {x: 649.8153228759766, y: 1651.1647644042969, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''k''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_89
-      layout_properties: {x: 650.9942779541016, y: 1690.2129821777344, width: 156.02272}
+      layout_properties: {x: 650.9942779541016, y: 1690.2129821777344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''l''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_95
-      layout_properties: {x: 649.8153228759766, y: 1768.6647644042969, width: 156.02272}
+      layout_properties: {x: 649.8153228759766, y: 1768.6647644042969, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''n''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_98
-      layout_properties: {x: 649.8153228759766, y: 1810.7386169433594, width: 156.02272}
+      layout_properties: {x: 649.8153228759766, y: 1810.7386169433594, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''o''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_101
-      layout_properties: {x: 649.8153228759766, y: 1849.6874694824219, width: 156.02272}
+      layout_properties: {x: 649.8153228759766, y: 1849.6874694824219, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''p''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_92
-      layout_properties: {x: 649.8153228759766, y: 1726.7187194824219, width: 156.02272}
+      layout_properties: {x: 649.8153228759766, y: 1726.7187194824219, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''m''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_104
-      layout_properties: {x: 649.8153228759766, y: 1886.1930847167969, width: 156.02272}
+      layout_properties: {x: 649.8153228759766, y: 1886.1930847167969, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''r''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_90
-      layout_properties: {x: 819.8153228759766, y: 1690.2129821777344, width: 156.02272}
+      layout_properties: {x: 819.8153228759766, y: 1690.2129821777344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''l''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_93
-      layout_properties: {x: 819.8153228759766, y: 1724.1902770996094, width: 156.02272}
+      layout_properties: {x: 819.8153228759766, y: 1724.1902770996094, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''m''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_96
-      layout_properties: {x: 819.8153228759766, y: 1768.6647644042969, width: 156.02272}
+      layout_properties: {x: 819.8153228759766, y: 1768.6647644042969, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''n''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_99
-      layout_properties: {x: 819.8153228759766, y: 1813.1817321777344, width: 156.02272}
+      layout_properties: {x: 819.8153228759766, y: 1813.1817321777344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''o''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_102
-      layout_properties: {x: 819.8153228759766, y: 1849.6874694824219, width: 156.02272}
+      layout_properties: {x: 819.8153228759766, y: 1849.6874694824219, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''p''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_105
-      layout_properties: {x: 821.9886016845703, y: 1886.1930847167969, width: 156.02272}
+      layout_properties: {x: 821.9886016845703, y: 1886.1930847167969, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''r''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_87
-      layout_properties: {x: 820.9942779541016, y: 1651.1647644042969, width: 156.02272}
+      layout_properties: {x: 820.9942779541016, y: 1651.1647644042969, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''k''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_84
-      layout_properties: {x: 820.9942779541016, y: 1613.1960144042969, width: 156.02272}
+      layout_properties: {x: 820.9942779541016, y: 1613.1960144042969, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''j''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_60
-      layout_properties: {x: 824.9289703369141, y: 1239.3608093261719, width: 156.02272}
+      layout_properties: {x: 824.9289703369141, y: 1239.3608093261719, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''b''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_63
-      layout_properties: {x: 824.9289703369141, y: 1277.9118347167969, width: 154.88702761718733}
+      layout_properties: {x: 824.9289703369141, y: 1277.8976745605469, width: 150.90872}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''c''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_69
-      layout_properties: {x: 821.9886016845703, y: 1361.4203796386719, width: 157.82739626953108}
+      layout_properties: {x: 821.9886016845703, y: 1361.4203796386719, width: 153.84972}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''e''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_72
-      layout_properties: {x: 821.9886016845703, y: 1405.2555847167969, width: 158.9913962695312}
+      layout_properties: {x: 821.9886016845703, y: 1405.2414245605469, width: 154.99972}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''f''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_75
-      layout_properties: {x: 821.9886016845703, y: 1445.8096618652344, width: 160.00108865234375}
+      layout_properties: {x: 821.9886016845703, y: 1445.8096618652344, width: 156.02272}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''g''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_78
-      layout_properties: {x: 821.9886016845703, y: 1481.7897644042969, width: 160.00008865234378}
+      layout_properties: {x: 821.9886016845703, y: 1481.7897644042969, width: 156.02272}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''h''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_81
-      layout_properties: {x: 821.9886016845703, y: 1518.8210144042969, width: 160.0140886523438}
+      layout_properties: {x: 821.9886016845703, y: 1518.8210144042969, width: 156.02272}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''i''][''a3'']', writeback: true}
@@ -1190,112 +1190,112 @@ components:
       layout_properties: {x: 10.980110168457031, y: 62.01704406738281, width: 448.94992593261713}
       event_bindings: {}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_1
-      layout_properties: {x: 474.8866618652344, y: 86.46875, width: 152.045}
+      layout_properties: {x: 474.88636779785156, y: 86.46305847167969, width: 148.05372}
       event_bindings: {lost_focus: text_box_1_lost_focus, pressed_enter: text_box_1_pressed_enter}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''a''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_4
-      layout_properties: {x: 473.7647059326172, y: 149.9829559326172, width: 156.023}
+      layout_properties: {x: 473.76417541503906, y: 149.97158813476562, width: 152.04572}
       event_bindings: {lost_focus: text_box_4_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''b''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_10
-      layout_properties: {x: 470.8943677978515, y: 272.8409118652344, width: 156.023}
+      layout_properties: {x: 470.8806915283203, y: 272.8409118652344, width: 152.04572}
       event_bindings: {lost_focus: text_box_10_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''d''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_11
-      layout_properties: {x: 645.9942779541016, y: 272.8409118652344, width: 156.023}
+      layout_properties: {x: 645.9942779541016, y: 272.8409118652344, width: 152.04572}
       event_bindings: {lost_focus: text_box_11_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''d''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_5
-      layout_properties: {x: 645.9942779541016, y: 149.97158813476562, width: 156.023}
+      layout_properties: {x: 645.9942779541016, y: 149.97158813476562, width: 152.04572}
       event_bindings: {lost_focus: text_box_5_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''b''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_6
-      layout_properties: {x: 815.9658966064453, y: 149.97158813476562, width: 160}
+      layout_properties: {x: 815.9658966064453, y: 149.97158813476562, width: 156.02272}
       event_bindings: {lost_focus: text_box_6_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''b''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_2
-      layout_properties: {x: 645.9942779541016, y: 86.46305847167969, width: 152.045}
+      layout_properties: {x: 645.9942779541016, y: 86.44886779785156, width: 148.05372}
       event_bindings: {lost_focus: text_box_2_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''a''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_7
-      layout_properties: {x: 469.9151177978515, y: 203.72158813476562, width: 156.023}
+      layout_properties: {x: 469.9147491455078, y: 203.72158813476562, width: 152.04572}
       event_bindings: {lost_focus: text_box_7_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''c''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_3
-      layout_properties: {x: 815.9658966064453, y: 86.44886779785156, width: 160}
+      layout_properties: {x: 815.9658966064453, y: 86.44886779785156, width: 156.02272}
       event_bindings: {lost_focus: text_box_3_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''a''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_12
-      layout_properties: {x: 815.9942779541016, y: 272.8409118652344, width: 160.00000000000009}
+      layout_properties: {x: 815.9942779541016, y: 272.8409118652344, width: 156.02272}
       event_bindings: {lost_focus: text_box_12_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''d''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_33
-      layout_properties: {x: 824.9289703369141, y: 689.2612982910156, width: 156.0229999999999}
+      layout_properties: {x: 824.9289703369141, y: 689.2471618652344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''g''][''a3'']', writeback: true}
@@ -1320,32 +1320,32 @@ components:
       layout_properties: {x: 8.848705932617179, y: 1942.8407897949219, width: 453.1104338989257}
       event_bindings: {}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_109
-      layout_properties: {x: 475.98011779785156, y: 2139.2185974121094, width: 156.02272}
+      layout_properties: {x: 475.98011779785156, y: 2139.2185974121094, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''t''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_110
-      layout_properties: {x: 649.7727203369141, y: 2139.2185974121094, width: 156.02272}
+      layout_properties: {x: 649.7727203369141, y: 2139.2185974121094, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''t''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_111
-      layout_properties: {x: 824.9289703369141, y: 2139.2185974121094, width: 156.02272}
+      layout_properties: {x: 824.9289703369141, y: 2139.2185974121094, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''t''][''a3'']', writeback: true}
@@ -1413,62 +1413,62 @@ components:
       layout_properties: {x: 8.934661865234375, y: 2221.8890991210938, width: 449.02272}
       event_bindings: {}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_115
-      layout_properties: {x: 477.9971466064453, y: 2285.340747412109, width: 156.023}
+      layout_properties: {x: 477.9971466064453, y: 2285.3265075683594, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''v''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_116
-      layout_properties: {x: 649.9712779541015, y: 2285.3265075683594, width: 156.023}
+      layout_properties: {x: 649.9573516845703, y: 2285.3123474121094, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''v''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_117
-      layout_properties: {x: 825.965970336914, y: 2285.3123474121094, width: 156.023}
+      layout_properties: {x: 825.9658966064453, y: 2285.3123474121094, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''v''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_112
-      layout_properties: {x: 477.9971466064453, y: 2232.8981169433596, width: 156.023}
+      layout_properties: {x: 477.9971466064453, y: 2232.8975524902344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''u''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_113
-      layout_properties: {x: 649.8153228759766, y: 2232.8975524902344, width: 161.165}
+      layout_properties: {x: 649.8153228759766, y: 2232.8833923339844, width: 157.18771999999998}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''u''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_114
-      layout_properties: {x: 824.9289703369141, y: 2232.8833923339844, width: 156.023}
+      layout_properties: {x: 824.9289703369141, y: 2232.8833923339844, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''u''][''a3'']', writeback: true}
@@ -1481,92 +1481,92 @@ components:
       layout_properties: {x: 7.9396618652343705, y: 1877.2016296386719, width: 459.077}
       event_bindings: {}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_85
-      layout_properties: {x: 475.9658966064453, y: 1651.164679638672, width: 156.023}
+      layout_properties: {x: 475.9658966064453, y: 1651.1504821777344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''k''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_94
-      layout_properties: {x: 477.0027059326171, y: 1768.6647644042969, width: 156.023}
+      layout_properties: {x: 476.9886016845703, y: 1768.6647644042969, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''n''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_79
-      layout_properties: {x: 477.9687042236328, y: 1521.7328796386719, width: 156.023}
+      layout_properties: {x: 477.9545440673828, y: 1521.7328796386719, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''i''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_28
-      layout_properties: {x: 475.98011779785156, y: 643.3096381347656, width: 160}
+      layout_properties: {x: 475.98011779785156, y: 643.3096618652344, width: 156.02272}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''f''][''a1'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_29
-      layout_properties: {x: 653.7923228759764, y: 643.3096618652344, width: 156.023}
+      layout_properties: {x: 653.7783966064453, y: 643.3096618652344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''f''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_30
-      layout_properties: {x: 825.9656016845703, y: 643.3096618652344, width: 156.023}
+      layout_properties: {x: 825.9516754150391, y: 643.3096618652344, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''f''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_57
-      layout_properties: {x: 824.9289703369141, y: 1200.4402770996094, width: 153.082}
+      layout_properties: {x: 824.9289703369141, y: 1200.4402770996094, width: 149.09072}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''a''][''a3'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_65
-      layout_properties: {x: 645.9658966064453, y: 1320.8664245605469, width: 156.023}
+      layout_properties: {x: 645.9658966064453, y: 1320.8664245605469, width: 152.04572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''d''][''a2'']', writeback: true}
     - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_66
-      layout_properties: {x: 821.9886016845703, y: 1320.8664245605469, width: 158.977}
+      layout_properties: {x: 821.9886016845703, y: 1320.8664245605469, width: 154.98572}
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''d''][''a3'']', writeback: true}
