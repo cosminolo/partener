@@ -16,3 +16,8 @@ class fin(finTemplate):
 
     # Any code you write here will run when the form opens.
     
+
+  def text_box_108_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
