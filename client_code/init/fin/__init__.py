@@ -336,6 +336,306 @@ class fin(finTemplate):
     self.lf(self.text_box_57)
     pass
 
+  def text_box_58_lost_focus(self, **event_args):
+    self.lf(self.text_box_58)
+    pass
+
+  def text_box_59_lost_focus(self, **event_args):
+    self.lf(self.text_box_59)
+    pass
+
+  def text_box_60_lost_focus(self, **event_args):
+    self.lf(self.text_box_60)
+    pass
+
+  def text_box_61_lost_focus(self, **event_args):
+    self.lf(self.text_box_61)
+    pass
+
+  def text_box_62_lost_focus(self, **event_args):
+    self.lf(self.text_box_62)
+    pass
+
+  def text_box_63_lost_focus(self, **event_args):
+    self.lf(self.text_box_63)
+    pass
+
+  def text_box_64_lost_focus(self, **event_args):
+    self.lf(self.text_box_64)
+    pass
+
+  def text_box_65_lost_focus(self, **event_args):
+    self.lf(self.text_box_65)
+    pass
+
+  def text_box_66_lost_focus(self, **event_args):
+    self.lf(self.text_box_66)
+    pass
+
+  def text_box_67_lost_focus(self, **event_args):
+    self.lf(self.text_box_67)
+    pass
+
+  def text_box_68_lost_focus(self, **event_args):
+    self.lf(self.text_box_68)
+    pass
+
+  def text_box_69_lost_focus(self, **event_args):
+    self.lf(self.text_box_69)
+    pass
+
+  def text_box_70_lost_focus(self, **event_args):
+    self.lf(self.text_box_70)
+    pass
+
+  def text_box_71_lost_focus(self, **event_args):
+    self.lf(self.text_box_71)
+    pass
+
+  def text_box_72_lost_focus(self, **event_args):
+    self.lf(self.text_box_72)
+    pass
+
+  def text_box_73_lost_focus(self, **event_args):
+    self.lf(self.text_box_73)
+    pass
+
+  def text_box_74_lost_focus(self, **event_args):
+    self.lf(self.text_box_74)
+    pass
+
+  def text_box_75_lost_focus(self, **event_args):
+    self.lf(self.text_box_75)
+    pass
+
+  def text_box_76_lost_focus(self, **event_args):
+    self.lf(self.text_box_76)
+    pass
+
+  def text_box_77_lost_focus(self, **event_args):
+    self.lf(self.text_box_77)
+    pass
+
+  def text_box_78_lost_focus(self, **event_args):
+    self.lf(self.text_box_78)
+    pass
+
+  def text_box_79_lost_focus(self, **event_args):
+    self.lf(self.text_box_79)
+    pass
+
+  def text_box_80_lost_focus(self, **event_args):
+    self.lf(self.text_box_80)
+    pass
+
+  def text_box_81_lost_focus(self, **event_args):
+    self.lf(self.text_box_81)
+    pass
+
+  def text_box_82_lost_focus(self, **event_args):
+    self.lf(self.text_box_82)
+    pass
+
+  def text_box_83_lost_focus(self, **event_args):
+    self.lf(self.text_box_83)
+    pass
+
+  def text_box_84_lost_focus(self, **event_args):
+    self.lf(self.text_box_84)
+    pass
+
+  def text_box_85_lost_focus(self, **event_args):
+    self.lf(self.text_box_85)
+    pass
+
+  def text_box_86_lost_focus(self, **event_args):
+    self.lf(self.text_box_86)
+    pass
+
+  def text_box_87_lost_focus(self, **event_args):
+    self.lf(self.text_box_87)
+    pass
+
+  def text_box_88_lost_focus(self, **event_args):
+    self.lf(self.text_box_88)
+    pass
+
+  def text_box_89_lost_focus(self, **event_args):
+    self.lf(self.text_box_89)
+    pass
+
+  def text_box_90_lost_focus(self, **event_args):
+    self.lf(self.text_box_90)
+    pass
+
+  def text_box_91_lost_focus(self, **event_args):
+    self.lf(self.text_box_91)
+    pass
+
+  def text_box_92_lost_focus(self, **event_args):
+    self.lf(self.text_box_92)
+    pass
+
+  def text_box_93_lost_focus(self, **event_args):
+    self.lf(self.text_box_93)
+    pass
+
+  def text_box_94_lost_focus(self, **event_args):
+    self.lf(self.text_box_94)
+    pass
+
+  def text_box_95_lost_focus(self, **event_args):
+    self.lf(self.text_box_95)
+    pass
+
+  def text_box_96_lost_focus(self, **event_args):
+    self.lf(self.text_box_96)
+    pass
+
+  def text_box_97_lost_focus(self, **event_args):
+    self.lf(self.text_box_97)
+    pass
+
+  def text_box_98_lost_focus(self, **event_args):
+    self.lf(self.text_box_98)
+    pass
+
+  def text_box_99_lost_focus(self, **event_args):
+    self.lf(self.text_box_99)
+    pass
+
+  def text_box_100_lost_focus(self, **event_args):
+    self.lf(self.text_box_100)
+    pass
+
+  def text_box_101_lost_focus(self, **event_args):
+    self.lf(self.text_box_101)
+    pass
+
+  def text_box_102_lost_focus(self, **event_args):
+    self.lf(self.text_box_102)
+    pass
+
+  def text_box_103_lost_focus(self, **event_args):
+    self.lf(self.text_box_103)
+    pass
+
+  def text_box_104_lost_focus(self, **event_args):
+    self.lf(self.text_box_104)
+    pass
+
+  def text_box_105_lost_focus(self, **event_args):
+    self.lf(self.text_box_105)
+    pass
+
+  def text_box_106_lost_focus(self, **event_args):
+    self.lf(self.text_box_106)
+    pass
+
+  def text_box_107_lost_focus(self, **event_args):
+    self.lf(self.text_box_107)
+    pass
+
+  def text_box_108_lost_focus(self, **event_args):
+    self.lf(self.text_box_108)
+    pass
+
+  def text_box_109_lost_focus(self, **event_args):
+    self.lf(self.text_box_109)
+    pass
+
+  def text_box_110_lost_focus(self, **event_args):
+    self.lf(self.text_box_110)
+    pass
+
+  def text_box_111_lost_focus(self, **event_args):
+    self.lf(self.text_box_111)
+    pass
+
+  def text_box_112_lost_focus(self, **event_args):
+    self.lf(self.text_box_112)
+    pass
+
+  def text_box_113_lost_focus(self, **event_args):
+    self.lf(self.text_box_113)
+    pass
+
+  def text_box_114_lost_focus(self, **event_args):
+    self.lf(self.text_box_114)
+    pass
+
+  def text_box_115_lost_focus(self, **event_args):
+    self.lf(self.text_box_115)
+    pass
+
+  def text_box_116_lost_focus(self, **event_args):
+    self.lf(self.text_box_116)
+    pass
+
+  def text_box_117_lost_focus(self, **event_args):
+    self.lf(self.text_box_117)
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

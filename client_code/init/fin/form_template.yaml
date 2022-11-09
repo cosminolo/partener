@@ -598,7 +598,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_58
       layout_properties: {x: 475.9658966064453, y: 1237.8976745605469, width: 153.06771999999998}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_58_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''b''][''a1'']', writeback: true}
     - type: TextBox
@@ -608,7 +608,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_61
       layout_properties: {x: 475.98011779785156, y: 1279.3891296386719, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_61_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''c''][''a1'']', writeback: true}
     - type: TextBox
@@ -618,7 +618,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_64
       layout_properties: {x: 475.98011779785156, y: 1320.8664245605469, width: 152.03171999999998}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_64_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''d''][''a1'']', writeback: true}
     - type: TextBox
@@ -628,7 +628,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_67
       layout_properties: {x: 475.9658966064453, y: 1361.4203796386719, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_67_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''e''][''a1'']', writeback: true}
     - type: TextBox
@@ -638,7 +638,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_68
       layout_properties: {x: 645.9658966064453, y: 1364.9289245605469, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_68_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''e''][''a2'']', writeback: true}
     - type: TextBox
@@ -648,7 +648,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_70
       layout_properties: {x: 475.98011779785156, y: 1401.9601745605469, width: 153.05372}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_70_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''f''][''a1'']', writeback: true}
     - type: TextBox
@@ -658,7 +658,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_71
       layout_properties: {x: 645.9658966064453, y: 1405.4828796386719, width: 152.05972}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_71_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''f''][''a2'']', writeback: true}
     - type: TextBox
@@ -668,7 +668,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_73
       layout_properties: {x: 475.9658966064453, y: 1441.7754821777344, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_73_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''g''][''a1'']', writeback: true}
     - type: TextBox
@@ -678,7 +678,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_74
       layout_properties: {x: 645.9658966064453, y: 1445.2840270996094, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_74_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''g''][''a2'']', writeback: true}
     - type: TextBox
@@ -688,7 +688,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_76
       layout_properties: {x: 475.9658966064453, y: 1478.7925720214844, width: 152.05972}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_76_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''h''][''a1'']', writeback: true}
     - type: TextBox
@@ -698,7 +698,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_77
       layout_properties: {x: 645.9658966064453, y: 1482.3152770996094, width: 152.05972}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_77_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''h''][''a2'']', writeback: true}
     - type: TextBox
@@ -708,7 +708,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_80
       layout_properties: {x: 645.9942779541016, y: 1521.7328796386719, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_80_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''i''][''a2'']', writeback: true}
     - type: TextBox
@@ -718,7 +718,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_106
       layout_properties: {x: 481.9886016845703, y: 1995.3833923339844, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_106_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''s''][''a1'']', writeback: true}
     - type: TextBox
@@ -728,7 +728,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_107
       layout_properties: {x: 651.9886016845703, y: 1995.3833923339844, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_107_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''s''][''a2'']', writeback: true}
     - type: TextBox
@@ -738,7 +738,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_108
       layout_properties: {x: 821.9886016845703, y: 1995.3833923339844, width: 152.04572}
-      event_bindings: {pressed_enter: text_box_108_pressed_enter}
+      event_bindings: {pressed_enter: text_box_108_pressed_enter, lost_focus: text_box_108_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''s''][''a3'']', writeback: true}
     - type: TextBox
@@ -748,7 +748,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_62
       layout_properties: {x: 645.9658966064453, y: 1280.8664245605469, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_62_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''c''][''a2'']', writeback: true}
     - type: TextBox
@@ -758,7 +758,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_59
       layout_properties: {x: 645.9658966064453, y: 1239.3608093261719, width: 152.08772}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_59_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''b''][''a2'']', writeback: true}
     - type: TextBox
@@ -874,7 +874,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_82
       layout_properties: {x: 475.98011779785156, y: 1609.7442321777344, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_82_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''j''][''a1'']', writeback: true}
     - type: TextBox
@@ -884,7 +884,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_88
       layout_properties: {x: 475.9658966064453, y: 1687.6703796386719, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_88_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''l''][''a1'']', writeback: true}
     - type: TextBox
@@ -894,7 +894,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_91
       layout_properties: {x: 475.98011779785156, y: 1726.7187194824219, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_91_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''m''][''a1'']', writeback: true}
     - type: TextBox
@@ -904,7 +904,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_97
       layout_properties: {x: 475.98011779785156, y: 1810.7386169433594, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_97_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''o''][''a1'']', writeback: true}
     - type: TextBox
@@ -914,7 +914,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_100
       layout_properties: {x: 475.98011779785156, y: 1849.6874694824219, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_100_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''p''][''a1'']', writeback: true}
     - type: TextBox
@@ -924,7 +924,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_103
       layout_properties: {x: 475.98011779785156, y: 1886.1930847167969, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_103_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''r''][''a1'']', writeback: true}
     - type: TextBox
@@ -934,7 +934,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_83
       layout_properties: {x: 649.8153228759766, y: 1613.1960144042969, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_83_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''j''][''a2'']', writeback: true}
     - type: TextBox
@@ -944,7 +944,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_86
       layout_properties: {x: 649.8153228759766, y: 1651.1647644042969, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_86_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''k''][''a2'']', writeback: true}
     - type: TextBox
@@ -954,7 +954,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_89
       layout_properties: {x: 650.9942779541016, y: 1690.2129821777344, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_89_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''l''][''a2'']', writeback: true}
     - type: TextBox
@@ -964,7 +964,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_95
       layout_properties: {x: 649.8153228759766, y: 1768.6647644042969, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_95_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''n''][''a2'']', writeback: true}
     - type: TextBox
@@ -974,7 +974,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_98
       layout_properties: {x: 649.8153228759766, y: 1810.7386169433594, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_98_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''o''][''a2'']', writeback: true}
     - type: TextBox
@@ -984,7 +984,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_101
       layout_properties: {x: 649.8153228759766, y: 1849.6874694824219, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_101_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''p''][''a2'']', writeback: true}
     - type: TextBox
@@ -994,7 +994,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_92
       layout_properties: {x: 649.8153228759766, y: 1726.7187194824219, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_92_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''m''][''a2'']', writeback: true}
     - type: TextBox
@@ -1004,7 +1004,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_104
       layout_properties: {x: 649.8153228759766, y: 1886.1930847167969, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_104_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''r''][''a2'']', writeback: true}
     - type: TextBox
@@ -1014,7 +1014,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_90
       layout_properties: {x: 819.8153228759766, y: 1690.2129821777344, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_90_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''l''][''a3'']', writeback: true}
     - type: TextBox
@@ -1024,7 +1024,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_93
       layout_properties: {x: 819.8153228759766, y: 1724.1902770996094, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_93_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''m''][''a3'']', writeback: true}
     - type: TextBox
@@ -1034,7 +1034,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_96
       layout_properties: {x: 819.8153228759766, y: 1768.6647644042969, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_96_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''n''][''a3'']', writeback: true}
     - type: TextBox
@@ -1044,7 +1044,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_99
       layout_properties: {x: 819.8153228759766, y: 1813.1817321777344, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_99_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''o''][''a3'']', writeback: true}
     - type: TextBox
@@ -1054,7 +1054,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_102
       layout_properties: {x: 819.8153228759766, y: 1849.6874694824219, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_102_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''p''][''a3'']', writeback: true}
     - type: TextBox
@@ -1064,7 +1064,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_105
       layout_properties: {x: 821.9886016845703, y: 1886.1930847167969, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_105_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''r''][''a3'']', writeback: true}
     - type: TextBox
@@ -1074,7 +1074,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_87
       layout_properties: {x: 820.9942779541016, y: 1651.1647644042969, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_87_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''k''][''a3'']', writeback: true}
     - type: TextBox
@@ -1084,7 +1084,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_84
       layout_properties: {x: 820.9942779541016, y: 1613.1960144042969, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_84_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''j''][''a3'']', writeback: true}
     - type: TextBox
@@ -1094,7 +1094,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_60
       layout_properties: {x: 824.9289703369141, y: 1239.3608093261719, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_60_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''b''][''a3'']', writeback: true}
     - type: TextBox
@@ -1104,7 +1104,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_63
       layout_properties: {x: 824.9289703369141, y: 1277.8976745605469, width: 150.90872}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_63_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''c''][''a3'']', writeback: true}
     - type: TextBox
@@ -1114,7 +1114,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_69
       layout_properties: {x: 821.9886016845703, y: 1361.4203796386719, width: 153.84972}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_69_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''e''][''a3'']', writeback: true}
     - type: TextBox
@@ -1124,7 +1124,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_72
       layout_properties: {x: 821.9886016845703, y: 1405.2414245605469, width: 154.99972}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_72_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''f''][''a3'']', writeback: true}
     - type: TextBox
@@ -1134,7 +1134,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_75
       layout_properties: {x: 821.9886016845703, y: 1445.8096618652344, width: 156.02272}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_75_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''g''][''a3'']', writeback: true}
     - type: TextBox
@@ -1144,7 +1144,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_78
       layout_properties: {x: 821.9886016845703, y: 1481.7897644042969, width: 156.02272}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_78_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''h''][''a3'']', writeback: true}
     - type: TextBox
@@ -1154,7 +1154,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_81
       layout_properties: {x: 821.9886016845703, y: 1518.8210144042969, width: 156.02272}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_81_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''i''][''a3'']', writeback: true}
     - type: Label
@@ -1327,7 +1327,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_109
       layout_properties: {x: 475.98011779785156, y: 2139.2185974121094, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_109_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''t''][''a1'']', writeback: true}
     - type: TextBox
@@ -1337,7 +1337,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_110
       layout_properties: {x: 649.7727203369141, y: 2139.2185974121094, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_110_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''t''][''a2'']', writeback: true}
     - type: TextBox
@@ -1347,7 +1347,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_111
       layout_properties: {x: 824.9289703369141, y: 2139.2185974121094, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_111_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''t''][''a3'']', writeback: true}
     - type: Label
@@ -1420,7 +1420,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_115
       layout_properties: {x: 477.9971466064453, y: 2285.3265075683594, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_115_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''v''][''a1'']', writeback: true}
     - type: TextBox
@@ -1430,7 +1430,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_116
       layout_properties: {x: 649.9573516845703, y: 2285.3123474121094, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_116_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''v''][''a2'']', writeback: true}
     - type: TextBox
@@ -1440,7 +1440,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_117
       layout_properties: {x: 825.9658966064453, y: 2285.3123474121094, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_117_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''v''][''a3'']', writeback: true}
     - type: TextBox
@@ -1450,7 +1450,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_112
       layout_properties: {x: 477.9971466064453, y: 2232.8975524902344, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_112_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''u''][''a1'']', writeback: true}
     - type: TextBox
@@ -1460,7 +1460,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_113
       layout_properties: {x: 649.8153228759766, y: 2232.8833923339844, width: 157.18771999999998}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_113_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''u''][''a2'']', writeback: true}
     - type: TextBox
@@ -1470,7 +1470,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_114
       layout_properties: {x: 824.9289703369141, y: 2232.8833923339844, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_114_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''u''][''a3'']', writeback: true}
     - type: Label
@@ -1488,7 +1488,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_85
       layout_properties: {x: 475.9658966064453, y: 1651.1504821777344, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_85_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''k''][''a1'']', writeback: true}
     - type: TextBox
@@ -1498,7 +1498,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_94
       layout_properties: {x: 476.9886016845703, y: 1768.6647644042969, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_94_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''n''][''a1'']', writeback: true}
     - type: TextBox
@@ -1508,7 +1508,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_79
       layout_properties: {x: 477.9545440673828, y: 1521.7328796386719, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_79_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''i''][''a1'']', writeback: true}
     - type: TextBox
@@ -1558,7 +1558,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_65
       layout_properties: {x: 645.9658966064453, y: 1320.8664245605469, width: 152.04572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_65_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''d''][''a2'']', writeback: true}
     - type: TextBox
@@ -1568,7 +1568,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_66
       layout_properties: {x: 821.9886016845703, y: 1320.8664245605469, width: 154.98572}
-      event_bindings: {}
+      event_bindings: {lost_focus: text_box_66_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''d''][''a3'']', writeback: true}
     - type: TextBox
