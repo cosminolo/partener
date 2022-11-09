@@ -576,6 +576,7 @@ components:
       italic: false, background: '#CAECF8', bold: false, underline: false}
     name: text_box_59
     layout_properties: {row: WIODUA, width_xs: 2, col_xs: 4, width: 44.9844}
+    event_bindings: {}
   - type: TextBox
     properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
