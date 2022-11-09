@@ -8,7 +8,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-
+import datetime
 class fin(finTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -19,6 +19,12 @@ class fin(finTemplate):
     #p1 = anvil.server.call("pri_ini")
     p1 = anvil.server.call("get_p1", self.ups())
     self.item = p1
+  
+    print(p1["data_fin"]["d1"])
+    try:  
+      self.date_picker_1 =  p1["data_fin"]["d1"]
+    except:
+      pass
   def ups(self):
       user = anvil.users.get_user()
       if user is None:
@@ -194,6 +200,7 @@ class fin(finTemplate):
 
   def date_picker_1_change(self, **event_args):
     """This method is called when the selected date changes"""
+    
     anvil.server.call("sp1", self.ups(), p1)
     print (p1["data_fin"]["d1"])
     pass

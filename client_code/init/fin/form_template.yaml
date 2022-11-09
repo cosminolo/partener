@@ -20,6 +20,7 @@ components:
       properties: {text: Bilant an N-2}
       name: label_1
       layout_properties: {x: 475.99427795410156, y: 10, width: 160}
+      event_bindings: {}
     - type: Label
       properties: {text: Bilant an N-1}
       name: label_2
@@ -1577,7 +1578,7 @@ components:
         date: '', min_date: '', background: '', bold: false, underline: false, format: '"%d
           %m %Y"'}
       name: date_picker_1
-      layout_properties: {x: 574.9971389770508, y: 18.480100000000007, width: 21.9602}
+      layout_properties: {x: 477.9971389770508, y: 33.96307373046875, width: 136.989}
       event_bindings: {change: date_picker_1_change}
       data_bindings:
       - {property: date, code: 'self.item[''data_fin''][''d1'']', writeback: true}
