@@ -138,7 +138,7 @@ class fin(finTemplate):
   def date_picker_3_change(self, **event_args):
     p1["data_fin"]["d3"] = str(self.date_picker_3.date)
     anvil.server.call("sp1", self.ups(), p1) 
-    d1 = p1['data_fin']['d1']
+    d1 = p1['data_fin']['d3']
     c = datetime.strptime(d1, '%Y-%m-%d')
     self.text_box_120.text =c.strftime('%d-%m-%Y')  
     pass
