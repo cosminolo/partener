@@ -2,6 +2,7 @@ is_package: true
 container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
+  event_bindings: {}
 components:
 - type: XYPanel
   properties: {height: 668, width: 540}
@@ -632,6 +633,7 @@ components:
     bold: false, underline: false, icon: 'fa:fast-forward'}
   name: button_3
   layout_properties: {slot: nav-right}
+  event_bindings: {click: button_3_click}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: column_panel_1

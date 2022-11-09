@@ -179,8 +179,14 @@ class bal(balTemplate):
     pass
 
   def button_5_click(self, **event_args):
-    open_form('init.crit')
+    open_form('init.fin')
     pass
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('init.verific')
+    pass
+
   
 
 

@@ -179,6 +179,29 @@ class fin(finTemplate):
         alert("Doar numar fara zecimale sau separatori!") 
     pass
 
+  def button_2_click(self, **event_args):
+    open_form('init.st')
+    pass
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('init')
+    pass
+
+  def button_3_click(self, **event_args):
+    open_form('init.bal')
+    pass
+
+  def date_picker_1_change(self, **event_args):
+    """This method is called when the selected date changes"""
+    anvil.server.call("sp1", self.ups(), p1)
+    print (p1["data_fin"]["d1"])
+    pass
+
+
+
+
+
 
 
 

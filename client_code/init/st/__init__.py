@@ -601,7 +601,7 @@ class st(stTemplate):
     pass
 
   def button_9_click(self, **event_args):
-    open_form('init.verific')
+    open_form('init.fin')
     pass
 
   def button_1_click(self, **event_args):

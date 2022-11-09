@@ -1570,6 +1570,17 @@ components:
       event_bindings: {}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''d''][''a3'']', writeback: true}
+    - type: DatePicker
+      properties: {role: null, align: left, max_date: '', pick_time: false, tooltip: '',
+        placeholder: '', border: '', enabled: true, foreground: '', visible: true,
+        font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+        date: '', min_date: '', background: '', bold: false, underline: false, format: '"%d
+          %m %Y"'}
+      name: date_picker_1
+      layout_properties: {x: 574.9971389770508, y: 18.480100000000007, width: 21.9602}
+      event_bindings: {change: date_picker_1_change}
+      data_bindings:
+      - {property: date, code: 'self.item[''data_fin''][''d1'']', writeback: true}
     event_bindings: {}
   event_bindings: {}
 - type: FlowPanel
@@ -1584,6 +1595,7 @@ components:
       background: '', bold: false, underline: false, icon: 'fa:fast-forward'}
     name: button_3
     layout_properties: {}
+    event_bindings: {click: button_3_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
     foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 20, font: '',
@@ -1591,6 +1603,7 @@ components:
     bold: false, underline: false, icon: 'fa:home'}
   name: button_1
   layout_properties: {slot: top-left-btn}
+  event_bindings: {click: button_1_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
     foreground: 'theme:Secondary 500', visible: true, text: '', font_size: null, font: '',
@@ -1598,3 +1611,4 @@ components:
     bold: false, underline: false, icon: 'fa:fast-backward'}
   name: button_2
   layout_properties: {slot: title}
+  event_bindings: {click: button_2_click}
