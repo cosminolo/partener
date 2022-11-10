@@ -5,7 +5,7 @@ container:
   event_bindings: {}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":15,"KAZBLY":10,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YKBHZG":3,"SNICGF":10,"OFTPXM":5,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20,"TESNHL":38,"XUVQLS":7,"BIENJL":15}'}
+  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":10,"KAZBLY":15,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YKBHZG":3,"SNICGF":10,"OFTPXM":5,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20,"TESNHL":38,"XUVQLS":7,"BIENJL":15}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -23,10 +23,11 @@ components:
         underline: false, icon: ''}
       name: label_11
       layout_properties: {grid_position: 'HGQUGC,GRHLJY', full_width_row: true}
+      event_bindings: {}
     - type: DropDown
       properties:
         role: null
-        align: full
+        align: center
         tooltip: ''
         placeholder: ''
         border: ''
@@ -39,7 +40,7 @@ components:
         spacing_above: small
         spacing_below: small
         italic: false
-        background: ''
+        background: '#CAECF8'
         bold: false
         underline: false
         include_placeholder: false
@@ -59,7 +60,7 @@ components:
     - type: DropDown
       properties:
         role: null
-        align: full
+        align: center
         tooltip: ''
         placeholder: ''
         border: ''
@@ -73,7 +74,7 @@ components:
         spacing_above: small
         spacing_below: small
         italic: false
-        background: ''
+        background: '#CAECF8'
         bold: false
         underline: false
         include_placeholder: false
@@ -105,7 +106,7 @@ components:
         spacing_above: small
         spacing_below: small
         italic: false
-        background: ''
+        background: '#CAECF8'
         bold: false
         underline: false
         include_placeholder: false
@@ -119,6 +120,7 @@ components:
       properties: {height: 32}
       name: spacer_2
       layout_properties: {grid_position: 'HGQUGC,MHBLLS', full_width_row: true}
+    event_bindings: {}
   - type: LinearPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: '', visible: true, role: null, tooltip: ''}
@@ -132,8 +134,12 @@ components:
         underline: false, icon: ''}
       name: label_9
       layout_properties: {}
+      event_bindings: {}
   - type: TextBox
-    properties: {}
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '#E3F9A6', bold: false, underline: false}
     name: text_box_9
     layout_properties: {grid_position: 'UMQQXA,KAZBLY', full_width_row: true}
     data_bindings:
@@ -155,7 +161,7 @@ components:
       spacing_above: small
       spacing_below: small
       italic: false
-      background: ''
+      background: '#E3F9A6'
       bold: false
       underline: false
       include_placeholder: false
@@ -206,6 +212,7 @@ components:
       underline: false, icon: ''}
     name: label_26
     layout_properties: {grid_position: 'UMQQXA,FXQRSK', full_width_row: true}
+    event_bindings: {}
   - type: Button
     properties: {text: button_1}
     name: button_1

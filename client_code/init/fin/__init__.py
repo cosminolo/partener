@@ -145,7 +145,7 @@ class fin(finTemplate):
 
   
   def lf(self, sender,**event_args):
-    #sender.enabled = True
+    sender.enabled = True
     s = sender.text
     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
         anvil.server.call("sp1", self.ups(), p1)
