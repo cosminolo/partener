@@ -576,6 +576,14 @@ class fin(finTemplate):
     self.lf(self.text_box_117)
     pass
 
+  def link_1_click(self, **event_args):
+    user = self.ups()
+    print (user)
+    f = anvil.server.call ("get_cerere", user)
+    anvil.media.download(f)
+    pass
+
+
 
 
 
