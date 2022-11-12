@@ -550,6 +550,7 @@ components:
         underline: false, icon: ''}
       name: label_24
       layout_properties: {x: 481.3356245727539, y: 76.64769999999999, width: 66.9602}
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Administratori, font_size: null, font: '', spacing_above: small,
