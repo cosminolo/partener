@@ -577,10 +577,11 @@ class fin(finTemplate):
     pass
 
   def link_1_click(self, **event_args):
-    user = self.ups()
-    print (user)
-    f = anvil.server.call ("get_cerere", user)
-    anvil.media.download(f)
+    # download cerere de pe server
+    #f = anvil.server.call ("get_cerere", self.ups())
+    #anvil.media.download(f)
+    # transfera json pe server
+    
     pass
 
 
