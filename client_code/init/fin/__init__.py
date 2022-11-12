@@ -581,7 +581,7 @@ class fin(finTemplate):
     #f = anvil.server.call ("get_cerere", self.ups())
     #anvil.media.download(f)
     # transfera json pe server
-    
+    anvil.server.call ("down_json", self.ups(), p1)
     pass
 
 
