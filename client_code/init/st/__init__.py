@@ -1404,6 +1404,11 @@ class st(stTemplate):
     anvil.server.call("sp1", self.ups(), p1)
     pass
 
+  def text_box_12_lost_focus(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+
 
 
 
