@@ -867,6 +867,7 @@ components:
       name: label_20_copy
       layout_properties: {row: OXBSLY, width_xs: 2, col_xs: 0, width: 135.75, x: 649,
         y: 100.859375}
+      event_bindings: {}
     - type: DropDown
       properties:
         role: null
@@ -912,8 +913,8 @@ components:
         foreground: ''
         items: [Debitorul a beneficiat de cel putin doua credite (de la CEC BANK S.A. sau de la alte institutii de credit) care au fost lichidate integral,
           Debitorul a beneficiat de un credit (de la CEC BANK S.A. sau de la alte institutii de credit) care a fost lichidat integral,
-          Debitorul a beneficiat de unul sau mai multe credite (de la CEC BANK S.A. sau de la alte institutii de credit) care se afla in derulare fara restante/Debitorul nu a beneficiat de credite,
-          Debitorul are restante la creditele in derulare]
+          Debitorul a beneficiat de unul sau mai multe credite (de la CEC BANK S.A. sau de la alte institutii de credit) care se afla in derulare fara restante,
+          Debitorul nu a beneficiat de credite, Debitorul are restante la creditele in derulare]
         visible: true
         font_size: null
         font: ''
@@ -925,7 +926,7 @@ components:
         underline: false
         include_placeholder: false
       name: drop_down_15
-      layout_properties: {x: 914.75, y: 119, width: 272.25}
+      layout_properties: {x: 914.7442779541016, y: 118.991455078125, width: 272.244}
       data_bindings:
       - {property: selected_value, code: 'self.item[''sintez''][''exp_imp'']', writeback: true}
       event_bindings: {change: drop_down_15_change}
