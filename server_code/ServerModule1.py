@@ -8,6 +8,7 @@ from anvil.tables import app_tables
 import anvil.server
 import json
 import time
+from io import BytesIO
 @anvil.server.callable
 def add_user(id):
  id_row = app_tables.lucru.get(user=id)
@@ -75,9 +76,8 @@ pass
 def preia_inlucru(us, soc, facilit, dat):
   arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
   id_row = app_tables.lucru.get(user=us)
-  id_row.update(p1=arh["p1"],bal=arh['bal'], darh='')  
-  #file = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)["darh"]
-  #id_row.update(darh=file)
+  file = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)["darh"]
+  anvil.server.call("upld", us, file)
   
 pass
 @anvil.server.callable
@@ -111,11 +111,9 @@ def get_p1(id):
 pass
 @anvil.server.callable
 def upld(id, file):
-  try:
     us_row = app_tables.lucru.get(user=id)
     us_row.update(darh=file)
-  except:
-    pass
+pass
 
 
 
