@@ -51,7 +51,8 @@ def arh2 (us, dat, entit, facilit):
                           facilit=facilit,
                           dat=dat,
                           p1=id_row["p1"],                          
-                          bal=id_row['bal'])                          
+                          bal=id_row['bal'],     
+                          darh=id_row['darh'])   
 pass
 @anvil.server.callable
 def nr_rows(us):
@@ -74,7 +75,10 @@ pass
 def preia_inlucru(us, soc, facilit, dat):
   arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
   id_row = app_tables.lucru.get(user=us)
-  id_row.update(p1=arh["p1"],bal=arh['bal'])  
+  id_row.update(p1=arh["p1"],bal=arh['bal'], darh='')  
+  #file = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)["darh"]
+  #id_row.update(darh=file)
+  
 pass
 @anvil.server.callable
 def sterge_arh(us, soc, facilit, dat):
@@ -105,3 +109,20 @@ def get_p1(id):
   except:
     pass
 pass
+@anvil.server.callable
+def upld(id, file):
+  try:
+    us_row = app_tables.lucru.get(user=id)
+    us_row.update(darh=file)
+  except:
+    pass
+
+
+
+
+
+
+
+
+
+

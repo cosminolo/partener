@@ -68,7 +68,7 @@ db_schema:
     - name: p1
       admin_ui: {width: 200}
       type: simpleObject
-    - name: arh
+    - name: darh
       admin_ui: {width: 200}
       type: media
     - name: bal
@@ -94,6 +94,9 @@ db_schema:
     - name: p1
       admin_ui: {width: 200}
       type: simpleObject
+    - name: darh
+      admin_ui: {width: 200}
+      type: media
     - name: bal
       admin_ui: {width: 200}
       type: simpleObject

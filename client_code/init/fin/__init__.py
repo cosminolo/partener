@@ -611,8 +611,18 @@ class fin(finTemplate):
     pass
 
   def file_loader_1_change(self, file, **event_args):
-    """This method is called when a new file is loaded into this FileLoader"""
+   try:
+       if self.file_loader_1.file.length > 0:    
+          anvil.server.call("upld", self.ups(), file)
+   except:
     pass
+  pass
+
+  def link_5_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    anvil.media.upload(self)
+    pass
+
 
 
 
