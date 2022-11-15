@@ -76,9 +76,8 @@ pass
 def preia_inlucru(us, soc, facilit, dat):
   arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
   id_row = app_tables.lucru.get(user=us)
-  file = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)["darh"]
-  anvil.server.call("upld", us, file)
-  
+  id_row.update(p1=arh['p1'], bal=arh['bal'])
+  id.row.delete('darh')
 pass
 @anvil.server.callable
 def sterge_arh(us, soc, facilit, dat):
