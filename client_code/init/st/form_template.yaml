@@ -5,16 +5,16 @@ container:
   event_bindings: {}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"TWFTAC":10,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"RVLATY":10,"KAZBLY":15,"HIIAYG":15,"YIKKCW":10,"GRTMUF":10,"SAONZU":25,"THHCRH":10,"RMLODV":5,"IXGMNR":15,"GISWYS":45,"FXQRSK":18,"PKMXUF":10,"YKBHZG":3,"SNICGF":10,"OFTPXM":5,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20,"TESNHL":38,"XUVQLS":7,"BIENJL":15}'}
+  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"PKMXUF":10,"YKBHZG":3,"SNICGF":10,"OFTPXM":5,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20,"TESNHL":38,"XUVQLS":7,"BIENJL":15,"UKTXYD":49,"FFQNYU":2,"VSEKCE":2,"PZNZXX":3,"EVONJP":2,"XEMCJW":2,"XZCIGI":38,"ZFQIUE":7,"XARHPL":15}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
   - type: ColumnPanel
     properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"GRHLJY":5,"CVGLFN":9,"QSBLAH":6,"MGBFVR":7,"RAIZQJ":18,"MUYYMS":20,"MHBLLS":3}',
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"GRHLJY":5,"CVGLFN":9,"QSBLAH":6,"MGBFVR":7,"RAIZQJ":18,"MUYYMS":20}',
       spacing_below: small, background: ''}
     name: column_panel_1
-    layout_properties: {grid_position: 'MIGXUM,HNMXTS', full_width_row: true}
+    layout_properties: {grid_position: 'MIGXUM,HNMXTS', full_width_row: true, row_background: ''}
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
@@ -22,31 +22,32 @@ components:
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_11
-      layout_properties: {grid_position: 'HGQUGC,GRHLJY', full_width_row: true}
+      layout_properties: {grid_position: 'HGQUGC,GRHLJY', full_width_row: true, row_background: 'theme:Gray
+          100'}
       event_bindings: {}
     - type: DropDown
       properties:
         role: null
         align: center
         tooltip: ''
-        placeholder: ''
+        placeholder: jj
         border: ''
         enabled: true
         foreground: ''
-        items: [S.R.L., S.A., P.F.A., I.I., S.R.L.-D.]
+        items: [S.R.L., S.A., P.F.A., I.I., S.R.L.-D., '']
         visible: true
-        font_size: 11
+        font_size: 12
         font: ''
         spacing_above: small
         spacing_below: small
         italic: false
-        background: '#CAECF8'
+        background: ''
         bold: false
         underline: false
         include_placeholder: false
       name: drop_down_1
-      layout_properties: {row: KVWGFC, width_xs: 1, col_xs: 1, x: 942.46875, y: 33,
-        width: 40.875, grid_position: 'HGQUGC,CVGLFN', full_width_row: true}
+      layout_properties: {width: 40.875, row_background: 'theme:Gray 100', grid_position: 'HGQUGC,CVGLFN',
+        x: 942.46875, full_width_row: true, width_xs: 1, row: KVWGFC, y: 33, col_xs: 1}
       event_bindings: {change: drop_down_1_change}
       data_bindings:
       - {property: selected_value, code: 'self.item[''gen''][''tip'']', writeback: true}
@@ -56,7 +57,8 @@ components:
         icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_8
-      layout_properties: {grid_position: 'HGQUGC,QSBLAH', full_width_row: true}
+      layout_properties: {grid_position: 'HGQUGC,QSBLAH', full_width_row: true, row_background: 'theme:Gray
+          100'}
     - type: DropDown
       properties:
         role: null
@@ -69,17 +71,18 @@ components:
         items: [negarantat, valoare mica cu FGCR, OUG 43, garantat cu echipamente/imobile/etc,
           garantat cu mix (fond si alte garantii)]
         visible: true
-        font_size: 11
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
         italic: false
-        background: '#CAECF8'
+        background: ''
         bold: false
         underline: false
         include_placeholder: false
       name: drop_down_2
-      layout_properties: {grid_position: 'HGQUGC,RAIZQJ', full_width_row: true}
+      layout_properties: {grid_position: 'HGQUGC,RAIZQJ', full_width_row: true, row_background: 'theme:Gray
+          100'}
       event_bindings: {change: drop_down_2_change}
       data_bindings:
       - {property: selected_value, code: 'self.item[''facilitate''][''fel'']', writeback: true}
@@ -89,7 +92,8 @@ components:
         icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_14
-      layout_properties: {grid_position: 'HGQUGC,MGBFVR', full_width_row: true}
+      layout_properties: {grid_position: 'HGQUGC,MGBFVR', full_width_row: true, row_background: 'theme:Gray
+          100'}
     - type: DropDown
       properties:
         role: null
@@ -101,31 +105,30 @@ components:
         foreground: ''
         items: []
         visible: true
-        font_size: 11
+        font_size: 14
         font: ''
-        spacing_above: small
-        spacing_below: small
+        spacing_above: none
+        spacing_below: none
         italic: false
-        background: '#CAECF8'
+        background: ''
         bold: false
         underline: false
         include_placeholder: false
       name: drop_down_3
-      layout_properties: {grid_position: 'HGQUGC,MUYYMS', full_width_row: true}
+      layout_properties: {grid_position: 'HGQUGC,MUYYMS', full_width_row: true, row_background: 'theme:Gray
+          100'}
       data_bindings:
       - {property: selected_value, code: 'self.item[''facilitate''][''denumit'']',
         writeback: true}
       event_bindings: {change: drop_down_3_change}
-    - type: Spacer
-      properties: {height: 32}
-      name: spacer_2
-      layout_properties: {grid_position: 'HGQUGC,MHBLLS', full_width_row: true}
     event_bindings: {}
-  - type: LinearPanel
-    properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
-      border: '', visible: true, role: null, tooltip: ''}
-    name: linear_panel_2
-    layout_properties: {grid_position: 'UMQQXA,RVLATY', full_width_row: true}
+  - type: ColumnPanel
+    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"YBKAAU":10,"QEYZRF":3,"BTLEVN":12,"JSJFTD":3,"PVAKWW":6,"ETVQZP":3,"CIJQIP":10,"NPRJZQ":3,"TIOYRT":6,"AGIZWK":3,"KJTFCT":3,"JVIDIZ":3}',
+      spacing_below: small, background: ''}
+    name: column_panel_2
+    layout_properties: {grid_position: 'MHGPNA,UKTXYD', full_width_row: true, row_background: '#F7F7E3'}
+    event_bindings: {}
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
@@ -133,77 +136,129 @@ components:
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_9
-      layout_properties: {}
+      layout_properties: {grid_position: 'WUAZPB,YBKAAU', row_background: ''}
       event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-      background: '#E3F9A6', bold: false, underline: false}
-    name: text_box_9
-    layout_properties: {grid_position: 'UMQQXA,KAZBLY', full_width_row: true}
-    data_bindings:
-    - {property: text, code: 'self.item[''facilitate''][''suma'']', writeback: true}
-    event_bindings: {lost_focus: text_box_9_lost_focus}
-  - type: DropDown
-    properties:
-      role: null
-      align: full
-      tooltip: ''
-      placeholder: ''
-      border: ''
-      enabled: true
-      foreground: ''
-      items: [Lei, Eur, Usd, '']
-      visible: true
-      font_size: null
-      font: ''
-      spacing_above: small
-      spacing_below: small
-      italic: false
-      background: '#E3F9A6'
-      bold: false
-      underline: false
-      include_placeholder: false
-    name: drop_down_5
-    layout_properties: {grid_position: 'UMQQXA,THHCRH', full_width_row: true}
-    event_bindings: {change: drop_down_5_change}
-    data_bindings:
-    - {property: selected_value, code: 'self.item[''facilitate''][''valuta'']', writeback: true}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: pe o perioada de, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_15
-    layout_properties: {grid_position: 'UMQQXA,HIIAYG', full_width_row: true}
-  - type: TextBox
-    properties: {}
-    name: text_box_10
-    layout_properties: {grid_position: 'UMQQXA,YIKKCW', full_width_row: true}
-    data_bindings:
-    - {property: text, code: 'self.item[''facilitate''][''per'']', writeback: true}
-    event_bindings: {lost_focus: text_box_10_lost_focus}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: luni., font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_17
-    layout_properties: {grid_position: 'UMQQXA,RMLODV', full_width_row: true}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_5
+      layout_properties: {grid_position: 'WUAZPB,QEYZRF', row_background: ''}
+      event_bindings: {}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_9
+      layout_properties: {grid_position: 'WUAZPB,BTLEVN', full_width_row: true, row_background: ''}
+      data_bindings:
+      - {property: text, code: 'self.item[''facilitate''][''suma'']', writeback: true}
+      event_bindings: {lost_focus: text_box_9_lost_focus, pressed_enter: text_box_9_pressed_enter}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_16
+      layout_properties: {grid_position: 'WUAZPB,JSJFTD', row_background: ''}
+      event_bindings: {}
+    - type: DropDown
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Lei, Eur, Usd, '']
+        visible: true
+        font_size: 14
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
+      name: drop_down_5
+      layout_properties: {grid_position: 'WUAZPB,PVAKWW', full_width_row: true, row_background: ''}
+      event_bindings: {change: drop_down_5_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''facilitate''][''valuta'']',
+        writeback: true}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_17
+      layout_properties: {grid_position: 'WUAZPB,ETVQZP', row_background: ''}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: pe o perioada de, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_15
+      layout_properties: {grid_position: 'WUAZPB,CIJQIP', full_width_row: true, row_background: ''}
+      event_bindings: {}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_18
+      layout_properties: {grid_position: 'WUAZPB,NPRJZQ', row_background: ''}
+      event_bindings: {}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_10
+      layout_properties: {grid_position: 'WUAZPB,TIOYRT', full_width_row: true, row_background: ''}
+      data_bindings:
+      - {property: text, code: 'self.item[''facilitate''][''per'']', writeback: true}
+      event_bindings: {lost_focus: text_box_10_lost_focus}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_19
+      layout_properties: {grid_position: 'WUAZPB,AGIZWK', row_background: ''}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: luni., font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_17
+      layout_properties: {grid_position: 'WUAZPB,KJTFCT', full_width_row: true, row_background: ''}
+      event_bindings: {}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_20
+      layout_properties: {grid_position: 'WUAZPB,JVIDIZ', row_background: ''}
+      event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Gratie, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_16
-    layout_properties: {grid_position: 'UMQQXA,GRTMUF', full_width_row: true}
+    layout_properties: {grid_position: 'MHGPNA,FFQNYU', full_width_row: true, row_background: '#F7F7E3'}
+    event_bindings: {}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_21
+    layout_properties: {grid_position: 'MHGPNA,VSEKCE', row_background: '#F7F7E3',
+      full_width_row: true}
+    event_bindings: {}
   - type: TextBox
-    properties: {}
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_box_13
-    layout_properties: {grid_position: 'UMQQXA,SAONZU', full_width_row: true}
+    layout_properties: {grid_position: 'MHGPNA,PZNZXX', full_width_row: true, row_background: '#F7F7E3'}
     data_bindings:
     - {property: text, code: 'self.item[''facilitate''][''per_g'']', writeback: true}
+    event_bindings: {}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_22
+    layout_properties: {grid_position: 'MHGPNA,EVONJP', row_background: '#F7F7E3',
+      full_width_row: true}
     event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
@@ -211,52 +266,70 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_26
-    layout_properties: {grid_position: 'UMQQXA,FXQRSK', full_width_row: true}
+    layout_properties: {grid_position: 'MHGPNA,XEMCJW', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
-  - type: Button
-    properties: {text: button_1}
-    name: button_1
-    layout_properties: {grid_position: 'WBLEAH,MOWKHB'}
-    event_bindings: {click: button_1_click}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Mod rambursare, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_25
-    layout_properties: {grid_position: 'VGXVAW,YSVVPM'}
-  - type: TextArea
-    properties: {}
-    name: text_area_1
-    layout_properties: {grid_position: 'VGXVAW,TWMTHL', full_width_row: true}
-    data_bindings:
-    - {property: text, code: 'self.item[''facilitate''][''md_ramb'']', writeback: true}
-    event_bindings: {lost_focus: text_area_1_lost_focus, change: text_area_1_change}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Perioada de tragere, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_27
-    layout_properties: {grid_position: 'VGXVAW,BIHXNV'}
+  - type: ColumnPanel
+    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"PCULWH":20,"YSIMTD":35,"TPPESQ":25}',
+      spacing_below: small, background: ''}
+    name: column_panel_3
+    layout_properties: {grid_position: 'ZFCEMW,XZCIGI', full_width_row: true, row_background: 'theme:Gray
+        200'}
+    event_bindings: {}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Mod rambursare, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_25
+      layout_properties: {grid_position: 'BKPWDO,PCULWH'}
+      event_bindings: {}
+    - type: TextArea
+      properties: {}
+      name: text_area_1
+      layout_properties: {grid_position: 'BKPWDO,YSIMTD', full_width_row: true}
+      data_bindings:
+      - {property: text, code: 'self.item[''facilitate''][''md_ramb'']', writeback: true}
+      event_bindings: {lost_focus: text_area_1_lost_focus, change: text_area_1_change}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Perioada de tragere, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_27
+      layout_properties: {grid_position: 'BKPWDO,TPPESQ'}
+      event_bindings: {}
   - type: TextBox
     properties: {}
     name: text_box_14
-    layout_properties: {grid_position: 'VGXVAW,ZFMFSU'}
+    layout_properties: {grid_position: 'ZFCEMW,ZFQIUE', row_background: 'theme:Gray
+        200', full_width_row: true}
     data_bindings:
     - {property: text, code: 'self.item[''facilitate''][''per_t'']', writeback: true}
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: luni, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_28
-    layout_properties: {grid_position: 'VGXVAW,LIGPYW'}
-  - type: LinearPanel
-    properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
-      border: '', visible: true, role: null, tooltip: ''}
-    name: linear_panel_1
-    layout_properties: {grid_position: 'WRNBTB,IXGMNR', full_width_row: true}
+    layout_properties: {grid_position: 'ZFCEMW,XARHPL', row_background: 'theme:Gray
+        200', full_width_row: true}
+    event_bindings: {}
+  - type: Button
+    properties: {text: button_1}
+    name: button_1
+    layout_properties: {grid_position: 'ZFCEMW,BHVLJV', row_background: 'theme:Gray
+        200', full_width_row: true}
+    event_bindings: {click: button_1_click}
+  - type: ColumnPanel
+    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"IBBZXZ":15,"CVNOUC":45}',
+      spacing_below: small, background: ''}
+    name: column_panel_4
+    layout_properties: {grid_position: 'RLXUHC,RVCEZU', full_width_row: true, row_background: '#F7F7E3'}
+    event_bindings: {}
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
@@ -264,77 +337,90 @@ components:
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: label_20
-      layout_properties: {}
-  - type: TextArea
-    properties: {height: 40.1875}
-    name: text_area_2
-    layout_properties: {grid_position: 'WRNBTB,GISWYS', full_width_row: true}
-    data_bindings:
-    - {property: text, code: 'self.item[''facilitate''][''dest'']', writeback: true}
-    event_bindings: {lost_focus: text_area_2_lost_focus, change: text_area_2_change}
+      layout_properties: {grid_position: 'PZRYHO,IBBZXZ'}
+      event_bindings: {}
+    - type: TextArea
+      properties: {height: 40.1875}
+      name: text_area_2
+      layout_properties: {grid_position: 'PZRYHO,CVNOUC', full_width_row: true}
+      data_bindings:
+      - {property: text, code: 'self.item[''facilitate''][''dest'']', writeback: true}
+      event_bindings: {lost_focus: text_area_2_lost_focus, change: text_area_2_change}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Garantii, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_29
-    layout_properties: {grid_position: 'SAEEKP,EZXVOC'}
+    layout_properties: {grid_position: 'SAEEKP,EZXVOC', full_width_row: true, row_background: 'theme:Gray
+        200'}
+    event_bindings: {}
   - type: Spacer
     properties: {height: 32}
     name: spacer_8
-    layout_properties: {grid_position: 'SAEEKP,HLLUDS'}
+    layout_properties: {grid_position: 'SAEEKP,HLLUDS', full_width_row: true, row_background: 'theme:Gray
+        200'}
+    event_bindings: {}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_10
-    layout_properties: {grid_position: 'SAEEKP,YHIIAO'}
+    layout_properties: {grid_position: 'SAEEKP,YHIIAO', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {click: button_10_click}
   - type: Spacer
     properties: {height: 32}
     name: spacer_9
-    layout_properties: {grid_position: 'SAEEKP,HPPILW'}
+    layout_properties: {grid_position: 'SAEEKP,HPPILW', full_width_row: true, row_background: 'theme:Gray
+        200'}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: save, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_11
-    layout_properties: {grid_position: 'SAEEKP,PTNMMI'}
+    layout_properties: {grid_position: 'SAEEKP,PTNMMI', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {click: button_11_click}
   - type: Spacer
     properties: {height: 32}
     name: spacer_10
-    layout_properties: {grid_position: 'SAEEKP,PMQCLX'}
+    layout_properties: {grid_position: 'SAEEKP,PMQCLX', full_width_row: true, row_background: 'theme:Gray
+        200'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Tip / Proprietar / Data achizitiei, font_size: null, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_30
-    layout_properties: {grid_position: 'QUBBCT,PKMXUF'}
+    layout_properties: {grid_position: 'QUBBCT,PKMXUF', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {}
   - type: Spacer
     properties: {height: 32}
     name: spacer_6
-    layout_properties: {grid_position: 'QUBBCT,YKBHZG'}
+    layout_properties: {grid_position: 'QUBBCT,YKBHZG', full_width_row: true, row_background: 'theme:Gray
+        200'}
   - type: Spacer
     properties: {height: 32}
     name: spacer_7
-    layout_properties: {grid_position: 'QUBBCT,SNICGF'}
+    layout_properties: {grid_position: 'QUBBCT,SNICGF', full_width_row: true, row_background: 'theme:Gray
+        200'}
+    event_bindings: {}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_4
-    layout_properties: {grid_position: 'VRDXFP,PFBHNR'}
+    layout_properties: {grid_position: 'VRDXFP,PFBHNR', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {}
   - type: XYPanel
-    properties: {role: null, width: 1221, align: center, height: 121, tooltip: '',
-      border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
-      background: ''}
+    properties: {role: null, width: 1221, align: left, height: 121, tooltip: '', border: '',
+      foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
     name: xy_panel_1
-    layout_properties: {grid_position: 'GSMRBE,IGYIHO', full_width_row: true}
+    layout_properties: {grid_position: 'GSMRBE,IGYIHO', full_width_row: true, row_background: '#F7F7E3'}
     components:
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -553,6 +639,39 @@ components:
         underline: false, icon: ''}
       name: label_24
       layout_properties: {x: 481.3356245727539, y: 76.64769999999999, width: 66.9602}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Relatie speciala cu banca?', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_31
+      layout_properties: {x: 731.0084991455078, y: 76.61932373046875, width: 133}
+      event_bindings: {}
+    - type: DropDown
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [NU, DA]
+        visible: true
+        font_size: 14
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
+      name: drop_down_17
+      layout_properties: {x: 879.2471466064453, y: 82.98297119140625, width: 100}
+      event_bindings: {change: drop_down_17_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''gen''][''rel_spec'']', writeback: true}
     event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
@@ -560,14 +679,17 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_12
-    layout_properties: {grid_position: 'OXEUGG,IYAJPM', full_width_row: true}
+    layout_properties: {grid_position: 'OXEUGG,IYAJPM', full_width_row: true, row_background: 'theme:Gray
+        200'}
+    event_bindings: {}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_2
-    layout_properties: {grid_position: 'OXEUGG,GXJXPB', full_width_row: true}
+    layout_properties: {grid_position: 'OXEUGG,GXJXPB', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {click: button_2_click}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
@@ -575,21 +697,21 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: 'data:image/png;base64,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'}
     name: button_6
-    layout_properties: {grid_position: 'OXEUGG,LEVDYG', full_width_row: true}
+    layout_properties: {grid_position: 'OXEUGG,LEVDYG', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {click: button_6_click}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_1
-    layout_properties: {grid_position: 'OXEUGG,TWFTAC', full_width_row: true}
   - type: GridPanel
     properties: {spacing_above: none, spacing_below: none, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_1
-    layout_properties: {grid_position: 'AFFSJP,VRGMHK', full_width_row: true}
+    layout_properties: {grid_position: 'AFFSJP,VRGMHK', full_width_row: true, row_background: 'theme:Gray
+        200'}
+    event_bindings: {}
   - type: Spacer
     properties: {height: 32}
     name: spacer_3
-    layout_properties: {grid_position: 'AFFSJP,TUCMSG', full_width_row: true}
+    layout_properties: {grid_position: 'AFFSJP,TUCMSG', full_width_row: true, row_background: 'theme:Gray
+        200'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Asociati, font_size: null, font: '', spacing_above: small,
@@ -597,14 +719,15 @@ components:
       underline: false, icon: ''}
     name: label_10
     layout_properties: {grid_position: 'GDFGSH,LRBSUC', full_width_row: true, row: BNAAYC,
-      width_xs: 5, col_xs: 0}
+      width_xs: 5, col_xs: 0, row_background: '#F7F7E3'}
+    event_bindings: {}
   - type: Button
     properties: {role: raised, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_3
-    layout_properties: {grid_position: 'GDFGSH,ZEFPAF', full_width_row: true}
+    layout_properties: {grid_position: 'GDFGSH,ZEFPAF', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {click: button_3_click}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
@@ -612,28 +735,32 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAACk1JREFUeF7tnX+oZVUVxz/bfpiWPxjKKK0MsUBsQivD7CeU1phiBak5pIXIpC8TJ8M/wh9BRJb4h80ISYnFWIGW/TAVp1Q0i7SoVArLgpqyTPupNP3c8X3n3PHOm/vePXudvc+557614THzuHutvfZan7f3Pmfvu1egYYnwdOCNwEuBfYE9gN2BJ9c/0vRUYLdaZag/b9LCuFyT+ql1/gv8O1WoQf1Sev8JbAFuCBAb2GGuoiCtWCIcBnwIOAF42rT6/nlWD/wAOD/A1qxax5QtC0CEZwKXAacAU0EpZaDrXRwBvgCcHeDR3P6YGNgIrwK+DDw7d4Ouz+yBbcBJAb5j1jBBcBcAIhwPfLGe43O2NdJVdE4rYXALnblHTq0N3h/gyhY27SS6k4ERjgS+VSj4CvytwEeBP+bqQI96ngI8aUr744vb0YJZ/2otpYW01lenJq6t5MePAx8OoEVoq7IDgAhrgPuA57TSOFlYRn9EPwH+V0D/YFVGOFSrfeD5iZ34PHB6gH8lyk0eASJ8FnhPG2UryGoRc0rpR5pCthdXW6+5bgM0qqQUgXNigMdThMbrLo4AEQ4B7h17hrfqmySnleshAR7OqXTedEW4pX7Pktq1b+sRPcDfUwVVfwTAZ4D3WhQ0kLkvwEsa1JvpKrGa7+Uv/ejl1+h3zekrle0BHpvWuQibgfdNq7fM53oyeGuAv6TKh1gNO1qU7ZMq3LD+4AGo34JqffS8Bgu/pW65MsAZ03wV4VLg3Gn1Vvj8u8CxAf6cokMAvL5enafIpdSdBwC0QP4VsHdKx+u6TQH4mN76GfSPi9wDHBPgT031CIAzgU1NBQz15gGA/YBfUu2HpJamAFwEXJiqfEL9JAgEwAeBT2RoeDkV8wCA3ogKgD0NfuoaAJn4PeAtTdYEAuAC4GJDx5qKOADN1gAa/jUN5Cp3AW+e9nQgAHINPcsZ/pNQbSEPtkR4LvBg4hu7UX+bjgC5AVD7ekQ8fqX3BAIgx+JjpeDeE+AVg41+9Z5k/xqAaY98k7rZFIDzgEsK+Ekvi94RQPsIuxQBoPlf64BSxQFoNgWcU2+/l4iDDpecOmnvQABoz1+NlyoOQP8AKLaK88alr+MFwKeAs0pFH3AAZgMAbcgthOqN444iAK4ANjgAy3sgwgH1GkDbu6ml6Rqg5BQwslnnIvWiSNvyi8UBaBDOCAcCPx87/NpAakeVpgAsAJenKDbW/QNweIDfjQAouQ2sNu4OcITR2JkQ6wgAjcIajbsoNwHrtB7QCHAVcFrBVu8M8JqC+ournkMA5LP1AbY4AA3wmVMAfgO8WADoaNH6Bn6wVvERoNlTQJdTwCiWCwLgGuBka3QbyDkAswvAVgegAcFzOgWo57cKAB3YPKmBH6xVfASY3RFgEQB9A+ht1ug2kHMAVjkAt4fq2Nlgy7xPAaVHgFsCHD3Y6FfbwV28CezjKaCTKcABWOVTgAMw4wB8VceGCg7RDsCMA/BNnSAtCMDWAG8qqL+46nlfA5QG4I4Ary0epYINOADtnOvvAVb5FOAAOAB+HmDaIBqrY3ldHQgZmbP4HuBGfYNkmoEtPvcTQTM+AujbI29oEeBpovNwKniu3wSWBuDeAGunUTLLn8/7U0BpAH4R4OBZDvA02xyAaR5a+fNtobpZY7ClviHkOOONqQ8G+P60zve5CCw9AvxDV6AFeGSaE1bz57G6+093MndZFp8CSgOgDul2S30FzcsED9RfP7+/vjyySx91BoD++o8K8ECXvRtCW7G6cexq4F092NsZAOqbzqGfDdwcQNPCqi+xejrS/QzajMt9r3AT/3YKgAzSN1T13TSNCLrYcDtPXFygLy6O332ruhMvNWjSswHU2au+GNJy6USu7nUOQC7DXU8eDzgAefw4WC0OwGBDl8dwByCPHwerxQEYbOjyGO4A5PHjYLU4AIMNXR7DHYA8fhysFgdgsKHLY7gDkMePg9XiAAw2dHkMdwDy+HGwWhyAwYYuj+EOQB4/DlZLFgC0bXs78GmqtGXKDKptXhVt72qbd7wo0+Wk7KHa+h1aXmGljktN9piDFp0deHd9ybfl/uKRDa0BUMCUc/CstilMc3hltemI1d1OuuZPuYgtpTUAd+hQgwff4vs8MhE+UOcCsJwoag3AcQG+kacrrsXigfpM4c+AgwzyrQDQPK5rx39saNhFMnogwo+wJeZqDcChAX6asS+uyuCBvgDQCv9FoUqo6KVHD/QFwH+AFwbY1mPfvenq2bmXKUAAHBjgtx6Ffj0QQfmCX2awotUaQC949g9V6nkvPXogVrmCX2kwwQEwOG3mRByAmQtJtwb1BYDe6e8X4K/ddtdbW+qBPgF4VoC/eUj69YAD0K//e2/dAeg9BP0a0BcA2r/fNzyx99+vF1Zx630CsE+Y7+/wDwIrB2AQYSpnZIS7gCMNLbR6EaQpwEcAg9dzi0S4DXidQa8DYHDazIk4ADMXkm4NcgC69ffMtdYWgJuAYwy90hpgr7DrsW+DKhdp44G2AFhzBm0PsEcbw102jwccgDx+HKwWB2CwoctjuAOQx4+D1eIADDZ0eQxvC8DXACVDSC2+CEz1WKH6bQGwpo93AAoFNFWtA5DqsTmr7wDMWUBTuxPhZuDoVDlgcTPIpwCD52ZJpEXyTwdglgJptaUtAF8C3mlo3BeBBqeVEGkLgK4YOdlgmANgcFoJEQeghFcHpLMtAFuMKct8BJgRSNoCcBVwmqEvDoDBaSVEHIASXh2Qzr4A0Imgvf2KuP5JaQvAFcAGQzf8WLjBaSVEHIASXh2QzrYAbALONPTXRwCD00qItAXgMuAcg2EOgMFpJUTaAvBJYKPBMAfA4LQSIhGsR/sXN4OUvvx8g2EOgMFpJUTange4GLjAYJjuCFoT4HGDrItk9EBbAC4ELjLYIwD8jiCD43KLtAXgPOASg1F+S5jBaSVE2gKwAFxuMMxvCjU4rYRIhDuBowy6v65F4LHYkj4IgAMCPGxo2EUyeiDC3cDLDSo3C4BnAI8Auycq0GXRBwX4daKcV8/sgRa3hZ+xmGcmwleAExLtUsaQtQHuT5Tz6pk9EOEB4OBEtXqMf8EIAN0vo3tmUsu6ADemCnn9fB6I1cj9e13Zl6h1U4CFHZmmItwArEtUcn2oUpd56ckDEU6vczamZA17rM728tA4AMo69UPt8Sf0RXkDNwbQfoKXjj0Q4dVUf7gpMZOVyvO4Wf/ZiZo6EeG1wG4JfREE1wNXUz0RKGuo3hHoKWGUDVS/L80KqkWkfixlKFlGNTyn/GUqC+i47/X7SF669KNF+5r6m0A6x5G6eNcp8PWhjscuxsXqcIi2iFMgGA/ipPSvQ0sJa4GyhMxy8KRANW6X1mtvH7/ed6KiWOWl1UmhPUv0ynX24gEd/t2w9AjfsiRFWAtI6PBezPVGc3ngUeDcAJ+bpHDFoSRW08B6KTBmpszVCdeT7gEFXhndLw2g/08sjeeSCEcAJwKHpdviEh164CHgOj0dNLnJ/f8J8ICREofKPQAAAABJRU5ErkJggg=='}
     name: button_5
-    layout_properties: {grid_position: 'GDFGSH,IHFXVJ', full_width_row: true}
+    layout_properties: {grid_position: 'GDFGSH,IHFXVJ', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {click: button_5_click}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_3
-    layout_properties: {grid_position: 'MKXHJR,XWNBUC', full_width_row: true}
+    layout_properties: {grid_position: 'MKXHJR,XWNBUC', full_width_row: true, row_background: '#F7F7E3'}
     components: []
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Grup, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_13
-    layout_properties: {grid_position: 'LZGWMR,VFDYZJ', full_width_row: true}
+    layout_properties: {grid_position: 'LZGWMR,VFDYZJ', full_width_row: true, row_background: 'theme:Gray
+        200'}
+    event_bindings: {}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_4
-    layout_properties: {grid_position: 'LZGWMR,ZPOTWN', full_width_row: true}
+    layout_properties: {grid_position: 'LZGWMR,ZPOTWN', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {click: button_4_click}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
@@ -641,24 +768,28 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: 'data:image/png;base64,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'}
     name: button_7
-    layout_properties: {grid_position: 'LZGWMR,PLVSQH', full_width_row: true}
+    layout_properties: {grid_position: 'LZGWMR,PLVSQH', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {click: button_7_click}
   - type: Spacer
     properties: {height: 32}
     name: spacer_4
-    layout_properties: {grid_position: 'LZGWMR,NVFAYR', full_width_row: true}
+    layout_properties: {grid_position: 'LZGWMR,NVFAYR', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_2
-    layout_properties: {grid_position: 'PVOGNV,JMZFVB', full_width_row: true}
+    layout_properties: {grid_position: 'PVOGNV,JMZFVB', full_width_row: true, row_background: 'theme:Gray
+        200'}
+    event_bindings: {}
   - type: XYPanel
     properties: {role: null, width: null, align: center, height: 266.3636474609375,
       tooltip: '', border: '', foreground: '', visible: true, spacing_above: small,
       spacing_below: small, background: ''}
     name: xy_panel_2
-    layout_properties: {grid_position: 'HUKXPW,XLFTOF', full_width_row: true}
+    layout_properties: {grid_position: 'HUKXPW,XLFTOF', full_width_row: true, row_background: '#F7F7E3'}
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
@@ -943,9 +1074,12 @@ components:
       name: label_22
       layout_properties: {x: 224.0624771118164, y: 200.9942626953125, width: 192.997}
     - type: TextArea
-      properties: {height: 60.1875}
+      properties: {role: null, align: left, height: 60.1875, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        auto_expand: true, font: '', spacing_above: small, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_area_3
-      layout_properties: {x: 437.0625, y: 189, width: 628}
+      layout_properties: {x: 437.0596466064453, y: 188.99151611328125, width: 618.0083639999999}
       data_bindings:
       - {property: text, code: 'self.item[''sintez''][''altele'']', writeback: true}
       event_bindings: {lost_focus: text_area_3_lost_focus}
@@ -981,6 +1115,7 @@ components:
       data_bindings:
       - {property: selected_value, code: 'self.item[''sintez''][''nr_sal'']', writeback: true}
       event_bindings: {change: drop_down_4_change}
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Date despre management si actionariat (inclusiv asociatii/actionarii
@@ -988,14 +1123,17 @@ components:
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_33
-    layout_properties: {x: 10, y: 259.1761474609375, width: 797, grid_position: 'IUDIBQ,FJJJDU'}
+    layout_properties: {x: 10, y: 259.1761474609375, width: 797, grid_position: 'IUDIBQ,FJJJDU',
+      row_background: 'theme:Gray 200', full_width_row: true}
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Nume / Pozitie/ Varsta / Studii / Experienta / Starea Civila,
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_34
-    layout_properties: {x: 19.0625, y: 282.6419677734375, width: 95.9375, grid_position: 'MUUGYU,TESNHL'}
+    layout_properties: {x: 19.0625, y: 282.6419677734375, width: 95.9375, grid_position: 'MUUGYU,TESNHL',
+      full_width_row: true, row_background: 'theme:Gray 200'}
     event_bindings: {}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
@@ -1004,7 +1142,8 @@ components:
       underline: false, icon: ''}
     name: button_12
     layout_properties: {x: 823.0113067626953, y: 266.633544921875, width: 53.227294921875,
-      grid_position: 'MUUGYU,XUVQLS'}
+      grid_position: 'MUUGYU,XUVQLS', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {click: button_12_click}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
@@ -1013,14 +1152,16 @@ components:
       underline: false, icon: ''}
     name: button_13
     layout_properties: {x: 884.9289703369141, y: 266.633544921875, width: 74.9915,
-      grid_position: 'MUUGYU,BIENJL'}
+      grid_position: 'MUUGYU,BIENJL', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {click: button_13_click}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_5
     layout_properties: {x: 14.034088134765625, y: 321.1363525390625, width: 918.7243881225587,
-      grid_position: 'TVSWPJ,CYDRZO'}
+      grid_position: 'TVSWPJ,CYDRZO', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {}
     data_bindings: []
   - type: Label
@@ -1029,7 +1170,7 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_64
-    layout_properties: {grid_position: 'OAWYII,GTIEOG'}
+    layout_properties: {grid_position: 'OAWYII,GTIEOG', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
@@ -1037,12 +1178,12 @@ components:
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_65
-    layout_properties: {grid_position: 'UNYFUB,LTOMYB'}
+    layout_properties: {grid_position: 'UNYFUB,LTOMYB', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_7
-    layout_properties: {grid_position: 'UNYFUB,KKSBDE'}
+    layout_properties: {grid_position: 'UNYFUB,KKSBDE', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_7_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''decl''][''a'']', writeback: true}
@@ -1052,12 +1193,12 @@ components:
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_66
-    layout_properties: {grid_position: 'OBDUXF,IDNFET'}
+    layout_properties: {grid_position: 'OBDUXF,IDNFET', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_8
-    layout_properties: {grid_position: 'OBDUXF,XONDMT'}
+    layout_properties: {grid_position: 'OBDUXF,XONDMT', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_8_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''decl''][''b'']', writeback: true}
@@ -1067,12 +1208,12 @@ components:
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_67
-    layout_properties: {grid_position: 'BGXCDM,QTUXTB'}
+    layout_properties: {grid_position: 'BGXCDM,QTUXTB', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_9
-    layout_properties: {grid_position: 'BGXCDM,KTLPGP'}
+    layout_properties: {grid_position: 'BGXCDM,KTLPGP', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_9_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''decl''][''c'']', writeback: true}
@@ -1082,12 +1223,12 @@ components:
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_68
-    layout_properties: {grid_position: 'HRMFXW,FRDWKY'}
+    layout_properties: {grid_position: 'HRMFXW,FRDWKY', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_10
-    layout_properties: {grid_position: 'HRMFXW,VJDACF'}
+    layout_properties: {grid_position: 'HRMFXW,VJDACF', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_10_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''decl''][''d'']', writeback: true}
@@ -1097,12 +1238,12 @@ components:
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_69
-    layout_properties: {grid_position: 'CDNTQV,PYHEYY'}
+    layout_properties: {grid_position: 'CDNTQV,PYHEYY', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
     properties: {}
     name: text_area_11
-    layout_properties: {grid_position: 'CDNTQV,OUQXPM'}
+    layout_properties: {grid_position: 'CDNTQV,OUQXPM', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_11_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''decl''][''e'']', writeback: true}
@@ -1114,12 +1255,12 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_70
-    layout_properties: {grid_position: 'DBOYMH,DGBFGV'}
+    layout_properties: {grid_position: 'DBOYMH,DGBFGV', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
     properties: {height: 62.1477}
     name: text_area_12
-    layout_properties: {grid_position: 'DBOYMH,LBBOYL'}
+    layout_properties: {grid_position: 'DBOYMH,LBBOYL', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_12_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''decl''][''f'']', writeback: true}
@@ -1131,12 +1272,12 @@ components:
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_71
-    layout_properties: {grid_position: 'YWGHGI,MANXTN'}
+    layout_properties: {grid_position: 'YWGHGI,MANXTN', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
     properties: {height: 63.1477}
     name: text_area_13
-    layout_properties: {grid_position: 'YWGHGI,YMVWZK'}
+    layout_properties: {grid_position: 'YWGHGI,YMVWZK', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_13_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''decl''][''g'']', writeback: true}
@@ -1146,7 +1287,7 @@ components:
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_72
-    layout_properties: {grid_position: 'BQTZMT,NUQTGH'}
+    layout_properties: {grid_position: 'BQTZMT,NUQTGH', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: DropDown
     properties:
@@ -1169,26 +1310,32 @@ components:
       underline: false
       include_placeholder: false
     name: drop_down_16
-    layout_properties: {grid_position: 'BQTZMT,YQEWJO'}
+    layout_properties: {grid_position: 'BQTZMT,YQEWJO', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {change: drop_down_16_change}
     data_bindings:
     - {property: selected_value, code: 'self.item[''decl''][''h'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_15
-    layout_properties: {grid_position: 'BQTZMT,GEUSHK'}
+    layout_properties: {grid_position: 'BQTZMT,GEUSHK', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: Label
-    properties: {text: Expunere fata de banci (LEI)}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Expunere fata de banci (LEI), font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
     name: label_40
-    layout_properties: {grid_position: 'JBFAAM,CZHYXK'}
+    layout_properties: {grid_position: 'JBFAAM,CZHYXK', full_width_row: true, row_background: 'theme:Gray
+        200'}
+    event_bindings: {}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_14
-    layout_properties: {grid_position: 'JBFAAM,JEPLUM'}
+    layout_properties: {grid_position: 'JBFAAM,JEPLUM', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {click: button_14_click}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
@@ -1196,41 +1343,49 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_15
-    layout_properties: {grid_position: 'JBFAAM,KPXBWO'}
+    layout_properties: {grid_position: 'JBFAAM,KPXBWO', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {click: button_15_click}
   - type: Spacer
     properties: {height: 32}
     name: spacer_12
-    layout_properties: {grid_position: 'JBFAAM,RCFMNI'}
+    layout_properties: {grid_position: 'JBFAAM,RCFMNI', full_width_row: true, row_background: 'theme:Gray
+        200'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Nr. / Tip si obiect credit / Banca / Valoare aprobata / Data acordare / Sold / Scadenta / Rata lunara / Dobanda / Tipul garantiei,
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_41
-    layout_properties: {grid_position: 'SRCDVI,FTMCMP'}
+    layout_properties: {grid_position: 'SRCDVI,FTMCMP', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_6
-    layout_properties: {grid_position: 'DFAGXZ,KWSPDI'}
+    layout_properties: {grid_position: 'DFAGXZ,KWSPDI', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {}
   - type: Label
-    properties: {text: Expunere fata de leasing/IFN (LEI)}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Expunere fata de leasing/IFN (LEI), font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
     name: label_51
-    layout_properties: {grid_position: 'KAYAEM,APOMUC'}
+    layout_properties: {grid_position: 'KAYAEM,APOMUC', full_width_row: true, row_background: '#F7F7E3'}
+    event_bindings: {}
   - type: Spacer
     properties: {height: 32}
     name: spacer_11
-    layout_properties: {grid_position: 'KAYAEM,JZXXCP'}
+    layout_properties: {grid_position: 'KAYAEM,JZXXCP', full_width_row: true, row_background: '#F7F7E3'}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: +, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_16
-    layout_properties: {grid_position: 'KAYAEM,ZADEQJ'}
+    layout_properties: {grid_position: 'KAYAEM,ZADEQJ', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {click: button_16_click}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
@@ -1238,30 +1393,31 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_17
-    layout_properties: {grid_position: 'KAYAEM,DDNAAK'}
+    layout_properties: {grid_position: 'KAYAEM,DDNAAK', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {click: button_17_click}
   - type: Spacer
     properties: {height: 32}
     name: spacer_13
-    layout_properties: {grid_position: 'KAYAEM,RLPMAH'}
+    layout_properties: {grid_position: 'KAYAEM,RLPMAH', full_width_row: true, row_background: '#F7F7E3'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Nr. / Denumire IFN / Valuta si valoarea contractului / Data acordare / Suma ramasa de plata /  Destinatie / rata lunara / Valoarea reziduala / Scadenta,
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_52
-    layout_properties: {grid_position: 'YFYZZA,OFTPXM'}
+    layout_properties: {grid_position: 'YFYZZA,OFTPXM', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: GridPanel
     properties: {spacing_above: small, spacing_below: small, background: '', foreground: '',
       border: solid blue 2px, visible: true, role: null, tooltip: ''}
     name: grid_panel_7
-    layout_properties: {grid_position: 'SPXCYE,SHCMBU'}
+    layout_properties: {grid_position: 'SPXCYE,SHCMBU', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: Spacer
     properties: {height: 32}
     name: spacer_14
     layout_properties: {grid_position: 'QEAYQU,PBJSMN'}
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'i. Aspecte privind impactul firmei asupra mediului inconjurator
@@ -1272,12 +1428,17 @@ components:
       spacing_below: small, italic: false, background: '', bold: false, underline: false,
       icon: ''}
     name: label_61
-    layout_properties: {grid_position: 'HCODFZ,YZQYNQ'}
+    layout_properties: {grid_position: 'HCODFZ,YZQYNQ', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {}
   - type: TextArea
-    properties: {}
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_area_4
-    layout_properties: {grid_position: 'PDOHBM,XQOVZG'}
+    layout_properties: {grid_position: 'PDOHBM,XQOVZG', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {lost_focus: text_area_4_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''decl''][''i'']', writeback: true}
@@ -1291,12 +1452,17 @@ components:
         ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_62
-    layout_properties: {grid_position: 'OAFOIF,AIYAMN'}
+    layout_properties: {grid_position: 'OAFOIF,AIYAMN', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {}
   - type: TextArea
-    properties: {}
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_area_5
-    layout_properties: {grid_position: 'CMLGDH,SQQWWC'}
+    layout_properties: {grid_position: 'CMLGDH,SQQWWC', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {lost_focus: text_area_5_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''decl''][''j'']', writeback: true}
@@ -1308,12 +1474,17 @@ components:
       spacing_below: small, italic: false, background: '', bold: false, underline: false,
       icon: ''}
     name: label_63
-    layout_properties: {grid_position: 'NRPMIH,ZHVRCA'}
+    layout_properties: {grid_position: 'NRPMIH,ZHVRCA', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {}
   - type: TextArea
-    properties: {}
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_area_6
-    layout_properties: {grid_position: 'EDOLFF,ZCYBOX'}
+    layout_properties: {grid_position: 'EDOLFF,ZCYBOX', full_width_row: true, row_background: 'theme:Gray
+        200'}
     event_bindings: {lost_focus: text_area_6_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''decl''][''k'']', writeback: true}

@@ -181,4 +181,6 @@ color_scheme:
   - {name: green, color: '#12EE15'}
   - {name: RED, color: '#EE3912'}
   - {name: '', color: '#CAECF8'}
-  - {name: '', color: '#E3F9A6'}
+  - {name: '', color: '#E3F9A9'}
+  - {name: '', color: '#F8F7CA'}
+  - {name: '', color: '#F7F7E3'}

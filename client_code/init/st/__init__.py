@@ -1408,6 +1408,17 @@ class st(stTemplate):
     anvil.server.call("sp1", self.ups(), p1)
     pass
 
+  def text_box_9_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
+  def drop_down_17_change(self, **event_args):
+    if self.drop_down_17.selected_value:
+        anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+
+
 
 
 
