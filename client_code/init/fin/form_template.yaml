@@ -255,7 +255,7 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false}
       name: text_box_13
       layout_properties: {x: 475.9658966064453, y: 426.81817626953125, width: 152.04572}
-      event_bindings: {lost_focus: text_box_13_lost_focus}
+      event_bindings: {lost_focus: text_box_13_lost_focus, pressed_enter: text_box_13_pressed_enter}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''a''][''a1'']', writeback: true}
     - type: TextBox
@@ -1287,7 +1287,7 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_12
       layout_properties: {x: 815.9942779541016, y: 272.8409118652344, width: 156.02272}
-      event_bindings: {lost_focus: text_box_12_lost_focus}
+      event_bindings: {lost_focus: text_box_12_lost_focus, pressed_enter: text_box_12_pressed_enter}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''d''][''a3'']', writeback: true}
     - type: TextBox
@@ -1717,7 +1717,7 @@ components:
       underline: false, icon: 'fa:download'}
     name: link_3
     layout_properties: {grid_position: 'OGKBDO,CLQRDZ'}
-    event_bindings: {}
+    event_bindings: {click: link_3_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Download  Anexa credit investitii, font_size: null, wrap_on: mobile,
@@ -1726,7 +1726,7 @@ components:
       underline: false, icon: 'fa:download'}
     name: link_4
     layout_properties: {grid_position: 'NPFIRA,DRHPQN'}
-    event_bindings: {}
+    event_bindings: {click: link_4_click}
   - type: FileLoader
     properties:
       role: null

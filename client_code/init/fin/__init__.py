@@ -588,8 +588,31 @@ class fin(finTemplate):
     pass
 
   def link_2_click(self, **event_args):
-    """This method is called when the link is clicked"""
+    file =anvil.server.call ("down_declaratii")
+    anvil.media.download(file) 
     pass
+
+  def text_box_13_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
+  def text_box_12_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
+  def link_3_click(self, **event_args):
+    file =anvil.server.call ("down_credit_3")
+    anvil.media.download(file) 
+    pass
+
+  def link_4_click(self, **event_args):
+    file =anvil.server.call ("down_credit_inv")
+    anvil.media.download(file) 
+    pass
+
+
+
+
 
 
 
