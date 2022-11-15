@@ -581,12 +581,16 @@ class fin(finTemplate):
     #f = anvil.server.call ("get_cerere", self.ups())
     #anvil.media.download(f)
     # transfera json pe server
-    f =anvil.server.call ("down_json", self.ups(), p1)
+    f =anvil.server.call ("down_cerere", self.ups(), p1)
    # download cerere de pe server
    # f = anvil.server.call ("get_cerere", self.ups())
-    anvil.media.download(f)
-    
+    anvil.media.download(f)    
     pass
+
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    pass
+
 
 
 
