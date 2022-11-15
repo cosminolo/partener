@@ -575,7 +575,7 @@ components:
       font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '#CAECF8', bold: false, underline: false}
     name: text_box_59
-    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 4, width: 44.9844}
+    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 4, width: 55.6562}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',

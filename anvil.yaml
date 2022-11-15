@@ -68,12 +68,12 @@ db_schema:
     - name: p1
       admin_ui: {width: 200}
       type: simpleObject
-    - name: darh
-      admin_ui: {width: 200}
-      type: media
     - name: bal
       admin_ui: {width: 200}
       type: simpleObject
+    - name: darh
+      admin_ui: {width: 200}
+      type: media
   arh:
     title: arh
     client: none
@@ -94,10 +94,10 @@ db_schema:
     - name: p1
       admin_ui: {width: 200}
       type: simpleObject
-    - name: darh
-      admin_ui: {width: 200}
-      type: media
     - name: bal
       admin_ui: {width: 200}
       type: simpleObject
+    - name: darh
+      admin_ui: {width: 200}
+      type: media
 renamed: true
