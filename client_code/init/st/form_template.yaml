@@ -286,7 +286,10 @@ components:
       layout_properties: {grid_position: 'BKPWDO,PCULWH'}
       event_bindings: {}
     - type: TextArea
-      properties: {}
+      properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
       name: text_area_1
       layout_properties: {grid_position: 'BKPWDO,YSIMTD', full_width_row: true}
       data_bindings:
@@ -301,7 +304,10 @@ components:
       layout_properties: {grid_position: 'BKPWDO,TPPESQ'}
       event_bindings: {}
   - type: TextBox
-    properties: {}
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_box_14
     layout_properties: {grid_position: 'ZFCEMW,ZFQIUE', row_background: 'theme:Gray
         200', full_width_row: true}
@@ -340,7 +346,10 @@ components:
       layout_properties: {grid_position: 'PZRYHO,IBBZXZ'}
       event_bindings: {}
     - type: TextArea
-      properties: {height: 40.1875}
+      properties: {role: null, align: left, height: 40.1875, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
       name: text_area_2
       layout_properties: {grid_position: 'PZRYHO,CVNOUC', full_width_row: true}
       data_bindings:
@@ -424,17 +433,20 @@ components:
     components:
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
         font: '', spacing_above: none, type: text, spacing_below: none, italic: false,
         background: '', bold: false, underline: false}
       name: text_box_1
-      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 1, width: 76.125, x: 29.875,
+      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 1, width: 76, x: 29.875,
         y: 9.125}
       event_bindings: {pressed_enter: text_box_1_pressed_enter}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''cui'']', writeback: true}
     - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_box_2
       layout_properties: {row: JNGRGR, width_xs: 3, col_xs: 3, x: 181, y: 9.125, width: 271}
       event_bindings: {lost_focus: text_box_2_lost_focus}
@@ -449,9 +461,12 @@ components:
       layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 6, width: 48.468999999999994,
         x: 462, y: 2.859375}
     - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_box_3
-      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 7, x: 504, y: 10, width: 108.12500000000001}
+      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 7, x: 504, y: 10, width: 108}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''codj'']', writeback: true}
       event_bindings: {lost_focus: text_box_3_lost_focus}
@@ -464,10 +479,13 @@ components:
       layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 0, width: 35.125, x: 0,
         y: 37}
     - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_box_5
       layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 1, x: 29.875, y: 43.125,
-        width: 107.469}
+        width: 107}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''tel'']', writeback: true}
       event_bindings: {lost_focus: text_box_5_lost_focus}
@@ -481,17 +499,20 @@ components:
         y: 37}
     - type: TextBox
       properties: {role: scrol, align: left, hide_text: false, tooltip: '', placeholder: '',
-        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
         font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
         background: '', bold: false, underline: false}
       name: text_box_6
-      layout_properties: {row: TCYHRR, width_xs: 2, col_xs: 3, x: 190.99430084228516,
-        y: 43.991477966308594, width: 158.015625}
+      layout_properties: {row: TCYHRR, width_xs: 2, col_xs: 3, x: 190.984375, y: 43.984375,
+        width: 158}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''email'']', writeback: true}
       event_bindings: {lost_focus: text_box_6_lost_focus}
     - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_box_4
       layout_properties: {row: JNGRGR, width_xs: 3, col_xs: 9, x: 665.875, y: 9.125,
         width: 521}
@@ -531,7 +552,10 @@ components:
       layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 5, width: 49, x: 358.984375,
         y: 37}
     - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_box_7
       layout_properties: {row: TCYHRR, width_xs: 1, col_xs: 6, x: 408.34375, y: 44,
         width: 63}
@@ -539,7 +563,10 @@ components:
       - {property: text, code: 'self.item[''gen''][''caen'']', writeback: true}
       event_bindings: {lost_focus: text_box_7_lost_focus}
     - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_box_8
       layout_properties: {row: TCYHRR, width_xs: 3, col_xs: 8, x: 481.34375, y: 43.125,
         width: 291}
@@ -547,9 +574,12 @@ components:
       - {property: text, code: 'self.item[''gen''][''d_caen'']', writeback: true}
       event_bindings: {lost_focus: text_box_8_lost_focus, pressed_enter: text_box_8_pressed_enter}
     - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_box_11
-      layout_properties: {x: 342, y: 89, width: 129.34658813476562}
+      layout_properties: {x: 342, y: 89, width: 129}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''reprez'']', writeback: true}
       event_bindings: {lost_focus: text_box_11_lost_focus}
@@ -578,7 +608,7 @@ components:
         foreground: ''
         items: [Nu, Da]
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -604,7 +634,7 @@ components:
         items: [Agricultura, Comert, Constructii, Industrie, Servicii, Transporturi,
           Turism, Alte ramuri]
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -626,9 +656,12 @@ components:
       name: label_7
       layout_properties: {x: 798.25, y: 37, width: 57}
     - type: TextBox
-      properties: {}
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
       name: text_box_12
-      layout_properties: {x: 567.8522720336914, y: 88.991455078125, width: 160}
+      layout_properties: {x: 567.84375, y: 88.984375, width: 160}
       event_bindings: {pressed_enter: text_box_12_pressed_enter, lost_focus: text_box_12_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''calit'']', writeback: true}
@@ -837,7 +870,7 @@ components:
           Clientul este  vizibil intr-o piata regionala, Clientul este  vizibil intr-o piata limitata la 2 judete,
           Clientul are o vizibilitate redusa in piata de profil]
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -863,7 +896,7 @@ components:
         items: [Competitie ridicata cu intrare grea pe piata, Competitie redusa cu intrare grea pe piata,
           Competitie redusa cu intrare usoara pe piata, Competitie inexistenta (nisa de piata)]
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -873,7 +906,7 @@ components:
         underline: false
         include_placeholder: false
       name: drop_down_9
-      layout_properties: {x: 354.5, y: 55.859375, width: 263.75}
+      layout_properties: {x: 354.5, y: 55.859375, width: 264}
       data_bindings:
       - {property: selected_value, code: 'self.item[''sintez''][''concurenta'']',
         writeback: true}
@@ -891,7 +924,7 @@ components:
             mizeaza pe volumul produselor comercializate', 'Agresiva, merge cu produse
             exclusiviste', 'Nu are strategie, se acomodeaza pietei']
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -917,7 +950,7 @@ components:
         items: [Management experimentat cu functiile executive separate, Management experimentat fara functii executive separate,
           Management fara experienta si fara functii executive separate, Activitatea depinde de o persoana cheie]
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -943,7 +976,7 @@ components:
         items: [Studii superioare si continuitate in cadrul firmei> = 3 ani, Studii superioare si continuitate in cadrul firmei<  3 ani,
           Alte studii si continuitate in cadrul firmei>= 3 ani, Alte studii si continuitate in cadrul firmei<3 ani]
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -953,7 +986,7 @@ components:
         underline: false
         include_placeholder: false
       name: drop_down_12
-      layout_properties: {x: 19.0625, y: 125, width: 285.438}
+      layout_properties: {x: 19.0625, y: 125, width: 285}
       data_bindings:
       - {property: selected_value, code: 'self.item[''sintez''][''ev_manag'']', writeback: true}
       event_bindings: {change: drop_down_12_change}
@@ -976,7 +1009,7 @@ components:
         foreground: ''
         items: [Foarte buna, Buna, Satisfacatoare, Necorespunzatoare]
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -986,7 +1019,7 @@ components:
         underline: false
         include_placeholder: false
       name: drop_down_13
-      layout_properties: {x: 354.5, y: 125, width: 263.75}
+      layout_properties: {x: 354.5, y: 125, width: 264}
       data_bindings:
       - {property: selected_value, code: 'self.item[''sintez''][''cal_act'']', writeback: true}
       event_bindings: {change: drop_down_13_change}
@@ -1011,7 +1044,7 @@ components:
         items: [Nu exista nici un client pentru care Cc>15%, Exista cel putin un client pentru care 15% <= Cc<25%,
           Exista cel putin un client pentru care 25%<=  Cc<50%, Exista cel putin un client pentru care Cc >= 50%]
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -1021,7 +1054,7 @@ components:
         underline: false
         include_placeholder: false
       name: drop_down_14
-      layout_properties: {x: 649, y: 125, width: 248.25}
+      layout_properties: {x: 649, y: 125, width: 248}
       data_bindings:
       - {property: selected_value, code: 'self.item[''sintez''][''con_cli'']', writeback: true}
       event_bindings: {change: drop_down_14_change}
@@ -1047,7 +1080,7 @@ components:
           Debitorul a beneficiat de unul sau mai multe credite (de la CEC BANK S.A. sau de la alte institutii de credit) care se afla in derulare fara restante,
           Debitorul nu a beneficiat de credite, Debitorul are restante la creditele in derulare]
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -1057,7 +1090,7 @@ components:
         underline: false
         include_placeholder: false
       name: drop_down_15
-      layout_properties: {x: 914.7442779541016, y: 118.991455078125, width: 272.244}
+      layout_properties: {x: 914.734375, y: 118.984375, width: 272}
       data_bindings:
       - {property: selected_value, code: 'self.item[''sintez''][''exp_imp'']', writeback: true}
       event_bindings: {change: drop_down_15_change}
@@ -1093,7 +1126,7 @@ components:
     - type: DropDown
       properties:
         role: null
-        align: full
+        align: left
         tooltip: ''
         placeholder: ''
         border: ''
@@ -1101,7 +1134,7 @@ components:
         foreground: ''
         items: ['0', Intre 1 si sub 10 salariati, Intre 10 si sub 50 salariat, Peste 50 de salariati]
         visible: true
-        font_size: null
+        font_size: 14
         font: ''
         spacing_above: small
         spacing_below: small
@@ -1181,7 +1214,10 @@ components:
     layout_properties: {grid_position: 'UNYFUB,LTOMYB', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
-    properties: {}
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_area_7
     layout_properties: {grid_position: 'UNYFUB,KKSBDE', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_7_lost_focus}
@@ -1196,7 +1232,10 @@ components:
     layout_properties: {grid_position: 'OBDUXF,IDNFET', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
-    properties: {}
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_area_8
     layout_properties: {grid_position: 'OBDUXF,XONDMT', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_8_lost_focus}
@@ -1211,7 +1250,10 @@ components:
     layout_properties: {grid_position: 'BGXCDM,QTUXTB', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
-    properties: {}
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_area_9
     layout_properties: {grid_position: 'BGXCDM,KTLPGP', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_9_lost_focus}
@@ -1226,7 +1268,10 @@ components:
     layout_properties: {grid_position: 'HRMFXW,FRDWKY', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
-    properties: {}
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_area_10
     layout_properties: {grid_position: 'HRMFXW,VJDACF', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_10_lost_focus}
@@ -1241,7 +1286,10 @@ components:
     layout_properties: {grid_position: 'CDNTQV,PYHEYY', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
-    properties: {}
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_area_11
     layout_properties: {grid_position: 'CDNTQV,OUQXPM', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_11_lost_focus}
@@ -1258,7 +1306,10 @@ components:
     layout_properties: {grid_position: 'DBOYMH,DGBFGV', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
-    properties: {height: 62.1477}
+    properties: {role: null, align: left, height: 62.1477, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_area_12
     layout_properties: {grid_position: 'DBOYMH,LBBOYL', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_12_lost_focus}
@@ -1275,7 +1326,10 @@ components:
     layout_properties: {grid_position: 'YWGHGI,MANXTN', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: TextArea
-    properties: {height: 63.1477}
+    properties: {role: null, align: left, height: 63.1477, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_area_13
     layout_properties: {grid_position: 'YWGHGI,YMVWZK', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {lost_focus: text_area_13_lost_focus}
@@ -1292,7 +1346,7 @@ components:
   - type: DropDown
     properties:
       role: null
-      align: full
+      align: center
       tooltip: ''
       placeholder: ''
       border: ''
@@ -1300,7 +1354,7 @@ components:
       foreground: ''
       items: [Da, Nu]
       visible: true
-      font_size: null
+      font_size: 14
       font: ''
       spacing_above: small
       spacing_below: small
@@ -1433,7 +1487,7 @@ components:
     event_bindings: {}
   - type: TextArea
     properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
       auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
       background: '', bold: false, underline: false}
     name: text_area_4
@@ -1457,7 +1511,7 @@ components:
     event_bindings: {}
   - type: TextArea
     properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
       auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
       background: '', bold: false, underline: false}
     name: text_area_5
@@ -1479,7 +1533,7 @@ components:
     event_bindings: {}
   - type: TextArea
     properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
       auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
       background: '', bold: false, underline: false}
     name: text_area_6
