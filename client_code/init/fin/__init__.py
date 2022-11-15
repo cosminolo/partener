@@ -610,6 +610,11 @@ class fin(finTemplate):
     anvil.media.download(file) 
     pass
 
+  def file_loader_1_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    pass
+
+
 
 
 
