@@ -1421,6 +1421,12 @@ class st(stTemplate):
     """This method is called when the user presses Enter in this text box"""
     pass
 
+  def button_11_show(self, **event_args):
+    """This method is called when the Button is shown on the screen"""
+                         
+    pass
+
+
 
 
 

@@ -77,7 +77,11 @@ def preia_inlucru(us, soc, facilit, dat):
   arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
   id_row = app_tables.lucru.get(user=us)
   id_row.update(p1=arh['p1'], bal=arh['bal'])
-  id.row.delete('darh')
+  media = arh['darh']
+  media = anvil.BlobMedia('text/html', media.get_bytes() )
+  id_row.update(darh=media)
+  
+  
 pass
 @anvil.server.callable
 def sterge_arh(us, soc, facilit, dat):

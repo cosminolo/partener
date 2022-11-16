@@ -392,7 +392,7 @@ components:
     name: button_11
     layout_properties: {grid_position: 'SAEEKP,PTNMMI', full_width_row: true, row_background: 'theme:Gray
         200'}
-    event_bindings: {click: button_11_click}
+    event_bindings: {click: button_11_click, show: button_11_show}
   - type: Spacer
     properties: {height: 32}
     name: spacer_10
