@@ -1,0 +1,325 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+  event_bindings: {}
+components:
+- type: Link
+  properties: {role: null, url: '', align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: exp, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+    spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: ''}
+  name: link_1
+  layout_properties: {slot: left-nav}
+  event_bindings: {}
+- type: Button
+  properties: {role: raised, align: left, tooltip: '', border: '', enabled: true,
+    foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 20, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: 'fa:home'}
+  name: button_1
+  layout_properties: {slot: title}
+  event_bindings: {}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {slot: nav-right}
+  event_bindings: {}
+  components:
+  - type: Button
+    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 20, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:fast-backward'}
+    name: button_2
+    layout_properties: {grid_position: 'NFSSZR,MWYVAV'}
+    event_bindings: {}
+  - type: Button
+    properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 700', visible: true, text: '', font_size: 20, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:fast-forward'}
+    name: button_3
+    layout_properties: {grid_position: 'NFSSZR,WUDKIL'}
+    event_bindings: {}
+- type: GridPanel
+  properties: {}
+  name: grid_panel_1
+  layout_properties: {slot: default}
+  event_bindings: {}
+  components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Denumire facilitate, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_1
+    layout_properties: {row: JDBSSU, width_xs: 2, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_7
+    layout_properties: {row: JDBSSU, width_xs: 7, col_xs: 2}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Suma solicitata, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {row: RHZLQR, width_xs: 2, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_8
+    layout_properties: {row: RHZLQR, width_xs: 3, col_xs: 2}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Perioada de creditare, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_9
+    layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 2}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Clasa de performanta, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 4, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_10
+    layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 6}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '1. Suma ratelor de principal estimate pentru creditul
+        solicitat pe urmatoarele 12 luni sau pe perioada de creditare propusa daca
+        este sub 12 luni ', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_5
+    layout_properties: {row: NNQCKC, width_xs: 8, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_11
+    layout_properties: {row: NNQCKC, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '2. Suma dobanzilor  estimate pentru creditul solicitat
+        pe urmatoarele 12 luni sau pe perioada de creditare propusa daca este sub
+        12 luni  ', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_6
+    layout_properties: {row: ELVYUB, width_xs: 8, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_12
+    layout_properties: {row: ELVYUB, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '3. Dobanzi de plata  la creditele si leasingurile existente
+        si la cele care se vor contracta (exclusiv credit solicitat, exclusiv refinantare)
+        pe urmatoarele 12 luni sau pe perioada de creditare propusa daca este sub
+        12 luni', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_7
+    layout_properties: {row: YWFXPQ, width_xs: 8, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_13
+    layout_properties: {row: YWFXPQ, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '4. Rambursari de principal la creditele si leasingurile
+        existente si la cele care se vor contracta (exclusiv credit solicitat, exclusiv
+        refinantare),  pe urmatoarele 12 luni sau pe perioada de creditare propusa
+        daca este sub 12 luni', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_8
+    layout_properties: {row: ZWWKKA, width_xs: 8, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_14
+    layout_properties: {row: ZWWKKA, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 5. Aport propriu din afacere care se va utiliza pentru sustinerea investitiilor/imobilizarilor in curs estimate  pe urmatoarele 12 luni sau pe perioada de creditare propusa daca este sub 12 luni,
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
+    name: label_9
+    layout_properties: {row: LNPUEW, width_xs: 8, col_xs: 0, width: 683.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_15
+    layout_properties: {row: LNPUEW, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 6. Alte intrari de numerar estimate (inclusiv imprumut asociati/actionari) diminuate cu plati de dividende si restituiri din imprumuturi asociati/actionari in urmatoarele  pe urmatoarele 12 luni sau pe perioada de creditare propusa daca este sub 12 luni; suma cu plus semnifica variatia pozitiva (intrarile nete) care diminueaza sarcina financiara iar variatia negativa (iesirile nete) creste sarcina financiara,
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
+    name: label_10
+    layout_properties: {row: CDOOUE, width_xs: 8, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_16
+    layout_properties: {row: CDOOUE, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 7. Datorii restante la stat aferente anului anterior de achitat in urmatoarele 12 luni sau pe perioada de creditare propusa daca este sub 12 luni,
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
+    name: label_11
+    layout_properties: {row: EGGLDE, width_xs: 8, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_17
+    layout_properties: {row: EGGLDE, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Total sarcina financiara propusa pt. urmatoarele 12 luni
+        sau pe perioada de creditare propusa daca este sub 12 luni (1+2+3+4+5-6+7;
+        agric: cu pct.6>0:1+2-6; cu pct.6<0: 1+2)', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_12
+    layout_properties: {row: ZNQECP, width_xs: 8, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_18
+    layout_properties: {row: ZNQECP, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Total facilitati pe termen scurt pentru activitatea curenta
+        la data analizei ', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_13
+    layout_properties: {row: CJPREP, width_xs: 8, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_19
+    layout_properties: {row: CJPREP, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Plafon linie de credit  in derulare la CEC Bank, font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_14
+    layout_properties: {row: HDTBFV, width_xs: 8, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_20
+    layout_properties: {row: HDTBFV, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Ruleaza, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: button_4
+    layout_properties: {row: SAFTMC, width_xs: 2, col_xs: 4, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_1
+    layout_properties: {row: YXRDFN, width_xs: 7, col_xs: 0}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_21
+    layout_properties: {row: YXRDFN, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_2
+    layout_properties: {row: LANQXA, width_xs: 7, col_xs: 0}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_22
+    layout_properties: {row: LANQXA, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_3
+    layout_properties: {row: RORKRZ, width_xs: 7, col_xs: 0}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_23
+    layout_properties: {row: RORKRZ, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_4
+    layout_properties: {row: KTLOOK, width_xs: 7, col_xs: 0}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_24
+    layout_properties: {row: KTLOOK, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_5
+    layout_properties: {row: TQUHMD, width_xs: 7, col_xs: 0}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_25
+    layout_properties: {row: TQUHMD, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_6
+    layout_properties: {row: BJQKQD, width_xs: 7, col_xs: 0}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_26
+    layout_properties: {row: BJQKQD, width_xs: 3, col_xs: 8}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: REZULTAT, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_15
+    layout_properties: {row: RTUFAM, width_xs: 2, col_xs: 0, width: 148.328}
+    event_bindings: {}
+  - type: TextBox
+    properties: {}
+    name: text_box_27
+    layout_properties: {row: RTUFAM, width_xs: 2, col_xs: 2}
