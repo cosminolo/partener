@@ -1,19 +1,33 @@
 from ._anvil_designer import balTemplate
 from anvil import *
 import anvil.server
-import stripe.checkout
-import anvil.google.auth, anvil.google.drive
-from anvil.google.drive import app_files
+#import stripe.checkout
+#import anvil.google.auth, anvil.google.drive
+#from anvil.google.drive import app_files
 import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ... import My_globals
 from . import refre
-
+from datetime import datetime
 class bal(balTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
+    
+    p1 = anvil.server.call("get_p1", self.ups())   
+    #try:
+    d1 = p1['data_fin']['d1']
+    d2 = p1['data_fin']['d2']
+    d3 = p1['data_fin']['d3']
+    c1 = datetime.strptime(d1, '%Y-%m-%d')
+    c2 = datetime.strptime(d2, '%Y-%m-%d')
+    c3 = datetime.strptime(d3, '%Y-%m-%d')
+    self.label_21.text =c1.strftime('%d-%m-%Y')
+    self.label_22.text =c2.strftime('%d-%m-%Y')
+    self.label_23.text =c3.strftime('%d-%m-%Y')
+   # except:
+    #  pass
     global use
     use = self.ups()
     self.init_components(**properties)
@@ -26,7 +40,7 @@ class bal(balTemplate):
     self.data_grid_1.show_page_controls = True
     self.data_grid_1.rows_per_page = 50
     self.data_grid_1.role = "wide"  
-  
+   
   def ups(self):
       user = anvil.users.get_user()
       if user is None:

@@ -569,28 +569,30 @@ components:
       underline: false, icon: ''}
     name: label_18
     layout_properties: {row: WIODUA, width_xs: 2, col_xs: 0, width: 162.5}
-  - type: TextBox
-    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: jhfhf,
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '#CAECF8', bold: false, underline: false}
-    name: text_box_59
-    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 4, width: 55.6562}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_21
+    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 5, width: 103.156}
     event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '#CAECF8', bold: false, underline: false}
-    name: text_box_58
-    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 7, width: 44.9844}
-  - type: TextBox
-    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '#CAECF8', bold: false, underline: false}
-    name: text_box_60
-    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 10, width: 44.9844}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_22
+    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 7, width: 103.156}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: label_23
+    layout_properties: {row: WIODUA, width_xs: 2, col_xs: 10, width: 103.156}
+    event_bindings: {}
   - type: DataGrid
     properties:
       role: null
@@ -627,6 +629,7 @@ components:
       properties: {spacing_above: none, spacing_below: none, item_template: init.bal.RowTemplate2}
       name: repeating_panel_1
       layout_properties: {}
+  event_bindings: {}
 - type: Button
   properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
     foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 20, font: '',
