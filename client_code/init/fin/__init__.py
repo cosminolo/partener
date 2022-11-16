@@ -611,11 +611,9 @@ class fin(finTemplate):
     pass
 
   def file_loader_1_change(self, file, **event_args):
-   try:
-       if self.file_loader_1.file.length > 0:    
-          anvil.server.call("upld", self.ups(), file)
-   except:
-    pass
+    #if self.file_loader_1.file.length > 0:    
+    anvil.server.call("upld", self.ups(), file)
+  
   pass
 
   def link_5_click(self, **event_args):

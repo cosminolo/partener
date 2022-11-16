@@ -78,9 +78,10 @@ def preia_inlucru(us, soc, facilit, dat):
   id_row = app_tables.lucru.get(user=us)
   id_row.update(p1=arh['p1'], bal=arh['bal'])
   media = arh['darh']
-  media = anvil.BlobMedia('text/html', media.get_bytes() )
+  media = anvil.BlobMedia('arhiva.zip', media.get_bytes())
   id_row.update(darh=media)
-  
+  #media = report['media']
+  #media = anvil.BlobMedia('text/html', media.get_bytes() )
   
 pass
 @anvil.server.callable
