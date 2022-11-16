@@ -24,9 +24,14 @@ pass
 def app_new(id):
   try:
     id_row = app_tables.lucru.get(user=id)
-    jsg = anvil.server.call("pri_ini") 
+    jsg = anvil.server.call("pri_ini","a") 
+    jar = anvil.server.call("pri_ini","b") 
+    jbal = anvil.server.call("bal_gol") 
     id_row.update(p1=jsg)    
     id_row.update(bal=jbal)    
+    id_row.update(ar=jar)
+    file = anvil.server.call("down_declaratii")
+    id_row.update(darh=file)
   except:
     pass
 pass
@@ -53,7 +58,8 @@ def arh2 (us, dat, entit, facilit):
                           dat=dat,
                           p1=id_row["p1"],                          
                           bal=id_row['bal'],     
-                          darh=id_row['darh'])   
+                          darh=id_row['darh'],
+                          ar=id_row['ar'])   
 pass
 @anvil.server.callable
 def nr_rows(us):
@@ -76,7 +82,7 @@ pass
 def preia_inlucru(us, soc, facilit, dat):
   arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
   id_row = app_tables.lucru.get(user=us)
-  id_row.update(p1=arh['p1'], bal=arh['bal'])
+  id_row.update(p1=arh['p1'], bal=arh['bal'], ar=arh['ar'])
   media = arh['darh']
   media = anvil.BlobMedia('arhiva.zip', media.get_bytes())
   id_row.update(darh=media)
@@ -118,8 +124,22 @@ def upld(id, file):
     us_row = app_tables.lucru.get(user=id)
     us_row.update(darh=file)
 pass
-
-
+@anvil.server.callable
+def get_crit(id):
+  try:    
+    c1=app_tables.lucru.get(user=id)["ar"]
+    return c1
+  except:
+    pass
+pass
+@anvil.server.callable
+def upc(id,c1):
+  try:
+    us_row = app_tables.lucru.get(user=id)
+    us_row.update(ar=c1)
+  except:
+    pass
+pass
 
 
 

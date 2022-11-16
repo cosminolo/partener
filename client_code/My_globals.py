@@ -1,7 +1,7 @@
 import anvil.users
 import json
 from anvil import *
-import stripe.checkout
+#import stripe.checkout
 import anvil.server
 
 def global_us(us):

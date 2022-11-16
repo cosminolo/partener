@@ -2,6 +2,7 @@ is_package: true
 container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
+  event_bindings: {}
 components:
 - type: FlowPanel
   properties: {}
@@ -17,7 +18,7 @@ components:
     layout_properties: {}
     event_bindings: {click: button_3_click}
 - type: ColumnPanel
-  properties: {col_widths: '{"WJUFHC":20,"UZPLRF":40}'}
+  properties: {col_widths: '{"WJUFHC":20}'}
   name: column_panel_1
   layout_properties: {slot: title}
   components:
@@ -31,7 +32,7 @@ components:
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: 'fa:fast-backward'}
     name: button_2
-    layout_properties: {grid_position: 'YWZIPF,UZPLRF'}
+    layout_properties: {grid_position: 'YWZIPF,FESNIE'}
     event_bindings: {click: button_2_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
@@ -54,6 +55,9 @@ components:
       italic: false, background: '', bold: false, checked: false, underline: false}
     name: check_box_1
     layout_properties: {grid_position: 'HUJQSP,TXLJHC', full_width_row: true}
+    event_bindings: {change: check_box_1_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''a'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_2
@@ -73,6 +77,9 @@ components:
       background: '', bold: false, checked: false, underline: false}
     name: check_box_2
     layout_properties: {grid_position: 'MNJZUF,BIEFOZ', full_width_row: true}
+    event_bindings: {change: check_box_2_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''b'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_3
@@ -92,6 +99,9 @@ components:
       italic: false, background: '', bold: false, checked: false, underline: false}
     name: check_box_3
     layout_properties: {grid_position: 'OCBVLN,JTWALB', full_width_row: true}
+    event_bindings: {change: check_box_3_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''c'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_4
@@ -110,6 +120,9 @@ components:
       background: '', bold: false, checked: false, underline: false}
     name: check_box_4
     layout_properties: {grid_position: 'ZHGNHH,BTNGQI', full_width_row: true}
+    event_bindings: {change: check_box_4_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''d'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_5
@@ -130,6 +143,8 @@ components:
     name: check_box_5
     layout_properties: {grid_position: 'TWPBGN,LJTKPN', full_width_row: true}
     event_bindings: {change: check_box_5_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''e'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_6
@@ -148,6 +163,9 @@ components:
       background: '', bold: false, checked: false, underline: false}
     name: check_box_6
     layout_properties: {grid_position: 'KPGSQP,RDSXOM', full_width_row: true}
+    event_bindings: {change: check_box_6_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''f'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_10
@@ -166,6 +184,9 @@ components:
       background: '', bold: false, checked: false, underline: false}
     name: check_box_7
     layout_properties: {grid_position: 'TWFYGW,NDRQCS', full_width_row: true}
+    event_bindings: {change: check_box_7_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''g'']', writeback: true}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: Nu este in insolventa,
@@ -173,6 +194,9 @@ components:
       background: '', bold: false, checked: false, underline: false}
     name: check_box_8
     layout_properties: {grid_position: 'PWFGEO,ZQYPLL', full_width_row: true}
+    event_bindings: {change: check_box_8_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''h'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_7
@@ -191,6 +215,9 @@ components:
       background: '', bold: false, checked: false, underline: false}
     name: check_box_9
     layout_properties: {grid_position: 'TBMNQD,KALZJS', full_width_row: true}
+    event_bindings: {change: check_box_9_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''i'']', writeback: true}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: Oricare membru al grupului din care face parte clientul nu se afla in insolventa si banca nu detine informatii cu privire la eventuale deschideri de proceduri ale insolventei,
@@ -198,6 +225,9 @@ components:
       background: '', bold: false, checked: false, underline: false}
     name: check_box_10
     layout_properties: {grid_position: 'OWAASC,KAZMTI', full_width_row: true}
+    event_bindings: {change: check_box_10_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''j'']', writeback: true}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: Clientul sau grupul din care face parte nu inregistreaza credite neperformante,
@@ -205,6 +235,9 @@ components:
       background: '', bold: false, checked: false, underline: false}
     name: check_box_12
     layout_properties: {grid_position: 'ZBDVJQ,YETFQZ', full_width_row: true}
+    event_bindings: {change: check_box_12_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''k'']', writeback: true}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: 'EBITDA pozitiv
@@ -213,6 +246,9 @@ components:
       italic: false, background: '', bold: false, checked: false, underline: false}
     name: check_box_13
     layout_properties: {grid_position: 'SHLVUJ,FYNWES', full_width_row: true}
+    event_bindings: {change: check_box_13_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''l'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_9
@@ -231,6 +267,9 @@ components:
       background: '', bold: false, checked: false, underline: false}
     name: check_box_14
     layout_properties: {grid_position: 'KMAYPN,BFOUKZ', full_width_row: true}
+    event_bindings: {change: check_box_14_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''m'']', writeback: true}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: 'Clientul,
@@ -241,6 +280,9 @@ components:
       underline: false}
     name: check_box_15
     layout_properties: {grid_position: 'ISPUBE,GXSSGD', full_width_row: true}
+    event_bindings: {change: check_box_15_change}
+    data_bindings:
+    - {property: checked, code: 'self.item[''crit''][''n'']', writeback: true}
   - type: Spacer
     properties: {height: 32}
     name: spacer_8

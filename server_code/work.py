@@ -6,9 +6,10 @@ from requests.structures import CaseInsensitiveDict
 from pandas import json_normalize
 
 @anvil.server.callable
-def pri_ini():
- j = {}
- j = {
+def pri_ini(tip):
+  if tip =="a":
+    j = {}
+    j = {
     "gen":{"cui": "", "name": "", "codj": "", "adress": "", "tel": "", "email": "", "caen": "", "d_caen": "", "tip": "", 
     "ramura": " ", "cereale": "", "reprez": "", "calit":"", "rel_spec":""}, "facilitate": {"fel": "", "denumit": "", "suma": "", "valuta": "", "per": "", "md_ramb": "", "dest": "", "per_g": "", "per_t": ""}, "garantii": [], "admin":[], "asoc":[], "grp":[],
      "d_manag": [], "sintez":{"piata":" ", "concurenta":" ", "strategia":" ", "conducere":" ", "ev_manag":" ", "cal_act":" ", "con_cli":" ", "exp_imp":" ", "nr_sal": "", "altele": ""}, "exp_bc":[], "exp_l": [],
@@ -22,5 +23,9 @@ def pri_ini():
      "c":{"a1":0, "a2":0, "a3":0}, "d":{"a1":0, "a2":0, "a3":0}, "e":{"a1":0, "a2":0, "a3":0}, "f":{"a1":0, "a2":0, "a3":0}, "g":{"a1":0, "a2":0, "a3":0}, "h":{"a1":0, "a2":0, "a3":0}, "i":{"a1":0, "a2":0, "a3":0},
      "j":{"a1":0, "a2":0, "a3":0}, "k":{"a1":0, "a2":0, "a3":0}, "l":{"a1":0, "a2":0, "a3":0}, "m":{"a1":0, "a2":0, "a3":0}, "n":{"a1":0, "a2":0, "a3":0}, "o":{"a1":0, "a2":0, "a3":0}, "p":{"a1":0, "a2":0, "a3":0},
      "r":{"a1":0, "a2":0, "a3":0}, "s":{"a1":0, "a2":0, "a3":0}, "t":{"a1":0, "a2":0, "a3":0}, "u":{"a1":0, "a2":0, "a3":0}, "v":{"a1":0, "a2":0, "a3":0}}}
- return j
+    return j
+  if tip =="b":
+    k={}
+    k = {"crit":{"a":False, "b":False, "c":False, "d":False, "e":False, "f":False, "g":False, "h":False, "i":False, "j":False, "k":False, "l":False, "m":False, "n":False}} 
+    return k
 

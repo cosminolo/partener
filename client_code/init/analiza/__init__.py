@@ -21,3 +21,13 @@ class analiza(analizaTemplate):
     """This method is called when the user presses Enter in this text box"""
     pass
 
+  def button_2_click(self, **event_args):
+    open_form('init.crit')
+    pass
+
+  def button_1_click(self, **event_args):
+    open_form('init')
+    pass
+
+
+

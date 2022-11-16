@@ -16,18 +16,18 @@ class bal(balTemplate):
     # Set Form properties and Data Bindings.
     
     p1 = anvil.server.call("get_p1", self.ups())   
-    #try:
-    d1 = p1['data_fin']['d1']
-    d2 = p1['data_fin']['d2']
-    d3 = p1['data_fin']['d3']
-    c1 = datetime.strptime(d1, '%Y-%m-%d')
-    c2 = datetime.strptime(d2, '%Y-%m-%d')
-    c3 = datetime.strptime(d3, '%Y-%m-%d')
-    self.label_21.text =c1.strftime('%d-%m-%Y')
-    self.label_22.text =c2.strftime('%d-%m-%Y')
-    self.label_23.text =c3.strftime('%d-%m-%Y')
-   # except:
-    #  pass
+    try:
+     d1 = p1['data_fin']['d1']
+     d2 = p1['data_fin']['d2']
+     d3 = p1['data_fin']['d3']
+     c1 = datetime.strptime(d1, '%Y-%m-%d')
+     c2 = datetime.strptime(d2, '%Y-%m-%d')
+     c3 = datetime.strptime(d3, '%Y-%m-%d')
+     self.label_21.text =c1.strftime('%d-%m-%Y')
+     self.label_22.text =c2.strftime('%d-%m-%Y')
+     self.label_23.text =c3.strftime('%d-%m-%Y')
+    except:
+      pass
     global use
     use = self.ups()
     self.init_components(**properties)
