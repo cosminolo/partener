@@ -2,6 +2,7 @@ import anvil.server
 import json
 import requests
 import xmltodict
+import pandas
 from requests.structures import CaseInsensitiveDict
 from pandas import json_normalize
 
@@ -28,4 +29,12 @@ def pri_ini(tip):
     k={}
     k = {"crit":{"a":False, "b":False, "c":False, "d":False, "e":False, "f":False, "g":False, "h":False, "i":False, "j":False, "k":False, "l":False, "m":False, "n":False}} 
     return k
+@anvil.server.callable  
+def conv(file):
+    media = file
+    #media = anvil.BlobMedia("Balante.xlsx", media.get_bytes())
+    excel_data_fragment = pandas.read_excel(media, sheet_name='BALANTA_PJ2021')
 
+    json_str = excel_data_fragment.to_json()
+
+    print('Excel Sheet to JSON:\n', json_str)
