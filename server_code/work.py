@@ -5,7 +5,7 @@ import xmltodict
 import pandas
 from requests.structures import CaseInsensitiveDict
 from pandas import json_normalize
-
+from openpyxl import load_workbook
 @anvil.server.callable
 def pri_ini(tip):
   if tip =="a":
@@ -31,10 +31,7 @@ def pri_ini(tip):
     return k
 @anvil.server.callable  
 def conv(file):
-    media = file
-    #media = anvil.BlobMedia("Balante.xlsx", media.get_bytes())
-    excel_data_fragment = pandas.read_excel(media, sheet_name='BALANTA_PJ2021')
+    with anvil.media.TempFile(file) as filename:
+      wb = load_workbook(filename, read_only=False, keep_vba=True)
 
-    json_str = excel_data_fragment.to_json()
-
-    print('Excel Sheet to JSON:\n', json_str)
+    #print('Excel Sheet to JSON:\n', json_str)
