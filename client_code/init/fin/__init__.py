@@ -624,11 +624,7 @@ class fin(finTemplate):
 
   def file_loader_2_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
-    media = file
-    media = anvil.BlobMedia('Balante.xlsx', media.get_bytes())
-    anvil.server.call("up_sf", self.ups(), media)
-    #anvil.server.call("conv", file)
-    #print(anvil.server.call("up_sf", self.ups(), file))
+    anvil.server.call("up_sf", self.ups(), file)
     pass
 
 
