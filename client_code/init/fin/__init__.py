@@ -618,7 +618,8 @@ class fin(finTemplate):
 
   def link_5_click(self, **event_args):
     """This method is called when the link is clicked"""
-    anvil.media.upload(self)
+    file =anvil.server.call ("down_sf")
+    anvil.media.download(file) 
     pass
 
 
