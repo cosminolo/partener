@@ -42,7 +42,7 @@ class verific(verificTemplate):
      open_form('init')
      pass
   def button_3_click(self, **event_args):
-     open_form('init.bal')
+     open_form('init.fin')
      pass
   def tva(self, tip):
     if tip == "b":

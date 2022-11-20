@@ -24,7 +24,10 @@ class crit(critTemplate):
       else:
           us =  str(user['email'])
           return us
-      pass     
+      pass 
+    
+ 
+    
   def button_1_click(self, **event_args):
     open_form('init')
     pass

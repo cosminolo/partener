@@ -131,12 +131,14 @@ components:
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '500',
+      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_7
-    layout_properties: {row: JDBSSU, width_xs: 7, col_xs: 2, width: 424.5}
+    layout_properties: {row: JDBSSU, width_xs: 7, col_xs: 2, width: 412.25}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''facilitate''][''denumit'']', writeback: false}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: Suma solicitata, font_size: null, font: '', spacing_above: small,
@@ -153,6 +155,8 @@ components:
     name: text_box_8
     layout_properties: {row: RHZLQR, width_xs: 3, col_xs: 3, width: 162.5}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''facilitate''][''suma'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Perioada de creditare, font_size: null, font: '', spacing_above: small,
@@ -169,6 +173,8 @@ components:
     name: text_box_9
     layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 2, width: 100.984}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''facilitate''][''per'']', writeback: false}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Clasa de performanta, font_size: null, font: '', spacing_above: small,
@@ -327,12 +333,11 @@ components:
     event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-      visible: true, text: 'Total facilitati pe termen scurt pentru activitatea curenta
-        la data analizei ', font_size: null, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
+      visible: true, text: nealocat, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_13
-    layout_properties: {row: CJPREP, width_xs: 8, col_xs: 0, width: 493.984}
+    layout_properties: {row: CJPREP, width_xs: 8, col_xs: 0, width: 476}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -344,11 +349,11 @@ components:
     event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-      visible: true, text: Plafon linie de credit  in derulare la CEC Bank, font_size: null,
-      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
+      visible: true, text: nealocat, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_14
-    layout_properties: {row: HDTBFV, width_xs: 8, col_xs: 0, width: 493.984}
+    layout_properties: {row: HDTBFV, width_xs: 8, col_xs: 0, width: 476}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -357,6 +362,22 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_20
     layout_properties: {row: HDTBFV, width_xs: 3, col_xs: 8, width: 162.5}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: nealocat, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_15
+    layout_properties: {row: HGABZZ, width_xs: 8, col_xs: 0, width: 480}
+    event_bindings: {}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_21
+    layout_properties: {row: HGABZZ, width_xs: 3, col_xs: 8, width: 162.5}
     event_bindings: {}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
@@ -368,27 +389,11 @@ components:
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_1
-    layout_properties: {row: YXRDFN, width_xs: 7, col_xs: 0, width: 424.5}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_21
-    layout_properties: {row: YXRDFN, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_2
-    layout_properties: {row: LANQXA, width_xs: 7, col_xs: 0, width: 428.5}
+    layout_properties: {row: YXRDFN, width_xs: 8, col_xs: 0, width: 476}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -396,15 +401,15 @@ components:
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_22
-    layout_properties: {row: LANQXA, width_xs: 3, col_xs: 8, width: 166.5}
+    layout_properties: {row: YXRDFN, width_xs: 3, col_xs: 8, width: 166.5}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
-    name: text_box_3
-    layout_properties: {row: RORKRZ, width_xs: 7, col_xs: 0, width: 428.5}
+    name: text_box_2
+    layout_properties: {row: LANQXA, width_xs: 8, col_xs: 0, width: 428.5}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -412,15 +417,15 @@ components:
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_23
-    layout_properties: {row: RORKRZ, width_xs: 3, col_xs: 8, width: 166.5}
+    layout_properties: {row: LANQXA, width_xs: 3, col_xs: 8, width: 166.5}
     event_bindings: {pressed_enter: text_box_23_pressed_enter}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
-    name: text_box_4
-    layout_properties: {row: KTLOOK, width_xs: 7, col_xs: 0, width: 424.5}
+    name: text_box_3
+    layout_properties: {row: RORKRZ, width_xs: 8, col_xs: 0, width: 428.5}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -428,15 +433,15 @@ components:
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_24
-    layout_properties: {row: KTLOOK, width_xs: 3, col_xs: 8, width: 166.5}
+    layout_properties: {row: RORKRZ, width_xs: 3, col_xs: 8, width: 166.5}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
-    name: text_box_5
-    layout_properties: {row: TQUHMD, width_xs: 7, col_xs: 0, width: 424.5}
+    name: text_box_4
+    layout_properties: {row: KTLOOK, width_xs: 8, col_xs: 0, width: 424.5}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -444,6 +449,22 @@ components:
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_25
+    layout_properties: {row: KTLOOK, width_xs: 3, col_xs: 8, width: 162.5}
+    event_bindings: {}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_5
+    layout_properties: {row: TQUHMD, width_xs: 8, col_xs: 0, width: 424.5}
+    event_bindings: {}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_26
     layout_properties: {row: TQUHMD, width_xs: 3, col_xs: 8, width: 162.5}
     event_bindings: {}
   - type: TextBox
@@ -452,23 +473,7 @@ components:
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_6
-    layout_properties: {row: BJQKQD, width_xs: 7, col_xs: 0, width: 424.5}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_26
-    layout_properties: {row: BJQKQD, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: REZULTAT, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_15
-    layout_properties: {row: RTUFAM, width_xs: 2, col_xs: 0, width: 148.328}
+    layout_properties: {row: BJQKQD, width_xs: 8, col_xs: 0, width: 424.5}
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
@@ -476,7 +481,7 @@ components:
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_27
-    layout_properties: {row: RTUFAM, width_xs: 6, col_xs: 2, width: 96.984}
+    layout_properties: {row: BJQKQD, width_xs: 3, col_xs: 8, width: 96.984}
     event_bindings: {}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
