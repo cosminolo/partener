@@ -627,6 +627,21 @@ class fin(finTemplate):
     anvil.server.call("up_sf", self.ups(), file)
     pass
 
+  def drop_down_1_change(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_2_change(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+  def drop_down_3_change(self, **event_args):
+    anvil.server.call("sp1", self.ups(), p1)
+    pass
+
+
+
+
 
 
 

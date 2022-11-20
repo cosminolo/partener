@@ -36,26 +36,6 @@ components:
         underline: false, icon: ''}
       name: label_13
       layout_properties: {x: 149.00567626953125, y: 25.965911865234375, width: 127.983}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#E3F9A6', bold: false, underline: false}
-      name: text_box_8
-      layout_properties: {x: 645.9942779541016, y: 203.72158813476562, width: 152.04572}
-      event_bindings: {lost_focus: text_box_8_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''c''][''a2'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#E3F9A6', bold: false, underline: false}
-      name: text_box_9
-      layout_properties: {x: 815.9658966064453, y: 202.99716186523438, width: 156.05071999999998}
-      event_bindings: {lost_focus: text_box_9_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''c''][''a3'']', writeback: true}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: i.Credite termen scurt (ct519) platibile>1an, font_size: null,
@@ -488,14 +468,6 @@ components:
       event_bindings: {lost_focus: text_box_39_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''cd''][''i''][''a3'']', writeback: true}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: solid blue 2px,
-        visible: true, text: Creante si Datorii > 1 an (sold), font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: true, underline: false, icon: ''}
-      name: label_15
-      layout_properties: {x: 109.98578643798828, y: 350.3266906738281, width: 202.756}
-      event_bindings: {}
     - type: TextBox
       properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1157,139 +1129,6 @@ components:
       event_bindings: {lost_focus: text_box_81_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''dt''][''i''][''a3'']', writeback: true}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: c.Media lunara a ponderii veniturilor in valuta in total venituri (%),
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '#E3F9A6', bold: false, underline: false, icon: ''}
-      name: label_6
-      layout_properties: {x: 10.980117797851562, y: 199.47442626953125, width: 448.9357199999999}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: d.Media lunara a ponderii obligatiilor de plata in valuta (rezultand din credite si alte contracte de natura creditului) in total obligatii de plata (%),
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
-      name: label_7
-      layout_properties: {x: 10.980117797851562, y: 244.31817626953125, width: 448.9355140673829}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: b.Obligatii de plata in valuta (echiv lei) - inclusiv leasing in valuta sau obligatiuni in valuta,
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
-      name: label_5
-      layout_properties: {x: 10.980117797851562, y: 129.48863220214844, width: 448.93571999999995}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: 'a.Venituri in valuta (echiv lei), inclusiv cele rezultate
-          din contractele incheiate in valuta cu plata in lei', font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#E3F9A6', bold: false, underline: false, icon: ''}
-      name: label_4
-      layout_properties: {x: 10.980110168457031, y: 62.01704406738281, width: 448.94992593261713}
-      event_bindings: {}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#E3F9A6', bold: false, underline: false}
-      name: text_box_1
-      layout_properties: {x: 474.88636779785156, y: 86.46305847167969, width: 148.05372}
-      event_bindings: {lost_focus: text_box_1_lost_focus, pressed_enter: text_box_1_pressed_enter}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''a''][''a1'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false}
-      name: text_box_4
-      layout_properties: {x: 473.76417541503906, y: 149.97158813476562, width: 152.04572}
-      event_bindings: {lost_focus: text_box_4_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''b''][''a1'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false}
-      name: text_box_10
-      layout_properties: {x: 470.8806915283203, y: 272.8409118652344, width: 152.04572}
-      event_bindings: {lost_focus: text_box_10_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''d''][''a1'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false}
-      name: text_box_11
-      layout_properties: {x: 645.9942779541016, y: 272.8409118652344, width: 152.04572}
-      event_bindings: {lost_focus: text_box_11_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''d''][''a2'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false}
-      name: text_box_5
-      layout_properties: {x: 645.9942779541016, y: 149.97158813476562, width: 152.04572}
-      event_bindings: {lost_focus: text_box_5_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''b''][''a2'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false}
-      name: text_box_6
-      layout_properties: {x: 815.9658966064453, y: 149.97158813476562, width: 156.02272}
-      event_bindings: {lost_focus: text_box_6_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''b''][''a3'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#E3F9A6', bold: false, underline: false}
-      name: text_box_2
-      layout_properties: {x: 645.9942779541016, y: 86.44886779785156, width: 148.05372}
-      event_bindings: {lost_focus: text_box_2_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''a''][''a2'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#E3F9A6', bold: false, underline: false}
-      name: text_box_7
-      layout_properties: {x: 469.9147491455078, y: 203.72158813476562, width: 152.04572}
-      event_bindings: {lost_focus: text_box_7_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''c''][''a1'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#E3F9A6', bold: false, underline: false}
-      name: text_box_3
-      layout_properties: {x: 815.9658966064453, y: 86.44886779785156, width: 156.02272}
-      event_bindings: {lost_focus: text_box_3_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''a''][''a3'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false}
-      name: text_box_12
-      layout_properties: {x: 815.9942779541016, y: 272.8409118652344, width: 156.02272}
-      event_bindings: {lost_focus: text_box_12_lost_focus, pressed_enter: text_box_12_pressed_enter}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''d''][''a3'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1616,6 +1455,250 @@ components:
       name: date_picker_3
       layout_properties: {x: 948.0392779541016, y: 38.4375, width: 25}
       event_bindings: {change: date_picker_3_change}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: solid blue 2px,
+        visible: true, text: Creante si Datorii > 1 an (sold), font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      name: label_15
+      layout_properties: {x: 109.984375, y: 380.8125, width: 203}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: d.Media lunara a ponderii obligatiilor de plata in valuta (rezultand din credite si alte contracte de natura creditului) in total obligatii de plata (%),
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
+      name: label_7
+      layout_properties: {x: 15.875, y: 309.828125, width: 449}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: c.Media lunara a ponderii veniturilor in valuta in total venituri (%),
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '#E3F9A6', bold: false, underline: false, icon: ''}
+      name: label_6
+      layout_properties: {x: 17.984375, y: 259.828125, width: 449}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: b.Obligatii de plata in valuta (echiv lei) - inclusiv leasing in valuta sau obligatiuni in valuta,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
+      name: label_5
+      layout_properties: {x: 18.984375, y: 189.828125, width: 449}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 'a.Venituri in valuta (echiv lei), inclusiv cele rezultate
+          din contractele incheiate in valuta cu plata in lei', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#E3F9A6', bold: false, underline: false, icon: ''}
+      name: label_4
+      layout_properties: {x: 19, y: 123.453125, width: 449}
+      event_bindings: {}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false}
+      name: text_box_10
+      layout_properties: {x: 481.984375, y: 362.828125, width: 152}
+      event_bindings: {lost_focus: text_box_10_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''d''][''a1'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#E3F9A6', bold: false, underline: false}
+      name: text_box_7
+      layout_properties: {x: 473.75, y: 272.828125, width: 152}
+      event_bindings: {lost_focus: text_box_7_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''c''][''a1'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false}
+      name: text_box_4
+      layout_properties: {x: 477.921875, y: 222.828125, width: 152}
+      event_bindings: {lost_focus: text_box_4_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''b''][''a1'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#E3F9A6', bold: false, underline: false}
+      name: text_box_1
+      layout_properties: {x: 475.953125, y: 149.96875, width: 148}
+      event_bindings: {lost_focus: text_box_1_lost_focus, pressed_enter: text_box_1_pressed_enter}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''a''][''a1'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false}
+      name: text_box_11
+      layout_properties: {x: 651.984375, y: 362.828125, width: 152}
+      event_bindings: {lost_focus: text_box_11_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''d''][''a2'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false}
+      name: text_box_12
+      layout_properties: {x: 824.921875, y: 362.828125, width: 156}
+      event_bindings: {lost_focus: text_box_12_lost_focus, pressed_enter: text_box_12_pressed_enter}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''d''][''a3'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#E3F9A6', bold: false, underline: false}
+      name: text_box_8
+      layout_properties: {x: 650.984375, y: 272.828125, width: 152}
+      event_bindings: {lost_focus: text_box_8_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''c''][''a2'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false}
+      name: text_box_5
+      layout_properties: {x: 645.984375, y: 222.828125, width: 152}
+      event_bindings: {lost_focus: text_box_5_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''b''][''a2'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#E3F9A6', bold: false, underline: false}
+      name: text_box_2
+      layout_properties: {x: 641.96875, y: 152.828125, width: 148}
+      event_bindings: {lost_focus: text_box_2_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''a''][''a2'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#E3F9A6', bold: false, underline: false}
+      name: text_box_9
+      layout_properties: {x: 824.921875, y: 272.828125, width: 156}
+      event_bindings: {lost_focus: text_box_9_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''c''][''a3'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false}
+      name: text_box_6
+      layout_properties: {x: 824.921875, y: 222.828125, width: 156}
+      event_bindings: {lost_focus: text_box_6_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''b''][''a3'']', writeback: true}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Credite contractate in valuta?', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_49
+      layout_properties: {x: 23.015625, y: 72.4375, width: 436.90625}
+      event_bindings: {}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#E3F9A6', bold: false, underline: false}
+      name: text_box_3
+      layout_properties: {x: 833.984375, y: 149.96875, width: 156}
+      event_bindings: {lost_focus: text_box_3_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''a''][''a3'']', writeback: true}
+    - type: DropDown
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [NU, DA]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
+      name: drop_down_1
+      layout_properties: {x: 478, y: 88.4375, width: 100}
+      event_bindings: {change: drop_down_1_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''iv''][''r''][''r1'']', writeback: true}
+    - type: DropDown
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [NU, DA]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
+      name: drop_down_2
+      layout_properties: {x: 653.765625, y: 93.453125, width: 100}
+      event_bindings: {change: drop_down_2_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''iv''][''r''][''r2'']', writeback: true}
+    - type: DropDown
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [NU, DA]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
+      name: drop_down_3
+      layout_properties: {x: 833.984375, y: 93.453125, width: 100}
+      event_bindings: {change: drop_down_3_change}
+      data_bindings:
+      - {property: selected_value, code: 'self.item[''iv''][''r''][''r3'']', writeback: true}
     event_bindings: {}
   event_bindings: {}
 - type: FlowPanel
