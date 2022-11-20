@@ -47,8 +47,15 @@ class analiza(analizaTemplate):
       c1['ar']['l9den'] = "Total linii de credit in derulare linii la alte banci"
       self.label_14.text = "Total linii de credit in derulare linii CEC BANK"
       c1['ar']['l10den'] = "Total linii de credit in derulare linii CEC BANK"
+      c1['ar']['comb_den'] = "Total linii de credit in derulare (linii la alte banci si alte credite revolving la CEC Bank)"
       self.label_15.text = "Total facilitati pentru act. curenta in derulare la CEC Bank (mai putin credite revolving)"
       c1['ar']['l11den'] = "Total facilitati pentru act. curenta in derulare la CEC Bank (mai putin credite revolving)"
+      c1['ar']['p1'] = self.text_box_1.text
+      c1['ar']['p2'] = self.text_box_2.text
+      c1['ar']['p3'] = self.text_box_3.text
+      c1['ar']['p4'] = self.text_box_4.text
+      c1['ar']['p5'] = self.text_box_5.text
+      c1['ar']['p6'] = self.text_box_6.text
       anvil.server.call("upc", self.ups(), c1)
     pass  
   def text_box_23_pressed_enter(self, **event_args):
@@ -122,9 +129,14 @@ class analiza(analizaTemplate):
     pass
 
   def button_4_click(self, **event_args):
-    """This method is called when the button is clicked"""
+    c1['ar']['comb_val'] = c1['ar']['l9val'] + ";" + c1['ar']['l10val'] 
     anvil.server.call("ruleaza",self.ups(),p1,c1)
     pass
+
+  def text_box_7_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
 
 
 
