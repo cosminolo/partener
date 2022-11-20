@@ -422,7 +422,7 @@ components:
       underline: false, icon: ''}
     name: button_4
     layout_properties: {row: SAFTMC, width_xs: 2, col_xs: 4, width: 148.328}
-    event_bindings: {}
+    event_bindings: {click: button_4_click}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',

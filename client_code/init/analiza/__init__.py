@@ -75,6 +75,8 @@ class analiza(analizaTemplate):
     sender.enabled = True
     s = sender.text
     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        self.text_box_18.text = int(self.text_box_11.text) + int(self.text_box_12.text)+int(self.text_box_13.text)+int(self.text_box_14.text)+int(self.text_box_15.text)-int(self.text_box_16.text)+int(self.text_box_17.text)
+        c1['ar']['l8'] = int(self.text_box_18.text)
         anvil.server.call("upc", self.ups(), c1)
         pass
     else:         
@@ -118,6 +120,12 @@ class analiza(analizaTemplate):
   def text_box_21_lost_focus(self, **event_args):
     self.lf(self.text_box_21) 
     pass
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    anvil.server.call("ruleaza",self.ups(),p1,c1)
+    pass
+
 
 
 
