@@ -138,7 +138,7 @@ components:
     layout_properties: {row: JDBSSU, width_xs: 7, col_xs: 2, width: 412.25}
     event_bindings: {}
     data_bindings:
-    - {property: text, code: 'self.item[''facilitate''][''denumit'']', writeback: false}
+    - {property: text, code: 'self.item[''ar''][''tip'']', writeback: false}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: Suma solicitata, font_size: null, font: '', spacing_above: small,
@@ -156,7 +156,7 @@ components:
     layout_properties: {row: RHZLQR, width_xs: 3, col_xs: 3, width: 162.5}
     event_bindings: {}
     data_bindings:
-    - {property: text, code: 'self.item[''facilitate''][''suma'']', writeback: true}
+    - {property: text, code: 'self.item[''ar''][''suma_lei'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Perioada de creditare, font_size: null, font: '', spacing_above: small,
@@ -174,7 +174,7 @@ components:
     layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 2, width: 100.984}
     event_bindings: {}
     data_bindings:
-    - {property: text, code: 'self.item[''facilitate''][''per'']', writeback: false}
+    - {property: text, code: 'self.item[''ar''][''per'']', writeback: false}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Clasa de performanta, font_size: null, font: '', spacing_above: small,
@@ -208,7 +208,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_11
     layout_properties: {row: NNQCKC, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
+    event_bindings: {lost_focus: text_box_11_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l1'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: '2. Suma dobanzilor  estimate pentru creditul solicitat
@@ -226,7 +228,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_12
     layout_properties: {row: ELVYUB, width_xs: 3, col_xs: 8, width: 166.5}
-    event_bindings: {}
+    event_bindings: {lost_focus: text_box_12_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l2'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: '3. Dobanzi de plata  la creditele si leasingurile existente
@@ -245,7 +249,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_13
     layout_properties: {row: YWFXPQ, width_xs: 3, col_xs: 8, width: 166.5}
-    event_bindings: {}
+    event_bindings: {lost_focus: text_box_13_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l3'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: '4. Rambursari de principal la creditele si leasingurile
@@ -264,7 +270,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_14
     layout_properties: {row: ZWWKKA, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
+    event_bindings: {lost_focus: text_box_14_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l4'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: 5. Aport propriu din afacere care se va utiliza pentru sustinerea investitiilor/imobilizarilor in curs estimate  pe urmatoarele 12 luni sau pe perioada de creditare propusa daca este sub 12 luni,
@@ -280,7 +288,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_15
     layout_properties: {row: LNPUEW, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
+    event_bindings: {lost_focus: text_box_15_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l5'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: 6. Alte intrari de numerar estimate (inclusiv imprumut asociati/actionari) diminuate cu plati de dividende si restituiri din imprumuturi asociati/actionari in urmatoarele  pe urmatoarele 12 luni sau pe perioada de creditare propusa daca este sub 12 luni; suma cu plus semnifica variatia pozitiva (intrarile nete) care diminueaza sarcina financiara iar variatia negativa (iesirile nete) creste sarcina financiara,
@@ -296,7 +306,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_16
     layout_properties: {row: CDOOUE, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
+    event_bindings: {lost_focus: text_box_16_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l6'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: 7. Datorii restante la stat aferente anului anterior de achitat in urmatoarele 12 luni sau pe perioada de creditare propusa daca este sub 12 luni,
@@ -312,7 +324,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_17
     layout_properties: {row: EGGLDE, width_xs: 3, col_xs: 8, width: 166.5}
-    event_bindings: {}
+    event_bindings: {focus: text_box_17_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l7'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: 'Total sarcina financiara propusa pt. urmatoarele 12 luni
@@ -331,6 +345,8 @@ components:
     name: text_box_18
     layout_properties: {row: ZNQECP, width_xs: 3, col_xs: 8, width: 162.5}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l8'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: nealocat, font_size: null, font: '', spacing_above: small,
@@ -339,6 +355,8 @@ components:
     name: label_13
     layout_properties: {row: CJPREP, width_xs: 8, col_xs: 0, width: 476}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l9den'']'}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -346,7 +364,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_19
     layout_properties: {row: CJPREP, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
+    event_bindings: {lost_focus: text_box_19_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l9val'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: nealocat, font_size: null, font: '', spacing_above: small,
@@ -355,6 +375,8 @@ components:
     name: label_14
     layout_properties: {row: HDTBFV, width_xs: 8, col_xs: 0, width: 476}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l10den'']'}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -362,7 +384,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_20
     layout_properties: {row: HDTBFV, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
+    event_bindings: {lost_focus: text_box_20_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l10val'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: nealocat, font_size: null, font: '', spacing_above: small,
@@ -371,6 +395,8 @@ components:
     name: label_15
     layout_properties: {row: HGABZZ, width_xs: 8, col_xs: 0, width: 480}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l10den'']'}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -378,7 +404,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: text_box_21
     layout_properties: {row: HGABZZ, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
+    event_bindings: {lost_focus: text_box_21_lost_focus}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''l11val'']', writeback: true}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: trimite, font_size: null, font: '', spacing_above: small,
