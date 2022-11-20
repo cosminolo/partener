@@ -381,6 +381,14 @@ components:
     event_bindings: {}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: trimite, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_3
+    layout_properties: {row: SAFTMC, width_xs: 2, col_xs: 1, width: 98}
+    event_bindings: {click: button_3_click}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Ruleaza, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}

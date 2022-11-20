@@ -52,5 +52,10 @@ class analiza(analizaTemplate):
     open_form('init')
     pass
 
+  def button_3_click(self, **event_args):
+    c = confirm("trimit urmatoarele doc completate: cerere, balante, criterii, estimarile de mai sus")
+    pass
+
+
 
 

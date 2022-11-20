@@ -606,7 +606,7 @@ components:
         border: ''
         enabled: true
         foreground: ''
-        items: [Nu, Da]
+        items: [NU, DA]
         visible: true
         font_size: 14
         font: ''
