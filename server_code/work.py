@@ -34,6 +34,7 @@ def pri_ini(tip):
 @anvil.server.callable  
 def conv(file):
     with anvil.media.TempFile(file) as filename:
-      wb = load_workbook(filename, read_only=False, keep_vba=True)
+      df = pd.read_excel(filename, sheet_name = 'BALANTA_PJ2021', skiprows = 0,  nrows= 566, usecols = 'A:L')
+    print(df)
 
     #print('Excel Sheet to JSON:\n', json_str)
