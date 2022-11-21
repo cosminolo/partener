@@ -2,7 +2,7 @@ import anvil.server
 import json
 import requests
 import xmltodict
-import pandas
+import pandas as pd
 from requests.structures import CaseInsensitiveDict
 from pandas import json_normalize
 from openpyxl import load_workbook
@@ -33,8 +33,8 @@ def pri_ini(tip):
     return k
 @anvil.server.callable  
 def conv(file):
-    with anvil.media.TempFile(file) as filename:
-      df = pd.read_excel(filename, sheet_name = 'BALANTA_PJ2021', skiprows = 0,  nrows= 566, usecols = 'A:L')
+    #with anvil.media.TempFile(file) as filename:
+    df = pd.read_excel(file, sheet_name = 'BALANTA_PJ2021', skiprows = 0,  nrows= 566, usecols = 'A:L')
     print(df)
 
     #print('Excel Sheet to JSON:\n', json_str)

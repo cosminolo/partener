@@ -624,8 +624,8 @@ class fin(finTemplate):
 
   def file_loader_2_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
-    anvil.server.call("conv", self.ups(), file)
-    #anvil.server.call("up_sf", self.ups(), file)
+    #anvil.server.call("conv",file)
+    anvil.server.call("up_sf", self.ups(), file)
     pass
 
   def drop_down_1_change(self, **event_args):
