@@ -423,136 +423,197 @@ components:
     name: button_4
     layout_properties: {row: SAFTMC, width_xs: 2, col_xs: 4, width: 148.328}
     event_bindings: {click: button_4_click}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_1
-    layout_properties: {row: LIACWE, width_xs: 4, col_xs: 8, width: 476}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: ELEMENTE, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_30
+    layout_properties: {row: BUASNK, width_xs: 2, col_xs: 0, width: 143}
     event_bindings: {}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Rezultat, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_31
+    layout_properties: {row: BUASNK, width_xs: 2, col_xs: 6, width: 143}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Argumente sustinere, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_32
+    layout_properties: {row: BUASNK, width_xs: 2, col_xs: 8, width: 143}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_16
-    layout_properties: {row: LIACWE, width_xs: 8, col_xs: 0}
+    layout_properties: {row: LIACWE, width_xs: 6, col_xs: 0, width: 662}
     event_bindings: {}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_23
+    layout_properties: {row: LIACWE, width_xs: 2, col_xs: 6, width: 143}
+    event_bindings: {}
+  - type: TextArea
+    properties: {role: null, align: left, height: 38.1875, tooltip: '', placeholder: '',
+      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_area_1
+    layout_properties: {row: LIACWE, width_xs: 4, col_xs: 8, width: 306}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_17
-    layout_properties: {row: YXRDFN, width_xs: 8, col_xs: 0}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_22
-    layout_properties: {row: YXRDFN, width_xs: 3, col_xs: 8, width: 166.5}
+    layout_properties: {row: ODKWHM, width_xs: 6, col_xs: 0, width: 662}
     event_bindings: {}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_24
+    layout_properties: {row: ODKWHM, width_xs: 2, col_xs: 6, width: 143}
+    event_bindings: {}
+  - type: TextArea
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_area_2
+    layout_properties: {row: ODKWHM, width_xs: 4, col_xs: 8, width: 306}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_18
-    layout_properties: {row: VNDZVZ, width_xs: 8, col_xs: 0}
+    layout_properties: {row: YXRDFN, width_xs: 6, col_xs: 0, width: 662}
     event_bindings: {}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_25
+    layout_properties: {row: YXRDFN, width_xs: 2, col_xs: 6, width: 143}
+    event_bindings: {}
+  - type: TextArea
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_area_3
+    layout_properties: {row: YXRDFN, width_xs: 4, col_xs: 8, width: 306}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_19
-    layout_properties: {row: RXWVHI, width_xs: 8, col_xs: 0}
+    layout_properties: {row: NYPBUZ, width_xs: 6, col_xs: 0, width: 662}
     event_bindings: {}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_26
+    layout_properties: {row: NYPBUZ, width_xs: 2, col_xs: 6, width: 56.5}
+    event_bindings: {}
+  - type: TextArea
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_area_4
+    layout_properties: {row: NYPBUZ, width_xs: 4, col_xs: 8, width: 306}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_20
-    layout_properties: {row: VMNXBC, width_xs: 8, col_xs: 0}
+    layout_properties: {row: VMNXBC, width_xs: 6, col_xs: 0, width: 662}
     event_bindings: {}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_27
+    layout_properties: {row: VMNXBC, width_xs: 2, col_xs: 6, width: 56.5}
+    event_bindings: {}
+  - type: TextArea
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_area_5
+    layout_properties: {row: VMNXBC, width_xs: 4, col_xs: 8, width: 306}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_21
-    layout_properties: {row: QNJXIP, width_xs: 8, col_xs: 0}
+    layout_properties: {row: QNJXIP, width_xs: 6, col_xs: 0, width: 662}
     event_bindings: {}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_28
+    layout_properties: {row: QNJXIP, width_xs: 2, col_xs: 6, width: 56.5}
+    event_bindings: {}
+  - type: TextArea
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
+      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_area_6
+    layout_properties: {row: QNJXIP, width_xs: 4, col_xs: 8, width: 306}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_22
-    layout_properties: {row: GJPIMS, width_xs: 8, col_xs: 0}
+    layout_properties: {row: GJPIMS, width_xs: 6, col_xs: 0, width: 662}
     event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_23
-    layout_properties: {row: LANQXA, width_xs: 3, col_xs: 8, width: 166.5}
-    event_bindings: {pressed_enter: text_box_23_pressed_enter}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_2
-    layout_properties: {row: RORKRZ, width_xs: 8, col_xs: 0, width: 428.5}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_29
+    layout_properties: {row: GJPIMS, width_xs: 2, col_xs: 6, width: 56.5}
     event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+  - type: TextArea
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
+      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
-    name: text_box_24
-    layout_properties: {row: RORKRZ, width_xs: 3, col_xs: 8, width: 166.5}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_3
-    layout_properties: {row: KTLOOK, width_xs: 8, col_xs: 0, width: 428.5}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_25
-    layout_properties: {row: KTLOOK, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_4
-    layout_properties: {row: TQUHMD, width_xs: 8, col_xs: 0, width: 424.5}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_26
-    layout_properties: {row: TQUHMD, width_xs: 3, col_xs: 8, width: 162.5}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_5
-    layout_properties: {row: IEFYHP, width_xs: 8, col_xs: 0, width: 424.5}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_27
-    layout_properties: {row: IEFYHP, width_xs: 3, col_xs: 8, width: 96.984}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_6
-    layout_properties: {row: BLBHRC, width_xs: 8, col_xs: 0, width: 424.5}
+    name: text_area_7
+    layout_properties: {row: GJPIMS, width_xs: 4, col_xs: 8, width: 306}
     event_bindings: {}
 - type: ColumnPanel
   properties: {col_widths: '{}'}

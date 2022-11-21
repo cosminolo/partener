@@ -17,7 +17,7 @@ services:
       live: pk_live_51LJiZeE0TENWA34MjXojNmIa9hVrb7QvTjRJSKjddVIuRaNHXCUWCkOr0eB3WJDCd6ev2v7frOsEtaYrgO25xfKn00ZkjVUCao}
   server_config: {refresh_token: rt_M1mnpjO4MTwAaX9B1yf08JJVzH4iAqbhcWsZtvo05Vto11fR,
     stripe_user_id: acct_1LJiZeE0TENWA34M}
-startup: {type: form, module: init.fin}
+startup: {type: form, module: init.analiza}
 package_name: Partener
 allow_embedding: true
 name: Partener
