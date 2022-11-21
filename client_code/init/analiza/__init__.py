@@ -36,6 +36,7 @@ class analiza(analizaTemplate):
       pass 
     
   def init(self):
+    
     if p1['facilitate']['denumit'] == 'Linie de Credit - acordare/suplimentare':
       self.label_13.text = "Total linii de credit in derulare linii la alte banci"
       c1['ar']['l9den'] = "Total linii de credit in derulare linii la alte banci"
@@ -45,12 +46,12 @@ class analiza(analizaTemplate):
       self.label_15.text = "Total facilitati pentru act. curenta in derulare la CEC Bank (mai putin credite revolving)"
       c1['ar']['l11den'] = "Total facilitati pentru act. curenta in derulare la CEC Bank (mai putin credite revolving)"
       self.label_16.text = "Corespunde ratingului bancii"
-      self.label_17.text = "EBITDA si capitaluri proprii pozitive"
+      self.label_17.text = "EBITDA la ultimul bilant si balanta si capitaluri proprii pozitive"
       self.label_18.text = "Suma solicitata se incadreaza in maximul dat de cifra de afaceri"
       self.label_19.text = "Suma solicitata se incadreaza in maximul dat de ciclul operational"
       self.label_20.text = "Perioada solicitata corespunde maximului de produs"
       self.label_21.text = "Criterii indeplinite"
-      
+      self.label_22.text = "EBITDA acoperitoare pentru sarcina financiara"
       
       c1['ar']['p1'] = "A. Incadrare in max de 30% sau in max 50% (daca nu mai are linii de credit la alte banci) din CA ultimul exercitiu financiar. Total credite act. curenta la banca max 75% in CA"
       c1['ar']['p2'] = "B. Incadrare in max dat de ciclul operational de la ultima balanta"

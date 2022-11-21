@@ -29,7 +29,7 @@ def pri_ini(tip):
     k={}
     k = {"crit":{"a":False, "b":False, "c":False, "d":False, "e":False, "f":False, "g":False, "h":False, "i":False, "j":False, "k":False, "l":False, "m":False, "n":False},
     "ar":{"tip":"", "sum_lei":0, "per":0, "perf":"", "l1":0, "l2":0, "l3":0, "l4":0, "l5":0, "l6":0, "l7":0, "l8":0, "l9den":" nealocat", "l9val":0, "l10den":"nealocat", "l10val":0, "l11den":"nealocat", "l11val":0, "comb_den":"", "comb_val":"",
-    "p1":"", "p2":"", "p3":"", "p4":"", "p5":"", "p6":""}} 
+    "p1":"", "p2":"", "p3":"", "p4":"", "p5":"", "p6":"", "p1r":"", "p2r":"", "p3r":"", "p4r":"", "p5r":"", "p6r":""}} 
     return k
 @anvil.server.callable  
 def conv(file):
