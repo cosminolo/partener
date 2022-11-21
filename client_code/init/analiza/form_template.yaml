@@ -517,7 +517,7 @@ components:
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_6
-    layout_properties: {row: EBHNHO, width_xs: 8, col_xs: 0, width: 424.5}
+    layout_properties: {row: UXKWAH, width_xs: 8, col_xs: 0, width: 424.5}
     event_bindings: {}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
