@@ -1075,9 +1075,10 @@ components:
         border: ''
         enabled: true
         foreground: ''
-        items: [Debitorul a beneficiat de cel putin doua credite (de la CEC BANK S.A. sau de la alte institutii de credit) care au fost lichidate integral,
-          Debitorul a beneficiat de un credit (de la CEC BANK S.A. sau de la alte institutii de credit) care a fost lichidat integral,
-          Debitorul a beneficiat de unul sau mai multe credite (de la CEC BANK S.A. sau de la alte institutii de credit) care se afla in derulare fara restante,
+        items: ['Debitorul a beneficiat de cel putin doua credite (de la CEC BANK
+            S.A. sau de la alte institutii de credit) care au fost lichidate integral ',
+          'Debitorul a beneficiat de un credit (de la CEC BANK S.A. sau de la alte
+            institutii de credit) care a fost lichidat integral ', Debitorul a beneficiat de unul sau mai multe credite (de la CEC BANK S.A. sau de la alte institutii de credit) care se afla in derulare fara restante,
           Debitorul nu a beneficiat de credite, Debitorul are restante la creditele in derulare]
         visible: true
         font_size: 14
