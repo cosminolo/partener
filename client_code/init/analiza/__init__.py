@@ -131,26 +131,55 @@ class analiza(analizaTemplate):
     pass
 
   def button_4_click(self, **event_args):
-    c1['ar']['comb_val'] = str(c1['ar']['l9val']) + ";" + str(c1['ar']['l10val'])
-    r = anvil.server.call("ruleaza",self.ups(),p1,c1)
-    if r['r1'] == "A" or r['r1']=="B" or r['r1']=="C":
-        self.text_area_1.text = "DA (" +  r['r1'] +")"
-    if int(c1['ar']['per'])<= 12:
-      self.text_area_2.text = "DA"
-    if int(c1['ar']['per'])>24:
-      self.text_area_2.text = "NU (max 24 luni)"  
-    if int(c1['ar']['per'])> 12 and int(c1['ar']['per'])<= 24 :
-      if int(r['r5']) < 1000000:
-         self.text_area_1.text = "NU (max 12 luni, CA: " + str(r['r5']) + " )"
-    if int(r['r5']) > 1000000:
-         if r['r1'] == "A" or r['r1'] == "B":
+    if p1['facilitate']['denumit'] == 'Linie de Credit - acordare/suplimentare':
+      c1['ar']['comb_val'] = str(c1['ar']['l9val']) + ";" + str(c1['ar']['l10val'])
+      r = anvil.server.call("ruleaza",self.ups(),p1,c1)
+      if r['r1'] == "A" or r['r1']=="B" or r['r1']=="C":
+          self.text_area_1.text = "DA (" +  r['r1'] +")"
+      if int(c1['ar']['per'])<= 12:
+        self.text_area_2.text = "DA"
+      if int(c1['ar']['per'])>24:
+        self.text_area_2.text = "NU (max 24 luni)"  
+      if int(c1['ar']['per'])> 12 and int(c1['ar']['per'])<= 24 :
+        if int(r['r5']) < 1000000:
+          self.text_area_1.text = "NU (max 12 luni, CA: " + str(r['r5']) + " )"
+      if int(r['r5']) > 1000000:
+          if r['r1'] == "A" or r['r1'] == "B":
               self.text_area_2.text = "DA (CA: " + str(r['r5']) + ")"
-         if r['r1']=="C" and int(c1['ar']['l10val']) > 0:
+          if r['r1']=="C" and int(c1['ar']['l10val']) > 0:
               self.text_area_2.text = "DA (CA: " + str(r['r5']) + ", exista plafon in derulare)"
-         if r['r1']=="C" and int(c1['ar']['l10val']) == 0:
+          if r['r1']=="C" and int(c1['ar']['l10val']) == 0:
               self.text_area_2.text = "NU (CA: " + str(r['r5']) + " fara plafon in derulare)"
+    
+      if int(c1['ar']['suma_lei']) + int (c1['ar']['l11val']) > 0.75 * int(r['r5']):
+             self.text_area_3.text = "NU, creditele pentru activitatea curenta depasesc 75% din CA"
+      else:
+        if int (c1['ar']['l9val']) == 0:
+          if int(c1['ar']['suma_lei']) + int(c1['ar']['l10val'])> 0.5 * int(r['r5']):
+             self.text_area_3.text = "Nu, plafoanele depasesc 50% din CA"
+          else:
+            self.text_area_3.text = "DA, plafoanele nu depaseste 50% din CA"
+        if int(c1['ar']['l9val']) > 0:
+           if int(c1['ar']['suma_lei']) + int(c1['ar']['l10val']) > 0.3 * int(r['r5']):
+             self.text_area_3.text = "Nu, plafoanele depasesc 30% din CA"
+           else:
+            self.text_area_3.text = "DA, plafoanele nu depasesc 30% din CA"
+    
+      self.text_area_4.text = "NU"
+      if int(r['r2']) > 0 and int(r['r3']) > 0 and int(r['r4']) > 0:
+          self.text_area_4.text = "DA (EBITDA bilant: " + str(r['r2']) + " EBITDA balanta: " + str(r['r3']) + " capitaluri: " + str(r['r4']) + ")"
+      if int(r['r2']) < 0:
+       self.text_area_4.text = self.text_area_4.text + "(EBITDA bilant negativa" + str(r['r2']) + ")"
+      if int(r['r3']) < 0:
+       self.text_area_4.text = self.text_area_4.text + "(EBITDA balanta negativa" + str(r['r3']) + ")"
+      if int(r['r4']) < 0:
+       self.text_area_4.text = self.text_area_4.text + "(capitaluri proprii la bilant negative" + str(r['r4']) + ")"    
+      self.text_area_5.text = "NU"
+      if int(r['r2'])> 0 and int(r['r2']) / c1['ar']['l8'] > 1.2:
+        self.text_area_5.text = "DA"
     pass
-
+    
+    
   def text_box_7_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
