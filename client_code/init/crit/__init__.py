@@ -17,6 +17,7 @@ class crit(critTemplate):
     global c1
     c1 = anvil.server.call("get_crit", self.ups())
     self.item = c1
+    print(c1['crit'])
   def ups(self):
       user = anvil.users.get_user()
       if user is None:

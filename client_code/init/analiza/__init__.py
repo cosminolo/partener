@@ -134,18 +134,23 @@ class analiza(analizaTemplate):
     if p1['facilitate']['denumit'] == 'Linie de Credit - acordare/suplimentare':
       c1['ar']['comb_val'] = str(c1['ar']['l9val']) + ";" + str(c1['ar']['l10val'])
       r = anvil.server.call("ruleaza",self.ups(),p1,c1)
+      
       if r['r1'] == "A" or r['r1']=="B" or r['r1']=="C":
           self.text_area_1.text = "DA (" +  r['r1'] +")"
+          c1['crit']['f'] = True
+      else:
+         self.text_area_1.text = "NU (" +  r['r1'] +")"
+         c1['crit']['f'] = False
       if int(c1['ar']['per'])<= 12:
         self.text_area_2.text = "DA"
       if int(c1['ar']['per'])>24:
         self.text_area_2.text = "NU (max 24 luni)"  
       if int(c1['ar']['per'])> 12 and int(c1['ar']['per'])<= 24 :
         if int(r['r5']) < 1000000:
-          self.text_area_1.text = "NU (max 12 luni, CA: " + str(r['r5']) + " )"
+          self.text_area_1.text = "NU (max 12 luni pt CA < 1 mil; CA: " + str(r['r5']) + " )"
       if int(r['r5']) > 1000000:
           if r['r1'] == "A" or r['r1'] == "B":
-              self.text_area_2.text = "DA (CA: " + str(r['r5']) + ")"
+              self.text_area_2.text = "DA (CA > 1 mil; CA: " + str(r['r5']) + ")"
           if r['r1']=="C" and int(c1['ar']['l10val']) > 0:
               self.text_area_2.text = "DA (CA: " + str(r['r5']) + ", exista plafon in derulare)"
           if r['r1']=="C" and int(c1['ar']['l10val']) == 0:
@@ -166,17 +171,26 @@ class analiza(analizaTemplate):
             self.text_area_3.text = "DA, plafoanele nu depasesc 30% din CA"
     
       self.text_area_4.text = "NU"
+      c1['crit']['l'] = False
       if int(r['r2']) > 0 and int(r['r3']) > 0 and int(r['r4']) > 0:
           self.text_area_4.text = "DA (EBITDA bilant: " + str(r['r2']) + " EBITDA balanta: " + str(r['r3']) + " capitaluri: " + str(r['r4']) + ")"
+          c1['crit']['l'] = True
       if int(r['r2']) < 0:
        self.text_area_4.text = self.text_area_4.text + "(EBITDA bilant negativa" + str(r['r2']) + ")"
       if int(r['r3']) < 0:
        self.text_area_4.text = self.text_area_4.text + "(EBITDA balanta negativa" + str(r['r3']) + ")"
       if int(r['r4']) < 0:
        self.text_area_4.text = self.text_area_4.text + "(capitaluri proprii la bilant negative" + str(r['r4']) + ")"    
+      
       self.text_area_5.text = "NU"
       if int(r['r2'])> 0 and int(r['r2']) / c1['ar']['l8'] > 1.2:
         self.text_area_5.text = "DA"
+      c1['ar']['p1r'] = self.text_area_1.text
+      c1['ar']['p2r'] = self.text_area_2.text  
+      c1['ar']['p3r'] = self.text_area_3.text
+      c1['ar']['p4r'] = self.text_area_4.text
+      c1['ar']['p5r'] = self.text_area_5.text
+      anvil.server.call("upc", self.ups(), c1)
     pass
     
     

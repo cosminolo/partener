@@ -176,22 +176,6 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''per'']', writeback: false}
   - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Clasa de performanta, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_4
-    layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 4, width: 148.328}
-    event_bindings: {}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_10
-    layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 6, width: 100.984}
-    event_bindings: {}
-  - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: '1. Suma ratelor de principal estimate pentru creditul
         solicitat pe urmatoarele 12 luni sau pe perioada de creditare propusa daca
@@ -455,6 +439,8 @@ components:
     name: text_area_1
     layout_properties: {row: LIACWE, width_xs: 4, col_xs: 8, width: 306}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''p1r'']', writeback: false}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -471,6 +457,8 @@ components:
     name: text_area_2
     layout_properties: {row: ODKWHM, width_xs: 4, col_xs: 8, width: 306}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''p2r'']', writeback: false}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -487,6 +475,8 @@ components:
     name: text_area_3
     layout_properties: {row: YXRDFN, width_xs: 4, col_xs: 8, width: 306}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''p3r'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -503,6 +493,8 @@ components:
     name: text_area_4
     layout_properties: {row: NYPBUZ, width_xs: 4, col_xs: 8, width: 306}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''p4r'']', writeback: true}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
       visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -519,6 +511,8 @@ components:
     name: text_area_5
     layout_properties: {row: VMNXBC, width_xs: 4, col_xs: 8, width: 306}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self.item[''ar''][''p5r'']', writeback: true}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: column_panel_2
