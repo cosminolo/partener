@@ -46,7 +46,7 @@ class analiza(analizaTemplate):
       self.label_15.text = "Total facilitati pentru act. curenta in derulare la CEC Bank (mai putin credite revolving)"
       c1['ar']['l11den'] = "Total facilitati pentru act. curenta in derulare la CEC Bank (mai putin credite revolving)"
       self.label_16.text = "Corespunde ratingului bancii"
-      self.label_17.text = "EBITDA la ultimul bilant si balanta si capitaluri proprii pozitive"
+      self.label_17.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
       self.label_18.text = "Suma solicitata se incadreaza in maximul dat de cifra de afaceri"
       self.label_19.text = "Suma solicitata se incadreaza in maximul dat de ciclul operational"
       self.label_20.text = "Perioada solicitata corespunde maximului de produs"
