@@ -132,7 +132,7 @@ class analiza(analizaTemplate):
     pass
 
   def button_4_click(self, **event_args):
-    c1['ar']['comb_val'] = c1['ar']['l9val'] + ";" + c1['ar']['l10val'] 
+    c1['ar']['comb_val'] = str(c1['ar']['l9val']) + ";" + str(c1['ar']['l10val'])
     anvil.server.call("ruleaza",self.ups(),p1,c1)
     pass
 
