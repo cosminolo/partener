@@ -519,38 +519,6 @@ components:
     name: text_area_5
     layout_properties: {row: VMNXBC, width_xs: 4, col_xs: 8, width: 306}
     event_bindings: {}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: label_21
-    layout_properties: {row: QNJXIP, width_xs: 8, col_xs: 0, width: 662}
-    event_bindings: {}
-  - type: TextArea
-    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_area_6
-    layout_properties: {row: QNJXIP, width_xs: 4, col_xs: 8, width: 306}
-    event_bindings: {}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: label_22
-    layout_properties: {row: GJPIMS, width_xs: 8, col_xs: 0, width: 662}
-    event_bindings: {}
-  - type: TextArea
-    properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_area_7
-    layout_properties: {row: GJPIMS, width_xs: 4, col_xs: 8, width: 306}
-    event_bindings: {}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: column_panel_2

@@ -8,7 +8,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-
+import json
 class analiza(analizaTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -46,13 +46,11 @@ class analiza(analizaTemplate):
       self.label_15.text = "Total facilitati pentru act. curenta in derulare la CEC Bank (mai putin credite revolving)"
       c1['ar']['l11den'] = "Total facilitati pentru act. curenta in derulare la CEC Bank (mai putin credite revolving)"
       self.label_16.text = "Corespunde ratingului bancii"
-      self.label_17.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
+      self.label_17.text = "Perioada solicitata corespunde maximului conform situatiilor financiare"
       self.label_18.text = "Suma solicitata se incadreaza in maximul dat de cifra de afaceri"
-      self.label_19.text = "Suma solicitata se incadreaza in maximul dat de ciclul operational"
-      self.label_20.text = "Perioada solicitata corespunde maximului de produs"
-      self.label_21.text = "Criterii indeplinite"
-      self.label_22.text = "EBITDA acoperitoare pentru sarcina financiara"
-      
+      self.label_19.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
+      self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"
+           
       c1['ar']['p1'] = "A. Incadrare in max de 30% sau in max 50% (daca nu mai are linii de credit la alte banci) din CA ultimul exercitiu financiar. Total credite act. curenta la banca max 75% in CA"
       c1['ar']['p2'] = "B. Incadrare in max dat de ciclul operational de la ultima balanta"
       c1['ar']['p3'] = "C. Acoperire sarcina fin. (EBITDA/total sarcina fin.): >=1,1/>=1 pt.agric. "
@@ -60,6 +58,7 @@ class analiza(analizaTemplate):
       c1['ar']['p5'] = "E. Realizare indicatori financiari suplimentari (min.50%)"
       c1['ar']['p6'] = "F. Criterii: Criterii standard si suplimentare; Per >12 luni: CA bilant > 1 mil lei, performanta A, B sau C pt. client existent cu plafon linie in derulare"
       anvil.server.call("upc", self.ups(), c1)
+     
     pass  
   def text_box_23_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
@@ -133,7 +132,23 @@ class analiza(analizaTemplate):
 
   def button_4_click(self, **event_args):
     c1['ar']['comb_val'] = str(c1['ar']['l9val']) + ";" + str(c1['ar']['l10val'])
-    print(anvil.server.call("ruleaza",self.ups(),p1,c1))
+    r = anvil.server.call("ruleaza",self.ups(),p1,c1)
+    if r['r1'] == "A" or r['r1']=="B" or r['r1']=="C":
+        self.text_area_1.text = "DA (" +  r['r1'] +")"
+    if int(c1['ar']['per'])<= 12:
+      self.text_area_2.text = "DA"
+    if int(c1['ar']['per'])>24:
+      self.text_area_2.text = "NU (max 24 luni)"  
+    if int(c1['ar']['per'])> 12 and int(c1['ar']['per'])<= 24 :
+      if int(r['r5']) < 1000000:
+         self.text_area_1.text = "NU (max 12 luni, CA: " + str(r['r5']) + " )"
+    if int(r['r5']) > 1000000:
+         if r['r1'] == "A" or r['r1'] == "B":
+              self.text_area_2.text = "DA (CA: " + str(r['r5']) + ")"
+         if r['r1']=="C" and int(c1['ar']['l10val']) > 0:
+              self.text_area_2.text = "DA (CA: " + str(r['r5']) + ", exista plafon in derulare)"
+         if r['r1']=="C" and int(c1['ar']['l10val']) == 0:
+              self.text_area_2.text = "NU (CA: " + str(r['r5']) + " fara plafon in derulare)"
     pass
 
   def text_box_7_pressed_enter(self, **event_args):
