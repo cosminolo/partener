@@ -198,6 +198,19 @@ class analiza(analizaTemplate):
     """This method is called when the user presses Enter in this text box"""
     pass
 
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    file =anvil.server.call ("down_sf")
+    anvil.media.download(file) 
+    pass
+
+  def file_loader_2_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    anvil.server.call("up_sf", self.ups(), file)
+    pass
+
+
+
 
 
 
