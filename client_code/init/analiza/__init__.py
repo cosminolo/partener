@@ -217,6 +217,13 @@ class analiza(analizaTemplate):
     """This method is called when a new file is loaded into this FileLoader"""
     pass
 
+  def button_6_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    file =anvil.server.call ("down_aplic", self.ups() )
+    anvil.media.download(file) 
+    pass
+
+
 
 
 
