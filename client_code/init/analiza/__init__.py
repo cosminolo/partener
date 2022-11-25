@@ -209,6 +209,16 @@ class analiza(analizaTemplate):
     anvil.server.call("up_sf", self.ups(), file)
     pass
 
+  def file_loader_3_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    pass
+
+  def file_loader_1_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    pass
+
+
+
 
 
 
