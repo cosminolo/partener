@@ -515,7 +515,7 @@ components:
     - {property: text, code: 'self.item[''ar''][''p5r'']', writeback: true}
 - type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: tiny, spacing_above: small, col_widths: '{"HCRJFU":10,"KZFNYO":50,"ERVYKB":10,"VSPKPY":50,"SIEUDP":5,"ABDAGS":55}',
+    wrap_on: mobile, col_spacing: tiny, spacing_above: small, col_widths: '{"HCRJFU":10,"KZFNYO":50,"ERVYKB":10,"VSPKPY":50,"SIEUDP":5,"ABDAGS":55,"GAEDDP":10,"ROEDYY":45}',
     spacing_below: small, background: ''}
   name: column_panel_2
   layout_properties: {slot: left-nav}
@@ -609,6 +609,26 @@ components:
     name: label_22
     layout_properties: {grid_position: 'NMYIOB,VSPKPY'}
     event_bindings: {}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:retweet'}
+    name: button_6
+    layout_properties: {grid_position: 'BRMCTV,GAEDDP'}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Genereaza fisier pt banca, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_23
+    layout_properties: {grid_position: 'BRMCTV,ROEDYY'}
+    event_bindings: {}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_19
+    layout_properties: {grid_position: 'BRMCTV,AGKYRF'}
 - type: FileLoader
   properties: {}
   name: file_loader_1
