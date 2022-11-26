@@ -104,6 +104,9 @@ class crit(critTemplate):
     pass
 
   def button_8_click(self, **event_args):
+    p1 = anvil.server.call("get_p1", self.ups())
+    cui = p1['gen']['cui']
+    #cui = 33741906
     conf = confirm("Consult prin Risco?")
     c =""
     if conf == True:
@@ -113,13 +116,21 @@ class crit(critTemplate):
                            description="verificari insolventa")
     try:
        if c["result"] == "succeeded":
-         try: 
-            dd
-         except:
-          pass
+        chk = anvil.server.call("insolventa", cui)
+        if chk == False:
+           c1['crit']['h'] = True
+           self.check_box_8.checked =  True
+           anvil.server.call("upc", self.ups(), c1) 
+        if chk == True:
+           c1['crit']['h'] = False
+           self.check_box_8.checked =  False
+           anvil.server.call("upc", self.ups(), c1)  
     except:
       pass
     pass
+
+  
+
 
 
 

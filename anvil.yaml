@@ -13,10 +13,10 @@ services:
 - source: /runtime/services/stripe.yml
   client_config:
     live_mode: false
-    publishable_key: {test: pk_live_51LBjMhI63DSlRQi5gQWXfWNvq5cVC7sQgHsyjpByKgA8jNgoGtdAUCPK6gKXDjcRUPf4YeG6Wsf14Y5NtEEetCxT00zLeSjVqP,
+    publishable_key: {test: sk_test_51LBjMhI63DSlRQi5q6dLvxt3qWEv0rPgbKTXFAFoL9K0OepfdflB5a1P1YS74PKZSrG4nvdzlFvvLYHOQPgpjbxF00WwPHQya0,
       live: pk_test_51LBjMhI63DSlRQi5xjRfmbmC0XiKtOvC1ggT1WLO9eqvIh7StpJ842S19C1mmIizltsjm29eexXcGtkN6npS7uyB00RnxEPrxx}
-  server_config: {refresh_token: rt_M1mnpjO4MTwAaX9B1yf08JJVzH4iAqbhcWsZtvo05Vto11fR,
-    stripe_user_id: acct_1LJiZeE0TENWA34M}
+  server_config: {refresh_token: rt_Ms4ysWjKdJECPBhwC90pulOS4JHaEcP6YIYdC6I7J3OBwoiJ,
+    stripe_user_id: acct_1LBjMhI63DSlRQi5}
 startup: {type: form, module: init}
 package_name: Partener
 allow_embedding: true
