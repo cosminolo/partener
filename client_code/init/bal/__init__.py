@@ -1,6 +1,7 @@
 from ._anvil_designer import balTemplate
 from anvil import *
 import anvil.server
+import json
 #import stripe.checkout
 #import anvil.google.auth, anvil.google.drive
 #from anvil.google.drive import app_files
@@ -179,10 +180,7 @@ class bal(balTemplate):
           s = s + int(My_globals.bal[i][col])
     return s
 
-  def button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    print(My_globals.bal[29]['Cont'])
-    pass
+  
 
   def text_box_4_show(self, **event_args):
     
@@ -200,6 +198,24 @@ class bal(balTemplate):
     """This method is called when the button is clicked"""
     open_form('init.verific')
     pass
+
+  def button_6_click(self, **event_args):
+    file =anvil.server.call ("down_sf")
+    anvil.media.download(file) 
+    pass
+
+  def file_loader_1_change(self, file, **event_args):
+    bal = json.loads(anvil.server.call("up_sf", self.ups(), file))
+    anvil.server.call("upp_bal", self.ups(), bal)
+    open_form('init.bal')
+    pass
+
+  def file_loader_2_change(self, file, **event_args):
+    anvil.server.call("uplf", self.ups(), file)
+    pass
+
+
+
 
   
 

@@ -5,7 +5,7 @@ container:
   event_bindings: {}
 components:
 - type: XYPanel
-  properties: {height: 668, width: 540}
+  properties: {height: 856, width: 540}
   name: xy_panel_1
   layout_properties: {slot: left-nav}
   components:
@@ -535,11 +535,6 @@ components:
       underline: false, icon: ''}
     name: label_17
     layout_properties: {x: 13.5, y: 561, width: 56}
-  - type: Button
-    properties: {text: button_2}
-    name: button_2
-    layout_properties: {x: 90.5, y: 23, width: 100}
-    event_bindings: {click: button_2_click}
   - type: TextBox
     properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 1px, enabled: true, foreground: '', visible: true, text: '',
@@ -556,6 +551,102 @@ components:
     name: button_1
     layout_properties: {x: 345.5, y: 17, width: 42.25}
     event_bindings: {click: button_1_click}
+  - type: FileLoader
+    properties:
+      role: raised
+      show_state: true
+      align: left
+      tooltip: ''
+      border: ''
+      file_types: null
+      enabled: true
+      files: []
+      foreground: ''
+      visible: true
+      text: ''
+      font_size: 16
+      font: ''
+      spacing_above: small
+      icon_align: left
+      spacing_below: small
+      italic: false
+      file: null
+      background: ''
+      bold: false
+      underline: false
+      multiple: false
+      icon: fa:upload
+    name: file_loader_1
+    layout_properties: {x: -1.5, y: 694, width: 90}
+    event_bindings: {change: file_loader_1_change}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:cloud-download'}
+    name: button_6
+    layout_properties: {x: 13.5, y: 644, width: 61}
+    event_bindings: {click: button_6_click}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: UpLoad sablon completat excel, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_25
+    layout_properties: {x: 82.5, y: 700, width: 229}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: DownLoad sablon gol excel, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_24
+    layout_properties: {x: 84.5, y: 648, width: 210}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Verifica egalitati, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_27
+    layout_properties: {x: 219.5, y: 18, width: 116}
+    event_bindings: {}
+  - type: FileLoader
+    properties:
+      role: raised
+      show_state: true
+      align: left
+      tooltip: ''
+      border: ''
+      file_types: null
+      enabled: true
+      files: []
+      foreground: ''
+      visible: true
+      text: ''
+      font_size: 16
+      font: ''
+      spacing_above: small
+      icon_align: left
+      spacing_below: small
+      italic: false
+      file: null
+      background: ''
+      bold: false
+      underline: false
+      multiple: false
+      icon: fa:upload
+    name: file_loader_2
+    layout_properties: {x: 3.25, y: 759, width: 110}
+    event_bindings: {change: file_loader_2_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Arhiza zip (fisier pt banca ultimile 2 bilanturi cu balantele aferente si ultima balanta),
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
+    name: label_26
+    layout_properties: {x: 90.5, y: 759, width: 281.25}
+    event_bindings: {}
   event_bindings: {}
 - type: GridPanel
   properties: {}

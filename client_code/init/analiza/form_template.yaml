@@ -515,64 +515,12 @@ components:
     - {property: text, code: 'self.item[''ar''][''p5r'']', writeback: true}
 - type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: tiny, spacing_above: small, col_widths: '{"HCRJFU":10,"KZFNYO":50,"ERVYKB":10,"VSPKPY":50,"SIEUDP":5,"ABDAGS":55,"ZGFZAZ":10,"NCHBVL":30,"YVROOU":20}',
+    wrap_on: mobile, col_spacing: tiny, spacing_above: small, col_widths: '{"ZGFZAZ":10,"YVROOU":20}',
     spacing_below: small, background: ''}
   name: column_panel_2
   layout_properties: {slot: left-nav}
   event_bindings: {}
   components:
-  - type: Button
-    properties: {role: raised, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: '                ', font_size: 14, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: 'fa:download'}
-    name: button_5
-    layout_properties: {grid_position: 'IRMWYV,SIEUDP'}
-    event_bindings: {click: button_5_click}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Formular situatii financiare, font_size: null, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
-    name: label_4
-    layout_properties: {grid_position: 'IRMWYV,ABDAGS'}
-    event_bindings: {}
-  - type: FileLoader
-    properties:
-      role: raised
-      show_state: true
-      align: left
-      tooltip: ''
-      border: ''
-      file_types: null
-      enabled: true
-      files: []
-      foreground: ''
-      visible: true
-      text: '                       '
-      font_size: 14
-      font: ''
-      spacing_above: none
-      icon_align: left
-      spacing_below: small
-      italic: false
-      file: null
-      background: ''
-      bold: false
-      underline: false
-      multiple: false
-      icon: fa:upload
-    name: file_loader_2
-    layout_properties: {grid_position: 'IDWGNF,HCRJFU', full_width_row: false}
-    event_bindings: {change: file_loader_2_change}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Formular completat                ', font_size: null,
-      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
-    name: label_21
-    layout_properties: {grid_position: 'IDWGNF,KZFNYO', full_width_row: false}
-    event_bindings: {}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
@@ -581,54 +529,18 @@ components:
     name: button_6
     layout_properties: {grid_position: 'VQEBUG,ZGFZAZ'}
     event_bindings: {click: button_6_click}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_19
+    layout_properties: {grid_position: 'VQEBUG,YVROOU'}
+    event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Fisier generat pt banca, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_23
-    layout_properties: {grid_position: 'VQEBUG,NCHBVL'}
-    event_bindings: {}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_19
-    layout_properties: {grid_position: 'VQEBUG,YVROOU'}
-    event_bindings: {}
-  - type: FileLoader
-    properties:
-      role: raised
-      show_state: true
-      align: left
-      tooltip: ''
-      border: ''
-      file_types: null
-      enabled: true
-      files: []
-      foreground: ''
-      visible: true
-      text: ''
-      font_size: 14
-      font: ''
-      spacing_above: small
-      icon_align: left
-      spacing_below: small
-      italic: false
-      file: null
-      background: ''
-      bold: false
-      underline: false
-      multiple: false
-      icon: fa:upload
-    name: file_loader_3
-    layout_properties: {grid_position: 'NMYIOB,ERVYKB'}
-    event_bindings: {change: file_loader_3_change}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Arhiza zip (fisier pt banca ultimile 2 bilanturi cu balantele aferente si ultima balanta),
-      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false, icon: ''}
-    name: label_22
-    layout_properties: {grid_position: 'NMYIOB,VSPKPY'}
+    layout_properties: {grid_position: 'WRJVVT,ZDCPCU'}
     event_bindings: {}
 - type: FileLoader
   properties: {}

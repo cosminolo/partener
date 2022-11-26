@@ -116,7 +116,7 @@ class fin(finTemplate):
     pass
 
   def button_3_click(self, **event_args):
-    open_form('init.verific')
+    open_form('init.bal')
     pass
 
   def date_picker_1_change(self, **event_args):  
