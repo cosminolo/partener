@@ -129,10 +129,11 @@ class analiza(analizaTemplate):
     pass
 
   def button_4_click(self, **event_args):
+    jb = anvil.server.call("get_bal", self.ups())
+    
     if p1['facilitate']['denumit'] == 'Linie de Credit - acordare/suplimentare':
       c1['ar']['comb_val'] = str(c1['ar']['l9val']) + ";" + str(c1['ar']['l10val'])
-      r = anvil.server.call("ruleaza",self.ups(),p1,c1)
-      
+      r = anvil.server.call("ruleaza",self.ups(),p1,c1, jb)
       if r['r1'] == "A" or r['r1']=="B" or r['r1']=="C":
           self.text_area_1.text = "DA (" +  r['r1'] +")"
           c1['crit']['f'] = True
