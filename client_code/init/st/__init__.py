@@ -607,11 +607,12 @@ class st(stTemplate):
   def button_1_click(self, **event_args):
     
     # Take a payment of £9.99
-    c= stripe.checkout.charge(amount=100,
-                           currency="EUR",
+    c= stripe.checkout.charge(amount=1000,
+                           currency="RON",
                            title="Raport",
                            description="verificari")
-    print (c["result"])
+    if c["result"] == "succeeded":
+      print(c["result"])
     pass
 
   def text_area_2_change(self, **event_args):
@@ -1425,6 +1426,69 @@ class st(stTemplate):
     """This method is called when the Button is shown on the screen"""
                          
     pass
+
+  def button_18_click(self, **event_args):
+    conf = confirm("Preiau date de la risco?")
+    c =""
+    if conf == True:
+         c= stripe.checkout.charge(amount=1000,
+                           currency="RON",
+                           title="Raport",
+                           description="verificari")
+    try:
+     if c["result"] == "succeeded":
+      try: 
+        grup = anvil.server.call("gr", self.text_box_1.text)    
+        p1['gen']['cui'] = self.text_box_1.text
+        self.text_box_2.text = grup["soc"][0]["name"]    
+        p1['gen']['name'] = grup["soc"][0]["name"]  
+        self.text_box_3.text = grup["soc"][0]["codj"]
+        p1['gen']['codj'] = grup["soc"][0]["codj"]
+        self.text_box_4.text = grup["soc"][0]["adress"]
+        p1['gen']['adress'] = grup["soc"][0]["adress"]
+        self.text_box_5.text = grup["soc"][0]["tel"]
+        p1['gen']['tel'] = grup["soc"][0]["tel"]
+        self.text_box_6.text = grup["soc"][0]["email"]
+        p1['gen']['email'] = grup["soc"][0]["email"]
+        self.text_box_7.text = grup["soc"][0]["caen"]
+        p1['gen']['caen'] = grup["soc"][0]["caen"]
+        self.text_box_8.text=grup["soc"][0]["d_caen"]
+        p1['gen']['d_caen'] = grup["soc"][0]["d_caen"]
+        p1["admin"] = []    
+        for i in range (0, len(grup['admin'])):      
+            p1["admin"].append({"nume": grup['admin'][i]['nume']})
+            row = len(p1['admin'])
+        self.admin(row, p1['admin'])
+    
+        p1["asoc"] = []
+        for i in range (0, len(grup['asoct'])): 
+          n = {"nume": grup['asoct'][i]['nume'], "tara": grup['asoct'][i]['tara'], "info": grup['asoct'][i]['info']}
+          p1["asoc"].append(n)      
+          row = len(p1['asoc'])
+        self.asoc(row, p1['asoc']) 
+        anvil.server.call("sp1", self.ups(), p1)
+    
+        p1["grp"] = []    
+        for i in range (0, len(grup['gr'])):
+          nu = grup['gr'][i]['nume']
+          det = grup['gr'][i]['detalii']
+          obs = "x"
+          try:
+            obs = grup['gr'][i]['obbs']
+          except:
+            pass
+          n = {"nume": nu, "detalii": det, "obs": obs}
+          p1["grp"].append(n)      
+        row = len(p1['grp'])
+        self.grup(row, p1['grp']) 
+        anvil.server.call("sp1", self.ups(), p1)
+      except:
+        pass   
+     
+    except:
+        pass                           
+    pass
+
 
 
 

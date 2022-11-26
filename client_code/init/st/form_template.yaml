@@ -69,7 +69,7 @@ components:
         enabled: true
         foreground: ''
         items: [negarantat, valoare mica cu FGCR, OUG 43, garantat cu echipamente/imobile/etc,
-          garantat cu mix (fond si alte garantii)]
+          garantat cu mix (fond si alte garantii), '']
         visible: true
         font_size: 14
         font: ''
@@ -442,34 +442,6 @@ components:
       event_bindings: {pressed_enter: text_box_1_pressed_enter}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''cui'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
-        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false}
-      name: text_box_2
-      layout_properties: {row: JNGRGR, width_xs: 3, col_xs: 3, x: 181, y: 9.125, width: 271}
-      event_bindings: {lost_focus: text_box_2_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''gen''][''name'']', writeback: true}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: ONRC, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_2
-      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 6, width: 48.468999999999994,
-        x: 462, y: 2.859375}
-    - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
-        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false}
-      name: text_box_3
-      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 7, x: 504, y: 10, width: 108}
-      data_bindings:
-      - {property: text, code: 'self.item[''gen''][''codj'']', writeback: true}
-      event_bindings: {lost_focus: text_box_3_lost_focus}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Tel, font_size: null, font: '', spacing_above: small,
@@ -508,33 +480,6 @@ components:
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''email'']', writeback: true}
       event_bindings: {lost_focus: text_box_6_lost_focus}
-    - type: TextBox
-      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
-        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false}
-      name: text_box_4
-      layout_properties: {row: JNGRGR, width_xs: 3, col_xs: 9, x: 665.875, y: 9.125,
-        width: 521}
-      data_bindings:
-      - {property: text, code: 'self.item[''gen''][''adress'']', writeback: true}
-      event_bindings: {lost_focus: text_box_4_lost_focus}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Sediu, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_3
-      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 8, width: 44.5, x: 622.125,
-        y: 3}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Denumire, font_size: 12, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_2_copy_2
-      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 2, width: 55, x: 116,
-        y: 10}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: Cui, font_size: null, font: '', spacing_above: none,
@@ -705,6 +650,73 @@ components:
       event_bindings: {change: drop_down_17_change}
       data_bindings:
       - {property: selected_value, code: 'self.item[''gen''][''rel_spec'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_4
+      layout_properties: {row: JNGRGR, width_xs: 3, col_xs: 9, x: 782.34375, y: 2.859375,
+        width: 521}
+      data_bindings:
+      - {property: text, code: 'self.item[''gen''][''adress'']', writeback: true}
+      event_bindings: {lost_focus: text_box_4_lost_focus}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Sediu, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_3
+      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 8, width: 44.5, x: 727.84375,
+        y: 3}
+      event_bindings: {}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_3
+      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 7, x: 613, y: 6.125, width: 108}
+      data_bindings:
+      - {property: text, code: 'self.item[''gen''][''codj'']', writeback: true}
+      event_bindings: {lost_focus: text_box_3_lost_focus}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: ONRC, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_2
+      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 6, width: 48.4688, x: 558.281225,
+        y: -2}
+      event_bindings: {}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_2
+      layout_properties: {row: JNGRGR, width_xs: 3, col_xs: 3, x: 286.84375, y: 3,
+        width: 271}
+      event_bindings: {lost_focus: text_box_2_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''gen''][''name'']', writeback: true}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Denumire, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_2_copy_2
+      layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 2, width: 55, x: 210.25,
+        y: 6.125}
+      event_bindings: {}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:refresh'}
+      name: button_18
+      layout_properties: {x: 123.875, y: 6.125, width: 44}
+      event_bindings: {click: button_18_click}
     event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
