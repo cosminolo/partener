@@ -130,7 +130,11 @@ class analiza(analizaTemplate):
 
   def button_4_click(self, **event_args):
     jb = anvil.server.call("get_bal", self.ups())
-    
+    self.text_area_1.text =""
+    self.text_area_2.text =""
+    self.text_area_3.text =""
+    self.text_area_4.text =""
+    self.text_area_5.text =""
     if p1['facilitate']['denumit'] == 'Linie de Credit - acordare/suplimentare':
       c1['ar']['comb_val'] = str(c1['ar']['l9val']) + ";" + str(c1['ar']['l10val'])
       r = anvil.server.call("ruleaza",self.ups(),p1,c1, jb)
@@ -191,18 +195,9 @@ class analiza(analizaTemplate):
       c1['ar']['p5r'] = self.text_area_5.text
       anvil.server.call("upc", self.ups(), c1)
     pass
-    
-    
   def text_box_7_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
-
-  
-
-  
-
-  
-
   def file_loader_1_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
     pass
