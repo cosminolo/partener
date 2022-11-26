@@ -393,14 +393,6 @@ components:
     - {property: text, code: 'self.item[''ar''][''l11val'']', writeback: true}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: trimite, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: button_3
-    layout_properties: {row: SAFTMC, width_xs: 2, col_xs: 1, width: 98}
-    event_bindings: {click: button_3_click}
-  - type: Button
-    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Ruleaza, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
@@ -542,8 +534,3 @@ components:
     name: label_23
     layout_properties: {grid_position: 'WRJVVT,ZDCPCU'}
     event_bindings: {}
-- type: FileLoader
-  properties: {}
-  name: file_loader_1
-  layout_properties: {slot: default}
-  event_bindings: {change: file_loader_1_change}

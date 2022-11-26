@@ -69,12 +69,6 @@ class analiza(analizaTemplate):
   def button_1_click(self, **event_args):
     open_form('init')
     pass
-
-  def button_3_click(self, **event_args):
-    #c = confirm("trimit urmatoarele doc completate: cerere, balante, criterii, estimarile de mai sus")
-    print (c1['ar']['l9den'])
-    pass
-
   def text_box_11_lost_focus(self, **event_args):
     self.lf(self.text_box_11)    
     pass
@@ -198,9 +192,7 @@ class analiza(analizaTemplate):
   def text_box_7_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
-  def file_loader_1_change(self, file, **event_args):
-    """This method is called when a new file is loaded into this FileLoader"""
-    pass
+ 
 
   def button_6_click(self, **event_args):
     """This method is called when the button is clicked"""
