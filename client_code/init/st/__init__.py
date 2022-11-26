@@ -2,8 +2,6 @@ from ._anvil_designer import stTemplate
 from anvil import *
 import anvil.server
 import stripe.checkout
-import anvil.google.auth, anvil.google.drive
-from anvil.google.drive import app_files
 import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -14,10 +12,14 @@ class st(stTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.con_drop3()
-    
     global p1
     #p1 = anvil.server.call("pri_ini")
-    p1 = anvil.server.call("get_p1", self.ups())
+    try:
+      p1 = anvil.server.call("get_p1", self.ups())
+      v = p1['gen']['cui']
+    except:
+      anvil.server.call("app_new", self.ups())
+      p1 = anvil.server.call("get_p1", self.ups())
     self.item = p1
     try:
       row = len(p1['admin'])
@@ -396,7 +398,11 @@ class st(stTemplate):
                 'Credit pentru achizitia terenurilor cu destinatie agricola OUG 43/2013'] :
           self.drop_down_3.items.append(art)
       self.drop_down_3.items = self.drop_down_3.items     
-      
+    if self.drop_down_2.selected_value == "":
+      self.drop_down_3.items = []
+      #for art in [''] :
+         # self.drop_down_3.items.append(art)
+      self.drop_down_3.items = self.drop_down_3.items      
     if self.drop_down_2.selected_value:
         anvil.server.call("sp1", self.ups(), p1)                         
     pass
@@ -432,7 +438,7 @@ class st(stTemplate):
     pass
   def con_drop3(self):
     self.drop_down_3.items = []
-    for art in [' ', 'Linie de Credit - acordare/suplimentare', 
+    for art in ['', 'Linie de Credit - acordare/suplimentare', 
                 'Linie de Credit - acordare/suplimentare',
                 'Linie de Credit - prelungire',
                 'Linie de Credit - suplimentare 10%',
@@ -1379,6 +1385,9 @@ class st(stTemplate):
     pass
 
   def button_18_click(self, **event_args):
+   if p1['gen']['cui'] == "":
+      alert("Introdu CUI")                             
+   else:                           
     conf = confirm("Preiau date de la risco?")
     c =""
     if conf == True:
@@ -1443,6 +1452,11 @@ class st(stTemplate):
   def text_box_1_change(self, **event_args):
     anvil.server.call("sp1", self.ups(), p1)
     pass
+
+  def button_19_click(self, **event_args):
+    alert("sumar produs")
+    pass
+
 
 
 

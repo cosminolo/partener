@@ -2,8 +2,6 @@ from ._anvil_designer import analizaTemplate
 from anvil import *
 import anvil.server
 import stripe.checkout
-import anvil.google.auth, anvil.google.drive
-from anvil.google.drive import app_files
 import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -210,7 +208,7 @@ class analiza(analizaTemplate):
     pass
 
   def file_loader_3_change(self, file, **event_args):
-    """This method is called when a new file is loaded into this FileLoader"""
+    anvil.server.call("uplf", self.ups(), file)
     pass
 
   def file_loader_1_change(self, file, **event_args):

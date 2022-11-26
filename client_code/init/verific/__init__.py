@@ -2,8 +2,6 @@ from ._anvil_designer import verificTemplate
 from anvil import *
 import stripe.checkout
 import anvil.server
-import anvil.google.auth, anvil.google.drive
-from anvil.google.drive import app_files
 import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -196,11 +194,17 @@ class verific(verificTemplate):
     pass
 
   def button_4_click(self, **event_args):
-    self.tva("b")      
+    if cui == "":
+      alert ("CUI necompletat")
+    else:
+       self.tva("b")      
     pass
 
   def button_7_click(self, **event_args):
-    self.get_bil("b")
+    if cui == "":
+      alert ("CUI necompletat")
+    else:
+      self.get_bil("b")
     pass
   def get_bil(self, tip):
     if tip == "b":
@@ -217,7 +221,10 @@ class verific(verificTemplate):
     pass
 
   def button_8_click(self, **event_args):
-    self.ref_buget("b")
+    if cui == "" or p1['gen']['name'] == "":
+      alert ("CUI/Denumire necompletat")
+    else:  
+      self.ref_buget("b")
     pass
   def ref_buget(self, tip):
     self.label_79.text = ""
@@ -256,7 +263,10 @@ class verific(verificTemplate):
         s = s + i
     return s
   def button_9_click(self, **event_args): 
-    self.ref_lit("b")
+    if p1['gen']['name'] == "":
+      alert ("Denumire necompletat")
+    else:
+      self.ref_lit("b")
     pass
   def ch_pan(self, js, mx):
     self.repeating_panel_1.items = js

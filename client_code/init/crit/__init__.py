@@ -2,8 +2,6 @@ from ._anvil_designer import critTemplate
 from anvil import *
 import anvil.server
 import stripe.checkout
-#import anvil.google.auth, anvil.google.drive
-#from anvil.google.drive import app_files
 import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -17,7 +15,7 @@ class crit(critTemplate):
     global c1
     c1 = anvil.server.call("get_crit", self.ups())
     self.item = c1
-    print(c1['crit'])
+    #print(c1['crit'])
   def ups(self):
       user = anvil.users.get_user()
       if user is None:

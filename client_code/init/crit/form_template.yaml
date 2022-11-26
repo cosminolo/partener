@@ -43,7 +43,7 @@ components:
   layout_properties: {grid_position: 'YWZIPF,JQGZKG', slot: top-left-btn}
   event_bindings: {click: button_1_click}
 - type: ColumnPanel
-  properties: {col_widths: '{"TXLJHC":45,"MDQLNR":5,"MGNTYF":10,"BIEFOZ":45,"WSFYFG":5,"TYTWHE":10,"JTWALB":45,"AAKMIW":5,"POEADV":10,"BTNGQI":45,"HSFXKV":5,"UEVYOM":10,"LJTKPN":55,"RUXLYS":5,"ZQYPLL":37,"AZTDIF":13,"XGYOYA":10,"GXSSGD":45,"PATRZW":5,"JGBQFN":10,"FYNWES":45,"AKLOPH":5,"PYTFHW":10,"RDSXOM":40,"FWLZSG":10,"GXSWTR":10,"XEVDKE":10}'}
+  properties: {col_widths: '{"TXLJHC":45,"MDQLNR":5,"MGNTYF":10,"BIEFOZ":45,"WSFYFG":5,"TYTWHE":10,"JTWALB":45,"AAKMIW":5,"POEADV":10,"BTNGQI":45,"HSFXKV":5,"UEVYOM":10,"LJTKPN":55,"RUXLYS":5,"ZQYPLL":52,"AZTDIF":13,"GXSSGD":45,"PATRZW":5,"JGBQFN":10,"FYNWES":45,"AKLOPH":5,"RDSXOM":40,"FWLZSG":10,"SUBBRM":5}'}
   name: column_panel_2
   layout_properties: {slot: default}
   components:
@@ -64,7 +64,7 @@ components:
     layout_properties: {grid_position: 'HUJQSP,MDQLNR', full_width_row: true}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      foreground: '', visible: false, text: '', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: 'fa:refresh'}
     name: button_4
@@ -86,11 +86,12 @@ components:
     layout_properties: {grid_position: 'MNJZUF,WSFYFG', full_width_row: true}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      foreground: '', visible: false, text: '', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: 'fa:refresh'}
     name: button_5
     layout_properties: {grid_position: 'MNJZUF,TYTWHE', full_width_row: true}
+    event_bindings: {}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: 'Nu se afla
@@ -108,11 +109,12 @@ components:
     layout_properties: {grid_position: 'OCBVLN,AAKMIW', full_width_row: true}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      foreground: '', visible: false, text: '', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: 'fa:refresh'}
     name: button_6
     layout_properties: {grid_position: 'OCBVLN,POEADV', full_width_row: true}
+    event_bindings: {}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: Nu figureaza in CRC decat cu cel mult cu serviciul datoriei A sau B cu sume mai mici de 50.000 le,
@@ -129,11 +131,12 @@ components:
     layout_properties: {grid_position: 'ZHGNHH,HSFXKV', full_width_row: true}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      foreground: '', visible: false, text: '', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: 'fa:refresh'}
     name: button_7
     layout_properties: {grid_position: 'ZHGNHH,UEVYOM', full_width_row: true}
+    event_bindings: {}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: 'Nu are datorii
@@ -149,16 +152,9 @@ components:
     properties: {height: 32}
     name: spacer_6
     layout_properties: {grid_position: 'TWPBGN,RUXLYS', full_width_row: true}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: (auto check), font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_3
-    layout_properties: {grid_position: 'TWPBGN,XEVDKE', full_width_row: true}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: Corespunde ratingului intern al bancii,
+      foreground: '', allow_indeterminate: false, visible: true, text: Corespunde ratingului intern al bancii(autoverificare dupa rulare analiza),
       font_size: 12, font: '', spacing_above: small, spacing_below: small, italic: false,
       background: '', bold: false, checked: false, underline: false}
     name: check_box_6
@@ -170,13 +166,6 @@ components:
     properties: {height: 32}
     name: spacer_10
     layout_properties: {grid_position: 'KPGSQP,FWLZSG', full_width_row: true}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: (auto check), font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_2
-    layout_properties: {grid_position: 'KPGSQP,GXSWTR', full_width_row: true}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: Nu are instituite popriri pe conturi,
@@ -187,6 +176,14 @@ components:
     event_bindings: {change: check_box_7_change}
     data_bindings:
     - {property: checked, code: 'self.item[''crit''][''g'']', writeback: true}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:refresh'}
+    name: button_8
+    layout_properties: {grid_position: 'PWFGEO,SUBBRM', full_width_row: true}
+    event_bindings: {click: button_8_click}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: Nu este in insolventa,
@@ -201,14 +198,7 @@ components:
     properties: {height: 32}
     name: spacer_7
     layout_properties: {grid_position: 'PWFGEO,AZTDIF', full_width_row: true}
-  - type: Button
-    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: 'fa:refresh'}
-    name: button_8
-    layout_properties: {grid_position: 'PWFGEO,XGYOYA', full_width_row: true}
-    event_bindings: {click: button_8_click}
+    event_bindings: {}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: Banca nu a deschis procedura executarii asupra oricarui membru al grupului (asociati/actionari cu ponderi peste 10%)in istoric,
@@ -241,10 +231,9 @@ components:
     - {property: checked, code: 'self.item[''crit''][''k'']', writeback: true}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-      foreground: '', allow_indeterminate: false, visible: true, text: 'EBITDA pozitiv
-        (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la
-        ultima balanta ', font_size: 12, font: '', spacing_above: small, spacing_below: small,
-      italic: false, background: '', bold: false, checked: false, underline: false}
+      foreground: '', allow_indeterminate: false, visible: true, text: EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta (autoverificare dupa rulare analiza),
+      font_size: 12, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, checked: false, underline: false}
     name: check_box_13
     layout_properties: {grid_position: 'SHLVUJ,FYNWES', full_width_row: true}
     event_bindings: {change: check_box_13_change}
@@ -254,13 +243,6 @@ components:
     properties: {height: 32}
     name: spacer_9
     layout_properties: {grid_position: 'SHLVUJ,AKLOPH', full_width_row: true}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: (auto check), font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_1
-    layout_properties: {grid_position: 'SHLVUJ,PYTFHW', full_width_row: true}
   - type: CheckBox
     properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', allow_indeterminate: false, visible: true, text: Activitatea clientului nu se regaseste in activitatile interzise la creditare de catre banca,
@@ -290,8 +272,10 @@ components:
     layout_properties: {grid_position: 'ISPUBE,PATRZW', full_width_row: true}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      foreground: '', visible: false, text: '', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: 'fa:refresh'}
     name: button_9
     layout_properties: {grid_position: 'ISPUBE,JGBQFN', full_width_row: true}
+    event_bindings: {}
+  event_bindings: {}
