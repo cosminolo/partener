@@ -22,7 +22,7 @@ class verific(verificTemplate):
     global p1    
     p1 = anvil.server.call("get_p1", self.ups())
     global cui
-    cui = p1['gen']['cui']
+    cui = str(p1['gen']['cui'])
     global den 
     den = p1['gen']['name']
     self.text_box_1.text = den

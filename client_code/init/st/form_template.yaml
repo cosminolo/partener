@@ -439,7 +439,7 @@ components:
       name: text_box_1
       layout_properties: {row: JNGRGR, width_xs: 1, col_xs: 1, width: 76, x: 29.875,
         y: 9.125}
-      event_bindings: {pressed_enter: text_box_1_pressed_enter}
+      event_bindings: {change: text_box_1_change}
       data_bindings:
       - {property: text, code: 'self.item[''gen''][''cui'']', writeback: true}
     - type: Label
