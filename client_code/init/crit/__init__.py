@@ -2,8 +2,8 @@ from ._anvil_designer import critTemplate
 from anvil import *
 import anvil.server
 import stripe.checkout
-import anvil.google.auth, anvil.google.drive
-from anvil.google.drive import app_files
+#import anvil.google.auth, anvil.google.drive
+#from anvil.google.drive import app_files
 import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -102,6 +102,25 @@ class crit(critTemplate):
   def check_box_15_change(self, **event_args):
     anvil.server.call("upc", self.ups(), c1)
     pass
+
+  def button_8_click(self, **event_args):
+    conf = confirm("Consult prin Risco?")
+    c =""
+    if conf == True:
+         c= stripe.checkout.charge(amount=300,
+                           currency="RON",
+                           title="Raport",
+                           description="verificari insolventa")
+    try:
+       if c["result"] == "succeeded":
+         try: 
+            dd
+         except:
+          pass
+    except:
+      pass
+    pass
+
 
 
 
