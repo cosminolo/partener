@@ -14,6 +14,9 @@ services:
       live: pk_test_51LBjMhI63DSlRQi5xjRfmbmC0XiKtOvC1ggT1WLO9eqvIh7StpJ842S19C1mmIizltsjm29eexXcGtkN6npS7uyB00RnxEPrxx}
   server_config: {refresh_token: rt_Ms4ysWjKdJECPBhwC90pulOS4JHaEcP6YIYdC6I7J3OBwoiJ,
     stripe_user_id: acct_1LBjMhI63DSlRQi5}
+- source: /runtime/services/anvil/email.yml
+  client_config: {}
+  server_config: {}
 startup: {type: form, module: init}
 package_name: Partener
 allow_embedding: true

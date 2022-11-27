@@ -200,9 +200,85 @@ class init(initTemplate):
           self.link_4_click()                      
   pass                       
   def link_2_click(self, **event_args):
+    anvil.users.login_with_form()
+    self.ups()
     self.visib(2)
-    self.grid_panel_1.clear()                              
-    pass
+    self.grid_panel_1.clear()
+    global txb
+    txb = self.txb = {}
+    global i
+    global j
+    i = 1
+    j = 0    
+    k=10
+    us = self.login_status.text
+    rows = anvil.server.call("nr_rows", us)                           
+    for j in range (2,rows+2): # rows 
+       for i in range(1, 5): # col 
+          k=j*10+i        
+          if i ==1 :   
+            self.txb[k] = Label(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=350,
+                              foreground="#000",background="#fff"")
+            self.txb[k].role = "form-control"
+            self.txb[k].tag.name = k                           
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=3)
+          if i ==2 :   
+            self.txb[k] = Label(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=400,
+                              foreground="#000",background="#fff")
+            self.txb[k].role = "form-control"
+            self.txb[k].tag.name = k                           
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=5)
+          if i ==3 :   
+            self.txb[k] = Label(font="Arial", font_size="10",
+                              spacing_above = "small",
+                              spacing_below = "small",
+                              width=150,
+                              align="right",
+                              foreground="#000",background="#fff")
+            self.txb[k].role = "form-control"
+            self.txb[k].tag.name = k                           
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=3)
+          if i ==4 :   
+            self.txb[k] = CheckBox(background="#fff", width=15) 
+            self.txb[k].tag.name = k                          
+            self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=1)
+            self.txb[k].set_event_handler('change', self.change)              
+       list_apl = anvil.server.call("sele_us", us)
+       i=1
+       k=21                  
+       for i in range(0,rows):
+         try:                   
+          self.txb[k].text = list_apl[i]["soc"]
+          self.txb[k+1].text = list_apl[i]["facilit"]
+          self.txb[k+2].text = list_apl[i]["dat"]            
+          k=k+10
+         except:
+          pass
+       pass 
+  def change (self, sender,**event_args):
+      S = sender.checked
+      pl = str(sender.tag.name)                   
+      linie = int(pl[:len(pl)-1]) *10+1
+      us = self.login_status.text
+      soc = self.txb[linie].text
+      facilit = self.txb[linie+1].text
+      dat = self.txb[linie+2].text                         
+      c = confirm("Trimit email?")
+      if c == False:                          
+         alert("Email netransmis")  
+         self.grid_panel_1.clear()                    
+      if c == True:                      
+          la = anvil.server.call("sentem", us, soc,facilit, dat)     
+          alert("Facilitatea " + facilit + " pentru " + soc + " a fost transmisa la " + la)                      
+          self.grid_panel_1.clear()                        
+  pass                                                   
+   
 
 
 

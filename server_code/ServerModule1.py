@@ -1,3 +1,4 @@
+import anvil.email
 import anvil.stripe
 import anvil.users
 import anvil.tables as tables
@@ -177,8 +178,21 @@ def pri_ini(tip):
     "p1":"", "p2":"", "p3":"", "p4":"", "p5":"", "p6":"", "p1r":"", "p2r":"", "p3r":"", "p4r":"", "p5r":"", "p6r":""}} 
     return k
   pass
-
-
+@anvil.server.callable
+def sentem(us, soc,facilit, dat):  
+   sb = soc + " - " + facilit
+   tx = "Trimis de: " + us
+   la = "cosmin.ologeanu2017@gmail.com"
+   arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
+   media1 = arh['darh']
+   media2 = arh['farh']
+   anvil.email.send(from_name="Partener", 
+    to= la, 
+    subject= sb,
+    text= tx,                
+    attachments=[media1, media2]) 
+   return la
+pass
 
 
 
