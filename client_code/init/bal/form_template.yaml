@@ -5,7 +5,7 @@ container:
   event_bindings: {}
 components:
 - type: XYPanel
-  properties: {height: 856, width: 540}
+  properties: {height: 751, width: 540}
   name: xy_panel_1
   layout_properties: {slot: left-nav}
   components:
@@ -610,42 +610,6 @@ components:
       underline: false, icon: ''}
     name: label_27
     layout_properties: {x: 219.5, y: 18, width: 116}
-    event_bindings: {}
-  - type: FileLoader
-    properties:
-      role: raised
-      show_state: true
-      align: left
-      tooltip: ''
-      border: ''
-      file_types: null
-      enabled: true
-      files: []
-      foreground: ''
-      visible: true
-      text: ''
-      font_size: 16
-      font: ''
-      spacing_above: small
-      icon_align: left
-      spacing_below: small
-      italic: false
-      file: null
-      background: ''
-      bold: false
-      underline: false
-      multiple: false
-      icon: fa:upload
-    name: file_loader_2
-    layout_properties: {x: 3.25, y: 759, width: 110}
-    event_bindings: {change: file_loader_2_change}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Arhiza zip (fisier pt banca ultimile 2 bilanturi cu balantele aferente si ultima balanta),
-      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false, icon: ''}
-    name: label_26
-    layout_properties: {x: 90.5, y: 759, width: 281.25}
     event_bindings: {}
   event_bindings: {}
 - type: GridPanel

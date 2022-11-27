@@ -200,6 +200,11 @@ class analiza(analizaTemplate):
     anvil.media.download(file) 
     pass
 
+  def file_loader_1_change(self, file, **event_args):
+    anvil.server.call("uplf", self.ups(), file)
+    pass
+
+
 
 
 

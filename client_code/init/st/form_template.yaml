@@ -945,9 +945,9 @@ components:
         border: ''
         enabled: true
         foreground: ''
-        items: ['Neagresiva, merge cu produse de inalta calitate                Neagresiva,
-            mizeaza pe volumul produselor comercializate', 'Agresiva, merge cu produse
-            exclusiviste', 'Nu are strategie, se acomodeaza pietei', '']
+        items: ['Neagresiva, merge cu produse de inalta calitate', 'Neagresiva, mizeaza
+            pe volumul produselor comercializate', 'Agresiva, merge cu produse exclusiviste',
+          'Nu are strategie, se acomodeaza pietei', '']
         visible: true
         font_size: 14
         font: ''

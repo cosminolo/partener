@@ -210,9 +210,6 @@ class bal(balTemplate):
     open_form('init.bal')
     pass
 
-  def file_loader_2_change(self, file, **event_args):
-    anvil.server.call("uplf", self.ups(), file)
-    pass
 
 
 
