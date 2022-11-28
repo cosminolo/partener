@@ -297,6 +297,23 @@ class analiza(analizaTemplate):
     c1['ar']['comb_val'] = str(c1['ar']['l9val']) + ";" + str(c1['ar']['l10val'])
     jb = anvil.server.call("get_bal", self.ups())
     r = anvil.server.call("ruleaza",self.ups(),p1,c1, jb)
+    if r['r1'] == "A" or r['r1']=="B" or r['r1']=="C":
+          self.text_area_1.text = "DA (" +  r['r1'] +")"
+          c1['crit']['f'] = True
+    else:
+         self.text_area_1.text = "NU (" +  r['r1'] +")"
+         c1['crit']['f'] = False
+    if int(c1['ar']['per'])<= 36:
+        self.text_area_2.text = "DA (max 36 luni)"
+    if int(c1['ar']['per'])> 36:
+        self.text_area_2.text = "NU (max 36 luni)"
+    
+    
+    
+    
+    
+    
+    
     pass
   
   

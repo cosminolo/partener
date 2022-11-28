@@ -182,7 +182,8 @@ def pri_ini(tip):
 def sentem(us, soc,facilit, dat):  
    sb = soc + " - " + facilit
    tx = "Trimis de: " + us
-   la = "cosmin.ologeanu2017@gmail.com"
+   #la = "cosmin.ologeanu2017@gmail.com"
+   la = "cosmin.ologeanu@cec.ro" 
    arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
    media1 = arh['darh']
    media2 = arh['farh']
