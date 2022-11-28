@@ -193,6 +193,12 @@ def sentem(us, soc,facilit, dat):
     attachments=[media1, media2]) 
    return la
 pass
+@anvil.server.callable
+def clr_ar(us):
+  c1=app_tables.lucru.get(user=id)["ar"]
+  for i in 
+
+
 
 
 

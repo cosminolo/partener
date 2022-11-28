@@ -33,8 +33,7 @@ class analiza(analizaTemplate):
           return us
       pass 
     
-  def init(self):
-    
+  def init(self):    
     if p1['facilitate']['denumit'] == 'Linie de Credit - acordare/suplimentare':
       self.label_13.text = "Total linii de credit in derulare linii la alte banci"
       c1['ar']['l9den'] = "Total linii de credit in derulare linii la alte banci"
@@ -47,8 +46,7 @@ class analiza(analizaTemplate):
       self.label_17.text = "Perioada solicitata corespunde maximului conform situatiilor financiare"
       self.label_18.text = "Suma solicitata se incadreaza in maximul dat de cifra de afaceri"
       self.label_19.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
-      self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"
-           
+      self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"           
       c1['ar']['p1'] = "A. Incadrare in max de 30% sau in max 50% (daca nu mai are linii de credit la alte banci) din CA ultimul exercitiu financiar. Total credite act. curenta la banca max 75% in CA"
       c1['ar']['p2'] = "B. Incadrare in max dat de ciclul operational de la ultima balanta"
       c1['ar']['p3'] = "C. Acoperire sarcina fin. (EBITDA/total sarcina fin.): >=1,1/>=1 pt.agric. "
@@ -56,10 +54,26 @@ class analiza(analizaTemplate):
       c1['ar']['p5'] = "E. Realizare indicatori financiari suplimentari (min.50%)"
       c1['ar']['p6'] = "F. Criterii: Criterii standard si suplimentare; Per >12 luni: CA bilant > 1 mil lei, performanta A, B sau C pt. client existent cu plafon linie in derulare"
       anvil.server.call("upc", self.ups(), c1)
-    #if p1['facilitate']['denumit'] == Linie de Credit - prelungire: 
-    
-    
-    
+    if p1['facilitate']['denumit'] == "Linie de Credit - prelungire": 
+      self.label_13.text = "Total linii de credit in derulare linii la alte banci"
+      c1['ar']['l9den'] = "Total linii de credit in derulare linii la alte banci"
+      self.label_14.text = "Total linii de credit in derulare linii CEC BANK"
+      c1['ar']['l10den'] = "Total linii de credit in derulare linii CEC BANK"
+      c1['ar']['comb_den'] = "Total linii de credit in derulare (linii la alte banci si alte credite revolving la CEC Bank)"
+      self.label_15.text = "Total facilitati pentru act. curenta in derulare la CEC Bank (mai putin credite revolving)"
+      self.label_16.text = "Corespunde ratingului bancii"
+      self.label_17.text = "Perioada solicitata corespunde maximului conform situatiilor financiare"
+      self.label_18.text = "Suma solicitata se incadreaza in maximul dat de cifra de afaceri"
+      self.label_19.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
+      self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"     
+      c1['ar']['l11den'] = "Total facilitati pentru act. curenta in derulare la CEC Bank (mai putin credite revolving)"
+      c1['ar']['p1'] = "A. Incadrare in max de 40% sau 60% (daca nu mai are linii de credit) din CA din ultimul exercitiu financiar. Total credite act. curenta la banca max 75% in CA"
+      c1['ar']['p2'] = "B. Exista plafon al liniei in derulare in suma de:"
+      c1['ar']['p3'] = "C. Acoperire sarcina fin. (EBITDA/total sarcina fin.): >=1,1/>=1 pt.agric."
+      c1['ar']['p4'] = "D. Clasa de performanta A, B sau C"
+      c1['ar']['p5'] = "E. Realizare indicatori financiari suplimentari (min.50%)"
+      c1['ar']['p6'] = "F. Criterii: Criterii standard si suplimentare; Per >12 luni: CA bilant > 1 mil lei, performanta A, B sau C pt. client existent cu plafon linie in derulare"
+      anvil.server.call("upc", self.ups(), c1)    
     pass  
   def text_box_23_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
@@ -191,8 +205,9 @@ class analiza(analizaTemplate):
       c1['ar']['p4r'] = self.text_area_4.text
       c1['ar']['p5r'] = self.text_area_5.text
       anvil.server.call("upc", self.ups(), c1)
-    
-      
+    if p1['facilitate']['denumit'] == "Linie de Credit - prelungire": 
+      c1['ar']['comb_val'] = str(c1['ar']['l9val']) + ";" + str(c1['ar']['l10val'])
+      r = anvil.server.call("ruleaza",self.ups(),p1,c1, jb)
       
     pass
   def text_box_7_pressed_enter(self, **event_args):
