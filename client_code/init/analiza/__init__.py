@@ -194,12 +194,6 @@ class analiza(analizaTemplate):
     
       
       
-      
-      
-      
-      
-      
-      
     pass
   def text_box_7_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
