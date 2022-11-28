@@ -365,8 +365,7 @@ class st(stTemplate):
   def drop_down_2_change(self, **event_args):
     if self.drop_down_2.selected_value == 'garantat cu echipamente/imobile/etc' or self.drop_down_2.selected_value == 'garantat cu mix (fond si alte garantii)':
        self.drop_down_3.items = []
-       for art in ['Linie de Credit - acordare/suplimentare', 
-                'Linie de Credit - acordare/suplimentare',
+       for art in ['Linie de Credit - acordare/suplimentare',                 
                 'Linie de Credit - prelungire',
                 'Linie de Credit - suplimentare 10%',
                 'Credit pentru finantarea activitatii curente',

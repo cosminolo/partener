@@ -94,6 +94,7 @@ components:
       name: label_14
       layout_properties: {grid_position: 'HGQUGC,MGBFVR', full_width_row: true, row_background: 'theme:Gray
           100'}
+      event_bindings: {}
     - type: Button
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small,

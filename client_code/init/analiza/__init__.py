@@ -56,7 +56,10 @@ class analiza(analizaTemplate):
       c1['ar']['p5'] = "E. Realizare indicatori financiari suplimentari (min.50%)"
       c1['ar']['p6'] = "F. Criterii: Criterii standard si suplimentare; Per >12 luni: CA bilant > 1 mil lei, performanta A, B sau C pt. client existent cu plafon linie in derulare"
       anvil.server.call("upc", self.ups(), c1)
-     
+    #if p1['facilitate']['denumit'] == Linie de Credit - prelungire: 
+    
+    
+    
     pass  
   def text_box_23_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
@@ -188,6 +191,15 @@ class analiza(analizaTemplate):
       c1['ar']['p4r'] = self.text_area_4.text
       c1['ar']['p5r'] = self.text_area_5.text
       anvil.server.call("upc", self.ups(), c1)
+    
+      
+      
+      
+      
+      
+      
+      
+      
     pass
   def text_box_7_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
