@@ -201,7 +201,7 @@ def clr_ar(id):
   c1["ar"] = cc["ar"]
   us_row = app_tables.lucru.get(user=id)
   us_row.update(ar=c1)
-
+pass
 
 
 

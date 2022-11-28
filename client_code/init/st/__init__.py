@@ -408,7 +408,9 @@ class st(stTemplate):
 
   def drop_down_3_change(self, **event_args):
     if self.drop_down_3.selected_value:
-        anvil.server.call("sp1", self.ups(), p1) 
+        anvil.server.call("sp1", self.ups(), p1)
+        anvil.server.call("clr_ar", self.ups())                       
+                           
     pass
 
   def drop_down_5_change(self, **event_args):
