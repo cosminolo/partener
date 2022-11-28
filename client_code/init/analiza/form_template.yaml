@@ -131,11 +131,11 @@ components:
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_7
-    layout_properties: {row: JDBSSU, width_xs: 7, col_xs: 2, width: 412.25}
+    layout_properties: {row: JDBSSU, width_xs: 7, col_xs: 2, width: 536.844}
     event_bindings: {pressed_enter: text_box_7_pressed_enter}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''tip'']', writeback: false}
@@ -149,11 +149,11 @@ components:
     event_bindings: {}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+      border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_8
-    layout_properties: {row: RHZLQR, width_xs: 3, col_xs: 3, width: 162.5}
+    layout_properties: {row: RHZLQR, width_xs: 3, col_xs: 3, width: 210.641}
     event_bindings: {}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''suma_lei'']', writeback: true}
@@ -166,12 +166,12 @@ components:
     layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 0, width: 148.328}
     event_bindings: {}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+      border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_9
-    layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 2, width: 100.984}
+    layout_properties: {row: JWNXPX, width_xs: 2, col_xs: 2, width: 129.094}
     event_bindings: {}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''per'']', writeback: false}
@@ -186,12 +186,12 @@ components:
     layout_properties: {row: NNQCKC, width_xs: 8, col_xs: 0, width: 493.984}
     event_bindings: {}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_11
-    layout_properties: {row: NNQCKC, width_xs: 3, col_xs: 8, width: 162.5}
+    layout_properties: {row: NNQCKC, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {lost_focus: text_box_11_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l1'']', writeback: true}
@@ -206,12 +206,12 @@ components:
     layout_properties: {row: ELVYUB, width_xs: 8, col_xs: 0, width: 493.984}
     event_bindings: {}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_12
-    layout_properties: {row: ELVYUB, width_xs: 3, col_xs: 8, width: 166.5}
+    layout_properties: {row: ELVYUB, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {lost_focus: text_box_12_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l2'']', writeback: true}
@@ -227,12 +227,12 @@ components:
     layout_properties: {row: YWFXPQ, width_xs: 8, col_xs: 0, width: 493.984}
     event_bindings: {}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_13
-    layout_properties: {row: YWFXPQ, width_xs: 3, col_xs: 8, width: 166.5}
+    layout_properties: {row: YWFXPQ, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {lost_focus: text_box_13_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l3'']', writeback: true}
@@ -248,12 +248,12 @@ components:
     layout_properties: {row: ZWWKKA, width_xs: 8, col_xs: 0, width: 493.984}
     event_bindings: {}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_14
-    layout_properties: {row: ZWWKKA, width_xs: 3, col_xs: 8, width: 162.5}
+    layout_properties: {row: ZWWKKA, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {lost_focus: text_box_14_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l4'']', writeback: true}
@@ -266,12 +266,12 @@ components:
     layout_properties: {row: LNPUEW, width_xs: 8, col_xs: 0, width: 493.984}
     event_bindings: {}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_15
-    layout_properties: {row: LNPUEW, width_xs: 3, col_xs: 8, width: 162.5}
+    layout_properties: {row: LNPUEW, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {lost_focus: text_box_15_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l5'']', writeback: true}
@@ -284,12 +284,12 @@ components:
     layout_properties: {row: CDOOUE, width_xs: 8, col_xs: 0, width: 493.984}
     event_bindings: {}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_16
-    layout_properties: {row: CDOOUE, width_xs: 3, col_xs: 8, width: 162.5}
+    layout_properties: {row: CDOOUE, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {lost_focus: text_box_16_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l6'']', writeback: true}
@@ -302,12 +302,12 @@ components:
     layout_properties: {row: EGGLDE, width_xs: 8, col_xs: 0, width: 493.984}
     event_bindings: {}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_17
-    layout_properties: {row: EGGLDE, width_xs: 3, col_xs: 8, width: 166.5}
+    layout_properties: {row: EGGLDE, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {focus: text_box_17_focus}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l7'']', writeback: true}
@@ -322,12 +322,12 @@ components:
     layout_properties: {row: ZNQECP, width_xs: 8, col_xs: 0, width: 493.984}
     event_bindings: {}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
+      italic: false, background: '', bold: true, underline: false}
     name: text_box_18
-    layout_properties: {row: ZNQECP, width_xs: 3, col_xs: 8, width: 162.5}
+    layout_properties: {row: ZNQECP, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l8'']', writeback: true}
@@ -342,12 +342,12 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l9den'']'}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_19
-    layout_properties: {row: CJPREP, width_xs: 3, col_xs: 8, width: 162.5}
+    layout_properties: {row: CJPREP, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {lost_focus: text_box_19_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l9val'']', writeback: true}
@@ -362,12 +362,12 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l10den'']'}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_20
-    layout_properties: {row: HDTBFV, width_xs: 3, col_xs: 8, width: 162.5}
+    layout_properties: {row: HDTBFV, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {lost_focus: text_box_20_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l10val'']', writeback: true}
@@ -382,12 +382,12 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l11den'']'}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
       border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
       font_size: 16, font: '', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_box_21
-    layout_properties: {row: HGABZZ, width_xs: 3, col_xs: 8, width: 162.5}
+    layout_properties: {row: HGABZZ, width_xs: 3, col_xs: 8, width: 210.641}
     event_bindings: {lost_focus: text_box_21_lost_focus}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''l11val'']', writeback: true}
@@ -425,11 +425,11 @@ components:
     event_bindings: {}
   - type: TextArea
     properties: {role: null, align: left, height: 38.1875, tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',
+      font_size: 14, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_area_1
-    layout_properties: {row: LIACWE, width_xs: 4, col_xs: 8, width: 306}
+    layout_properties: {row: LIACWE, width_xs: 4, col_xs: 8, width: 276.188}
     event_bindings: {}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''p1r'']', writeback: false}
@@ -443,11 +443,11 @@ components:
     event_bindings: {}
   - type: TextArea
     properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',
+      font_size: 14, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_area_2
-    layout_properties: {row: ODKWHM, width_xs: 4, col_xs: 8, width: 306}
+    layout_properties: {row: ODKWHM, width_xs: 4, col_xs: 8, width: 276.188}
     event_bindings: {}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''p2r'']', writeback: false}
@@ -461,11 +461,11 @@ components:
     event_bindings: {}
   - type: TextArea
     properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',
+      font_size: 14, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_area_3
-    layout_properties: {row: YXRDFN, width_xs: 4, col_xs: 8, width: 306}
+    layout_properties: {row: YXRDFN, width_xs: 4, col_xs: 8, width: 276.188}
     event_bindings: {}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''p3r'']', writeback: true}
@@ -479,11 +479,11 @@ components:
     event_bindings: {}
   - type: TextArea
     properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',
+      font_size: 14, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_area_4
-    layout_properties: {row: NYPBUZ, width_xs: 4, col_xs: 8, width: 306}
+    layout_properties: {row: NYPBUZ, width_xs: 4, col_xs: 8, width: 284.188}
     event_bindings: {}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''p4r'']', writeback: true}
@@ -497,11 +497,11 @@ components:
     event_bindings: {}
   - type: TextArea
     properties: {role: null, align: left, height: '', tooltip: '', placeholder: '',
-      border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      border: solid blue 2px, enabled: false, foreground: '', visible: true, text: '',
+      font_size: 14, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: text_area_5
-    layout_properties: {row: VMNXBC, width_xs: 4, col_xs: 8, width: 306}
+    layout_properties: {row: VMNXBC, width_xs: 4, col_xs: 8, width: 181.531}
     event_bindings: {}
     data_bindings:
     - {property: text, code: 'self.item[''ar''][''p5r'']', writeback: true}

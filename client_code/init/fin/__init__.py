@@ -142,8 +142,6 @@ class fin(finTemplate):
     c = datetime.strptime(d1, '%Y-%m-%d')
     self.text_box_120.text =c.strftime('%d-%m-%Y')  
     pass
-
-  
   def lf(self, sender,**event_args):
     sender.enabled = True
     s = sender.text
@@ -152,7 +150,6 @@ class fin(finTemplate):
         pass
     else:         
         sender.text = 0   
-      
         alert("Doar numar fara zecimale sau separatori!") 
     pass
 

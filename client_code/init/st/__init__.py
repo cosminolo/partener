@@ -415,18 +415,30 @@ class st(stTemplate):
   def drop_down_5_change(self, **event_args):
     if self.drop_down_5.selected_value:
         anvil.server.call("sp1", self.ups(), p1) 
+        anvil.server.call("clr_ar", self.ups())                        
     pass
 
   def text_box_9_lost_focus(self, **event_args):
-    anvil.server.call("sp1", self.ups(), p1) 
+    self.lf(self.text_box_9)
+    anvil.server.call("clr_ar", self.ups())                            
     pass
-
+  def lf(self, sender,**event_args):
+    sender.enabled = True
+    s = sender.text
+    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        anvil.server.call("sp1", self.ups(), p1)
+        pass
+    else:         
+        sender.text = 0   
+        alert("Doar numar fara zecimale sau separatori!") 
+    pass
   def text_box_10_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
 
   def text_box_10_lost_focus(self, **event_args):
-    anvil.server.call("sp1", self.ups(), p1)
+    self.lf(self.text_box_10)
+    anvil.server.call("clr_ar", self.ups())                            
     pass
 
   def text_area_1_lost_focus(self, **event_args):
@@ -1448,10 +1460,20 @@ class st(stTemplate):
   def text_box_1_change(self, **event_args):
     anvil.server.call("sp1", self.ups(), p1)
     pass
-
+  
   def button_19_click(self, **event_args):
     alert("sumar produs")
     pass
+
+  def text_box_13_lost_focus(self, **event_args):
+    self.lf(self.text_box_13)    
+    pass
+
+  def text_box_14_lost_focus(self, **event_args):
+   self.lf(self.text_box_14)
+   pass
+
+
 
 
 
