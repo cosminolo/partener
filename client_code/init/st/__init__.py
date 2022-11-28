@@ -367,7 +367,6 @@ class st(stTemplate):
        self.drop_down_3.items = []
        for art in ['Linie de Credit - acordare/suplimentare',                 
                 'Linie de Credit - prelungire',
-                'Linie de Credit - suplimentare 10%',
                 'Credit pentru finantarea activitatii curente',
                 'Credit pentru achitarea datoriilor la buget',
                 'Credit ipotecar pentru investitii acordat PJ',
@@ -375,13 +374,13 @@ class st(stTemplate):
                 'Credit de investitii pentru achizia de teren pentru productia agricola']:
           self.drop_down_3.items.append(art)
        self.drop_down_3.items = self.drop_down_3.items
-    if self.drop_down_2.selected_value == 'negarantat':
-      self.drop_down_3.items = []
-      for art in ['Descoperit de Cont pe Card Business - Client Nou, cu expunere sub 6 luni', 
-                'Descoperit de Cont pe Card Business - Client Existent, cu expunere de peste 6 luni',
-                'Visa Business'] :
-         self.drop_down_3.items.append(art)
-      self.drop_down_3.items = self.drop_down_3.items
+    #if self.drop_down_2.selected_value == 'negarantat':
+     # self.drop_down_3.items = []
+     # for art in ['Descoperit de Cont pe Card Business - Client Nou, cu expunere sub 6 luni', 
+      #          'Descoperit de Cont pe Card Business - Client Existent, cu expunere de peste 6 luni',
+      #          'Visa Business'] :
+      #   self.drop_down_3.items.append(art)
+     # self.drop_down_3.items = self.drop_down_3.items
       
     if self.drop_down_2.selected_value == 'valoare mica cu FGCR':
       self.drop_down_3.items = []
@@ -439,18 +438,14 @@ class st(stTemplate):
     pass
   def con_drop3(self):
     self.drop_down_3.items = []
-    for art in ['', 'Linie de Credit - acordare/suplimentare', 
+    for art in ['',  
                 'Linie de Credit - acordare/suplimentare',
                 'Linie de Credit - prelungire',
-                'Linie de Credit - suplimentare 10%',
                 'Credit pentru finantarea activitatii curente',
                 'Credit pentru achitarea datoriilor la buget',
                 'Credit ipotecar pentru investitii acordat PJ',
                 'Credit de investitii',
                 'Credit de investitii pentru achizia de teren pentru productia agricola',
-                'Descoperit de Cont pe Card Business - Client Nou, cu expunere sub 6 luni', 
-                'Descoperit de Cont pe Card Business - Client Existent, cu expunere de peste 6 luni',
-                'Visa Business',
                 'Activitate curenta agricultura 500 mii-FGCR', 
                 'Investitii in agricultura 500 mii-FGCR',
                 'Activitate curenta si investitii in agricultura 500 mii-FGCR' ,
