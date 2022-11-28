@@ -87,7 +87,12 @@ class analiza(analizaTemplate):
       self.label_18.text = "Suma solicitata se incadreaza in maximul dat de cifra de afaceri"
       self.label_19.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
       self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"     
-      
+      c1['ar']['p1'] = "A. Incadrare in max de 30% sau in max 50% (daca nu mai are credite la alte banci pt. act. curenta) din CA din ultimul exercitiu financiar. Total credite act. curenta la banca max 75% in CA"
+      c1['ar']['p2'] = "B. Perioada max 36 luni"
+      c1['ar']['p3'] = "C. Acoperire sarcina fin. (EBITDA/total sarcina fin.): >=1,1/>=1 pt.agric."
+      c1['ar']['p4'] = "D. Clasa de risc de la ultima balanta se mentine sau este superioara clasei de risc din ultimul an"
+      c1['ar']['p5'] = "E. Realizare indicatori financiari extinsi (min.50%)"
+      c1['ar']['p6'] = "F. Criterii de eligibilitate indeplinite"
   pass  
   def text_box_23_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
