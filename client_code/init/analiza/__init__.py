@@ -93,6 +93,26 @@ class analiza(analizaTemplate):
       c1['ar']['p4'] = "D. Clasa de risc de la ultima balanta se mentine sau este superioara clasei de risc din ultimul an"
       c1['ar']['p5'] = "E. Realizare indicatori financiari extinsi (min.50%)"
       c1['ar']['p6'] = "F. Criterii de eligibilitate indeplinite"
+  
+    if p1['facilitate']['denumit'] == "Credit pentru achitarea datoriilor la buget":
+      self.label_13.text = "Nu se completeaza"
+      c1['ar']['l9den'] = "Nu se completeaza"
+      self.label_14.text = "Nu se completeaza"
+      c1['ar']['l10den'] = "Nu se completeaza"
+      c1['ar']['comb_den'] = "Nu se completeaza" 
+      self.label_15.text = "Nu se completeaza"
+      c1['ar']['l11den'] = "Nu se completeaza"
+      self.label_16.text = "Corespunde ratingului bancii"
+      self.label_17.text = "Perioada solicitata corespunde maximului conform situatiilor financiare"
+      self.label_18.text = "Suma solicitata se incadreaza in maximul dat de cifra de afaceri"
+      self.label_19.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
+      self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"     
+      c1['ar']['p1'] = "A. Incadrare in maxim 50% din CA de la ultimul exercitiu financiar"
+      c1['ar']['p2'] = "B. Perioada max 60 luni"
+      c1['ar']['p3'] = "C. Acoperire sarcina fin. (EBITDA/total sarcina fin.): >=1,1/>=1 pt.agric."
+      c1['ar']['p4'] = "D. Clasa de risc de la ultima balanta se mentine sau este superioara clasei de risc din ultimul an"
+      c1['ar']['p5'] = "E. Realizare indicatori financiari extinsi (min.50%)"
+      c1['ar']['p6'] = "F. Criterii de eligibilitate indeplinite"  
   pass  
   def text_box_23_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
@@ -170,6 +190,8 @@ class analiza(analizaTemplate):
       self.linip()  
     if p1['facilitate']['denumit'] == "Credit pentru finantarea activitatii curente":  
       self.actc() 
+    if p1['facilitate']['denumit'] == "Credit pentru achitarea datoriilor la buget":
+      self.buget() 
     pass   
   def linia(self):    
       c1['ar']['comb_val'] = str(c1['ar']['l9val']) + ";" + str(c1['ar']['l10val'])
@@ -320,6 +342,46 @@ class analiza(analizaTemplate):
              self.text_area_3.text = "Nu, creditele contractate de la CEC Bank depasesc 30% din CA de " + str(r['r5'])
            else:
             self.text_area_3.text = "DA, creditele contractate de la CEC Bank nu depasesc 30% din CA de " + str(r['r5'])
+    self.text_area_4.text = "NU"
+    c1['crit']['l'] = False
+    if int(r['r2']) > 0 and int(r['r3']) > 0 and int(r['r4']) > 0:
+          self.text_area_4.text = "DA (EBITDA bilant: " + str(r['r2']) + " EBITDA balanta: " + str(r['r3']) + " capitaluri: " + str(r['r4']) + ")"
+          c1['crit']['l'] = True
+    if int(r['r2']) < 0:
+       self.text_area_4.text = self.text_area_4.text + "(EBITDA bilant negativa" + str(r['r2']) + ")"
+    if int(r['r3']) < 0:
+       self.text_area_4.text = self.text_area_4.text + "(EBITDA balanta negativa" + str(r['r3']) + ")"
+    if int(r['r4']) < 0:
+       self.text_area_4.text = self.text_area_4.text + "(capitaluri proprii la bilant negative" + str(r['r4']) + ")"    
+      
+    self.text_area_5.text = "NU"
+    if int(r['r2'])> 0 and int(r['r2']) / c1['ar']['l8'] > 1.2:
+        self.text_area_5.text = "DA"
+    c1['ar']['p1r'] = self.text_area_1.text
+    c1['ar']['p2r'] = self.text_area_2.text  
+    c1['ar']['p3r'] = self.text_area_3.text
+    c1['ar']['p4r'] = self.text_area_4.text
+    c1['ar']['p5r'] = self.text_area_5.text
+    anvil.server.call("upc", self.ups(), c1)    
+    pass
+  def buget(self):
+    c1['ar']['comb_val'] = "0"
+    jb = anvil.server.call("get_bal", self.ups())
+    r = anvil.server.call("ruleaza",self.ups(),p1,c1, jb)
+    if r['r1'] == "A" or r['r1']=="B" or r['r1']=="C":
+          self.text_area_1.text = "DA (" +  r['r1'] +")"
+          c1['crit']['f'] = True
+    else:
+         self.text_area_1.text = "NU (" +  r['r1'] +")"
+         c1['crit']['f'] = False
+    if int(c1['ar']['per'])<= 36:
+        self.text_area_2.text = "DA (max 36 luni)"
+    if int(c1['ar']['per'])> 60:
+        self.text_area_2.text = "NU (max 60 luni)"
+    if int(c1['ar']['suma_lei']) > 0.5 * int(r['r5']):
+             self.text_area_3.text = "NU, suma maxima depaseste 50% din CA de " + str(r['r5'])
+    else:
+         self.text_area_3.text = "DA, suma maxima nu depaseste 50% din CA de " + str(r['r5'])
     self.text_area_4.text = "NU"
     c1['crit']['l'] = False
     if int(r['r2']) > 0 and int(r['r3']) > 0 and int(r['r4']) > 0:
