@@ -17,7 +17,7 @@ services:
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: init}
+startup: {type: form, module: init.analiza}
 package_name: Partener
 allow_embedding: true
 name: Partener

@@ -369,7 +369,6 @@ class st(stTemplate):
                 'Linie de Credit - prelungire',
                 'Credit pentru finantarea activitatii curente',
                 'Credit pentru achitarea datoriilor la buget',
-                'Credit ipotecar pentru investitii acordat PJ',
                 'Credit de investitii',
                 'Credit de investitii pentru achizia de teren pentru productia agricola']:
           self.drop_down_3.items.append(art)
@@ -385,8 +384,7 @@ class st(stTemplate):
     if self.drop_down_2.selected_value == 'valoare mica cu FGCR':
       self.drop_down_3.items = []
       for art in ['Activitate curenta agricultura 500 mii-FGCR', 
-                'Investitii in agricultura 500 mii-FGCR',
-                'Activitate curenta si investitii in agricultura 500 mii-FGCR'] :
+                'Investitii in agricultura 500 mii-FGCR'] :
           self.drop_down_3.items.append(art)
       self.drop_down_3.items = self.drop_down_3.items  
     if self.drop_down_2.selected_value == 'OUG 43':
@@ -455,12 +453,10 @@ class st(stTemplate):
                 'Linie de Credit - prelungire',
                 'Credit pentru finantarea activitatii curente',
                 'Credit pentru achitarea datoriilor la buget',
-                'Credit ipotecar pentru investitii acordat PJ',
                 'Credit de investitii',
                 'Credit de investitii pentru achizia de teren pentru productia agricola',
                 'Activitate curenta agricultura 500 mii-FGCR', 
                 'Investitii in agricultura 500 mii-FGCR',
-                'Activitate curenta si investitii in agricultura 500 mii-FGCR' ,
                 'Credit pentru finantarea activitatii curente OUG 43/2013', 
                 'Credit pentru finantarea investitiilor in domeniul agricol OUG 43/2013',
                 'Credit pentru achizitia terenurilor cu destinatie agricola OUG 43/2013']:
