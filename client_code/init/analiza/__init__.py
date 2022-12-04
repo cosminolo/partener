@@ -246,25 +246,7 @@ class analiza(analizaTemplate):
       c1['ar']['p4'] = "D. Datorii totale de max 85% din pasiv (inclusiv suma solicitata)"
       c1['ar']['p5'] = "E. Realizare indicatori financiari extinsi (min.50%)"
       c1['ar']['p6'] = "F. Criterii de eligibilitate indeplinite;Perioada: max 180 luni" 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-pass  
+    pass  
   def text_box_23_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
@@ -289,7 +271,6 @@ pass
         pass
     else:         
         sender.text = 0   
-      
         alert("Doar numar fara zecimale sau separatori!") 
     pass
 
@@ -377,7 +358,41 @@ pass
       self.oug_ac(r) 
       self.comun(r)
       anvil.server.call("upc", self.ups(), c1)
-    
+    if p1['facilitate']['denumit'] == "Credit de investitii":  
+      c1['ar']['comb_val'] = str(c1['ar']['l9val'])
+      jb = anvil.server.call("get_bal", self.ups())
+      r = anvil.server.call("ruleaza",self.ups(),p1,c1, jb)
+      #self.inv(r) 
+      self.comun(r)
+      anvil.server.call("upc", self.ups(), c1)
+    if p1['facilitate']['denumit'] == "Credit de investitii pentru achizia de teren pentru productia agricola":  
+      c1['ar']['comb_val'] = str(c1['ar']['l9val'])
+      jb = anvil.server.call("get_bal", self.ups())
+      r = anvil.server.call("ruleaza",self.ups(),p1,c1, jb)
+      #self.inv_t(r) 
+      self.comun(r)
+      anvil.server.call("upc", self.ups(), c1)  
+    if p1['facilitate']['denumit'] == "Investitii in agricultura 500 mii-FGCR":  
+      c1['ar']['comb_val'] = str(c1['ar']['l9val'])
+      jb = anvil.server.call("get_bal", self.ups())
+      r = anvil.server.call("ruleaza",self.ups(),p1,c1, jb)
+      #self.inv_fgcr(r) 
+      self.comun(r)
+      anvil.server.call("upc", self.ups(), c1)  
+    if p1['facilitate']['denumit'] == "Credit pentru finantarea investitiilor in domeniul agricol OUG 43/2013":  
+      c1['ar']['comb_val'] = str(c1['ar']['l9val'])
+      jb = anvil.server.call("get_bal", self.ups())
+      r = anvil.server.call("ruleaza",self.ups(),p1,c1, jb)
+      #self.inv_oug(r) 
+      self.comun(r)
+      anvil.server.call("upc", self.ups(), c1)    
+    if p1['facilitate']['denumit'] == "Credit pentru achizitia terenurilor cu destinatie agricola OUG 43/2013":  
+      c1['ar']['comb_val'] = str(c1['ar']['l9val'])
+      jb = anvil.server.call("get_bal", self.ups())
+      r = anvil.server.call("ruleaza",self.ups(),p1,c1, jb)
+      #self.inv_oug_t(r) 
+      self.comun(r)
+      anvil.server.call("upc", self.ups(), c1)     
     pass   
  
   def linia(self, r):    
