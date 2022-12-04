@@ -151,7 +151,120 @@ class analiza(analizaTemplate):
       c1['ar']['p4'] = "D. Clasa de risc de la ultima balanta se mentine sau este superioara clasei de risc din ultimul an"
       c1['ar']['p5'] = "E. Realizare indicatori financiari extinsi (min.50%)"
       c1['ar']['p6'] = "F. Criterii de eligibilitate indeplinite"
-  pass  
+    if p1['facilitate']['denumit'] == "Credit de investitii":
+      self.label_13.text = "- Aport propriu pentru investitie"
+      c1['ar']['l9den'] = "- Aport propriu pentru investitie"
+      self.label_14.text = "Nu se completeaza"
+      c1['ar']['l10den'] ="Nu se completeaza"
+      c1['ar']['comb_den'] = "- Aport propriu pentru investitie" 
+      self.label_15.text = " - Suma refinantata, daca este cazul"
+      c1['ar']['l11den'] = " - Suma refinantata, daca este cazul"
+      self.label_16.text = "Corespunde ratingului bancii"
+      self.label_17.text = "Perioada se incadreaza in maximul de produs"
+      self.label_18.text = "Aportul propriu se incadreaza in minimul solicitat"
+      self.label_19.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
+      self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"     
+      c1['ar']['p1'] = "A. Existenta aportului propriu de min 15%"
+      c1['ar']['p2'] = "B. Fond de Rulment pozitiv"
+      c1['ar']['p3'] = "C. Acoperire sarcina fin. (EBITDA/total sarcina fin.): >=1,1/>=1 pt.agric."
+      c1['ar']['p4'] = "D. Datorii totale de max 85% din pasiv (caz acordare noua/suma suplimentata) sau 75% din pasiv (caz refinantare)"
+      c1['ar']['p5'] = "E. Realizare indicatori financiari extinsi (min.50%)"
+      c1['ar']['p6'] = "F. Criterii: Criterii de eligibilitate indeplinite; Perioada max 144 luni"
+    if p1['facilitate']['denumit'] == "Credit de investitii pentru achizia de teren pentru productia agricola":
+      self.label_13.text = " - Aport propriu pentru investitie"
+      c1['ar']['l9den'] = " - Aport propriu pentru investitie"
+      self.label_14.text = "Nu se completeaza"
+      c1['ar']['l10den'] ="Nu se completeaza"
+      c1['ar']['comb_den'] = " - Aport propriu pentru investitie" 
+      self.label_15.text = "  - Valoare garantie FNGCIMM"
+      c1['ar']['l11den'] = "  - Valoare garantie FNGCIMM"
+      self.label_16.text = "Corespunde ratingului bancii"
+      self.label_17.text = "Perioada se incadreaza in maximul de produs"
+      self.label_18.text = "Aportul propriu se incadreaza in minimul solicitat"
+      self.label_19.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
+      self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"     
+      c1['ar']['p1'] = "A. Existenta aportului propriu de min 15%"
+      c1['ar']['p2'] = "B. Fond de Rulment pozitiv la ultimul bilant anual"
+      c1['ar']['p3'] = "C. Acoperire sarcina fin. (EBITDA/total sarcina fin.): >=1,1/>=1 pt.agric."
+      c1['ar']['p4'] = "D. Datorii totale de max 85% din pasiv (inclusiv suma solicitata)"
+      c1['ar']['p5'] = "E. Realizare indicatori financiari extinsi (min.50%)"
+      c1['ar']['p6'] = "F. Criterii de eligibilitate indeplinite; Perioada: max 180 luni fara FNGCIMM; Max 120 luni cu FNGCIMM"
+    if p1['facilitate']['denumit'] == "Investitii in agricultura 500 mii-FGCR":
+      self.label_13.text = "- Aport propriu pentru investitie"
+      c1['ar']['l9den'] = "- Aport propriu pentru investitie"
+      self.label_14.text = "Nu se completeaza"
+      c1['ar']['l10den'] ="Nu se completeaza"
+      c1['ar']['comb_den'] = " - Aport propriu pentru investitie" 
+      self.label_15.text = "Nu se completeaza"
+      c1['ar']['l11den'] = "Nu se completeaza"
+      self.label_16.text = "Corespunde ratingului bancii"
+      self.label_17.text = "Perioada se incadreaza in maximul de produs"
+      self.label_18.text = "Aportul propriu se incadreaza in minimul solicitat"
+      self.label_19.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
+      self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"     
+      c1['ar']['p1'] = "A. Existenta aportului propriu de min 15%"
+      c1['ar']['p2'] = "B. Fond de Rulment pozitiv la ultimul bilant anual"
+      c1['ar']['p3'] = "C. Acoperire sarcina fin. (EBITDA/total sarcina fin.): >=1,1/>=1 pt.agric."
+      c1['ar']['p4'] = "D. Datorii totale de max 85% din pasiv (inclusiv suma solicitata)"
+      c1['ar']['p5'] = "E. Realizare indicatori financiari extinsi (min.50%)"
+      c1['ar']['p6'] = "F. Criterii de eligibilitate indeplinite; 500 mii lei pe max 84 luni"
+    if p1['facilitate']['denumit'] == "Credit pentru finantarea investitiilor in domeniul agricol OUG 43/2013":
+      self.label_13.text = " - Aport propriu pentru investitie"
+      c1['ar']['l9den'] = " - Aport propriu pentru investitie"
+      self.label_14.text = "Nu se completeaza"
+      c1['ar']['l10den'] ="Nu se completeaza"
+      c1['ar']['comb_den'] = " - Aport propriu pentru investitie" 
+      self.label_15.text = "Nu se completeaza"
+      c1['ar']['l11den'] = "Nu se completeaza"
+      self.label_16.text = "Corespunde ratingului bancii"
+      self.label_17.text = "Perioada se incadreaza in maximul de produs"
+      self.label_18.text = "Aportul propriu se incadreaza in minimul solicitat"
+      self.label_19.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
+      self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"     
+      c1['ar']['p1'] = "A. Existenta aportului propriu de min 5%"
+      c1['ar']['p2'] = "B. Fond de Rulment pozitiv la ultimul bilant anual"
+      c1['ar']['p3'] = "C. Acoperire sarcina fin. (EBITDA/total sarcina fin.): >=1,1/>=1 pt.agric."
+      c1['ar']['p4'] = "D. Datorii totale de max 85% din pasiv (inclusiv suma solicitata)"
+      c1['ar']['p5'] = "E. Realizare indicatori financiari extinsi (min.50%)"
+      c1['ar']['p6'] = "F. Criterii de eligibilitate indeplinite;Perioada: max 84 luni"  
+    if p1['facilitate']['denumit'] == "Credit pentru achizitia terenurilor cu destinatie agricola OUG 43/2013":
+      self.label_13.text = " - Aport propriu pentru investitie"
+      c1['ar']['l9den'] = " - Aport propriu pentru investitie"
+      self.label_14.text = "Nu se completeaza"
+      c1['ar']['l10den'] ="Nu se completeaza"
+      c1['ar']['comb_den'] = " - Aport propriu pentru investitie" 
+      self.label_15.text = "Nu se completeaza"
+      c1['ar']['l11den'] = "Nu se completeaza"
+      self.label_16.text = "Corespunde ratingului bancii"
+      self.label_17.text = "Perioada se incadreaza in maximul de produs"
+      self.label_18.text = "Aportul propriu se incadreaza in minimul solicitat"
+      self.label_19.text = "EBITDA pozitiv (la ultimul bilant si la ultima balanta) si capitaluri proprii pozitive la ultima balanta "
+      self.label_20.text = "EBITDA acoperitoare pentru sarcina financiara"     
+      c1['ar']['p1'] = "A. Existenta aportului propriu de min 5%"
+      c1['ar']['p2'] = "B. Fond de Rulment pozitiv la ultimul bilant anual"
+      c1['ar']['p3'] = "C. Acoperire sarcina fin. (EBITDA/total sarcina fin.): >=1,1/>=1 pt.agric."
+      c1['ar']['p4'] = "D. Datorii totale de max 85% din pasiv (inclusiv suma solicitata)"
+      c1['ar']['p5'] = "E. Realizare indicatori financiari extinsi (min.50%)"
+      c1['ar']['p6'] = "F. Criterii de eligibilitate indeplinite;Perioada: max 180 luni" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pass  
   def text_box_23_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
