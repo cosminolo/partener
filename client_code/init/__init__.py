@@ -129,8 +129,8 @@ class init(initTemplate):
     j = 0    
     k=10
     us = self.login_status.text
+    
     rows = anvil.server.call("nr_rows", us)   
-   
     for j in range (2,rows+2): # rows 
        for i in range(1, 5): # col 
           k=j*10+i        
@@ -167,11 +167,11 @@ class init(initTemplate):
             self.txb[k].tag.name = k                          
             self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=1)
             self.txb[k].set_event_handler('clicked', self.clicked)              
-       list_apl = json.loads(json.dumps(anvil.server.call("sele_us", us) ))                               
-                 
+       list_apl = anvil.server.call("sele_us", us)  
+                               
        i=1
        k=21                    
-       for i in range(0,rows):
+       for i in range(0,len(list_apl)):
          try:                   
           self.txb[k].text = list_apl[i]["soc"]
           self.txb[k+1].text = list_apl[i]["facilit"]
