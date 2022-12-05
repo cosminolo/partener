@@ -6,14 +6,15 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-
+import json
 class crit(critTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     # Any code you write here will run when the form opens.
     global c1
-    c1 = anvil.server.call("get_crit", self.ups())
+    c1 = json.loads(anvil.server.call("get_crit", self.ups()))
+    #print(c1)
     self.item = c1
     #print(c1['crit'])
   def ups(self):

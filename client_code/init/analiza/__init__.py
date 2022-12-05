@@ -16,7 +16,7 @@ class analiza(analizaTemplate):
     p1 = anvil.server.call("get_p1", self.ups())
     
     global c1
-    c1 = anvil.server.call("get_crit", self.ups())
+    c1 = json.loads(anvil.server.call("get_crit", self.ups()))
     
     c1['ar']['tip'] = p1['facilitate']['denumit']
     c1['ar']['suma_lei'] = p1['facilitate']['suma']
