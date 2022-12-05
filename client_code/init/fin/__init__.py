@@ -608,8 +608,10 @@ class fin(finTemplate):
     pass
 
   def file_loader_1_change(self, file, **event_args):
-    #if self.file_loader_1.file.length > 0:    
-    anvil.server.call("upld", self.ups(), file)
+    #if self.file_loader_1.file.length > 0:  
+    media = file
+    media = anvil.BlobMedia('arhiva.zip', media.get_bytes())
+    anvil.server.call("upld", self.ups(), media)
   
   pass
 
