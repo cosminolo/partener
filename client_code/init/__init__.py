@@ -168,10 +168,10 @@ class init(initTemplate):
             self.grid_panel_1.add_component(self.txb[k], row=j, col_xs=0, width_xs=1)
             self.txb[k].set_event_handler('clicked', self.clicked)              
        list_apl = anvil.server.call("sele_us", us)  
-       print(list_apl)                       
+                             
        i=1
        k=21                    
-       for i in range(0,len(list_apl)):
+       for i in range(0,rows):
          try:                   
           self.txb[k].text = list_apl[i]["soc"]
           self.txb[k+1].text = list_apl[i]["facilit"]
