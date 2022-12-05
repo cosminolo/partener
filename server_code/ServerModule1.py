@@ -14,15 +14,16 @@ def sentem(us, soc,facilit, dat):
    sb = soc + " - " + facilit
    tx = "Trimis de: " + us
    #la = "cosmin.ologeanu2017@gmail.com"
-   la = "cosmin.ologeanu@cec.ro" 
-   arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
-   media1 = arh['darh']
-   media2 = arh['farh']
+   la = "cosmin.ologeanu2017@gmail.com" 
+   #arh = app_tables.arh.get(user=us, soc=soc,facilit=facilit, dat=dat)
+   media1 =anvil.server.call("get_media", us, soc, facilit, dat)
+   #media2 = arh['farh']
    anvil.email.send(from_name="Partener", 
     to= la, 
     subject= sb,
-    text= tx,                
-    attachments=[media1, media2]) 
+    text= tx,
+    attachments=[media1])                
+    #attachments=[media1, media2])                    
    return la
 pass
 #@anvil.server.callable
