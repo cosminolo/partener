@@ -703,7 +703,7 @@ class st(stTemplate):
   def button_12_click(self, **event_args):
     """This method is called when the button is clicked"""
     mng = {"num": "", "poz": "", "vst": "", "std": "", "exp": "", "stciv": ""}
-    print ( p1['d_manag'])
+    #print ( p1['d_manag'])
     p1['d_manag'].append(mng)                               
     row = len( p1['d_manag'])                                 
     self.mg(row,  p1['d_manag'])                     
@@ -877,6 +877,7 @@ class st(stTemplate):
     pass
                                
   def exb(self, rows, ex):
+    #credite la banci                          
     self.grid_panel_6.clear()    
     #tb = self.tb = {}   
     i = 1
@@ -889,7 +890,7 @@ class st(stTemplate):
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=20,
+                              width=100,
                               align = "left",    
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
@@ -902,7 +903,7 @@ class st(stTemplate):
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=120,
+                              width=100,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
@@ -914,92 +915,92 @@ class st(stTemplate):
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=100,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=2, width_xs=2)
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=2, width_xs=1)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
         if i == 4:
           k=500+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=100,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=8, width_xs=2)
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=3, width_xs=1)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
         if i == 5:
           k=500+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=100,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=10, width_xs=2)
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=4, width_xs=1)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                          
         if i == 6:
           k=500+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=100,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=12, width_xs=2)                                            
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=5, width_xs=1)                                            
         if i == 7:
           k=500+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=100,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=14, width_xs=2) 
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=6, width_xs=1) 
         if i == 8:
           k=500+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=100,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=16, width_xs=2)                          
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=7, width_xs=1)                          
         if i == 9:
           k=500+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=100,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=18, width_xs=2)                          
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=8, width_xs=1)                          
         if i == 10:
           k=500+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=100,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=20, width_xs=2) 
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=9, width_xs=1) 
                                  
         if i == 11:
           k=500+j*10+i        
@@ -1012,7 +1013,7 @@ class st(stTemplate):
           self.txb[k].tag.name = k
           self.txb[k].text = "X"
           self.txb[k].role = "raised"                     
-          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=18, width_xs=1)
+          self.grid_panel_6.add_component(self.txb[k], row=j, col_xs=10, width_xs=1)
           self.txb[k].set_event_handler('click', self.lllll_focus)                        
                                  
     i=1
