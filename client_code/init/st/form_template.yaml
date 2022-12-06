@@ -5,7 +5,7 @@ container:
   event_bindings: {}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"VFDYZJ":5,"ZPOTWN":7,"TUCMSG":4,"PLVSQH":8,"NVFAYR":31,"PKMXUF":10,"YKBHZG":3,"SNICGF":10,"OFTPXM":5,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20,"TESNHL":38,"XUVQLS":7,"BIENJL":15,"UKTXYD":49,"FFQNYU":3,"VSEKCE":2,"PZNZXX":2,"EVONJP":2,"XEMCJW":2,"XZCIGI":38,"ZFQIUE":7,"XARHPL":15}'}
+  properties: {col_widths: '{"IYAJPM":15,"GXJXPB":8,"VRGMHK":26,"VFDYZJ":15,"ZPOTWN":11,"TUCMSG":4,"PLVSQH":8,"NVFAYR":26,"PKMXUF":10,"YKBHZG":3,"SNICGF":10,"OFTPXM":5,"APOMUC":20,"JZXXCP":4,"ZADEQJ":12,"DDNAAK":12,"RLPMAH":12,"NUQTGH":35,"YQEWJO":5,"GEUSHK":20,"TESNHL":38,"XUVQLS":7,"BIENJL":15,"UKTXYD":49,"FFQNYU":3,"VSEKCE":2,"PZNZXX":2,"EVONJP":2,"XEMCJW":2,"XZCIGI":38,"ZFQIUE":7,"XARHPL":15}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -804,9 +804,9 @@ components:
     event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Grup, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
+      visible: true, text: 'Grup: Denumire/ detallii', font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
     name: label_13
     layout_properties: {grid_position: 'LZGWMR,VFDYZJ', full_width_row: true, row_background: 'theme:Gray
         200'}
