@@ -636,7 +636,7 @@ class st(stTemplate):
           self.txb[k] = Button(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=10,                              
+                              width=8,                              
                               align = "centre",  
                               foreground="#000",background="#fff"")
           self.txb[k].tag.name = k
