@@ -1398,12 +1398,12 @@ class st(stTemplate):
     conf = confirm("Preiau date de la risco?")
     c =""
     if conf == True:
-         c= stripe.checkout.charge(amount=1000,
-                           currency="RON",
-                           title="Raport",
-                           description="verificari")
-    try:
-     if c["result"] == "succeeded":
+         #c= stripe.checkout.charge(amount=1000,
+                           #currency="RON",
+                           #title="Raport",
+                           #description="verificari")
+    #try:
+     #if c["result"] == "succeeded":
       try: 
         grup = anvil.server.call("gr", self.text_box_1.text)    
         p1['gen']['cui'] = self.text_box_1.text
@@ -1452,8 +1452,8 @@ class st(stTemplate):
       except:
         pass   
      
-    except:
-        pass                           
+    #except:
+        #pass                           
     pass
 
   def text_box_1_change(self, **event_args):
