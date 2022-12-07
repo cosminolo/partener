@@ -588,7 +588,8 @@ class st(stTemplate):
                                
   def gar(self, rows, ex):
     self.grid_panel_4.clear()    
-    #tb = self.tb = {}   
+    #tb = self.tb = {}   ""
+    tipg = ["mobiliara", "imobiliara", "comerciala ", ""]                           
     i = 1
     j = 0    
     k=300                          
@@ -596,16 +597,15 @@ class st(stTemplate):
       for i in range (1,5):
         if i == 1:                      
           k=300+j*10+i          
-          self.txb[k] = TextArea(font="Arial", font_size="10",
-                              spacing_above = "small",
+          self.txb[k] = DropDown(items = tipg, selected_value="", font="Arial", font_size="14",
+                              spacing_above = "smale",
                               spacing_below = "small",
                               width=200,
-                              align = "left",    
+                              align = "center",    
                               foreground="#000",background="#fff"")
-          self.txb[k].role = "scroll"
-                                 
+          #self.txb[k].role = "scroll"                                 
           self.txb[k].tag.name = k                           
-          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=0, width_xs=3)
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=0, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)
         if i == 2:
           k=300+j*10+i        
@@ -617,19 +617,19 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=3, width_xs=2)
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=2, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                        
         if i == 3:
           k=300+j*10+i        
           self.txb[k] = TextArea(font="Arial", font_size="10",
                               spacing_above = "small",
                               spacing_below = "small",
-                              width=90,
+                              width=200,
                               align = "left",   
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=6, width_xs=2)
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=4, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
         if i == 4:
           k=300+j*10+i        
@@ -648,17 +648,17 @@ class st(stTemplate):
     i=1
     k=300+21    
     for i in range(0,rows):
-      try:                              
-          self.txb[k].text = ex[i]["tip"]         
+      #try:                              
+          self.txb[k].selected_value = ex[i]["tip"]         
           self.txb[k+1].text = ex[i]["prop"]
           self.txb[k+2].text = ex[i]["data_a"]                       
           k=k+10
-      except:
-          pass       
+      #except:
+          #pass       
     pass                            
   def lll_focus(self, sender,**event_args):
     tg = int(sender.tag.name)
-    self.txb[tg-1].text = ""
+    self.txb[tg-1].selected_value = ""
     self.txb[tg-2].text = ""
     self.txb[tg-3].text = ""                     
     
@@ -680,10 +680,10 @@ class st(stTemplate):
     prop = "" 
     data_a = ""                           
     for it in self.grid_panel_4.get_components():       
-       if type(it) == TextArea:
+       if type(it) == DropDown or  type(it) == TextArea:
               c = c+1                   
               if c ==1:                 
-                tip = it.text
+                tip = it.selected_value
               if c ==2:
                  prop = it.text
               if c == 3:
