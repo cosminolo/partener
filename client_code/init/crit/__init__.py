@@ -15,7 +15,10 @@ class crit(critTemplate):
     self.init_components(**properties)
     # Any code you write here will run when the form opens.
     global c1
-    c1 = json.loads(anvil.server.call("get_crit", self.ups()))
+    try:
+       c1 = json.loads(anvil.server.call("get_crit", self.ups()))
+    except:
+      c1 =anvil.server.call("get_crit", self.ups())
     #print(c1)
     self.item = c1
     #print(c1['crit'])
