@@ -589,7 +589,10 @@ class st(stTemplate):
   def gar(self, rows, ex):
     self.grid_panel_4.clear()    
     #tb = self.tb = {}   ""
-    tipg = ["mobiliara", "imobiliara", "comerciala ", ""]                           
+    tipg = ["Rezidential", "Teren intravilan cu certificat de urbanism,", "Comercial", " Teren intravilan fara certificat de urbanism",
+            "Teren agricol", "Imobile industriale", "Imobile ce urmeaza a fi construite din credit ", "Stocuri", "Mijloace fixe (echipamente, auto, etc)",
+            "mijloace fixe ce urmeaza a fi achizitionate din credit", "Cesiune de contracte in derulare", "Depozit colateral", "Scrisoare de garantie de la un fond de garantare (FGCR, FNGCIMM)",
+            " Scrisori de garantie de la alte institutii financiare"]                           
     i = 1
     j = 0    
     k=300                          
