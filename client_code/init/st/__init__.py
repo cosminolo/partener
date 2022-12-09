@@ -1476,8 +1476,9 @@ class st(stTemplate):
               ROBOR (1M/3M/6M/12M) + Marja (min. 3,75 pp – max. 5,75 pp);
               EURIBOR (3M,6M,12M) + Marja (min. 3,25 pp  - max. 4,00 pp).
           Durata creditare: max. 36 de luni"""                          
-    alert(tex)
-                               
+    alert(tex, large=True,dismissible=True)
+    #n = Notification(tex)
+    #n.show()                           
                                
                                
     pass
