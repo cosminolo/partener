@@ -1464,7 +1464,22 @@ class st(stTemplate):
     pass
   
   def button_19_click(self, **event_args):
-    alert("sumar produs")
+                   
+   if self.drop_down_3.selected_value == "Credit pentru finantarea activitatii curente" :
+    tex = """Destinatie: finantarea activitatii curente, refinantare 
+          Avantaje: 
+          Mix de garantii flexibil (inclusiv fonduri de garantare)
+          Scadentele se stabilesc cu clientul, specificul activitatii
+          Perioada gratie max 12 luni
+          Suma maxima: pana la 50% din cifra de afaceri
+          Dobanzi: 
+              ROBOR (1M/3M/6M/12M) + Marja (min. 3,75 pp – max. 5,75 pp);
+              EURIBOR (3M,6M,12M) + Marja (min. 3,25 pp  - max. 4,00 pp).
+          Durata creditare: max. 36 de luni"""                          
+    alert(tex)
+                               
+                               
+                               
     pass
 
   def text_box_13_lost_focus(self, **event_args):
