@@ -1463,10 +1463,10 @@ class st(stTemplate):
     anvil.server.call("sp1", self.ups(), p1)
     pass
   
-  def button_19_click(self, **event_args):
-                   
-   if self.drop_down_3.selected_value == "Credit pentru finantarea activitatii curente" :
-    tex = """Destinatie: finantarea activitatii curente, refinantare 
+  def button_19_click(self, **event_args):  
+    tex = ""                           
+    if self.drop_down_3.selected_value == "Credit pentru finantarea activitatii curente" :
+        tex = """Destinatie: finantarea activitatii curente, refinantare 
           Avantaje: 
           Mix de garantii flexibil (inclusiv fonduri de garantare)
           Scadentele se stabilesc cu clientul, specificul activitatii
@@ -1476,11 +1476,96 @@ class st(stTemplate):
               ROBOR (1M/3M/6M/12M) + Marja (min. 3,75 pp – max. 5,75 pp);
               EURIBOR (3M,6M,12M) + Marja (min. 3,25 pp  - max. 4,00 pp).
           Durata creditare: max. 36 de luni"""                          
-    alert(tex, large=True,dismissible=True)
+    if self.drop_down_3.selected_value == "Credit de investitii pentru achizia de teren pentru productia agricola":
+        tex = """Destinatie: achizitia de teren pentru productie agricola si reabilitarea acestuia in vederea exploatarii agricole 
+          Garantii: 
+              Garantie FNGCIMM pana la maxim 80% din valoarea creditului
+              Ipoteca imobiliara de rang I asupra terenului achizitionat
+              Mix flexibil: ipoteci imobiliare, gaj titluri negociabile, ipoteci bunurilor mobile, cash colateral, ipoteci creante, fideiusiune, scrisoari de garantie bancara, garantii emise de un Fond de Garantare agreat de Banca).
+              Suma maxima: 85% din valoarea investitiei (fara TVA) 
+          Dobanda : ROBOR 3M/6M/12M + Marja (3,25 pp - 5,25 pp)
+          Durata creditare: 
+              6 – 180 luni fara garantii FNGCIMM
+              6 – 120 luni cu garantii FNGCIMM
+          Perioada gratie: max 12 luni"""
+                        
+   
     #n = Notification(tex)
     #n.show()                           
-                               
-                               
+    if self.drop_down_3.selected_value == "Credit pentru achizitia terenurilor cu destinatie agricola OUG 43/2013":                    
+      tex = """Destinatie: achizitie terenuri cu destinatie agricola (plafon cumulat de max 750 ha in proprietate)
+               Beneficiari: fermieri care au in exploatare terenuri, plantatii, exploatatii de acvacultura, ferme de animale/pasari/albine etc.
+               Suma maxima: 95% din valoarea investitiei (fara TVA)
+               Durata creditare: 6 – 180 luni
+               Perioada de gratie: max. 24 luni
+               Dobanzi: 
+                    ROBOR 6M + 1,95 pp (credite sub 3 mil. Eur);     
+                    ROBOR 3M/6M/12M + marja (3,25 pp - 5,25 pp), (credite peste 3 mil. Eur, inclusiv); 
+              Garantii: FGCR/FNGCIMM: max. 80% din valoarea creditului, contracte de fideiusiune (FGCR/FNGIMM va avea calitatea de cocreditor); orice alte garantii acceptate de Banca"""
+    if self.drop_down_3.selected_value == "Credit pentru finantarea investitiilor in domeniul agricol OUG 43/2013":                           
+      tex = """Destinatie: alte investitii in domeniul agricol si al acvaculturii inclusiv achizitia de animale de reproductie, indifent de suprafata detinuta in proprietate
+               Suma maxima: 85% din valoarea investitiei (fara TVA)
+               Durata creditare: 6 – 84 luni
+               Perioada de gratie: max. 24 luni
+               Dobanzi: 
+               ROBOR 6M + 1,95 pp (credite sub 3 mil. Eur);     
+               ROBOR 3M/6M/12M + marja (3,25 pp - 5,25 pp), (credite peste 3 mil. Eur, inclusiv); 
+               Garantii: FGCR/FNGCIMM: max. 80% din valoarea creditului, contracte de fideiusiune (FGCR va avea calitatea de cocreditor); orice alte garantii acceptate de Banca"""
+    if self.drop_down_3.selected_value == "Credit pentru finantarea activitatii curente OUG 43/2013":
+      tex = """Destinatie: finantarea activitatii in domeniul agricol si al acvaculturii,  inclusiv achizitia de animale pentru comercializare, indifent de suprafata in proprietate
+               Suma maxima: in functie de specificiul activitati, 
+                  50% din venituri/cifra de afaceri pt clientii fara alte credite pt activitatea curenta in derulare
+                  30% din venituri/cifra de afaceri pt clientii cu credite pt activitatea curenta in derulare
+               Durata creditare: max. 36 luni
+               Perioada de gratie: max. 12 luni
+               Dobanzi:
+               ROBOR 6M + 1,95 pp (credite sub 3 mil. Eur);     
+               ROBOR 3M/6M/12M + marja (3,75 pp – 5,75 pp), (credite peste 3 mil. Eur, inclusiv); 
+               Garantii: FGCR/FNGCIMM: max. 80% din valoarea creditului, contracte de fideiusiune, ipoteca stoc animale; orice alte garantii acceptate de Banca"""
+    if self.drop_down_3.selected_value == "Activitate curenta agricultura 500 mii-FGCR":                    
+      tex = """Destinatie: finantarea activitatii in domeniul agricol si piscicol, exceptand comertul
+               Suma maxima: 500.000 lei, nu mai mult de:  
+                  50% din venituri/cifra de afaceri pt clientii fara credite pt activitatea curenta in derulare
+                  30% din venituri/cifra de afaceri pt clientii cu credite pt activitatea curenta in derulare
+                  15% pentru clientii cu mai putin de 12 luni activitate
+                Durata creditare: max. 36 luni
+              Rambursare: lunar, trimestrial sau semestrial
+              Perioada de gratie: max. 12 luni
+              Dobanzi: ROBOR 6M + 2,5 pp
+              Garantii: contract de garantie FGCR, in care Fondul va avea calitatea de cocreditor - pt max. 80% din valoarea creditului, contracte de fideiusiune, ipoteca mobiliara conturi curente, alte garantii"""                         
+    if self.drop_down_3.selected_value == "Investitii in agricultura 500 mii-FGCR":
+      tex = """Destinatie: Investitii in domeniul agricol si/sau al acvaculturii inclusiv masini si utilaje agricole, etc. care nu sunt noi, cu exceptia achizitiei de teren cu destinatie agricola) fara finantare PNDR/POPAM
+               Suma maxima: max 1.000.000 lei; max 85% din valoarea investitiilor
+               Durata creditare: max. 84 luni
+               Rambursare: lunar, trimestrial sau semestrial
+               Perioada de gratie: max. 12 luni
+               Dobanzi: ROBOR 6M + 2,5 pp
+               Garantii: contract de garantie FGCR, in care Fondul va avea calitatea de cocreditor - pt max. 80% din valoarea creditului, contracte de fideiusiune, ipoteca mobiliara conturi curente;  ipoteca bunuri achizitionate credit"""
+    if self.drop_down_3.selected_value == "Credit de investitii":                     
+      tex = """Destinatie:finantarea proiectelor de investitii, inclusiv refinantari
+               Suma maxima: 85% din valoarea investitiei (fara TVA) 
+               Dobanzi: 
+               ROBOR 3M/6M/12M + Marja (min. 3,25 pp – max. 5,25 pp  in functie de clasa de performanta)
+               Durata creditare: min 6 luni, max 10-12 ani
+               Perioada de gratie de pana la 12 luni
+               Mix de garantii flexibil (bunul finantat, alte garantii, inclusiv fond de garantare)"""
+    if self.drop_down_3.selected_value == "Linie de Credit - acordare/suplimentare" or self.drop_down_3.selected_value == "Linie de Credit - prelungire":
+      tex = """Destinatie: Nevoi curente, refinantare
+               Suma maxima: pana la 60% din cifra de afaceri din ultimul an incheiat
+               Dobanzi: ROBOR 1M/3M/6M/12M + Marja (min. 3,75 pp – max. 5,75 pp )
+               EURIBOR (3M,6M,12M) + Marja (min. 3,25 pp  - max. 4,00 pp)
+               Durata creditare: max. 24 de luni, cu prelungire pe alte 24 de luni
+               Mix de garantii flexibil:(ipoteci imobiliare/mobiliare, alte garantii, inclusiv fond de garantare)"""
+    if self.drop_down_3.selected_value == "Credit pentru achitarea datoriilor la buget":
+      tex = """Destinatie: Achitarea datoriilor restante la buget de peste 60 zile 
+          Suma maxima: valoarea restantelor
+          Dobanzi: 
+              ROBOR (1M/3M/6M/12M) + Marja (min. 3,75 pp – max. 5,75 pp);
+              EURIBOR (3M,6M,12M) + Marja (min. 3,25 pp  - max. 4,00 pp).
+          Durata creditare: max. 36 de luni       
+          Scadentele se stabilesc cu clientul, specificul activitatii
+          Perioada max 60 luni"""
+    alert(tex, large=True,dismissible=True)                           
     pass
 
   def text_box_13_lost_focus(self, **event_args):
