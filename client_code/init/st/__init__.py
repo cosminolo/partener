@@ -608,7 +608,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           #self.txb[k].role = "scroll"                                 
           self.txb[k].tag.name = k                           
-          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=0, width_xs=2)
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=0, width_xs=3)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)
         if i == 2:
           k=300+j*10+i        
@@ -620,7 +620,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=2, width_xs=2)
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=3, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus)                        
         if i == 3:
           k=300+j*10+i        
@@ -632,7 +632,7 @@ class st(stTemplate):
                               foreground="#000",background="#fff"")
           self.txb[k].role = "scroll"
           self.txb[k].tag.name = k                           
-          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=4, width_xs=2)
+          self.grid_panel_4.add_component(self.txb[k], row=j, col_xs=5, width_xs=2)
           #self.txb[k].set_event_handler('lost_focus', self.ll_focus) 
         if i == 4:
           k=300+j*10+i        
