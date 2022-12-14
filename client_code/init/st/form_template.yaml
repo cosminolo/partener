@@ -407,11 +407,19 @@ components:
     layout_properties: {grid_position: 'SAEEKP,PTNMMI', full_width_row: true, row_background: 'theme:Gray
         200'}
     event_bindings: {click: button_11_click, show: button_11_show}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: gr, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_20
+    layout_properties: {grid_position: 'SAEEKP,PMQCLX FZXVUL,PNMIZA'}
+    event_bindings: {click: button_20_click}
   - type: Spacer
     properties: {height: 32}
     name: spacer_10
-    layout_properties: {grid_position: 'SAEEKP,PMQCLX', full_width_row: true, row_background: 'theme:Gray
-        200'}
+    layout_properties: {grid_position: 'SAEEKP,PMQCLX ZVESRO,KTCTUG', full_width_row: true,
+      row_background: 'theme:Gray 200'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Tip / Proprietar / Data achizitiei, font_size: null, font: '',
