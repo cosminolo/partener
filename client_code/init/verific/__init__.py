@@ -212,10 +212,13 @@ class verific(verificTemplate):
     if tip == "b":
       self.clear_bilant()
       an = str(int(date.today().year))  
-      p1['bil'][str(0)] = json.loads(anvil.server.call("is_2", an, cui))
-      ann = str(int(p1['bil']['0']['an'])-1)      
-      p1['bil'][str(1)] = json.loads(anvil.server.call("is_2", ann, cui))
-      anvil.server.call("sp1", self.ups(), p1)
+      try:
+        p1['bil'][str(0)] = json.loads(anvil.server.call("is_2", an, cui))
+        ann = str(int(p1['bil']['0']['an'])-1)      
+        p1['bil'][str(1)] = json.loads(anvil.server.call("is_2", ann, cui))
+        anvil.server.call("sp1", self.ups(), p1)
+      except:
+        pass
     try:  
       self.bilant(p1['bil'][str(1)], p1['bil'][str(0)])
     except:
