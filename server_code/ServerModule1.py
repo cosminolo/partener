@@ -39,7 +39,10 @@ def clr_ar(id):
   c1["ar"] = cc["ar"]
   anvil.server.call("upc", id, c1)
 pass
-
+@anvil.server.callable
+def gr:
+  
+  
 
 
 
