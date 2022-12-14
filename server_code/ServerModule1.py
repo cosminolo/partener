@@ -40,24 +40,7 @@ def clr_ar(id):
   c1["ar"] = cc["ar"]
   anvil.server.call("upc", id, c1)
 pass
-@anvil.server.callable
-def g(): 
-  nb_tries = 2
-  url = "https://webservicesp.anaf.ro/bilant?an=2021cui=2816464"
-  while True:
-    nb_tries -= 1
-    try:
-        # Request url
-        repo = requests.get(url)
-        print(repo.status_code)
-        break
-    except ConnectionError as err:
-        if nb_tries == 0:
-            raise err
-        else:
-            time.sleep(1)
-  
-  pass
+
   
   
   

@@ -1576,10 +1576,7 @@ class st(stTemplate):
    self.lf(self.text_box_14)
    pass
 
-  def button_20_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    anvil.server.call("g")
-    pass
+  
 
 
 
