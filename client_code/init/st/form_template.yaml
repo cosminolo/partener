@@ -13,7 +13,7 @@ components:
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '#F8F7CA',
       visible: true, text: Facilitate credit, font_size: 16, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: 'theme:gr2',
-      bold: true, underline: false, icon: ''}
+      bold: false, underline: false, icon: ''}
     name: label_35
     layout_properties: {grid_position: 'HINIQY,TUOTKT', full_width_row: true}
     event_bindings: {}
@@ -451,7 +451,7 @@ components:
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '#F8F7CA',
       visible: true, text: Date solicitant, font_size: 16, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: 'theme:gr2',
-      bold: true, underline: false, icon: ''}
+      bold: false, underline: false, icon: ''}
     name: label_32
     layout_properties: {grid_position: 'ZFJCBE,IBXFHZ', full_width_row: true}
     event_bindings: {}
@@ -875,30 +875,6 @@ components:
       layout_properties: {row: QBBUWV, width_xs: 2, col_xs: 0, width: 179.5, x: 27.5,
         y: 100.859375}
       event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Conducerea afacerii, font_size: 12, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_15_copy
-      layout_properties: {row: EJSOCU, width_xs: 1, col_xs: 7, width: 144.125, x: 960,
-        y: 26.859375}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Strategia de vanzare, font_size: 12, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_14_copy
-      layout_properties: {row: EJSOCU, width_xs: 2, col_xs: 0, width: 128.125, x: 662.25,
-        y: 26.859375}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Concurenta, font_size: 12, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_13_copy
-      layout_properties: {row: IOVAMB, width_xs: 1, col_xs: 7, width: 24.5625, x: 386,
-        y: 26.859375}
     - type: DropDown
       properties:
         role: null
@@ -1142,14 +1118,6 @@ components:
       data_bindings:
       - {property: selected_value, code: 'self.item[''sintez''][''exp_imp'']', writeback: true}
       event_bindings: {change: drop_down_15_change}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Piata de desfacere, font_size: 12, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_12_copy
-      layout_properties: {row: IOVAMB, width_xs: 2, col_xs: 0, width: 161.125, x: 19.0625,
-        y: 26.859375}
     - type: TextArea
       properties: {role: null, align: left, height: 60.1875, tooltip: '', placeholder: '',
         border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 14,
@@ -1198,13 +1166,57 @@ components:
       name: label_22
       layout_properties: {x: 234.077875, y: 193.171875, width: 192.969}
       event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '#F8F7CA',
+        visible: true, text: Poazitia in piata/experienta, font_size: 16, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: 'theme:gr2', bold: false, underline: false, icon: ''}
+      name: label_36
+      layout_properties: {x: 0, y: 0, width: 1749}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Piata de desfacere, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_12_copy
+      layout_properties: {row: IOVAMB, width_xs: 2, col_xs: 0, width: 161.125, x: 19.0625,
+        y: 33.859375}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Concurenta, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_13_copy
+      layout_properties: {row: IOVAMB, width_xs: 1, col_xs: 7, width: 24.5625, x: 371,
+        y: 33.859375}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Strategia de vanzare, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_14_copy
+      layout_properties: {row: EJSOCU, width_xs: 2, col_xs: 0, width: 128.125, x: 628.5,
+        y: 33.859375}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Conducerea afacerii, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_15_copy
+      layout_properties: {row: EJSOCU, width_xs: 1, col_xs: 7, width: 144.125, x: 926,
+        y: 33.859375}
+      event_bindings: {}
     event_bindings: {}
   - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '#F8F7CA',
       visible: true, text: 'Date despre management si actionariat (inclusiv asociatii/actionarii
-        cu pondere semnificativa >10%, administratori, manageri)', font_size: null,
+        cu pondere semnificativa >10%, administratori, manageri)', font_size: 16,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
+      background: 'theme:gr2', bold: false, underline: false, icon: ''}
     name: label_33
     layout_properties: {x: 10, y: 259.1761474609375, width: 797, grid_position: 'IUDIBQ,FJJJDU',
       row_background: 'theme:Gray 200', full_width_row: true}
@@ -1424,6 +1436,14 @@ components:
     layout_properties: {grid_position: 'BQTZMT,GEUSHK', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
   - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '#E3F9A9',
+      visible: true, text: Expuneri in derulare, font_size: 16, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: 'theme:gr2',
+      bold: false, underline: false, icon: ''}
+    name: label_37
+    layout_properties: {grid_position: 'OEIROP,ECJKUA', full_width_row: true}
+    event_bindings: {}
+  - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Expunere fata de banci (LEI), font_size: null, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
@@ -1517,10 +1537,13 @@ components:
     name: grid_panel_7
     layout_properties: {grid_position: 'SPXCYE,SHCMBU', full_width_row: true, row_background: '#F7F7E3'}
     event_bindings: {}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_14
-    layout_properties: {grid_position: 'QEAYQU,PBJSMN'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '#E3F9A9',
+      visible: true, text: Alte informatii, font_size: 16, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: 'theme:gr2',
+      bold: false, underline: false, icon: ''}
+    name: label_38
+    layout_properties: {grid_position: 'TZDOQU,HSFHBN', full_width_row: true}
     event_bindings: {}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',

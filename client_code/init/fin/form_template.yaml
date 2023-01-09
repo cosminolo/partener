@@ -14,7 +14,7 @@ components:
       border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small,
       background: ''}
     name: xy_panel_1
-    layout_properties: {grid_position: 'OTDFAW,IMPTNR', full_width_row: true}
+    layout_properties: {grid_position: 'OTDFAW,WKTJSP', full_width_row: true}
     components:
     - type: Label
       properties: {text: Bilant an N-2}
@@ -29,13 +29,6 @@ components:
       properties: {text: Balanta An N}
       name: label_3
       layout_properties: {x: 815.9942779541016, y: 10, width: 160}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: IMPACT VALUTA, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-        underline: false, icon: ''}
-      name: label_13
-      layout_properties: {x: 149.00567626953125, y: 25.965911865234375, width: 127.983}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: i.Credite termen scurt (ct519) platibile>1an, font_size: null,
@@ -544,14 +537,6 @@ components:
         background: '', bold: true, underline: false, icon: ''}
       name: label_35
       layout_properties: {x: 23.02556610107422, y: 1540.2130737304688, width: 160}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: SARCINA FINANCIARA, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-        underline: false, icon: ''}
-      name: label_14
-      layout_properties: {x: 52.877830505371094, y: 812.03125, width: 166.875}
       event_bindings: {}
     - type: TextBox
       properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
@@ -1456,14 +1441,6 @@ components:
       layout_properties: {x: 948.0392779541016, y: 38.4375, width: 25}
       event_bindings: {change: date_picker_3_change}
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: solid blue 2px,
-        visible: true, text: Creante si Datorii > 1 an (sold), font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: true, underline: false, icon: ''}
-      name: label_15
-      layout_properties: {x: 109.984375, y: 380.8125, width: 203}
-      event_bindings: {}
-    - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: d.Media lunara a ponderii obligatiilor de plata in valuta (rezultand din credite si alte contracte de natura creditului) in total obligatii de plata (%),
         font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
@@ -1606,14 +1583,6 @@ components:
       event_bindings: {lost_focus: text_box_6_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''b''][''a3'']', writeback: true}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Credite contractate in valuta?', font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_49
-      layout_properties: {x: 23.015625, y: 72.4375, width: 436.90625}
-      event_bindings: {}
     - type: TextBox
       properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1699,6 +1668,38 @@ components:
       event_bindings: {change: drop_down_3_change}
       data_bindings:
       - {property: selected_value, code: 'self.item[''iv''][''r''][''r3'']', writeback: true}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Credite contractate in valuta?', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_49
+      layout_properties: {x: 22.890874999999994, y: 87.4375, width: 436.906}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '#F8F7CA',
+        visible: true, text: IMPACT VALUTA, font_size: 16, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: 'theme:gr2',
+        bold: false, underline: false, icon: ''}
+      name: label_13
+      layout_properties: {x: 22.890625, y: 42.4375, width: 427.969}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '#E3F9A9',
+        visible: true, text: Creante si Datorii > 1 an (sold), font_size: 16, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: 'theme:gr2', bold: false, underline: false, icon: ''}
+      name: label_15
+      layout_properties: {x: 15.875, y: 387.8125, width: 446.016}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '#E3F9A9',
+        visible: true, text: SARCINA FINANCIARA, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: 'theme:gr2',
+        bold: true, underline: false, icon: ''}
+      name: label_14
+      layout_properties: {x: 15.875, y: 812.046875, width: 434.984}
+      event_bindings: {}
     event_bindings: {}
   event_bindings: {}
 - type: FlowPanel
