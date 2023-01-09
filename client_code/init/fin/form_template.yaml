@@ -482,14 +482,6 @@ components:
       data_bindings:
       - {property: text, code: 'self.item[''sf''][''d''][''a3'']', writeback: true}
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: DATORII INTRA-GRUP (sold), font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: true, underline: false, icon: ''}
-      name: label_25
-      layout_properties: {x: 41.008522033691406, y: 1154.4601440429688, width: 208}
-      event_bindings: {}
-    - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: j.411 “Clienti” +413 “Efecte de primit de la clienti”+418 “ Clienti facturi de intocmit”- 491”Clienti creditori”,
         font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
@@ -520,23 +512,6 @@ components:
         italic: false, background: '#E3F9A6', bold: false, underline: false, icon: ''}
       name: label_38
       layout_properties: {x: 10, y: 1713.2527770996094, width: 458.01171999999997}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Tranzactii intra-grup* (rulaje vanzari si cumparari,
-          lei)', font_size: null, font: '', spacing_above: small, icon_align: left,
-        spacing_below: small, italic: false, background: '', bold: true, underline: false,
-        icon: ''}
-      name: label_44
-      layout_properties: {x: 23.01136016845703, y: 1910.8379516601562, width: 367.884}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Creante intra-grup (sold), font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: true, underline: false, icon: ''}
-      name: label_35
-      layout_properties: {x: 23.02556610107422, y: 1540.2130737304688, width: 160}
       event_bindings: {}
     - type: TextBox
       properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
@@ -1682,7 +1657,7 @@ components:
         icon_align: left, spacing_below: small, italic: false, background: 'theme:gr2',
         bold: false, underline: false, icon: ''}
       name: label_13
-      layout_properties: {x: 22.890625, y: 42.4375, width: 427.969}
+      layout_properties: {x: 0, y: 42.4375, width: 427.969}
       event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '#E3F9A9',
@@ -1690,7 +1665,32 @@ components:
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: 'theme:gr2', bold: false, underline: false, icon: ''}
       name: label_15
-      layout_properties: {x: 15.875, y: 387.8125, width: 446.016}
+      layout_properties: {x: 4.828000000000031, y: 387.8125, width: 446.016}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '#E3F9A9',
+        visible: true, text: DATORII INTRA-GRUP (sold), font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: 'theme:gr2', bold: false, underline: false, icon: ''}
+      name: label_25
+      layout_properties: {x: 0, y: 1153.96875, width: 443.922}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '#E3F9A9',
+        visible: true, text: 'Tranzactii intra-grup* (rulaje vanzari si cumparari,
+          lei)', font_size: 16, font: '', spacing_above: small, icon_align: left,
+        spacing_below: small, italic: false, background: 'theme:gr2', bold: false,
+        underline: false, icon: ''}
+      name: label_44
+      layout_properties: {x: 0, y: 1910.828125, width: 459.219}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '#E3F9A9',
+        visible: true, text: Creante intra-grup (sold), font_size: 16, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: 'theme:gr2',
+        bold: false, underline: false, icon: ''}
+      name: label_35
+      layout_properties: {x: 4.8125, y: 1540.203125, width: 451.844}
       event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '#E3F9A9',
@@ -1698,7 +1698,7 @@ components:
         icon_align: left, spacing_below: small, italic: false, background: 'theme:gr2',
         bold: true, underline: false, icon: ''}
       name: label_14
-      layout_properties: {x: 15.875, y: 812.046875, width: 434.984}
+      layout_properties: {x: 4.8125, y: 812.046875, width: 434.969}
       event_bindings: {}
     event_bindings: {}
   event_bindings: {}
