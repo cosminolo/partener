@@ -439,6 +439,14 @@ components:
     layout_properties: {grid_position: 'VRDXFP,PFBHNR', full_width_row: true, row_background: 'theme:Gray
         200'}
     event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: 'theme:green', bold: false,
+      underline: false, icon: ''}
+    name: label_32
+    layout_properties: {grid_position: 'ZFJCBE,IBXFHZ', full_width_row: true}
+    event_bindings: {}
   - type: XYPanel
     properties: {role: null, width: 1221, align: left, height: 121, tooltip: '', border: '',
       foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
