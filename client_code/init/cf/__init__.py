@@ -13,7 +13,15 @@ class cf(cfTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    
+    items = []
+    for row in range(10):
+      item = {}
+      for col in range(1, 19):
+         item.update({'column_{}'.format(col): 'col{}_{}'.format(col, row)})
+      items.append(item)
+    self.repeating_panel_1.items = items
+
+    self.data_grid_1.role = 'wide'
     # Any code you write here will run when the form opens.
     
 
