@@ -15,7 +15,7 @@ components:
   layout_properties: {column: OMFGDK}
   event_bindings: {}
   data_bindings:
-  - {property: text, code: 'self.item[''an-2'']', writeback: true}
+  - {property: text, code: 'self.item[''an_ant'']', writeback: true}
 - type: TextBox
   properties: {}
   name: text_box_2
