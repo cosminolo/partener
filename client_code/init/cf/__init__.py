@@ -27,7 +27,8 @@ class cf(cfTemplate):
 
   def button_1_click(self, **event_args):
     ccf = []
-    cf = {"a":{"den":"Nr. luni in perioada (12 luni sau cate au ramas pana la finele anului )", "an_ant":"", "an_c":"", "an_2":""},
+    cf = {"a":{"den":"Nr. luni in perioada (12 luni sau cate au ramas pana la finele anului )", "an_ant":"", "an_c":"", "an_2":"", "an_3":"", "an_4":"", "an_5":"", "an_6":"", "an_7":"",
+              "an_8":"", "an_9":"", "an_10":"", "an_11":"", "an_12":"", "an_13":"", "an_14":"", "an_15":"", "an_16":"", "an_17":"", "an_18":""},
          "b":{"den":"Cifra de afaceri", "an_ant":"0", "an_c":"0", "an_2":"0"}}
     key_list=[]
     for key in cf.keys():
@@ -36,7 +37,18 @@ class cf(cfTemplate):
       ccf.append(ll)
       key_list.append(key)
     self.repeating_panel_1.items=ccf  
-    print(key_list)
+    #print(key_list)
+    i=2
+    j=0
+    lis_col=[]
+    for col in self.data_grid_1.columns:
+      cc={}
+      cc = col
+      if j<3:
+        lis_col.append(cc)
+      j=j+1
+    print(lis_col)  
+    #self.data_grid_1.columns=lis_col
     pass
 
   def button_2_click(self, **event_args):

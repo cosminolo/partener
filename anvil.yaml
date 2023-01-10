@@ -20,7 +20,7 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: init.Form1}
+startup: {type: form, module: init.cf}
 package_name: Partener
 allow_embedding: false
 name: Partener

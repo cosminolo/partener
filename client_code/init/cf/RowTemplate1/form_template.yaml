@@ -30,4 +30,116 @@ components:
   event_bindings: {}
   data_bindings:
   - {property: text, code: 'self.item[''an_2'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_4
+  layout_properties: {column: WBOAYR}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_3'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_5
+  layout_properties: {column: JGXGOC}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_4'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_6
+  layout_properties: {column: PVBPXV}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_5'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_7
+  layout_properties: {column: ETGAAQ}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_6'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_8
+  layout_properties: {column: HCSHEX}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_7'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_9
+  layout_properties: {column: PVJETE}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_8'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_10
+  layout_properties: {column: IEWOXF}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_9'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_11
+  layout_properties: {column: SVIMJM}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_10'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_12
+  layout_properties: {column: CXQRPV}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_11'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_13
+  layout_properties: {column: JVZMKE}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_12'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_14
+  layout_properties: {column: UGQDDY}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_13'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_15
+  layout_properties: {column: RJRQYN}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_14'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_16
+  layout_properties: {column: RNBSHR}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_15'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_17
+  layout_properties: {column: UUWFLG}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_16'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_18
+  layout_properties: {column: LOYYZR}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_17'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_19
+  layout_properties: {column: JFXRDW}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''an_18'']', writeback: true}
 is_package: true
