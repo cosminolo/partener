@@ -42,7 +42,13 @@ class cf(cfTemplate):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     js=self.repeating_panel_1.items
-    print(len(js))
+    jsf=[]
+    for i in range(0,len(js)):
+      js1={}
+      js1["a"]=js[0]
+      js1["b"]=js[1]
+      jsf.append(js1)
+    print(jsf[0])  
     pass
 
 
