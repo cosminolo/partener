@@ -13,7 +13,7 @@ components:
   layout_properties: {slot: title}
   event_bindings: {click: button_1_click}
 - type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"MWYVAV":5,"LQKZDZ":5,"XFCTCB":4,"TJOXRE":4,"SQCRYR":4,"XJLFSO":4,"AINHQK":4,"SYAXAN":4,"XRHWGX":4,"JQGNOI":3,"SFXNEY":3,"UTQTEZ":3,"QFQOMH":3,"MQAXPH":3,"JBMCDK":2,"KKYPFX":5}'}
   name: column_panel_1
   layout_properties: {slot: nav-right}
   event_bindings: {}
@@ -95,26 +95,14 @@ components:
     name: spacer_15
     layout_properties: {grid_position: 'NFSSZR,JBMCDK', full_width_row: true}
     event_bindings: {}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_16
-    layout_properties: {grid_position: 'NFSSZR,FDXCMS', full_width_row: true}
-    event_bindings: {}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_17
-    layout_properties: {grid_position: 'NFSSZR,QHBAAB', full_width_row: true}
-    event_bindings: {}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_18
-    layout_properties: {grid_position: 'NFSSZR,HFZLUD', full_width_row: true}
-  - type: Spacer
-    properties: {visible: true, spacing_above: small, spacing_below: small, height: 32,
-      tooltip: ''}
-    name: spacer_12
-    layout_properties: {grid_position: 'NFSSZR,VFPJLN', full_width_row: true}
-    event_bindings: {}
+  - type: Button
+    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 20, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:fast-forward'}
+    name: button_3
+    layout_properties: {grid_position: 'NFSSZR,KKYPFX', full_width_row: true}
+    event_bindings: {click: button_3_click}
 - type: GridPanel
   properties: {}
   name: grid_panel_1

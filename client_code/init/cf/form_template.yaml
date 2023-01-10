@@ -1,0 +1,49 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+  event_bindings: {}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
+  event_bindings: {}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {slot: left-nav}
+  event_bindings: {}
+  components:
+  - type: Button
+    properties: {text: button_1}
+    name: button_1
+    layout_properties: {grid_position: 'YOJKMM,RQVLHL'}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_2
+  layout_properties: {slot: nav-right}
+  event_bindings: {}
+  components: []
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_3
+  layout_properties: {slot: title}
+  event_bindings: {}
+  components:
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 20, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:home'}
+    name: button_4
+    layout_properties: {grid_position: 'AXYOOU,BQPVII'}
+    event_bindings: {click: button_4_click}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:Secondary 500', visible: true, text: '', font_size: 20, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: 'fa:fast-backward'}
+    name: button_5
+    layout_properties: {grid_position: 'AXYOOU,BFBDJC'}
+    event_bindings: {click: button_5_click}

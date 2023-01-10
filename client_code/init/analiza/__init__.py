@@ -600,6 +600,11 @@ class analiza(analizaTemplate):
     anvil.server.call("uplf", self.ups(), file)
     pass
 
+  def button_3_click(self, **event_args):
+    open_form('init.cf')
+    pass
+
+
 
 
 
