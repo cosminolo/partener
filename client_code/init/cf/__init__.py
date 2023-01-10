@@ -13,7 +13,7 @@ class cf(cfTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    
     # Any code you write here will run when the form opens.
     
 
@@ -27,7 +27,7 @@ class cf(cfTemplate):
 
   def button_1_click(self, **event_args):
     ccf = []
-    cf = {"a":{"den":"Nr luni in perioada", "an_ant":"12", "an_c":"", "an_2":""},
+    cf = {"a":{"den":"Nr. luni in perioada (12 luni sau cate au ramas pana la finele anului )", "an_ant":"", "an_c":"", "an_2":""},
          "b":{"den":"Cifra de afaceri", "an_ant":"0", "an_c":"0", "an_2":"0"}}
     key_list=[]
     for key in cf.keys():

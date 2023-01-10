@@ -1,0 +1,29 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+  event_bindings: {}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: DataGrid
+    properties:
+      columns:
+      - {id: GTUDLO, title: Column 1, data_key: column_1}
+      - {id: FHXLFW, title: Column 2, data_key: column_2}
+      - {id: LYJSRL, title: Column 3, data_key: column_3}
+    name: data_grid_1
+    layout_properties: {grid_position: 'JBHEML,UEKGVF'}
+    components:
+    - type: RepeatingPanel
+      properties: {spacing_above: none, spacing_below: none, item_template: init.Form1.RowTemplate3}
+      name: repeating_panel_1
+      layout_properties: {}
+    event_bindings: {}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
