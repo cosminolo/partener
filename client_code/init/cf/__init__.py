@@ -35,9 +35,9 @@ class cf(cfTemplate):
 
   def button_1_click(self, **event_args):
     ccf = []
-    cf = {"a":{"den":"Nr. luni in perioada (12 luni sau cate au ramas pana la finele anului )", "an_ant":"", "an_c":"", "an_2":"", "an_3":"", "an_4":"", "an_5":"", "an_6":"", "an_7":"",
+    cf = {"a":{"den":"a.Nr. luni in perioada (12 luni sau cate au ramas pana la finele anului )", "an_ant":"", "an_c":"", "an_2":"", "an_3":"", "an_4":"", "an_5":"", "an_6":"", "an_7":"",
               "an_8":"", "an_9":"", "an_10":"", "an_11":"", "an_12":"", "an_13":"", "an_14":"", "an_15":"", "an_16":"", "an_17":"", "an_18":""},
-         "b":{"den":"Cifra de afaceri", "an_ant":"0", "an_c":"0", "an_2":"0"}}
+         "b":{"den":"b.Cifra de afaceri (anual/estimat de la luna curenta pana la finele anului pt an curent)", "an_ant":"0", "an_c":"0", "an_2":"0"}}
     key_list=[]
     for key in cf.keys():
       ll={}
