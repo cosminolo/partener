@@ -25,4 +25,10 @@ class cf(cfTemplate):
     open_form('init.analiza')
     pass
 
+  def button_1_click(self, **event_args):
+    cf = [{"a":{"den":"Nr luni in perioada", "an_ant":"`12", "an_c":"", "an_2":""}}]
+    self.repeating_panel_1.items=cf
+    pass
+
+
 

@@ -5,10 +5,39 @@ container:
   event_bindings: {}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
   event_bindings: {}
+  components:
+  - type: DataGrid
+    properties:
+      role: null
+      columns:
+      - {id: BEHQTM, title: Estimari, data_key: column_1}
+      - {id: OMFGDK, title: An anterior, data_key: An curent}
+      - {id: MITXXU, title: An curent, data_key: column_3}
+      - {id: TSYQOG, title: An 2, data_key: column_2}
+      auto_header: true
+      tooltip: ''
+      border: ''
+      foreground: ''
+      rows_per_page: 20
+      visible: true
+      wrap_on: never
+      show_page_controls: true
+      spacing_above: small
+      spacing_below: small
+      background: ''
+    name: data_grid_1
+    layout_properties: {grid_position: 'QQODHF,SMLHFZ'}
+    components:
+    - type: RepeatingPanel
+      properties: {spacing_above: none, spacing_below: none, item_template: init.cf.RowTemplate1}
+      name: repeating_panel_1
+      layout_properties: {}
+      event_bindings: {}
+    event_bindings: {}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: column_panel_1
@@ -19,6 +48,7 @@ components:
     properties: {text: button_1}
     name: button_1
     layout_properties: {grid_position: 'YOJKMM,RQVLHL'}
+    event_bindings: {click: button_1_click}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: column_panel_2

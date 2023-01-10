@@ -1,0 +1,33 @@
+container:
+  type: DataRowPanel
+  event_bindings: {}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: BEHQTM}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''a''][''den'']'}
+- type: TextBox
+  properties: {}
+  name: text_box_1
+  layout_properties: {column: OMFGDK}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''a''][''an-2'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_2
+  layout_properties: {column: MITXXU}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''a''][''an_c'']', writeback: true}
+- type: TextBox
+  properties: {}
+  name: text_box_3
+  layout_properties: {column: TSYQOG}
+  event_bindings: {}
+  data_bindings:
+  - {property: text, code: 'self.item[''a''][''an_2'']', writeback: true}
+is_package: true
