@@ -14,7 +14,7 @@ components:
     properties:
       role: null
       columns:
-      - {id: BEHQTM, title: Estimari, data_key: column_1, expand: true, width: '300'}
+      - {id: BEHQTM, title: Estimari, data_key: column_1, expand: true, width: '600'}
       - {id: OMFGDK, title: An anterior, data_key: An curent, expand: true, width: '150'}
       - {id: MITXXU, title: An curent, data_key: column_3, expand: true, width: '150'}
       - {id: TSYQOG, title: An 2, data_key: column_2, width: '150'}
@@ -38,12 +38,12 @@ components:
       tooltip: ''
       border: ''
       foreground: ''
-      rows_per_page: 20
+      rows_per_page: 21
       visible: true
       wrap_on: never
       show_page_controls: true
-      spacing_above: small
-      spacing_below: small
+      spacing_above: none
+      spacing_below: none
       background: ''
     name: data_grid_1
     layout_properties: {grid_position: 'QQODHF,SMLHFZ', full_width_row: true, row_background: ''}

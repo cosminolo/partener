@@ -3,21 +3,30 @@ container:
   event_bindings: {}
 components:
 - type: Label
-  properties: {}
+  properties: {role: null, align: left, tooltip: '', border: solid black 2px, foreground: '',
+    visible: true, text: '', font_size: null, font: '', spacing_above: none, icon_align: left,
+    spacing_below: none, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
   name: label_1
   layout_properties: {column: BEHQTM}
   event_bindings: {}
   data_bindings:
   - {property: text, code: 'self.item[''den'']'}
 - type: TextBox
-  properties: {}
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: solid black 2px, enabled: true, foreground: '', visible: true, text: '',
+    font_size: null, font: '', spacing_above: none, type: text, spacing_below: none,
+    italic: false, background: '', bold: false, underline: false}
   name: text_box_1
   layout_properties: {column: OMFGDK}
   event_bindings: {}
   data_bindings:
   - {property: text, code: 'self.item[''an_ant'']', writeback: true}
 - type: TextBox
-  properties: {}
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: solid black 2px, enabled: true, foreground: '', visible: true, text: '',
+    font_size: null, font: '', spacing_above: none, type: text, spacing_below: none,
+    italic: false, background: '', bold: false, underline: false}
   name: text_box_2
   layout_properties: {column: MITXXU}
   event_bindings: {}
