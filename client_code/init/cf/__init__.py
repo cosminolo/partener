@@ -26,17 +26,23 @@ class cf(cfTemplate):
     pass
 
   def button_1_click(self, **event_args):
-    #ccf = []
-    cf = {int("0"):{"den":"Nr luni in perioada", "an_ant":"`12", "an_c":"", "an_2":""},
-         int("1"):{"den":"Cifra de afaceri", "an_ant":"`0", "an_c":"0", "an_2":"0"}}
-    #ccf.append(cf)    
-    self.repeating_panel_1.items=cf
+    ccf = []
+    cf = {"a":{"den":"Nr luni in perioada", "an_ant":"12", "an_c":"", "an_2":""},
+         "b":{"den":"Cifra de afaceri", "an_ant":"0", "an_c":"0", "an_2":"0"}}
+    key_list=[]
+    for key in cf.keys():
+      ll={}
+      ll=cf[key]   
+      ccf.append(ll)
+      key_list.append(key)
+    self.repeating_panel_1.items=ccf  
+    print(key_list)
     pass
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    js=self.repeating_panel_1.items[0]
-    print(js)
+    js=self.repeating_panel_1.items
+    print(len(js))
     pass
 
 
