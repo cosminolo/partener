@@ -8,7 +8,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-
+import json
 class cf(cfTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -26,9 +26,19 @@ class cf(cfTemplate):
     pass
 
   def button_1_click(self, **event_args):
-    cf = [{"a":{"den":"Nr luni in perioada", "an_ant":"`12", "an_c":"", "an_2":""}}]
+    #ccf = []
+    cf = {int("0"):{"den":"Nr luni in perioada", "an_ant":"`12", "an_c":"", "an_2":""},
+         int("1"):{"den":"Cifra de afaceri", "an_ant":"`0", "an_c":"0", "an_2":"0"}}
+    #ccf.append(cf)    
     self.repeating_panel_1.items=cf
     pass
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    js=self.repeating_panel_1.items[0]
+    print(js)
+    pass
+
 
 
 
