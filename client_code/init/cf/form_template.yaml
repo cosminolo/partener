@@ -5,7 +5,7 @@ container:
   event_bindings: {}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"BGYFIY":15,"OJZQOZ":45,"HNOFUX":15,"HONPDT":45}'}
   name: content_panel
   layout_properties: {slot: default}
   event_bindings: {}
@@ -38,7 +38,7 @@ components:
       tooltip: ''
       border: ''
       foreground: ''
-      rows_per_page: 21
+      rows_per_page: 22
       visible: true
       wrap_on: never
       show_page_controls: true
@@ -53,6 +53,51 @@ components:
       name: repeating_panel_1
       layout_properties: {}
       event_bindings: {}
+    event_bindings: {}
+  - type: ColumnPanel
+    properties: {col_widths: '{"LGWXEZ":15,"PHWZOV":45}'}
+    name: column_panel_4
+    layout_properties: {grid_position: 'ETHXWP,QZMGPC'}
+    event_bindings: {}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Premise venituri, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1
+      layout_properties: {grid_position: 'WQXHJR,LGWXEZ'}
+      event_bindings: {}
+    - type: TextArea
+      properties: {}
+      name: text_area_1
+      layout_properties: {grid_position: 'WQXHJR,PHWZOV'}
+      event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Premise cheltuieli, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'NPZNPL,BGYFIY'}
+    event_bindings: {}
+  - type: TextArea
+    properties: {}
+    name: text_area_2
+    layout_properties: {grid_position: 'NPZNPL,OJZQOZ'}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Premise plati, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'FOWRXY,HNOFUX'}
+    event_bindings: {}
+  - type: TextArea
+    properties: {}
+    name: text_area_3
+    layout_properties: {grid_position: 'FOWRXY,HONPDT'}
     event_bindings: {}
 - type: ColumnPanel
   properties: {col_widths: '{}'}

@@ -3,7 +3,7 @@ container:
   event_bindings: {}
 components:
 - type: Label
-  properties: {role: null, align: left, tooltip: '', border: solid black 2px, foreground: '',
+  properties: {role: null, align: left, tooltip: '', border: solid black 1px, foreground: '',
     visible: true, text: '', font_size: null, font: '', spacing_above: none, icon_align: left,
     spacing_below: none, italic: false, background: '', bold: false, underline: false,
     icon: ''}
@@ -14,7 +14,7 @@ components:
   - {property: text, code: 'self.item[''den'']'}
 - type: TextBox
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-    border: solid black 2px, enabled: true, foreground: '', visible: true, text: '',
+    border: solid black 1px, enabled: true, foreground: '', visible: true, text: '',
     font_size: null, font: '', spacing_above: none, type: text, spacing_below: none,
     italic: false, background: '', bold: false, underline: false}
   name: text_box_1
@@ -24,7 +24,7 @@ components:
   - {property: text, code: 'self.item[''an_ant'']', writeback: true}
 - type: TextBox
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-    border: solid black 2px, enabled: true, foreground: '', visible: true, text: '',
+    border: solid black 1px, enabled: true, foreground: '', visible: true, text: '',
     font_size: null, font: '', spacing_above: none, type: text, spacing_below: none,
     italic: false, background: '', bold: false, underline: false}
   name: text_box_2

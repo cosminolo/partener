@@ -77,14 +77,17 @@ class cf(cfTemplate):
               "an_8":"", "an_9":"", "an_10":"", "an_11":"", "an_12":"", "an_13":"", "an_14":"", "an_15":"", "an_16":"", "an_17":"", "an_18":""},
          "y":{"den":"y.Sustinerea sarcinii financiare (val>1.2 este eligibila; val <1.2 nu este eligibila)", "an_ant":"", "an_c":"", "an_2":"", "an_3":"", "an_4":"", "an_5":"", "an_6":"", "an_7":"",
               "an_8":"", "an_9":"", "an_10":"", "an_11":"", "an_12":"", "an_13":"", "an_14":"", "an_15":"", "an_16":"", "an_17":"", "an_18":""}, 
-         }
+         "premise":{"ven":"1", "chelt":"2", "plt":""}}
     key_list=[]
     for key in cf.keys():
       ll={}
       ll=cf[key]   
       ccf.append(ll)
       key_list.append(key)
-    self.repeating_panel_1.items=ccf  
+    self.repeating_panel_1.items=ccf
+    self.text_area_1.text=self.repeating_panel_1.items[21]["ven"]
+    self.text_area_2.text=self.repeating_panel_1.items[21]["chelt"]
+    self.text_area_3.text=self.repeating_panel_1.items[21]["plt"]
     #print(key_list)
     i=2
     j=0
