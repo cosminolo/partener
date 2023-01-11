@@ -13,18 +13,40 @@ class cf(cfTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    items = []
-    for row in range(10):
-      item = {}
-      for col in range(1, 19):
-         item.update({'column_{}'.format(col): 'col{}_{}'.format(col, row)})
-      items.append(item)
-    self.repeating_panel_1.items = items
+    #items = []
+    #for row in range(1):
+      #item = {}
+      #for col in range(1, 19):
+         #item.update({'column_{}'.format(col): 'col{}_{}'.format(col, row)})
+      #items.append(item)
+    #self.repeating_panel_1.items = items  
+    self.data_grid_1.role = 'wide'
+    cf=json.loads(anvil.server.call("get_cf", self.ups()))
+    ccf = []
+    key_list=[]
+    for key in cf.keys():
+      ll={}
+      ll=cf[key]   
+      ccf.append(ll)
+      key_list.append(key)
+    print(key_list)   
+    self.repeating_panel_1.items=ccf
+    #self.text_area_1.text=self.repeating_panel_1.items[21]["ven"]
+    #self.text_area_2.text=self.repeating_panel_1.items[21]["chelt"]
+    #self.text_area_3.text=self.repeating_panel_1.items[21]["plt"]
+    
 
     self.data_grid_1.role = 'wide'
     # Any code you write here will run when the form opens.
     
-
+  def ups(self):
+      user = anvil.users.get_user()
+      if user is None:
+        x=0
+      else:
+          us =  str(user['email'])
+          return us
+      pass 
   def button_4_click(self, **event_args):
     open_form('init')
     pass
