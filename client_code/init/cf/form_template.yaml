@@ -15,25 +15,25 @@ components:
       role: null
       columns:
       - {id: BEHQTM, title: Estimari, data_key: column_1, expand: true, width: '600'}
-      - {id: OMFGDK, title: An anterior, data_key: An curent, expand: true, width: '150'}
-      - {id: MITXXU, title: An curent, data_key: column_3, expand: true, width: '150'}
-      - {id: TSYQOG, title: An 2, data_key: column_2, width: '150'}
-      - {id: WBOAYR, title: An 3, data_key: column_4, width: '150'}
-      - {id: JGXGOC, title: An 4, data_key: column_5, width: '150'}
-      - {id: PVBPXV, title: An 5, data_key: column_6, width: '150'}
-      - {id: ETGAAQ, title: An 6, data_key: column_7, width: '150'}
-      - {id: HCSHEX, title: An 7, data_key: column_8, width: '150'}
-      - {id: PVJETE, title: An 8, data_key: column_9, width: '150'}
-      - {id: IEWOXF, title: An 9, data_key: column_10, width: '150'}
-      - {id: SVIMJM, title: An 10, data_key: column_11, width: '150'}
-      - {id: CXQRPV, title: An 11, data_key: column_12, width: '150'}
-      - {id: JVZMKE, title: An 12, data_key: column_13, width: '150'}
-      - {id: UGQDDY, title: An 13, data_key: column_14, width: '150'}
-      - {id: RJRQYN, title: An 14, data_key: column_15, width: '150'}
-      - {id: RNBSHR, title: An 15, data_key: column_16, width: '150'}
-      - {id: UUWFLG, title: An 16, data_key: column_17, width: '150'}
-      - {id: LOYYZR, title: An 17, data_key: column_18, width: '150'}
-      - {id: JFXRDW, title: An 18, data_key: column_19, width: '150'}
+      - {id: OMFGDK, title: An -1, data_key: An curent, expand: false, width: '75'}
+      - {id: MITXXU, title: An 1, data_key: column_3, expand: false, width: '75'}
+      - {id: TSYQOG, title: An 2, data_key: column_2, width: '75'}
+      - {id: WBOAYR, title: An 3, data_key: column_4, width: '75'}
+      - {id: JGXGOC, title: An 4, data_key: column_5, width: '75'}
+      - {id: PVBPXV, title: An 5, data_key: column_6, width: '75'}
+      - {id: ETGAAQ, title: An 6, data_key: column_7, width: '75'}
+      - {id: HCSHEX, title: An 7, data_key: column_8, width: '75'}
+      - {id: PVJETE, title: An 8, data_key: column_9, width: '75'}
+      - {id: IEWOXF, title: An 9, data_key: column_10, width: '75'}
+      - {id: SVIMJM, title: An 10, data_key: column_11, width: '75'}
+      - {id: CXQRPV, title: An 11, data_key: column_12, width: '75'}
+      - {id: JVZMKE, title: An 12, data_key: column_13, width: '75'}
+      - {id: UGQDDY, title: An 13, data_key: column_14, width: '75'}
+      - {id: RJRQYN, title: An 14, data_key: column_15, width: '75'}
+      - {id: RNBSHR, title: An 15, data_key: column_16, width: '75'}
+      - {id: UUWFLG, title: An 16, data_key: column_17, width: '75'}
+      - {id: LOYYZR, title: An 17, data_key: column_18, width: '75'}
+      - {id: JFXRDW, title: An 18, data_key: column_19, width: '75'}
       auto_header: true
       tooltip: ''
       border: ''
