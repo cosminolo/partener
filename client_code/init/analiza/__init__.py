@@ -601,8 +601,8 @@ class analiza(analizaTemplate):
     pass
 
   def button_3_click(self, **event_args):
-    open_form('init.cf')
-    pass
+      open_form('init.cf')
+      pass
 
 
 

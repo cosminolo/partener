@@ -12,8 +12,8 @@ from anvil.tables import app_tables
 class RowTemplate1(RowTemplate1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
-    self.init_components(**properties)
-    #self.text_box_3.visible=False
+   self.init_components(**properties)
+   try:
     lit1=["a", "b", "c", "d", "f", "g", "h", "m", "n", "o", "p", "r", "s", "t"]
     lit2=["e", "i", "j", "k", "l", "x", "y"]
     if self.label_1.text[0] in lit1:
@@ -77,4 +77,6 @@ class RowTemplate1(RowTemplate1Template):
       self.text_box_18.enabled = False
       self.text_box_19.background="#E3F9A9"
       self.text_box_19.enabled = False
+   except:
+      pass
       

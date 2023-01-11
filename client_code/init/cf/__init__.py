@@ -14,19 +14,23 @@ class cf(cfTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     global cf
-    cf =json.loads(anvil.server.call("get_cf", self.ups()))
-    self.item = cf["premise"]    
-    self.data_grid_1.role = 'wide'  
-    ccf = []
-    key_list=[]
-    for key in cf.keys():
-      ll={}
-      if key!="premise":
-        ll=cf[key]   
-        ccf.append(ll)
-        key_list.append(key)
-    self.repeating_panel_1.items=ccf
-    
+    try:
+      cf={}
+      ccf =anvil.server.call("get_cf", self.ups())
+      cf=json.loads(ccf)
+      self.item = cf["premise"]    
+      self.data_grid_1.role = 'wide'  
+      ccf = []
+      key_list=[]
+      for key in cf.keys():
+        ll={}
+        if key!="premise":
+          ll=cf[key]   
+          ccf.append(ll)
+          key_list.append(key)
+      self.repeating_panel_1.items=ccf
+    except:
+      pass
   def ups(self):
       user = anvil.users.get_user()
       if user is None:

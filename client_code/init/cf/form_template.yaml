@@ -14,7 +14,8 @@ components:
     properties:
       role: null
       columns:
-      - {id: BEHQTM, title: Estimari, data_key: column_1, expand: true, width: '600'}
+      - {id: BEHQTM, title: Estimari Flux de numerar, data_key: column_1, expand: true,
+        width: '600'}
       - {id: OMFGDK, title: An -1, data_key: An curent, expand: false, width: '75'}
       - {id: MITXXU, title: An 1, data_key: column_3, expand: false, width: '75'}
       - {id: TSYQOG, title: An 2, data_key: column_2, width: '75'}
