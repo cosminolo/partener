@@ -14,7 +14,8 @@ class cf(cfTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     global cf
-    try:
+    self.charge()
+  def charge(self):      
       cf={}
       ccf =anvil.server.call("get_cf", self.ups())
       cf=json.loads(ccf)
@@ -29,8 +30,8 @@ class cf(cfTemplate):
           ccf.append(ll)
           key_list.append(key)
       self.repeating_panel_1.items=ccf
-    except:
-      pass
+      pass   
+     
   def ups(self):
       user = anvil.users.get_user()
       if user is None:
