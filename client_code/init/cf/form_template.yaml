@@ -122,6 +122,11 @@ components:
     name: button_2
     layout_properties: {grid_position: 'MOQYHD,WJPWTP'}
     event_bindings: {click: button_2_click}
+  - type: Button
+    properties: {text: button_3}
+    name: button_3
+    layout_properties: {grid_position: 'UNUWKW,SDCLSQ'}
+    event_bindings: {click: button_3_click}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: column_panel_2

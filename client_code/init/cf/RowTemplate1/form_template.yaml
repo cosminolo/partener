@@ -19,7 +19,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_1
   layout_properties: {column: OMFGDK}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_1_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_ant'']', writeback: true}
 - type: TextBox
