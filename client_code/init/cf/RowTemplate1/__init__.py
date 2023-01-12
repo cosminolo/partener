@@ -94,249 +94,217 @@ class RowTemplate1(RowTemplate1Template):
   def text_box_2_lost_focus(self, **event_args):
    if self.text_box_2.enabled == True:
     s = self.text_box_2.text
-    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-    else:         
-        self.text_box_2.text = 0     
-        alert("Doar numar fara zecimale sau separatori!")   
+    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+    else:
+        self.text_box_2.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_c']=0
+        self.text_box_2_lost_focus()  
     pass
 
   def text_box_3_lost_focus(self, **event_args):
     if self.text_box_3.enabled == True:
      s = self.text_box_3.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)        
-     else:         
-        self.text_box_3.text = 0     
-        alert("Doar numar fara zecimale sau separatori!")   
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_3.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_2']=0
+        self.text_box_3_lost_focus() 
     pass
 
   def text_box_4_lost_focus(self, **event_args):
     if self.text_box_4.enabled == True:
      s = self.text_box_4.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_4.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_4.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_3']=0
+        self.text_box_4_lost_focus() 
     pass
 
   def text_box_5_lost_focus(self, **event_args):
     if self.text_box_5.enabled == True:
      s = self.text_box_5.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_5.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_5.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_4']=0
+        self.text_box_5_lost_focus()
     pass
 
   def text_box_6_lost_focus(self, **event_args):
     if self.text_box_6.enabled == True:
      s = self.text_box_6.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_6.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_6.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_5']=0
+        self.text_box_6_lost_focus()
     pass
 
   def text_box_7_lost_focus(self, **event_args):
     if self.text_box_7.enabled == True:
      s = self.text_box_7.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_7.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_7.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_6']=0
+        self.text_box_7_lost_focus()
     pass
 
   def text_box_8_lost_focus(self, **event_args):
     if self.text_box_8.enabled == True:
      s = self.text_box_8.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_8.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_8.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_7']=0
+        self.text_box_8_lost_focus()
     pass
 
   def text_box_9_lost_focus(self, **event_args):
     if self.text_box_9.enabled == True:
      s = self.text_box_9.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_9.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_9.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_8']=0
+        self.text_box_9_lost_focus()
     pass
 
   def text_box_10_lost_focus(self, **event_args):
     if self.text_box_10.enabled == True:
      s = self.text_box_10.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_10.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_10.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_9']=0
+        self.text_box_10_lost_focus()
     pass
 
   def text_box_11_lost_focus(self, **event_args):
     if self.text_box_11.enabled == True:
      s = self.text_box_11.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_11.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_11.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_10']=0
+        self.text_box_11_lost_focus()
     pass
 
   def text_box_12_lost_focus(self, **event_args):
     if self.text_box_12.enabled == True:
      s = self.text_box_12.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_12.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_12.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_11']=0
+        self.text_box_12_lost_focus()
     pass
 
   def text_box_13_lost_focus(self, **event_args):
     if self.text_box_13.enabled == True:
      s = self.text_box_13.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_13.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_13.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_12']=0
+        self.text_box_13_lost_focus() 
     pass
 
   def text_box_14_lost_focus(self, **event_args):
     if self.text_box_14.enabled == True:
      s = self.text_box_14.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_14.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_14.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_13']=0
+        self.text_box_14_lost_focus()
     pass
 
   def text_box_15_lost_focus(self, **event_args):
     if self.text_box_15.enabled == True:
      s = self.text_box_15.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_15.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_15.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_14']=0
+        self.text_box_15_lost_focus()
     pass
 
   def text_box_16_lost_focus(self, **event_args):
     if self.text_box_16.enabled == True:
      s = self.text_box_16.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_16.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_16.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_15']=0
+        self.text_box_16_lost_focus()
     pass
 
   def text_box_17_lost_focus(self, **event_args):
     if self.text_box_17.enabled == True:
      s = self.text_box_17.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_17.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_17.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_16']=0
+        self.text_box_17_lost_focus()
     pass
 
   def text_box_18_lost_focus(self, **event_args):
     if self.text_box_18.enabled == True:
      s = self.text_box_18.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_18.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_18.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_17']=0
+        self.text_box_18_lost_focus()
     pass
 
   def text_box_19_lost_focus(self, **event_args):
     if self.text_box_19.enabled == True:
      s = self.text_box_19.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)
-        get_open_form('cf').refr()
-        pass
-     else:         
-        self.text_box_19.text = 0     
-        alert("Doar numar fara zecimale sau separatori!") 
+     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
+       get_open_form('cf').refr() 
+     else:
+        self.text_box_19.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_18']=0
+        self.text_box_19_lost_focus()
     pass
 
 
