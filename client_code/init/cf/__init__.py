@@ -16,14 +16,18 @@ class cf(cfTemplate):
     self.init_components(**properties)
     global cf
     self.charge()
-  def charge(self):      
+    #My_globals.ccf =self.charge(anvil.server.call("get_cf", self.ups()))
+    self.repeating_panel_1.items=My_globals.ccf   
+    #My_globals.ccf = self.repeating_panel_1.items
+    self.data_grid_1.role = 'wide'                                   
+  def charge(self):     
+      My_globals.ccf = anvil.server.call("get_cf", self.ups())      
       cf={}
-      My_globals.ccf =anvil.server.call("get_cf", self.ups())
+      #My_globals.ccf =anvil.server.call("get_cf", self.ups())
       cf=json.loads(My_globals.ccf)
       My_globals.premis = cf["premise"]  
       self.item = My_globals.premis
-      My_globals.premis=self.item
-      self.data_grid_1.role = 'wide'  
+      My_globals.premis=self.item      
       ccf = []
       key_list=[]
       for key in cf.keys():
@@ -31,13 +35,14 @@ class cf(cfTemplate):
         if key!="premise":
           ll=cf[key]   
           ccf.append(ll)
-          key_list.append(key)
-      
-      My_globals.ccf=ccf      
-      self.repeating_panel_1.items=My_globals.ccf   
-      My_globals.ccf = self.repeating_panel_1.items
+          key_list.append(key)   
+      My_globals.ccf = ccf    
+      #self.repeating_panel_1.items=My_globals.ccf   
+      #My_globals.ccf = self.repeating_panel_1.items
       pass   
-     
+  def refr(self):
+    self.repeating_panel_1.items=My_globals.ccf   
+    pass
   def ups(self):
       user = anvil.users.get_user()
       if user is None:

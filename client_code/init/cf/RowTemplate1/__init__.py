@@ -84,17 +84,24 @@ class RowTemplate1(RowTemplate1Template):
   def text_box_1_lost_focus(self, **event_args):   
    if self.text_box_1.enabled == True:
     s = self.text_box_1.text
-    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
-        
-        self.u_cf()
+    if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):        
+        My_globals.ccf= self.calcul(My_globals.ccf)
+        get_open_form('cf').refr()
+        self.u_cf(My_globals.ccf, My_globals.premis)
+        get_open_form('cf').refr()
         pass
     else:         
         self.text_box_1.text = 0     
         alert("Doar numar fara zecimale sau separatori!")   
    pass
-  def u_cf(self):
-    js1=My_globals.ccf
-    js2 = My_globals.premis
+  def calcul(self, js):
+    js[4]["an_ant"]= 23650
+    return js
+    pass
+  
+  def u_cf(self, js1, js2):
+    #js1=self.item
+    #js2 = My_globals.premis
     jsf=[]
     for i in range(0,len(js1)):
       js_int={}
