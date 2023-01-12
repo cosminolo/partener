@@ -9,6 +9,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import json
+from ... import My_globals
 class cf(cfTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -17,9 +18,11 @@ class cf(cfTemplate):
     self.charge()
   def charge(self):      
       cf={}
-      ccf =anvil.server.call("get_cf", self.ups())
-      cf=json.loads(ccf)
-      self.item = cf["premise"]    
+      My_globals.ccf =anvil.server.call("get_cf", self.ups())
+      cf=json.loads(My_globals.ccf)
+      My_globals.premis = cf["premise"]  
+      self.item = My_globals.premis
+      My_globals.premis=self.item
       self.data_grid_1.role = 'wide'  
       ccf = []
       key_list=[]
@@ -29,7 +32,10 @@ class cf(cfTemplate):
           ll=cf[key]   
           ccf.append(ll)
           key_list.append(key)
-      self.repeating_panel_1.items=ccf
+      
+      My_globals.ccf=ccf      
+      self.repeating_panel_1.items=My_globals.ccf   
+      My_globals.ccf = self.repeating_panel_1.items
       pass   
      
   def ups(self):

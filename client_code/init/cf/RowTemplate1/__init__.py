@@ -8,7 +8,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-
+from ... import My_globals
 class RowTemplate1(RowTemplate1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -85,6 +85,7 @@ class RowTemplate1(RowTemplate1Template):
    if self.text_box_1.enabled == True:
     s = self.text_box_1.text
     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+        
         self.u_cf()
         pass
     else:         
@@ -92,8 +93,8 @@ class RowTemplate1(RowTemplate1Template):
         alert("Doar numar fara zecimale sau separatori!")   
    pass
   def u_cf(self):
-    js1=self.repeating_panel_1.items
-    js2 = self.item
+    js1=My_globals.ccf
+    js2 = My_globals.premis
     jsf=[]
     for i in range(0,len(js1)):
       js_int={}
