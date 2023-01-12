@@ -8,7 +8,6 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-from ... import My_globals
 class RowTemplate1(RowTemplate1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -84,18 +83,13 @@ class RowTemplate1(RowTemplate1Template):
    if self.text_box_1.enabled == True:
     s = self.text_box_1.text
     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
-      try:
-        My_globals.ccf= get_open_form('cf').calcul(My_globals.ccf)
-        get_open_form('cf').refr()
-        get_open_form('cf').u_cf(My_globals.ccf, My_globals.premis)  
-      except:
-        pass
+       get_open_form('cf').refr() 
     else:
-        self.text_box_1.text = int(0)   
-        print(self.item)
-        alert("Doar numar fara zecimale sau separatori!") 
+        self.text_box_1.text=0
+        alert("Doar numar fara zecimale sau separatori!")
+        self.item['an_ant']=0
         self.text_box_1_lost_focus()
-   pass
+    pass
 
   def text_box_2_lost_focus(self, **event_args):
    if self.text_box_2.enabled == True:

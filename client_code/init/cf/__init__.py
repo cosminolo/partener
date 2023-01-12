@@ -9,25 +9,20 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import json
-from ... import My_globals
 class cf(cfTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     global cf
     self.charge()
-    #My_globals.ccf =self.charge(anvil.server.call("get_cf", self.ups()))
-    self.repeating_panel_1.items=My_globals.ccf   
-    #My_globals.ccf = self.repeating_panel_1.items
     self.data_grid_1.role = 'wide'                                   
   def charge(self):     
-      My_globals.ccf = anvil.server.call("get_cf", self.ups())      
+      ccf = anvil.server.call("get_cf", self.ups())      
       cf={}
-      #My_globals.ccf =anvil.server.call("get_cf", self.ups())
-      cf=json.loads(My_globals.ccf)
-      My_globals.premis = cf["premise"]  
-      self.item = My_globals.premis
-      My_globals.premis=self.item      
+      cf=json.loads(ccf)
+      premis = cf["premise"]  
+      self.item = premis
+      #My_globals.premis=self.item      
       ccf = []
       key_list=[]
       for key in cf.keys():
@@ -36,13 +31,22 @@ class cf(cfTemplate):
           ll=cf[key]   
           ccf.append(ll)
           key_list.append(key)   
-      My_globals.ccf = ccf    
-      #self.repeating_panel_1.items=My_globals.ccf   
-      #My_globals.ccf = self.repeating_panel_1.items
+      self.repeating_panel_1.items=ccf  
       pass   
-  def refr(self):
-    self.repeating_panel_1.items=My_globals.ccf
-    self.item=My_globals.premis
+    
+  def refr(self):    
+    js=self.repeating_panel_1.items 
+    list_key = ["an_ant", "an_c", "an_2", "an_3", "an_4", "an_5", "an_6", "an_7", "an_8", "an_9", "an_10", "an_11", "an_12", "an_13", "an_14", "an_15", "an_16", "an_17", "an_18"]
+    try:
+      for i in list_key:      
+        js[4][i]=int(js[1][i])+int(js[2][i])-int(js[3][i])
+      self.repeating_panel_1.items=js
+      self.u_cf(js, self.item)
+    except:      
+      js[4][i]=0
+      self.repeating_panel_1.items[4][i]=0
+      #self.repeating_panel_1.items=self.repeating_panel_1.items
+      #self.u_cf(js, self.item)      
     pass
   def ups(self):
       user = anvil.users.get_user()
@@ -98,6 +102,7 @@ class cf(cfTemplate):
     js_int["premise"]=js2
     jsf.append(js_int)
     anvil.server.call("upp_cf", self.ups(), jsf[0])  
+    #print(jsf[0])
     pass  
 
   def button_3_click(self, **event_args):
@@ -116,22 +121,17 @@ class cf(cfTemplate):
     pass
 
   def text_area_1_lost_focus(self, **event_args):
-    self.u_cf(My_globals.ccf, My_globals.premis)
+    self.u_cf(self.repeating_panel_1.items, self.item)
     pass
-  def calcul(self, js):
-    list_key = ["an_ant", "an_c", "an_2", "an_3", "an_4", "an_5", "an_6", "an_7", "an_8", "an_9", "an_10", "an_11", "an_12", "an_13", "an_14", "an_15", "an_16", "an_17", "an_18"]
-    for i in list_key:
-      js[4][i]=int(js[1][i])+int(js[2][i])-int(js[3][i])
-      
-    return js
-    pass
+  
+  
 
   def text_area_2_lost_focus(self, **event_args):
-    self.u_cf(My_globals.ccf, My_globals.premis)
+    self.u_cf(self.repeating_panel_1.items, self.item)
     pass
 
   def text_area_3_lost_focus(self, **event_args):
-    self.u_cf(My_globals.ccf, My_globals.premis)
+    self.u_cf(self.repeating_panel_1.items, self.item)
     pass
 
 
