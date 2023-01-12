@@ -41,7 +41,8 @@ class cf(cfTemplate):
       #My_globals.ccf = self.repeating_panel_1.items
       pass   
   def refr(self):
-    self.repeating_panel_1.items=My_globals.ccf   
+    self.repeating_panel_1.items=My_globals.ccf
+    self.item=My_globals.premis
     pass
   def ups(self):
       user = anvil.users.get_user()
@@ -66,9 +67,9 @@ class cf(cfTemplate):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     pass
-  def u_cf(self):
-    js1=self.repeating_panel_1.items
-    js2 = self.item
+  def u_cf(self, js1, js2):
+    #js1=self.item
+    #js2 = My_globals.premis
     jsf=[]
     for i in range(0,len(js1)):
       js_int={}
@@ -97,7 +98,7 @@ class cf(cfTemplate):
     js_int["premise"]=js2
     jsf.append(js_int)
     anvil.server.call("upp_cf", self.ups(), jsf[0])  
-    pass
+    pass  
 
   def button_3_click(self, **event_args):
     list_key = ["an_ant", "an_c", "an_2"]
@@ -113,6 +114,27 @@ class cf(cfTemplate):
       #self.repeating_panel_1.items[4][i]= str(s) 
     #self.repeating_panel_1.items=self.repeating_panel_1.items
     pass
+
+  def text_area_1_lost_focus(self, **event_args):
+    self.u_cf(My_globals.ccf, My_globals.premis)
+    pass
+  def calcul(self, js):
+    list_key = ["an_ant", "an_c", "an_2", "an_3", "an_4", "an_5", "an_6", "an_7", "an_8", "an_9", "an_10", "an_11", "an_12", "an_13", "an_14", "an_15", "an_16", "an_17", "an_18"]
+    for i in list_key:
+      js[4][i]=int(js[1][i])+int(js[2][i])-int(js[3][i])
+      
+    return js
+    pass
+
+  def text_area_2_lost_focus(self, **event_args):
+    self.u_cf(My_globals.ccf, My_globals.premis)
+    pass
+
+  def text_area_3_lost_focus(self, **event_args):
+    self.u_cf(My_globals.ccf, My_globals.premis)
+    pass
+
+
 
 
 

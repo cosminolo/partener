@@ -29,7 +29,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_3
   layout_properties: {column: TSYQOG}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_3_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_2'']', writeback: true}
 - type: TextBox
@@ -39,7 +39,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_4
   layout_properties: {column: WBOAYR}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_4_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_3'']', writeback: true}
 - type: TextBox
@@ -49,7 +49,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_5
   layout_properties: {column: JGXGOC}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_5_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_4'']', writeback: true}
 - type: TextBox
@@ -59,7 +59,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_6
   layout_properties: {column: PVBPXV}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_6_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_5'']', writeback: true}
 - type: TextBox
@@ -69,7 +69,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_7
   layout_properties: {column: ETGAAQ}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_7_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_6'']', writeback: true}
 - type: TextBox
@@ -79,7 +79,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_8
   layout_properties: {column: HCSHEX}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_8_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_7'']', writeback: true}
 - type: TextBox
@@ -89,7 +89,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_9
   layout_properties: {column: PVJETE}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_9_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_8'']', writeback: true}
 - type: TextBox
@@ -99,7 +99,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_10
   layout_properties: {column: IEWOXF}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_10_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_9'']', writeback: true}
 - type: TextBox
@@ -109,7 +109,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_11
   layout_properties: {column: SVIMJM}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_11_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_10'']', writeback: true}
 - type: TextBox
@@ -119,7 +119,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_12
   layout_properties: {column: CXQRPV}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_12_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_11'']', writeback: true}
 - type: TextBox
@@ -129,7 +129,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_13
   layout_properties: {column: JVZMKE}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_13_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_12'']', writeback: true}
 - type: TextBox
@@ -139,7 +139,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_14
   layout_properties: {column: UGQDDY}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_14_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_13'']', writeback: true}
 - type: TextBox
@@ -149,7 +149,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_15
   layout_properties: {column: RJRQYN}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_15_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_14'']', writeback: true}
 - type: TextBox
@@ -159,7 +159,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_16
   layout_properties: {column: RNBSHR}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_16_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_15'']', writeback: true}
 - type: TextBox
@@ -169,7 +169,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_17
   layout_properties: {column: UUWFLG}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_17_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_16'']', writeback: true}
 - type: TextBox
@@ -179,7 +179,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_18
   layout_properties: {column: LOYYZR}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_18_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_17'']', writeback: true}
 - type: TextBox
@@ -189,7 +189,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_19
   layout_properties: {column: JFXRDW}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_19_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_18'']', writeback: true}
 - type: TextBox
@@ -199,7 +199,7 @@ components:
     italic: false, background: '', bold: false, underline: false}
   name: text_box_2
   layout_properties: {column: MITXXU}
-  event_bindings: {}
+  event_bindings: {lost_focus: text_box_2_lost_focus}
   data_bindings:
   - {property: text, code: 'self.item[''an_c'']', writeback: true}
 is_package: true
