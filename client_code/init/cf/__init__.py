@@ -141,6 +141,11 @@ class cf(cfTemplate):
     self.u_cf(self.repeating_panel_1.items, self.item)
     pass
 
+  def file_loader_1_change(self, file, **event_args):
+    anvil.server.call("upl_cf", self.ups(), file)
+    pass
+
+
 
 
 
