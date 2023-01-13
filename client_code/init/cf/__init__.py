@@ -44,7 +44,10 @@ class cf(cfTemplate):
         js[9][i]=round(int(js[4][i])+int(js[8][i]))
         js[11][i]=round(int(js[9][i])+int(js[10][i]))
         js[19][i]=int(js[12][i])+int(js[13][i])+int(js[14][i])-int(js[15][i])+int(js[16][i])+int(js[17][i])-int(js[18][i])
-        js[20][i]=round(int(js[11][i]) / int(js[19][i]),1)
+        if int(js[19][i])>0:
+          js[20][i]=round(int(js[11][i]) / int(js[19][i]),1)
+        else:
+          js[20][i]=1.2
       self.repeating_panel_1.items=js
       self.u_cf(js, self.item)
     except:      
