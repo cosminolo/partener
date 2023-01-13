@@ -43,6 +43,7 @@ class cf(cfTemplate):
         js[8][i]=round(-1*(int(js[5][i])+int(js[6][i])-int(js[7][i]))*int(js[1][i])/(int(js[0][i])*30))
         js[9][i]=round(int(js[4][i])+int(js[8][i]))
         js[11][i]=round(int(js[9][i])+int(js[10][i]))
+        js[19][i]=int(js[12][i])+int(js[13][i])+int(js[14][i])-int(js[15][i])+int(js[16][i])+int(js[17][i])-int(js[18][i])
       self.repeating_panel_1.items=js
       self.u_cf(js, self.item)
     except:      
@@ -50,10 +51,12 @@ class cf(cfTemplate):
       js[8][i]=0
       js[9][i]=0
       js[11][i]=0
+      js[19][i]=0
       self.repeating_panel_1.items[4][i]=0
       self.repeating_panel_1.items[8][i]=0
       self.repeating_panel_1.items[9][i]=0
       self.repeating_panel_1.items[11][i]=0
+      self.repeating_panel_1.items[19][i]=0
       #self.repeating_panel_1.items=self.repeating_panel_1.items
       #self.u_cf(js, self.item)      
     pass
