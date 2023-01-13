@@ -40,11 +40,17 @@ class cf(cfTemplate):
     try:
       for i in list_key:      
         js[4][i]=int(js[1][i])+int(js[2][i])-int(js[3][i])
+        js[8][i]=round(-1*(int(js[5][i])+int(js[6][i])-int(js[7][i]))*int(js[1][i])/(int(js[0][i])*30))
+        js[9][i]=round(int(js[4][i])+int(js[8][i]))
       self.repeating_panel_1.items=js
       self.u_cf(js, self.item)
     except:      
       js[4][i]=0
+      js[8][i]=0
+      js[9][i]=0
       self.repeating_panel_1.items[4][i]=0
+      self.repeating_panel_1.items[8][i]=0
+      self.repeating_panel_1.items[9][i]=0
       #self.repeating_panel_1.items=self.repeating_panel_1.items
       #self.u_cf(js, self.item)      
     pass
