@@ -13,8 +13,8 @@ class RowTemplate1(RowTemplate1Template):
     # Set Form properties and Data Bindings.
    self.init_components(**properties)
    try:
-    lit1=["a", "b", "c", "d", "f", "g", "h", "m", "n", "o", "p", "r", "s", "t"]
-    lit2=["e", "i", "j", "k", "l", "x", "y"]
+    lit1=["a", "b", "c", "d", "f", "g", "h", "k", "m", "n", "o", "p", "r", "s", "t"]
+    lit2=["e", "i", "j", "l", "x", "y"]
     if self.label_1.text[0] in lit1:
       self.label_1.background="#F8F7CA"
       self.text_box_1.background="#CAECF8"
