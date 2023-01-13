@@ -177,26 +177,6 @@ components:
     border: solid black 1px, enabled: true, foreground: '', visible: true, text: '',
     font_size: null, font: '', spacing_above: none, type: text, spacing_below: none,
     italic: false, background: '', bold: false, underline: false}
-  name: text_box_18
-  layout_properties: {column: LOYYZR}
-  event_bindings: {lost_focus: text_box_18_lost_focus}
-  data_bindings:
-  - {property: text, code: 'self.item[''an_17'']', writeback: true}
-- type: TextBox
-  properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-    border: solid black 1px, enabled: true, foreground: '', visible: true, text: '',
-    font_size: null, font: '', spacing_above: none, type: text, spacing_below: none,
-    italic: false, background: '', bold: false, underline: false}
-  name: text_box_19
-  layout_properties: {column: JFXRDW}
-  event_bindings: {lost_focus: text_box_19_lost_focus}
-  data_bindings:
-  - {property: text, code: 'self.item[''an_18'']', writeback: true}
-- type: TextBox
-  properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-    border: solid black 1px, enabled: true, foreground: '', visible: true, text: '',
-    font_size: null, font: '', spacing_above: none, type: text, spacing_below: none,
-    italic: false, background: '', bold: false, underline: false}
   name: text_box_2
   layout_properties: {column: MITXXU}
   event_bindings: {lost_focus: text_box_2_lost_focus}

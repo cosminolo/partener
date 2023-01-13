@@ -83,7 +83,7 @@ class cf(cfTemplate):
     pass
 
   def button_1_click(self, **event_args):
-    print(cf)
+    
     pass
 
   def button_2_click(self, **event_args):
@@ -124,18 +124,7 @@ class cf(cfTemplate):
     pass  
 
   def button_3_click(self, **event_args):
-    list_key = ["an_ant", "an_c", "an_2"]
-    for i in list_key:
-      s=0
-      #s=  self.repeating_panel_1.items[1][i] + self.repeating_panel_1.items[2][i] + self.repeating_panel_1.items[3][i] 
-      s=self.repeating_panel_1.items[1][i]
-      try:
-        s=  int(self.repeating_panel_1.items[1][i]) + int(self.repeating_panel_1.items[2][i]) + int(self.repeating_panel_1.items[3][i])
-        print(float(s))
-      except:
-        pass
-      #self.repeating_panel_1.items[4][i]= str(s) 
-    #self.repeating_panel_1.items=self.repeating_panel_1.items
+    
     pass
 
   def text_area_1_lost_focus(self, **event_args):

@@ -34,8 +34,7 @@ class RowTemplate1(RowTemplate1Template):
       self.text_box_15.background="#CAECF8"
       self.text_box_16.background="#CAECF8"
       self.text_box_17.background="#CAECF8"
-      self.text_box_18.background="#CAECF8"
-      self.text_box_19.background="#CAECF8"
+      
     if self.label_1.text[0] in lit2:
       self.label_1.background="#E3F9A9"
       self.text_box_1.background="#E3F9A9"
@@ -72,10 +71,7 @@ class RowTemplate1(RowTemplate1Template):
       self.text_box_16.enabled = False
       self.text_box_17.background="#E3F9A9"
       self.text_box_17.enabled = False
-      self.text_box_18.background="#E3F9A9"
-      self.text_box_18.enabled = False
-      self.text_box_19.background="#E3F9A9"
-      self.text_box_19.enabled = False
+      
    except:
     pass      
 
@@ -283,29 +279,7 @@ class RowTemplate1(RowTemplate1Template):
         self.text_box_17_lost_focus()
     pass
 
-  def text_box_18_lost_focus(self, **event_args):
-    if self.text_box_18.enabled == True:
-     s = self.text_box_18.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
-       get_open_form('cf').refr() 
-     else:
-        self.text_box_18.text=0
-        alert("Doar numar fara zecimale sau separatori!")
-        self.item['an_17']=0
-        self.text_box_18_lost_focus()
-    pass
-
-  def text_box_19_lost_focus(self, **event_args):
-    if self.text_box_19.enabled == True:
-     s = self.text_box_19.text
-     if s.isdigit() or (s.startswith("-") and s[1:].isdigit()): 
-       get_open_form('cf').refr() 
-     else:
-        self.text_box_19.text=0
-        alert("Doar numar fara zecimale sau separatori!")
-        self.item['an_18']=0
-        self.text_box_19_lost_focus()
-    pass
+  
 
 
 
