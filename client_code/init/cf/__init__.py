@@ -44,6 +44,7 @@ class cf(cfTemplate):
         js[9][i]=round(int(js[4][i])+int(js[8][i]))
         js[11][i]=round(int(js[9][i])+int(js[10][i]))
         js[19][i]=int(js[12][i])+int(js[13][i])+int(js[14][i])-int(js[15][i])+int(js[16][i])+int(js[17][i])-int(js[18][i])
+        js[20][i]=round(int(js[11][i]) / int(js[19][i]),1)
       self.repeating_panel_1.items=js
       self.u_cf(js, self.item)
     except:      
@@ -52,13 +53,15 @@ class cf(cfTemplate):
       js[9][i]=0
       js[11][i]=0
       js[19][i]=0
+      js[20][i]=0
       self.repeating_panel_1.items[4][i]=0
       self.repeating_panel_1.items[8][i]=0
       self.repeating_panel_1.items[9][i]=0
       self.repeating_panel_1.items[11][i]=0
       self.repeating_panel_1.items[19][i]=0
-      #self.repeating_panel_1.items=self.repeating_panel_1.items
-      #self.u_cf(js, self.item)      
+      self.repeating_panel_1.items[20][i]=0
+      self.repeating_panel_1.items=self.repeating_panel_1.items
+      self.u_cf(js, self.item)      
     pass
   def ups(self):
       user = anvil.users.get_user()
