@@ -17,6 +17,7 @@ components:
       icon: ''}
     name: login_status
     layout_properties: {}
+    event_bindings: {}
 - type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: tiny, spacing_above: none, col_widths: '{}', spacing_below: none,
