@@ -1417,22 +1417,6 @@ components:
       event_bindings: {change: date_picker_3_change}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: d.Media lunara a ponderii obligatiilor de plata in valuta (rezultand din credite si alte contracte de natura creditului) in total obligatii de plata (%),
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
-      name: label_7
-      layout_properties: {x: 15.875, y: 309.828125, width: 449}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: c.Media lunara a ponderii veniturilor in valuta in total venituri (%),
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '#E3F9A6', bold: false, underline: false, icon: ''}
-      name: label_6
-      layout_properties: {x: 17.984375, y: 259.828125, width: 449}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: b.Obligatii de plata in valuta (echiv lei) - inclusiv leasing in valuta sau obligatiuni in valuta,
         font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
@@ -1449,16 +1433,6 @@ components:
       event_bindings: {lost_focus: text_box_10_lost_focus}
       data_bindings:
       - {property: text, code: 'self.item[''iv''][''d''][''a1'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#E3F9A6', bold: false, underline: false}
-      name: text_box_7
-      layout_properties: {x: 473.75, y: 272.828125, width: 152}
-      event_bindings: {lost_focus: text_box_7_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''iv''][''c''][''a1'']', writeback: true}
     - type: TextBox
       properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1699,6 +1673,32 @@ components:
         background: '#E3F9A6', bold: false, underline: false, icon: ''}
       name: label_4
       layout_properties: {x: -76.171875, y: 82.828125, width: 449}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: c.Media lunara a ponderii veniturilor in valuta in total venituri (%),
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '#E3F9A6', bold: false, underline: false, icon: ''}
+      name: label_6
+      layout_properties: {x: 17.984375, y: 259.828125, width: 449}
+      event_bindings: {}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#E3F9A6', bold: false, underline: false}
+      name: text_box_7
+      layout_properties: {x: 477.921875, y: 272.828125, width: 152}
+      event_bindings: {lost_focus: text_box_7_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''iv''][''c''][''a1'']', writeback: true}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: d.Media lunara a ponderii obligatiilor de plata in valuta (rezultand din credite si alte contracte de natura creditului) in total obligatii de plata (%),
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
+      name: label_7
+      layout_properties: {x: 16.953125, y: 309.828125, width: 449}
       event_bindings: {}
     event_bindings: {}
   event_bindings: {}
