@@ -705,14 +705,6 @@ components:
       event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: c.462 “Creditori diversi”, font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#E3F9A6', bold: false, underline: false, icon: ''}
-      name: label_28
-      layout_properties: {x: 7.940338134765625, y: 1274.4034118652344, width: 452.96872}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: d.451 “Decontari intre entitati afiliate”, font_size: null,
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '#CAECF8', bold: false, underline: false, icon: ''}
@@ -1699,6 +1691,14 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
       name: label_23
       layout_properties: {x: 24.766125000000045, y: 719.84375, width: 438.984}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: c.462 “Creditori diversi”, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#E3F9A6', bold: false, underline: false, icon: ''}
+      name: label_28
+      layout_properties: {x: 7.9375, y: 1274.390625, width: 452.953}
       event_bindings: {}
     event_bindings: {}
   event_bindings: {}
