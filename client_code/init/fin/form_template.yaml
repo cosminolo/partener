@@ -1171,23 +1171,6 @@ components:
       name: label_8
       layout_properties: {x: 12.77011779785164, y: 858.0255432128906, width: 438.977}
       event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: v.Alte venituri si cheltuieli intragrup, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#E3F9A6', bold: false, underline: false, icon: ''}
-      name: label_48
-      layout_properties: {x: 7.911933898925781, y: 2271.8748474121094, width: 455.8529615161132,
-        grid_position: 'DGMGST,RWHHND'}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: u.628 “Alte cheltuieli cu serviciile executate de terti”,
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
-      name: label_47
-      layout_properties: {x: 8.934661865234375, y: 2221.8890991210938, width: 453.01442593261714}
-      event_bindings: {}
     - type: TextBox
       properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
@@ -1699,6 +1682,22 @@ components:
         background: '#E3F9A6', bold: false, underline: false, icon: ''}
       name: label_28
       layout_properties: {x: 7.9375, y: 1274.390625, width: 452.953}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: u.628 “Alte cheltuieli cu serviciile executate de terti”,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
+      name: label_47
+      layout_properties: {x: 7.921875, y: 2221.859375, width: 453}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: v.Alte venituri si cheltuieli intragrup, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#E3F9A6', bold: false, underline: false, icon: ''}
+      name: label_48
+      layout_properties: {x: 6.156499999999994, y: 2271.859375, width: 455.844, grid_position: 'DGMGST,RWHHND'}
       event_bindings: {}
     event_bindings: {}
   event_bindings: {}
