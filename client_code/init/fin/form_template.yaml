@@ -1667,15 +1667,6 @@ components:
       event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: 'a.Venituri in valuta (echiv lei), inclusiv cele rezultate
-          din contractele incheiate in valuta cu plata in lei', font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#E3F9A6', bold: false, underline: false, icon: ''}
-      name: label_4
-      layout_properties: {x: -76.171875, y: 82.828125, width: 449}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: c.Media lunara a ponderii veniturilor in valuta in total venituri (%),
         font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false, icon: ''}
@@ -1699,6 +1690,15 @@ components:
         italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
       name: label_7
       layout_properties: {x: 16.953125, y: 309.828125, width: 449}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: 'a.Venituri in valuta (echiv lei), inclusiv cele rezultate
+          din contractele incheiate in valuta cu plata in lei', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#E3F9A6', bold: false, underline: false, icon: ''}
+      name: label_4
+      layout_properties: {x: -5.0625, y: 116.96875, width: 449}
       event_bindings: {}
     event_bindings: {}
   event_bindings: {}
