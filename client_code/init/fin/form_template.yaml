@@ -39,14 +39,6 @@ components:
       event_bindings: {}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: h.Alte datorii (exceptie 162 si 167) platibile peste 1 an,
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
-      name: label_23
-      layout_properties: {x: 23.011367797851562, y: 719.8579406738281, width: 438.99072}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
         visible: true, text: g.Datorii catre buget (esalonari) platibile peste 1 an,
         font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
         italic: false, background: '#E3F9A6', bold: false, underline: false, icon: ''}
@@ -92,14 +84,6 @@ components:
         background: '#CAECF8', bold: false, underline: false, icon: ''}
       name: label_17
       layout_properties: {x: 23.011367797851562, y: 458.8352355957031, width: 438.93552761718746}
-      event_bindings: {}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
-        visible: true, text: a.Clienti de incasat peste 1 an, font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#E3F9A6', bold: false, underline: false, icon: ''}
-      name: label_16
-      layout_properties: {x: 23.011367797851562, y: 422.32952880859375, width: 438.93471999999997}
       event_bindings: {}
     - type: TextBox
       properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
@@ -1699,6 +1683,22 @@ components:
         background: '#E3F9A6', bold: false, underline: false, icon: ''}
       name: label_4
       layout_properties: {x: -5.0625, y: 116.96875, width: 449}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: a.Clienti de incasat peste 1 an, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#E3F9A6', bold: false, underline: false, icon: ''}
+      name: label_16
+      layout_properties: {x: 24.828250000000025, y: 422.328125, width: 438.922}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: solid blue 2px, foreground: '',
+        visible: true, text: h.Alte datorii (exceptie 162 si 167) platibile peste 1 an,
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false, icon: ''}
+      name: label_23
+      layout_properties: {x: 24.766125000000045, y: 719.84375, width: 438.984}
       event_bindings: {}
     event_bindings: {}
   event_bindings: {}
