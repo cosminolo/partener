@@ -642,16 +642,6 @@ components:
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
-      name: text_box_107
-      layout_properties: {x: 651.9886016845703, y: 1995.3833923339844, width: 152.04572}
-      event_bindings: {lost_focus: text_box_107_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''dt''][''s''][''a2'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_108
       layout_properties: {x: 821.9886016845703, y: 1995.3833923339844, width: 152.04572}
       event_bindings: {pressed_enter: text_box_108_pressed_enter, lost_focus: text_box_108_lost_focus}
@@ -1195,16 +1185,6 @@ components:
       properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
         border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
         font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '#E3F9A6', bold: false, underline: false}
-      name: text_box_117
-      layout_properties: {x: 825.9658966064453, y: 2285.3123474121094, width: 152.04572}
-      event_bindings: {lost_focus: text_box_117_lost_focus}
-      data_bindings:
-      - {property: text, code: 'self.item[''dt''][''v''][''a3'']', writeback: true}
-    - type: TextBox
-      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
-        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
-        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
         italic: false, background: '#CAECF8', bold: false, underline: false}
       name: text_box_112
       layout_properties: {x: 477.9971466064453, y: 2232.8975524902344, width: 152.04572}
@@ -1699,6 +1679,26 @@ components:
       name: label_48
       layout_properties: {x: 6.156499999999994, y: 2271.859375, width: 455.844, grid_position: 'DGMGST,RWHHND'}
       event_bindings: {}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#CAECF8', bold: false, underline: false}
+      name: text_box_107
+      layout_properties: {x: 653.953125, y: 1995.375, width: 152.016}
+      event_bindings: {lost_focus: text_box_107_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''dt''][''s''][''a2'']', writeback: true}
+    - type: TextBox
+      properties: {role: null, align: right, hide_text: false, tooltip: '', placeholder: '',
+        border: solid blue 2px, enabled: true, foreground: '', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '#E3F9A6', bold: false, underline: false}
+      name: text_box_117
+      layout_properties: {x: 825.9693750000001, y: 2285.296875, width: 152.031}
+      event_bindings: {lost_focus: text_box_117_lost_focus}
+      data_bindings:
+      - {property: text, code: 'self.item[''dt''][''v''][''a3'']', writeback: true}
     event_bindings: {}
   event_bindings: {}
 - type: FlowPanel
